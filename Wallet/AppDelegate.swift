@@ -12,11 +12,16 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
-
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-  
-        // Override point for customization after application launch.
+
+        //TODO: check if authed
+        if true {
+            let initialViewController = R.storyboard.auth().instantiateInitialViewController()
+            window?.rootViewController = initialViewController
+            window?.makeKeyAndVisible()
+        }
+
         return true
     }
 

@@ -15,6 +15,8 @@
 		356A60D32333B94000E8D118 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 356A60D22333B94000E8D118 /* Assets.xcassets */; };
 		356A60D62333B94000E8D118 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 356A60D42333B94000E8D118 /* LaunchScreen.storyboard */; };
 		356A60DE2333C7A500E8D118 /* Auth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 356A60DD2333C7A500E8D118 /* Auth.storyboard */; };
+		B8EA1347970505193E9CD473 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA1AB4DE484A22A99E7DFD /* UIView+Extension.swift */; };
+		B8EA135ACA1DCB77A9B3928C /* GradientButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA1454E4B1EBD958E7E413 /* GradientButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,8 @@
 		356A60D72333B94000E8D118 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		356A60DD2333C7A500E8D118 /* Auth.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Auth.storyboard; sourceTree = "<group>"; };
 		4A1D9D2B4E61AC9284666F23 /* Pods-wallet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wallet.debug.xcconfig"; path = "Target Support Files/Pods-wallet/Pods-wallet.debug.xcconfig"; sourceTree = "<group>"; };
+		B8EA1454E4B1EBD958E7E413 /* GradientButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientButton.swift; sourceTree = "<group>"; };
+		B8EA1AB4DE484A22A99E7DFD /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		D55D7342C2EDB0E32FCED51F /* Pods_wallet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_wallet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -47,8 +51,8 @@
 		3563230523380530007F06E6 /* IB */ = {
 			isa = PBXGroup;
 			children = (
-				356323072338055A007F06E6 /* Main */,
 				3563230623380548007F06E6 /* Auth */,
+				356323072338055A007F06E6 /* Main */,
 				356A60D42333B94000E8D118 /* LaunchScreen.storyboard */,
 			);
 			path = IB;
@@ -88,6 +92,8 @@
 		3563230A23380602007F06E6 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				B8EA1454E4B1EBD958E7E413 /* GradientButton.swift */,
+				B8EA1AB4DE484A22A99E7DFD /* UIView+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -321,6 +327,8 @@
 				356A60CE2333B93F00E8D118 /* ViewController.swift in Sources */,
 				356A60CC2333B93F00E8D118 /* AppDelegate.swift in Sources */,
 				3563231123380BF1007F06E6 /* R.generated.swift in Sources */,
+				B8EA135ACA1DCB77A9B3928C /* GradientButton.swift in Sources */,
+				B8EA1347970505193E9CD473 /* UIView+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

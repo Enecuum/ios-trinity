@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cWp-wV-Lo9">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,32 +15,93 @@
             <objects>
                 <viewController id="cWp-wV-Lo9" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MPQ-CO-ILX">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="6cm-wF-pRa" userLabel="Background">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo/large" translatesAutoresizingMaskIntoConstraints="NO" id="vqM-Z6-M87">
-                                <rect key="frame" x="52" y="94.5" width="271.5" height="111"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="512-Xu-cnX">
-                                <rect key="frame" x="70.5" y="287.5" width="234" height="59"/>
-                                <color key="backgroundColor" red="0.28572862839762336" green="0.47721049059416193" blue="0.96080166101455688" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <rect key="frame" x="97" y="116.33333333333331" width="220" height="98.666666666666686"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="234" id="3sm-eU-5A5"/>
-                                    <constraint firstAttribute="height" constant="59" id="Tlm-yz-9wd"/>
+                                    <constraint firstAttribute="width" constant="220" id="oAM-Ze-PQ1"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="512-Xu-cnX" customClass="GradientButton" customModule="wallet" customModuleProvider="target">
+                                <rect key="frame" x="87" y="319.66666666666669" width="240" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="3sm-eU-5A5"/>
+                                    <constraint firstAttribute="height" constant="60" id="Tlm-yz-9wd"/>
                                 </constraints>
                                 <state key="normal" title="Create New Wallet"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="firstColor">
+                                        <color key="value" red="0.25098039215686274" green="0.61960784313725492" blue="0.99607843137254903" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="secondColor">
+                                        <color key="value" red="0.098039215686274508" green="0.396078431372549" blue="0.74117647058823533" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="point" keyPath="gradientStartPoint">
+                                        <point key="value" x="0.5" y="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="point" keyPath="gradientEndPoint">
+                                        <point key="value" x="0.0" y="0.80000000000000004"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                        <real key="value" value="0.77000000000000002"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                        <size key="value" width="0.0" height="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="gradientCornerRadius">
+                                        <real key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n8K-Pa-aEc">
-                                <rect key="frame" x="70.5" y="361.5" width="234" height="59"/>
-                                <color key="backgroundColor" red="0.097987424634509337" green="0.1636539791064269" blue="0.32949614070998834" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="234" id="SPp-Rh-VvV"/>
-                                    <constraint firstAttribute="height" constant="59" id="TJz-Zi-AU6"/>
-                                </constraints>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n8K-Pa-aEc" customClass="GradientButton" customModule="wallet" customModuleProvider="target">
+                                <rect key="frame" x="87" y="394.66666666666669" width="240" height="60"/>
                                 <state key="normal" title="Import Wallet"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="firstColor">
+                                        <color key="value" red="0.23529411764705882" green="0.29019607843137252" blue="0.57647058823529407" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="secondColor">
+                                        <color key="value" red="0.1764705882352941" green="0.19215686274509802" blue="0.2627450980392157" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="point" keyPath="gradientStartPoint">
+                                        <point key="value" x="0.5" y="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="point" keyPath="gradientEndPoint">
+                                        <point key="value" x="0.5" y="0.80000000000000004"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                        <real key="value" value="0.77000000000000002"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                        <size key="value" width="0.0" height="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="gradientCornerRadius">
+                                        <real key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -50,10 +111,12 @@
                             <constraint firstItem="6cm-wF-pRa" firstAttribute="leading" secondItem="MPQ-CO-ILX" secondAttribute="leading" id="IpG-6b-5em"/>
                             <constraint firstItem="512-Xu-cnX" firstAttribute="centerX" secondItem="MPQ-CO-ILX" secondAttribute="centerX" id="M4e-98-HdC"/>
                             <constraint firstAttribute="bottom" secondItem="6cm-wF-pRa" secondAttribute="bottom" id="N2f-fI-8uT"/>
+                            <constraint firstItem="n8K-Pa-aEc" firstAttribute="width" secondItem="512-Xu-cnX" secondAttribute="width" id="TDN-uN-s5q"/>
                             <constraint firstItem="6cm-wF-pRa" firstAttribute="top" secondItem="MPQ-CO-ILX" secondAttribute="top" id="Y4Q-6v-Ypq"/>
                             <constraint firstItem="n8K-Pa-aEc" firstAttribute="top" secondItem="512-Xu-cnX" secondAttribute="bottom" constant="15" id="qG4-8y-S3i"/>
                             <constraint firstItem="vqM-Z6-M87" firstAttribute="centerX" secondItem="MPQ-CO-ILX" secondAttribute="centerX" id="vF9-nE-uzn"/>
                             <constraint firstItem="6cm-wF-pRa" firstAttribute="trailing" secondItem="MPQ-CO-ILX" secondAttribute="trailing" id="vfA-fL-oO2"/>
+                            <constraint firstItem="n8K-Pa-aEc" firstAttribute="height" secondItem="512-Xu-cnX" secondAttribute="height" id="wqj-dq-MzK"/>
                             <constraint firstItem="512-Xu-cnX" firstAttribute="centerY" secondItem="MPQ-CO-ILX" secondAttribute="centerY" multiplier="0.95" id="yoC-DF-wpB"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="kqk-Ei-gId"/>
@@ -68,21 +131,21 @@
             <objects>
                 <viewController id="jP7-Qb-jII" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xAB-Nf-Rjy">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="CUF-7d-OSJ" userLabel="Background">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Auth/dot" translatesAutoresizingMaskIntoConstraints="NO" id="Hkv-b6-1QS">
-                                <rect key="frame" x="144" y="60" width="7" height="7"/>
+                                <rect key="frame" x="163.66666666666666" y="60" width="7" height="7"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="7" id="TAj-iE-Tok"/>
                                     <constraint firstAttribute="height" constant="7" id="mPe-nf-pcx"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="INZ-Ao-fke" userLabel="Nav Back Button">
-                                <rect key="frame" x="165" y="41" width="45" height="45"/>
+                                <rect key="frame" x="184.66666666666666" y="41" width="45" height="45"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="45" id="7XG-un-oIH"/>
                                     <constraint firstAttribute="height" constant="45" id="A4o-A0-L9F"/>
@@ -90,7 +153,7 @@
                                 <state key="normal" image="Auth/navBackArrow"/>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vgI-zj-vYB" userLabel="Welcome">
-                                <rect key="frame" x="99" y="108" width="177" height="48"/>
+                                <rect key="frame" x="118.66666666666669" y="108" width="177" height="48"/>
                                 <string key="text">Welcome
 to enecuum network</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
@@ -105,8 +168,8 @@ to enecuum network</string>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jkO-DV-B0T">
-                                <rect key="frame" x="70.5" y="287.5" width="234" height="59"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jkO-DV-B0T" customClass="GradientButton" customModule="wallet" customModuleProvider="target">
+                                <rect key="frame" x="90" y="320" width="234" height="59"/>
                                 <color key="backgroundColor" red="0.28572862840000002" green="0.47721049059999998" blue="0.96080166099999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="234" id="TS7-TD-ZFa"/>
@@ -140,9 +203,9 @@ to enecuum network</string>
         </scene>
     </scenes>
     <resources>
-        <image name="Auth/dot" width="10.5" height="10.5"/>
-        <image name="Auth/navBackArrow" width="67.5" height="67.5"/>
-        <image name="Logo/large" width="271.5" height="111"/>
-        <image name="background" width="375" height="667"/>
+        <image name="Auth/dot" width="9.3333330154418945" height="9.3333330154418945"/>
+        <image name="Auth/navBackArrow" width="60" height="60"/>
+        <image name="Logo/large" width="241.33332824707031" height="98.666664123535156"/>
+        <image name="background" width="250" height="444.66665649414062"/>
     </resources>
 </document>

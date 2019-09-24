@@ -21,6 +21,7 @@
 		B8EA1347970505193E9CD473 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA1AB4DE484A22A99E7DFD /* UIView+Extension.swift */; };
 		B8EA135ACA1DCB77A9B3928C /* GradientButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA1454E4B1EBD958E7E413 /* GradientButton.swift */; };
 		B8EA13A051ECAFB38A3C6C8A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA14EA8EB8491A251D3603 /* MainViewController.swift */; };
+		B8EA15CBA9C960A2BFA918EB /* TabsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA1506248F3332EFE0E994 /* TabsView.swift */; };
 		B8EA16A409C0D7F92A21D1AD /* AuthMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA1DEA865063CF4BEDC5EA /* AuthMode.swift */; };
 		B8EA1822B48727D7ADDDBF08 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA1F0AC6F5DA4951A86E7C /* GradientView.swift */; };
 		B8EA1924649899AC4079D1A9 /* TransferViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA1A06E3393C3709805246 /* TransferViewController.swift */; };
@@ -46,6 +47,7 @@
 		B8EA110F9290250EC4D79180 /* Palette.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Palette.swift; sourceTree = "<group>"; };
 		B8EA1454E4B1EBD958E7E413 /* GradientButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientButton.swift; sourceTree = "<group>"; };
 		B8EA14EA8EB8491A251D3603 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		B8EA1506248F3332EFE0E994 /* TabsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabsView.swift; sourceTree = "<group>"; };
 		B8EA1A06E3393C3709805246 /* TransferViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransferViewController.swift; sourceTree = "<group>"; };
 		B8EA1AB4DE484A22A99E7DFD /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		B8EA1DEA865063CF4BEDC5EA /* AuthMode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthMode.swift; sourceTree = "<group>"; };
@@ -223,10 +225,19 @@
 			path = Controllers;
 			sourceTree = "<group>";
 		};
+		B8EA152235983A273D5201BA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B8EA1506248F3332EFE0E994 /* TabsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		B8EA1BDC2756F93E295205AD /* Main */ = {
 			isa = PBXGroup;
 			children = (
 				B8EA11B68C8A897C697D30FA /* Controllers */,
+				B8EA152235983A273D5201BA /* Views */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -389,6 +400,7 @@
 				B8EA13A051ECAFB38A3C6C8A /* MainViewController.swift in Sources */,
 				B8EA1822B48727D7ADDDBF08 /* GradientView.swift in Sources */,
 				B8EA1924649899AC4079D1A9 /* TransferViewController.swift in Sources */,
+				B8EA15CBA9C960A2BFA918EB /* TabsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

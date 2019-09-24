@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cWp-wV-Lo9">
-    <device id="retina5_9" orientation="portrait">
+    <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -10,6 +10,9 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
+        <array key="TTNorms-Bold.otf">
+            <string>TTNorms-Bold</string>
+        </array>
         <array key="TTNorms-Medium.otf">
             <string>TTNorms-Medium</string>
         </array>
@@ -20,21 +23,21 @@
             <objects>
                 <viewController storyboardIdentifier="welcomeViewController" id="cWp-wV-Lo9" customClass="WelcomeViewController" customModule="wallet" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MPQ-CO-ILX">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="6cm-wF-pRa" userLabel="Background">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo/large" translatesAutoresizingMaskIntoConstraints="NO" id="vqM-Z6-M87">
-                                <rect key="frame" x="82.666666666666686" y="137.66666666666666" width="210" height="90"/>
+                                <rect key="frame" x="55" y="83" width="210" height="90"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="90" id="QFt-Cc-yzU"/>
                                     <constraint firstAttribute="width" constant="210" id="fpz-IG-C2h"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="512-Xu-cnX" customClass="GradientButton" customModule="wallet" customModuleProvider="target">
-                                <rect key="frame" x="57.666666666666657" y="353.33333333333331" width="260" height="65"/>
+                                <rect key="frame" x="30" y="237.5" width="260" height="65"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="260" id="FsN-aX-8cE"/>
                                     <constraint firstAttribute="width" secondItem="512-Xu-cnX" secondAttribute="height" multiplier="4:1" id="gTO-FE-GPm"/>
@@ -78,7 +81,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n8K-Pa-aEc" customClass="GradientButton" customModule="wallet" customModuleProvider="target">
-                                <rect key="frame" x="57.666666666666657" y="434.33333333333331" width="260" height="65"/>
+                                <rect key="frame" x="30" y="318.5" width="260" height="65"/>
                                 <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="16"/>
                                 <state key="normal" title="Import Wallet"/>
                                 <userDefinedRuntimeAttributes>
@@ -145,52 +148,55 @@
             <objects>
                 <viewController storyboardIdentifier="authViewController" id="jP7-Qb-jII" customClass="AuthViewController" customModule="wallet" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xAB-Nf-Rjy">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="CUF-7d-OSJ" userLabel="Background">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Auth/dot" translatesAutoresizingMaskIntoConstraints="NO" id="Hkv-b6-1QS">
-                                <rect key="frame" x="144" y="84" width="7" height="7"/>
+                                <rect key="frame" x="116.5" y="60" width="7" height="7"/>
                                 <constraints>
+                                    <constraint firstAttribute="width" secondItem="Hkv-b6-1QS" secondAttribute="height" multiplier="1:1" id="Qh2-eY-Prc"/>
                                     <constraint firstAttribute="width" constant="7" id="TAj-iE-Tok"/>
-                                    <constraint firstAttribute="height" constant="7" id="mPe-nf-pcx"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="INZ-Ao-fke" userLabel="Nav Back Button">
-                                <rect key="frame" x="165" y="65" width="45" height="45"/>
+                                <rect key="frame" x="137.5" y="41" width="45" height="45"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="45" id="7XG-un-oIH"/>
-                                    <constraint firstAttribute="height" constant="45" id="A4o-A0-L9F"/>
+                                    <constraint firstAttribute="width" secondItem="INZ-Ao-fke" secondAttribute="height" multiplier="1:1" id="c86-Dh-atz"/>
                                 </constraints>
                                 <state key="normal" image="Auth/navBackArrow"/>
+                                <connections>
+                                    <action selector="onBackClicked:" destination="jP7-Qb-jII" eventType="touchUpInside" id="lzd-Oz-ztD"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vgI-zj-vYB" userLabel="Welcome">
-                                <rect key="frame" x="99" y="132" width="177" height="48"/>
+                                <rect key="frame" x="67" y="108" width="186.5" height="47.5"/>
                                 <string key="text">Welcome
 to enecuum network</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="AkR-tt-aco">
-                                <rect key="frame" x="40" y="188" width="295" height="200"/>
+                                <rect key="frame" x="28" y="177.5" width="264" height="200"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gJ7-gl-LVa">
-                                        <rect key="frame" x="0.0" y="0.0" width="295" height="100"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="264" height="100"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your adress" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FQG-Po-dcj" userLabel="Welcome">
-                                                <rect key="frame" x="96.666666666666629" y="8" width="101.66666666666666" height="44"/>
+                                                <rect key="frame" x="81.5" y="8" width="101.5" height="44"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="0gj-oY-6S8">
-                                                <rect key="frame" x="0.0" y="70" width="295" height="30"/>
+                                                <rect key="frame" x="0.0" y="70" width="264" height="30"/>
                                                 <subviews>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iwA-77-2As">
-                                                        <rect key="frame" x="0.0" y="0.0" width="241" height="30"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="210" height="30"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="30" id="31E-l5-1Sm"/>
@@ -200,7 +206,7 @@ to enecuum network</string>
                                                         <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="go" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
                                                     </textField>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BtF-rg-Vhh">
-                                                        <rect key="frame" x="249" y="0.0" width="46" height="30"/>
+                                                        <rect key="frame" x="218" y="0.0" width="46" height="30"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="46" id="zNh-nZ-jEx"/>
                                                         </constraints>
@@ -247,16 +253,16 @@ to enecuum network</string>
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Omk-10-mmV">
-                                        <rect key="frame" x="0.0" y="100" width="295" height="100"/>
+                                        <rect key="frame" x="0.0" y="100" width="264" height="100"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your private key" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WYV-mu-K67" userLabel="Welcome">
-                                                <rect key="frame" x="78.666666666666686" y="8" width="137.66666666666663" height="24"/>
+                                                <rect key="frame" x="63" y="8" width="138" height="24"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KU4-BJ-PJQ">
-                                                <rect key="frame" x="8" y="50" width="279" height="30"/>
+                                                <rect key="frame" x="8" y="50" width="248" height="30"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="KoM-it-KJA"/>
@@ -284,11 +290,12 @@ to enecuum network</string>
                                 </constraints>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jbo-ye-lEo" customClass="GradientButton" customModule="wallet" customModuleProvider="target">
-                                <rect key="frame" x="67.666666666666686" y="396" width="240" height="60"/>
+                                <rect key="frame" x="30" y="407.5" width="260" height="65"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="240" id="huX-cC-uU7"/>
-                                    <constraint firstAttribute="height" constant="60" id="tNT-7B-XYM"/>
+                                    <constraint firstAttribute="width" secondItem="jbo-ye-lEo" secondAttribute="height" multiplier="4:1" id="RhZ-nA-Qh5"/>
+                                    <constraint firstAttribute="width" constant="260" id="huX-cC-uU7"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="16"/>
                                 <state key="normal" title="Star Using Wallet"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="firstColor">
@@ -326,43 +333,43 @@ to enecuum network</string>
                                     <action selector="onNewWalletClicked:" destination="cWp-wV-Lo9" eventType="touchUpInside" id="z7I-N2-Xuj"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="b5Q-9b-v1p">
-                                <rect key="frame" x="40" y="684.66666666666663" width="37" height="41"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Auth/exclamation" translatesAutoresizingMaskIntoConstraints="NO" id="b5Q-9b-v1p">
+                                <rect key="frame" x="28" y="445" width="14" height="14"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="37" id="MU4-vV-Qu5"/>
-                                    <constraint firstAttribute="height" constant="41" id="QfG-Of-PRt"/>
+                                    <constraint firstAttribute="width" secondItem="b5Q-9b-v1p" secondAttribute="height" multiplier="1:1" id="b7l-eM-JIQ"/>
+                                    <constraint firstAttribute="width" constant="14" id="eBv-mV-YGC"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sWL-dc-vLi">
-                                <rect key="frame" x="93" y="684.66666666666663" width="266" height="93.333333333333371"/>
+                                <rect key="frame" x="53" y="443" width="239" height="85"/>
                                 <string key="text">Private key is used to unlock your wallet providing funds management including participance in Mining Aordrop program.
 Please make sure to save your private key  and prevent it from stealing. 
 Enecuum do not store your private key</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="TTNorms-Bold" family="TT Norms" pointSize="12"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="CUF-7d-OSJ" firstAttribute="trailing" secondItem="xAB-Nf-Rjy" secondAttribute="trailing" id="7pj-Xf-4vw"/>
-                            <constraint firstItem="b5Q-9b-v1p" firstAttribute="top" secondItem="sWL-dc-vLi" secondAttribute="top" id="Ed4-UT-34q"/>
+                            <constraint firstAttribute="bottom" secondItem="sWL-dc-vLi" secondAttribute="bottom" constant="40" id="9lb-fZ-fpV"/>
+                            <constraint firstItem="b5Q-9b-v1p" firstAttribute="top" secondItem="sWL-dc-vLi" secondAttribute="top" constant="2" id="Ed4-UT-34q"/>
                             <constraint firstItem="vgI-zj-vYB" firstAttribute="top" secondItem="INZ-Ao-fke" secondAttribute="bottom" constant="22" id="EkN-1r-QI5"/>
-                            <constraint firstItem="AkR-tt-aco" firstAttribute="top" secondItem="vgI-zj-vYB" secondAttribute="bottom" constant="8" id="F8Q-XE-7dW"/>
-                            <constraint firstItem="jbo-ye-lEo" firstAttribute="top" secondItem="AkR-tt-aco" secondAttribute="bottom" constant="8" id="HUc-mT-hVw"/>
+                            <constraint firstItem="AkR-tt-aco" firstAttribute="top" secondItem="vgI-zj-vYB" secondAttribute="bottom" constant="22" id="F8Q-XE-7dW"/>
+                            <constraint firstItem="jbo-ye-lEo" firstAttribute="top" secondItem="AkR-tt-aco" secondAttribute="bottom" constant="30" id="HUc-mT-hVw"/>
                             <constraint firstItem="INZ-Ao-fke" firstAttribute="top" secondItem="AN8-yX-Aki" secondAttribute="top" constant="21" id="KvQ-TL-qx3"/>
-                            <constraint firstItem="sWL-dc-vLi" firstAttribute="bottom" secondItem="AN8-yX-Aki" secondAttribute="bottom" id="PV1-fj-TzH"/>
                             <constraint firstItem="CUF-7d-OSJ" firstAttribute="top" secondItem="xAB-Nf-Rjy" secondAttribute="top" id="SFX-AL-ucY"/>
                             <constraint firstItem="Hkv-b6-1QS" firstAttribute="centerY" secondItem="INZ-Ao-fke" secondAttribute="centerY" id="SSU-W5-SVk"/>
-                            <constraint firstItem="AN8-yX-Aki" firstAttribute="trailing" secondItem="sWL-dc-vLi" secondAttribute="trailing" constant="16" id="URF-7X-hE1"/>
+                            <constraint firstItem="b5Q-9b-v1p" firstAttribute="leading" secondItem="AN8-yX-Aki" secondAttribute="leading" constant="28" id="T6g-nk-d2h"/>
+                            <constraint firstItem="AN8-yX-Aki" firstAttribute="trailing" secondItem="sWL-dc-vLi" secondAttribute="trailing" constant="28" id="URF-7X-hE1"/>
                             <constraint firstItem="AkR-tt-aco" firstAttribute="centerX" secondItem="xAB-Nf-Rjy" secondAttribute="centerX" id="W27-M8-fSi"/>
                             <constraint firstItem="jbo-ye-lEo" firstAttribute="centerX" secondItem="xAB-Nf-Rjy" secondAttribute="centerX" id="bMY-fG-SFy"/>
                             <constraint firstItem="CUF-7d-OSJ" firstAttribute="leading" secondItem="xAB-Nf-Rjy" secondAttribute="leading" id="cxg-GD-qyf"/>
                             <constraint firstItem="INZ-Ao-fke" firstAttribute="centerX" secondItem="xAB-Nf-Rjy" secondAttribute="centerX" id="fqW-tp-49A"/>
-                            <constraint firstItem="AkR-tt-aco" firstAttribute="leading" secondItem="AN8-yX-Aki" secondAttribute="leading" constant="40" id="i1m-tg-Bgf"/>
-                            <constraint firstItem="sWL-dc-vLi" firstAttribute="leading" secondItem="b5Q-9b-v1p" secondAttribute="trailing" constant="16" id="kVk-uo-dl0"/>
-                            <constraint firstItem="AN8-yX-Aki" firstAttribute="trailing" secondItem="AkR-tt-aco" secondAttribute="trailing" constant="40" id="qHg-s0-Lh9"/>
-                            <constraint firstItem="b5Q-9b-v1p" firstAttribute="leading" secondItem="AN8-yX-Aki" secondAttribute="leading" constant="40" id="stW-E2-e2Y"/>
+                            <constraint firstItem="AkR-tt-aco" firstAttribute="leading" secondItem="AN8-yX-Aki" secondAttribute="leading" constant="28" id="i1m-tg-Bgf"/>
+                            <constraint firstItem="sWL-dc-vLi" firstAttribute="leading" secondItem="b5Q-9b-v1p" secondAttribute="trailing" constant="11" id="kVk-uo-dl0"/>
+                            <constraint firstItem="AN8-yX-Aki" firstAttribute="trailing" secondItem="AkR-tt-aco" secondAttribute="trailing" constant="28" id="qHg-s0-Lh9"/>
                             <constraint firstAttribute="bottom" secondItem="CUF-7d-OSJ" secondAttribute="bottom" id="w15-oo-HYH"/>
                             <constraint firstItem="INZ-Ao-fke" firstAttribute="leading" secondItem="Hkv-b6-1QS" secondAttribute="trailing" constant="14" id="y1h-QG-bvQ"/>
                             <constraint firstItem="vgI-zj-vYB" firstAttribute="centerX" secondItem="xAB-Nf-Rjy" secondAttribute="centerX" id="ykr-xT-Fkv"/>
@@ -376,9 +383,10 @@ Enecuum do not store your private key</string>
         </scene>
     </scenes>
     <resources>
-        <image name="Auth/dot" width="9.3333330154418945" height="9.3333330154418945"/>
-        <image name="Auth/navBackArrow" width="60" height="60"/>
+        <image name="Auth/dot" width="7" height="7"/>
+        <image name="Auth/exclamation" width="14" height="14"/>
+        <image name="Auth/navBackArrow" width="45" height="45"/>
         <image name="Logo/large" width="181" height="74"/>
-        <image name="background" width="250" height="444.66665649414062"/>
+        <image name="background" width="375" height="667"/>
     </resources>
 </document>

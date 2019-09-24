@@ -14,5 +14,9 @@ class AuthViewController: UIViewController {
 
     @IBAction func onStartClicked(_ sender: Any) {
     }
+    
+    @IBAction func onBackClicked(_ sender: Any) {
+        dismiss(animated: false)
+    }
 }
 

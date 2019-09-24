@@ -13,13 +13,13 @@ class WelcomeViewController: UIViewController {
     @IBAction func onNewWalletClicked(_ sender: Any) {
         let authViewController = R.storyboard.auth.authViewController()!
         authViewController.authMode = .walletCreation
-        present(authViewController, animated: true)
+        present(authViewController, animated: false)
     }
 
     @IBAction func onImportWalletClicked(_ sender: Any) {
         let authViewController = R.storyboard.auth.authViewController()!
         authViewController.authMode = .walletImport
-        present(authViewController, animated: true)
+        present(authViewController, animated: false)
     }
 }
 

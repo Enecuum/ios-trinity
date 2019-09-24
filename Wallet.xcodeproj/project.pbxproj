@@ -8,31 +8,39 @@
 
 /* Begin PBXBuildFile section */
 		0E792B6944DC35A6EB44E061 /* Pods_wallet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D55D7342C2EDB0E32FCED51F /* Pods_wallet.framework */; };
-		3563231123380BF1007F06E6 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3563231023380BF1007F06E6 /* R.generated.swift */; };
 		356A60CC2333B93F00E8D118 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356A60CB2333B93F00E8D118 /* AppDelegate.swift */; };
-		356A60CE2333B93F00E8D118 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356A60CD2333B93F00E8D118 /* ViewController.swift */; };
+		356A60CE2333B93F00E8D118 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356A60CD2333B93F00E8D118 /* WelcomeViewController.swift */; };
 		356A60D12333B93F00E8D118 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 356A60CF2333B93F00E8D118 /* Main.storyboard */; };
 		356A60D32333B94000E8D118 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 356A60D22333B94000E8D118 /* Assets.xcassets */; };
 		356A60D62333B94000E8D118 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 356A60D42333B94000E8D118 /* LaunchScreen.storyboard */; };
 		356A60DE2333C7A500E8D118 /* Auth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 356A60DD2333C7A500E8D118 /* Auth.storyboard */; };
+		35B8CE1B23398713007BC0C8 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B8CE1A23398713007BC0C8 /* R.generated.swift */; };
+		35B8CE23233A66AD007BC0C8 /* TTNorms-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 35B8CE21233A66AD007BC0C8 /* TTNorms-Medium.otf */; };
+		35B8CE24233A66AD007BC0C8 /* TTNorms-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 35B8CE22233A66AD007BC0C8 /* TTNorms-Bold.otf */; };
 		B8EA1347970505193E9CD473 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA1AB4DE484A22A99E7DFD /* UIView+Extension.swift */; };
 		B8EA135ACA1DCB77A9B3928C /* GradientButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA1454E4B1EBD958E7E413 /* GradientButton.swift */; };
+		B8EA16A409C0D7F92A21D1AD /* AuthMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA1DEA865063CF4BEDC5EA /* AuthMode.swift */; };
+		B8EA1C041CF5B2023AFDC0BE /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA1E69D0A92BCBA9D4AAEA /* AuthViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		08EAD1528A6739EEF0C63E0F /* Pods-wallet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wallet.release.xcconfig"; path = "Target Support Files/Pods-wallet/Pods-wallet.release.xcconfig"; sourceTree = "<group>"; };
-		3563231023380BF1007F06E6 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 		356A60C82333B93F00E8D118 /* wallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wallet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		356A60CB2333B93F00E8D118 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		356A60CD2333B93F00E8D118 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		356A60CD2333B93F00E8D118 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		356A60D02333B93F00E8D118 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		356A60D22333B94000E8D118 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		356A60D52333B94000E8D118 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		356A60D72333B94000E8D118 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		356A60DD2333C7A500E8D118 /* Auth.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Auth.storyboard; sourceTree = "<group>"; };
+		35B8CE1A23398713007BC0C8 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
+		35B8CE21233A66AD007BC0C8 /* TTNorms-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TTNorms-Medium.otf"; sourceTree = "<group>"; };
+		35B8CE22233A66AD007BC0C8 /* TTNorms-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TTNorms-Bold.otf"; sourceTree = "<group>"; };
 		4A1D9D2B4E61AC9284666F23 /* Pods-wallet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wallet.debug.xcconfig"; path = "Target Support Files/Pods-wallet/Pods-wallet.debug.xcconfig"; sourceTree = "<group>"; };
 		B8EA1454E4B1EBD958E7E413 /* GradientButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientButton.swift; sourceTree = "<group>"; };
 		B8EA1AB4DE484A22A99E7DFD /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		B8EA1DEA865063CF4BEDC5EA /* AuthMode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthMode.swift; sourceTree = "<group>"; };
+		B8EA1E69D0A92BCBA9D4AAEA /* AuthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 		D55D7342C2EDB0E32FCED51F /* Pods_wallet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_wallet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -117,6 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				3563230E2338064D007F06E6 /* Controllers */,
+				B8EA1DEA865063CF4BEDC5EA /* AuthMode.swift */,
 			);
 			path = Auth;
 			sourceTree = "<group>";
@@ -124,7 +133,8 @@
 		3563230E2338064D007F06E6 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				356A60CD2333B93F00E8D118 /* ViewController.swift */,
+				356A60CD2333B93F00E8D118 /* WelcomeViewController.swift */,
+				B8EA1E69D0A92BCBA9D4AAEA /* AuthViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -132,7 +142,8 @@
 		3563231223380C09007F06E6 /* Supporting */ = {
 			isa = PBXGroup;
 			children = (
-				3563231023380BF1007F06E6 /* R.generated.swift */,
+				35B8CE20233A664C007BC0C8 /* Fonts */,
+				35B8CE1A23398713007BC0C8 /* R.generated.swift */,
 			);
 			path = Supporting;
 			sourceTree = "<group>";
@@ -169,6 +180,15 @@
 				356A60D72333B94000E8D118 /* Info.plist */,
 			);
 			path = Wallet;
+			sourceTree = "<group>";
+		};
+		35B8CE20233A664C007BC0C8 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				35B8CE22233A66AD007BC0C8 /* TTNorms-Bold.otf */,
+				35B8CE21233A66AD007BC0C8 /* TTNorms-Medium.otf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 		53BDC2AE586D17814A0BBEC2 /* Pods */ = {
@@ -249,9 +269,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35B8CE24233A66AD007BC0C8 /* TTNorms-Bold.otf in Resources */,
 				356A60DE2333C7A500E8D118 /* Auth.storyboard in Resources */,
 				356A60D62333B94000E8D118 /* LaunchScreen.storyboard in Resources */,
 				356A60D32333B94000E8D118 /* Assets.xcassets in Resources */,
+				35B8CE23233A66AD007BC0C8 /* TTNorms-Medium.otf in Resources */,
 				356A60D12333B93F00E8D118 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -311,11 +333,11 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				$SRCROOT/R.generated.swift,
+				"$(SRCROOT)/Wallet/Supporting/R.generated.swift",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/R.generated.swift\"\n";
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/Wallet/Supporting/R.generated.swift\"\ndate > \"$SRCROOT/dirtyHackFile\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -324,11 +346,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				356A60CE2333B93F00E8D118 /* ViewController.swift in Sources */,
+				356A60CE2333B93F00E8D118 /* WelcomeViewController.swift in Sources */,
 				356A60CC2333B93F00E8D118 /* AppDelegate.swift in Sources */,
-				3563231123380BF1007F06E6 /* R.generated.swift in Sources */,
 				B8EA135ACA1DCB77A9B3928C /* GradientButton.swift in Sources */,
 				B8EA1347970505193E9CD473 /* UIView+Extension.swift in Sources */,
+				B8EA1C041CF5B2023AFDC0BE /* AuthViewController.swift in Sources */,
+				35B8CE1B23398713007BC0C8 /* R.generated.swift in Sources */,
+				B8EA16A409C0D7F92A21D1AD /* AuthMode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

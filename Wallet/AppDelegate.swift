@@ -16,7 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 
         //TODO: check if authed
-        if true {
+        if false {
             let initialViewController = R.storyboard.auth().instantiateInitialViewController()
             window?.rootViewController = initialViewController
             window?.makeKeyAndVisible()

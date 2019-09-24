@@ -70,6 +70,9 @@ class AuthViewController: UIViewController {
     }
 
     @IBAction private func onStartClicked(_ sender: Any) {
+        let initialViewController = R.storyboard.main().instantiateInitialViewController()
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        appDelegate.window!.rootViewController = initialViewController
     }
 
     @IBAction private func onBackClicked(_ sender: Any) {

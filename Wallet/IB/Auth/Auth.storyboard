@@ -26,7 +26,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="6cm-wF-pRa" userLabel="Background">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Back/auth" translatesAutoresizingMaskIntoConstraints="NO" id="6cm-wF-pRa" userLabel="Background">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo/large" translatesAutoresizingMaskIntoConstraints="NO" id="vqM-Z6-M87">
@@ -151,7 +151,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="CUF-7d-OSJ" userLabel="Background">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Back/auth" translatesAutoresizingMaskIntoConstraints="NO" id="CUF-7d-OSJ" userLabel="Background">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Auth/dot" translatesAutoresizingMaskIntoConstraints="NO" id="Hkv-b6-1QS">
@@ -485,9 +485,9 @@ Enecuum do not store your private key</string>
     <resources>
         <image name="Auth/dot" width="7" height="7"/>
         <image name="Auth/navBackArrow" width="45" height="45"/>
+        <image name="Back/auth" width="410" height="825"/>
         <image name="Icons/copy" width="27" height="27"/>
         <image name="Icons/exclamation" width="14" height="14"/>
         <image name="Logo/large" width="181" height="74"/>
-        <image name="background" width="375" height="667"/>
     </resources>
 </document>

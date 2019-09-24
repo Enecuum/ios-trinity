@@ -180,11 +180,11 @@ to enecuum network</string>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="AkR-tt-aco">
-                                <rect key="frame" x="28" y="177.5" width="319" height="166"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="AkR-tt-aco">
+                                <rect key="frame" x="28" y="177.5" width="319" height="194"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gJ7-gl-LVa" userLabel="Address View">
-                                        <rect key="frame" x="0.0" y="0.0" width="319" height="75"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="319" height="83"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your adress" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FQG-Po-dcj" userLabel="Address Label">
                                                 <rect key="frame" x="118" y="0.0" width="83.5" height="19"/>
@@ -256,10 +256,10 @@ to enecuum network</string>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="L8Q-Qk-kOj" secondAttribute="trailing" id="2lB-dP-NvG"/>
                                             <constraint firstItem="L8Q-Qk-kOj" firstAttribute="leading" secondItem="gJ7-gl-LVa" secondAttribute="leading" id="F47-t2-ORr"/>
-                                            <constraint firstAttribute="height" constant="75" id="IpO-Lx-FYb"/>
+                                            <constraint firstAttribute="height" constant="83" id="IpO-Lx-FYb"/>
                                             <constraint firstItem="FQG-Po-dcj" firstAttribute="centerX" secondItem="gJ7-gl-LVa" secondAttribute="centerX" id="NUa-3T-Nw0"/>
                                             <constraint firstItem="FQG-Po-dcj" firstAttribute="top" secondItem="gJ7-gl-LVa" secondAttribute="top" id="Nbn-Rv-FeC"/>
-                                            <constraint firstAttribute="bottom" secondItem="L8Q-Qk-kOj" secondAttribute="bottom" id="YJu-74-cDt"/>
+                                            <constraint firstAttribute="bottom" secondItem="L8Q-Qk-kOj" secondAttribute="bottom" constant="8" id="YJu-74-cDt"/>
                                             <constraint firstItem="L8Q-Qk-kOj" firstAttribute="top" secondItem="FQG-Po-dcj" secondAttribute="bottom" constant="8" id="k2H-2n-FCa"/>
                                         </constraints>
                                         <userDefinedRuntimeAttributes>
@@ -359,6 +359,15 @@ to enecuum network</string>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AB1-ub-aze" userLabel="Error label">
+                                        <rect key="frame" x="0.0" y="174" width="319" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="szb-1M-8hf"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="13"/>
+                                        <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="gJ7-gl-LVa" firstAttribute="top" secondItem="AkR-tt-aco" secondAttribute="top" id="DTL-vb-oyY"/>
@@ -367,7 +376,7 @@ to enecuum network</string>
                                 </constraints>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jbo-ye-lEo" customClass="GradientButton" customModule="wallet" customModuleProvider="target">
-                                <rect key="frame" x="57.5" y="373.5" width="260" height="65"/>
+                                <rect key="frame" x="57.5" y="401.5" width="260" height="65"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="jbo-ye-lEo" secondAttribute="height" multiplier="4:1" id="RhZ-nA-Qh5"/>
                                     <constraint firstAttribute="width" constant="260" id="huX-cC-uU7"/>
@@ -462,6 +471,8 @@ Enecuum do not store your private key</string>
                         <outlet property="addressMaskView" destination="9B5-Ha-C4k" id="ykK-g4-qX4"/>
                         <outlet property="addressTextField" destination="iwA-77-2As" id="UpA-qs-Uhs"/>
                         <outlet property="addressView" destination="gJ7-gl-LVa" id="F67-4f-vgs"/>
+                        <outlet property="errorLabel" destination="AB1-ub-aze" id="7st-MW-gNR"/>
+                        <outlet property="privateKeyBorderView" destination="E8q-25-GxW" id="Gq5-V0-cKj"/>
                         <outlet property="privateKeyMaskView" destination="I4j-Ra-saW" id="kgz-32-6cP"/>
                         <outlet property="privateKeyTextField" destination="7YS-bI-vy0" id="J7m-Gu-2Ot"/>
                     </connections>

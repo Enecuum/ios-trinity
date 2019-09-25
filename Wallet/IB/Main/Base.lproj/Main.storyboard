@@ -108,16 +108,16 @@
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ENQ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eid-yK-My0">
-                                        <rect key="frame" x="356.33333333333331" y="18.333333333333332" width="23.666666666666686" height="12"/>
-                                        <fontDescription key="fontDescription" name="TTNorms-Bold" family="TT Norms" pointSize="10"/>
-                                        <color key="textColor" red="0.0" green="0.81960784313725488" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TAj-y6-bI4">
                                         <rect key="frame" x="341" y="11.666666666666668" width="11.333333333333314" height="20"/>
                                         <fontDescription key="fontDescription" name="TTNorms-Bold" family="TT Norms" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ENQ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eid-yK-My0">
+                                        <rect key="frame" x="356.33333333333331" y="18.333333333333332" width="23.666666666666686" height="12"/>
+                                        <fontDescription key="fontDescription" name="TTNorms-Bold" family="TT Norms" pointSize="10"/>
+                                        <color key="textColor" red="0.0" green="0.81960784313725488" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
@@ -159,9 +159,8 @@
                                     <constraint firstAttribute="height" constant="45" id="SSF-xC-ROW"/>
                                 </constraints>
                             </view>
-                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4z9-tx-jXY">
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4z9-tx-jXY" customClass="SendView" customModule="wallet" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="118" width="414" height="556"/>
-                                <color key="backgroundColor" red="0.13725490196078433" green="0.14117647058823529" blue="0.16470588235294117" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -185,7 +184,7 @@
                     </view>
                     <splitViewMasterSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <connections>
-                        <outlet property="paddingView" destination="4z9-tx-jXY" id="sPI-sb-MU3"/>
+                        <outlet property="sendView" destination="4z9-tx-jXY" id="PGl-Ii-nKa"/>
                         <outlet property="tabsView" destination="OHu-UJ-B9W" id="D1c-YH-zDQ"/>
                     </connections>
                 </viewController>

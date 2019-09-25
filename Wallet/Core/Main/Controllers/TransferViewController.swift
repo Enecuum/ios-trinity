@@ -8,7 +8,7 @@ import UIKit
 class TransferViewController: UIViewController {
 
     @IBOutlet weak var tabsView: TabsView!
-    @IBOutlet weak var paddingView: UIView!
+    @IBOutlet weak var sendView: SendView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,11 +17,5 @@ class TransferViewController: UIViewController {
         tabsView.selectorViewColor = .white
         tabsView.selectorTextColor = .white
         tabsView.textColor = .white
-    }
-
-    override func viewDidLayoutSubviews() {
-        super.viewDidLayoutSubviews()
-
-        paddingView.roundCorners(corners: [.topRight, .topLeft], radius: 25)
     }
 }

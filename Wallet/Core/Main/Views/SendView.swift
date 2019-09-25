@@ -7,6 +7,10 @@ import UIKit
 
 class SendView: UIView, NibView {
 
+    @IBOutlet weak var dataView: UIView!
+    @IBOutlet weak var confirmView: UIView!
+    @IBOutlet weak var doneView: UIView!
+
     override init(frame: CGRect) {
         super.init(frame: frame)
         loadViewFromNib()
@@ -21,5 +25,21 @@ class SendView: UIView, NibView {
         super.layoutSubviews()
 
         roundCorners(corners: [.topRight, .topLeft], radius: 25)
+    }
+
+    @IBAction func onSendClicked(_ sender: Any) {
+        confirmView.isHidden = false
+    }
+
+    @IBAction func onRejectClicked(_ sender: Any) {
+        confirmView.isHidden = true
+    }
+
+    @IBAction func onConfirmClicked(_ sender: Any) {
+        doneView.isHidden = false
+        DispatchQueue.main.asyncAfter(deadline: .now() + 3, execute: { [weak self] in
+            self?.confirmView.isHidden = true
+            self?.doneView.isHidden = true
+        })
     }
 }

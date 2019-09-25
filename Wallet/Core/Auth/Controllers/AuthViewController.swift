@@ -30,14 +30,17 @@ class AuthViewController: UIViewController {
             errorLabel.alpha = 0
         } else {
             errorLabel.isHidden = true
+            generateNewWallet()
         }
-
-        //TODO: remove
-        addressTextField.text = "037ac2e935e4ebc1b1512b5e5dfe21436a5e3fccc5b3015c7395mm86dd182ac6"
-        privateKeyTextField.text = "037ac2e935e4ebc1b1512b5e5dfe21436a5e3fccc5b3015c7395mm86dd182ac6"
 
         addGradientMask(textField: addressTextField, maskView: addressMaskView)
         addGradientMask(textField: privateKeyTextField, maskView: privateKeyMaskView)
+    }
+
+    private func generateNewWallet() {
+        let newWallet = WalletHelper.newWallet()
+        addressTextField.text = newWallet.address
+        privateKeyTextField.text = newWallet.privateKey
     }
 
     private func addGradientMask(textField: UITextField, maskView: UIView) {
@@ -64,9 +67,11 @@ class AuthViewController: UIViewController {
     }
 
     @IBAction private func onCopyAddressClicked(_ sender: Any) {
+        UIPasteboard.general.string = addressTextField.text
     }
 
     @IBAction private func onCopyPrivateKeyClicked(_ sender: Any) {
+        UIPasteboard.general.string = privateKeyTextField.text
     }
 
     @IBAction private func onStartClicked(_ sender: Any) {

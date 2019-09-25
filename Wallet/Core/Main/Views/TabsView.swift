@@ -29,7 +29,6 @@ class TabsView: UIView {
 
     override func draw(_ rect: CGRect) {
         super.draw(rect)
-        self.backgroundColor = UIColor.white
         updateView()
     }
 

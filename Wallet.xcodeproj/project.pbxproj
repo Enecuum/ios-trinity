@@ -26,12 +26,14 @@
 		B8EA13E852C7199422A9CDAE /* NibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA1FD8D39ED0115C317AB0 /* NibView.swift */; };
 		B8EA15CBA9C960A2BFA918EB /* TabsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA1506248F3332EFE0E994 /* TabsView.swift */; };
 		B8EA16A409C0D7F92A21D1AD /* AuthMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA1DEA865063CF4BEDC5EA /* AuthMode.swift */; };
+		B8EA178F557753B48D3EB921 /* SwapView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8EA168995FDB5D5200A9D25 /* SwapView.xib */; };
 		B8EA1822B48727D7ADDDBF08 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA1F0AC6F5DA4951A86E7C /* GradientView.swift */; };
 		B8EA182891245D4675ADDF7B /* ReceiveView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8EA11BCF085AD7E415F26FD /* ReceiveView.xib */; };
 		B8EA1924649899AC4079D1A9 /* TransferViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA1A06E3393C3709805246 /* TransferViewController.swift */; };
 		B8EA1AD5D60A2E7DACBB78A8 /* Slider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA121B268DF274D4508B63 /* Slider.swift */; };
 		B8EA1C041CF5B2023AFDC0BE /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA1E69D0A92BCBA9D4AAEA /* AuthViewController.swift */; };
 		B8EA1CC4E9CA358A0E45BB0F /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA101A8262DEB1CE21A0A5 /* UIColor+Extension.swift */; };
+		B8EA1D346E2A804AA6E52308 /* SwapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA14FE6D28D74937B28B55 /* SwapView.swift */; };
 		B8EA1E29300288410B2DFC07 /* SendView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA1506B1F969451F03F8FD /* SendView.swift */; };
 /* End PBXBuildFile section */
 
@@ -56,9 +58,11 @@
 		B8EA121B268DF274D4508B63 /* Slider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Slider.swift; sourceTree = "<group>"; };
 		B8EA1454E4B1EBD958E7E413 /* GradientButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientButton.swift; sourceTree = "<group>"; };
 		B8EA14EA8EB8491A251D3603 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		B8EA14FE6D28D74937B28B55 /* SwapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwapView.swift; sourceTree = "<group>"; };
 		B8EA1506248F3332EFE0E994 /* TabsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabsView.swift; sourceTree = "<group>"; };
 		B8EA1506B1F969451F03F8FD /* SendView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendView.swift; sourceTree = "<group>"; };
 		B8EA15972F01E94FB2FC5BC3 /* ReceiveView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReceiveView.swift; sourceTree = "<group>"; };
+		B8EA168995FDB5D5200A9D25 /* SwapView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SwapView.xib; sourceTree = "<group>"; };
 		B8EA1A06E3393C3709805246 /* TransferViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransferViewController.swift; sourceTree = "<group>"; };
 		B8EA1AB4DE484A22A99E7DFD /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		B8EA1DEA865063CF4BEDC5EA /* AuthMode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthMode.swift; sourceTree = "<group>"; };
@@ -104,6 +108,7 @@
 				356A60CF2333B93F00E8D118 /* Main.storyboard */,
 				35C93FA4233ADD03003EF90B /* SendView.xib */,
 				B8EA11BCF085AD7E415F26FD /* ReceiveView.xib */,
+				B8EA168995FDB5D5200A9D25 /* SwapView.xib */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -247,6 +252,7 @@
 				B8EA1506B1F969451F03F8FD /* SendView.swift */,
 				B8EA121B268DF274D4508B63 /* Slider.swift */,
 				B8EA15972F01E94FB2FC5BC3 /* ReceiveView.swift */,
+				B8EA14FE6D28D74937B28B55 /* SwapView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -337,6 +343,7 @@
 				35B8CE23233A66AD007BC0C8 /* TTNorms-Medium.otf in Resources */,
 				356A60D12333B93F00E8D118 /* Main.storyboard in Resources */,
 				B8EA182891245D4675ADDF7B /* ReceiveView.xib in Resources */,
+				B8EA178F557753B48D3EB921 /* SwapView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,6 +432,7 @@
 				B8EA13E852C7199422A9CDAE /* NibView.swift in Sources */,
 				B8EA1AD5D60A2E7DACBB78A8 /* Slider.swift in Sources */,
 				B8EA10042D35D8D0F8B73B77 /* ReceiveView.swift in Sources */,
+				B8EA1D346E2A804AA6E52308 /* SwapView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

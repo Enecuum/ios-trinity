@@ -6,4 +6,9 @@
 import UIKit
 
 class MainViewController: UIViewController {
+
+    @IBAction func onMenuClicked(_ sender: Any) {
+        let menuViewController = R.storyboard.menu.menuViewController()!
+        present(menuViewController, animated: false)
+    }
 }

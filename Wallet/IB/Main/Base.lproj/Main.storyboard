@@ -162,12 +162,19 @@
                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4z9-tx-jXY" customClass="SendView" customModule="wallet" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="118" width="414" height="556"/>
                             </view>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="54B-LU-6m3" customClass="ReceiveView" customModule="wallet" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="118" width="414" height="556"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="4z9-tx-jXY" firstAttribute="top" secondItem="OHu-UJ-B9W" secondAttribute="bottom" id="1gE-dW-zZY"/>
+                            <constraint firstItem="54B-LU-6m3" firstAttribute="leading" secondItem="ONN-Ms-NAi" secondAttribute="leading" id="ANV-pm-Cai"/>
                             <constraint firstItem="lh2-U7-g4Q" firstAttribute="trailing" secondItem="DGU-78-DHk" secondAttribute="trailing" id="AYd-AY-srE"/>
                             <constraint firstItem="lh2-U7-g4Q" firstAttribute="top" secondItem="DGU-78-DHk" secondAttribute="top" id="D5a-vq-bZd"/>
+                            <constraint firstItem="ONN-Ms-NAi" firstAttribute="bottom" secondItem="54B-LU-6m3" secondAttribute="bottom" id="Ikz-QZ-uOH"/>
+                            <constraint firstItem="54B-LU-6m3" firstAttribute="top" secondItem="OHu-UJ-B9W" secondAttribute="bottom" id="MeN-4H-QmT"/>
+                            <constraint firstItem="54B-LU-6m3" firstAttribute="trailing" secondItem="ONN-Ms-NAi" secondAttribute="trailing" id="V9L-N0-Pp2"/>
                             <constraint firstItem="OHu-UJ-B9W" firstAttribute="leading" secondItem="ONN-Ms-NAi" secondAttribute="leading" constant="18" id="Xy2-bp-R3c"/>
                             <constraint firstItem="TAj-oc-j3M" firstAttribute="leading" secondItem="DGU-78-DHk" secondAttribute="leading" constant="9" id="YPs-6m-UT6"/>
                             <constraint firstItem="4z9-tx-jXY" firstAttribute="bottom" secondItem="ONN-Ms-NAi" secondAttribute="bottom" id="b3j-Oc-l0o"/>

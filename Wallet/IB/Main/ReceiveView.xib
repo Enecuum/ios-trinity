@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="TTNorms-Medium.otf">
+            <string>TTNorms-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ReceiveView" customModule="wallet" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="344" height="490"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p0T-O5-dv9">
+                    <rect key="frame" x="28" y="49" width="288" height="50"/>
+                    <subviews>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0tz-lX-sOI" userLabel="Address Field">
+                            <rect key="frame" x="19" y="0.0" width="230" height="50"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="15"/>
+                            <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="go" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                        </textField>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a6J-nV-wOw" userLabel="Copy Button">
+                            <rect key="frame" x="251" y="0.0" width="28" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="28" id="24E-cK-C0J"/>
+                            </constraints>
+                            <state key="normal" image="Icons/copy"/>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="a6J-nV-wOw" firstAttribute="leading" secondItem="0tz-lX-sOI" secondAttribute="trailing" constant="2" id="2FS-E8-ePH"/>
+                        <constraint firstItem="0tz-lX-sOI" firstAttribute="top" secondItem="p0T-O5-dv9" secondAttribute="top" id="9AD-jF-RXb"/>
+                        <constraint firstAttribute="height" constant="50" id="9gz-xY-Nrs"/>
+                        <constraint firstAttribute="bottom" secondItem="0tz-lX-sOI" secondAttribute="bottom" id="DOw-TS-O72"/>
+                        <constraint firstItem="a6J-nV-wOw" firstAttribute="top" secondItem="p0T-O5-dv9" secondAttribute="top" id="UyT-c9-Icu"/>
+                        <constraint firstAttribute="trailing" secondItem="a6J-nV-wOw" secondAttribute="trailing" constant="9" id="b3e-VW-S7b"/>
+                        <constraint firstAttribute="bottom" secondItem="a6J-nV-wOw" secondAttribute="bottom" id="od9-iQ-5lG"/>
+                        <constraint firstItem="0tz-lX-sOI" firstAttribute="leading" secondItem="p0T-O5-dv9" secondAttribute="leading" constant="19" id="vkI-BY-rO3"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" red="0.36078431370000003" green="0.3803921569" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Transfer/qrBorder" translatesAutoresizingMaskIntoConstraints="NO" id="q69-Y1-B6x">
+                    <rect key="frame" x="93.5" y="116" width="157" height="151.5"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="157" id="VNP-Nt-GFk"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IXN-Xe-9a5">
+                    <rect key="frame" x="112.5" y="290.5" width="119" height="24"/>
+                    <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="13"/>
+                    <state key="normal" title="  Share QR code" image="Icons/share"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.13725490200000001" green="0.14117647059999999" blue="0.1647058824" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <constraints>
+                <constraint firstItem="p0T-O5-dv9" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="49" id="5qc-Ff-yjT"/>
+                <constraint firstAttribute="trailing" secondItem="p0T-O5-dv9" secondAttribute="trailing" constant="28" id="Dor-Xx-q32"/>
+                <constraint firstItem="IXN-Xe-9a5" firstAttribute="top" secondItem="q69-Y1-B6x" secondAttribute="bottom" constant="23" id="Gzv-jp-6bo"/>
+                <constraint firstItem="IXN-Xe-9a5" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="HLB-fq-jQ0"/>
+                <constraint firstItem="q69-Y1-B6x" firstAttribute="top" secondItem="p0T-O5-dv9" secondAttribute="bottom" constant="17" id="OlF-Fa-QOB"/>
+                <constraint firstItem="q69-Y1-B6x" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Y0K-fV-VkK"/>
+                <constraint firstItem="p0T-O5-dv9" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="28" id="sVu-Ic-xD5"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="188.40579710144928" y="0.6696428571428571"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Icons/copy" width="27" height="27"/>
+        <image name="Icons/share" width="24" height="24"/>
+        <image name="Transfer/qrBorder" width="157" height="151.5"/>
+    </resources>
+</document>

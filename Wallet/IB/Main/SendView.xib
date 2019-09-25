@@ -367,10 +367,54 @@
                         <constraint firstItem="TQZ-yR-pkP" firstAttribute="leading" secondItem="hS6-JE-e8N" secondAttribute="leading" constant="40" id="tge-nz-bIg"/>
                     </constraints>
                 </view>
+                <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4al-0G-0mk" userLabel="Done View">
+                    <rect key="frame" x="0.0" y="0.0" width="344" height="490"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Transfer/circle" translatesAutoresizingMaskIntoConstraints="NO" id="Zkn-DS-Lb6">
+                            <rect key="frame" x="95.5" y="168.5" width="153" height="153"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="153" id="NW7-kg-FuK"/>
+                                <constraint firstAttribute="height" constant="153" id="eJV-rL-HBG"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                    <color key="value" red="0.25098039220000001" green="0.61960784310000006" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                    <real key="value" value="40"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                    <real key="value" value="0.5"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                    <size key="value" width="0.0" height="0.0"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </imageView>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Transfer/tick" translatesAutoresizingMaskIntoConstraints="NO" id="qFz-PW-eN0">
+                            <rect key="frame" x="142" y="225" width="60" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="C9D-JB-qnR"/>
+                                <constraint firstAttribute="width" constant="60" id="IV5-JN-jAY"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.13725490200000001" green="0.14117647059999999" blue="0.1647058824" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstItem="Zkn-DS-Lb6" firstAttribute="centerX" secondItem="4al-0G-0mk" secondAttribute="centerX" id="3d8-HQ-tFs"/>
+                        <constraint firstItem="qFz-PW-eN0" firstAttribute="centerY" secondItem="4al-0G-0mk" secondAttribute="centerY" id="63F-Xo-pYS"/>
+                        <constraint firstItem="qFz-PW-eN0" firstAttribute="centerX" secondItem="4al-0G-0mk" secondAttribute="centerX" id="HB1-al-uSN"/>
+                        <constraint firstItem="Zkn-DS-Lb6" firstAttribute="centerY" secondItem="4al-0G-0mk" secondAttribute="centerY" id="HNj-q2-2ED"/>
+                    </constraints>
+                </view>
             </subviews>
             <color key="backgroundColor" red="0.13725490200000001" green="0.14117647059999999" blue="0.1647058824" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
             <constraints>
+                <constraint firstAttribute="trailing" secondItem="4al-0G-0mk" secondAttribute="trailing" id="5b6-h5-Cu2"/>
                 <constraint firstAttribute="bottom" secondItem="hS6-JE-e8N" secondAttribute="bottom" id="NRv-8d-SFM"/>
+                <constraint firstItem="4al-0G-0mk" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="bqt-mg-5sk"/>
+                <constraint firstAttribute="bottom" secondItem="4al-0G-0mk" secondAttribute="bottom" id="fMt-SM-0Z7"/>
+                <constraint firstItem="4al-0G-0mk" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="jUH-E5-Gvg"/>
                 <constraint firstItem="hS6-JE-e8N" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="nPr-RZ-MP6"/>
                 <constraint firstAttribute="bottom" secondItem="dV5-Ux-QqK" secondAttribute="bottom" id="q1n-gL-2rx"/>
                 <constraint firstAttribute="trailing" secondItem="dV5-Ux-QqK" secondAttribute="trailing" id="qJl-Qi-ApB"/>
@@ -387,5 +431,7 @@
         <image name="Icons/cross" width="12.5" height="12"/>
         <image name="Icons/qr" width="28.5" height="28.5"/>
         <image name="Icons/tick" width="16" height="16"/>
+        <image name="Transfer/circle" width="154" height="154"/>
+        <image name="Transfer/tick" width="63.5" height="45.5"/>
     </resources>
 </document>

@@ -15,4 +15,9 @@ class WalletHelper {
 
         return (privateKey.toHexString(), compressedPublicKey.toHexString())
     }
+
+    class func isValidPrivateKey(_ key: String) -> Bool {
+        let uintPrivateKey = Array(hex: key)
+        return Secp256k1.isValidPrivateKey(uintPrivateKey)
+    }
 }

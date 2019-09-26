@@ -116,6 +116,13 @@ class AuthViewController: UIViewController {
         privateKeyTextField.endEditing(true)
 
         guard let privateKey = privateKeyTextField.text, privateKey.count == Constants.privateKeyLength else {
+            print("Incorrect format of private key")
+
+            setImportError(true, errorText: "Incorrect format of private key")
+            return
+        }
+
+        if !WalletHelper.isValidPrivateKey(privateKey) {
             print("Invalid private key")
 
             setImportError(true, errorText: "Invalid private key")

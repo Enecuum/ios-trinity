@@ -41,6 +41,7 @@
 		B8EA1C041CF5B2023AFDC0BE /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA1E69D0A92BCBA9D4AAEA /* AuthViewController.swift */; };
 		B8EA1CC4E9CA358A0E45BB0F /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA101A8262DEB1CE21A0A5 /* UIColor+Extension.swift */; };
 		B8EA1D346E2A804AA6E52308 /* SwapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA14FE6D28D74937B28B55 /* SwapView.swift */; };
+		B8EA1E0979AC35B894DA7F7D /* KeychainPasswordItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA1736201913A7A18D87BB /* KeychainPasswordItem.swift */; };
 		B8EA1E29300288410B2DFC07 /* SendView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA1506B1F969451F03F8FD /* SendView.swift */; };
 /* End PBXBuildFile section */
 
@@ -75,6 +76,7 @@
 		B8EA153FCAB0D191495A8C99 /* MenuTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
 		B8EA15972F01E94FB2FC5BC3 /* ReceiveView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReceiveView.swift; sourceTree = "<group>"; };
 		B8EA168995FDB5D5200A9D25 /* SwapView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SwapView.xib; sourceTree = "<group>"; };
+		B8EA1736201913A7A18D87BB /* KeychainPasswordItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainPasswordItem.swift; sourceTree = "<group>"; };
 		B8EA187D7B0E33D8CE47C5D7 /* WalletHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalletHelper.swift; sourceTree = "<group>"; };
 		B8EA1A06E3393C3709805246 /* TransferViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransferViewController.swift; sourceTree = "<group>"; };
 		B8EA1AB4DE484A22A99E7DFD /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
@@ -178,6 +180,7 @@
 			children = (
 				3563230E2338064D007F06E6 /* Controllers */,
 				B8EA1DEA865063CF4BEDC5EA /* AuthMode.swift */,
+				B8EA1736201913A7A18D87BB /* KeychainPasswordItem.swift */,
 			);
 			path = Auth;
 			sourceTree = "<group>";
@@ -509,6 +512,7 @@
 				B8EA17D142D8F7F87EFC69D5 /* Array+Extension.swift in Sources */,
 				B8EA1617BC48D1A4733B604A /* Secp256k1Swift.swift in Sources */,
 				B8EA15AB5BE6A3A17F66EB3E /* WalletHelper.swift in Sources */,
+				B8EA1E0979AC35B894DA7F7D /* KeychainPasswordItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -11,6 +11,7 @@ import UIKit
 class AuthViewController: UIViewController {
 
     @IBOutlet weak var addressView: UIView!
+    @IBOutlet weak var addressBorderView: UIView!
     @IBOutlet weak var addressTextField: UITextField!
     @IBOutlet weak var addressMaskView: UIView!
 
@@ -20,6 +21,11 @@ class AuthViewController: UIViewController {
 
     @IBOutlet weak var errorLabel: UILabel!
 
+    struct Constants{
+        static let addressLength: Int = 66
+        static let privateKeyLength: Int = 64
+    }
+
     var authMode: AuthMode = .walletImport
 
     override func viewDidLoad() {
@@ -28,20 +34,23 @@ class AuthViewController: UIViewController {
         if authMode == .walletImport {
             addressView.isHidden = true
             errorLabel.alpha = 0
+
+            privateKeyTextField.isUserInteractionEnabled = true
+            addGradientMask(textField: privateKeyTextField, maskView: privateKeyMaskView)
         } else {
             errorLabel.isHidden = true
-            generateNewWallet()
+
+            privateKeyTextField.isUserInteractionEnabled = false
+            addressTextField.isUserInteractionEnabled = false
+
+            addGradientMask(textField: addressTextField, maskView: addressMaskView)
+            addGradientMask(textField: privateKeyTextField, maskView: privateKeyMaskView)
+
+            generateNewWalletData()
         }
-
-        addGradientMask(textField: addressTextField, maskView: addressMaskView)
-        addGradientMask(textField: privateKeyTextField, maskView: privateKeyMaskView)
     }
 
-    private func generateNewWallet() {
-        let newWallet = WalletHelper.newWallet()
-        addressTextField.text = newWallet.address
-        privateKeyTextField.text = newWallet.privateKey
-    }
+    // MARK: - UI
 
     private func addGradientMask(textField: UITextField, maskView: UIView) {
         let gradientLayer = CAGradientLayer()
@@ -55,9 +64,15 @@ class AuthViewController: UIViewController {
 
     private func setImportError(_ error: Bool, errorText: String? = nil) {
         privateKeyBorderView.borderColor = error ? Palette.errorRed : Palette.borderGray
+        addressBorderView.borderColor = error ? Palette.errorRed : Palette.borderGray
 
-        let caLayer = privateKeyMaskView.layer as CALayer
-        if let gradientLayer = caLayer.sublayers?[0] as? CAGradientLayer {
+        let privateKeyCaLayer = privateKeyMaskView.layer as CALayer
+        if let gradientLayer = privateKeyCaLayer.sublayers?[0] as? CAGradientLayer {
+            let colors = error ? Palette.inputErrorGradient : Palette.inputGradient
+            gradientLayer.colors = colors.map { $0.cgColor }
+        }
+        let addressCaLayer = addressMaskView.layer as CALayer
+        if let gradientLayer = addressCaLayer.sublayers?[0] as? CAGradientLayer {
             let colors = error ? Palette.inputErrorGradient : Palette.inputGradient
             gradientLayer.colors = colors.map { $0.cgColor }
         }
@@ -65,6 +80,8 @@ class AuthViewController: UIViewController {
         errorLabel.alpha = error ? 1 : 0
         errorLabel.text = errorText
     }
+
+    // MARK: - IBActions
 
     @IBAction private func onCopyAddressClicked(_ sender: Any) {
         UIPasteboard.general.string = addressTextField.text
@@ -75,13 +92,56 @@ class AuthViewController: UIViewController {
     }
 
     @IBAction private func onStartClicked(_ sender: Any) {
-        let initialViewController = R.storyboard.main().instantiateInitialViewController()
-        let appDelegate = UIApplication.shared.delegate as! AppDelegate
-        appDelegate.window!.rootViewController = initialViewController
+        switch authMode {
+        case .walletCreation:
+            createNewWallet()
+        case .walletImport:
+            importWallet()
+        }
     }
 
     @IBAction private func onBackClicked(_ sender: Any) {
         dismiss(animated: false)
+    }
+
+    // MARK: - Wallet
+
+    private func generateNewWalletData() {
+        let newWallet = WalletHelper.newWallet()
+        addressTextField.text = newWallet.address
+        privateKeyTextField.text = newWallet.privateKey
+    }
+
+    private func importWallet() {
+        privateKeyTextField.endEditing(true)
+
+        guard let privateKey = privateKeyTextField.text, privateKey.count == Constants.privateKeyLength else {
+            print("Invalid private key")
+
+            setImportError(true, errorText: "Invalid private key")
+            return
+        }
+        openWallet(privateKey)
+    }
+
+    private func createNewWallet() {
+        guard let address = addressTextField.text, address.count == Constants.addressLength else {
+            setImportError(true, errorText: "Unknown error")
+            print("Invalid address")
+            return
+        }
+        guard let privateKey = privateKeyTextField.text, privateKey.count == Constants.privateKeyLength else {
+            setImportError(true, errorText: "Unknown error")
+            print("Invalid private key")
+            return
+        }
+        openWallet(privateKey)
+    }
+
+    private func openWallet(_ key: String) {
+        let initialViewController = R.storyboard.main().instantiateInitialViewController()
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        appDelegate.window!.rootViewController = initialViewController
     }
 }
 

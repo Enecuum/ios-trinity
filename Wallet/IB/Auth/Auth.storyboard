@@ -468,6 +468,7 @@ Enecuum do not store your private key</string>
                         <viewLayoutGuide key="safeArea" id="AN8-yX-Aki"/>
                     </view>
                     <connections>
+                        <outlet property="addressBorderView" destination="L8Q-Qk-kOj" id="n0p-aY-Z1R"/>
                         <outlet property="addressMaskView" destination="9B5-Ha-C4k" id="ykK-g4-qX4"/>
                         <outlet property="addressTextField" destination="iwA-77-2As" id="UpA-qs-Uhs"/>
                         <outlet property="addressView" destination="gJ7-gl-LVa" id="F67-4f-vgs"/>

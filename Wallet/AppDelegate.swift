@@ -12,13 +12,10 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-    
+
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 
-        //TODO: check if authed
-        //TODO: try to retrieve a key from keychain or enclave
-
-        if true {
+        if !AuthManager.isSignedIn() {
             let initialViewController = R.storyboard.auth().instantiateInitialViewController()
             window?.rootViewController = initialViewController
             window?.makeKeyAndVisible()

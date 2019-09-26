@@ -139,6 +139,8 @@ class AuthViewController: UIViewController {
     }
 
     private func openWallet(_ key: String) {
+        AuthManager.signIn(key)
+
         let initialViewController = R.storyboard.main().instantiateInitialViewController()
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         appDelegate.window!.rootViewController = initialViewController

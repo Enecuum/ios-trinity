@@ -1,24 +1,28 @@
 PODS:
+  - CryptoSwift (1.0.0)
   - R.swift (5.0.3):
     - R.swift.Library (~> 5.0.0)
   - R.swift.Library (5.0.1)
   - secp256k1.swift (0.1.4)
 
 DEPENDENCIES:
+  - CryptoSwift
   - R.swift
   - secp256k1.swift
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - CryptoSwift
     - R.swift
     - R.swift.Library
     - secp256k1.swift
 
 SPEC CHECKSUMS:
+  CryptoSwift: d81eeaa59dc5a8d03720fe919a6fd07b51f7439f
   R.swift: f5a87643b91ea569d23d6afb3eee9c743edde239
   R.swift.Library: cfe85d569d9bae6cb262922db130e7c3a7a5fad1
   secp256k1.swift: a7e7a214f6db6ce5db32cc6b2b45e5c4dd633634
 
-PODFILE CHECKSUM: 1e3f4774fe47d3929dc9545cac1e7b14a1fb92ad
+PODFILE CHECKSUM: 319198ea38273761e470d98c7b2477434c613baf
 
 COCOAPODS: 1.7.5

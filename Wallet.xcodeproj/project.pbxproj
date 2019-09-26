@@ -22,6 +22,7 @@
 		35C93FAB233B0D2B003EF90B /* MenuTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35C93FA9233B0538003EF90B /* MenuTableViewCell.xib */; };
 		B8EA10042D35D8D0F8B73B77 /* ReceiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA15972F01E94FB2FC5BC3 /* ReceiveView.swift */; };
 		B8EA121C55AEAAE0ED0F306B /* Palette.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA110F9290250EC4D79180 /* Palette.swift */; };
+		B8EA12606E90F967E84A040E /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA11F255A323DDBD75F780 /* AuthManager.swift */; };
 		B8EA1347970505193E9CD473 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA1AB4DE484A22A99E7DFD /* UIView+Extension.swift */; };
 		B8EA135ACA1DCB77A9B3928C /* GradientButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA1454E4B1EBD958E7E413 /* GradientButton.swift */; };
 		B8EA13A051ECAFB38A3C6C8A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA14EA8EB8491A251D3603 /* MainViewController.swift */; };
@@ -66,6 +67,7 @@
 		B8EA10E4437B39F7691B4E73 /* Array+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Extension.swift"; sourceTree = "<group>"; };
 		B8EA110F9290250EC4D79180 /* Palette.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Palette.swift; sourceTree = "<group>"; };
 		B8EA11BCF085AD7E415F26FD /* ReceiveView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReceiveView.xib; sourceTree = "<group>"; };
+		B8EA11F255A323DDBD75F780 /* AuthManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
 		B8EA121B268DF274D4508B63 /* Slider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Slider.swift; sourceTree = "<group>"; };
 		B8EA1454E4B1EBD958E7E413 /* GradientButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientButton.swift; sourceTree = "<group>"; };
 		B8EA14752B8C5D97AE37EEE6 /* Secp256k1Swift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Secp256k1Swift.swift; sourceTree = "<group>"; };
@@ -181,6 +183,7 @@
 				3563230E2338064D007F06E6 /* Controllers */,
 				B8EA1DEA865063CF4BEDC5EA /* AuthMode.swift */,
 				B8EA1736201913A7A18D87BB /* KeychainPasswordItem.swift */,
+				B8EA11F255A323DDBD75F780 /* AuthManager.swift */,
 			);
 			path = Auth;
 			sourceTree = "<group>";
@@ -513,6 +516,7 @@
 				B8EA1617BC48D1A4733B604A /* Secp256k1Swift.swift in Sources */,
 				B8EA15AB5BE6A3A17F66EB3E /* WalletHelper.swift in Sources */,
 				B8EA1E0979AC35B894DA7F7D /* KeychainPasswordItem.swift in Sources */,
+				B8EA12606E90F967E84A040E /* AuthManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

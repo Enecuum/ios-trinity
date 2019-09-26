@@ -303,6 +303,9 @@ to enecuum network</string>
                                                         <nil key="textColor"/>
                                                         <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="15"/>
                                                         <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="go" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                                                        <connections>
+                                                            <outlet property="delegate" destination="jP7-Qb-jII" id="ycc-p4-0eY"/>
+                                                        </connections>
                                                     </textField>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cOO-xN-7P7" userLabel="Private Key Copy">
                                                         <rect key="frame" x="283" y="0.0" width="27" height="48"/>
@@ -416,8 +419,7 @@ to enecuum network</string>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="onNewWalletClicked:" destination="cWp-wV-Lo9" eventType="touchUpInside" id="z7I-N2-Xuj"/>
-                                    <action selector="onStartClicked:" destination="jP7-Qb-jII" eventType="touchUpInside" id="IoC-gf-cdp"/>
+                                    <action selector="onStartClicked" destination="jP7-Qb-jII" eventType="touchUpInside" id="tLN-eI-Z0Q"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icons/exclamation" translatesAutoresizingMaskIntoConstraints="NO" id="b5Q-9b-v1p">

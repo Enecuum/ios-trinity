@@ -21,7 +21,7 @@ class AuthViewController: UIViewController {
 
     @IBOutlet weak var errorLabel: UILabel!
 
-    struct Constants{
+    struct Constants {
         static let addressLength: Int = 66
         static let privateKeyLength: Int = 64
     }
@@ -91,7 +91,7 @@ class AuthViewController: UIViewController {
         UIPasteboard.general.string = privateKeyTextField.text
     }
 
-    @IBAction private func onStartClicked(_ sender: Any) {
+    @IBAction private func onStartClicked() {
         switch authMode {
         case .walletCreation:
             createNewWallet()
@@ -145,3 +145,14 @@ class AuthViewController: UIViewController {
     }
 }
 
+extension AuthViewController: UITextFieldDelegate {
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        setImportError(false)
+    }
+
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        onStartClicked()
+        return true
+    }
+}

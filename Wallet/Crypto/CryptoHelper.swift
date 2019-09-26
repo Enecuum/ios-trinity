@@ -3,9 +3,9 @@
 // Copyright (c) 2019 Enecuum. All rights reserved.
 //
 
-class WalletHelper {
+class CryptoHelper {
 
-    class func newWallet() -> (privateKey: String, address: String) {
+    class func generateKeyPair() -> (privateKey: String, address: String) {
         let (privateKey, publicKey) = try! Secp256k1.keyPair()
         let compressedPublicKey = try! Secp256k1.compressPublicKey(publicKey)
 
@@ -19,5 +19,12 @@ class WalletHelper {
     class func isValidPrivateKey(_ key: String) -> Bool {
         let uintPrivateKey = Array(hex: key)
         return Secp256k1.isValidPrivateKey(uintPrivateKey)
+    }
+
+    class func getAddress() -> String {
+        let uintPrivateKey = Array(hex: AuthManager.key())
+        let publicKey = try! Secp256k1.derivePublicKey(for: uintPrivateKey)
+        let compressedPublicKey = try! Secp256k1.compressPublicKey(publicKey)
+        return compressedPublicKey.toHexString()
     }
 }

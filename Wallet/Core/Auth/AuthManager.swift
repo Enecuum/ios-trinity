@@ -24,6 +24,10 @@ class AuthManager {
         return false
     }
 
+    class func key() -> String {
+        return try! KeychainPasswordItem(service: Constants.serviceName, account: Constants.accountName).readPassword()
+    }
+
     struct Constants {
         static let serviceName: String = "EnecuumWalletAuthService"
         static let accountName: String = "login"

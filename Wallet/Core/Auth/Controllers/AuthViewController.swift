@@ -107,7 +107,7 @@ class AuthViewController: UIViewController {
     // MARK: - Wallet
 
     private func generateNewWalletData() {
-        let newWallet = WalletHelper.newWallet()
+        let newWallet = CryptoHelper.generateKeyPair()
         addressTextField.text = newWallet.address
         privateKeyTextField.text = newWallet.privateKey
     }
@@ -122,7 +122,7 @@ class AuthViewController: UIViewController {
             return
         }
 
-        if !WalletHelper.isValidPrivateKey(privateKey) {
+        if !CryptoHelper.isValidPrivateKey(privateKey) {
             print("Invalid private key")
 
             setImportError(true, errorText: "Invalid private key")

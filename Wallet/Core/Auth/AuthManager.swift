@@ -9,6 +9,10 @@ class AuthManager {
         try! KeychainPasswordItem(service: Constants.serviceName, account: Constants.accountName).savePassword(key)
     }
 
+    class func signOut() {
+        try! KeychainPasswordItem(service: Constants.serviceName, account: Constants.accountName).deleteItem()
+    }
+
     class func isSignedIn() -> Bool {
         do {
             let password = try KeychainPasswordItem(service: Constants.serviceName,

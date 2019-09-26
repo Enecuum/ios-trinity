@@ -19,9 +19,13 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SendView" customModule="wallet" customModuleProvider="target">
             <connections>
+                <outlet property="amountSlider" destination="lt1-ip-vxA" id="YbY-BL-Euy"/>
                 <outlet property="confirmView" destination="hS6-JE-e8N" id="fMU-DR-bdQ"/>
                 <outlet property="dataView" destination="dV5-Ux-QqK" id="mNV-XW-kNM"/>
                 <outlet property="doneView" destination="4al-0G-0mk" id="eSA-1u-9Zb"/>
+                <outlet property="errorLabel" destination="zxo-JR-5Sd" id="g3Y-Im-zRy"/>
+                <outlet property="receiverTextField" destination="7Yd-E0-itH" id="Rzf-jp-QlB"/>
+                <outlet property="sendAmountTextField" destination="hmg-90-nXL" id="AzV-EV-xjw"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -58,9 +62,12 @@
                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7Yd-E0-itH" userLabel="To Field">
                                     <rect key="frame" x="19" y="0.0" width="230" height="50"/>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    <nil key="textColor"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="15"/>
                                     <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="go" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                                    <connections>
+                                        <outlet property="delegate" destination="-1" id="w81-aF-2SV"/>
+                                    </connections>
                                 </textField>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LR8-XS-4po" userLabel="To QR">
                                     <rect key="frame" x="251" y="0.0" width="28" height="50"/>
@@ -68,6 +75,9 @@
                                         <constraint firstAttribute="width" constant="28" id="Daq-2c-Zab"/>
                                     </constraints>
                                     <state key="normal" image="Icons/qr"/>
+                                    <connections>
+                                        <action selector="onQrClicked:" destination="-1" eventType="touchUpInside" id="yri-fL-w9Y"/>
+                                    </connections>
                                 </button>
                             </subviews>
                             <constraints>
@@ -96,7 +106,7 @@
                                 </userDefinedRuntimeAttribute>
                             </userDefinedRuntimeAttributes>
                         </view>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zxo-JR-5Sd" userLabel="Error label">
+                        <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zxo-JR-5Sd" userLabel="Error label">
                             <rect key="frame" x="157" y="86" width="30" height="20"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="20" id="Eqi-8i-Kxi"/>
@@ -114,28 +124,32 @@
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7hn-xT-QbD">
                             <rect key="frame" x="28" y="147" width="288" height="50"/>
                             <subviews>
-                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hmg-90-nXL" userLabel="Address Field">
-                                    <rect key="frame" x="19" y="0.0" width="16" height="50"/>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hmg-90-nXL" userLabel="Amount Field">
+                                    <rect key="frame" x="19" y="0.0" width="234.5" height="50"/>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <fontDescription key="fontDescription" name="TTNorms-Bold" family="TT Norms" pointSize="17"/>
-                                    <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="go" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                                    <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="decimalPad" returnKeyType="go" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                                    <connections>
+                                        <outlet property="delegate" destination="-1" id="eT9-9V-Nyq"/>
+                                    </connections>
                                 </textField>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ENQ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4aG-eo-C1g">
-                                    <rect key="frame" x="37" y="21.5" width="23.5" height="12"/>
+                                    <rect key="frame" x="255.5" y="21.5" width="23.5" height="12"/>
                                     <fontDescription key="fontDescription" name="TTNorms-Bold" family="TT Norms" pointSize="10"/>
                                     <color key="textColor" red="0.0" green="0.81960784310000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                             </subviews>
                             <constraints>
+                                <constraint firstItem="4aG-eo-C1g" firstAttribute="leading" secondItem="hmg-90-nXL" secondAttribute="trailing" constant="2" id="4K0-78-8nf"/>
                                 <constraint firstItem="hmg-90-nXL" firstAttribute="top" secondItem="7hn-xT-QbD" secondAttribute="top" id="KBR-f7-CO0"/>
                                 <constraint firstAttribute="height" constant="50" id="MCA-Xv-9Vu"/>
                                 <constraint firstItem="hmg-90-nXL" firstAttribute="centerY" secondItem="7hn-xT-QbD" secondAttribute="centerY" id="XeN-Ph-qNO"/>
+                                <constraint firstAttribute="trailing" secondItem="4aG-eo-C1g" secondAttribute="trailing" constant="9" id="ezf-83-2m0"/>
                                 <constraint firstItem="4aG-eo-C1g" firstAttribute="firstBaseline" secondItem="hmg-90-nXL" secondAttribute="firstBaseline" id="fuU-sK-0yc"/>
                                 <constraint firstAttribute="bottom" secondItem="hmg-90-nXL" secondAttribute="bottom" id="k2V-c5-yxb"/>
                                 <constraint firstItem="hmg-90-nXL" firstAttribute="leading" secondItem="7hn-xT-QbD" secondAttribute="leading" constant="19" id="omm-Ye-27D"/>
-                                <constraint firstItem="4aG-eo-C1g" firstAttribute="leading" secondItem="hmg-90-nXL" secondAttribute="trailing" constant="2" id="yDK-HF-TEA"/>
                             </constraints>
                             <userDefinedRuntimeAttributes>
                                 <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">

@@ -24,6 +24,7 @@ class AuthViewController: UIViewController {
     struct Constants {
         static let addressLength: Int = 66
         static let privateKeyLength: Int = 64
+        static let acceptableChars = "0123456789abcdef"
     }
 
     var authMode: AuthMode = .walletImport
@@ -167,5 +168,11 @@ extension AuthViewController: UITextFieldDelegate {
             onStartClicked()
         }
         return true
+    }
+
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        let charSet = NSCharacterSet(charactersIn: Constants.acceptableChars).inverted
+        let filtered = string.components(separatedBy: charSet).joined(separator: "")
+        return (string == filtered)
     }
 }

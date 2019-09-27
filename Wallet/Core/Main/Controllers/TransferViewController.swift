@@ -4,14 +4,33 @@
 //
 
 import UIKit
+import QRCodeReader
+import AVFoundation
 
 class TransferViewController: UIViewController {
 
     @IBOutlet weak var balanceAmountLabel: UILabel!
+
     @IBOutlet weak var tabsView: TabsView!
     @IBOutlet weak var sendView: SendView!
     @IBOutlet weak var receiveView: ReceiveView!
     @IBOutlet weak var swapView: SwapView!
+
+    struct Constants {
+        static let balanceMultiplier: Decimal = Decimal(0.0000000001)
+    }
+
+    lazy var readerVC: QRCodeReaderViewController = {
+        let builder = QRCodeReaderViewControllerBuilder {
+            $0.reader = QRCodeReader(metadataObjectTypes: [.qr], captureDevicePosition: .front)
+            $0.showTorchButton = false
+            $0.showSwitchCameraButton = true
+            $0.showCancelButton = true
+            $0.showOverlayView = true
+            $0.rectOfInterest = CGRect(x: 0.15, y: 0.15, width: 0.7, height: 0.7)
+        }
+        return QRCodeReaderViewController(builder: builder)
+    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,32 +41,40 @@ class TransferViewController: UIViewController {
         tabsView.textColor = .white
         tabsView.delegate = self
 
-        sendView.delegate = self
         sendView.isHidden = false
+        sendView.delegate = self
         receiveView.isHidden = true
         swapView.isHidden = true
+    }
 
-        fetchBalance()
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+
+        fetchBalance { [weak self] amount in
+            if let amount = amount {
+                self?.balanceAmountLabel.text = "\(amount)"
+                self?.sendView.updateMaxValue(maxValue: amount)
+            }
+        }
     }
 
     // MARK: - Server
 
-    private func fetchBalance() {
-        ApiClient.balance(id: CryptoHelper.getAddress()) { [weak self] result in
+    private func fetchBalance(completion: @escaping (Decimal?) -> Void) {
+        ApiClient.balance(id: CryptoHelper.getAddress()) { result in
             switch result {
             case .success(let balanceAmount):
-                print(balanceAmount)
-
+                debugPrint(balanceAmount)
                 guard let decimalAmount = Decimal(string: String(balanceAmount.amount)) else {
                     print("Failed to convert balanceAmount")
+                    completion(nil)
                     return
                 }
-                let amount = decimalAmount * Decimal(0.0000000001)
-                self?.balanceAmountLabel.text = "\(amount)"
-
-                self?.sendView.updateBalance(amount)
+                let amount = decimalAmount * Constants.balanceMultiplier
+                completion(amount)
             case .failure(let error):
                 print(error.localizedDescription)
+                completion(nil)
             }
         }
     }
@@ -73,8 +100,42 @@ extension TransferViewController: CustomSegmentedControlDelegate {
     }
 }
 
+extension TransferViewController: QRCodeReaderViewControllerDelegate {
+    func reader(_ reader: QRCodeReaderViewController, didScanResult result: QRCodeReaderResult) {
+        reader.stopScanning()
+        dismiss(animated: true, completion: nil)
+    }
+
+    func reader(_ reader: QRCodeReaderViewController, didSwitchCamera newCaptureDevice: AVCaptureDeviceInput) {
+    }
+
+    func readerDidCancel(_ reader: QRCodeReaderViewController) {
+        reader.stopScanning()
+        dismiss(animated: true, completion: nil)
+    }
+}
+
 extension TransferViewController: SendViewDelegate {
-    func updateBalance() {
-        fetchBalance()
+    func checkMaxSendValue(completion: @escaping (Decimal?) -> Void) {
+        //start progress
+        fetchBalance { [weak self] amount in
+            //stop progress
+            completion(amount)
+            if let amount = amount {
+                self?.balanceAmountLabel.text = "\(amount)"
+            }
+        }
+    }
+
+    func readQrCode() {
+        readerVC.delegate = self
+        readerVC.completionBlock = { [weak self] (result: QRCodeReaderResult?) in
+            if let address = result?.value {
+                debugPrint(address)
+                self?.sendView.setReceiverAddress(address: address)
+            }
+        }
+        readerVC.modalPresentationStyle = .formSheet
+        present(readerVC, animated: true, completion: nil)
     }
 }

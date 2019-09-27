@@ -21,7 +21,7 @@
         <!--Welcome View Controller-->
         <scene sceneID="lbg-BC-6A2">
             <objects>
-                <viewController storyboardIdentifier="welcomeViewController" id="cWp-wV-Lo9" customClass="WelcomeViewController" customModule="wallet" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="welcomeViewController" id="cWp-wV-Lo9" customClass="WelcomeViewController" customModule="Enecuum_Wallet" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MPQ-CO-ILX">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -36,7 +36,7 @@
                                     <constraint firstAttribute="width" constant="210" id="fpz-IG-C2h"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="512-Xu-cnX" customClass="GradientButton" customModule="wallet" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="512-Xu-cnX" customClass="GradientButton" customModule="Enecuum_Wallet" customModuleProvider="target">
                                 <rect key="frame" x="57.5" y="284.5" width="260" height="65"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="260" id="FsN-aX-8cE"/>
@@ -80,7 +80,7 @@
                                     <action selector="onNewWalletClicked:" destination="cWp-wV-Lo9" eventType="touchUpInside" id="us4-Wk-E2E"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n8K-Pa-aEc" customClass="GradientButton" customModule="wallet" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n8K-Pa-aEc" customClass="GradientButton" customModule="Enecuum_Wallet" customModuleProvider="target">
                                 <rect key="frame" x="57.5" y="365.5" width="260" height="65"/>
                                 <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="16"/>
                                 <state key="normal" title="Import Wallet"/>
@@ -146,7 +146,7 @@
         <!--Auth View Controller-->
         <scene sceneID="clj-IP-LRr">
             <objects>
-                <viewController storyboardIdentifier="authViewController" id="jP7-Qb-jII" customClass="AuthViewController" customModule="wallet" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="authViewController" id="jP7-Qb-jII" customClass="AuthViewController" customModule="Enecuum_Wallet" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xAB-Nf-Rjy">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -214,7 +214,7 @@ to enecuum network</string>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="textColor"/>
                                                         <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="15"/>
-                                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="go" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
                                                     </textField>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BtF-rg-Vhh" userLabel="Address Copy">
                                                         <rect key="frame" x="283" y="0.0" width="27" height="48"/>
@@ -378,7 +378,7 @@ to enecuum network</string>
                                     <constraint firstItem="gJ7-gl-LVa" firstAttribute="leading" secondItem="AkR-tt-aco" secondAttribute="leading" id="x6l-1Z-GFX"/>
                                 </constraints>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jbo-ye-lEo" customClass="GradientButton" customModule="wallet" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jbo-ye-lEo" customClass="GradientButton" customModule="Enecuum_Wallet" customModuleProvider="target">
                                 <rect key="frame" x="57.5" y="401.5" width="260" height="65"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="jbo-ye-lEo" secondAttribute="height" multiplier="4:1" id="RhZ-nA-Qh5"/>

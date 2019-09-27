@@ -17,12 +17,12 @@
         </array>
     </customFonts>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SendView" customModule="wallet" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SendView" customModule="Enecuum_Wallet" customModuleProvider="target">
             <connections>
                 <outlet property="amountSlider" destination="lt1-ip-vxA" id="YbY-BL-Euy"/>
                 <outlet property="confirmAmountLabel" destination="GVm-G8-QMc" id="q4p-kU-D3N"/>
-                <outlet property="confirmView" destination="hS6-JE-e8N" id="fMU-DR-bdQ"/>
                 <outlet property="confirmReceiverLabel" destination="VET-fy-ha3" id="LXF-aw-CBr"/>
+                <outlet property="confirmView" destination="hS6-JE-e8N" id="fMU-DR-bdQ"/>
                 <outlet property="dataView" destination="dV5-Ux-QqK" id="mNV-XW-kNM"/>
                 <outlet property="doneView" destination="4al-0G-0mk" id="eSA-1u-9Zb"/>
                 <outlet property="errorLabel" destination="zxo-JR-5Sd" id="g3Y-Im-zRy"/>
@@ -68,7 +68,7 @@
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="15"/>
-                                    <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="go" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                                    <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
                                     <connections>
                                         <outlet property="delegate" destination="-1" id="w81-aF-2SV"/>
                                     </connections>
@@ -179,7 +179,7 @@
                             <color key="textColor" red="0.41176470590000003" green="0.43137254899999999" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="lt1-ip-vxA" customClass="Slider" customModule="wallet" customModuleProvider="target">
+                        <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="lt1-ip-vxA" customClass="Slider" customModule="Enecuum_Wallet" customModuleProvider="target">
                             <rect key="frame" x="26" y="232" width="292" height="31"/>
                             <color key="minimumTrackTintColor" red="0.062745098040000002" green="0.1058823529" blue="0.81568627449999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             <color key="maximumTrackTintColor" red="0.23137254900000001" green="0.2784313725" blue="0.42745098040000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -193,7 +193,7 @@
                                 </userDefinedRuntimeAttribute>
                             </userDefinedRuntimeAttributes>
                         </slider>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SkW-XP-Zhb" customClass="GradientButton" customModule="wallet" customModuleProvider="target">
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SkW-XP-Zhb" customClass="GradientButton" customModule="Enecuum_Wallet" customModuleProvider="target">
                             <rect key="frame" x="127" y="295" width="90" height="38"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="90" id="m1q-cA-Zkq"/>
@@ -333,7 +333,7 @@
                                 <action selector="onRejectClicked:" destination="-1" eventType="touchUpInside" id="odg-pZ-7qd"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rd6-6e-BmI" customClass="GradientButton" customModule="wallet" customModuleProvider="target">
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rd6-6e-BmI" customClass="GradientButton" customModule="Enecuum_Wallet" customModuleProvider="target">
                             <rect key="frame" x="167" y="244.5" width="112" height="38"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="112" id="KYS-kO-0Eb"/>

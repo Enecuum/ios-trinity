@@ -4,11 +4,15 @@
 //
 
 import UIKit
-import AVFoundation
-import QRCodeReader
 
 protocol SendViewDelegate {
-    func updateBalance()
+    func checkMaxSendValue(completion: @escaping (Decimal?) -> Void)
+    func readQrCode()
+}
+
+protocol TransactionSender {
+    func updateMaxValue(maxValue: Decimal)
+    func setReceiverAddress(address: String)
 }
 
 class SendView: UIView, NibView {
@@ -20,7 +24,7 @@ class SendView: UIView, NibView {
     @IBOutlet weak var sendAmountBorderView: UIView!
     @IBOutlet weak var sendAmountTextField: UITextField!
     @IBOutlet weak var amountSlider: Slider!
-    
+
     @IBOutlet weak var confirmView: UIView!
     @IBOutlet weak var confirmReceiverLabel: UILabel!
     @IBOutlet weak var confirmAmountLabel: UILabel!
@@ -29,25 +33,11 @@ class SendView: UIView, NibView {
 
     struct Constants {
         static let addressLength: Int = 66
-        static let ACCEPTABLE_amount_CHARACTERS = "0123456789."
-        static let ACCEPTABLE_address_CHARACTERS = "0123456789abcdef"
+        static let acceptableAmountChars = "0123456789."
+        static let acceptableAddressChars = "0123456789abcdef"
     }
 
     var delegate: SendViewDelegate?
-    var indicator: UIActivityIndicatorView?
-
-    lazy var readerVC: QRCodeReaderViewController = {
-        let builder = QRCodeReaderViewControllerBuilder {
-            $0.reader = QRCodeReader(metadataObjectTypes: [.qr], captureDevicePosition: .front)
-            $0.showTorchButton = false
-            $0.showSwitchCameraButton = true
-            $0.showCancelButton = true
-            $0.showOverlayView = true
-            $0.rectOfInterest = CGRect(x: 0.15, y: 0.15, width: 0.7, height: 0.7)
-        }
-
-        return QRCodeReaderViewController(builder: builder)
-    }()
 
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -73,20 +63,10 @@ class SendView: UIView, NibView {
         errorLabel.isHidden = true
         sendAmountTextField.text = "0"
         amountSlider.value = 0
-
-        let indicator = UIActivityIndicatorView(style: UIActivityIndicatorView.Style.gray)
-        indicator.frame = CGRect(x: 0, y: 0, width: 40, height: 40)
-        indicator.center = center
-        addSubview(indicator)
-        bringSubviewToFront(indicator)
-        UIApplication.shared.isNetworkActivityIndicatorVisible = true
-        self.indicator = indicator
-
-        amountSlider.addTarget(self, action: #selector(changeVlaue(_:)), for: .valueChanged)
+        amountSlider.addTarget(self, action: #selector(sliderValueChanged(_:)), for: .valueChanged)
     }
 
-    @objc func changeVlaue(_ sender: UISlider) {
-        print("value is" , Int(sender.value))
+    @objc private func sliderValueChanged(_ sender: UISlider) {
         sendAmountTextField.text = "\(Int(sender.value))"
     }
 
@@ -102,65 +82,20 @@ class SendView: UIView, NibView {
 
     private func openConfirmView(_ amountToSend: Decimal) {
         confirmReceiverLabel.text = receiverTextField.text
-        let trimmedString = sendAmountTextField.text?.replacingOccurrences(of: "^0+", with: "", options: .regularExpression)
+        let trimmedString = sendAmountTextField.text?.replacingOccurrences(of: "^0+",
+                                                                           with: "",
+                                                                           options: .regularExpression)
         confirmAmountLabel.text = trimmedString
-                //sendAmountTextField.text
-             //   "\(NSDecimalNumber(decimal:amountToSend).doubleValue)"
         confirmView.isHidden = false
-    }
-
-    func updateBalance(_ amount: Decimal) {
-        amountSlider.maximumValue = NSDecimalNumber(decimal:amount).floatValue
-    }
-
-    // MARK: - Server
-
-    //TODO: remove
-    private func fetchBalance(amountToSend: Decimal) {
-        ApiClient.balance(id: CryptoHelper.getAddress()) { [weak self] result in
-
-            self?.indicator?.stopAnimating()
-
-            switch result {
-            case .success(let balanceAmount):
-                print(balanceAmount)
-                guard let decimalAmount = Decimal(string: String(balanceAmount.amount)) else {
-                    print("Failed to convert balanceAmount")
-                    return
-                }
-                let amount = decimalAmount * Decimal(0.0000000001)
-
-                if amount < amountToSend {
-                    self?.setAmountError(true)
-                } else {
-                    self?.openConfirmView(amountToSend)
-                }
-            case .failure(let error):
-                print(error.localizedDescription)
-            }
-        }
     }
 
     // MARK: - IBActions
 
-    @IBAction func onQrClicked(_ sender: Any) {
-        readerVC.delegate = self
-        readerVC.completionBlock = { [weak self] (result: QRCodeReaderResult?) in
-            if let resultValue = result?.value {
-                print(resultValue)
-                var address = resultValue
-                address.removeFirst(4)
-                self?.receiverTextField.text = address
-                self?.setReceiverError(false)
-            }
-        }
-        readerVC.modalPresentationStyle = .formSheet
-        UIApplication.topViewController()?.present(readerVC, animated: true, completion: nil)
+    @IBAction private func onQrClicked(_ sender: Any) {
+        delegate?.readQrCode()
     }
 
-    @IBAction func onSendClicked(_ sender: Any) {
-        delegate?.updateBalance()
-
+    @IBAction private func onSendClicked(_ sender: Any) {
         guard let address = receiverTextField.text, !address.isEmpty/*, address.count == Constants.addressLength*/ else {
             setReceiverError(true, errorText: "Invalid address")
             print("Invalid address")
@@ -172,26 +107,31 @@ class SendView: UIView, NibView {
             return
         }
 
-        if let decimalAmount = Decimal(string: amount) {
-            if decimalAmount.isZero || decimalAmount.sign == .minus {
+        if let amountToSend = Decimal(string: amount) {
+            if amountToSend.isZero || amountToSend.sign == .minus {
                 setAmountError(true)
                 print("Invalid amount")
                 return
             }
 
-            indicator?.startAnimating()
-
-            fetchBalance(amountToSend: decimalAmount)
+            delegate?.checkMaxSendValue { [weak self] maxSendValue in
+                guard let maxSendValue = maxSendValue, amountToSend <= maxSendValue else {
+                    print("User amount is unknown or not enough to continue the transaction")
+                    self?.setAmountError(true)
+                    return
+                }
+                self?.openConfirmView(amountToSend)
+            }
         } else {
             setAmountError(true)
         }
     }
 
-    @IBAction func onRejectClicked(_ sender: Any) {
+    @IBAction private func onRejectClicked(_ sender: Any) {
         confirmView.isHidden = true
     }
 
-    @IBAction func onConfirmClicked(_ sender: Any) {
+    @IBAction private func onConfirmClicked(_ sender: Any) {
         doneView.isHidden = false
 
         receiverTextField.text = ""
@@ -205,22 +145,14 @@ class SendView: UIView, NibView {
     }
 }
 
-extension SendView: QRCodeReaderViewControllerDelegate {
-    func reader(_ reader: QRCodeReaderViewController, didScanResult result: QRCodeReaderResult) {
-        reader.stopScanning()
-
-        UIApplication.topViewController()?.dismiss(animated: true, completion: nil)
+extension SendView: TransactionSender {
+    func updateMaxValue(maxValue: Decimal) {
+        amountSlider.maximumValue = NSDecimalNumber(decimal: maxValue).floatValue
     }
 
-    func reader(_ reader: QRCodeReaderViewController, didSwitchCamera newCaptureDevice: AVCaptureDeviceInput) {
-        let cameraName = newCaptureDevice.device.localizedName
-        print("Switching capture to: \(cameraName)")
-    }
-
-    func readerDidCancel(_ reader: QRCodeReaderViewController) {
-        reader.stopScanning()
-
-        UIApplication.topViewController()?.dismiss(animated: true, completion: nil)
+    func setReceiverAddress(address: String) {
+        receiverTextField.text = address
+        setReceiverError(false)
     }
 }
 
@@ -243,14 +175,14 @@ extension SendView: UITextFieldDelegate {
     }
 
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-        if textField == receiverTextField {
-            let cs = NSCharacterSet(charactersIn: Constants.ACCEPTABLE_address_CHARACTERS).inverted
-            let filtered = string.components(separatedBy: cs).joined(separator: "")
-            return (string == filtered)
-        } else {
-            let cs = NSCharacterSet(charactersIn: Constants.ACCEPTABLE_amount_CHARACTERS).inverted
-            let filtered = string.components(separatedBy: cs).joined(separator: "")
-            return (string == filtered)
-        }
+        let charSet: CharacterSet = {
+            if textField == receiverTextField {
+                return NSCharacterSet(charactersIn: Constants.acceptableAddressChars).inverted
+            } else {
+                return NSCharacterSet(charactersIn: Constants.acceptableAmountChars).inverted
+            }
+        }()
+        let filtered = string.components(separatedBy: charSet).joined(separator: "")
+        return (string == filtered)
     }
 }

@@ -11,15 +11,20 @@ class CryptoHelper {
         return (privateKey.toHexString(), compressedPublicKey.toHexString())
     }
 
+    class func getPublicKey() -> String {
+        let uintPrivateKey = Array(hex: AuthManager.key())
+        let publicKey = try! Secp256k1.derivePublicKey(for: uintPrivateKey)
+        let compressedPublicKey = try! Secp256k1.compressPublicKey(publicKey)
+        return compressedPublicKey.toHexString()
+    }
+
     class func isValidPrivateKey(_ key: String) -> Bool {
         let uintPrivateKey = Array(hex: key)
         return Secp256k1.isValidPrivateKey(uintPrivateKey)
     }
 
-    class func getAddress() -> String {
-        let uintPrivateKey = Array(hex: AuthManager.key())
-        let publicKey = try! Secp256k1.derivePublicKey(for: uintPrivateKey)
-        let compressedPublicKey = try! Secp256k1.compressPublicKey(publicKey)
-        return compressedPublicKey.toHexString()
+    class func isValidPublicKey(_ key: String) -> Bool {
+        let uintPublicKey = Array(hex: key)
+        return Secp256k1.isValidPublicKey(uintPublicKey)
     }
 }

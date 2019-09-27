@@ -27,7 +27,7 @@ class ReceiveView: UIView, NibView {
     }
 
     private func setup() {
-        addressTextField.text = CryptoHelper.getAddress()
+        addressTextField.text = CryptoHelper.getPublicKey()
     }
     
     @IBAction func onCopyAddressClicked(_ sender: Any) {

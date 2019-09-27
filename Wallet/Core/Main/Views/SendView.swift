@@ -60,7 +60,7 @@ class SendView: UIView, NibView {
     // MARK: - UI
 
     private func setup() {
-        errorLabel.isHidden = true
+        errorLabel.alpha = 0
         sendAmountTextField.text = "0"
         amountSlider.value = 0
         amountSlider.addTarget(self, action: #selector(sliderValueChanged(_:)), for: .valueChanged)
@@ -96,7 +96,7 @@ class SendView: UIView, NibView {
     }
 
     @IBAction private func onSendClicked(_ sender: Any) {
-        guard let address = receiverTextField.text, !address.isEmpty/*, address.count == Constants.addressLength*/ else {
+        guard let address = receiverTextField.text, !address.isEmpty, CryptoHelper.isValidPublicKey(address) else {
             setReceiverError(true, errorText: "Invalid address")
             print("Invalid address")
             return

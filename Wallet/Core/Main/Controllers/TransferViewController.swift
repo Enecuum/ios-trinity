@@ -61,7 +61,7 @@ class TransferViewController: UIViewController {
     // MARK: - Server
 
     private func fetchBalance(completion: @escaping (Decimal?) -> Void) {
-        ApiClient.balance(id: CryptoHelper.getAddress()) { result in
+        ApiClient.balance(id: CryptoHelper.getPublicKey()) { result in
             switch result {
             case .success(let balanceAmount):
                 debugPrint(balanceAmount)

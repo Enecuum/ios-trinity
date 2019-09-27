@@ -234,7 +234,11 @@ extension SendView: UITextFieldDelegate {
     }
 
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        textField.resignFirstResponder()
+        if textField == receiverTextField {
+            sendAmountTextField.becomeFirstResponder()
+        } else {
+            textField.resignFirstResponder()
+        }
         return true
     }
 

@@ -160,8 +160,12 @@ extension AuthViewController: UITextFieldDelegate {
     }
 
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        textField.resignFirstResponder()
-        onStartClicked()
+        if textField == addressTextField {
+            privateKeyTextField.becomeFirstResponder()
+        } else {
+            textField.resignFirstResponder()
+            onStartClicked()
+        }
         return true
     }
 }

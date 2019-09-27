@@ -20,11 +20,15 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SendView" customModule="wallet" customModuleProvider="target">
             <connections>
                 <outlet property="amountSlider" destination="lt1-ip-vxA" id="YbY-BL-Euy"/>
+                <outlet property="confirmAmountLabel" destination="GVm-G8-QMc" id="q4p-kU-D3N"/>
                 <outlet property="confirmView" destination="hS6-JE-e8N" id="fMU-DR-bdQ"/>
+                <outlet property="confirmReceiverLabel" destination="VET-fy-ha3" id="LXF-aw-CBr"/>
                 <outlet property="dataView" destination="dV5-Ux-QqK" id="mNV-XW-kNM"/>
                 <outlet property="doneView" destination="4al-0G-0mk" id="eSA-1u-9Zb"/>
                 <outlet property="errorLabel" destination="zxo-JR-5Sd" id="g3Y-Im-zRy"/>
+                <outlet property="receiverBorderView" destination="wAI-4i-0Hw" id="ujY-Oy-OyB"/>
                 <outlet property="receiverTextField" destination="7Yd-E0-itH" id="Rzf-jp-QlB"/>
+                <outlet property="sendAmountBorderView" destination="7hn-xT-QbD" id="iAi-sa-fz0"/>
                 <outlet property="sendAmountTextField" destination="hmg-90-nXL" id="AzV-EV-xjw"/>
             </connections>
         </placeholder>
@@ -129,7 +133,7 @@
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <fontDescription key="fontDescription" name="TTNorms-Bold" family="TT Norms" pointSize="17"/>
-                                    <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="decimalPad" returnKeyType="go" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                                    <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numbersAndPunctuation" returnKeyType="go" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
                                     <connections>
                                         <outlet property="delegate" destination="-1" id="eT9-9V-Nyq"/>
                                     </connections>

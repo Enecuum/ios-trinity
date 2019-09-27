@@ -22,6 +22,7 @@ class TransferViewController: UIViewController {
         tabsView.textColor = .white
         tabsView.delegate = self
 
+        sendView.delegate = self
         sendView.isHidden = false
         receiveView.isHidden = true
         swapView.isHidden = true
@@ -43,6 +44,8 @@ class TransferViewController: UIViewController {
                 }
                 let amount = decimalAmount * Decimal(0.0000000001)
                 self?.balanceAmountLabel.text = "\(amount)"
+
+                self?.sendView.updateBalance(amount)
             case .failure(let error):
                 print(error.localizedDescription)
             }
@@ -67,5 +70,11 @@ extension TransferViewController: CustomSegmentedControlDelegate {
             swapView.isHidden = false
         default: ()
         }
+    }
+}
+
+extension TransferViewController: SendViewDelegate {
+    func updateBalance() {
+        fetchBalance()
     }
 }

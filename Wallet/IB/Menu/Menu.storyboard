@@ -38,13 +38,22 @@
                                     <action selector="onDismissClicked:" destination="c2h-zr-98E" eventType="touchUpInside" id="qLO-vU-85a"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CGc-Gk-lzj">
+                                <rect key="frame" x="20" y="32" width="52" height="30"/>
+                                <state key="normal" title="Log out"/>
+                                <connections>
+                                    <action selector="onLogOutClicked:" destination="c2h-zr-98E" eventType="touchUpInside" id="NGm-bq-A5G"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.19215686274509802" green="0.20000000000000001" blue="0.27058823529411763" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="g5s-yv-YC9" firstAttribute="top" secondItem="VbC-rs-ot3" secondAttribute="bottom" constant="19" id="1iO-GE-fCZ"/>
+                            <constraint firstItem="CGc-Gk-lzj" firstAttribute="leading" secondItem="Dyr-na-0Lu" secondAttribute="leading" constant="20" id="Hcs-Yz-ZJ2"/>
                             <constraint firstItem="g5s-yv-YC9" firstAttribute="leading" secondItem="Dyr-na-0Lu" secondAttribute="leading" id="L85-Le-ijA"/>
                             <constraint firstItem="Dyr-na-0Lu" firstAttribute="trailing" secondItem="VbC-rs-ot3" secondAttribute="trailing" constant="13" id="WKH-aZ-oim"/>
                             <constraint firstItem="VbC-rs-ot3" firstAttribute="top" secondItem="Dyr-na-0Lu" secondAttribute="top" id="ZUt-QE-C7q"/>
+                            <constraint firstItem="CGc-Gk-lzj" firstAttribute="top" secondItem="Dyr-na-0Lu" secondAttribute="top" constant="12" id="b9N-gX-Ylm"/>
                             <constraint firstItem="Dyr-na-0Lu" firstAttribute="bottom" secondItem="g5s-yv-YC9" secondAttribute="bottom" id="i3r-3v-tZM"/>
                             <constraint firstItem="Dyr-na-0Lu" firstAttribute="trailing" secondItem="g5s-yv-YC9" secondAttribute="trailing" id="yFO-kh-gTy"/>
                         </constraints>

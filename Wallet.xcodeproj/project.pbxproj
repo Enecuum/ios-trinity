@@ -42,6 +42,7 @@
 		B8EA191BFDEF30B297938C5D /* ApiConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA17552578856912F65A4F /* ApiConstants.swift */; };
 		B8EA1924649899AC4079D1A9 /* TransferViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA1A06E3393C3709805246 /* TransferViewController.swift */; };
 		B8EA1AD5D60A2E7DACBB78A8 /* Slider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA121B268DF274D4508B63 /* Slider.swift */; };
+		B8EA1B5D5B4BE05678661594 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA1DBE3695611D726A76D6 /* AboutViewController.swift */; };
 		B8EA1B89B74C8FB7DCF67632 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA1DAB32B70779EF93B2DE /* MenuViewController.swift */; };
 		B8EA1C041CF5B2023AFDC0BE /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA1E69D0A92BCBA9D4AAEA /* AuthViewController.swift */; };
 		B8EA1CC4E9CA358A0E45BB0F /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA101A8262DEB1CE21A0A5 /* UIColor+Extension.swift */; };
@@ -93,6 +94,7 @@
 		B8EA1A06E3393C3709805246 /* TransferViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransferViewController.swift; sourceTree = "<group>"; };
 		B8EA1AB4DE484A22A99E7DFD /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		B8EA1DAB32B70779EF93B2DE /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		B8EA1DBE3695611D726A76D6 /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		B8EA1DEA865063CF4BEDC5EA /* AuthMode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthMode.swift; sourceTree = "<group>"; };
 		B8EA1E69D0A92BCBA9D4AAEA /* AuthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 		B8EA1F0AC6F5DA4951A86E7C /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
@@ -334,6 +336,7 @@
 			isa = PBXGroup;
 			children = (
 				B8EA1DAB32B70779EF93B2DE /* MenuViewController.swift */,
+				B8EA1DBE3695611D726A76D6 /* AboutViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -537,6 +540,7 @@
 				B8EA1F79D851002539ED16CE /* BalanceAmount.swift in Sources */,
 				B8EA12967CF8667931778061 /* ApiClient.swift in Sources */,
 				B8EA14D1F3A16E25A9A52D2F /* UIApplication+Extension.swift in Sources */,
+				B8EA1B5D5B4BE05678661594 /* AboutViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

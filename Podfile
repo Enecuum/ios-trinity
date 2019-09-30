@@ -8,4 +8,5 @@ target 'wallet' do
   pod 'Alamofire', '~> 5.0.0-rc.2'
   pod 'QRCodeReader.swift', '~> 10.1.0'
   pod 'EFQRCode', '~> 5.1.0'
+  pod 'Nantes'
 end

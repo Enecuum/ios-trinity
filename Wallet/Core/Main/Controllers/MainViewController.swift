@@ -13,4 +13,7 @@ class MainViewController: UIViewController {
         let menuViewController = R.storyboard.menu.menuViewController()!
         present(menuViewController, animated: false)
     }
+
+    @IBAction func unwindToMainViewController(_ segue : UIStoryboardSegue) {
+    }
 }

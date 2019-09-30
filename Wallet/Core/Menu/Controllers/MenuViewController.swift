@@ -7,14 +7,14 @@ import UIKit
 
 class MenuViewController: UIViewController {
 
-    @IBOutlet weak var tableView: UITableView!
+//    @IBOutlet weak var tableView: UITableView!
 
-    private var items: [MenuItem] = []
+ //   private var items: [MenuItem] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        tableView.register(R.nib.menuTableViewCell)
+  /*      tableView.register(R.nib.menuTableViewCell)
 
         items = [
             MenuItem(id: "about", icon: R.image.menu.about()!, label: "About"),
@@ -24,7 +24,7 @@ class MenuViewController: UIViewController {
             MenuItem(id: "faq", icon: R.image.menu.faq()!, label: "FAQ"),
             MenuItem(id: "language", icon: R.image.menu.language()!, label: "Language"),
         ]
-        tableView.reloadData()
+        tableView.reloadData()*/
     }
 
     @IBAction func onDismissClicked(_ sender: Any) {
@@ -39,7 +39,7 @@ class MenuViewController: UIViewController {
         appDelegate.window!.rootViewController = initialViewController
     }
 }
-
+/*
 extension MenuViewController: UITableViewDataSource {
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return items.count
@@ -79,3 +79,4 @@ class MenuItem {
         self.label = label
     }
 }
+ */

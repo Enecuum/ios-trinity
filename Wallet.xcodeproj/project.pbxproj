@@ -58,6 +58,7 @@
 
 /* Begin PBXFileReference section */
 		08EAD1528A6739EEF0C63E0F /* Pods-wallet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wallet.release.xcconfig"; path = "Target Support Files/Pods-wallet/Pods-wallet.release.xcconfig"; sourceTree = "<group>"; };
+		354A96D423428ED500C2AEFA /* Wallet-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Wallet-Bridging-Header.h"; sourceTree = "<group>"; };
 		356A60C82333B93F00E8D118 /* Enecuum Wallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Enecuum Wallet.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		356A60CB2333B93F00E8D118 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		356A60CD2333B93F00E8D118 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
@@ -227,6 +228,7 @@
 			children = (
 				35B8CE20233A664C007BC0C8 /* Fonts */,
 				35B8CE1A23398713007BC0C8 /* R.generated.swift */,
+				354A96D423428ED500C2AEFA /* Wallet-Bridging-Header.h */,
 			);
 			path = Supporting;
 			sourceTree = "<group>";
@@ -414,6 +416,7 @@
 				TargetAttributes = {
 					356A60C72333B93F00E8D118 = {
 						CreatedOnToolsVersion = 10.3;
+						LastSwiftMigration = 1030;
 					};
 				};
 			};
@@ -705,6 +708,7 @@
 			baseConfigurationReference = 4A1D9D2B4E61AC9284666F23 /* Pods-wallet.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UX43SAZ2QJ;
 				INFOPLIST_FILE = wallet/Info.plist;
@@ -715,6 +719,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.enecuum.wallet;
 				PRODUCT_NAME = "$(PRODUCT_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Wallet/Supporting/Wallet-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -725,6 +731,7 @@
 			baseConfigurationReference = 08EAD1528A6739EEF0C63E0F /* Pods-wallet.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UX43SAZ2QJ;
 				INFOPLIST_FILE = wallet/Info.plist;
@@ -735,6 +742,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.enecuum.wallet;
 				PRODUCT_NAME = "$(PRODUCT_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Wallet/Supporting/Wallet-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

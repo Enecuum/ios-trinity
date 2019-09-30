@@ -19,11 +19,13 @@
 	<key>CFBundleShortVersionString</key>
 	<string>1.0</string>
 	<key>CFBundleVersion</key>
-	<string>1</string>
+	<string>2</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSCameraUsageDescription</key>
 	<string>Camera is needed to scan QR codes</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>Photo Library is needed to save QR codes</string>
 	<key>UIAppFonts</key>
 	<array>
 		<string>TTNorms-Bold.otf</string>
@@ -41,8 +43,6 @@
 	<true/>
 	<key>UIStatusBarStyle</key>
 	<string>UIStatusBarStyleLightContent</string>
-	<key>NSPhotoLibraryAddUsageDescription</key>
-	<string>Photo Library is needed to save QR codes</string>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>

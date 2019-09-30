@@ -195,6 +195,16 @@ extension SendView: UITextFieldDelegate {
         }
     }
 
+    public func textFieldDidEndEditing(_ textField: UITextField) {
+        if textField == sendAmountTextField {
+            let numberFormatter = NumberFormatter()
+            numberFormatter.numberStyle = .decimal
+            if let amount = sendAmountTextField.text, !amount.isEmpty, let number = numberFormatter.number(from: amount) {
+                amountSlider.value = number.floatValue
+            }
+        }
+    }
+
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         if textField == receiverTextField {
             sendAmountTextField.becomeFirstResponder()

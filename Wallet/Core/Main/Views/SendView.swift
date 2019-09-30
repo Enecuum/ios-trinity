@@ -28,6 +28,8 @@ class SendView: UIView, NibView {
     @IBOutlet weak var confirmView: UIView!
     @IBOutlet weak var confirmReceiverLabel: UILabel!
     @IBOutlet weak var confirmAmountLabel: UILabel!
+    @IBOutlet weak var rejectButton: UIButton!
+    @IBOutlet weak var confirmButton: GradientButton!
 
     @IBOutlet weak var doneView: UIView!
 
@@ -64,6 +66,34 @@ class SendView: UIView, NibView {
         sendAmountTextField.text = "0"
         amountSlider.value = 0
         amountSlider.addTarget(self, action: #selector(sliderValueChanged(_:)), for: .valueChanged)
+
+        addAttributedButton(rejectButton, image: R.image.icons.cross()!, string: "  Reject", color: .red)
+        addAttributedButton(confirmButton, image: R.image.icons.tick()!, string: "  Confirm", color: .white)
+    }
+
+    private func addAttributedButton(_ button: UIButton, image: UIImage, string: String, color: UIColor) {
+        let font = R.font.ttNormsMedium(size: 13)!
+
+        let imageAttachment = NSTextAttachment()
+        imageAttachment.image = image
+        let imageSize = imageAttachment.image!.size
+        imageAttachment.bounds = CGRect(x: CGFloat(0),
+                                        y: (font.capHeight - imageSize.height) / 2,
+                                        width: imageSize.width,
+                                        height: imageSize.height)
+        let imageString = NSMutableAttributedString(attachment: imageAttachment)
+
+        let style = NSMutableParagraphStyle()
+        style.alignment = NSTextAlignment.center
+        let attributes: [NSAttributedString.Key: Any] = [
+            .font: font,
+            .foregroundColor: color,
+            .paragraphStyle: style
+        ]
+        let label = NSMutableAttributedString(string: string, attributes: attributes)
+        label.insert(imageString, at: 0)
+        button.setAttributedTitle(label, for: .normal)
+        button.setTitleColor(color, for: .normal)
     }
 
     @objc private func sliderValueChanged(_ sender: UISlider) {

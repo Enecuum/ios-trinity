@@ -21,6 +21,7 @@
             <connections>
                 <outlet property="amountSlider" destination="lt1-ip-vxA" id="YbY-BL-Euy"/>
                 <outlet property="confirmAmountLabel" destination="GVm-G8-QMc" id="q4p-kU-D3N"/>
+                <outlet property="confirmButton" destination="Rd6-6e-BmI" id="KeL-vQ-gO3"/>
                 <outlet property="confirmReceiverLabel" destination="VET-fy-ha3" id="LXF-aw-CBr"/>
                 <outlet property="confirmView" destination="hS6-JE-e8N" id="fMU-DR-bdQ"/>
                 <outlet property="dataView" destination="dV5-Ux-QqK" id="mNV-XW-kNM"/>
@@ -28,6 +29,7 @@
                 <outlet property="errorLabel" destination="zxo-JR-5Sd" id="g3Y-Im-zRy"/>
                 <outlet property="receiverBorderView" destination="wAI-4i-0Hw" id="ujY-Oy-OyB"/>
                 <outlet property="receiverTextField" destination="7Yd-E0-itH" id="Rzf-jp-QlB"/>
+                <outlet property="rejectButton" destination="TQZ-yR-pkP" id="3iU-uU-VDH"/>
                 <outlet property="sendAmountBorderView" destination="7hn-xT-QbD" id="iAi-sa-fz0"/>
                 <outlet property="sendAmountTextField" destination="hmg-90-nXL" id="AzV-EV-xjw"/>
             </connections>
@@ -296,16 +298,12 @@
                             <color key="textColor" red="0.0" green="0.81960784310000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TQZ-yR-pkP">
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TQZ-yR-pkP">
                             <rect key="frame" x="40" y="244.5" width="112" height="38"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="38" id="hg1-pR-iYG"/>
                                 <constraint firstAttribute="width" constant="112" id="jVX-XH-5U6"/>
                             </constraints>
-                            <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="13"/>
-                            <state key="normal" title="  Reject" image="Icons/cross">
-                                <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
-                            </state>
                             <userDefinedRuntimeAttributes>
                                 <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                     <real key="value" value="6"/>
@@ -333,14 +331,12 @@
                                 <action selector="onRejectClicked:" destination="-1" eventType="touchUpInside" id="odg-pZ-7qd"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rd6-6e-BmI" customClass="GradientButton" customModule="Enecuum_Wallet" customModuleProvider="target">
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Rd6-6e-BmI" customClass="GradientButton" customModule="Enecuum_Wallet" customModuleProvider="target">
                             <rect key="frame" x="167" y="244.5" width="112" height="38"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="112" id="KYS-kO-0Eb"/>
                                 <constraint firstAttribute="height" constant="38" id="Np4-LL-vaS"/>
                             </constraints>
-                            <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="13"/>
-                            <state key="normal" title="  Confirm" image="Icons/tick"/>
                             <userDefinedRuntimeAttributes>
                                 <userDefinedRuntimeAttribute type="color" keyPath="firstColor">
                                     <color key="value" red="0.25098039220000001" green="0.61960784310000006" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
@@ -458,9 +454,7 @@
         </view>
     </objects>
     <resources>
-        <image name="Icons/cross" width="12.5" height="12"/>
         <image name="Icons/qr" width="28.5" height="28.5"/>
-        <image name="Icons/tick" width="16" height="16"/>
         <image name="Transfer/circle" width="154" height="154"/>
         <image name="Transfer/tick" width="63.5" height="45.5"/>
     </resources>

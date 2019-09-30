@@ -20,6 +20,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SendView" customModule="Enecuum_Wallet" customModuleProvider="target">
             <connections>
                 <outlet property="amountSlider" destination="lt1-ip-vxA" id="YbY-BL-Euy"/>
+                <outlet property="circleImageView" destination="Zkn-DS-Lb6" id="pUe-5N-NGs"/>
                 <outlet property="confirmAmountLabel" destination="GVm-G8-QMc" id="q4p-kU-D3N"/>
                 <outlet property="confirmButton" destination="Rd6-6e-BmI" id="KeL-vQ-gO3"/>
                 <outlet property="confirmReceiverLabel" destination="VET-fy-ha3" id="LXF-aw-CBr"/>

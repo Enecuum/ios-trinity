@@ -32,7 +32,8 @@ class SendView: UIView, NibView {
     @IBOutlet weak var confirmButton: GradientButton!
 
     @IBOutlet weak var doneView: UIView!
-
+    @IBOutlet weak var circleImageView: UIImageView!
+    
     struct Constants {
         static let addressLength: Int = 66
         static let acceptableAmountChars = "0123456789."
@@ -162,6 +163,8 @@ class SendView: UIView, NibView {
     }
 
     @IBAction private func onConfirmClicked(_ sender: Any) {
+        circleImageView.rotate(duration: 3)
+
         doneView.isHidden = false
 
         receiverTextField.text = ""

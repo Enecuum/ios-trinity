@@ -44,6 +44,7 @@ class TransferViewController: UIViewController {
         sendView.isHidden = false
         sendView.delegate = self
         receiveView.isHidden = true
+        receiveView.delegate = self
         swapView.isHidden = true
     }
 
@@ -137,5 +138,13 @@ extension TransferViewController: SendViewDelegate {
         }
         readerVC.modalPresentationStyle = .formSheet
         present(readerVC, animated: true, completion: nil)
+    }
+}
+
+extension TransferViewController: ReceiveViewDelegate {
+    func shareQrCode(image: UIImage) {
+        let activityViewController = UIActivityViewController(activityItems: [image], applicationActivities: nil)
+        activityViewController.popoverPresentationController?.sourceView = view
+        present(activityViewController, animated: true, completion: nil)
     }
 }

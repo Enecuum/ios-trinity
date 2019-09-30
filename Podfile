@@ -7,4 +7,5 @@ target 'wallet' do
   pod 'secp256k1.swift'
   pod 'Alamofire', '~> 5.0.0-rc.2'
   pod 'QRCodeReader.swift', '~> 10.1.0'
+  pod 'EFQRCode', '~> 5.1.0'
 end

@@ -1,15 +1,19 @@
 PODS:
   - Alamofire (5.0.0-rc.2)
   - CryptoSwift (1.0.0)
+  - EFQRCode (5.1.0):
+    - swift_qrcodejs (~> 1.1.1)
   - QRCodeReader.swift (10.1.0)
   - R.swift (5.0.3):
     - R.swift.Library (~> 5.0.0)
   - R.swift.Library (5.0.1)
   - secp256k1.swift (0.1.4)
+  - swift_qrcodejs (1.1.2)
 
 DEPENDENCIES:
   - Alamofire (~> 5.0.0-rc.2)
   - CryptoSwift
+  - EFQRCode (~> 5.1.0)
   - QRCodeReader.swift (~> 10.1.0)
   - R.swift
   - secp256k1.swift
@@ -18,19 +22,23 @@ SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
     - CryptoSwift
+    - EFQRCode
     - QRCodeReader.swift
     - R.swift
     - R.swift.Library
     - secp256k1.swift
+    - swift_qrcodejs
 
 SPEC CHECKSUMS:
   Alamofire: f9450d3c7f6bea2ad62e7a541c3e9b186c7991d6
   CryptoSwift: d81eeaa59dc5a8d03720fe919a6fd07b51f7439f
+  EFQRCode: 07ee69f29196329e974b9bffa5381240cc09ea4c
   QRCodeReader.swift: 373a389fe9a22d513c879a32a6f647c58f4ef572
   R.swift: f5a87643b91ea569d23d6afb3eee9c743edde239
   R.swift.Library: cfe85d569d9bae6cb262922db130e7c3a7a5fad1
   secp256k1.swift: a7e7a214f6db6ce5db32cc6b2b45e5c4dd633634
+  swift_qrcodejs: 4d024fc98b0778b804ec6a5c810880fd092aec9d
 
-PODFILE CHECKSUM: d7036237bfd3e6d14194fa981b6ded65e13a4cd6
+PODFILE CHECKSUM: d9b1191ee3631877e3522e79334686df170f4dcf
 
 COCOAPODS: 1.7.5

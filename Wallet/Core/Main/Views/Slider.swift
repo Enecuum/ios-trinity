@@ -19,12 +19,12 @@ class Slider: UISlider {
         setThumbImage(R.image.transfer.thumb()!, for: .normal)
         setThumbImage(R.image.transfer.thumb()!, for: .highlighted)
 
-        var leftTrackImage = R.image.transfer.minTrack()!
+        let leftTrackImage = R.image.transfer.minTrack()!
        // let insets: UIEdgeInsets = UIEdgeInsets(top: 20, left: 40, bottom: 20, right: 40)
        // leftTrackImage = leftTrackImage.resizableImage(withCapInsets: insets)
         setMinimumTrackImage(leftTrackImage, for: .normal)
 
-        var rightTrackImage = R.image.transfer.maxTrack()!
+        let rightTrackImage = R.image.transfer.maxTrack()!
        // rightTrackImage = rightTrackImage.resizableImage(withCapInsets: insets)
         setMaximumTrackImage(rightTrackImage, for: .normal)
     }

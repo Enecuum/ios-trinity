@@ -1530,18 +1530,30 @@ Your current priate key will be deleted from the device memory after importing n
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rag-Va-Lhp">
                                                         <rect key="frame" x="0.0" y="0.0" width="92.333333333333329" height="60"/>
                                                         <state key="normal" image="Socials/fb"/>
+                                                        <connections>
+                                                            <action selector="onFbClicked:" destination="UAX-Hi-mEx" eventType="touchUpInside" id="b6U-ge-THC"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JPt-iH-ahe">
                                                         <rect key="frame" x="92.333333333333343" y="0.0" width="92.333333333333343" height="60"/>
                                                         <state key="normal" image="Socials/twitter"/>
+                                                        <connections>
+                                                            <action selector="onTwitterClicked:" destination="UAX-Hi-mEx" eventType="touchUpInside" id="4vv-5z-xek"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hDg-KM-uXP">
                                                         <rect key="frame" x="184.66666666666666" y="0.0" width="92.333333333333343" height="60"/>
                                                         <state key="normal" image="Socials/medium"/>
+                                                        <connections>
+                                                            <action selector="onMediumClicked:" destination="UAX-Hi-mEx" eventType="touchUpInside" id="0x2-YJ-ysG"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HhE-Yu-BHa">
                                                         <rect key="frame" x="277" y="0.0" width="92.333333333333314" height="60"/>
                                                         <state key="normal" image="Socials/github"/>
+                                                        <connections>
+                                                            <action selector="onGithubClicked:" destination="UAX-Hi-mEx" eventType="touchUpInside" id="xPx-65-Yev"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <constraints>
@@ -1554,18 +1566,30 @@ Your current priate key will be deleted from the device memory after importing n
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kTl-2v-I0V">
                                                         <rect key="frame" x="0.0" y="0.0" width="92.333333333333329" height="60"/>
                                                         <state key="normal" image="Socials/bitcoin"/>
+                                                        <connections>
+                                                            <action selector="onBitcoinClicked:" destination="UAX-Hi-mEx" eventType="touchUpInside" id="6F2-gG-Shh"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KRE-9a-r23">
                                                         <rect key="frame" x="92.333333333333343" y="0.0" width="92.333333333333343" height="60"/>
                                                         <state key="normal" image="Socials/linkedin"/>
+                                                        <connections>
+                                                            <action selector="onLinkedInClicked:" destination="UAX-Hi-mEx" eventType="touchUpInside" id="3gY-IW-WXb"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KY6-aH-h9Q">
                                                         <rect key="frame" x="184.66666666666666" y="0.0" width="92.333333333333343" height="60"/>
                                                         <state key="normal" image="Socials/youtube"/>
+                                                        <connections>
+                                                            <action selector="onYouTubeClicked:" destination="UAX-Hi-mEx" eventType="touchUpInside" id="hfY-nb-Xrt"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="29J-Ng-VaL">
                                                         <rect key="frame" x="277" y="0.0" width="92.333333333333314" height="60"/>
                                                         <state key="normal" image="Socials/telegram"/>
+                                                        <connections>
+                                                            <action selector="onTelegramClicked:" destination="UAX-Hi-mEx" eventType="touchUpInside" id="x9K-Kq-iWa"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <constraints>

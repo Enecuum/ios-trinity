@@ -14,6 +14,6 @@ class MainViewController: UIViewController {
         present(menuViewController, animated: false)
     }
 
-    @IBAction func unwindToMainViewController(_ segue : UIStoryboardSegue) {
+    @IBAction func unwindToMainViewController(_ segue: UIStoryboardSegue) {
     }
 }

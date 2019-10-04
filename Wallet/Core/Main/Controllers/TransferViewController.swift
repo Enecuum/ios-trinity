@@ -17,7 +17,8 @@ class TransferViewController: UIViewController {
     @IBOutlet weak var swapView: SwapView!
 
     struct Constants {
-        static let balanceMultiplier: Decimal = Decimal(0.0000000001)
+        static let apiToBalanceMultiplier: Decimal = Decimal(0.0000000001)
+        static let balanceToApiMultiplier: Decimal = Decimal(10000000000)
     }
 
     lazy var readerVC: QRCodeReaderViewController = {
@@ -71,11 +72,25 @@ class TransferViewController: UIViewController {
                     completion(nil)
                     return
                 }
-                let amount = decimalAmount * Constants.balanceMultiplier
+                let amount = decimalAmount * Constants.apiToBalanceMultiplier
                 completion(amount)
             case .failure(let error):
                 print(error.localizedDescription)
                 completion(nil)
+            }
+        }
+    }
+
+    private func postTransaction(_ transaction: Transaction) {
+        ApiClient.transaction(transaction) { [weak self] result in
+            switch result {
+            case .success(let transactionStatus):
+                debugPrint(transactionStatus)
+                if transactionStatus.err == 0 {
+                    self?.sendView.setTransactionStatus(success: true)
+                }
+            case .failure(let error):
+                print(error.localizedDescription)
             }
         }
     }
@@ -138,6 +153,45 @@ extension TransferViewController: SendViewDelegate {
         }
         readerVC.modalPresentationStyle = .formSheet
         present(readerVC, animated: true, completion: nil)
+    }
+
+    func sendEnq(to address: String, amount: Decimal) {
+        let amountToSendInEnqCents = amount * Constants.balanceToApiMultiplier
+        print("amountToSend")
+        print("\(amountToSendInEnqCents)")
+        let fromAddress = CryptoHelper.getPublicKey()
+        print("fromAddress")
+        print("\(fromAddress)")
+        let random = UInt32.random(in: 0...UInt32.max)
+        print("random")
+        print("\(random)")
+        print("toaddress")
+        print("\(address)")
+        let txHash = CryptoHelper.buildTxHash(amount: "\(amountToSendInEnqCents)",
+                                              random: "\(random)",
+                                              from: fromAddress,
+                                              to: address)
+        print("-===-txHash")
+        print(txHash)
+
+        let sign = CryptoHelper.sign(txHash)
+        print("-===-sign")
+        print(sign)
+
+        let amountStr = "\(amountToSendInEnqCents)"
+        if let amoutUint64 = UInt64(amountStr) {
+            print("AMOUNT")
+            print("\(amoutUint64)")
+
+            let transaction = Transaction(amount: amoutUint64,
+                                          from: fromAddress,
+                                          nonce: random,
+                                          sign: sign,
+                                          to: address)
+            postTransaction(transaction)
+        } else {
+            print("Transaction object failed")
+        }
     }
 }
 

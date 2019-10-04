@@ -8,11 +8,13 @@ import UIKit
 protocol SendViewDelegate {
     func checkMaxSendValue(completion: @escaping (Decimal?) -> Void)
     func readQrCode()
+    func sendEnq(to address: String, amount: Decimal)
 }
 
 protocol TransactionSender {
     func updateMaxValue(maxValue: Decimal)
     func setReceiverAddress(address: String)
+    func setTransactionStatus(success: Bool)
 }
 
 class SendView: UIView, NibView {
@@ -41,6 +43,8 @@ class SendView: UIView, NibView {
     }
 
     var delegate: SendViewDelegate?
+    //TODO: remove
+    private var amountToSend: Decimal?
 
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -112,11 +116,10 @@ class SendView: UIView, NibView {
     }
 
     private func openConfirmView(_ amountToSend: Decimal) {
+        self.amountToSend = amountToSend
+
         confirmReceiverLabel.text = receiverTextField.text
-        let trimmedString = sendAmountTextField.text?.replacingOccurrences(of: "^0+",
-                                                                           with: "",
-                                                                           options: .regularExpression)
-        confirmAmountLabel.text = trimmedString
+        confirmAmountLabel.text = "\(amountToSend)"
         confirmView.isHidden = false
     }
 
@@ -159,10 +162,28 @@ class SendView: UIView, NibView {
     }
 
     @IBAction private func onRejectClicked(_ sender: Any) {
+        amountToSend = nil
         confirmView.isHidden = true
     }
 
     @IBAction private func onConfirmClicked(_ sender: Any) {
+        if let to = confirmReceiverLabel.text, let amountToSend = amountToSend {
+            delegate?.sendEnq(to: to, amount: amountToSend)
+        }
+    }
+}
+
+extension SendView: TransactionSender {
+    func updateMaxValue(maxValue: Decimal) {
+        amountSlider.maximumValue = NSDecimalNumber(decimal: maxValue).floatValue
+    }
+
+    func setReceiverAddress(address: String) {
+        receiverTextField.text = address
+        setReceiverError(false)
+    }
+
+    func setTransactionStatus(success: Bool) {
         circleImageView.rotate(duration: 3)
 
         doneView.isHidden = false
@@ -175,17 +196,6 @@ class SendView: UIView, NibView {
             self?.confirmView.isHidden = true
             self?.doneView.isHidden = true
         })
-    }
-}
-
-extension SendView: TransactionSender {
-    func updateMaxValue(maxValue: Decimal) {
-        amountSlider.maximumValue = NSDecimalNumber(decimal: maxValue).floatValue
-    }
-
-    func setReceiverAddress(address: String) {
-        receiverTextField.text = address
-        setReceiverError(false)
     }
 }
 

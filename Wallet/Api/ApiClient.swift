@@ -12,4 +12,17 @@ class ApiClient {
             completion(response.result)
         }
     }
+
+    static func transaction(_ transaction: Transaction, completion: @escaping (AFResult<TransactionStatus>) -> Void) {
+        let url = try! ApiConstants.DevServer.baseURL.asURL()
+        let requestUrl = url.appendingPathComponent("tx")
+        let trList = [transaction]
+
+        AF.request(requestUrl,
+                   method: .post,
+                   parameters: trList,
+                   encoder: JSONParameterEncoder.default).validate().responseDecodable { (response: AFDataResponse<TransactionStatus>) in
+            completion(response.result)
+        }
+    }
 }

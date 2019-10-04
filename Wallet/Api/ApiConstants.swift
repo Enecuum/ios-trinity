@@ -9,11 +9,16 @@ struct ApiConstants {
     }
 
     struct DevServer {
-        static let baseURL = "http://95.216.246.116:80/api/v1/"
+        static let baseURL = "http://95.217.0.123:80/api/v1/"
     }
 
     struct APIParameterKey {
         static let id = "id"
+        static let amount = "amount"
+        static let from = "from"
+        static let to = "to"
+        static let nonce = "nonce"
+        static let sign = "sign"
     }
 
     enum HTTPHeaderField: String {

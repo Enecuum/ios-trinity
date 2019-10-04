@@ -14,4 +14,6 @@ struct Palette {
     static let inputErrorGradient = [UIColor.red,
                                      UIColor.init(red: 126 / 255, green: 75 / 255, blue: 75 / 255, alpha: 1),
                                      UIColor.init(white: 1, alpha: 0.1)]
+
+    static let linkColor = UIColor(red: 60 / 255, green: 152 / 255, blue: 248 / 255, alpha: 1)
 }

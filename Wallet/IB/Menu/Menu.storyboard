@@ -644,8 +644,10 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UM7-Uj-k8q">
                                                 <rect key="frame" x="0.0" y="0.0" width="373.33333333333331" height="354.33333333333331"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mobile application Enecuum HK Limited" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HQ2-Jf-Bub">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HQ2-Jf-Bub">
                                                         <rect key="frame" x="16" y="8" width="309.33333333333331" height="40.333333333333336"/>
+                                                        <string key="text">Enecuum Mobile application
+Enecuum HK Limited.</string>
                                                         <fontDescription key="fontDescription" name="TTNorms-Bold" family="TT Norms" pointSize="17"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -653,7 +655,7 @@
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hZD-Mg-ReI">
                                                         <rect key="frame" x="16" y="60.333333333333343" width="309.33333333333331" height="31"/>
                                                         <string key="text">Version 1.0
-Trinity Protocol 2.0.0</string>
+Trinity Protocol version 2.0.0</string>
                                                         <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="13"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -846,6 +848,13 @@ Trinity Protocol 2.0.0</string>
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                     </view>
+                    <connections>
+                        <outlet property="policyLabel" destination="NlB-cc-ymL" id="ByC-U8-X0W"/>
+                        <outlet property="techPaperLabel" destination="9O2-4J-UiI" id="Oza-Q4-hkZ"/>
+                        <outlet property="termsLabel" destination="w4b-Mk-Vhg" id="S27-3e-sOt"/>
+                        <outlet property="websiteLabel" destination="9xu-Zr-bYQ" id="Z0q-il-d3R"/>
+                        <outlet property="whitePaperLabel" destination="gic-mR-6z5" id="5Ms-H2-glh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="26w-J7-SoP" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="vbY-y1-Ceg" userLabel="Exit" sceneMemberID="exit"/>

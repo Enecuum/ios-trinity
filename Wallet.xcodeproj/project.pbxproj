@@ -53,6 +53,7 @@
 		B8EA1C6783C9B23D7D74D9C3 /* AddressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA1239C2672DEF51BEADC4 /* AddressViewController.swift */; };
 		B8EA1CC4E9CA358A0E45BB0F /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA101A8262DEB1CE21A0A5 /* UIColor+Extension.swift */; };
 		B8EA1D346E2A804AA6E52308 /* SwapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA14FE6D28D74937B28B55 /* SwapView.swift */; };
+		B8EA1D39E773665C99613F9D /* UILabel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA1D9D2D2EC73F992AC0FB /* UILabel+Extension.swift */; };
 		B8EA1E0979AC35B894DA7F7D /* KeychainPasswordItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA1736201913A7A18D87BB /* KeychainPasswordItem.swift */; };
 		B8EA1E29300288410B2DFC07 /* SendView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA1506B1F969451F03F8FD /* SendView.swift */; };
 		B8EA1F79D851002539ED16CE /* BalanceAmount.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA1651FDBF392B83C7A618 /* BalanceAmount.swift */; };
@@ -106,6 +107,7 @@
 		B8EA1A06E3393C3709805246 /* TransferViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransferViewController.swift; sourceTree = "<group>"; };
 		B8EA1AB4DE484A22A99E7DFD /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		B8EA1D8EC716C39C262B2F0B /* FaqViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FaqViewController.swift; sourceTree = "<group>"; };
+		B8EA1D9D2D2EC73F992AC0FB /* UILabel+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel+Extension.swift"; sourceTree = "<group>"; };
 		B8EA1DAB32B70779EF93B2DE /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		B8EA1DBE3695611D726A76D6 /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		B8EA1DEA865063CF4BEDC5EA /* AuthMode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthMode.swift; sourceTree = "<group>"; };
@@ -187,6 +189,7 @@
 				B8EA1F0AC6F5DA4951A86E7C /* GradientView.swift */,
 				B8EA1FD8D39ED0115C317AB0 /* NibView.swift */,
 				B8EA1125F44A41A6588C1CEF /* UIApplication+Extension.swift */,
+				B8EA1D9D2D2EC73F992AC0FB /* UILabel+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -568,6 +571,7 @@
 				B8EA1AC9E7E32FCA2FFD663C /* FaqViewController.swift in Sources */,
 				B8EA1849D8A479672073A236 /* TransactionStatus.swift in Sources */,
 				B8EA14CE5A9CBD1DD0AEFD15 /* Transaction.swift in Sources */,
+				B8EA1D39E773665C99613F9D /* UILabel+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -91,7 +91,9 @@ class TransferViewController: UIViewController {
     }
 
     private func postTransaction(_ transaction: Transaction) {
+        view.showLoader()
         ApiClient.transaction(transaction) { [weak self] result in
+            self?.view.hideLoader()
             switch result {
             case .success(let transactionStatus):
                 debugPrint(transactionStatus)
@@ -142,9 +144,9 @@ extension TransferViewController: QRCodeReaderViewControllerDelegate {
 
 extension TransferViewController: SendViewDelegate {
     func checkMaxSendValue(completion: @escaping (Decimal?) -> Void) {
-        //start progress
+        view.showLoader()
         fetchBalance { [weak self] amount in
-            //stop progress
+            self?.view.hideLoader()
             completion(amount)
             if let amount = amount {
                 self?.balanceAmountLabel.text = "\(amount)"

@@ -189,7 +189,7 @@ extension SendView: TransactionSender {
         doneView.isHidden = false
 
         receiverTextField.text = ""
-        sendAmountTextField.text = ""
+        sendAmountTextField.text = "0"
         amountSlider.value = 0
 
         DispatchQueue.main.asyncAfter(deadline: .now() + 3, execute: { [weak self] in

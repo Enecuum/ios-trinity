@@ -112,4 +112,35 @@ extension UIView {
             layer.add(rotationAnimation, forKey: "rotationanimationkey")
         }
     }
+
+    func showLoader() {
+        let loader = Loader(frame: frame)
+        self.addSubview(loader)
+    }
+
+    func hideLoader() {
+        if let loader = subviews.first(where: { $0 is Loader }) {
+            loader.removeFromSuperview()
+        }
+    }
+
+    class Loader: UIView {
+
+        override init(frame: CGRect) {
+            super.init(frame: frame)
+            addLoader()
+        }
+
+        required init?(coder aDecoder: NSCoder) {
+            fatalError("init(coder:) has not been implemented")
+        }
+
+        private func addLoader() {
+            let activityIndicator = UIActivityIndicatorView(style: .whiteLarge)
+            activityIndicator.frame = CGRect(x: 0, y: 0, width: 50, height: 50)
+            addSubview(activityIndicator)
+            activityIndicator.center = center
+            activityIndicator.startAnimating()
+        }
+    }
 }

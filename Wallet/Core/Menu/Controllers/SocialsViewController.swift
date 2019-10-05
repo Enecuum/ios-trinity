@@ -13,6 +13,8 @@ class SocialsViewController: UIViewController {
         }
     }
 
+    // MARK: - IBActions
+
     @IBAction func onFbClicked(_ sender: Any) {
         openUrl("https://www.facebook.com/enecuum.EN")
     }

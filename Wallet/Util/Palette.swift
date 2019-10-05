@@ -16,4 +16,6 @@ struct Palette {
                                      UIColor.init(white: 1, alpha: 0.1)]
 
     static let linkColor = UIColor(red: 60 / 255, green: 152 / 255, blue: 248 / 255, alpha: 1)
+
+    static let textFadeColor = UIColor(red: 54 / 255, green: 56 / 255, blue: 74 / 255, alpha: 1)
 }

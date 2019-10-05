@@ -1328,6 +1328,10 @@ Your current priate key will be deleted from the device memory after importing n
                                             <constraint firstAttribute="height" constant="25" id="kji-3w-IuE"/>
                                         </constraints>
                                     </imageView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Au-ND-faH">
+                                        <rect key="frame" x="10" y="68" width="373.33333333333331" height="574"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1gW-OT-kMb">
                                         <rect key="frame" x="10" y="68" width="373.33333333333331" height="574"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1432,12 +1436,16 @@ Feel free to ask for help in the Telegram group</string>
                                     <constraint firstItem="1gW-OT-kMb" firstAttribute="top" secondItem="zda-ha-zxx" secondAttribute="bottom" constant="8" id="DbN-NK-kkk"/>
                                     <constraint firstAttribute="trailing" secondItem="zda-ha-zxx" secondAttribute="trailing" constant="20" id="I6z-bh-BGq"/>
                                     <constraint firstAttribute="bottom" secondItem="1gW-OT-kMb" secondAttribute="bottom" constant="22" id="IT5-Mv-BZE"/>
+                                    <constraint firstItem="6Au-ND-faH" firstAttribute="leading" secondItem="1gW-OT-kMb" secondAttribute="leading" id="L84-0x-EEJ"/>
                                     <constraint firstItem="zda-ha-zxx" firstAttribute="top" secondItem="cCS-HD-ve0" secondAttribute="top" constant="18" id="NT6-8Z-98J"/>
                                     <constraint firstItem="OSj-lz-lco" firstAttribute="leading" secondItem="cCS-HD-ve0" secondAttribute="leading" id="OA2-wc-09W"/>
+                                    <constraint firstItem="6Au-ND-faH" firstAttribute="trailing" secondItem="1gW-OT-kMb" secondAttribute="trailing" id="aQZ-UU-Ufs"/>
                                     <constraint firstItem="OSj-lz-lco" firstAttribute="top" secondItem="cCS-HD-ve0" secondAttribute="top" id="abV-DE-pyb"/>
+                                    <constraint firstItem="6Au-ND-faH" firstAttribute="top" secondItem="1gW-OT-kMb" secondAttribute="top" id="d8c-Qj-0fQ"/>
                                     <constraint firstItem="1gW-OT-kMb" firstAttribute="width" secondItem="cCS-HD-ve0" secondAttribute="width" multiplier="0.95" id="gqU-Yl-AXa"/>
                                     <constraint firstItem="sxH-fs-51f" firstAttribute="leading" secondItem="ON6-qL-aPk" secondAttribute="trailing" constant="16" id="hc5-8X-TYt"/>
                                     <constraint firstAttribute="trailing" secondItem="OSj-lz-lco" secondAttribute="trailing" id="p9w-x7-JaN"/>
+                                    <constraint firstItem="6Au-ND-faH" firstAttribute="bottom" secondItem="1gW-OT-kMb" secondAttribute="bottom" id="shz-5V-eR2"/>
                                     <constraint firstItem="1gW-OT-kMb" firstAttribute="centerX" secondItem="cCS-HD-ve0" secondAttribute="centerX" id="v5j-ha-ZLI"/>
                                     <constraint firstItem="ON6-qL-aPk" firstAttribute="top" secondItem="cCS-HD-ve0" secondAttribute="top" constant="28" id="vIz-t7-tBT"/>
                                     <constraint firstItem="ON6-qL-aPk" firstAttribute="width" secondItem="ON6-qL-aPk" secondAttribute="height" multiplier="1:1" id="vkr-cp-ka8"/>
@@ -1482,12 +1490,13 @@ Feel free to ask for help in the Telegram group</string>
                     </view>
                     <connections>
                         <outlet property="faqTextView" destination="1gW-OT-kMb" id="iNf-XU-1ES"/>
+                        <outlet property="maskView" destination="6Au-ND-faH" id="woO-1t-h0s"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="t3m-mm-z40" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="wGU-1X-kgR" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2770" y="821"/>
+            <point key="canvasLocation" x="2769.5652173913045" y="820.92391304347836"/>
         </scene>
         <!--Socials View Controller-->
         <scene sceneID="b5W-2d-J7j">

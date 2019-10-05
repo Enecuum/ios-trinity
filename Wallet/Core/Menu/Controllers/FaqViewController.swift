@@ -8,7 +8,8 @@ import UIKit
 class FaqViewController: UIViewController {
 
     @IBOutlet weak var faqTextView: UITextView!
-
+    @IBOutlet weak var maskView: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -17,7 +18,7 @@ class FaqViewController: UIViewController {
         let title2 = "Network usage\n\n"
         let text2 = "The analogy with browser continues speaking of the Internet traffic usage by Enecuum app. You probably do not watch YouTube or download movies via mobile network so with Enecuum — we recommend to start PoA activity connected to a WiFi spot if you have limited or payable data plan. Actual consumed traffic volume depends on the network load and the number of online PoA participants and aimed to be light in the future mainnet achievable by rewards/fees stimulation. But during testnet activities traffic volume is not guaranteed to be persistent and predictable.\n\n"
         let title3 = "Support\n\n"
-        let text3 = "Feel free to ask for help in the Telegram group"
+        let text3 = "Feel free to ask for help in the Telegram group\n\n\n\n"
 
         let titleAttributes: [NSAttributedString.Key: Any] = [
             .font: R.font.ttNormsMedium(size: 17)!,
@@ -44,7 +45,21 @@ class FaqViewController: UIViewController {
             NSAttributedString.Key.underlineStyle: NSUnderlineStyle.single.rawValue
         ]
         faqTextView.linkTextAttributes = linkAttributes
+
+        addGradientMask()
     }
+
+    private func addGradientMask() {
+        let gradientLayer = CAGradientLayer()
+        gradientLayer.colors = Palette.inputGradient.map { $0.cgColor }
+        gradientLayer.startPoint = CGPoint(x: 0, y: 0.5)
+        gradientLayer.endPoint = CGPoint(x: 0, y: 1)
+        gradientLayer.frame = maskView.bounds
+        maskView.layer.addSublayer(gradientLayer)
+        maskView.mask = faqTextView
+    }
+
+    // MARK: - IBActions
 
     @IBAction func onBackClicked(_ sender: Any) {
         dismiss(animated: false)

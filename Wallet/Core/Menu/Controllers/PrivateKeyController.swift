@@ -87,10 +87,10 @@ class PrivateKeyController: UIViewController {
 extension PrivateKeyController: ConfirmViewDelegate {
     func onConfirmClicked() {
         if let key = confirmedPrivateKey {
+            Defaults.clearUserData()
             AuthManager.signIn(key)
             performSegue(withIdentifier: "unwindToMainSegue", sender: self)
         }
-        //TODO:clean prefs balance
     }
 
     func onCancelClicked() {

@@ -47,13 +47,18 @@ class TransferViewController: UIViewController {
         receiveView.isHidden = true
         receiveView.delegate = self
         swapView.isHidden = true
+
+        balanceAmountLabel.text = "\(Defaults.getBalance() ?? 0)"
     }
 
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
 
+        balanceAmountLabel.text = "\(Defaults.getBalance() ?? 0)"
+
         fetchBalance { [weak self] amount in
             if let amount = amount {
+                Defaults.saveBalance(amount)
                 self?.balanceAmountLabel.text = "\(amount)"
                 self?.sendView.updateMaxValue(maxValue: amount)
             }

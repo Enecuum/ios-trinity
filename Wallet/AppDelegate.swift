@@ -16,9 +16,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 
-        if !AuthManager.isSignedIn() {
-            let initialViewController = R.storyboard.auth().instantiateInitialViewController()
-            window?.rootViewController = initialViewController
+        if !Defaults.isRunOnce() {
+            AuthManager.signOut()
+        }
+
+        if AuthManager.isSignedIn() {
+            let mainViewController = R.storyboard.main.mainViewController()
+            window?.rootViewController = mainViewController
             window?.makeKeyAndVisible()
         }
 

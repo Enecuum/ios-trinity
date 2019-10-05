@@ -9,6 +9,11 @@ class MainViewController: UIViewController {
 
     private var transferViewController: TransferViewController?
 
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        Defaults.setRunOnceFlag()
+    }
+
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let transferViewController = segue.destination as? TransferViewController {
             self.transferViewController = transferViewController
@@ -23,7 +28,7 @@ class MainViewController: UIViewController {
     }
 
     @IBAction func unwindToMainViewController(_ segue: UIStoryboardSegue) {
-        if let sourceViewController = segue.source as? PrivateKeyController {
+        if let _ = segue.source as? PrivateKeyController {
             transferViewController?.resetBalance()
         }
     }

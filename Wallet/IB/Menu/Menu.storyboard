@@ -170,15 +170,6 @@
                                                     <constraint firstItem="GtZ-7g-Vcq" firstAttribute="centerY" secondItem="gcf-DT-nCH" secondAttribute="centerY" id="spK-Kk-7FN"/>
                                                 </constraints>
                                                 <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="color" keyPath="firstColor">
-                                                        <color key="value" red="0.23921568630000001" green="0.27058823529999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="color" keyPath="secondColor">
-                                                        <color key="value" red="0.1843137255" green="0.18823529410000001" blue="0.25882352939999997" alpha="1" colorSpace="calibratedRGB"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="gradientCornerRadius">
-                                                        <real key="value" value="15"/>
-                                                    </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
                                                         <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </userDefinedRuntimeAttribute>
@@ -254,15 +245,6 @@
                                                     <constraint firstItem="3RT-Me-Vxw" firstAttribute="centerY" secondItem="CyL-mc-Ov8" secondAttribute="centerY" id="vMe-bX-l9k"/>
                                                 </constraints>
                                                 <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="color" keyPath="firstColor">
-                                                        <color key="value" red="0.23921568630000001" green="0.27058823529999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="color" keyPath="secondColor">
-                                                        <color key="value" red="0.1843137255" green="0.18823529410000001" blue="0.25882352939999997" alpha="1" colorSpace="calibratedRGB"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="gradientCornerRadius">
-                                                        <real key="value" value="15"/>
-                                                    </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
                                                         <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </userDefinedRuntimeAttribute>
@@ -338,15 +320,6 @@
                                                     <constraint firstAttribute="height" constant="80" id="qrC-IF-cQL"/>
                                                 </constraints>
                                                 <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="color" keyPath="firstColor">
-                                                        <color key="value" red="0.23921568630000001" green="0.27058823529999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="color" keyPath="secondColor">
-                                                        <color key="value" red="0.1843137255" green="0.18823529410000001" blue="0.25882352939999997" alpha="1" colorSpace="calibratedRGB"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="gradientCornerRadius">
-                                                        <real key="value" value="15"/>
-                                                    </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
                                                         <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </userDefinedRuntimeAttribute>
@@ -422,15 +395,6 @@
                                                     <constraint firstItem="TXB-Bh-Rtc" firstAttribute="centerY" secondItem="nF3-Nf-YOW" secondAttribute="centerY" id="xdy-IX-vdX"/>
                                                 </constraints>
                                                 <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="color" keyPath="firstColor">
-                                                        <color key="value" red="0.23921568630000001" green="0.27058823529999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="color" keyPath="secondColor">
-                                                        <color key="value" red="0.1843137255" green="0.18823529410000001" blue="0.25882352939999997" alpha="1" colorSpace="calibratedRGB"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="gradientCornerRadius">
-                                                        <real key="value" value="15"/>
-                                                    </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
                                                         <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </userDefinedRuntimeAttribute>
@@ -506,15 +470,6 @@
                                                     <constraint firstItem="3rf-yZ-piF" firstAttribute="leading" secondItem="lzt-w1-n2M" secondAttribute="trailing" constant="16" id="zZu-x0-9jb"/>
                                                 </constraints>
                                                 <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="color" keyPath="firstColor">
-                                                        <color key="value" red="0.23921568630000001" green="0.27058823529999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="color" keyPath="secondColor">
-                                                        <color key="value" red="0.1843137255" green="0.18823529410000001" blue="0.25882352939999997" alpha="1" colorSpace="calibratedRGB"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="gradientCornerRadius">
-                                                        <real key="value" value="15"/>
-                                                    </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
                                                         <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </userDefinedRuntimeAttribute>
@@ -1469,6 +1424,7 @@ Feel free to ask for help in the Telegram group</string>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" red="0.21184206008911133" green="0.21882414817810059" blue="0.29020354151725769" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstItem="ON6-qL-aPk" firstAttribute="leading" secondItem="cCS-HD-ve0" secondAttribute="leading" constant="20" id="0o7-Jc-LNU"/>
                                     <constraint firstItem="sxH-fs-51f" firstAttribute="centerY" secondItem="ON6-qL-aPk" secondAttribute="centerY" id="3kJ-JP-LPu"/>

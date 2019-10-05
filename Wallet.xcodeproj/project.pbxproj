@@ -19,7 +19,6 @@
 		35B8CE24233A66AD007BC0C8 /* TTNorms-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 35B8CE22233A66AD007BC0C8 /* TTNorms-Bold.otf */; };
 		35C93FA5233ADD03003EF90B /* SendView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35C93FA4233ADD03003EF90B /* SendView.xib */; };
 		35C93FA8233AFE24003EF90B /* Menu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35C93FA7233AFE24003EF90B /* Menu.storyboard */; };
-		35C93FAB233B0D2B003EF90B /* MenuTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35C93FA9233B0538003EF90B /* MenuTableViewCell.xib */; };
 		B8EA10042D35D8D0F8B73B77 /* ReceiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA15972F01E94FB2FC5BC3 /* ReceiveView.swift */; };
 		B8EA121C55AEAAE0ED0F306B /* Palette.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA110F9290250EC4D79180 /* Palette.swift */; };
 		B8EA12606E90F967E84A040E /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA11F255A323DDBD75F780 /* AuthManager.swift */; };
@@ -48,6 +47,7 @@
 		B8EA1A51E9CEAFF795ACAC0D /* NSMutableAttributedString+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA1884042D4AA975D780AA /* NSMutableAttributedString+Extension.swift */; };
 		B8EA1AC9E7E32FCA2FFD663C /* FaqViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA1D8EC716C39C262B2F0B /* FaqViewController.swift */; };
 		B8EA1AD5D60A2E7DACBB78A8 /* Slider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA121B268DF274D4508B63 /* Slider.swift */; };
+		B8EA1B4DB2721DD800CF154E /* ConfirmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA1D4B5F536C48DC18ECDA /* ConfirmViewController.swift */; };
 		B8EA1B5D5B4BE05678661594 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA1DBE3695611D726A76D6 /* AboutViewController.swift */; };
 		B8EA1B89B74C8FB7DCF67632 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA1DAB32B70779EF93B2DE /* MenuViewController.swift */; };
 		B8EA1C041CF5B2023AFDC0BE /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA1E69D0A92BCBA9D4AAEA /* AuthViewController.swift */; };
@@ -76,7 +76,6 @@
 		35B8CE22233A66AD007BC0C8 /* TTNorms-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TTNorms-Bold.otf"; sourceTree = "<group>"; };
 		35C93FA4233ADD03003EF90B /* SendView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SendView.xib; sourceTree = "<group>"; };
 		35C93FA7233AFE24003EF90B /* Menu.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Menu.storyboard; sourceTree = "<group>"; };
-		35C93FA9233B0538003EF90B /* MenuTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MenuTableViewCell.xib; sourceTree = "<group>"; };
 		4A1D9D2B4E61AC9284666F23 /* Pods-wallet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wallet.debug.xcconfig"; path = "Target Support Files/Pods-wallet/Pods-wallet.debug.xcconfig"; sourceTree = "<group>"; };
 		B8EA101A8262DEB1CE21A0A5 /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		B8EA10B587A40452E6650A9E /* ApiClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
@@ -108,6 +107,7 @@
 		B8EA1A04EBB7AD8A41903DC0 /* PrivateKeyController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrivateKeyController.swift; sourceTree = "<group>"; };
 		B8EA1A06E3393C3709805246 /* TransferViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransferViewController.swift; sourceTree = "<group>"; };
 		B8EA1AB4DE484A22A99E7DFD /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		B8EA1D4B5F536C48DC18ECDA /* ConfirmViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmViewController.swift; sourceTree = "<group>"; };
 		B8EA1D8EC716C39C262B2F0B /* FaqViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FaqViewController.swift; sourceTree = "<group>"; };
 		B8EA1D9D2D2EC73F992AC0FB /* UILabel+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel+Extension.swift"; sourceTree = "<group>"; };
 		B8EA1DAB32B70779EF93B2DE /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
@@ -292,7 +292,6 @@
 		35C93FA6233AFE12003EF90B /* Menu */ = {
 			isa = PBXGroup;
 			children = (
-				35C93FA9233B0538003EF90B /* MenuTableViewCell.xib */,
 				35C93FA7233AFE24003EF90B /* Menu.storyboard */,
 			);
 			path = Menu;
@@ -363,6 +362,7 @@
 				B8EA1239C2672DEF51BEADC4 /* AddressViewController.swift */,
 				B8EA15E9D33B339A27DBDBA4 /* SocialsViewController.swift */,
 				B8EA1D8EC716C39C262B2F0B /* FaqViewController.swift */,
+				B8EA1D4B5F536C48DC18ECDA /* ConfirmViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -463,7 +463,6 @@
 				35C93FA8233AFE24003EF90B /* Menu.storyboard in Resources */,
 				35B8CE23233A66AD007BC0C8 /* TTNorms-Medium.otf in Resources */,
 				356A60D12333B93F00E8D118 /* Main.storyboard in Resources */,
-				35C93FAB233B0D2B003EF90B /* MenuTableViewCell.xib in Resources */,
 				B8EA182891245D4675ADDF7B /* ReceiveView.xib in Resources */,
 				B8EA178F557753B48D3EB921 /* SwapView.xib in Resources */,
 			);
@@ -576,6 +575,7 @@
 				B8EA14CE5A9CBD1DD0AEFD15 /* Transaction.swift in Sources */,
 				B8EA1D39E773665C99613F9D /* UILabel+Extension.swift in Sources */,
 				B8EA1A51E9CEAFF795ACAC0D /* NSMutableAttributedString+Extension.swift in Sources */,
+				B8EA1B4DB2721DD800CF154E /* ConfirmViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

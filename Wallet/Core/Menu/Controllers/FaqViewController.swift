@@ -64,8 +64,4 @@ class FaqViewController: UIViewController {
     @IBAction func onBackClicked(_ sender: Any) {
         dismiss(animated: false)
     }
-
-    @IBAction func onDismissClicked(_ sender: Any) {
-        dismiss(animated: false)
-    }
 }

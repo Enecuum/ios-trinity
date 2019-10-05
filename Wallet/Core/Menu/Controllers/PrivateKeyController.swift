@@ -8,18 +8,36 @@ import UIKit
 class PrivateKeyController: UIViewController {
 
     @IBOutlet weak var privateKeyTextField: UITextField!
+
     @IBOutlet weak var importLabel: UILabel!
     @IBOutlet weak var importView: UIView!
+    @IBOutlet weak var newPrivateKeyTextField: UITextField!
     @IBOutlet weak var signInButton: UIView!
+
     @IBOutlet weak var warningIconView: UIImageView!
     @IBOutlet weak var warningTitleLabel: UILabel!
     @IBOutlet weak var warningLabel: UILabel!
+
+    struct Constants {
+        static let privateKeyLength: Int = 64
+        static let acceptableChars = "0123456789abcdef"
+    }
+
+    private var confirmedPrivateKey: String?
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         privateKeyTextField.text = AuthManager.key()
     }
+
+    // MARK: - UI
+
+    private func setImportError(_ error: Bool, errorText: String? = nil) {
+        importView.borderColor = error ? Palette.errorRed : Palette.borderGray
+    }
+
+    // MARK: - IBActions
 
     @IBAction func onCopyPrivateKeyClicked(_ sender: Any) {
         UIPasteboard.general.string = privateKeyTextField.text
@@ -35,9 +53,26 @@ class PrivateKeyController: UIViewController {
     }
 
     @IBAction func onSignInClicked(_ sender: Any) {
+        newPrivateKeyTextField.endEditing(true)
+
+        guard let newPrivateKey = newPrivateKeyTextField.text, newPrivateKey.count == Constants.privateKeyLength else {
+            print("Incorrect format of private key")
+
+            setImportError(true)
+            return
+        }
+
+        if !CryptoHelper.isValidPrivateKey(newPrivateKey) {
+            print("Invalid private key")
+
+            setImportError(true)
+            return
+        }
+
+        confirmedPrivateKey = newPrivateKey
 
         let confirmViewController = R.storyboard.menu.confirmViewController()!
-        confirmViewController.confirmText = "Import new key"
+        confirmViewController.confirmText = "Import new private key"
         confirmViewController.modalPresentationStyle = .overCurrentContext
         confirmViewController.modalTransitionStyle = .crossDissolve
         confirmViewController.delegate = self
@@ -51,5 +86,31 @@ class PrivateKeyController: UIViewController {
 
 extension PrivateKeyController: ConfirmViewDelegate {
     func onConfirmClicked() {
+        if let key = confirmedPrivateKey {
+            AuthManager.signIn(key)
+            performSegue(withIdentifier: "unwindToMainSegue", sender: self)
+        }
+        //TODO:clean prefs balance
+    }
+
+    func onCancelClicked() {
+        confirmedPrivateKey = nil
+    }
+}
+
+extension PrivateKeyController: UITextFieldDelegate {
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        setImportError(false)
+    }
+
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
+
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        let charSet = NSCharacterSet(charactersIn: Constants.acceptableChars).inverted
+        let filtered = string.components(separatedBy: charSet).joined(separator: "")
+        return (string == filtered)
     }
 }

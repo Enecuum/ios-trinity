@@ -774,56 +774,74 @@ Trinity Protocol version 2.0.0</string>
                                 </constraints>
                                 <state key="normal" image="Menu/cross"/>
                                 <connections>
-                                    <segue destination="GhA-Wt-UVq" kind="unwind" unwindAction="unwindToMainViewController:" id="eFp-aK-JEn"/>
+                                    <segue destination="GhA-Wt-UVq" kind="unwind" identifier="unwindToMainSegue" unwindAction="unwindToMainViewController:" id="eFp-aK-JEn"/>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zrq-ML-RsY">
                                 <rect key="frame" x="10.333333333333343" y="64" width="393.33333333333326" height="664"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Menu/viewBack" translatesAutoresizingMaskIntoConstraints="NO" id="MQe-OS-MP1">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Menu/viewBack" translatesAutoresizingMaskIntoConstraints="NO" id="MQe-OS-MP1" userLabel="Background">
                                         <rect key="frame" x="0.0" y="0.0" width="393.33333333333331" height="664"/>
                                     </imageView>
-                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter your private key to import" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="43q-ax-K9n" userLabel="To Label">
-                                        <rect key="frame" x="20" y="208" width="227" height="19"/>
-                                        <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="16"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Menu/key" translatesAutoresizingMaskIntoConstraints="NO" id="ivm-d6-GEq" userLabel="Icon">
+                                        <rect key="frame" x="20" y="28" width="25" height="25"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="25" id="hql-bP-9dU"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Private key" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fzB-qZ-WCB" userLabel="Title">
+                                        <rect key="frame" x="60.999999999999993" y="30.666666666666671" width="85.333333333333314" height="20"/>
+                                        <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                     </label>
-                                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FDt-0W-sRX">
-                                        <rect key="frame" x="20" y="239" width="353.33333333333331" height="50"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rya-q6-atN" userLabel="Back Button">
+                                        <rect key="frame" x="343.33333333333337" y="18" width="30" height="42"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="30" id="RFw-CB-w1Y"/>
+                                            <constraint firstAttribute="height" constant="42" id="kTT-Lc-DWA"/>
+                                        </constraints>
+                                        <state key="normal" image="Icons/back"/>
+                                        <connections>
+                                            <action selector="onBackClicked:" destination="LaX-a3-lYg" eventType="touchUpInside" id="wVO-qn-kCa"/>
+                                        </connections>
+                                    </button>
+                                    <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8xM-xE-vhY" userLabel="Private Key View">
+                                        <rect key="frame" x="20" y="75" width="353.33333333333331" height="50"/>
                                         <subviews>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Oh8-eA-6bg" userLabel="Mask View">
-                                                <rect key="frame" x="0.0" y="0.0" width="353.33333333333331" height="50"/>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                        <real key="value" value="5"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                                        <real key="value" value="1"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                                        <color key="value" red="0.36078431370000003" green="0.3803921569" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                </userDefinedRuntimeAttributes>
-                                            </view>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LyG-3a-pM0" userLabel="To Field">
-                                                <rect key="frame" x="19" y="0.0" width="315.33333333333331" height="50"/>
+                                            <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Zyw-15-3jj" userLabel="Private Key Field">
+                                                <rect key="frame" x="19" y="0.0" width="295.33333333333331" height="50"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="15"/>
-                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="go" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
                                             </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nl5-dK-z6i" userLabel="Copy Button">
+                                                <rect key="frame" x="316.33333333333337" y="0.0" width="28" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="28" id="ryr-ac-2F8"/>
+                                                </constraints>
+                                                <state key="normal" image="Icons/copy"/>
+                                                <connections>
+                                                    <action selector="onCopyPrivateKeyClicked:" destination="LaX-a3-lYg" eventType="touchUpInside" id="En6-jj-mY3"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstItem="LyG-3a-pM0" firstAttribute="top" secondItem="FDt-0W-sRX" secondAttribute="top" id="2sb-gr-x1F"/>
-                                            <constraint firstItem="Oh8-eA-6bg" firstAttribute="top" secondItem="FDt-0W-sRX" secondAttribute="top" id="KAr-xW-O17"/>
-                                            <constraint firstItem="LyG-3a-pM0" firstAttribute="leading" secondItem="FDt-0W-sRX" secondAttribute="leading" constant="19" id="OVG-TO-eXO"/>
-                                            <constraint firstAttribute="bottom" secondItem="LyG-3a-pM0" secondAttribute="bottom" id="Vhd-N7-wNE"/>
-                                            <constraint firstAttribute="trailing" secondItem="LyG-3a-pM0" secondAttribute="trailing" constant="19" id="Zo5-Mg-7Nl"/>
-                                            <constraint firstAttribute="trailing" secondItem="Oh8-eA-6bg" secondAttribute="trailing" id="fJ6-eX-mYS"/>
-                                            <constraint firstAttribute="bottom" secondItem="Oh8-eA-6bg" secondAttribute="bottom" id="gjq-aJ-per"/>
-                                            <constraint firstAttribute="height" constant="50" id="lsD-uP-hFU"/>
-                                            <constraint firstItem="Oh8-eA-6bg" firstAttribute="leading" secondItem="FDt-0W-sRX" secondAttribute="leading" id="z0v-F6-3eA"/>
+                                            <constraint firstAttribute="trailing" secondItem="Nl5-dK-z6i" secondAttribute="trailing" constant="9" id="1d3-M7-XQY"/>
+                                            <constraint firstItem="Zyw-15-3jj" firstAttribute="leading" secondItem="8xM-xE-vhY" secondAttribute="leading" constant="19" id="XPo-Sc-i4e"/>
+                                            <constraint firstItem="Nl5-dK-z6i" firstAttribute="top" secondItem="8xM-xE-vhY" secondAttribute="top" id="iEa-hZ-Xke"/>
+                                            <constraint firstAttribute="bottom" secondItem="Nl5-dK-z6i" secondAttribute="bottom" id="kDd-yP-rP2"/>
+                                            <constraint firstAttribute="height" constant="50" id="q31-fC-uXE"/>
+                                            <constraint firstItem="Nl5-dK-z6i" firstAttribute="leading" secondItem="Zyw-15-3jj" secondAttribute="trailing" constant="2" id="tyf-mN-fSu"/>
+                                            <constraint firstItem="Zyw-15-3jj" firstAttribute="top" secondItem="8xM-xE-vhY" secondAttribute="top" id="wum-H7-uTe"/>
+                                            <constraint firstAttribute="bottom" secondItem="Zyw-15-3jj" secondAttribute="bottom" id="wwb-c4-O4X"/>
                                         </constraints>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -881,53 +899,50 @@ Trinity Protocol version 2.0.0</string>
                                             <action selector="onImportClicked:" destination="LaX-a3-lYg" eventType="touchUpInside" id="eVO-ZF-qt3"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Private key" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fzB-qZ-WCB" userLabel="Second Line">
-                                        <rect key="frame" x="60.999999999999993" y="30.666666666666671" width="85.333333333333314" height="20"/>
-                                        <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="17"/>
+                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter your private key to import" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="43q-ax-K9n" userLabel="Enter New Label">
+                                        <rect key="frame" x="20" y="208" width="227" height="19"/>
+                                        <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="16"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <real key="value" value="0.0"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
                                     </label>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Menu/key" translatesAutoresizingMaskIntoConstraints="NO" id="ivm-d6-GEq">
-                                        <rect key="frame" x="20" y="28" width="25" height="25"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="25" id="hql-bP-9dU"/>
-                                        </constraints>
-                                    </imageView>
-                                    <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8xM-xE-vhY">
-                                        <rect key="frame" x="20" y="75" width="353.33333333333331" height="50"/>
+                                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FDt-0W-sRX">
+                                        <rect key="frame" x="20" y="239" width="353.33333333333331" height="50"/>
                                         <subviews>
-                                            <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Zyw-15-3jj" userLabel="Address Field">
-                                                <rect key="frame" x="19" y="0.0" width="295.33333333333331" height="50"/>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Oh8-eA-6bg" userLabel="Mask View">
+                                                <rect key="frame" x="0.0" y="0.0" width="353.33333333333331" height="50"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" red="0.36078431370000003" green="0.3803921569" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LyG-3a-pM0" userLabel="To Field">
+                                                <rect key="frame" x="19" y="0.0" width="315.33333333333331" height="50"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="15"/>
-                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="go" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
-                                            </textField>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nl5-dK-z6i" userLabel="Copy Button">
-                                                <rect key="frame" x="316.33333333333337" y="0.0" width="28" height="50"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="28" id="ryr-ac-2F8"/>
-                                                </constraints>
-                                                <state key="normal" image="Icons/copy"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
                                                 <connections>
-                                                    <action selector="onCopyPrivateKeyClicked:" destination="LaX-a3-lYg" eventType="touchUpInside" id="En6-jj-mY3"/>
+                                                    <outlet property="delegate" destination="LaX-a3-lYg" id="YIp-lK-gIc"/>
                                                 </connections>
-                                            </button>
+                                            </textField>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstAttribute="trailing" secondItem="Nl5-dK-z6i" secondAttribute="trailing" constant="9" id="1d3-M7-XQY"/>
-                                            <constraint firstItem="Zyw-15-3jj" firstAttribute="leading" secondItem="8xM-xE-vhY" secondAttribute="leading" constant="19" id="XPo-Sc-i4e"/>
-                                            <constraint firstItem="Nl5-dK-z6i" firstAttribute="top" secondItem="8xM-xE-vhY" secondAttribute="top" id="iEa-hZ-Xke"/>
-                                            <constraint firstAttribute="bottom" secondItem="Nl5-dK-z6i" secondAttribute="bottom" id="kDd-yP-rP2"/>
-                                            <constraint firstAttribute="height" constant="50" id="q31-fC-uXE"/>
-                                            <constraint firstItem="Nl5-dK-z6i" firstAttribute="leading" secondItem="Zyw-15-3jj" secondAttribute="trailing" constant="2" id="tyf-mN-fSu"/>
-                                            <constraint firstItem="Zyw-15-3jj" firstAttribute="top" secondItem="8xM-xE-vhY" secondAttribute="top" id="wum-H7-uTe"/>
-                                            <constraint firstAttribute="bottom" secondItem="Zyw-15-3jj" secondAttribute="bottom" id="wwb-c4-O4X"/>
+                                            <constraint firstItem="LyG-3a-pM0" firstAttribute="top" secondItem="FDt-0W-sRX" secondAttribute="top" id="2sb-gr-x1F"/>
+                                            <constraint firstItem="Oh8-eA-6bg" firstAttribute="top" secondItem="FDt-0W-sRX" secondAttribute="top" id="KAr-xW-O17"/>
+                                            <constraint firstItem="LyG-3a-pM0" firstAttribute="leading" secondItem="FDt-0W-sRX" secondAttribute="leading" constant="19" id="OVG-TO-eXO"/>
+                                            <constraint firstAttribute="bottom" secondItem="LyG-3a-pM0" secondAttribute="bottom" id="Vhd-N7-wNE"/>
+                                            <constraint firstAttribute="trailing" secondItem="LyG-3a-pM0" secondAttribute="trailing" constant="19" id="Zo5-Mg-7Nl"/>
+                                            <constraint firstAttribute="trailing" secondItem="Oh8-eA-6bg" secondAttribute="trailing" id="fJ6-eX-mYS"/>
+                                            <constraint firstAttribute="bottom" secondItem="Oh8-eA-6bg" secondAttribute="bottom" id="gjq-aJ-per"/>
+                                            <constraint firstAttribute="height" constant="50" id="lsD-uP-hFU"/>
+                                            <constraint firstItem="Oh8-eA-6bg" firstAttribute="leading" secondItem="FDt-0W-sRX" secondAttribute="leading" id="z0v-F6-3eA"/>
                                         </constraints>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -941,18 +956,6 @@ Trinity Protocol version 2.0.0</string>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </view>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rya-q6-atN">
-                                        <rect key="frame" x="343.33333333333337" y="18" width="30" height="42"/>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="30" id="RFw-CB-w1Y"/>
-                                            <constraint firstAttribute="height" constant="42" id="kTT-Lc-DWA"/>
-                                        </constraints>
-                                        <state key="normal" image="Icons/back"/>
-                                        <connections>
-                                            <action selector="onBackClicked:" destination="LaX-a3-lYg" eventType="touchUpInside" id="wVO-qn-kCa"/>
-                                        </connections>
-                                    </button>
                                     <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icons/exclamation" translatesAutoresizingMaskIntoConstraints="NO" id="pst-6f-k6j">
                                         <rect key="frame" x="20" y="387" width="14" height="14"/>
                                         <constraints>
@@ -1093,6 +1096,7 @@ Trinity Protocol version 2.0.0</string>
                     <connections>
                         <outlet property="importLabel" destination="43q-ax-K9n" id="Xky-Q2-tQn"/>
                         <outlet property="importView" destination="FDt-0W-sRX" id="vEy-db-DeX"/>
+                        <outlet property="newPrivateKeyTextField" destination="LyG-3a-pM0" id="Oaz-1Z-5mY"/>
                         <outlet property="privateKeyTextField" destination="Zyw-15-3jj" id="oNF-hZ-mfK"/>
                         <outlet property="signInButton" destination="fRd-Wa-Fm1" id="urp-MM-LXb"/>
                         <outlet property="warningIconView" destination="pst-6f-k6j" id="LKO-h5-HA8"/>
@@ -1628,6 +1632,7 @@ Feel free to ask for help in the Telegram group</string>
                             <constraint firstItem="Ytm-OH-VM2" firstAttribute="centerX" secondItem="btD-tJ-ew1" secondAttribute="centerX" id="XC2-7C-jz5"/>
                             <constraint firstItem="Ytm-OH-VM2" firstAttribute="centerY" secondItem="btD-tJ-ew1" secondAttribute="centerY" multiplier="0.95" id="mQg-E3-792"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="dA8-EL-yqx"/>
                     </view>
                     <connections>
                         <outlet property="confirmButton" destination="iOh-OP-334" id="5Zy-fK-fAE"/>

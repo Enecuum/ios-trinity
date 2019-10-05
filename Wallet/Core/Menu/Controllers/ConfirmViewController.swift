@@ -7,6 +7,7 @@ import UIKit
 
 protocol ConfirmViewDelegate {
     func onConfirmClicked()
+    func onCancelClicked()
 }
 
 class ConfirmViewController: UIViewController {
@@ -53,10 +54,14 @@ class ConfirmViewController: UIViewController {
     }
 
     @IBAction private func onCancelClicked(_ sender: Any) {
-        dismiss(animated: true)
+        dismiss(animated: true) { [weak self] in
+            self?.delegate?.onCancelClicked()
+        }
     }
 
     @IBAction private func onConfirmClicked(_ sender: Any) {
-        dismiss(animated: false)
+        dismiss(animated: false) { [weak self] in
+            self?.delegate?.onConfirmClicked()
+        }
     }
 }

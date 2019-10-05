@@ -183,7 +183,7 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="lt1-ip-vxA" customClass="Slider" customModule="Enecuum_Wallet" customModuleProvider="target">
-                            <rect key="frame" x="26" y="232" width="292" height="31"/>
+                            <rect key="frame" x="26" y="236" width="292" height="31"/>
                             <color key="minimumTrackTintColor" red="0.062745098040000002" green="0.1058823529" blue="0.81568627449999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             <color key="maximumTrackTintColor" red="0.23137254900000001" green="0.2784313725" blue="0.42745098040000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             <color key="thumbTintColor" red="0.070588235289999995" green="0.41568627450000001" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -197,7 +197,7 @@
                             </userDefinedRuntimeAttributes>
                         </slider>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SkW-XP-Zhb" customClass="GradientButton" customModule="Enecuum_Wallet" customModuleProvider="target">
-                            <rect key="frame" x="127" y="295" width="90" height="38"/>
+                            <rect key="frame" x="127" y="299" width="90" height="38"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="90" id="m1q-cA-Zkq"/>
                                 <constraint firstAttribute="height" constant="38" id="pFG-U9-i4s"/>
@@ -244,13 +244,13 @@
                     <color key="backgroundColor" red="0.13725490200000001" green="0.14117647059999999" blue="0.1647058824" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <constraints>
                         <constraint firstAttribute="trailing" secondItem="wAI-4i-0Hw" secondAttribute="trailing" constant="28" id="0LH-y2-8pD"/>
-                        <constraint firstItem="lt1-ip-vxA" firstAttribute="top" secondItem="RSW-4v-E8p" secondAttribute="bottom" id="4r1-Vo-cpg"/>
-                        <constraint firstItem="lt1-ip-vxA" firstAttribute="top" secondItem="7hn-xT-QbD" secondAttribute="bottom" constant="35" id="6Dc-Ni-l2Q"/>
+                        <constraint firstItem="lt1-ip-vxA" firstAttribute="top" secondItem="RSW-4v-E8p" secondAttribute="bottom" constant="4" id="4r1-Vo-cpg"/>
+                        <constraint firstItem="lt1-ip-vxA" firstAttribute="top" secondItem="7hn-xT-QbD" secondAttribute="bottom" constant="39" id="6Dc-Ni-l2Q"/>
                         <constraint firstItem="NBE-IV-n1g" firstAttribute="leading" secondItem="TTo-4I-2zf" secondAttribute="leading" id="DMz-n0-hc1"/>
                         <constraint firstItem="TTo-4I-2zf" firstAttribute="top" secondItem="dV5-Ux-QqK" secondAttribute="top" constant="10" id="H7U-nQ-5Dh"/>
                         <constraint firstItem="wAI-4i-0Hw" firstAttribute="top" secondItem="TTo-4I-2zf" secondAttribute="bottom" constant="6" id="Izl-Fv-x4f"/>
                         <constraint firstItem="7hn-xT-QbD" firstAttribute="leading" secondItem="dV5-Ux-QqK" secondAttribute="leading" constant="28" id="Lth-DI-dOg"/>
-                        <constraint firstItem="lt1-ip-vxA" firstAttribute="top" secondItem="Kg9-ly-m6i" secondAttribute="bottom" id="Op4-iq-t1r"/>
+                        <constraint firstItem="lt1-ip-vxA" firstAttribute="top" secondItem="Kg9-ly-m6i" secondAttribute="bottom" constant="4" id="Op4-iq-t1r"/>
                         <constraint firstAttribute="trailing" secondItem="lt1-ip-vxA" secondAttribute="trailing" constant="28" id="TZN-TZ-8Bw"/>
                         <constraint firstAttribute="trailing" secondItem="7hn-xT-QbD" secondAttribute="trailing" constant="28" id="bhA-bG-37X"/>
                         <constraint firstItem="wAI-4i-0Hw" firstAttribute="leading" secondItem="dV5-Ux-QqK" secondAttribute="leading" constant="28" id="dns-hD-MGI"/>

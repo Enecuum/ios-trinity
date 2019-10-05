@@ -10,12 +10,4 @@ class MenuViewController: UIViewController {
     @IBAction func onDismissClicked(_ sender: Any) {
         dismiss(animated: false)
     }
-    
-    @IBAction func onLogOutClicked(_ sender: Any) {
-        AuthManager.signOut()
-
-        let initialViewController = R.storyboard.auth().instantiateInitialViewController()
-        let appDelegate = UIApplication.shared.delegate as! AppDelegate
-        appDelegate.window!.rootViewController = initialViewController
-    }
 }

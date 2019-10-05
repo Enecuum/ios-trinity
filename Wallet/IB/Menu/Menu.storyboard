@@ -26,13 +26,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3uZ-gL-nnb">
-                                <rect key="frame" x="17" y="20" width="52" height="30"/>
-                                <state key="normal" title="Log out"/>
-                                <connections>
-                                    <action selector="onLogOutClicked:" destination="DEr-j5-GFw" eventType="touchUpInside" id="F8C-F2-Nmg"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PLQ-bX-23Z">
                                 <rect key="frame" x="372" y="20" width="42" height="42"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -46,7 +39,7 @@
                                 </connections>
                             </button>
                             <scrollView multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EQ3-yO-RZh">
-                                <rect key="frame" x="0.0" y="64" width="414" height="672"/>
+                                <rect key="frame" x="0.0" y="74" width="414" height="662"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hkv-gL-1sF">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="440"/>
@@ -86,8 +79,8 @@
                                                             <constraint firstAttribute="height" constant="25" id="yvs-JZ-hzd"/>
                                                         </constraints>
                                                     </imageView>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GtZ-7g-Vcq" userLabel="Second Line">
-                                                        <rect key="frame" x="60.999999999999986" y="30" width="49.333333333333329" height="20"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About App" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GtZ-7g-Vcq" userLabel="Second Line">
+                                                        <rect key="frame" x="61" y="29.666666666666671" width="86" height="21"/>
                                                         <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="17"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -162,7 +155,7 @@
                                                         </constraints>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3RT-Me-Vxw" userLabel="Second Line">
-                                                        <rect key="frame" x="61" y="30" width="88" height="20"/>
+                                                        <rect key="frame" x="61" y="29.666666666666657" width="88" height="21"/>
                                                         <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="17"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -311,8 +304,8 @@
                                                             <constraint firstAttribute="height" constant="25" id="xRt-1r-gnv"/>
                                                         </constraints>
                                                     </imageView>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Social network" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aVe-Iq-vp1" userLabel="Second Line">
-                                                        <rect key="frame" x="60.999999999999993" y="30" width="112.66666666666666" height="20"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Community" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aVe-Iq-vp1" userLabel="Second Line">
+                                                        <rect key="frame" x="60.999999999999993" y="29.666666666666686" width="91.333333333333314" height="21"/>
                                                         <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="17"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -460,13 +453,11 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="EQ3-yO-RZh" firstAttribute="top" secondItem="PLQ-bX-23Z" secondAttribute="bottom" constant="2" id="6ZV-KM-7Ra"/>
+                            <constraint firstItem="EQ3-yO-RZh" firstAttribute="top" secondItem="PLQ-bX-23Z" secondAttribute="bottom" constant="12" id="6ZV-KM-7Ra"/>
                             <constraint firstItem="mLf-Jg-g3M" firstAttribute="trailing" secondItem="PLQ-bX-23Z" secondAttribute="trailing" id="Fr6-Ie-E6h"/>
                             <constraint firstItem="EQ3-yO-RZh" firstAttribute="leading" secondItem="mLf-Jg-g3M" secondAttribute="leading" id="LV1-hC-fmc"/>
                             <constraint firstItem="EQ3-yO-RZh" firstAttribute="bottom" secondItem="mLf-Jg-g3M" secondAttribute="bottom" id="Qbe-vg-e5A"/>
                             <constraint firstItem="EQ3-yO-RZh" firstAttribute="trailing" secondItem="mLf-Jg-g3M" secondAttribute="trailing" id="Tk4-Mc-unk"/>
-                            <constraint firstItem="3uZ-gL-nnb" firstAttribute="leading" secondItem="mLf-Jg-g3M" secondAttribute="leading" constant="17" id="Wyg-1Z-JQ2"/>
-                            <constraint firstItem="3uZ-gL-nnb" firstAttribute="top" secondItem="mLf-Jg-g3M" secondAttribute="top" id="lJV-Bq-eLB"/>
                             <constraint firstItem="PLQ-bX-23Z" firstAttribute="top" secondItem="mLf-Jg-g3M" secondAttribute="top" id="ou4-5Z-fHG"/>
                             <constraint firstItem="EQ3-yO-RZh" firstAttribute="width" secondItem="OOi-e8-Dx9" secondAttribute="width" id="xA5-zg-jyf"/>
                         </constraints>
@@ -512,13 +503,13 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hRx-iP-1bP">
-                                <rect key="frame" x="10.333333333333343" y="64" width="393.33333333333326" height="664"/>
+                                <rect key="frame" x="10.333333333333343" y="74" width="393.33333333333326" height="654"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Menu/viewBack" translatesAutoresizingMaskIntoConstraints="NO" id="G9I-NW-Ov3">
-                                        <rect key="frame" x="0.0" y="0.0" width="393.33333333333331" height="664"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="393.33333333333331" height="654"/>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s1D-KC-gUb" userLabel="Second Line">
-                                        <rect key="frame" x="60.999999999999986" y="30.666666666666671" width="49.333333333333329" height="20"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About App" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s1D-KC-gUb" userLabel="Second Line">
+                                        <rect key="frame" x="61" y="30" width="86" height="21"/>
                                         <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -535,7 +526,7 @@
                                         </constraints>
                                     </imageView>
                                     <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xPu-7T-go2">
-                                        <rect key="frame" x="10" y="82" width="373.33333333333331" height="574"/>
+                                        <rect key="frame" x="10" y="82" width="373.33333333333331" height="564"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UM7-Uj-k8q">
                                                 <rect key="frame" x="0.0" y="0.0" width="373.33333333333331" height="354.33333333333331"/>
@@ -721,7 +712,7 @@ Trinity Protocol version 2.0.0</string>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="hRx-iP-1bP" firstAttribute="top" secondItem="tKc-qZ-xLa" secondAttribute="bottom" constant="2" id="JKf-rP-WjB"/>
+                            <constraint firstItem="hRx-iP-1bP" firstAttribute="top" secondItem="tKc-qZ-xLa" secondAttribute="bottom" constant="12" id="JKf-rP-WjB"/>
                             <constraint firstItem="BgR-P3-C4P" firstAttribute="trailing" secondItem="tKc-qZ-xLa" secondAttribute="trailing" id="Zy3-53-sOW"/>
                             <constraint firstItem="tKc-qZ-xLa" firstAttribute="top" secondItem="BgR-P3-C4P" secondAttribute="top" id="a6h-2N-7qN"/>
                             <constraint firstItem="hRx-iP-1bP" firstAttribute="width" secondItem="Cgt-eL-XhE" secondAttribute="width" multiplier="0.95" id="fok-S5-vxg"/>
@@ -755,7 +746,7 @@ Trinity Protocol version 2.0.0</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="26w-J7-SoP" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="vbY-y1-Ceg" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1457" y="64"/>
+            <point key="canvasLocation" x="1451" y="71"/>
         </scene>
         <!--Private Key Controller-->
         <scene sceneID="fNU-d4-cO0">
@@ -778,10 +769,10 @@ Trinity Protocol version 2.0.0</string>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zrq-ML-RsY">
-                                <rect key="frame" x="10.333333333333343" y="64" width="393.33333333333326" height="664"/>
+                                <rect key="frame" x="10.333333333333343" y="74" width="393.33333333333326" height="654"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Menu/viewBack" translatesAutoresizingMaskIntoConstraints="NO" id="MQe-OS-MP1" userLabel="Background">
-                                        <rect key="frame" x="0.0" y="0.0" width="393.33333333333331" height="664"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="393.33333333333331" height="654"/>
                                     </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Menu/key" translatesAutoresizingMaskIntoConstraints="NO" id="ivm-d6-GEq" userLabel="Icon">
                                         <rect key="frame" x="20" y="28" width="25" height="25"/>
@@ -862,7 +853,7 @@ Trinity Protocol version 2.0.0</string>
                                             <constraint firstAttribute="height" constant="38" id="D7N-lf-CSi"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="13"/>
-                                        <state key="normal" title="Import Wallet"/>
+                                        <state key="normal" title="Import wallet"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="color" keyPath="firstColor">
                                                 <color key="value" red="0.25098039220000001" green="0.61960784310000006" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
@@ -968,7 +959,7 @@ Trinity Protocol version 2.0.0</string>
                                         <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="500" text="Your current priate key will be deleted from the device memory after importing new one. Please be sure to have a backup copy." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Duz-rk-x7w">
+                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="500" text="Your current private key will be deleted from the device memory after importing new one. Please be sure to have a backup copy." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Duz-rk-x7w">
                                         <rect key="frame" x="45" y="399.33333333333331" width="321.33333333333331" height="42.666666666666686"/>
                                         <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="12"/>
                                         <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
@@ -1071,7 +1062,7 @@ Trinity Protocol version 2.0.0</string>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="zrq-ML-RsY" firstAttribute="width" secondItem="OVW-lP-B4w" secondAttribute="width" multiplier="0.95" id="Dvk-It-ebe"/>
-                            <constraint firstItem="zrq-ML-RsY" firstAttribute="top" secondItem="hZo-E1-K70" secondAttribute="bottom" constant="2" id="YGS-qa-GhQ"/>
+                            <constraint firstItem="zrq-ML-RsY" firstAttribute="top" secondItem="hZo-E1-K70" secondAttribute="bottom" constant="12" id="YGS-qa-GhQ"/>
                             <constraint firstItem="zrq-ML-RsY" firstAttribute="centerX" secondItem="OVW-lP-B4w" secondAttribute="centerX" id="ghb-bb-oYh"/>
                             <constraint firstItem="hZo-E1-K70" firstAttribute="top" secondItem="5kx-Oy-KxY" secondAttribute="top" id="m1t-By-b8J"/>
                             <constraint firstItem="5kx-Oy-KxY" firstAttribute="bottom" secondItem="zrq-ML-RsY" secondAttribute="bottom" constant="8" id="wXm-l2-E6N"/>
@@ -1138,13 +1129,13 @@ Trinity Protocol version 2.0.0</string>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YGb-Dw-beb">
-                                <rect key="frame" x="10.333333333333343" y="64" width="393.33333333333326" height="664"/>
+                                <rect key="frame" x="10.333333333333343" y="74" width="393.33333333333326" height="654"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Menu/viewBack" translatesAutoresizingMaskIntoConstraints="NO" id="Fl6-ei-Yj5">
-                                        <rect key="frame" x="0.0" y="0.0" width="393.33333333333331" height="664"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="393.33333333333331" height="654"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y21-o1-NdX" userLabel="Second Line">
-                                        <rect key="frame" x="61" y="30.666666666666671" width="88" height="20"/>
+                                        <rect key="frame" x="61" y="30" width="88" height="21"/>
                                         <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -1249,7 +1240,7 @@ Trinity Protocol version 2.0.0</string>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="YGb-Dw-beb" firstAttribute="width" secondItem="tby-Te-sDT" secondAttribute="width" multiplier="0.95" id="1Sw-px-Mr1"/>
-                            <constraint firstItem="YGb-Dw-beb" firstAttribute="top" secondItem="gct-8z-T2l" secondAttribute="bottom" constant="2" id="9dd-cJ-5cn"/>
+                            <constraint firstItem="YGb-Dw-beb" firstAttribute="top" secondItem="gct-8z-T2l" secondAttribute="bottom" constant="12" id="9dd-cJ-5cn"/>
                             <constraint firstItem="T03-ay-za8" firstAttribute="trailing" secondItem="gct-8z-T2l" secondAttribute="trailing" id="E6t-TC-LSW"/>
                             <constraint firstItem="T03-ay-za8" firstAttribute="bottom" secondItem="YGb-Dw-beb" secondAttribute="bottom" constant="8" id="PyS-bF-teH"/>
                             <constraint firstItem="YGb-Dw-beb" firstAttribute="centerX" secondItem="tby-Te-sDT" secondAttribute="centerX" id="YW5-A8-kZK"/>
@@ -1301,10 +1292,10 @@ Trinity Protocol version 2.0.0</string>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cCS-HD-ve0">
-                                <rect key="frame" x="10.333333333333343" y="64" width="393.33333333333326" height="664"/>
+                                <rect key="frame" x="10.333333333333343" y="74" width="393.33333333333326" height="654"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Menu/viewBack" translatesAutoresizingMaskIntoConstraints="NO" id="OSj-lz-lco">
-                                        <rect key="frame" x="0.0" y="0.0" width="393.33333333333331" height="664"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="393.33333333333331" height="654"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FAQ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sxH-fs-51f" userLabel="Second Line">
                                         <rect key="frame" x="60.999999999999986" y="30.666666666666671" width="36.333333333333329" height="20"/>
@@ -1324,11 +1315,11 @@ Trinity Protocol version 2.0.0</string>
                                         </constraints>
                                     </imageView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Au-ND-faH">
-                                        <rect key="frame" x="10" y="68" width="373.33333333333331" height="574"/>
+                                        <rect key="frame" x="10" y="68" width="373.33333333333331" height="564"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </view>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1gW-OT-kMb">
-                                        <rect key="frame" x="10" y="68" width="373.33333333333331" height="574"/>
+                                        <rect key="frame" x="10" y="68" width="373.33333333333331" height="564"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <attributedString key="attributedText">
                                             <fragment content="Battery life">
@@ -1465,7 +1456,7 @@ Feel free to ask for help in the Telegram group</string>
                             <constraint firstItem="Bj2-h2-qO7" firstAttribute="bottom" secondItem="cCS-HD-ve0" secondAttribute="bottom" constant="8" id="eQJ-Vm-ubi"/>
                             <constraint firstItem="cCS-HD-ve0" firstAttribute="centerX" secondItem="Oaq-CR-bdG" secondAttribute="centerX" id="iv7-ZF-sM3"/>
                             <constraint firstItem="Bj2-h2-qO7" firstAttribute="trailing" secondItem="uWl-ki-7Hf" secondAttribute="trailing" id="kCo-0B-SCN"/>
-                            <constraint firstItem="cCS-HD-ve0" firstAttribute="top" secondItem="uWl-ki-7Hf" secondAttribute="bottom" constant="2" id="pUv-DV-85I"/>
+                            <constraint firstItem="cCS-HD-ve0" firstAttribute="top" secondItem="uWl-ki-7Hf" secondAttribute="bottom" constant="12" id="pUv-DV-85I"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Bj2-h2-qO7"/>
                         <userDefinedRuntimeAttributes>
@@ -1502,7 +1493,7 @@ Feel free to ask for help in the Telegram group</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ytm-OH-VM2">
-                                <rect key="frame" x="87" y="243.33333333333331" width="240" height="212.33333333333331"/>
+                                <rect key="frame" x="87" y="252.33333333333331" width="240" height="194.33333333333331"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Are you sure?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7wR-c2-AqW">
                                         <rect key="frame" x="66.333333333333343" y="39.999999999999972" width="107.66666666666666" height="20.333333333333329"/>
@@ -1510,14 +1501,14 @@ Feel free to ask for help in the Telegram group</string>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Version 1.0" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bpi-nX-ZPa">
-                                        <rect key="frame" x="81.666666666666657" y="80.333333333333343" width="77" height="18"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bpi-nX-ZPa">
+                                        <rect key="frame" x="120" y="80.333333333333343" width="0.0" height="0.0"/>
                                         <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="15"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="nle-ih-0lF">
-                                        <rect key="frame" x="33" y="134.33333333333334" width="174" height="38"/>
+                                        <rect key="frame" x="33" y="116.33333333333334" width="174" height="38"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="i9R-ot-xJN">
                                                 <rect key="frame" x="0.0" y="0.0" width="72" height="38"/>
@@ -1665,13 +1656,13 @@ Feel free to ask for help in the Telegram group</string>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yIu-Mm-mkl">
-                                <rect key="frame" x="10.333333333333343" y="64" width="393.33333333333326" height="664"/>
+                                <rect key="frame" x="10.333333333333343" y="74" width="393.33333333333326" height="654"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Menu/viewBack" translatesAutoresizingMaskIntoConstraints="NO" id="X0X-al-lXD">
-                                        <rect key="frame" x="0.0" y="0.0" width="393.33333333333331" height="664"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="393.33333333333331" height="654"/>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Social networks" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="97m-hF-ZTb" userLabel="Second Line">
-                                        <rect key="frame" x="60.999999999999993" y="30.333333333333329" width="120.66666666666666" height="20.333333333333329"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Community" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="97m-hF-ZTb" userLabel="Second Line">
+                                        <rect key="frame" x="60.999999999999993" y="30.333333333333329" width="91.333333333333314" height="20.333333333333329"/>
                                         <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -1818,7 +1809,7 @@ Feel free to ask for help in the Telegram group</string>
                             <constraint firstItem="D0M-mk-4sI" firstAttribute="bottom" secondItem="yIu-Mm-mkl" secondAttribute="bottom" constant="8" id="4mx-33-Vzu"/>
                             <constraint firstItem="MFa-sZ-8th" firstAttribute="top" secondItem="D0M-mk-4sI" secondAttribute="top" id="8No-6g-iKE"/>
                             <constraint firstItem="D0M-mk-4sI" firstAttribute="trailing" secondItem="MFa-sZ-8th" secondAttribute="trailing" id="Gdx-bt-xSj"/>
-                            <constraint firstItem="yIu-Mm-mkl" firstAttribute="top" secondItem="MFa-sZ-8th" secondAttribute="bottom" constant="2" id="iDG-ig-OPl"/>
+                            <constraint firstItem="yIu-Mm-mkl" firstAttribute="top" secondItem="MFa-sZ-8th" secondAttribute="bottom" constant="12" id="iDG-ig-OPl"/>
                             <constraint firstItem="yIu-Mm-mkl" firstAttribute="width" secondItem="o9K-tU-eIK" secondAttribute="width" multiplier="0.95" id="kxp-Go-IGd"/>
                             <constraint firstItem="yIu-Mm-mkl" firstAttribute="centerX" secondItem="o9K-tU-eIK" secondAttribute="centerX" id="ph5-1I-vcP"/>
                         </constraints>

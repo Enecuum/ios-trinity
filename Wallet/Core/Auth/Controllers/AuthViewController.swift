@@ -20,7 +20,9 @@ class AuthViewController: UIViewController {
     @IBOutlet weak var privateKeyMaskView: UIView!
 
     @IBOutlet weak var errorLabel: UILabel!
-
+    
+    @IBOutlet weak var startButton: GradientButton!
+    
     struct Constants {
         static let addressLength: Int = 66
         static let privateKeyLength: Int = 64
@@ -38,6 +40,8 @@ class AuthViewController: UIViewController {
 
             privateKeyTextField.isUserInteractionEnabled = true
             addGradientMask(textField: privateKeyTextField, maskView: privateKeyMaskView)
+            
+            startButton.setTitle("Import wallet", for: .normal)
         } else {
             errorLabel.isHidden = true
 

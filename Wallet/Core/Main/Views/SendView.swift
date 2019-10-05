@@ -35,7 +35,7 @@ class SendView: UIView, NibView {
 
     @IBOutlet weak var doneView: UIView!
     @IBOutlet weak var circleImageView: UIImageView!
-    
+
     struct Constants {
         static let addressLength: Int = 66
         static let acceptableAmountChars = "0123456789."
@@ -216,7 +216,15 @@ extension SendView: UITextFieldDelegate {
             let numberFormatter = NumberFormatter()
             numberFormatter.numberStyle = .decimal
             if let amount = sendAmountTextField.text, !amount.isEmpty, let number = numberFormatter.number(from: amount) {
-                amountSlider.value = number.floatValue
+                if number.floatValue > amountSlider.maximumValue {
+                    sendAmountTextField.text = "\(Int(amountSlider.maximumValue))"
+                    amountSlider.value = amountSlider.maximumValue
+                } else {
+                    amountSlider.value = number.floatValue
+                }
+            } else {
+                textField.text = "0"
+                amountSlider.value = 0
             }
         }
     }

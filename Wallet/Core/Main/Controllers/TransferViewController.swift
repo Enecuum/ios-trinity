@@ -166,32 +166,15 @@ extension TransferViewController: SendViewDelegate {
 
     func sendEnq(to address: String, amount: Decimal) {
         let amountToSendInEnqCents = amount * Constants.balanceToApiMultiplier
-        print("amountToSend")
-        print("\(amountToSendInEnqCents)")
         let fromAddress = CryptoHelper.getPublicKey()
-        print("fromAddress")
-        print("\(fromAddress)")
         let random = UInt32.random(in: 0...UInt32.max)
-        print("random")
-        print("\(random)")
-        print("toaddress")
-        print("\(address)")
         let txHash = CryptoHelper.buildTxHash(amount: "\(amountToSendInEnqCents)",
                                               random: "\(random)",
                                               from: fromAddress,
                                               to: address)
-        print("-===-txHash")
-        print(txHash)
-
         let sign = CryptoHelper.sign(txHash)
-        print("-===-sign")
-        print(sign)
-
         let amountStr = "\(amountToSendInEnqCents)"
         if let amoutUint64 = UInt64(amountStr) {
-            print("AMOUNT")
-            print("\(amoutUint64)")
-
             let transaction = Transaction(amount: amoutUint64,
                                           from: fromAddress,
                                           nonce: random,

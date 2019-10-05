@@ -206,6 +206,9 @@ extension SendView: UITextFieldDelegate {
         } else {
             setAmountError(false)
         }
+        DispatchQueue.main.async {
+            textField.selectAll(nil)
+        }
     }
 
     public func textFieldDidEndEditing(_ textField: UITextField) {

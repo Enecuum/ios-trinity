@@ -61,7 +61,6 @@ class TabsView: UIView {
                 btn.setTitleColor(selectorTextColor, for: .normal)
             }
         }
-        buttons[2].setTitleColor(UIColor.init(white: 1, alpha: 0.3), for: .normal)
     }
 }
 
@@ -107,8 +106,5 @@ extension TabsView {
             buttons.append(button)
         }
         buttons[0].setTitleColor(selectorTextColor, for: .normal)
-
-        buttons[2].isEnabled = false
-        buttons[2].setTitleColor(UIColor.init(white: 1, alpha: 0.3), for: .normal)
     }
 }

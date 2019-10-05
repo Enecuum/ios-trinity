@@ -36,7 +36,7 @@ class TransferViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        tabsView.setButtonTitles(buttonTitles: ["Send", "Receive", "SWAP"])
+        tabsView.setButtonTitles(buttonTitles: ["Send", "Receive"])
         tabsView.selectorViewColor = .white
         tabsView.selectorTextColor = .white
         tabsView.textColor = .white

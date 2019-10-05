@@ -17,8 +17,12 @@ class TransferViewController: UIViewController {
     @IBOutlet weak var swapView: SwapView!
 
     struct Constants {
-        static let apiToBalanceMultiplier: Decimal = Decimal(0.0000000001)
-        static let balanceToApiMultiplier: Decimal = Decimal(10000000000)
+        static let apiToBalanceMultiplier: NSDecimalNumber = NSDecimalNumber(mantissa: 1,
+                                                                             exponent: -10,
+                                                                             isNegative: false)
+        static let balanceToApiMultiplier: NSDecimalNumber = NSDecimalNumber(mantissa: 1,
+                                                                             exponent: 10,
+                                                                             isNegative: false)
     }
 
     lazy var readerVC: QRCodeReaderViewController = {
@@ -71,17 +75,12 @@ class TransferViewController: UIViewController {
 
     // MARK: - Server
 
-    private func fetchBalance(completion: @escaping (Decimal?) -> Void) {
+    private func fetchBalance(completion: @escaping (NSDecimalNumber?) -> Void) {
         ApiClient.balance(id: CryptoHelper.getPublicKey()) { result in
             switch result {
             case .success(let balanceAmount):
                 debugPrint(balanceAmount)
-                guard let decimalAmount = Decimal(string: String(balanceAmount.amount)) else {
-                    print("Failed to convert balanceAmount")
-                    completion(nil)
-                    return
-                }
-                let amount = decimalAmount * Constants.apiToBalanceMultiplier
+                let amount = NSDecimalNumber(value: balanceAmount.amount).multiplying(by: Constants.apiToBalanceMultiplier)
                 completion(amount)
             case .failure(let error):
                 print(error.localizedDescription)
@@ -143,7 +142,7 @@ extension TransferViewController: QRCodeReaderViewControllerDelegate {
 }
 
 extension TransferViewController: SendViewDelegate {
-    func checkMaxSendValue(completion: @escaping (Decimal?) -> Void) {
+    func checkMaxSendValue(completion: @escaping (NSDecimalNumber?) -> Void) {
         view.showLoader()
         fetchBalance { [weak self] amount in
             self?.view.hideLoader()
@@ -166,8 +165,8 @@ extension TransferViewController: SendViewDelegate {
         present(readerVC, animated: true, completion: nil)
     }
 
-    func sendEnq(to address: String, amount: Decimal) {
-        let amountToSendInEnqCents = amount * Constants.balanceToApiMultiplier
+    func sendEnq(to address: String, amount: NSDecimalNumber) {
+        let amountToSendInEnqCents = amount.multiplying(by: Constants.balanceToApiMultiplier)
         let fromAddress = CryptoHelper.getPublicKey()
         let random = UInt32.random(in: 0...UInt32.max)
         let txHash = CryptoHelper.buildTxHash(amount: "\(amountToSendInEnqCents)",

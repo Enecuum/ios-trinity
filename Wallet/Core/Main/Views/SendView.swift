@@ -6,13 +6,13 @@
 import UIKit
 
 protocol SendViewDelegate {
-    func checkMaxSendValue(completion: @escaping (Decimal?) -> Void)
+    func checkMaxSendValue(completion: @escaping (NSDecimalNumber?) -> Void)
     func readQrCode()
-    func sendEnq(to address: String, amount: Decimal)
+    func sendEnq(to address: String, amount: NSDecimalNumber)
 }
 
 protocol TransactionSender {
-    func updateMaxValue(maxValue: Decimal)
+    func updateMaxValue(maxValue: NSDecimalNumber)
     func setReceiverAddress(address: String)
     func setTransactionStatus(success: Bool)
 }
@@ -44,7 +44,7 @@ class SendView: UIView, NibView {
 
     var delegate: SendViewDelegate?
     //TODO: remove
-    private var amountToSend: Decimal?
+    private var amountToSend: NSDecimalNumber?
 
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -115,7 +115,7 @@ class SendView: UIView, NibView {
         sendAmountBorderView.borderColor = error ? Palette.errorRed : Palette.borderGray
     }
 
-    private func openConfirmView(_ amountToSend: Decimal) {
+    private func openConfirmView(_ amountToSend: NSDecimalNumber) {
         self.amountToSend = amountToSend
 
         confirmReceiverLabel.text = receiverTextField.text
@@ -141,23 +141,21 @@ class SendView: UIView, NibView {
             return
         }
 
-        if let amountToSend = Decimal(string: amount) {
-            if amountToSend.isZero || amountToSend.sign == .minus {
-                setAmountError(true)
-                print("Invalid amount")
+        let amountToSend = NSDecimalNumber(string: amount)
+        if amountToSend == NSDecimalNumber.zero || amountToSend.compare(NSDecimalNumber.zero) == .orderedAscending {
+            setAmountError(true)
+            print("Invalid amount")
+            return
+        }
+
+        delegate?.checkMaxSendValue { [weak self] maxSendValue in
+            guard let maxSendValue = maxSendValue,
+                  (amountToSend.compare(maxSendValue) == .orderedAscending || amountToSend.compare(maxSendValue) == .orderedSame) else {
+                print("User amount is unknown or not enough to continue the transaction")
+                self?.setAmountError(true)
                 return
             }
-
-            delegate?.checkMaxSendValue { [weak self] maxSendValue in
-                guard let maxSendValue = maxSendValue, amountToSend <= maxSendValue else {
-                    print("User amount is unknown or not enough to continue the transaction")
-                    self?.setAmountError(true)
-                    return
-                }
-                self?.openConfirmView(amountToSend)
-            }
-        } else {
-            setAmountError(true)
+            self?.openConfirmView(amountToSend)
         }
     }
 
@@ -174,8 +172,8 @@ class SendView: UIView, NibView {
 }
 
 extension SendView: TransactionSender {
-    func updateMaxValue(maxValue: Decimal) {
-        amountSlider.maximumValue = NSDecimalNumber(decimal: maxValue).floatValue
+    func updateMaxValue(maxValue: NSDecimalNumber) {
+        amountSlider.maximumValue = maxValue.floatValue
     }
 
     func setReceiverAddress(address: String) {

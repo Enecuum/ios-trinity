@@ -12,13 +12,13 @@ class Defaults {
         static let balanceKey: String = "balanceKey"
     }
 
-    static func saveBalance(_ balance: Decimal) {
+    static func saveBalance(_ balance: NSDecimalNumber) {
         UserDefaults.standard.set("\(balance)", forKey: Constants.balanceKey)
     }
 
-    static func getBalance() -> Decimal? {
+    static func getBalance() -> NSDecimalNumber? {
         if let stringValue = UserDefaults.standard.value(forKey: Constants.balanceKey) as? String {
-            return Decimal(string: stringValue)
+            return NSDecimalNumber(string: stringValue)
         }
         return nil
     }

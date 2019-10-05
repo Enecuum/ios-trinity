@@ -21,6 +21,7 @@ class PrivateKeyController: UIViewController {
     struct Constants {
         static let privateKeyLength: Int = 64
         static let acceptableChars = "0123456789abcdef"
+        static let unwindSegueId = "unwindToMainSegue"
     }
 
     private var confirmedPrivateKey: String?
@@ -89,7 +90,7 @@ extension PrivateKeyController: ConfirmViewDelegate {
         if let key = confirmedPrivateKey {
             Defaults.clearUserData()
             AuthManager.signIn(key)
-            performSegue(withIdentifier: "unwindToMainSegue", sender: self)
+            performSegue(withIdentifier: Constants.unwindSegueId, sender: self)
         }
     }
 

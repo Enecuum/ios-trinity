@@ -54,8 +54,6 @@ class TransferViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
 
-        balanceAmountLabel.text = "\(Defaults.getBalance() ?? 0)"
-
         fetchBalance { [weak self] amount in
             if let amount = amount {
                 Defaults.saveBalance(amount)
@@ -63,6 +61,12 @@ class TransferViewController: UIViewController {
                 self?.sendView.updateMaxValue(maxValue: amount)
             }
         }
+    }
+
+    // MARK: - Public methods
+
+    func resetBalance() {
+        balanceAmountLabel.text = "\(Defaults.getBalance() ?? 0)"
     }
 
     // MARK: - Server

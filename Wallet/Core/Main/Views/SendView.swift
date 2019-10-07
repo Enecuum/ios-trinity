@@ -43,7 +43,9 @@ class SendView: UIView, NibView {
     }
 
     var delegate: SendViewDelegate?
+
     //TODO: remove
+    private var maxAmountToSend: NSDecimalNumber?
     private var amountToSend: NSDecimalNumber?
 
     override init(frame: CGRect) {
@@ -102,7 +104,16 @@ class SendView: UIView, NibView {
     }
 
     @objc private func sliderValueChanged(_ sender: UISlider) {
-        sendAmountTextField.text = "\(Int(sender.value))"
+        guard let maxAmount = maxAmountToSend else {
+            print("Invalid max amount")
+            return
+        }
+        let decimalAmount = NSDecimalNumber(value: sender.value)
+        if decimalAmount.compare(maxAmount) == .orderedDescending {
+            sendAmountTextField.text = amountString(from: maxAmount)
+        } else {
+            sendAmountTextField.text = amountString(from: decimalAmount)
+        }
     }
 
     private func setReceiverError(_ error: Bool, errorText: String? = nil) {
@@ -125,11 +136,17 @@ class SendView: UIView, NibView {
 
     // MARK: - Conversion
 
-    private func decimal(with string: String) -> NSDecimalNumber {
+    private func decimal(from string: String) -> NSDecimalNumber {
         let escapedString = string.replacingOccurrences(of: ".", with: ",")
         let formatter = NumberFormatter()
         formatter.generatesDecimalNumbers = true
         return formatter.number(from: escapedString) as? NSDecimalNumber ?? 0
+    }
+
+    private func amountString(from decimal: NSDecimalNumber) -> String {
+        let formatter = NumberFormatter()
+        formatter.maximumFractionDigits = 6
+        return formatter.string(from: decimal) ?? "0"
     }
 
     // MARK: - IBActions
@@ -182,6 +199,7 @@ class SendView: UIView, NibView {
 
 extension SendView: TransactionSender {
     func updateMaxValue(maxValue: NSDecimalNumber) {
+        maxAmountToSend = maxValue
         amountSlider.maximumValue = maxValue.floatValue
     }
 
@@ -222,11 +240,11 @@ extension SendView: UITextFieldDelegate {
         if textField == sendAmountTextField {
             let numberFormatter = NumberFormatter()
             numberFormatter.numberStyle = .decimal
-            if let amount = sendAmountTextField.text, !amount.isEmpty {
-                let number = decimal(with: amount)
-                if number.floatValue > amountSlider.maximumValue {
-                    sendAmountTextField.text = "\(Int(amountSlider.maximumValue))"
-                    amountSlider.value = amountSlider.maximumValue
+            if let amount = sendAmountTextField.text, !amount.isEmpty, let maxAmount = maxAmountToSend {
+                let number = decimal(from: amount)
+                if number.compare(maxAmount) == .orderedDescending {
+                    sendAmountTextField.text = amountString(from: maxAmount)
+                    amountSlider.value = maxAmount.floatValue
                 } else {
                     amountSlider.value = number.floatValue
                 }

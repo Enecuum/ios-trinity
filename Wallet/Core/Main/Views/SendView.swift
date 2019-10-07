@@ -123,6 +123,15 @@ class SendView: UIView, NibView {
         confirmView.isHidden = false
     }
 
+    // MARK: - Conversion
+
+    private func decimal(with string: String) -> NSDecimalNumber {
+        let escapedString = string.replacingOccurrences(of: ".", with: ",")
+        let formatter = NumberFormatter()
+        formatter.generatesDecimalNumbers = true
+        return formatter.number(from: escapedString) as? NSDecimalNumber ?? 0
+    }
+
     // MARK: - IBActions
 
     @IBAction private func onQrClicked(_ sender: Any) {
@@ -209,11 +218,12 @@ extension SendView: UITextFieldDelegate {
         }
     }
 
-    public func textFieldDidEndEditing(_ textField: UITextField) {
+    func textFieldDidEndEditing(_ textField: UITextField) {
         if textField == sendAmountTextField {
             let numberFormatter = NumberFormatter()
             numberFormatter.numberStyle = .decimal
-            if let amount = sendAmountTextField.text, !amount.isEmpty, let number = numberFormatter.number(from: amount) {
+            if let amount = sendAmountTextField.text, !amount.isEmpty {
+                let number = decimal(with: amount)
                 if number.floatValue > amountSlider.maximumValue {
                     sendAmountTextField.text = "\(Int(amountSlider.maximumValue))"
                     amountSlider.value = amountSlider.maximumValue

@@ -8,19 +8,19 @@ import Alamofire
 class ApiClient {
 
     static func balance(id: String, completion: @escaping (AFResult<BalanceAmount>) -> Void) {
-        try! ApiRouter.balance(id: id).asDataRequest().validate().responseDecodable { (response: AFDataResponse<BalanceAmount>) in
+        let params = [ApiConstants.APIParameterKey.id: id]
+        AF.request(ApiRouter.balance.requestUrl(),
+                   method: .get,
+                   parameters: params).validate().responseDecodable { (response: AFDataResponse<BalanceAmount>) in
             completion(response.result)
         }
     }
 
     static func transaction(_ transaction: Transaction, completion: @escaping (AFResult<TransactionStatus>) -> Void) {
-        let url = try! ApiConstants.DevServer.baseURL.asURL()
-        let requestUrl = url.appendingPathComponent("tx")
-        let trList = [transaction]
-
-        AF.request(requestUrl,
+        let transactionsList = [transaction]
+        AF.request(ApiRouter.transaction.requestUrl(),
                    method: .post,
-                   parameters: trList,
+                   parameters: transactionsList,
                    encoder: JSONParameterEncoder.default).validate().responseDecodable { (response: AFDataResponse<TransactionStatus>) in
             completion(response.result)
         }

@@ -7,7 +7,13 @@ import UIKit
 
 class MenuViewController: UIViewController {
 
+    @IBOutlet weak var hiddenView: UIView!
+    
     @IBAction func onDismissClicked(_ sender: Any) {
         dismiss(animated: false)
+    }
+    
+    @IBAction func onHiddenTap(_ sender: Any) {
+        hiddenView.isHidden = false
     }
 }

@@ -28,7 +28,7 @@ class MainViewController: UIViewController {
     }
 
     @IBAction func unwindToMainViewController(_ segue: UIStoryboardSegue) {
-        if let _ = segue.source as? PrivateKeyController {
+        if let _ = segue.source as? PrivateKeyViewController {
             transferViewController?.resetBalance()
         }
     }

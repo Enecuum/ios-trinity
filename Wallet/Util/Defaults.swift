@@ -10,6 +10,7 @@ class Defaults {
     struct Constants {
         static let runOnceKey: String = "runOnceKey"
         static let balanceKey: String = "balanceKey"
+        static let baseIP: String = "baseIp"
     }
 
     static func saveBalance(_ balance: NSDecimalNumber) {
@@ -29,6 +30,14 @@ class Defaults {
 
     static func isRunOnce() -> Bool {
         return UserDefaults.standard.bool(forKey: Constants.runOnceKey)
+    }
+
+    static func setBaseIP(_ ip: String) {
+        UserDefaults.standard.set(ip, forKey: Constants.baseIP)
+    }
+
+    static func baseIP() -> String? {
+        return UserDefaults.standard.string(forKey: Constants.baseIP)
     }
 
     static func clearUserData() {

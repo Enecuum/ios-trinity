@@ -5,7 +5,7 @@
 
 import UIKit
 
-class PrivateKeyController: UIViewController {
+class PrivateKeyViewController: UIViewController {
 
     @IBOutlet weak var privateKeyTextField: UITextField!
 
@@ -85,7 +85,7 @@ class PrivateKeyController: UIViewController {
     }
 }
 
-extension PrivateKeyController: ConfirmViewDelegate {
+extension PrivateKeyViewController: ConfirmViewDelegate {
     func onConfirmClicked() {
         if let key = confirmedPrivateKey {
             Defaults.clearUserData()
@@ -99,7 +99,7 @@ extension PrivateKeyController: ConfirmViewDelegate {
     }
 }
 
-extension PrivateKeyController: UITextFieldDelegate {
+extension PrivateKeyViewController: UITextFieldDelegate {
     func textFieldDidBeginEditing(_ textField: UITextField) {
         setImportError(false)
     }

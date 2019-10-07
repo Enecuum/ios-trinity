@@ -5,11 +5,11 @@
 
 struct ApiConstants {
     struct ProdServer {
-        static let baseURL = "http://95.216.68.221:80/api/v1/"
+        static let baseIP = "95.216.68.221"
     }
 
     struct DevServer {
-        static let baseURL = "http://95.217.0.123:80/api/v1/"
+        static let baseIP = "95.217.0.123"
     }
 
     struct APIParameterKey {

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+   Languages.plist
+   Wallet
+
+   Created by Daria Kokareva on 08/10/2019.
+   Copyright (c) 2019 Enecuum. All rights reserved.
+-->
+<plist version="1.0">
+    <array>
+        <string>عربى</string>
+        <string>中文</string>
+        <string>English</string>
+        <string>Français</string>
+        <string>Deutsche</string>
+        <string>Bahasa Indonesia</string>
+        <string>日本人</string>
+        <string>한국어</string>
+        <string>Português</string>
+        <string>Русский</string>
+        <string>Español</string>
+        <string>Türkçe</string>
+        <string>Việt</string>
+    </array>
+</plist>

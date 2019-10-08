@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		0E792B6944DC35A6EB44E061 /* Pods_wallet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D55D7342C2EDB0E32FCED51F /* Pods_wallet.framework */; };
+		351E9A6D234BBD6100CCD738 /* LanguageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 351E9A6C234BBD6100CCD738 /* LanguageTableViewCell.xib */; };
+		351E9A6F234C9C6300CCD738 /* Languages.plist in Resources */ = {isa = PBXBuildFile; fileRef = 351E9A6E234C9C6300CCD738 /* Languages.plist */; };
 		356A60CC2333B93F00E8D118 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356A60CB2333B93F00E8D118 /* AppDelegate.swift */; };
 		356A60CE2333B93F00E8D118 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356A60CD2333B93F00E8D118 /* WelcomeViewController.swift */; };
 		356A60D12333B93F00E8D118 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 356A60CF2333B93F00E8D118 /* Main.storyboard */; };
@@ -42,6 +44,7 @@
 		B8EA182891245D4675ADDF7B /* ReceiveView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8EA11BCF085AD7E415F26FD /* ReceiveView.xib */; };
 		B8EA1849D8A479672073A236 /* TransactionStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA176DF3BA89D6967086D3 /* TransactionStatus.swift */; };
 		B8EA18AC5731348E4C36DA5F /* ApiRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA1874540FD9E5BF532F3F /* ApiRouter.swift */; };
+		B8EA191BE758FE4375B2938F /* Resources.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA1503A7CBE7C1A8C89B84 /* Resources.swift */; };
 		B8EA191BFDEF30B297938C5D /* ApiConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA17552578856912F65A4F /* ApiConstants.swift */; };
 		B8EA1924649899AC4079D1A9 /* TransferViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA1A06E3393C3709805246 /* TransferViewController.swift */; };
 		B8EA1A51E9CEAFF795ACAC0D /* NSMutableAttributedString+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA1884042D4AA975D780AA /* NSMutableAttributedString+Extension.swift */; };
@@ -52,17 +55,21 @@
 		B8EA1B89B74C8FB7DCF67632 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA1DAB32B70779EF93B2DE /* MenuViewController.swift */; };
 		B8EA1C041CF5B2023AFDC0BE /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA1E69D0A92BCBA9D4AAEA /* AuthViewController.swift */; };
 		B8EA1C6783C9B23D7D74D9C3 /* AddressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA1239C2672DEF51BEADC4 /* AddressViewController.swift */; };
+		B8EA1CA24604B550751B299E /* LanguageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA193F63C2901E65C9FA94 /* LanguageTableViewCell.swift */; };
 		B8EA1CC4E9CA358A0E45BB0F /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA101A8262DEB1CE21A0A5 /* UIColor+Extension.swift */; };
 		B8EA1D346E2A804AA6E52308 /* SwapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA14FE6D28D74937B28B55 /* SwapView.swift */; };
 		B8EA1D39E773665C99613F9D /* UILabel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA1D9D2D2EC73F992AC0FB /* UILabel+Extension.swift */; };
 		B8EA1DE9ED5F81268366632E /* EntryPointViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA17A09D1193BDBE145257 /* EntryPointViewController.swift */; };
 		B8EA1E0979AC35B894DA7F7D /* KeychainPasswordItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA1736201913A7A18D87BB /* KeychainPasswordItem.swift */; };
 		B8EA1E29300288410B2DFC07 /* SendView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA1506B1F969451F03F8FD /* SendView.swift */; };
+		B8EA1E72D7E2DF017EA0A387 /* LanguageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA1078A9C3798FFB672B95 /* LanguageViewController.swift */; };
 		B8EA1F79D851002539ED16CE /* BalanceAmount.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA1651FDBF392B83C7A618 /* BalanceAmount.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		08EAD1528A6739EEF0C63E0F /* Pods-wallet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wallet.release.xcconfig"; path = "Target Support Files/Pods-wallet/Pods-wallet.release.xcconfig"; sourceTree = "<group>"; };
+		351E9A6C234BBD6100CCD738 /* LanguageTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LanguageTableViewCell.xib; sourceTree = "<group>"; };
+		351E9A6E234C9C6300CCD738 /* Languages.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Languages.plist; sourceTree = "<group>"; };
 		354A96D423428ED500C2AEFA /* Wallet-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Wallet-Bridging-Header.h"; sourceTree = "<group>"; };
 		356A60C82333B93F00E8D118 /* Enecuum Wallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Enecuum Wallet.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		356A60CB2333B93F00E8D118 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -79,6 +86,7 @@
 		35C93FA7233AFE24003EF90B /* Menu.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Menu.storyboard; sourceTree = "<group>"; };
 		4A1D9D2B4E61AC9284666F23 /* Pods-wallet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wallet.debug.xcconfig"; path = "Target Support Files/Pods-wallet/Pods-wallet.debug.xcconfig"; sourceTree = "<group>"; };
 		B8EA101A8262DEB1CE21A0A5 /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		B8EA1078A9C3798FFB672B95 /* LanguageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguageViewController.swift; sourceTree = "<group>"; };
 		B8EA10B587A40452E6650A9E /* ApiClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
 		B8EA10E4437B39F7691B4E73 /* Array+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Extension.swift"; sourceTree = "<group>"; };
 		B8EA110F9290250EC4D79180 /* Palette.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Palette.swift; sourceTree = "<group>"; };
@@ -92,6 +100,7 @@
 		B8EA14752B8C5D97AE37EEE6 /* Secp256k1Swift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Secp256k1Swift.swift; sourceTree = "<group>"; };
 		B8EA14EA8EB8491A251D3603 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		B8EA14FE6D28D74937B28B55 /* SwapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwapView.swift; sourceTree = "<group>"; };
+		B8EA1503A7CBE7C1A8C89B84 /* Resources.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Resources.swift; sourceTree = "<group>"; };
 		B8EA1506248F3332EFE0E994 /* TabsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabsView.swift; sourceTree = "<group>"; };
 		B8EA1506B1F969451F03F8FD /* SendView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendView.swift; sourceTree = "<group>"; };
 		B8EA15972F01E94FB2FC5BC3 /* ReceiveView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReceiveView.swift; sourceTree = "<group>"; };
@@ -106,6 +115,7 @@
 		B8EA1874540FD9E5BF532F3F /* ApiRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiRouter.swift; sourceTree = "<group>"; };
 		B8EA187D7B0E33D8CE47C5D7 /* CryptoHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CryptoHelper.swift; sourceTree = "<group>"; };
 		B8EA1884042D4AA975D780AA /* NSMutableAttributedString+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSMutableAttributedString+Extension.swift"; sourceTree = "<group>"; };
+		B8EA193F63C2901E65C9FA94 /* LanguageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguageTableViewCell.swift; sourceTree = "<group>"; };
 		B8EA1A04EBB7AD8A41903DC0 /* PrivateKeyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrivateKeyViewController.swift; sourceTree = "<group>"; };
 		B8EA1A06E3393C3709805246 /* TransferViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransferViewController.swift; sourceTree = "<group>"; };
 		B8EA1AB4DE484A22A99E7DFD /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
@@ -204,6 +214,7 @@
 			children = (
 				B8EA110F9290250EC4D79180 /* Palette.swift */,
 				B8EA126EE3E3C8B5C2E4B64F /* Defaults.swift */,
+				B8EA1503A7CBE7C1A8C89B84 /* Resources.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -244,6 +255,7 @@
 				35B8CE20233A664C007BC0C8 /* Fonts */,
 				35B8CE1A23398713007BC0C8 /* R.generated.swift */,
 				354A96D423428ED500C2AEFA /* Wallet-Bridging-Header.h */,
+				351E9A6E234C9C6300CCD738 /* Languages.plist */,
 			);
 			path = Supporting;
 			sourceTree = "<group>";
@@ -295,6 +307,7 @@
 		35C93FA6233AFE12003EF90B /* Menu */ = {
 			isa = PBXGroup;
 			children = (
+				351E9A6C234BBD6100CCD738 /* LanguageTableViewCell.xib */,
 				35C93FA7233AFE24003EF90B /* Menu.storyboard */,
 			);
 			path = Menu;
@@ -342,6 +355,7 @@
 		B8EA16001F2BA6AE9F6C89CC /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				B8EA193F63C2901E65C9FA94 /* LanguageTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -366,6 +380,7 @@
 				B8EA1D8EC716C39C262B2F0B /* FaqViewController.swift */,
 				B8EA1D4B5F536C48DC18ECDA /* ConfirmViewController.swift */,
 				B8EA17A09D1193BDBE145257 /* EntryPointViewController.swift */,
+				B8EA1078A9C3798FFB672B95 /* LanguageViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -466,6 +481,8 @@
 				35C93FA8233AFE24003EF90B /* Menu.storyboard in Resources */,
 				35B8CE23233A66AD007BC0C8 /* TTNorms-Medium.otf in Resources */,
 				356A60D12333B93F00E8D118 /* Main.storyboard in Resources */,
+				351E9A6F234C9C6300CCD738 /* Languages.plist in Resources */,
+				351E9A6D234BBD6100CCD738 /* LanguageTableViewCell.xib in Resources */,
 				B8EA182891245D4675ADDF7B /* ReceiveView.xib in Resources */,
 				B8EA178F557753B48D3EB921 /* SwapView.xib in Resources */,
 			);
@@ -580,6 +597,9 @@
 				B8EA1B4DB2721DD800CF154E /* ConfirmViewController.swift in Sources */,
 				B8EA1029509FBA0D6A131121 /* Defaults.swift in Sources */,
 				B8EA1DE9ED5F81268366632E /* EntryPointViewController.swift in Sources */,
+				B8EA1E72D7E2DF017EA0A387 /* LanguageViewController.swift in Sources */,
+				B8EA1CA24604B550751B299E /* LanguageTableViewCell.swift in Sources */,
+				B8EA191BE758FE4375B2938F /* Resources.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

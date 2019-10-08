@@ -649,7 +649,14 @@
                         </userDefinedRuntimeAttributes>
                     </view>
                     <connections>
+                        <outlet property="aboutLabel" destination="GtZ-7g-Vcq" id="ZFx-fk-vdM"/>
+                        <outlet property="communityLabel" destination="aVe-Iq-vp1" id="xeN-iy-cE9"/>
+                        <outlet property="entryPointLabel" destination="LfF-mt-r7p" id="nh7-fl-wZY"/>
+                        <outlet property="faqLabel" destination="3rf-yZ-piF" id="YDY-zB-ItM"/>
                         <outlet property="hiddenView" destination="y0E-Y5-DeG" id="99i-3m-M1B"/>
+                        <outlet property="languagesLabel" destination="qzY-07-xoi" id="Eq1-i1-Zky"/>
+                        <outlet property="myAddressLabel" destination="3RT-Me-Vxw" id="pH7-Aa-kaU"/>
+                        <outlet property="privateKeyLabel" destination="zAa-gc-GYP" id="0Fq-ni-Ry6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OBa-gN-wnF" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -711,7 +718,7 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="373.33333333333331" height="354.33333333333331"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HQ2-Jf-Bub">
-                                                        <rect key="frame" x="16" y="8" width="309.33333333333331" height="40.333333333333336"/>
+                                                        <rect key="frame" x="16" y="8" width="341.33333333333331" height="40.333333333333336"/>
                                                         <string key="text">Enecuum Mobile application
 Enecuum HK Limited.</string>
                                                         <fontDescription key="fontDescription" name="TTNorms-Bold" family="TT Norms" pointSize="17"/>
@@ -719,7 +726,7 @@ Enecuum HK Limited.</string>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hZD-Mg-ReI">
-                                                        <rect key="frame" x="16" y="60.333333333333343" width="309.33333333333331" height="31"/>
+                                                        <rect key="frame" x="16" y="60.333333333333343" width="341.33333333333331" height="31"/>
                                                         <string key="text">Version 1.0
 Trinity Protocol version 2.0.0</string>
                                                         <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="13"/>
@@ -739,7 +746,7 @@ Trinity Protocol version 2.0.0</string>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jjK-ld-4jg">
-                                                        <rect key="frame" x="22" y="165.33333333333331" width="303.33333333333331" height="1"/>
+                                                        <rect key="frame" x="22" y="165.33333333333331" width="335.33333333333331" height="1"/>
                                                         <color key="backgroundColor" red="0.36078431372549019" green="0.38039215686274508" blue="0.47450980392156861" alpha="1" colorSpace="calibratedRGB"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="1" id="Ebu-JI-uDE"/>
@@ -797,12 +804,12 @@ Trinity Protocol version 2.0.0</string>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstItem="DJT-we-WER" firstAttribute="leading" secondItem="gjr-Ms-edI" secondAttribute="leading" id="03J-6y-cIc"/>
-                                                    <constraint firstAttribute="trailing" secondItem="HQ2-Jf-Bub" secondAttribute="trailing" constant="48" id="2ov-nZ-tKG"/>
+                                                    <constraint firstAttribute="trailing" secondItem="HQ2-Jf-Bub" secondAttribute="trailing" constant="16" id="2ov-nZ-tKG"/>
                                                     <constraint firstItem="7wN-JL-0V9" firstAttribute="leading" secondItem="UM7-Uj-k8q" secondAttribute="leading" constant="22" id="35l-TO-nYS"/>
                                                     <constraint firstItem="9O2-4J-UiI" firstAttribute="leading" secondItem="Zkd-Dk-E60" secondAttribute="trailing" constant="12" id="4Sj-qK-cc7"/>
                                                     <constraint firstItem="gjr-Ms-edI" firstAttribute="width" secondItem="gjr-Ms-edI" secondAttribute="height" multiplier="1:1" id="5qw-vY-6Sq"/>
                                                     <constraint firstItem="Zkd-Dk-E60" firstAttribute="leading" secondItem="qnz-2g-xHx" secondAttribute="leading" id="6wF-Br-ayo"/>
-                                                    <constraint firstAttribute="trailing" secondItem="hZD-Mg-ReI" secondAttribute="trailing" constant="48" id="7ld-a1-gA0"/>
+                                                    <constraint firstAttribute="trailing" secondItem="hZD-Mg-ReI" secondAttribute="trailing" constant="16" id="7ld-a1-gA0"/>
                                                     <constraint firstItem="qnz-2g-xHx" firstAttribute="leading" secondItem="7wN-JL-0V9" secondAttribute="leading" id="Cur-Bx-twk"/>
                                                     <constraint firstAttribute="bottom" secondItem="DJT-we-WER" secondAttribute="bottom" constant="24" id="DUb-1l-vaz"/>
                                                     <constraint firstItem="9xu-Zr-bYQ" firstAttribute="centerY" secondItem="7wN-JL-0V9" secondAttribute="centerY" id="DeI-oe-sij"/>
@@ -915,9 +922,12 @@ Trinity Protocol version 2.0.0</string>
                         </userDefinedRuntimeAttributes>
                     </view>
                     <connections>
+                        <outlet property="companyLabel" destination="HQ2-Jf-Bub" id="oZo-U9-UUN"/>
                         <outlet property="policyLabel" destination="NlB-cc-ymL" id="ByC-U8-X0W"/>
                         <outlet property="techPaperLabel" destination="9O2-4J-UiI" id="Oza-Q4-hkZ"/>
                         <outlet property="termsLabel" destination="w4b-Mk-Vhg" id="S27-3e-sOt"/>
+                        <outlet property="titleLabel" destination="s1D-KC-gUb" id="U7S-tk-IMs"/>
+                        <outlet property="versionsLabel" destination="hZD-Mg-ReI" id="Rwj-Kg-UEP"/>
                         <outlet property="websiteLabel" destination="9xu-Zr-bYQ" id="Z0q-il-d3R"/>
                         <outlet property="whitePaperLabel" destination="gic-mR-6z5" id="5Ms-H2-glh"/>
                     </connections>
@@ -1026,9 +1036,9 @@ Trinity Protocol version 2.0.0</string>
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B17-wi-BPB" customClass="GradientButton" customModule="Enecuum_Wallet" customModuleProvider="target">
-                                        <rect key="frame" x="20" y="149" width="112" height="38"/>
+                                        <rect key="frame" x="20" y="149" width="140" height="38"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="112" id="7BP-Qu-sLs"/>
+                                            <constraint firstAttribute="width" constant="140" id="7BP-Qu-sLs"/>
                                             <constraint firstAttribute="height" constant="38" id="D7N-lf-CSi"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="13"/>
@@ -1145,10 +1155,10 @@ Trinity Protocol version 2.0.0</string>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fRd-Wa-Fm1" customClass="GradientButton" customModule="Enecuum_Wallet" customModuleProvider="target">
-                                        <rect key="frame" x="20" y="313" width="112" height="38"/>
+                                        <rect key="frame" x="20" y="313" width="140" height="38"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="38" id="5ji-dm-Ftl"/>
-                                            <constraint firstAttribute="width" constant="112" id="Aqd-Ld-KfG"/>
+                                            <constraint firstAttribute="width" constant="140" id="Aqd-Ld-KfG"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="13"/>
                                         <state key="normal" title="Sign in"/>
@@ -1185,7 +1195,6 @@ Trinity Protocol version 2.0.0</string>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
-                                            <action selector="onImportClicked:" destination="LaX-a3-lYg" eventType="touchUpInside" id="HJq-6o-KXG"/>
                                             <action selector="onSignInClicked:" destination="LaX-a3-lYg" eventType="touchUpInside" id="zTe-Ic-lXn"/>
                                         </connections>
                                     </button>
@@ -1264,11 +1273,13 @@ Trinity Protocol version 2.0.0</string>
                         </userDefinedRuntimeAttributes>
                     </view>
                     <connections>
+                        <outlet property="importButton" destination="B17-wi-BPB" id="7Fq-gc-RRA"/>
                         <outlet property="importLabel" destination="43q-ax-K9n" id="Xky-Q2-tQn"/>
                         <outlet property="importView" destination="FDt-0W-sRX" id="vEy-db-DeX"/>
                         <outlet property="newPrivateKeyTextField" destination="LyG-3a-pM0" id="Oaz-1Z-5mY"/>
                         <outlet property="privateKeyTextField" destination="Zyw-15-3jj" id="oNF-hZ-mfK"/>
-                        <outlet property="signInButton" destination="fRd-Wa-Fm1" id="urp-MM-LXb"/>
+                        <outlet property="signInButton" destination="fRd-Wa-Fm1" id="8LK-bk-UhK"/>
+                        <outlet property="titleLabel" destination="fzB-qZ-WCB" id="Q3v-oH-UUu"/>
                         <outlet property="warningIconView" destination="pst-6f-k6j" id="LKO-h5-HA8"/>
                         <outlet property="warningLabel" destination="Duz-rk-x7w" id="khL-SD-eqV"/>
                         <outlet property="warningTitleLabel" destination="Nig-Eg-lSd" id="aqc-OS-0wg"/>
@@ -1443,6 +1454,7 @@ Trinity Protocol version 2.0.0</string>
                     </view>
                     <connections>
                         <outlet property="addressTextField" destination="qvk-xD-zW5" id="7oW-wl-vca"/>
+                        <outlet property="titleLabel" destination="y21-o1-NdX" id="Hom-3b-RdS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2PJ-NH-ba4" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1656,6 +1668,7 @@ Feel free to ask for help in the Telegram group</string>
                     <connections>
                         <outlet property="faqTextView" destination="1gW-OT-kMb" id="iNf-XU-1ES"/>
                         <outlet property="maskView" destination="6Au-ND-faH" id="woO-1t-h0s"/>
+                        <outlet property="titleLabel" destination="sxH-fs-51f" id="m15-vU-VqU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="t3m-mm-z40" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1808,6 +1821,7 @@ Feel free to ask for help in the Telegram group</string>
                         <outlet property="confirmButton" destination="iOh-OP-334" id="5Zy-fK-fAE"/>
                         <outlet property="rejectButton" destination="i9R-ot-xJN" id="oJe-ii-EYw"/>
                         <outlet property="textLabel" destination="Bpi-nX-ZPa" id="r7c-ec-DhN"/>
+                        <outlet property="titileLabel" destination="7wR-c2-AqW" id="M1q-1g-IqY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oYH-ge-QvM" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -2008,6 +2022,9 @@ Feel free to ask for help in the Telegram group</string>
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                     </view>
+                    <connections>
+                        <outlet property="titleLabel" destination="97m-hF-ZTb" id="jWb-6Y-2dA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="idw-Hd-JTM" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="iY0-jG-xal" userLabel="Exit" sceneMemberID="exit"/>
@@ -2208,6 +2225,8 @@ Feel free to ask for help in the Telegram group</string>
                     <connections>
                         <outlet property="borderView" destination="PhZ-2F-c9g" id="ZPC-mz-Obz"/>
                         <outlet property="entryPointTextField" destination="cN1-We-RLK" id="mir-uk-3Fe"/>
+                        <outlet property="saveButton" destination="rPd-dC-2Jk" id="ldp-hX-MqX"/>
+                        <outlet property="titleLabel" destination="Weu-nb-ZXQ" id="86G-8Q-J0E"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8qC-ao-JBs" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -2273,6 +2292,7 @@ Feel free to ask for help in the Telegram group</string>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="MrY-QB-dKl">
                                         <rect key="frame" x="22" y="90" width="349.33333333333331" height="542"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
                                             <outlet property="dataSource" destination="fCy-QM-8zM" id="tkC-nS-zhJ"/>
                                             <outlet property="delegate" destination="fCy-QM-8zM" id="H0I-Zy-wGM"/>
@@ -2337,6 +2357,7 @@ Feel free to ask for help in the Telegram group</string>
                     </view>
                     <connections>
                         <outlet property="tableView" destination="MrY-QB-dKl" id="Idx-Rz-L9V"/>
+                        <outlet property="titleLabel" destination="dTA-s7-okK" id="Pqw-ey-Ry9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sjQ-r7-KPw" userLabel="First Responder" sceneMemberID="firstResponder"/>

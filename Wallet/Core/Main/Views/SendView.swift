@@ -19,19 +19,34 @@ protocol TransactionSender {
 
 class SendView: UIView, NibView {
 
+    // MARK: - Send view
+
     @IBOutlet weak var dataView: UIView!
+    @IBOutlet weak var receiverLabel: UILabel!
     @IBOutlet weak var receiverBorderView: UIView!
     @IBOutlet weak var receiverTextField: UITextField!
     @IBOutlet weak var errorLabel: UILabel!
+    @IBOutlet weak var amountLabel: UILabel!
     @IBOutlet weak var sendAmountBorderView: UIView!
     @IBOutlet weak var sendAmountTextField: UITextField!
+
+    @IBOutlet weak var sliderMaxLabel: UILabel!
     @IBOutlet weak var amountSlider: Slider!
 
+    @IBOutlet weak var sendButton: GradientButton!
+
+    // MARK: - Confirm view
+
+    @IBOutlet weak var toLabel: UILabel!
     @IBOutlet weak var confirmView: UIView!
     @IBOutlet weak var confirmReceiverLabel: UILabel!
+
+    @IBOutlet weak var sendAmountLabel: UILabel!
     @IBOutlet weak var confirmAmountLabel: UILabel!
     @IBOutlet weak var rejectButton: UIButton!
     @IBOutlet weak var confirmButton: GradientButton!
+
+    // MARK: - Done view
 
     @IBOutlet weak var doneView: UIView!
     @IBOutlet weak var circleImageView: UIImageView!
@@ -69,13 +84,22 @@ class SendView: UIView, NibView {
     // MARK: - UI
 
     private func setup() {
+        //send
+        receiverLabel.text = R.string.localizable.to.localized()
+        amountLabel.text = R.string.localizable.amount.localized()
+        sliderMaxLabel.text = R.string.localizable.max.localized()
+        sendButton.setTitle(R.string.localizable.send.localized(), for: .normal)
+        //confirm
+        toLabel.text = R.string.localizable.enq_address_to_send.localized()
+        sendAmountLabel.text = R.string.localizable.amount.localized()
+
         errorLabel.alpha = 0
         sendAmountTextField.text = "0"
         amountSlider.value = 0
         amountSlider.addTarget(self, action: #selector(sliderValueChanged(_:)), for: .valueChanged)
 
-        addAttributedButton(rejectButton, image: R.image.icons.cross()!, string: "  Reject", color: .red)
-        addAttributedButton(confirmButton, image: R.image.icons.tick()!, string: "  Confirm", color: .white)
+        addAttributedButton(rejectButton, image: R.image.icons.cross()!, string: R.string.localizable.reject.localized(), color: .red)
+        addAttributedButton(confirmButton, image: R.image.icons.tick()!, string: R.string.localizable.confirm.localized(), color: .white)
     }
 
     private func addAttributedButton(_ button: UIButton, image: UIImage, string: String, color: UIColor) {
@@ -97,7 +121,8 @@ class SendView: UIView, NibView {
             .foregroundColor: color,
             .paragraphStyle: style
         ]
-        let label = NSMutableAttributedString(string: string, attributes: attributes)
+        //TODO: deal with offset
+        let label = NSMutableAttributedString(string: "  \(string)", attributes: attributes)
         label.insert(imageString, at: 0)
         button.setAttributedTitle(label, for: .normal)
         button.setTitleColor(color, for: .normal)

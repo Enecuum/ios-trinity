@@ -7,12 +7,16 @@ import UIKit
 
 class PrivateKeyViewController: UIViewController {
 
+    @IBOutlet weak var titleLabel: UILabel!
+
     @IBOutlet weak var privateKeyTextField: UITextField!
 
     @IBOutlet weak var importLabel: UILabel!
     @IBOutlet weak var importView: UIView!
+    @IBOutlet weak var importButton: GradientButton!
+    
     @IBOutlet weak var newPrivateKeyTextField: UITextField!
-    @IBOutlet weak var signInButton: UIView!
+    @IBOutlet weak var signInButton: UIButton!
 
     @IBOutlet weak var warningIconView: UIImageView!
     @IBOutlet weak var warningTitleLabel: UILabel!
@@ -28,6 +32,13 @@ class PrivateKeyViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        titleLabel.text = R.string.localizable.private_key.localized()
+        importButton.setTitle(R.string.localizable.import_wallet.localized(), for: .normal)
+        importLabel.text = R.string.localizable.private_key_import_hint.localized()
+        signInButton.setTitle(R.string.localizable.signin.localized(), for: .normal)
+        warningTitleLabel.text = R.string.localizable.import_key_warning_title.localized()
+        warningLabel.text = R.string.localizable.import_key_warning.localized()
 
         privateKeyTextField.text = AuthManager.key()
     }
@@ -73,7 +84,7 @@ class PrivateKeyViewController: UIViewController {
         confirmedPrivateKey = newPrivateKey
 
         let confirmViewController = R.storyboard.menu.confirmViewController()!
-        confirmViewController.confirmText = "Import new private key"
+        confirmViewController.confirmText = R.string.localizable.import_new_private_key.localized()
         confirmViewController.modalPresentationStyle = .overCurrentContext
         confirmViewController.modalTransitionStyle = .crossDissolve
         confirmViewController.delegate = self

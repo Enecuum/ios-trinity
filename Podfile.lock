@@ -22,17 +22,16 @@ DEPENDENCIES:
   - secp256k1.swift
 
 SPEC REPOS:
-  https://github.com/CocoaPods/Specs.git:
+  trunk:
     - Alamofire
+    - AlamofireNetworkActivityLogger
+    - CryptoSwift
     - EFQRCode
     - QRCodeReader.swift
     - R.swift
     - R.swift.Library
-    - swift_qrcodejs
-  trunk:
-    - AlamofireNetworkActivityLogger
-    - CryptoSwift
     - secp256k1.swift
+    - swift_qrcodejs
 
 SPEC CHECKSUMS:
   Alamofire: f9450d3c7f6bea2ad62e7a541c3e9b186c7991d6
@@ -45,6 +44,6 @@ SPEC CHECKSUMS:
   secp256k1.swift: a7e7a214f6db6ce5db32cc6b2b45e5c4dd633634
   swift_qrcodejs: 4d024fc98b0778b804ec6a5c810880fd092aec9d
 
-PODFILE CHECKSUM: 9af5cf8d35cc54619e80f9701364ee67a4362ad0
+PODFILE CHECKSUM: a50c7723edcfdd7692885f24b6fcbbd68646e2e8
 
 COCOAPODS: 1.8.1

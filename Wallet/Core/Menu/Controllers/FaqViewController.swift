@@ -7,11 +7,15 @@ import UIKit
 
 class FaqViewController: UIViewController {
 
+    @IBOutlet weak var titleLabel: UILabel!
+
     @IBOutlet weak var faqTextView: UITextView!
     @IBOutlet weak var maskView: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        titleLabel.text = R.string.localizable.faq.localized()
 
         let title1 = "Battery life\n\n"
         let text1 = "In terms of СPU/GPU usage PoA node does not carry out mining in the ordinary Proof-of-Work way. Instead Enecuum PoA mobile node performs cryptographic validations and signings which is similar to the process during opening a web site via https (secure connection). As a result the battery usage by Enecuum mobile app is comparable to mobile browser or chat work. You never think about battery life choosing secure chat or secure web site over unsecure, right?\n\n"

@@ -9,6 +9,7 @@ import AVFoundation
 
 class TransferViewController: UIViewController {
 
+    @IBOutlet weak var balanceTitleLabel: UILabel!
     @IBOutlet weak var balanceAmountLabel: UILabel!
 
     @IBOutlet weak var tabsView: TabsView!
@@ -40,7 +41,9 @@ class TransferViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        tabsView.setButtonTitles(buttonTitles: ["Send", "Receive"])
+        balanceTitleLabel.text = R.string.localizable.balance.localized()
+
+        tabsView.setButtonTitles(buttonTitles: [R.string.localizable.send.localized(), R.string.localizable.receive.localized()])
         tabsView.selectorViewColor = .white
         tabsView.selectorTextColor = .white
         tabsView.textColor = .white

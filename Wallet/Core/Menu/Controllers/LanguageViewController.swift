@@ -7,22 +7,28 @@ import UIKit
 
 class LanguageViewController: UIViewController {
 
+    @IBOutlet weak var titleLabel: UILabel!
+
     @IBOutlet weak var tableView: UITableView!
 
     private struct LanguageItem {
         let label: String
-        let langId: String
+        let code: String
     }
 
     private var languages: [LanguageItem] = []
+    private var selectedLanguageCode: String = Localization.preferredAppLanguageCode
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        titleLabel.text = R.string.localizable.language.localized()
 
         tableView.register(R.nib.languageTableViewCell)
 
         if let languagesArray = Resources.plist(name: "Languages") {
             languages = languagesArray.map { string in
+                LanguageItem(label: string, code: string)
             }
         }
         tableView.reloadData()
@@ -41,9 +47,11 @@ extension LanguageViewController: UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: R.reuseIdentifier.languageTableViewCell, for: indexPath)!
+        let cell = tableView.dequeueReusableCell(withIdentifier: R.reuseIdentifier.languageTableViewCell,
+                                                 for: indexPath)!
         let languageItem = languages[indexPath.row]
         cell.itemLabel.text = languageItem.label
+        cell.frameView.isHidden = languageItem.code != selectedLanguageCode
         return cell
     }
 }
@@ -54,5 +62,9 @@ extension LanguageViewController: UITableViewDelegate {
     }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let languageItem = languages[indexPath.row]
+        Defaults.setLanguageCode(languageItem.code)
+        selectedLanguageCode = Localization.preferredAppLanguageCode
+        tableView.reloadData()
     }
 }

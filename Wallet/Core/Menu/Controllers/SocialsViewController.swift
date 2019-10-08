@@ -7,6 +7,13 @@ import UIKit
 
 class SocialsViewController: UIViewController {
 
+    @IBOutlet weak var titleLabel: UILabel!
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        titleLabel.text = R.string.localizable.community.localized()
+    }
+
     private func openUrl(_ string: String) {
         if let url = URL(string: string) {
             UIApplication.shared.open(url)

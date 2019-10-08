@@ -9,18 +9,18 @@
 -->
 <plist version="1.0">
     <array>
-        <string>عربى</string>
-        <string>中文</string>
-        <string>English</string>
-        <string>Français</string>
-        <string>Deutsche</string>
-        <string>Bahasa Indonesia</string>
-        <string>日本人</string>
-        <string>한국어</string>
-        <string>Português</string>
-        <string>Русский</string>
-        <string>Español</string>
-        <string>Türkçe</string>
-        <string>Việt</string>
+        <string>ar</string>
+        <string>zh</string>
+        <string>en</string>
+        <string>fr</string>
+        <string>de</string>
+        <string>in</string>
+        <string>ja</string>
+        <string>ko</string>
+        <string>pt</string>
+        <string>ru</string>
+        <string>es</string>
+        <string>tr</string>
+        <string>vi</string>
     </array>
 </plist>

@@ -18,6 +18,7 @@
             <connections>
                 <outlet property="addressTextField" destination="0tz-lX-sOI" id="a4U-58-Qej"/>
                 <outlet property="qrImageView" destination="q41-mf-X0o" id="Vp3-kl-E90"/>
+                <outlet property="shareQrButton" destination="IXN-Xe-9a5" id="YoO-it-VDK"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>

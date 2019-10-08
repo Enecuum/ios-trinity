@@ -204,6 +204,7 @@
                     <splitViewMasterSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <connections>
                         <outlet property="balanceAmountLabel" destination="TAj-y6-bI4" id="pu4-TC-YWV"/>
+                        <outlet property="balanceTitleLabel" destination="aNM-bS-26c" id="D5E-IR-Uib"/>
                         <outlet property="receiveView" destination="54B-LU-6m3" id="M41-tr-gOz"/>
                         <outlet property="sendView" destination="4z9-tx-jXY" id="PGl-Ii-nKa"/>
                         <outlet property="swapView" destination="ldy-5E-HHE" id="Jc6-va-POp"/>

@@ -7,9 +7,13 @@ import UIKit
 
 class EntryPointViewController: UIViewController {
 
+    @IBOutlet weak var titleLabel: UILabel!
+
     @IBOutlet weak var borderView: UIView!
     @IBOutlet weak var entryPointTextField: UITextField!
 
+    @IBOutlet weak var saveButton: GradientButton!
+    
     struct Constants {
         static let acceptableChars = "0123456789."
     }
@@ -18,6 +22,10 @@ class EntryPointViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        titleLabel.text = R.string.localizable.entry_point.localized()
+        saveButton.setTitle(R.string.localizable.save_url.localized(), for: .normal)
+
         entryPointTextField.text = "\(ApiRouter.baseIp)"
     }
 

@@ -7,10 +7,13 @@ import UIKit
 
 class AddressViewController: UIViewController {
 
+    @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var addressTextField: UITextField!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        titleLabel.text = R.string.localizable.my_address.localized()
 
         addressTextField.text = CryptoHelper.getPublicKey()
     }

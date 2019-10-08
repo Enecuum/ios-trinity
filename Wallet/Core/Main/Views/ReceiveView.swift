@@ -14,7 +14,8 @@ class ReceiveView: UIView, NibView {
 
     @IBOutlet weak var addressTextField: UITextField!
     @IBOutlet weak var qrImageView: UIImageView!
-
+    @IBOutlet weak var shareQrButton: UIButton!
+    
     var delegate: ReceiveViewDelegate?
 
     override init(frame: CGRect) {
@@ -36,6 +37,8 @@ class ReceiveView: UIView, NibView {
     }
 
     private func setup() {
+        shareQrButton.setTitle(R.string.localizable.share_qr.localized(), for: .normal)
+
         let key = CryptoHelper.getPublicKey()
         addressTextField.text = key
 

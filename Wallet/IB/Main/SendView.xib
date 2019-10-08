@@ -19,6 +19,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SendView" customModule="Enecuum_Wallet" customModuleProvider="target">
             <connections>
+                <outlet property="amountLabel" destination="NBE-IV-n1g" id="zhK-hQ-IQb"/>
                 <outlet property="amountSlider" destination="lt1-ip-vxA" id="YbY-BL-Euy"/>
                 <outlet property="circleImageView" destination="Zkn-DS-Lb6" id="pUe-5N-NGs"/>
                 <outlet property="confirmAmountLabel" destination="GVm-G8-QMc" id="q4p-kU-D3N"/>
@@ -29,10 +30,15 @@
                 <outlet property="doneView" destination="4al-0G-0mk" id="eSA-1u-9Zb"/>
                 <outlet property="errorLabel" destination="zxo-JR-5Sd" id="g3Y-Im-zRy"/>
                 <outlet property="receiverBorderView" destination="wAI-4i-0Hw" id="ujY-Oy-OyB"/>
+                <outlet property="receiverLabel" destination="TTo-4I-2zf" id="cfJ-JT-BZK"/>
                 <outlet property="receiverTextField" destination="7Yd-E0-itH" id="Rzf-jp-QlB"/>
                 <outlet property="rejectButton" destination="TQZ-yR-pkP" id="3iU-uU-VDH"/>
                 <outlet property="sendAmountBorderView" destination="7hn-xT-QbD" id="iAi-sa-fz0"/>
+                <outlet property="sendAmountLabel" destination="ObR-7u-xP4" id="TWT-U5-6sa"/>
                 <outlet property="sendAmountTextField" destination="hmg-90-nXL" id="AzV-EV-xjw"/>
+                <outlet property="sendButton" destination="SkW-XP-Zhb" id="c10-H9-X7X"/>
+                <outlet property="sliderMaxLabel" destination="Kg9-ly-m6i" id="EZ2-0E-SFH"/>
+                <outlet property="toLabel" destination="vaI-U5-Pqt" id="nyI-8x-AnT"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -275,7 +281,7 @@
                             <color key="textColor" red="0.41176470588235292" green="0.43137254901960786" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="45738572342juk2491204jmk3123214783jk45738572342juk2" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VET-fy-ha3" userLabel="To Label">
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="45738572342juk2491204jmk3123214783jk45738572342juk2" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VET-fy-ha3" userLabel="Address Label">
                             <rect key="frame" x="28" y="69.5" width="272" height="35.5"/>
                             <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="15"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

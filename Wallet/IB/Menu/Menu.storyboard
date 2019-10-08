@@ -1036,9 +1036,9 @@ Trinity Protocol version 2.0.0</string>
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B17-wi-BPB" customClass="GradientButton" customModule="Enecuum_Wallet" customModuleProvider="target">
-                                        <rect key="frame" x="20" y="149" width="140" height="38"/>
+                                        <rect key="frame" x="20" y="149" width="160" height="38"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="140" id="7BP-Qu-sLs"/>
+                                            <constraint firstAttribute="width" constant="160" id="7BP-Qu-sLs"/>
                                             <constraint firstAttribute="height" constant="38" id="D7N-lf-CSi"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="13"/>
@@ -1155,10 +1155,10 @@ Trinity Protocol version 2.0.0</string>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fRd-Wa-Fm1" customClass="GradientButton" customModule="Enecuum_Wallet" customModuleProvider="target">
-                                        <rect key="frame" x="20" y="313" width="140" height="38"/>
+                                        <rect key="frame" x="20" y="313" width="160" height="38"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="38" id="5ji-dm-Ftl"/>
-                                            <constraint firstAttribute="width" constant="140" id="Aqd-Ld-KfG"/>
+                                            <constraint firstAttribute="width" constant="160" id="Aqd-Ld-KfG"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="13"/>
                                         <state key="normal" title="Sign in"/>
@@ -1687,14 +1687,14 @@ Feel free to ask for help in the Telegram group</string>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ytm-OH-VM2">
                                 <rect key="frame" x="87" y="252.33333333333331" width="240" height="194.33333333333331"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Are you sure?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7wR-c2-AqW">
-                                        <rect key="frame" x="66.333333333333343" y="39.999999999999972" width="107.66666666666666" height="20.333333333333329"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Are you sure?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7wR-c2-AqW">
+                                        <rect key="frame" x="8" y="39.999999999999972" width="224" height="20.333333333333329"/>
                                         <fontDescription key="fontDescription" name="TTNorms-Bold" family="TT Norms" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bpi-nX-ZPa">
-                                        <rect key="frame" x="120" y="80.333333333333343" width="0.0" height="0.0"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bpi-nX-ZPa">
+                                        <rect key="frame" x="8" y="80.333333333333343" width="224" height="0.0"/>
                                         <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="15"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -1783,12 +1783,16 @@ Feel free to ask for help in the Telegram group</string>
                                 <color key="backgroundColor" red="0.16862745098039217" green="0.18431372549019609" blue="0.23921568627450979" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstItem="Bpi-nX-ZPa" firstAttribute="centerX" secondItem="Ytm-OH-VM2" secondAttribute="centerX" id="A8Q-wp-grU"/>
+                                    <constraint firstItem="Bpi-nX-ZPa" firstAttribute="leading" secondItem="Ytm-OH-VM2" secondAttribute="leading" constant="8" id="IHe-FX-0f4"/>
                                     <constraint firstItem="nle-ih-0lF" firstAttribute="centerX" secondItem="Ytm-OH-VM2" secondAttribute="centerX" id="M21-Gl-OtU"/>
+                                    <constraint firstAttribute="trailing" secondItem="Bpi-nX-ZPa" secondAttribute="trailing" constant="8" id="MUo-RE-Z7j"/>
                                     <constraint firstItem="7wR-c2-AqW" firstAttribute="top" secondItem="Ytm-OH-VM2" secondAttribute="top" constant="40" id="OSK-Qq-Q2n"/>
                                     <constraint firstItem="7wR-c2-AqW" firstAttribute="centerX" secondItem="Ytm-OH-VM2" secondAttribute="centerX" id="UDv-zr-bRh"/>
                                     <constraint firstAttribute="bottom" secondItem="nle-ih-0lF" secondAttribute="bottom" constant="40" id="cUU-Xo-rdA"/>
+                                    <constraint firstItem="7wR-c2-AqW" firstAttribute="leading" secondItem="Ytm-OH-VM2" secondAttribute="leading" constant="8" id="eli-lz-0O2"/>
                                     <constraint firstAttribute="width" constant="240" id="gb0-mh-cb2"/>
                                     <constraint firstItem="Bpi-nX-ZPa" firstAttribute="top" secondItem="7wR-c2-AqW" secondAttribute="bottom" constant="20" id="qiM-Ok-WCc"/>
+                                    <constraint firstAttribute="trailing" secondItem="7wR-c2-AqW" secondAttribute="trailing" constant="8" id="rnt-zx-ILR"/>
                                     <constraint firstItem="nle-ih-0lF" firstAttribute="top" secondItem="Bpi-nX-ZPa" secondAttribute="bottom" constant="36" id="tlb-8Y-ByI"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
@@ -2120,9 +2124,9 @@ Feel free to ask for help in the Telegram group</string>
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rPd-dC-2Jk" customClass="GradientButton" customModule="Enecuum_Wallet" customModuleProvider="target">
-                                        <rect key="frame" x="20" y="149" width="112" height="38"/>
+                                        <rect key="frame" x="20" y="149" width="160" height="38"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="112" id="gX0-Tx-ZmP"/>
+                                            <constraint firstAttribute="width" constant="160" id="gX0-Tx-ZmP"/>
                                             <constraint firstAttribute="height" constant="38" id="h7R-hF-Qfn"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="13"/>

@@ -10,11 +10,15 @@ import UIKit
 
 class AuthViewController: UIViewController {
 
+    @IBOutlet weak var welcomeLabel: UILabel!
+    
     @IBOutlet weak var addressView: UIView!
+    @IBOutlet weak var addressLabel: UILabel!
     @IBOutlet weak var addressBorderView: UIView!
     @IBOutlet weak var addressTextField: UITextField!
     @IBOutlet weak var addressMaskView: UIView!
 
+    @IBOutlet weak var privateKeyLabel: UILabel!
     @IBOutlet weak var privateKeyBorderView: UIView!
     @IBOutlet weak var privateKeyTextField: UITextField!
     @IBOutlet weak var privateKeyMaskView: UIView!
@@ -22,6 +26,8 @@ class AuthViewController: UIViewController {
     @IBOutlet weak var errorLabel: UILabel!
     
     @IBOutlet weak var startButton: GradientButton!
+    
+    @IBOutlet weak var warningLabel: UILabel!
     
     struct Constants {
         static let addressLength: Int = 66
@@ -34,6 +40,11 @@ class AuthViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        welcomeLabel.text = R.string.localizable.welcome_to_enq.localized()
+        addressLabel.text = R.string.localizable.your_address.localized()
+        privateKeyLabel.text = R.string.localizable.your_private_key.localized()
+        warningLabel.text = R.string.localizable.disclaimer.localized()
+
         if authMode == .walletImport {
             addressView.isHidden = true
             errorLabel.alpha = 0
@@ -41,7 +52,7 @@ class AuthViewController: UIViewController {
             privateKeyTextField.isUserInteractionEnabled = true
             addGradientMask(textField: privateKeyTextField, maskView: privateKeyMaskView)
             
-            startButton.setTitle("Import wallet", for: .normal)
+            startButton.setTitle(R.string.localizable.import_wallet.localized(), for: .normal)
         } else {
             errorLabel.isHidden = true
 
@@ -50,6 +61,8 @@ class AuthViewController: UIViewController {
 
             addGradientMask(textField: addressTextField, maskView: addressMaskView)
             addGradientMask(textField: privateKeyTextField, maskView: privateKeyMaskView)
+
+            startButton.setTitle(R.string.localizable.start_using_wallet.localized(), for: .normal)
 
             generateNewWalletData()
         }

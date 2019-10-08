@@ -138,6 +138,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="kqk-Ei-gId"/>
                     </view>
+                    <connections>
+                        <outlet property="importButton" destination="n8K-Pa-aEc" id="Xaf-rk-p2g"/>
+                        <outlet property="newWalletButton" destination="512-Xu-cnX" id="T5j-GH-QUd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9iY-Q3-EwW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -173,7 +177,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vgI-zj-vYB" userLabel="Welcome">
-                                <rect key="frame" x="113.5" y="108" width="148" height="47.5"/>
+                                <rect key="frame" x="46" y="108" width="283" height="47.5"/>
                                 <string key="text">Welcome
 to ENQ network</string>
                                 <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="20"/>
@@ -445,6 +449,7 @@ Enecuum do not store your private key. In case of private key loss we will not b
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="AN8-yX-Aki" firstAttribute="trailing" secondItem="vgI-zj-vYB" secondAttribute="trailing" constant="46" id="4as-4M-THO"/>
                             <constraint firstItem="CUF-7d-OSJ" firstAttribute="trailing" secondItem="xAB-Nf-Rjy" secondAttribute="trailing" id="7pj-Xf-4vw"/>
                             <constraint firstAttribute="bottom" secondItem="sWL-dc-vLi" secondAttribute="bottom" constant="40" id="9lb-fZ-fpV"/>
                             <constraint firstItem="b5Q-9b-v1p" firstAttribute="top" secondItem="sWL-dc-vLi" secondAttribute="top" constant="2" id="Ed4-UT-34q"/>
@@ -452,6 +457,7 @@ Enecuum do not store your private key. In case of private key loss we will not b
                             <constraint firstItem="AkR-tt-aco" firstAttribute="top" secondItem="vgI-zj-vYB" secondAttribute="bottom" constant="22" id="F8Q-XE-7dW"/>
                             <constraint firstItem="jbo-ye-lEo" firstAttribute="top" secondItem="AkR-tt-aco" secondAttribute="bottom" constant="30" id="HUc-mT-hVw"/>
                             <constraint firstItem="INZ-Ao-fke" firstAttribute="top" secondItem="AN8-yX-Aki" secondAttribute="top" constant="21" id="KvQ-TL-qx3"/>
+                            <constraint firstItem="vgI-zj-vYB" firstAttribute="leading" secondItem="AN8-yX-Aki" secondAttribute="leading" constant="46" id="QEk-uP-I0Z"/>
                             <constraint firstItem="CUF-7d-OSJ" firstAttribute="top" secondItem="xAB-Nf-Rjy" secondAttribute="top" id="SFX-AL-ucY"/>
                             <constraint firstItem="Hkv-b6-1QS" firstAttribute="centerY" secondItem="INZ-Ao-fke" secondAttribute="centerY" id="SSU-W5-SVk"/>
                             <constraint firstItem="b5Q-9b-v1p" firstAttribute="leading" secondItem="AN8-yX-Aki" secondAttribute="leading" constant="28" id="T6g-nk-d2h"/>
@@ -472,14 +478,18 @@ Enecuum do not store your private key. In case of private key loss we will not b
                     </view>
                     <connections>
                         <outlet property="addressBorderView" destination="L8Q-Qk-kOj" id="n0p-aY-Z1R"/>
+                        <outlet property="addressLabel" destination="FQG-Po-dcj" id="1kO-ly-50c"/>
                         <outlet property="addressMaskView" destination="9B5-Ha-C4k" id="ykK-g4-qX4"/>
                         <outlet property="addressTextField" destination="iwA-77-2As" id="UpA-qs-Uhs"/>
                         <outlet property="addressView" destination="gJ7-gl-LVa" id="F67-4f-vgs"/>
                         <outlet property="errorLabel" destination="AB1-ub-aze" id="7st-MW-gNR"/>
                         <outlet property="privateKeyBorderView" destination="E8q-25-GxW" id="Gq5-V0-cKj"/>
+                        <outlet property="privateKeyLabel" destination="ZqJ-UK-SyD" id="mYm-NF-IM5"/>
                         <outlet property="privateKeyMaskView" destination="I4j-Ra-saW" id="kgz-32-6cP"/>
                         <outlet property="privateKeyTextField" destination="7YS-bI-vy0" id="J7m-Gu-2Ot"/>
                         <outlet property="startButton" destination="jbo-ye-lEo" id="aJF-FY-5Jt"/>
+                        <outlet property="warningLabel" destination="sWL-dc-vLi" id="nrV-3i-69p"/>
+                        <outlet property="welcomeLabel" destination="vgI-zj-vYB" id="ocZ-m6-Yuh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UIb-8Y-34c" userLabel="First Responder" sceneMemberID="firstResponder"/>

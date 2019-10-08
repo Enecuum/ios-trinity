@@ -62,6 +62,8 @@ class ConfirmViewController: UIViewController {
         button.setTitleColor(color, for: .normal)
     }
 
+    // MARK: - IBActions
+
     @IBAction private func onCancelClicked(_ sender: Any) {
         dismiss(animated: true) { [weak self] in
             self?.delegate?.onCancelClicked()

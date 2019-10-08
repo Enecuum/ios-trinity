@@ -9,10 +9,10 @@ import Rswift
 
 extension StringResource {
     func localized(_ languageCode: String? = nil) -> String {
-        let preferredLanguage = languageCode ?? Defaults.languageCode()
+        let preferredLanguage = languageCode ?? Localization.preferredAppLanguageCode
         let fallback = bundle.localizedString(forKey: key, value: key, table: tableName)
 
-        guard let language = preferredLanguage, let localizedPath = bundle.path(forResource: language, ofType: "lproj"),
+        guard let localizedPath = bundle.path(forResource: preferredLanguage, ofType: "lproj"),
               let localizedBundle = Bundle(path: localizedPath) else {
             return fallback
         }

@@ -11,7 +11,7 @@ class Localization {
         if let selectedLanguageCode = userSelectedLanguageCode() {
             return selectedLanguageCode
         }
-        if let languagesArray = Resources.plist(name: "Languages"),
+        if let languagesArray = Resources.plistArray(name: "Languages"),
            let preferredLanguageCode = Bundle.main.preferredLocalizations.first,
            languagesArray.contains(preferredLanguageCode) {
             return preferredLanguageCode

@@ -26,9 +26,9 @@ class LanguageViewController: UIViewController {
 
         tableView.register(R.nib.languageTableViewCell)
 
-        if let languagesArray = Resources.plist(name: "Languages") {
-            languages = languagesArray.map { string in
-                LanguageItem(label: string, code: string)
+        if let languagesDict = Resources.plistDict(name: "Languages") {
+            languages = languagesDict.map { (code, label) in
+                LanguageItem(label: label, code: code)
             }
         }
         tableView.reloadData()

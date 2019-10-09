@@ -41,6 +41,8 @@ class TransferViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        dismissKeyBoardOnTouchOutside()
+
         balanceTitleLabel.text = R.string.localizable.balance.localized()
 
         tabsView.setButtonTitles(buttonTitles: [R.string.localizable.send.localized(), R.string.localizable.receive.localized()])

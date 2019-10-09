@@ -33,6 +33,8 @@ class PrivateKeyViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        dismissKeyBoardOnTouchOutside()
+
         titleLabel.text = R.string.localizable.private_key.localized()
         importButton.setTitle(R.string.localizable.import_wallet.localized(), for: .normal)
         importButton.multilineLabel()

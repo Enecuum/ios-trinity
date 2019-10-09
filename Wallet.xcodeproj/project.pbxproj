@@ -52,6 +52,7 @@
 		B8EA191BFDEF30B297938C5D /* ApiConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA17552578856912F65A4F /* ApiConstants.swift */; };
 		B8EA1924649899AC4079D1A9 /* TransferViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA1A06E3393C3709805246 /* TransferViewController.swift */; };
 		B8EA1A51E9CEAFF795ACAC0D /* NSMutableAttributedString+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA1884042D4AA975D780AA /* NSMutableAttributedString+Extension.swift */; };
+		B8EA1A79CDD65067A3BE5C0E /* UIViewCotroller+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA107345767D63EF94A0C7 /* UIViewCotroller+Extension.swift */; };
 		B8EA1AC9E7E32FCA2FFD663C /* FaqViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA1D8EC716C39C262B2F0B /* FaqViewController.swift */; };
 		B8EA1AD5D60A2E7DACBB78A8 /* Slider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA121B268DF274D4508B63 /* Slider.swift */; };
 		B8EA1B4DB2721DD800CF154E /* ConfirmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA1D4B5F536C48DC18ECDA /* ConfirmViewController.swift */; };
@@ -103,6 +104,7 @@
 		35C93FA7233AFE24003EF90B /* Menu.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Menu.storyboard; sourceTree = "<group>"; };
 		4A1D9D2B4E61AC9284666F23 /* Pods-wallet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wallet.debug.xcconfig"; path = "Target Support Files/Pods-wallet/Pods-wallet.debug.xcconfig"; sourceTree = "<group>"; };
 		B8EA101A8262DEB1CE21A0A5 /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		B8EA107345767D63EF94A0C7 /* UIViewCotroller+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewCotroller+Extension.swift"; sourceTree = "<group>"; };
 		B8EA1078A9C3798FFB672B95 /* LanguageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguageViewController.swift; sourceTree = "<group>"; };
 		B8EA10B587A40452E6650A9E /* ApiClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
 		B8EA10E4437B39F7691B4E73 /* Array+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Extension.swift"; sourceTree = "<group>"; };
@@ -235,6 +237,7 @@
 				B8EA1884042D4AA975D780AA /* NSMutableAttributedString+Extension.swift */,
 				B8EA1A093C22395F491E712B /* StringResource+Extension.swift */,
 				B8EA1EB1C3D015CFEA7C2F33 /* UIButton+Extension.swift */,
+				B8EA107345767D63EF94A0C7 /* UIViewCotroller+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -648,6 +651,7 @@
 				B8EA154763261C213ACF4FCB /* StringResource+Extension.swift in Sources */,
 				B8EA113E558EA33B1BBB316A /* Localization.swift in Sources */,
 				B8EA13734195953CACC55609 /* UIButton+Extension.swift in Sources */,
+				B8EA1A79CDD65067A3BE5C0E /* UIViewCotroller+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

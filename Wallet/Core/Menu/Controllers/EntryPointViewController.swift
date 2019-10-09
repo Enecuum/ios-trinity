@@ -23,6 +23,8 @@ class EntryPointViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        dismissKeyBoardOnTouchOutside()
+
         titleLabel.text = R.string.localizable.entry_point.localized()
         saveButton.setTitle(R.string.localizable.save_url.localized(), for: .normal)
         saveButton.multilineLabel()

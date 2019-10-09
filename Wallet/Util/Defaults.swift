@@ -50,10 +50,14 @@ class Defaults {
     }
 
     static func clearUserData() {
+        let langCode = languageCode()
         if let domain = Bundle.main.bundleIdentifier {
             UserDefaults.standard.removePersistentDomain(forName: domain)
             UserDefaults.standard.synchronize()
         }
         Defaults.setRunOnceFlag()
+        if let code = langCode {
+            Defaults.setLanguageCode(code)
+        }
     }
 }

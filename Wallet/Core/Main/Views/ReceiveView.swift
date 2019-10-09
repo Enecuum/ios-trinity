@@ -37,7 +37,7 @@ class ReceiveView: UIView, NibView {
     }
 
     private func setup() {
-        shareQrButton.setTitle(R.string.localizable.share_qr.localized(), for: .normal)
+        shareQrButton.setTitle("  \(R.string.localizable.share_qr.localized())", for: .normal)
 
         let key = CryptoHelper.getPublicKey()
         addressTextField.text = key

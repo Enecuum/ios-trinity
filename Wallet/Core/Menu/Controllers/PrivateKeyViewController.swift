@@ -54,6 +54,11 @@ class PrivateKeyViewController: UIViewController {
         importView.borderColor = error ? Palette.errorRed : Palette.borderGray
     }
 
+    private func fakeAppReload() {
+        let mainViewController = R.storyboard.main.mainViewController()
+        view.window?.rootViewController = mainViewController
+    }
+
     // MARK: - IBActions
 
     @IBAction func onCopyPrivateKeyClicked(_ sender: Any) {
@@ -106,7 +111,8 @@ extension PrivateKeyViewController: ConfirmViewDelegate {
         if let key = confirmedPrivateKey {
             Defaults.clearUserData()
             AuthManager.signIn(key)
-            performSegue(withIdentifier: Constants.unwindSegueId, sender: self)
+
+            fakeAppReload()
         }
     }
 

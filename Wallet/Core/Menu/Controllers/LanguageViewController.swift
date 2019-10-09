@@ -52,6 +52,7 @@ extension LanguageViewController: UITableViewDataSource {
         let languageItem = languages[indexPath.row]
         cell.itemLabel.text = languageItem.label
         cell.frameView.isHidden = languageItem.code != selectedLanguageCode
+        cell.selectionStyle = .none
         return cell
     }
 }

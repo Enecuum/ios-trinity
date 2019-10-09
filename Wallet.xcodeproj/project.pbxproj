@@ -30,6 +30,7 @@
 		B8EA12967CF8667931778061 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA10B587A40452E6650A9E /* ApiClient.swift */; };
 		B8EA1347970505193E9CD473 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA1AB4DE484A22A99E7DFD /* UIView+Extension.swift */; };
 		B8EA135ACA1DCB77A9B3928C /* GradientButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA1454E4B1EBD958E7E413 /* GradientButton.swift */; };
+		B8EA13734195953CACC55609 /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA1EB1C3D015CFEA7C2F33 /* UIButton+Extension.swift */; };
 		B8EA13A051ECAFB38A3C6C8A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA14EA8EB8491A251D3603 /* MainViewController.swift */; };
 		B8EA13E852C7199422A9CDAE /* NibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA1FD8D39ED0115C317AB0 /* NibView.swift */; };
 		B8EA14C1D449204D9962F822 /* PrivateKeyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA1A04EBB7AD8A41903DC0 /* PrivateKeyViewController.swift */; };
@@ -144,6 +145,7 @@
 		B8EA1DBE3695611D726A76D6 /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		B8EA1DEA865063CF4BEDC5EA /* AuthMode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthMode.swift; sourceTree = "<group>"; };
 		B8EA1E69D0A92BCBA9D4AAEA /* AuthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
+		B8EA1EB1C3D015CFEA7C2F33 /* UIButton+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
 		B8EA1F0AC6F5DA4951A86E7C /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		B8EA1FD8D39ED0115C317AB0 /* NibView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibView.swift; sourceTree = "<group>"; };
 		D55D7342C2EDB0E32FCED51F /* Pods_wallet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_wallet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -232,6 +234,7 @@
 				B8EA1D9D2D2EC73F992AC0FB /* UILabel+Extension.swift */,
 				B8EA1884042D4AA975D780AA /* NSMutableAttributedString+Extension.swift */,
 				B8EA1A093C22395F491E712B /* StringResource+Extension.swift */,
+				B8EA1EB1C3D015CFEA7C2F33 /* UIButton+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -644,6 +647,7 @@
 				B8EA191BE758FE4375B2938F /* Resources.swift in Sources */,
 				B8EA154763261C213ACF4FCB /* StringResource+Extension.swift in Sources */,
 				B8EA113E558EA33B1BBB316A /* Localization.swift in Sources */,
+				B8EA13734195953CACC55609 /* UIButton+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -35,8 +35,10 @@ class PrivateKeyViewController: UIViewController {
 
         titleLabel.text = R.string.localizable.private_key.localized()
         importButton.setTitle(R.string.localizable.import_wallet.localized(), for: .normal)
+        importButton.multilineLabel()
         importLabel.text = R.string.localizable.private_key_import_hint.localized()
         signInButton.setTitle(R.string.localizable.signin.localized(), for: .normal)
+        signInButton.multilineLabel()
         warningTitleLabel.text = R.string.localizable.import_key_warning_title.localized()
         warningLabel.text = R.string.localizable.import_key_warning.localized()
 

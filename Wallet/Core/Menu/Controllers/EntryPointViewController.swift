@@ -25,6 +25,7 @@ class EntryPointViewController: UIViewController {
 
         titleLabel.text = R.string.localizable.entry_point.localized()
         saveButton.setTitle(R.string.localizable.save_url.localized(), for: .normal)
+        saveButton.multilineLabel()
 
         entryPointTextField.text = "\(ApiRouter.baseIp)"
     }

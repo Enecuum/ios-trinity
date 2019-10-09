@@ -89,9 +89,12 @@ class SendView: UIView, NibView {
         amountLabel.text = R.string.localizable.amount.localized()
         sliderMaxLabel.text = R.string.localizable.max.localized()
         sendButton.setTitle(R.string.localizable.send.localized(), for: .normal)
+        sendButton.multilineLabel()
         //confirm
         toLabel.text = R.string.localizable.enq_address_to_send.localized()
         sendAmountLabel.text = R.string.localizable.amount.localized()
+        rejectButton.multilineLabel()
+        confirmButton.multilineLabel()
 
         errorLabel.alpha = 0
         sendAmountTextField.text = "0"

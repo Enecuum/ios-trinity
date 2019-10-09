@@ -16,7 +16,9 @@ class WelcomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        newWalletButton.multilineLabel()
         newWalletButton.setTitle(R.string.localizable.create_new_wallet.localized(), for: .normal)
+        importButton.multilineLabel()
         importButton.setTitle(R.string.localizable.import_wallet.localized(), for: .normal)
     }
 

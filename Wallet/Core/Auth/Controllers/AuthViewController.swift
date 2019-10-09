@@ -45,6 +45,11 @@ class AuthViewController: UIViewController {
         privateKeyLabel.text = R.string.localizable.your_private_key.localized()
         warningLabel.text = R.string.localizable.disclaimer.localized()
 
+        if Localization.isRTL() {
+            addressTextField.textAlignment = .right
+            privateKeyTextField.textAlignment = .right
+        }
+
         if authMode == .walletImport {
             addressView.isHidden = true
             errorLabel.alpha = 0

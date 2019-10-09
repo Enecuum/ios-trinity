@@ -58,6 +58,10 @@ class ReceiveView: UIView, NibView {
         } else {
             print("Create QRCode image failed!")
         }
+
+        if Localization.isRTL() {
+            addressTextField.textAlignment = .right
+        }
     }
 
     @IBAction func onCopyAddressClicked(_ sender: Any) {

@@ -82,6 +82,8 @@ extension TabsView {
         stack.bottomAnchor.constraint(equalTo: self.bottomAnchor).isActive = true
         stack.leftAnchor.constraint(equalTo: self.leftAnchor).isActive = true
         stack.rightAnchor.constraint(equalTo: self.rightAnchor).isActive = true
+
+        stack.semanticContentAttribute = .forceLeftToRight
     }
 
     private func configSelectorView() {

@@ -41,6 +41,11 @@ class PrivateKeyViewController: UIViewController {
         warningLabel.text = R.string.localizable.import_key_warning.localized()
 
         privateKeyTextField.text = AuthManager.key()
+
+        if Localization.isRTL() {
+            privateKeyTextField.textAlignment = .right
+            newPrivateKeyTextField.textAlignment = .right
+        }
     }
 
     // MARK: - UI

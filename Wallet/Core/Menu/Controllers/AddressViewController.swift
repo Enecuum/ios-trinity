@@ -16,6 +16,10 @@ class AddressViewController: UIViewController {
         titleLabel.text = R.string.localizable.my_address.localized()
 
         addressTextField.text = CryptoHelper.getPublicKey()
+
+        if Localization.isRTL() {
+            addressTextField.textAlignment = .right
+        }
     }
 
     @IBAction func onCopyAddressClicked(_ sender: Any) {

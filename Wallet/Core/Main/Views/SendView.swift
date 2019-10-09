@@ -100,6 +100,12 @@ class SendView: UIView, NibView {
 
         addAttributedButton(rejectButton, image: R.image.icons.cross()!, string: R.string.localizable.reject.localized(), color: .red)
         addAttributedButton(confirmButton, image: R.image.icons.tick()!, string: R.string.localizable.confirm.localized(), color: .white)
+
+        if Localization.isRTL() {
+            amountSlider.semanticContentAttribute = .forceRightToLeft
+            receiverTextField.textAlignment = .right
+            sendAmountTextField.textAlignment = .right
+        }
     }
 
     private func addAttributedButton(_ button: UIButton, image: UIImage, string: String, color: UIColor) {

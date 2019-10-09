@@ -50,6 +50,8 @@ class LanguageViewController: UIViewController {
         Defaults.setLanguageCode(code)
         selectedLanguageCode = Localization.preferredAppLanguageCode
 
+        Localization.setupLangAlignment()
+
         titleLabel.text = R.string.localizable.language.localized()
         tableView.reloadData()
     }
@@ -80,7 +82,7 @@ class LanguageViewController: UIViewController {
 
 extension LanguageViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return languages.count
+        languages.count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -96,7 +98,7 @@ extension LanguageViewController: UITableViewDataSource {
 
 extension LanguageViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 50
+        50
     }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

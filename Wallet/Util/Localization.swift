@@ -4,16 +4,25 @@
 //
 
 import Foundation
+import UIKit
 
 class Localization {
+
+    static func setupLangAlignment() {
+        UIView.appearance().semanticContentAttribute = isRTL() ? .forceRightToLeft : .forceLeftToRight
+    }
+
+    static func isRTL() -> Bool {
+        Localization.preferredAppLanguageCode == "ar"
+    }
 
     static var preferredAppLanguageCode: String {
         if let selectedLanguageCode = userSelectedLanguageCode() {
             return selectedLanguageCode
         }
-        if let languagesArray = Resources.plistArray(name: "Languages"),
+        if let languagesDict = Resources.plistDict(name: "Languages"),
            let preferredLanguageCode = Bundle.main.preferredLocalizations.first,
-           languagesArray.contains(preferredLanguageCode) {
+           languagesDict.keys.contains(preferredLanguageCode) {
             return preferredLanguageCode
         }
         return "en"

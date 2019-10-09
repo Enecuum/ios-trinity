@@ -82,7 +82,6 @@
 		351E9A86234CA79300CCD738 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
 		351E9A87234CA79E00CCD738 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
 		351E9A88234CA7C700CCD738 /* zh */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = zh; path = zh.lproj/Localizable.strings; sourceTree = "<group>"; };
-		351E9A89234CA7F200CCD738 /* hi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hi; path = hi.lproj/Localizable.strings; sourceTree = "<group>"; };
 		351E9A8A234CA7FE00CCD738 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
 		351E9A8B234CA80300CCD738 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Localizable.strings; sourceTree = "<group>"; };
 		351E9A8C234CA81800CCD738 /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = pt.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -90,6 +89,7 @@
 		351E9A8E234CA82800CCD738 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 		351E9A8F234CA83000CCD738 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/Localizable.strings; sourceTree = "<group>"; };
 		351E9A90234CA83A00CCD738 /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/Localizable.strings; sourceTree = "<group>"; };
+		3522F92E234E47A500A1EF56 /* id */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = id; path = id.lproj/Localizable.strings; sourceTree = "<group>"; };
 		354A96D423428ED500C2AEFA /* Wallet-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Wallet-Bridging-Header.h"; sourceTree = "<group>"; };
 		356A60C82333B93F00E8D118 /* Enecuum Wallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Enecuum Wallet.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		356A60CB2333B93F00E8D118 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -496,7 +496,6 @@
 				fr,
 				de,
 				zh,
-				hi,
 				ja,
 				ko,
 				pt,
@@ -504,6 +503,7 @@
 				es,
 				tr,
 				vi,
+				id,
 			);
 			mainGroup = 356A60BF2333B93F00E8D118;
 			productRefGroup = 356A60C92333B93F00E8D118 /* Products */;
@@ -666,7 +666,6 @@
 				351E9A86234CA79300CCD738 /* fr */,
 				351E9A87234CA79E00CCD738 /* de */,
 				351E9A88234CA7C700CCD738 /* zh */,
-				351E9A89234CA7F200CCD738 /* hi */,
 				351E9A8A234CA7FE00CCD738 /* ja */,
 				351E9A8B234CA80300CCD738 /* ko */,
 				351E9A8C234CA81800CCD738 /* pt */,
@@ -674,6 +673,7 @@
 				351E9A8E234CA82800CCD738 /* es */,
 				351E9A8F234CA83000CCD738 /* tr */,
 				351E9A90234CA83A00CCD738 /* vi */,
+				3522F92E234E47A500A1EF56 /* id */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";

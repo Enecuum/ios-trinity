@@ -4,29 +4,29 @@
 <dict>
 	<key>ar</key>
 	<string>عربى</string>
-    <key>zh</key>
-    <string>中文</string>
-    <key>en</key>
-    <string>English</string>
-    <key>fr</key>
-    <string>Français</string>
-    <key>de</key>
-    <string>Deutsche</string>
-    <key>in</key>
-    <string>Bahasa Indonesia</string>
-    <key>ja</key>
-    <string>日本人</string>
-    <key>ko</key>
-    <string>한국어</string>
-    <key>pt</key>
-    <string>Português</string>
-    <key>ru</key>
-    <string>Русский</string>
-    <key>es</key>
-    <string>Español</string>
-    <key>tr</key>
-    <string>Türkçe</string>
-    <key>vi</key>
-    <string>Việt</string>
+	<key>zh</key>
+	<string>中文</string>
+	<key>en</key>
+	<string>English</string>
+	<key>fr</key>
+	<string>Français</string>
+	<key>de</key>
+	<string>Deutsche</string>
+	<key>id</key>
+	<string>Bahasa Indonesia</string>
+	<key>ja</key>
+	<string>日本人</string>
+	<key>ko</key>
+	<string>한국어</string>
+	<key>pt</key>
+	<string>Português</string>
+	<key>ru</key>
+	<string>Русский</string>
+	<key>es</key>
+	<string>Español</string>
+	<key>tr</key>
+	<string>Türkçe</string>
+	<key>vi</key>
+	<string>Việt</string>
 </dict>
 </plist>

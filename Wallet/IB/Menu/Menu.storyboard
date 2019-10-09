@@ -89,7 +89,7 @@
                                                         </constraints>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About App" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GtZ-7g-Vcq" userLabel="Second Line">
-                                                        <rect key="frame" x="61" y="29.666666666666671" width="86" height="21"/>
+                                                        <rect key="frame" x="61" y="29.666666666666671" width="316.33333333333331" height="21"/>
                                                         <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="17"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -112,6 +112,7 @@
                                                     <constraint firstAttribute="height" constant="80" id="THT-3L-Eyq"/>
                                                     <constraint firstItem="THK-zu-QF6" firstAttribute="leading" secondItem="gcf-DT-nCH" secondAttribute="leading" id="fqG-9j-vpv"/>
                                                     <constraint firstItem="GtZ-7g-Vcq" firstAttribute="centerY" secondItem="gcf-DT-nCH" secondAttribute="centerY" id="spK-Kk-7FN"/>
+                                                    <constraint firstAttribute="trailing" secondItem="GtZ-7g-Vcq" secondAttribute="trailing" constant="16" id="xNu-cm-wyF"/>
                                                 </constraints>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
@@ -164,7 +165,7 @@
                                                         </constraints>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3RT-Me-Vxw" userLabel="Second Line">
-                                                        <rect key="frame" x="61" y="29.666666666666657" width="88" height="21"/>
+                                                        <rect key="frame" x="61" y="29.666666666666657" width="316.33333333333331" height="21"/>
                                                         <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="17"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -180,6 +181,7 @@
                                                 <constraints>
                                                     <constraint firstItem="ht1-1Y-L1M" firstAttribute="centerY" secondItem="CyL-mc-Ov8" secondAttribute="centerY" id="2RD-FV-WZM"/>
                                                     <constraint firstAttribute="trailing" secondItem="gOU-DQ-auE" secondAttribute="trailing" id="BWZ-2F-9iS"/>
+                                                    <constraint firstAttribute="trailing" secondItem="3RT-Me-Vxw" secondAttribute="trailing" constant="16" id="C4k-8x-oWr"/>
                                                     <constraint firstAttribute="bottom" secondItem="gOU-DQ-auE" secondAttribute="bottom" id="CsP-zX-OMz"/>
                                                     <constraint firstItem="ht1-1Y-L1M" firstAttribute="leading" secondItem="CyL-mc-Ov8" secondAttribute="leading" constant="20" id="IGr-TP-gSe"/>
                                                     <constraint firstItem="gOU-DQ-auE" firstAttribute="top" secondItem="CyL-mc-Ov8" secondAttribute="top" id="Y8r-pe-yz1"/>
@@ -239,7 +241,7 @@
                                                         </constraints>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Private key" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zAa-gc-GYP" userLabel="Second Line">
-                                                        <rect key="frame" x="60.999999999999993" y="30" width="85.333333333333314" height="20"/>
+                                                        <rect key="frame" x="61" y="30" width="316.33333333333331" height="20"/>
                                                         <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="17"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -254,6 +256,7 @@
                                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstItem="zAa-gc-GYP" firstAttribute="centerY" secondItem="30j-0q-gAt" secondAttribute="centerY" id="29Z-bQ-8TN"/>
+                                                    <constraint firstAttribute="trailing" secondItem="zAa-gc-GYP" secondAttribute="trailing" constant="16" id="6lf-J5-VUv"/>
                                                     <constraint firstItem="oKf-4I-oeJ" firstAttribute="leading" secondItem="30j-0q-gAt" secondAttribute="leading" constant="20" id="7tD-Ic-HfR"/>
                                                     <constraint firstAttribute="bottom" secondItem="xbR-SL-0EN" secondAttribute="bottom" id="Owk-vO-092"/>
                                                     <constraint firstAttribute="trailing" secondItem="xbR-SL-0EN" secondAttribute="trailing" id="SVj-UH-1jg"/>
@@ -314,7 +317,7 @@
                                                         </constraints>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Community" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aVe-Iq-vp1" userLabel="Second Line">
-                                                        <rect key="frame" x="60.999999999999993" y="29.666666666666686" width="91.333333333333314" height="21"/>
+                                                        <rect key="frame" x="61" y="29.666666666666686" width="316.33333333333331" height="21"/>
                                                         <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="17"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -335,6 +338,7 @@
                                                     <constraint firstItem="TXB-Bh-Rtc" firstAttribute="leading" secondItem="nF3-Nf-YOW" secondAttribute="leading" constant="20" id="erC-Pm-XPD"/>
                                                     <constraint firstItem="aVe-Iq-vp1" firstAttribute="centerY" secondItem="nF3-Nf-YOW" secondAttribute="centerY" id="hJP-lt-cfl"/>
                                                     <constraint firstItem="oxz-hA-OXo" firstAttribute="leading" secondItem="nF3-Nf-YOW" secondAttribute="leading" id="j23-9L-HhX"/>
+                                                    <constraint firstAttribute="trailing" secondItem="aVe-Iq-vp1" secondAttribute="trailing" constant="16" id="nHY-iw-Alf"/>
                                                     <constraint firstAttribute="bottom" secondItem="oxz-hA-OXo" secondAttribute="bottom" id="wMb-LT-zqh"/>
                                                     <constraint firstItem="TXB-Bh-Rtc" firstAttribute="centerY" secondItem="nF3-Nf-YOW" secondAttribute="centerY" id="xdy-IX-vdX"/>
                                                 </constraints>
@@ -389,7 +393,7 @@
                                                         </constraints>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FAQ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3rf-yZ-piF" userLabel="Second Line">
-                                                        <rect key="frame" x="60.999999999999986" y="-10" width="36.333333333333329" height="20"/>
+                                                        <rect key="frame" x="61" y="-10" width="316.33333333333331" height="20"/>
                                                         <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="17"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -405,6 +409,7 @@
                                                 <constraints>
                                                     <constraint firstItem="lzt-w1-n2M" firstAttribute="leading" secondItem="hOo-lr-rxD" secondAttribute="leading" constant="20" id="35q-iL-FYk"/>
                                                     <constraint firstItem="Yzw-Az-wWq" firstAttribute="top" secondItem="hOo-lr-rxD" secondAttribute="top" id="3I2-bX-9c7"/>
+                                                    <constraint firstAttribute="trailing" secondItem="3rf-yZ-piF" secondAttribute="trailing" constant="16" id="5Vx-Mk-5vn"/>
                                                     <constraint firstItem="3rf-yZ-piF" firstAttribute="centerY" secondItem="hOo-lr-rxD" secondAttribute="centerY" id="CWK-fG-BPp"/>
                                                     <constraint firstAttribute="bottom" secondItem="Yzw-Az-wWq" secondAttribute="bottom" id="auG-4P-OhI"/>
                                                     <constraint firstItem="Yzw-Az-wWq" firstAttribute="leading" secondItem="hOo-lr-rxD" secondAttribute="leading" id="bnO-rc-MBD"/>
@@ -464,7 +469,7 @@
                                                         </constraints>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Language" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qzY-07-xoi" userLabel="Second Line">
-                                                        <rect key="frame" x="61" y="29.666666666666686" width="77" height="21"/>
+                                                        <rect key="frame" x="61" y="29.666666666666686" width="316.33333333333331" height="21"/>
                                                         <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="17"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -478,6 +483,7 @@
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="qzY-07-xoi" secondAttribute="trailing" constant="16" id="BMa-rE-FAN"/>
                                                     <constraint firstItem="5vG-aa-eyJ" firstAttribute="centerY" secondItem="Glx-7u-cs3" secondAttribute="centerY" id="HW7-ZT-Rn3"/>
                                                     <constraint firstAttribute="trailing" secondItem="lQe-cC-SXZ" secondAttribute="trailing" id="NUH-rQ-V2j"/>
                                                     <constraint firstItem="lQe-cC-SXZ" firstAttribute="top" secondItem="Glx-7u-cs3" secondAttribute="top" id="VHa-dy-0BG"/>
@@ -539,7 +545,7 @@
                                                         </constraints>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Entry point" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LfF-mt-r7p" userLabel="Second Line">
-                                                        <rect key="frame" x="61" y="29.666666666666629" width="87" height="21"/>
+                                                        <rect key="frame" x="61" y="29.666666666666629" width="316.33333333333331" height="21"/>
                                                         <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="17"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -556,6 +562,7 @@
                                                 <constraints>
                                                     <constraint firstItem="LfF-mt-r7p" firstAttribute="leading" secondItem="aCA-GK-mHw" secondAttribute="trailing" constant="16" id="1ve-cI-6Ql"/>
                                                     <constraint firstAttribute="height" constant="80" id="F1d-AY-dJn"/>
+                                                    <constraint firstAttribute="trailing" secondItem="LfF-mt-r7p" secondAttribute="trailing" constant="16" id="Mtd-FH-yR3"/>
                                                     <constraint firstItem="aCA-GK-mHw" firstAttribute="centerY" secondItem="y0E-Y5-DeG" secondAttribute="centerY" id="UbE-sw-8KC"/>
                                                     <constraint firstItem="aCA-GK-mHw" firstAttribute="leading" secondItem="y0E-Y5-DeG" secondAttribute="leading" constant="20" id="aTO-LQ-Sut"/>
                                                     <constraint firstItem="LfF-mt-r7p" firstAttribute="centerY" secondItem="y0E-Y5-DeG" secondAttribute="centerY" id="gcA-5U-0DD"/>
@@ -693,7 +700,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="393.33333333333331" height="654"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About App" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s1D-KC-gUb" userLabel="Second Line">
-                                        <rect key="frame" x="61" y="30" width="86" height="21"/>
+                                        <rect key="frame" x="61" y="30" width="266.33333333333331" height="21"/>
                                         <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -738,7 +745,7 @@ Trinity Protocol version 2.0.0</string>
                                                         </constraints>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="www.enecuum.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9xu-Zr-bYQ">
-                                                        <rect key="frame" x="60" y="118" width="305.33333333333331" height="21"/>
+                                                        <rect key="frame" x="60" y="118" width="297.33333333333331" height="21"/>
                                                         <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="17"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -751,7 +758,7 @@ Trinity Protocol version 2.0.0</string>
                                                         </constraints>
                                                     </view>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="White paper" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gic-mR-6z5">
-                                                        <rect key="frame" x="59.999999999999993" y="193" width="96.333333333333314" height="21"/>
+                                                        <rect key="frame" x="60" y="193" width="297.33333333333331" height="21"/>
                                                         <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="17"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -763,7 +770,7 @@ Trinity Protocol version 2.0.0</string>
                                                         </constraints>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tech paper" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9O2-4J-UiI">
-                                                        <rect key="frame" x="59.999999999999993" y="231" width="84.333333333333314" height="21"/>
+                                                        <rect key="frame" x="60" y="231" width="297.33333333333331" height="21"/>
                                                         <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="17"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -775,7 +782,7 @@ Trinity Protocol version 2.0.0</string>
                                                         </constraints>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Terms ans conditions" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w4b-Mk-Vhg">
-                                                        <rect key="frame" x="60" y="269" width="160" height="21"/>
+                                                        <rect key="frame" x="60" y="269" width="297.33333333333331" height="21"/>
                                                         <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="17"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -787,7 +794,7 @@ Trinity Protocol version 2.0.0</string>
                                                         </constraints>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Privacy policy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NlB-cc-ymL">
-                                                        <rect key="frame" x="60" y="307" width="107" height="21"/>
+                                                        <rect key="frame" x="60" y="307" width="297.33333333333331" height="21"/>
                                                         <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="17"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -808,14 +815,17 @@ Trinity Protocol version 2.0.0</string>
                                                     <constraint firstItem="gjr-Ms-edI" firstAttribute="width" secondItem="gjr-Ms-edI" secondAttribute="height" multiplier="1:1" id="5qw-vY-6Sq"/>
                                                     <constraint firstItem="Zkd-Dk-E60" firstAttribute="leading" secondItem="qnz-2g-xHx" secondAttribute="leading" id="6wF-Br-ayo"/>
                                                     <constraint firstAttribute="trailing" secondItem="hZD-Mg-ReI" secondAttribute="trailing" constant="16" id="7ld-a1-gA0"/>
+                                                    <constraint firstAttribute="trailing" secondItem="NlB-cc-ymL" secondAttribute="trailing" constant="16" id="A6l-vx-PuG"/>
                                                     <constraint firstItem="qnz-2g-xHx" firstAttribute="leading" secondItem="7wN-JL-0V9" secondAttribute="leading" id="Cur-Bx-twk"/>
                                                     <constraint firstAttribute="bottom" secondItem="DJT-we-WER" secondAttribute="bottom" constant="24" id="DUb-1l-vaz"/>
                                                     <constraint firstItem="9xu-Zr-bYQ" firstAttribute="centerY" secondItem="7wN-JL-0V9" secondAttribute="centerY" id="DeI-oe-sij"/>
-                                                    <constraint firstAttribute="trailing" secondItem="9xu-Zr-bYQ" secondAttribute="trailing" constant="8" id="ETh-o9-qXo"/>
+                                                    <constraint firstAttribute="trailing" secondItem="9xu-Zr-bYQ" secondAttribute="trailing" constant="16" id="ETh-o9-qXo"/>
+                                                    <constraint firstAttribute="trailing" secondItem="9O2-4J-UiI" secondAttribute="trailing" constant="16" id="Lh9-GA-n8Y"/>
                                                     <constraint firstItem="DJT-we-WER" firstAttribute="top" secondItem="gjr-Ms-edI" secondAttribute="bottom" constant="12" id="MA8-ld-uDb"/>
                                                     <constraint firstItem="HQ2-Jf-Bub" firstAttribute="top" secondItem="UM7-Uj-k8q" secondAttribute="top" constant="8" id="MR0-yH-u9L"/>
                                                     <constraint firstItem="9O2-4J-UiI" firstAttribute="centerY" secondItem="Zkd-Dk-E60" secondAttribute="centerY" id="OHZ-sR-xi5"/>
                                                     <constraint firstItem="Zkd-Dk-E60" firstAttribute="width" secondItem="Zkd-Dk-E60" secondAttribute="height" multiplier="1:1" id="OpV-Xl-ZVa"/>
+                                                    <constraint firstAttribute="trailing" secondItem="w4b-Mk-Vhg" secondAttribute="trailing" constant="16" id="PaN-hE-iaR"/>
                                                     <constraint firstItem="hZD-Mg-ReI" firstAttribute="leading" secondItem="UM7-Uj-k8q" secondAttribute="leading" constant="16" id="Qwz-jp-RdA"/>
                                                     <constraint firstItem="jjK-ld-4jg" firstAttribute="trailing" secondItem="HQ2-Jf-Bub" secondAttribute="trailing" id="R3z-ZH-uqZ"/>
                                                     <constraint firstItem="7wN-JL-0V9" firstAttribute="width" secondItem="7wN-JL-0V9" secondAttribute="height" multiplier="1:1" id="T8N-na-xnT"/>
@@ -834,6 +844,7 @@ Trinity Protocol version 2.0.0</string>
                                                     <constraint firstItem="Zkd-Dk-E60" firstAttribute="top" secondItem="qnz-2g-xHx" secondAttribute="bottom" constant="12" id="mSn-DX-SRO"/>
                                                     <constraint firstItem="NlB-cc-ymL" firstAttribute="leading" secondItem="DJT-we-WER" secondAttribute="trailing" constant="12" id="mzG-je-Vo4"/>
                                                     <constraint firstItem="hZD-Mg-ReI" firstAttribute="top" secondItem="HQ2-Jf-Bub" secondAttribute="bottom" constant="12" id="oV2-iF-i6l"/>
+                                                    <constraint firstAttribute="trailing" secondItem="gic-mR-6z5" secondAttribute="trailing" constant="16" id="pZS-Gp-EPs"/>
                                                     <constraint firstItem="w4b-Mk-Vhg" firstAttribute="leading" secondItem="gjr-Ms-edI" secondAttribute="trailing" constant="12" id="q9T-bI-oy2"/>
                                                     <constraint firstItem="gic-mR-6z5" firstAttribute="centerY" secondItem="qnz-2g-xHx" secondAttribute="centerY" id="wa4-Qf-Lc0"/>
                                                     <constraint firstItem="9xu-Zr-bYQ" firstAttribute="leading" secondItem="7wN-JL-0V9" secondAttribute="trailing" constant="12" id="y6o-U6-MmC"/>
@@ -865,6 +876,7 @@ Trinity Protocol version 2.0.0</string>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="xPu-7T-go2" firstAttribute="width" secondItem="hRx-iP-1bP" secondAttribute="width" multiplier="0.95" id="4Is-LN-ciC"/>
+                                    <constraint firstItem="1i8-32-Gjb" firstAttribute="leading" secondItem="s1D-KC-gUb" secondAttribute="trailing" constant="16" id="4ay-xR-ESc"/>
                                     <constraint firstItem="1i8-32-Gjb" firstAttribute="top" secondItem="hRx-iP-1bP" secondAttribute="top" constant="18" id="5SO-dQ-8yN"/>
                                     <constraint firstAttribute="trailing" secondItem="1i8-32-Gjb" secondAttribute="trailing" constant="20" id="7Si-3R-GOt"/>
                                     <constraint firstItem="JZ4-d8-r3T" firstAttribute="leading" secondItem="hRx-iP-1bP" secondAttribute="leading" constant="20" id="F7a-jn-bQo"/>
@@ -968,7 +980,7 @@ Trinity Protocol version 2.0.0</string>
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Private key" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fzB-qZ-WCB" userLabel="Title">
-                                        <rect key="frame" x="60.999999999999993" y="30.666666666666671" width="85.333333333333314" height="20"/>
+                                        <rect key="frame" x="61" y="30.666666666666671" width="266.33333333333331" height="20"/>
                                         <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -1077,8 +1089,8 @@ Trinity Protocol version 2.0.0</string>
                                             <action selector="onImportClicked:" destination="LaX-a3-lYg" eventType="touchUpInside" id="eVO-ZF-qt3"/>
                                         </connections>
                                     </button>
-                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter your private key to import" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="43q-ax-K9n" userLabel="Enter New Label">
-                                        <rect key="frame" x="20" y="208" width="227" height="19"/>
+                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter your private key to import" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="43q-ax-K9n" userLabel="Enter New Label">
+                                        <rect key="frame" x="20" y="208" width="357.33333333333331" height="19"/>
                                         <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="16"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -1213,6 +1225,7 @@ Trinity Protocol version 2.0.0</string>
                                     <constraint firstItem="fRd-Wa-Fm1" firstAttribute="top" secondItem="LyG-3a-pM0" secondAttribute="bottom" constant="24" id="M4m-EB-sZZ"/>
                                     <constraint firstItem="fRd-Wa-Fm1" firstAttribute="leading" secondItem="B17-wi-BPB" secondAttribute="leading" id="REy-MD-HII"/>
                                     <constraint firstItem="pst-6f-k6j" firstAttribute="leading" secondItem="FDt-0W-sRX" secondAttribute="leading" id="TCR-Pm-cbv"/>
+                                    <constraint firstItem="Rya-q6-atN" firstAttribute="leading" secondItem="fzB-qZ-WCB" secondAttribute="trailing" constant="16" id="Tvx-mo-aoP"/>
                                     <constraint firstItem="8xM-xE-vhY" firstAttribute="leading" secondItem="ivm-d6-GEq" secondAttribute="leading" id="UkZ-34-uyR"/>
                                     <constraint firstItem="B17-wi-BPB" firstAttribute="leading" secondItem="8xM-xE-vhY" secondAttribute="leading" id="Wo3-nR-jPT"/>
                                     <constraint firstItem="43q-ax-K9n" firstAttribute="leading" secondItem="B17-wi-BPB" secondAttribute="leading" id="Ww9-jX-8so"/>
@@ -1230,6 +1243,7 @@ Trinity Protocol version 2.0.0</string>
                                     <constraint firstItem="fzB-qZ-WCB" firstAttribute="centerY" secondItem="ivm-d6-GEq" secondAttribute="centerY" id="uTP-EL-ney"/>
                                     <constraint firstItem="FDt-0W-sRX" firstAttribute="centerX" secondItem="zrq-ML-RsY" secondAttribute="centerX" id="vmg-Vg-t0Z"/>
                                     <constraint firstItem="MQe-OS-MP1" firstAttribute="leading" secondItem="zrq-ML-RsY" secondAttribute="leading" id="wl5-Bh-A6R"/>
+                                    <constraint firstAttribute="trailing" secondItem="43q-ax-K9n" secondAttribute="trailing" constant="16" id="zGs-yo-IFw"/>
                                     <constraint firstItem="Duz-rk-x7w" firstAttribute="top" secondItem="Nig-Eg-lSd" secondAttribute="bottom" id="zr1-F3-2gq"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
@@ -1323,7 +1337,7 @@ Trinity Protocol version 2.0.0</string>
                                         <rect key="frame" x="0.0" y="0.0" width="393.33333333333331" height="654"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y21-o1-NdX" userLabel="Second Line">
-                                        <rect key="frame" x="61" y="30" width="88" height="21"/>
+                                        <rect key="frame" x="61" y="30" width="266.33333333333331" height="21"/>
                                         <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -1400,6 +1414,7 @@ Trinity Protocol version 2.0.0</string>
                                     <constraint firstItem="y21-o1-NdX" firstAttribute="centerY" secondItem="5xQ-AU-1Z3" secondAttribute="centerY" id="2Oz-6S-rf1"/>
                                     <constraint firstItem="LGN-Ba-OwV" firstAttribute="top" secondItem="YGb-Dw-beb" secondAttribute="top" constant="18" id="2r7-gr-XS1"/>
                                     <constraint firstAttribute="bottom" secondItem="Fl6-ei-Yj5" secondAttribute="bottom" id="3LQ-fQ-26j"/>
+                                    <constraint firstItem="LGN-Ba-OwV" firstAttribute="leading" secondItem="y21-o1-NdX" secondAttribute="trailing" constant="16" id="IcZ-fH-KDe"/>
                                     <constraint firstItem="Fl6-ei-Yj5" firstAttribute="top" secondItem="YGb-Dw-beb" secondAttribute="top" id="Ki1-7M-XFt"/>
                                     <constraint firstItem="y21-o1-NdX" firstAttribute="leading" secondItem="5xQ-AU-1Z3" secondAttribute="trailing" constant="16" id="ODL-Lh-u6T"/>
                                     <constraint firstItem="Fl6-ei-Yj5" firstAttribute="leading" secondItem="YGb-Dw-beb" secondAttribute="leading" id="Sej-C8-f1a"/>
@@ -1487,7 +1502,7 @@ Trinity Protocol version 2.0.0</string>
                                         <rect key="frame" x="0.0" y="0.0" width="393.33333333333331" height="654"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FAQ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sxH-fs-51f" userLabel="Second Line">
-                                        <rect key="frame" x="60.999999999999986" y="30.666666666666671" width="36.333333333333329" height="20"/>
+                                        <rect key="frame" x="61" y="30.666666666666671" width="266.33333333333331" height="20"/>
                                         <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -1607,6 +1622,7 @@ Feel free to ask for help in the Telegram group</string>
                                 <constraints>
                                     <constraint firstItem="ON6-qL-aPk" firstAttribute="leading" secondItem="cCS-HD-ve0" secondAttribute="leading" constant="20" id="0o7-Jc-LNU"/>
                                     <constraint firstItem="sxH-fs-51f" firstAttribute="centerY" secondItem="ON6-qL-aPk" secondAttribute="centerY" id="3kJ-JP-LPu"/>
+                                    <constraint firstItem="zda-ha-zxx" firstAttribute="leading" secondItem="sxH-fs-51f" secondAttribute="trailing" constant="16" id="A5l-S8-yMg"/>
                                     <constraint firstAttribute="bottom" secondItem="OSj-lz-lco" secondAttribute="bottom" id="Cnz-eM-2J6"/>
                                     <constraint firstItem="1gW-OT-kMb" firstAttribute="top" secondItem="zda-ha-zxx" secondAttribute="bottom" constant="8" id="DbN-NK-kkk"/>
                                     <constraint firstAttribute="trailing" secondItem="zda-ha-zxx" secondAttribute="trailing" constant="20" id="I6z-bh-BGq"/>
@@ -1853,7 +1869,7 @@ Feel free to ask for help in the Telegram group</string>
                                         <rect key="frame" x="0.0" y="0.0" width="393.33333333333331" height="654"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Community" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="97m-hF-ZTb" userLabel="Second Line">
-                                        <rect key="frame" x="60.999999999999993" y="30.333333333333329" width="91.333333333333314" height="20.333333333333329"/>
+                                        <rect key="frame" x="61" y="30.333333333333329" width="266.33333333333331" height="20.333333333333329"/>
                                         <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -1974,6 +1990,7 @@ Feel free to ask for help in the Telegram group</string>
                                     <constraint firstItem="VAd-U5-wBr" firstAttribute="top" secondItem="yIu-Mm-mkl" secondAttribute="top" constant="28" id="GWY-0K-nUZ"/>
                                     <constraint firstItem="w5e-ER-1U1" firstAttribute="top" secondItem="yIu-Mm-mkl" secondAttribute="top" constant="18" id="Kqe-uM-0rv"/>
                                     <constraint firstItem="3KZ-DC-GsJ" firstAttribute="leading" secondItem="yIu-Mm-mkl" secondAttribute="leading" constant="12" id="LZB-wz-ZZg"/>
+                                    <constraint firstItem="w5e-ER-1U1" firstAttribute="leading" secondItem="97m-hF-ZTb" secondAttribute="trailing" constant="16" id="TTl-0O-eEk"/>
                                     <constraint firstAttribute="trailing" secondItem="X0X-al-lXD" secondAttribute="trailing" id="ThX-9Y-Daj"/>
                                     <constraint firstItem="3KZ-DC-GsJ" firstAttribute="centerX" secondItem="yIu-Mm-mkl" secondAttribute="centerX" id="Xpu-yb-ua0"/>
                                     <constraint firstItem="X0X-al-lXD" firstAttribute="leading" secondItem="yIu-Mm-mkl" secondAttribute="leading" id="ZA6-my-1zy"/>
@@ -2272,7 +2289,7 @@ Feel free to ask for help in the Telegram group</string>
                                         <rect key="frame" x="0.0" y="0.0" width="393.33333333333331" height="654"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Language" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dTA-s7-okK" userLabel="Second Line">
-                                        <rect key="frame" x="61" y="30" width="77" height="21"/>
+                                        <rect key="frame" x="61" y="30" width="266.33333333333331" height="21"/>
                                         <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -2316,6 +2333,7 @@ Feel free to ask for help in the Telegram group</string>
                                     <constraint firstItem="MrY-QB-dKl" firstAttribute="top" secondItem="cnk-KR-ixK" secondAttribute="bottom" constant="30" id="1sj-6J-lf4"/>
                                     <constraint firstItem="dTA-s7-okK" firstAttribute="leading" secondItem="X7T-56-ENR" secondAttribute="trailing" constant="16" id="80b-HD-LaG"/>
                                     <constraint firstItem="dTA-s7-okK" firstAttribute="centerY" secondItem="X7T-56-ENR" secondAttribute="centerY" id="9Ec-Nj-sIt"/>
+                                    <constraint firstItem="cnk-KR-ixK" firstAttribute="leading" secondItem="dTA-s7-okK" secondAttribute="trailing" constant="16" id="HLF-4l-0ns"/>
                                     <constraint firstAttribute="trailing" secondItem="hoE-ue-Zu8" secondAttribute="trailing" id="I7s-Sy-0XH"/>
                                     <constraint firstAttribute="trailing" secondItem="MrY-QB-dKl" secondAttribute="trailing" constant="22" id="JIk-Sa-ntd"/>
                                     <constraint firstAttribute="bottom" secondItem="MrY-QB-dKl" secondAttribute="bottom" constant="22" id="MVz-F0-UKh"/>

@@ -11,12 +11,18 @@ class LanguageViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
 
+    struct Constants {
+        static let unwindSegueId = "unwindToMainSegue"
+    }
+
     private struct LanguageItem {
         let label: String
         let code: String
     }
 
     private var languages: [LanguageItem] = []
+
+    private let currentLanguageCode: String = Localization.preferredAppLanguageCode
     private var selectedLanguageCode: String = Localization.preferredAppLanguageCode
 
     override func viewDidLoad() {
@@ -27,17 +33,48 @@ class LanguageViewController: UIViewController {
         tableView.register(R.nib.languageTableViewCell)
 
         if let languagesDict = Resources.plistDict(name: "Languages") {
-            languages = languagesDict.map { (code, label) in
-                LanguageItem(label: label, code: code)
-            }
+            languages = languagesDict
+                    .sorted(by: {
+                        $0.key < $1.key
+                    })
+                    .map { (code, label) in
+                        LanguageItem(label: label, code: code)
+                    }
         }
         tableView.reloadData()
+    }
+
+    // MARK: - UI loc update
+
+    private func changeLanguage(_ code: String) {
+        Defaults.setLanguageCode(code)
+        selectedLanguageCode = Localization.preferredAppLanguageCode
+
+        titleLabel.text = R.string.localizable.language.localized()
+        tableView.reloadData()
+    }
+
+    private func fakeAppReload() {
+        let mainViewController = R.storyboard.main.mainViewController()
+        view.window?.rootViewController = mainViewController
     }
 
     // MARK: - IBActions
 
     @IBAction func onBackClicked(_ sender: Any) {
+        if currentLanguageCode != selectedLanguageCode {
+            fakeAppReload()
+            return
+        }
         dismiss(animated: false)
+    }
+
+    @IBAction func onDismissClicked(_ sender: Any) {
+        if currentLanguageCode != selectedLanguageCode {
+            fakeAppReload()
+            return
+        }
+        performSegue(withIdentifier: Constants.unwindSegueId, sender: self)
     }
 }
 
@@ -64,8 +101,6 @@ extension LanguageViewController: UITableViewDelegate {
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let languageItem = languages[indexPath.row]
-        Defaults.setLanguageCode(languageItem.code)
-        selectedLanguageCode = Localization.preferredAppLanguageCode
-        tableView.reloadData()
+        changeLanguage(languageItem.code)
     }
 }

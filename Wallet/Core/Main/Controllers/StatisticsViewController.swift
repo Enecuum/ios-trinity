@@ -32,14 +32,15 @@ class StatisticsViewController: UIViewController {
     // MARK: - Private methods
 
     private func addMap() {
+        let mapWidth = view.frame.width * 0.9
+        let mapHeight = mapWidth / 2
         let webConfiguration = WKWebViewConfiguration()
-        let frame = CGRect(x: 0, y: 0, width: mapContainer.frame.width, height: mapContainer.frame.height)
+        let frame = CGRect(x: 0, y: 0, width: mapWidth, height: mapHeight)
         let webView = WKWebView(frame: frame, configuration: webConfiguration)
         webView.uiDelegate = self
         webView.backgroundColor = .clear
-
-        webView.isOpaque = false
         webView.scrollView.backgroundColor = .clear
+        webView.isOpaque = false
 
         mapContainer.addSubview(webView)
 

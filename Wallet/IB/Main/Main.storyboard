@@ -776,6 +776,7 @@
                         <outlet property="accountsLabel" destination="rYh-li-uO2" id="hHL-dE-CKc"/>
                         <outlet property="blocksAmountLabel" destination="FhX-CX-h3c" id="8Sz-aw-Hxr"/>
                         <outlet property="blocksLabel" destination="rBn-Zp-euJ" id="WzZ-sR-58a"/>
+                        <outlet property="cardViewConstraint" destination="dNg-2n-A0R" id="zqf-rJ-8HU"/>
                         <outlet property="circSupplyAmountLabel" destination="otL-kB-uzg" id="MXr-hy-pOG"/>
                         <outlet property="circSupplyLabel" destination="EDg-aQ-QGi" id="tCs-nM-nXh"/>
                         <outlet property="coinsDataLabel" destination="qNR-61-xyj" id="8NZ-f5-B37"/>

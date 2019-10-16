@@ -42,7 +42,9 @@
 		B8EA15AB5BE6A3A17F66EB3E /* CryptoHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA187D7B0E33D8CE47C5D7 /* CryptoHelper.swift */; };
 		B8EA15CBA9C960A2BFA918EB /* TabsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA1506248F3332EFE0E994 /* TabsView.swift */; };
 		B8EA1617BC48D1A4733B604A /* Secp256k1Swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA14752B8C5D97AE37EEE6 /* Secp256k1Swift.swift */; };
+		B8EA1619521F88FD5C949086 /* NSLayoutConstraint+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA18CCB96117304D73FBB9 /* NSLayoutConstraint+Extension.swift */; };
 		B8EA16453984B1EBC51FF657 /* SocialsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA15E9D33B339A27DBDBA4 /* SocialsViewController.swift */; };
+		B8EA1695331BA31A5ADDC575 /* UIDevice+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA1DD295EDE959F1ADEE1A /* UIDevice+Extension.swift */; };
 		B8EA16A409C0D7F92A21D1AD /* AuthMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA1DEA865063CF4BEDC5EA /* AuthMode.swift */; };
 		B8EA178F557753B48D3EB921 /* SwapView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8EA168995FDB5D5200A9D25 /* SwapView.xib */; };
 		B8EA17D142D8F7F87EFC69D5 /* Array+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA10E4437B39F7691B4E73 /* Array+Extension.swift */; };
@@ -142,6 +144,7 @@
 		B8EA1874540FD9E5BF532F3F /* ApiRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiRouter.swift; sourceTree = "<group>"; };
 		B8EA187D7B0E33D8CE47C5D7 /* CryptoHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CryptoHelper.swift; sourceTree = "<group>"; };
 		B8EA1884042D4AA975D780AA /* NSMutableAttributedString+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSMutableAttributedString+Extension.swift"; sourceTree = "<group>"; };
+		B8EA18CCB96117304D73FBB9 /* NSLayoutConstraint+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSLayoutConstraint+Extension.swift"; sourceTree = "<group>"; };
 		B8EA193F63C2901E65C9FA94 /* LanguageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguageTableViewCell.swift; sourceTree = "<group>"; };
 		B8EA1A046447B013E8A00DC5 /* Statistics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Statistics.swift; sourceTree = "<group>"; };
 		B8EA1A04EBB7AD8A41903DC0 /* PrivateKeyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrivateKeyViewController.swift; sourceTree = "<group>"; };
@@ -153,6 +156,7 @@
 		B8EA1D9D2D2EC73F992AC0FB /* UILabel+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel+Extension.swift"; sourceTree = "<group>"; };
 		B8EA1DAB32B70779EF93B2DE /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		B8EA1DBE3695611D726A76D6 /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		B8EA1DD295EDE959F1ADEE1A /* UIDevice+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIDevice+Extension.swift"; sourceTree = "<group>"; };
 		B8EA1DEA865063CF4BEDC5EA /* AuthMode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthMode.swift; sourceTree = "<group>"; };
 		B8EA1E69D0A92BCBA9D4AAEA /* AuthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 		B8EA1EB1C3D015CFEA7C2F33 /* UIButton+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
@@ -248,6 +252,8 @@
 				B8EA1A093C22395F491E712B /* StringResource+Extension.swift */,
 				B8EA1EB1C3D015CFEA7C2F33 /* UIButton+Extension.swift */,
 				B8EA107345767D63EF94A0C7 /* UIViewCotroller+Extension.swift */,
+				B8EA1DD295EDE959F1ADEE1A /* UIDevice+Extension.swift */,
+				B8EA18CCB96117304D73FBB9 /* NSLayoutConstraint+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -667,6 +673,8 @@
 				B8EA1CA6208D503CE88A1266 /* BottomTabsView.swift in Sources */,
 				B8EA14F813244608A0834A17 /* Statistics.swift in Sources */,
 				B8EA1445D3C8EFB8EB33CF02 /* BlocksAmount.swift in Sources */,
+				B8EA1695331BA31A5ADDC575 /* UIDevice+Extension.swift in Sources */,
+				B8EA1619521F88FD5C949086 /* NSLayoutConstraint+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

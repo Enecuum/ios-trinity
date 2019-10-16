@@ -10,6 +10,7 @@ import WebKit
 
 class StatisticsViewController: UIViewController {
 
+    @IBOutlet weak var cardViewConstraint: NSLayoutConstraint!
     @IBOutlet weak var totalNodesLabel: UILabel!
     @IBOutlet weak var totalNodesCounterLabel: UILabel!
     @IBOutlet weak var openInBrowserLabel: UILabel!
@@ -78,7 +79,19 @@ class StatisticsViewController: UIViewController {
     // MARK: - Private methods
 
     private func addMap() {
-        let mapWidth = view.frame.width * 0.9
+        let coef: CGFloat = {
+            if UIDevice.current.screenType == .iPhones_5_5s_5c_SE {
+                return 0.8
+            }
+            return 0.9
+        } ()
+        let mapWidth = view.frame.width * coef
+        let newConstraint = cardViewConstraint.constraintWithMultiplier(coef)
+        view.removeConstraint(cardViewConstraint)
+        view.addConstraint(newConstraint)
+        view.layoutIfNeeded()
+        cardViewConstraint = newConstraint
+
         let mapHeight = mapWidth / 2
         let webConfiguration = WKWebViewConfiguration()
         let frame = CGRect(x: 0, y: 0, width: mapWidth, height: mapHeight)

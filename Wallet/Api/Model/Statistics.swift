@@ -13,8 +13,5 @@ struct Statistics: Codable {
     let poa_count: Int?
     let tps: Int?
     let max_tps: Int?
-
-    /*
-     let hashrate: String?
-     let cg_usd: UInt64*/
+    
 }

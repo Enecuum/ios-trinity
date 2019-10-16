@@ -61,6 +61,11 @@ class StatisticsViewController: UIViewController {
 
         blocksLabel.text = R.string.localizable.statsLastBlock.localized()
 
+        rewardsLabel.text = R.string.localizable.statsRewards.localized()
+        coinsDataLabel.text = R.string.localizable.statsCoinData.localized()
+        maxSupplyLabel.text = R.string.localizable.statsCoinDataMaxSupply.localized()
+        circSupplyLabel.text = R.string.localizable.statsCoinDataCircSupply.localized()
+
         addMap()
     }
 

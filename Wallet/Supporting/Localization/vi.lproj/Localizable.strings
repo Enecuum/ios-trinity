@@ -25,7 +25,7 @@
 /* menu */
 
 "about" = "Thông tin Ứng dụng";
-"my_address" = "Địa chỉ của tôi";\
+"my_address" = "Địa chỉ của tôi";
 "private_key" = "Khóa riêng tư";
 "community" = "Cộng đồng";
 "language" = "Ngôn ngữ";

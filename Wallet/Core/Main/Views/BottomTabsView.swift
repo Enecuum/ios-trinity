@@ -52,6 +52,9 @@ class BottomTabsView: UIView {
         for (buttonIndex, btn) in buttons.enumerated() {
             btn.setTitleColor(textColor, for: .normal)
             if btn == sender {
+                if selectedIndex == buttonIndex {
+                    return
+                }
                 let selectorWidth = frame.width / CGFloat(buttonImages.count)
                 let selectorPosition = frame.width / CGFloat(buttonImages.count) * CGFloat(buttonIndex) - selectorWidth
                 selectedIndex = buttonIndex

@@ -8,6 +8,8 @@ import Alamofire
 enum ApiRouter {
     case balance
     case transaction
+    case stats
+    case blocks
 
     // MARK: - Base url
 
@@ -22,7 +24,7 @@ enum ApiRouter {
     }
 
     private var apiUrl: URL {
-        return try! "http://\(ApiRouter.baseIp):80/api/v1/".asURL()
+        try! "http://\(ApiRouter.baseIp):80/api/v1/".asURL()
     }
 
     // MARK: - HTTPMethod
@@ -33,6 +35,10 @@ enum ApiRouter {
             return .get
         case .transaction:
             return .post
+        case .stats:
+            return .get
+        case .blocks:
+            return .get
         }
     }
 
@@ -44,12 +50,16 @@ enum ApiRouter {
             return "balance"
         case .transaction:
             return "tx"
+        case .stats:
+            return "stats"
+        case .blocks:
+            return "height"
         }
     }
 
     // MARK: - Request
 
     func requestUrl() -> URL {
-        return apiUrl.appendingPathComponent(path)
+        apiUrl.appendingPathComponent(path)
     }
 }

@@ -25,4 +25,18 @@ class ApiClient {
             completion(response.result)
         }
     }
+
+    static func stats(completion: @escaping (AFResult<Statistics>) -> Void) {
+        AF.request(ApiRouter.stats.requestUrl(),
+                   method: .get).validate().responseDecodable { (response: AFDataResponse<Statistics>) in
+            completion(response.result)
+        }
+    }
+
+    static func blocks(completion: @escaping (AFResult<BlockAmount>) -> Void) {
+        AF.request(ApiRouter.blocks.requestUrl(),
+                   method: .get).validate().responseDecodable { (response: AFDataResponse<BlockAmount>) in
+            completion(response.result)
+        }
+    }
 }

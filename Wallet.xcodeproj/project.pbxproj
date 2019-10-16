@@ -33,9 +33,11 @@
 		B8EA13734195953CACC55609 /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA1EB1C3D015CFEA7C2F33 /* UIButton+Extension.swift */; };
 		B8EA13A051ECAFB38A3C6C8A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA14EA8EB8491A251D3603 /* MainViewController.swift */; };
 		B8EA13E852C7199422A9CDAE /* NibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA1FD8D39ED0115C317AB0 /* NibView.swift */; };
+		B8EA1445D3C8EFB8EB33CF02 /* BlocksAmount.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA14C6C48CEEC1ABBE908D /* BlocksAmount.swift */; };
 		B8EA14C1D449204D9962F822 /* PrivateKeyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA1A04EBB7AD8A41903DC0 /* PrivateKeyViewController.swift */; };
 		B8EA14CE5A9CBD1DD0AEFD15 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA15CACE2F314CC56DE501 /* Transaction.swift */; };
 		B8EA14D1F3A16E25A9A52D2F /* UIApplication+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA1125F44A41A6588C1CEF /* UIApplication+Extension.swift */; };
+		B8EA14F813244608A0834A17 /* Statistics.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA1A046447B013E8A00DC5 /* Statistics.swift */; };
 		B8EA154763261C213ACF4FCB /* StringResource+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA1A093C22395F491E712B /* StringResource+Extension.swift */; };
 		B8EA15AB5BE6A3A17F66EB3E /* CryptoHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA187D7B0E33D8CE47C5D7 /* CryptoHelper.swift */; };
 		B8EA15CBA9C960A2BFA918EB /* TabsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA1506248F3332EFE0E994 /* TabsView.swift */; };
@@ -121,6 +123,7 @@
 		B8EA126EE3E3C8B5C2E4B64F /* Defaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Defaults.swift; sourceTree = "<group>"; };
 		B8EA1454E4B1EBD958E7E413 /* GradientButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientButton.swift; sourceTree = "<group>"; };
 		B8EA14752B8C5D97AE37EEE6 /* Secp256k1Swift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Secp256k1Swift.swift; sourceTree = "<group>"; };
+		B8EA14C6C48CEEC1ABBE908D /* BlocksAmount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlocksAmount.swift; sourceTree = "<group>"; };
 		B8EA14EA8EB8491A251D3603 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		B8EA14FE6D28D74937B28B55 /* SwapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwapView.swift; sourceTree = "<group>"; };
 		B8EA1503A7CBE7C1A8C89B84 /* Resources.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Resources.swift; sourceTree = "<group>"; };
@@ -140,6 +143,7 @@
 		B8EA187D7B0E33D8CE47C5D7 /* CryptoHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CryptoHelper.swift; sourceTree = "<group>"; };
 		B8EA1884042D4AA975D780AA /* NSMutableAttributedString+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSMutableAttributedString+Extension.swift"; sourceTree = "<group>"; };
 		B8EA193F63C2901E65C9FA94 /* LanguageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguageTableViewCell.swift; sourceTree = "<group>"; };
+		B8EA1A046447B013E8A00DC5 /* Statistics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Statistics.swift; sourceTree = "<group>"; };
 		B8EA1A04EBB7AD8A41903DC0 /* PrivateKeyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrivateKeyViewController.swift; sourceTree = "<group>"; };
 		B8EA1A06E3393C3709805246 /* TransferViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransferViewController.swift; sourceTree = "<group>"; };
 		B8EA1A093C22395F491E712B /* StringResource+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "StringResource+Extension.swift"; sourceTree = "<group>"; };
@@ -224,6 +228,8 @@
 				B8EA1651FDBF392B83C7A618 /* BalanceAmount.swift */,
 				B8EA176DF3BA89D6967086D3 /* TransactionStatus.swift */,
 				B8EA15CACE2F314CC56DE501 /* Transaction.swift */,
+				B8EA1A046447B013E8A00DC5 /* Statistics.swift */,
+				B8EA14C6C48CEEC1ABBE908D /* BlocksAmount.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -659,6 +665,8 @@
 				B8EA1A79CDD65067A3BE5C0E /* UIViewCotroller+Extension.swift in Sources */,
 				B8EA19956467411F5D1553D9 /* StatisticsViewController.swift in Sources */,
 				B8EA1CA6208D503CE88A1266 /* BottomTabsView.swift in Sources */,
+				B8EA14F813244608A0834A17 /* Statistics.swift in Sources */,
+				B8EA1445D3C8EFB8EB33CF02 /* BlocksAmount.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

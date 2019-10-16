@@ -514,7 +514,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AZd-0G-ALS">
                                         <rect key="frame" x="223.5" y="0.0" width="111.5" height="95.5"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Last blocks" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rBn-Zp-euJ">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Last block" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rBn-Zp-euJ">
                                                 <rect key="frame" x="4" y="56.5" width="103.5" height="15.5"/>
                                                 <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="13"/>
                                                 <color key="textColor" red="0.41176470590000003" green="0.43137254899999999" blue="0.66666666669999997" alpha="1" colorSpace="calibratedRGB"/>
@@ -764,9 +764,19 @@
                     </view>
                     <splitViewMasterSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <connections>
+                        <outlet property="accountsAmountLabel" destination="fvv-O6-VzF" id="K99-ZF-0YI"/>
+                        <outlet property="blocksAmountLabel" destination="FhX-CX-h3c" id="8Sz-aw-Hxr"/>
+                        <outlet property="circSupplyAmountLabel" destination="otL-kB-uzg" id="MXr-hy-pOG"/>
                         <outlet property="mapContainer" destination="giC-fo-ces" id="0Pl-K7-KmZ"/>
+                        <outlet property="poaNodesAmountLabel" destination="wv8-Uj-540" id="zEj-Di-57w"/>
+                        <outlet property="poaRewardAmountLabel" destination="vKJ-gb-WQ1" id="zIU-6u-Oah"/>
+                        <outlet property="posNodesAmountLabel" destination="3ld-5N-vUg" id="2wI-bu-yqK"/>
+                        <outlet property="posRewardAmountLabel" destination="Q4I-L2-vkX" id="LWu-Fb-164"/>
+                        <outlet property="powNodesAmountLabel" destination="6Mv-Xx-aAd" id="KcP-JO-Txc"/>
+                        <outlet property="powRewardAmountLabel" destination="1Cj-wZ-ucf" id="Lcy-co-hkX"/>
                         <outlet property="totalNodesCounterLabel" destination="SEd-RQ-k8C" id="PbL-pg-NuX"/>
                         <outlet property="totalNodesLabel" destination="PNy-Yc-jbo" id="fAx-g9-dZO"/>
+                        <outlet property="tpsAmountLabel" destination="DKP-87-Pz9" id="Jwx-pP-VFx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kjG-s1-NCp" userLabel="First Responder" sceneMemberID="firstResponder"/>

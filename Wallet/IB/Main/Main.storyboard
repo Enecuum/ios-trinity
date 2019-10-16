@@ -765,19 +765,30 @@
                     <splitViewMasterSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <connections>
                         <outlet property="accountsAmountLabel" destination="fvv-O6-VzF" id="K99-ZF-0YI"/>
+                        <outlet property="accountsLabel" destination="rYh-li-uO2" id="hHL-dE-CKc"/>
                         <outlet property="blocksAmountLabel" destination="FhX-CX-h3c" id="8Sz-aw-Hxr"/>
+                        <outlet property="blocksLabel" destination="rBn-Zp-euJ" id="WzZ-sR-58a"/>
                         <outlet property="circSupplyAmountLabel" destination="otL-kB-uzg" id="MXr-hy-pOG"/>
+                        <outlet property="circSupplyLabel" destination="EDg-aQ-QGi" id="tCs-nM-nXh"/>
+                        <outlet property="coinsDataLabel" destination="qNR-61-xyj" id="8NZ-f5-B37"/>
                         <outlet property="mapContainer" destination="giC-fo-ces" id="0Pl-K7-KmZ"/>
                         <outlet property="maxSupplyAmountLabel" destination="Ss9-Ti-Jql" id="SVF-eo-C6l"/>
+                        <outlet property="maxSupplyLabel" destination="gFR-6c-vvg" id="5vZ-z0-6Dr"/>
+                        <outlet property="openInBrowserLabel" destination="LwN-Gt-GBJ" id="c5U-NR-j9K"/>
                         <outlet property="poaNodesAmountLabel" destination="wv8-Uj-540" id="zEj-Di-57w"/>
+                        <outlet property="poaNodesLabel" destination="g6c-5K-FBm" id="iPI-i4-h4v"/>
                         <outlet property="poaRewardAmountLabel" destination="vKJ-gb-WQ1" id="zIU-6u-Oah"/>
                         <outlet property="posNodesAmountLabel" destination="3ld-5N-vUg" id="2wI-bu-yqK"/>
+                        <outlet property="posNodesLabel" destination="bzA-BH-2EN" id="DfU-5L-0YJ"/>
                         <outlet property="posRewardAmountLabel" destination="Q4I-L2-vkX" id="LWu-Fb-164"/>
                         <outlet property="powNodesAmountLabel" destination="6Mv-Xx-aAd" id="KcP-JO-Txc"/>
+                        <outlet property="powNodesLabel" destination="G76-Bb-8VN" id="ssB-LB-sdz"/>
                         <outlet property="powRewardAmountLabel" destination="1Cj-wZ-ucf" id="Lcy-co-hkX"/>
+                        <outlet property="rewardsLabel" destination="djH-UM-8dQ" id="A82-5T-UyZ"/>
                         <outlet property="totalNodesCounterLabel" destination="SEd-RQ-k8C" id="PbL-pg-NuX"/>
                         <outlet property="totalNodesLabel" destination="PNy-Yc-jbo" id="fAx-g9-dZO"/>
                         <outlet property="tpsAmountLabel" destination="DKP-87-Pz9" id="Jwx-pP-VFx"/>
+                        <outlet property="tpsLabel" destination="ncs-up-QyG" id="Kon-hL-cle"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kjG-s1-NCp" userLabel="First Responder" sceneMemberID="firstResponder"/>

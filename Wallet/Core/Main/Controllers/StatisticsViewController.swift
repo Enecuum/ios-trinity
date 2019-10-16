@@ -12,21 +12,32 @@ class StatisticsViewController: UIViewController {
 
     @IBOutlet weak var totalNodesLabel: UILabel!
     @IBOutlet weak var totalNodesCounterLabel: UILabel!
-
+    @IBOutlet weak var openInBrowserLabel: UILabel!
+    
     @IBOutlet weak var mapContainer: UIView!
 
+    @IBOutlet weak var poaNodesLabel: UILabel!
     @IBOutlet weak var poaNodesAmountLabel: UILabel!
-    @IBOutlet weak var posNodesAmountLabel: UILabel!
+    @IBOutlet weak var powNodesLabel: UILabel!
     @IBOutlet weak var powNodesAmountLabel: UILabel!
+    @IBOutlet weak var posNodesLabel: UILabel!
+    @IBOutlet weak var posNodesAmountLabel: UILabel!
+    @IBOutlet weak var accountsLabel: UILabel!
     @IBOutlet weak var accountsAmountLabel: UILabel!
+    @IBOutlet weak var tpsLabel: UILabel!
     @IBOutlet weak var tpsAmountLabel: UILabel!
+    @IBOutlet weak var blocksLabel: UILabel!
     @IBOutlet weak var blocksAmountLabel: UILabel!
 
+    @IBOutlet weak var rewardsLabel: UILabel!
     @IBOutlet weak var powRewardAmountLabel: UILabel!
     @IBOutlet weak var posRewardAmountLabel: UILabel!
     @IBOutlet weak var poaRewardAmountLabel: UILabel!
 
+    @IBOutlet weak var coinsDataLabel: UILabel!
+    @IBOutlet weak var circSupplyLabel: UILabel!
     @IBOutlet weak var circSupplyAmountLabel: UILabel!
+    @IBOutlet weak var maxSupplyLabel: UILabel!
     @IBOutlet weak var maxSupplyAmountLabel: UILabel!
 
     struct Constants {
@@ -37,6 +48,18 @@ class StatisticsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        totalNodesLabel.text = R.string.localizable.statsTotalNodes.localized()
+        openInBrowserLabel.text = R.string.localizable.open_in_browser.localized()
+
+        poaNodesLabel.text = R.string.localizable.poa_nodes.localized()
+        powNodesLabel.text = R.string.localizable.pow_nodes.localized()
+        posNodesLabel.text = R.string.localizable.pos_nodes.localized()
+
+        accountsLabel.text = R.string.localizable.accouts.localized()
+        tpsLabel.text = "\(R.string.localizable.curr_tps.localized())\n\(R.string.localizable.max_tps.localized())"
+
+        blocksLabel.text = R.string.localizable.statsLastBlock.localized()
 
         addMap()
     }

@@ -680,14 +680,14 @@
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="845,870,425" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ss9-Ti-Jql">
-                                                <rect key="frame" x="64" y="36" width="69" height="13"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ss9-Ti-Jql">
+                                                <rect key="frame" x="64" y="36" width="7.5" height="13"/>
                                                 <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="11"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="500" verticalHuggingPriority="251" text="ENQ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MFn-Th-jcv">
-                                                <rect key="frame" x="135" y="36" width="26" height="13"/>
+                                                <rect key="frame" x="73.5" y="36" width="26" height="13"/>
                                                 <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="11"/>
                                                 <color key="textColor" red="0.0" green="0.81960784310000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <nil key="highlightedColor"/>
@@ -768,6 +768,7 @@
                         <outlet property="blocksAmountLabel" destination="FhX-CX-h3c" id="8Sz-aw-Hxr"/>
                         <outlet property="circSupplyAmountLabel" destination="otL-kB-uzg" id="MXr-hy-pOG"/>
                         <outlet property="mapContainer" destination="giC-fo-ces" id="0Pl-K7-KmZ"/>
+                        <outlet property="maxSupplyAmountLabel" destination="Ss9-Ti-Jql" id="SVF-eo-C6l"/>
                         <outlet property="poaNodesAmountLabel" destination="wv8-Uj-540" id="zEj-Di-57w"/>
                         <outlet property="poaRewardAmountLabel" destination="vKJ-gb-WQ1" id="zIU-6u-Oah"/>
                         <outlet property="posNodesAmountLabel" destination="3ld-5N-vUg" id="2wI-bu-yqK"/>

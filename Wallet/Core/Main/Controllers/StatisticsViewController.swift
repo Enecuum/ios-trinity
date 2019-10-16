@@ -27,8 +27,12 @@ class StatisticsViewController: UIViewController {
     @IBOutlet weak var poaRewardAmountLabel: UILabel!
 
     @IBOutlet weak var circSupplyAmountLabel: UILabel!
+    @IBOutlet weak var maxSupplyAmountLabel: UILabel!
 
     struct Constants {
+        static let apiToDataMultiplier: NSDecimalNumber = NSDecimalNumber(mantissa: 1,
+                                                                          exponent: -10,
+                                                                          isNegative: false)
     }
 
     override func viewDidLoad() {
@@ -71,24 +75,40 @@ class StatisticsViewController: UIViewController {
             case .success(let statistics):
                 debugPrint(statistics)
 
-                self?.poaNodesAmountLabel.text = "\(statistics.poa_count ?? 0)"
-                self?.posNodesAmountLabel.text = "\(statistics.pos_count ?? 0)"
-                self?.powNodesAmountLabel.text = "\(statistics.pow_count ?? 0)"
+                let poaCount = statistics.poa_count ?? 0
+                let posCount = statistics.pos_count ?? 0
+                let powCount = statistics.pow_count ?? 0
+
+                self?.poaNodesAmountLabel.text = "\(poaCount)"
+                self?.posNodesAmountLabel.text = "\(posCount)"
+                self?.powNodesAmountLabel.text = "\(powCount)"
+
+                self?.totalNodesCounterLabel.text = "\(poaCount + powCount + posCount)"
 
                 self?.accountsAmountLabel.text = "\(statistics.accounts)"
-                self?.tpsAmountLabel.text =  "\(statistics.tps ?? 0) / \(statistics.max_tps ?? 0)"
+                self?.tpsAmountLabel.text = "\(statistics.tps ?? 0) / \(statistics.max_tps ?? 0)"
 
-                self?.poaRewardAmountLabel.text = "\(statistics.reward_poa)"
-                self?.powRewardAmountLabel.text = "\(statistics.reward_pow)"
+                let numberFormatter = NumberFormatter()
+                numberFormatter.groupingSeparator = ","
+                numberFormatter.numberStyle = .decimal
 
-                self?.circSupplyAmountLabel.text = "\(statistics.csup)"
+                let poaRewardAmount = NSDecimalNumber(value: statistics.reward_poa).multiplying(by: Constants.apiToDataMultiplier)
+                self?.poaRewardAmountLabel.text = numberFormatter.string(from: NSNumber(value: poaRewardAmount.int64Value))
+
+                let powRewardAmount = NSDecimalNumber(value: statistics.reward_pow).multiplying(by: Constants.apiToDataMultiplier)
+                self?.powRewardAmountLabel.text = numberFormatter.string(from: NSNumber(value: powRewardAmount.int64Value))
+
+                let circSupplyAmount = NSDecimalNumber(value: statistics.csup).multiplying(by: Constants.apiToDataMultiplier)
+                self?.circSupplyAmountLabel.text = numberFormatter.string(from: NSNumber(value: circSupplyAmount.int64Value))
+
+                self?.maxSupplyAmountLabel.text = "845,870,425"
 
             case .failure(let error):
                 print(error.localizedDescription)
             }
         }
 
-        ApiClient.blocks{ [weak self] result in
+        ApiClient.blocks { [weak self] result in
             switch result {
             case .success(let blocksAmount):
                 debugPrint(blocksAmount)

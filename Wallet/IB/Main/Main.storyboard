@@ -48,7 +48,7 @@
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U1q-Bq-K4H">
                                 <rect key="frame" x="0.0" y="42" width="414" height="694"/>
                             </containerView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8rq-7N-5Ig" customClass="TabsView" customModule="Enecuum_Wallet" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8rq-7N-5Ig" customClass="BottomTabsView" customModule="Enecuum_Wallet" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="674" width="414" height="62"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>

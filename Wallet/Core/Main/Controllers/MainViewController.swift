@@ -8,7 +8,7 @@ import UIKit
 class MainViewController: UIViewController {
 
     @IBOutlet weak var containerView: UIView!
-    @IBOutlet weak var mainTabsView: TabsView!
+    @IBOutlet weak var mainTabsView: BottomTabsView!
 
     private enum State: Int {
         case stats = 0
@@ -75,7 +75,7 @@ class MainViewController: UIViewController {
     }
 }
 
-extension MainViewController: CustomSegmentedControlDelegate {
+extension MainViewController: BottomTabsDelegate {
     func changeToIndex(index: Int) {
         if let state = State(rawValue: index) {
             transit(to: state)

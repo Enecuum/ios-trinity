@@ -2179,13 +2179,22 @@ Feel free to ask for help in the Telegram group</string>
                                             <action selector="onSaveUrlClicked:" destination="RfT-fY-lS8" eventType="touchUpInside" id="yfa-E8-hvY"/>
                                         </connections>
                                     </button>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xbf-Se-YUS">
+                                        <rect key="frame" x="20" y="227" width="353.33333333333331" height="172.33333333333337"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="Xbf-Se-YUS" secondAttribute="height" multiplier="287:140" id="lhP-Da-4yf"/>
+                                        </constraints>
+                                    </view>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Xbf-Se-YUS" secondAttribute="trailing" constant="20" id="1R6-0b-dGs"/>
                                     <constraint firstItem="Y5M-GA-M8h" firstAttribute="leading" secondItem="zOm-ny-ypI" secondAttribute="leading" id="7de-my-ciI"/>
                                     <constraint firstItem="eNX-Hq-R1s" firstAttribute="top" secondItem="zOm-ny-ypI" secondAttribute="top" constant="18" id="9bu-r2-SOA"/>
                                     <constraint firstItem="rPd-dC-2Jk" firstAttribute="top" secondItem="PhZ-2F-c9g" secondAttribute="bottom" constant="24" id="AsP-Ce-Wl7"/>
                                     <constraint firstItem="Uil-3t-lsu" firstAttribute="top" secondItem="zOm-ny-ypI" secondAttribute="top" constant="28" id="Eoh-7W-uDh"/>
+                                    <constraint firstItem="Xbf-Se-YUS" firstAttribute="leading" secondItem="zOm-ny-ypI" secondAttribute="leading" constant="20" id="F06-tZ-2ko"/>
                                     <constraint firstAttribute="trailing" secondItem="eNX-Hq-R1s" secondAttribute="trailing" constant="20" id="I1O-h6-xLi"/>
                                     <constraint firstItem="Uil-3t-lsu" firstAttribute="width" secondItem="Uil-3t-lsu" secondAttribute="height" multiplier="1:1" id="Ler-Qh-JAR"/>
                                     <constraint firstItem="Y5M-GA-M8h" firstAttribute="top" secondItem="zOm-ny-ypI" secondAttribute="top" id="M1j-gl-9px"/>
@@ -2198,6 +2207,7 @@ Feel free to ask for help in the Telegram group</string>
                                     <constraint firstItem="Uil-3t-lsu" firstAttribute="leading" secondItem="zOm-ny-ypI" secondAttribute="leading" constant="20" id="fUD-8C-pAx"/>
                                     <constraint firstItem="PhZ-2F-c9g" firstAttribute="top" secondItem="Uil-3t-lsu" secondAttribute="bottom" constant="22" id="srg-do-Uz2"/>
                                     <constraint firstAttribute="bottom" secondItem="Y5M-GA-M8h" secondAttribute="bottom" id="zAT-DE-DXK"/>
+                                    <constraint firstItem="Xbf-Se-YUS" firstAttribute="top" secondItem="rPd-dC-2Jk" secondAttribute="bottom" constant="40" id="zzm-We-giI"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
@@ -2242,12 +2252,13 @@ Feel free to ask for help in the Telegram group</string>
                         <outlet property="entryPointTextField" destination="cN1-We-RLK" id="mir-uk-3Fe"/>
                         <outlet property="saveButton" destination="rPd-dC-2Jk" id="ldp-hX-MqX"/>
                         <outlet property="titleLabel" destination="Weu-nb-ZXQ" id="86G-8Q-J0E"/>
+                        <outlet property="webViewContainer" destination="Xbf-Se-YUS" id="HfY-Zy-xJq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8qC-ao-JBs" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="eSh-3s-OgG" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1596" y="779"/>
+            <point key="canvasLocation" x="1595.6521739130435" y="778.53260869565224"/>
         </scene>
         <!--Language View Controller-->
         <scene sceneID="smb-9b-fnK">

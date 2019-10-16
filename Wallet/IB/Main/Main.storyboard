@@ -47,10 +47,14 @@
                             </imageView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U1q-Bq-K4H">
                                 <rect key="frame" x="0.0" y="42" width="414" height="694"/>
-                                <connections>
-                                    <segue destination="19X-1h-B8U" kind="embed" id="IUy-pW-kzp"/>
-                                </connections>
                             </containerView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8rq-7N-5Ig" customClass="TabsView" customModule="Enecuum_Wallet" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="674" width="414" height="62"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="62" id="6ov-Ge-aYA"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -61,14 +65,21 @@
                             <constraint firstItem="LAo-vN-7xd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="INp-bO-mZX"/>
                             <constraint firstItem="LAo-vN-7xd" firstAttribute="bottom" secondItem="Pi8-JK-bax" secondAttribute="bottom" id="R9t-tT-Eef"/>
                             <constraint firstItem="LAo-vN-7xd" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="SvO-QV-wjf"/>
+                            <constraint firstItem="8rq-7N-5Ig" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="VrW-tw-vgV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8rq-7N-5Ig" secondAttribute="trailing" id="bCE-cM-CKY"/>
                             <constraint firstItem="U1q-Bq-K4H" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="cin-U1-eSh"/>
                             <constraint firstItem="M33-E1-9eP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="11" id="deg-AY-08y"/>
                             <constraint firstItem="LAo-vN-7xd" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="f2Z-xv-adL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="8rq-7N-5Ig" secondAttribute="bottom" id="gsJ-UO-rDr"/>
                             <constraint firstItem="U1q-Bq-K4H" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="hcz-ha-1kr"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Pi8-JK-bax" secondAttribute="trailing" id="zDI-Do-BZV"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="containerView" destination="U1q-Bq-K4H" id="LH5-eD-QsZ"/>
+                        <outlet property="mainTabsView" destination="8rq-7N-5Ig" id="dDN-YS-c02"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -79,11 +90,11 @@
             <objects>
                 <viewController storyboardIdentifier="transferViewController" id="19X-1h-B8U" customClass="TransferViewController" customModule="Enecuum_Wallet" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="DGU-78-DHk">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="694"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Back/main" translatesAutoresizingMaskIntoConstraints="NO" id="lh2-U7-g4Q">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="694"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                             </imageView>
                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TAj-oc-j3M" customClass="GradientView" customModule="Enecuum_Wallet" customModuleProvider="target">
                                 <rect key="frame" x="9" y="11" width="396" height="43"/>
@@ -155,13 +166,13 @@
                                 </constraints>
                             </view>
                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4z9-tx-jXY" customClass="SendView" customModule="Enecuum_Wallet" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="118" width="414" height="576"/>
+                                <rect key="frame" x="0.0" y="118" width="414" height="618"/>
                             </view>
                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="54B-LU-6m3" customClass="ReceiveView" customModule="Enecuum_Wallet" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="118" width="414" height="576"/>
+                                <rect key="frame" x="0.0" y="118" width="414" height="618"/>
                             </view>
                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ldy-5E-HHE" customClass="SwapView" customModule="Enecuum_Wallet" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="118" width="414" height="576"/>
+                                <rect key="frame" x="0.0" y="118" width="414" height="618"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -203,7 +214,34 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z7o-0z-hkF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="821.73913043478262" y="49.728260869565219"/>
+            <point key="canvasLocation" x="504" y="717"/>
+        </scene>
+        <!--Statistics View Controller-->
+        <scene sceneID="3a5-fu-6Cj">
+            <objects>
+                <viewController storyboardIdentifier="statisticsViewController" id="RW1-zb-G21" customClass="StatisticsViewController" customModule="Enecuum_Wallet" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Qiw-H9-a3F">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Back/main" translatesAutoresizingMaskIntoConstraints="NO" id="3r2-oP-w8m">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="3r2-oP-w8m" firstAttribute="leading" secondItem="Qiw-H9-a3F" secondAttribute="leading" id="Lr2-pa-jb3"/>
+                            <constraint firstItem="3r2-oP-w8m" firstAttribute="trailing" secondItem="Qiw-H9-a3F" secondAttribute="trailing" id="RDb-sM-Nxy"/>
+                            <constraint firstItem="3r2-oP-w8m" firstAttribute="top" secondItem="Qiw-H9-a3F" secondAttribute="top" id="Rcn-z7-CME"/>
+                            <constraint firstAttribute="bottom" secondItem="3r2-oP-w8m" secondAttribute="bottom" id="iPt-tW-SQw"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Bei-jK-SFA"/>
+                    </view>
+                    <splitViewMasterSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kjG-s1-NCp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-417" y="717"/>
         </scene>
     </scenes>
     <resources>

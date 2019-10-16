@@ -10,7 +10,7 @@ protocol BottomTabsDelegate: class {
 }
 
 class BottomTabsView: UIView {
-    private var buttonTitles: [String]!
+    private var buttonImages: [UIImage]!
     private var buttons: [UIButton]!
     private var selectorView: UIImageView!
 
@@ -22,9 +22,9 @@ class BottomTabsView: UIView {
 
     public private(set) var selectedIndex: Int = 0
 
-    convenience init(frame: CGRect, buttonTitle: [String]) {
+    convenience init(frame: CGRect, buttonImages: [UIImage]) {
         self.init(frame: frame)
-        self.buttonTitles = buttonTitle
+        self.buttonImages = buttonImages
     }
 
     override func draw(_ rect: CGRect) {
@@ -32,8 +32,8 @@ class BottomTabsView: UIView {
         updateView()
     }
 
-    func setButtonTitles(buttonTitles: [String]) {
-        self.buttonTitles = buttonTitles
+    func setButtonImages(buttonImages: [UIImage]) {
+        self.buttonImages = buttonImages
         self.updateView()
     }
 
@@ -42,7 +42,7 @@ class BottomTabsView: UIView {
         let button = buttons[index]
         selectedIndex = index
         button.setTitleColor(selectorTextColor, for: .normal)
-        let selectorPosition = frame.width / CGFloat(buttonTitles.count) * CGFloat(index)
+        let selectorPosition = frame.width / CGFloat(buttonImages.count) * CGFloat(index)
         UIView.animate(withDuration: 0.2) {
             self.selectorView.frame.origin.x = selectorPosition
         }
@@ -52,7 +52,8 @@ class BottomTabsView: UIView {
         for (buttonIndex, btn) in buttons.enumerated() {
             btn.setTitleColor(textColor, for: .normal)
             if btn == sender {
-                let selectorPosition = frame.width / CGFloat(buttonTitles.count) * CGFloat(buttonIndex)
+                let selectorWidth = frame.width / CGFloat(buttonImages.count)
+                let selectorPosition = frame.width / CGFloat(buttonImages.count) * CGFloat(buttonIndex) - selectorWidth
                 selectedIndex = buttonIndex
                 delegate?.changeToIndex(index: selectedIndex)
                 UIView.animate(withDuration: 0.3) {
@@ -87,9 +88,9 @@ extension BottomTabsView {
     }
 
     private func configSelectorView() {
-        let selectorWidth = frame.width / CGFloat(self.buttonTitles.count)
-        selectorView = UIImageView(frame: CGRect(x: 0, y: 0, width: self.frame.width, height: self.frame.height))
-        selectorView.image = R.image.bottomTabs.left()!
+        let selectorWidth = frame.width / CGFloat(buttonImages.count)
+        selectorView = UIImageView(frame: CGRect(x: -selectorWidth, y: 0, width: self.frame.width * 1.5, height: self.frame.height))
+        selectorView.image = R.image.bottomTabs.tab()!
         addSubview(selectorView)
     }
 
@@ -98,13 +99,10 @@ extension BottomTabsView {
         buttons.removeAll()
         subviews.forEach({ $0.removeFromSuperview() })
 
-        let ttNormsFont = R.font.ttNormsMedium(size: 13)
-        for buttonTitle in buttonTitles {
+        for buttonImage in buttonImages {
             let button = UIButton(type: .custom)
-            button.titleLabel?.font = ttNormsFont
-            button.setTitle(buttonTitle, for: .normal)
+            button.setImage(buttonImage, for: .normal)
             button.addTarget(self, action: #selector(TabsView.buttonAction(sender:)), for: .touchUpInside)
-            button.setTitleColor(textColor, for: .normal)
             buttons.append(button)
         }
         buttons[0].setTitleColor(selectorTextColor, for: .normal)

@@ -24,7 +24,7 @@ class MainViewController: UIViewController {
         super.viewDidLoad()
         Defaults.setRunOnceFlag()
 
-        mainTabsView.setButtonTitles(buttonTitles: [R.string.localizable.send.localized(), R.string.localizable.receive.localized()])
+        mainTabsView.setButtonImages(buttonImages: [R.image.bottomTabs.stats()!, R.image.bottomTabs.transfer()!])
         mainTabsView.selectorViewColor = .white
         mainTabsView.selectorTextColor = .white
         mainTabsView.textColor = .white

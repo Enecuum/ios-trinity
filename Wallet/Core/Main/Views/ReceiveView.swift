@@ -43,7 +43,7 @@ class ReceiveView: UIView, NibView {
         addressTextField.text = key
 
         let generator = EFQRCodeGenerator(content: key)
-        generator.setInputCorrectionLevel(inputCorrectionLevel: .l)
+        generator.setInputCorrectionLevel(inputCorrectionLevel: .m)
         generator.setColors(backgroundColor: CIColor(color: UIColor(red: 31 / 255,
                                                                     green: 33 / 255,
                                                                     blue: 41 / 255,

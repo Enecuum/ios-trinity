@@ -42,8 +42,8 @@ class ReceiveView: UIView, NibView {
         let key = CryptoHelper.getPublicKey()
         addressTextField.text = key
 
-        let generator = EFQRCodeGenerator(content: key)
-        generator.setInputCorrectionLevel(inputCorrectionLevel: .m)
+        let generator = EFQRCodeGenerator(content: key, size: EFIntSize(width: 500, height: 500))
+        generator.setInputCorrectionLevel(inputCorrectionLevel: .l)
         generator.setColors(backgroundColor: CIColor(color: UIColor(red: 31 / 255,
                                                                     green: 33 / 255,
                                                                     blue: 41 / 255,

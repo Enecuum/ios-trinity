@@ -30,8 +30,6 @@ class AuthViewController: UIViewController {
     @IBOutlet weak var warningLabel: UILabel!
     
     struct Constants {
-        static let addressLength: Int = 66
-        static let privateKeyLength: Int = 64
         static let acceptableChars = "0123456789abcdef"
     }
 
@@ -140,29 +138,35 @@ class AuthViewController: UIViewController {
     private func importWallet() {
         privateKeyTextField.endEditing(true)
 
-        guard let privateKey = privateKeyTextField.text, privateKey.count == Constants.privateKeyLength else {
+        guard let privateKey = privateKeyTextField.text else {
+            setImportError(true, errorText: "Incorrect format of private key")
+            return
+        }
+
+        let normalizedPrivateKey = CryptoHelper.normalizePrivateKey(privateKey)
+        if normalizedPrivateKey.count != CryptoHelper.Constants.privateKeyLength {
             print("Incorrect format of private key")
 
             setImportError(true, errorText: "Incorrect format of private key")
             return
         }
 
-        if !CryptoHelper.isValidPrivateKey(privateKey) {
+        if !CryptoHelper.isValidPrivateKey(normalizedPrivateKey) {
             print("Invalid private key")
 
             setImportError(true, errorText: "Invalid private key")
             return
         }
-        openWallet(privateKey)
+        openWallet(normalizedPrivateKey)
     }
 
     private func createNewWallet() {
-        guard let address = addressTextField.text, address.count == Constants.addressLength else {
+        guard let address = addressTextField.text, address.count == CryptoHelper.Constants.publicKeyLength else {
             setImportError(true, errorText: "Unknown error")
             print("Invalid address")
             return
         }
-        guard let privateKey = privateKeyTextField.text, privateKey.count == Constants.privateKeyLength else {
+        guard let privateKey = privateKeyTextField.text, privateKey.count == CryptoHelper.Constants.privateKeyLength else {
             setImportError(true, errorText: "Unknown error")
             print("Invalid private key")
             return

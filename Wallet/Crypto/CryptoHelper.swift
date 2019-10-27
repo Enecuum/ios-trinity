@@ -30,6 +30,13 @@ class CryptoHelper {
         return Secp256k1.isValidPublicKey(uintPublicKey)
     }
 
+    class func normalizePrivateKey(_ key: String) -> String {
+        if key.count >= (Constants.privateKeyLength + Constants.zeroPrefix.count) && key.hasPrefix(Constants.zeroPrefix) {
+            return String(key.dropFirst(Constants.zeroPrefix.count))
+        }
+        return key
+    }
+
     class func buildTxHash(amount: String, random: String, from: String, to: String) -> String {
         return "\(amount.sha256())\(from.sha256())\(random.sha256())\(to.sha256())".sha256()
     }
@@ -52,5 +59,11 @@ class CryptoHelper {
         let uintPrivateKey = Array(hex: AuthManager.key())
         let pub = try! Secp256k1.derivePublicKey(for: uintPrivateKey)
         return Secp256k1.verify(msg: msg.bytes, sig: signData.bytes, pubkey: pub)
+    }
+
+    struct Constants {
+        static let zeroPrefix: String = "00"
+        static let privateKeyLength: Int = 64
+        static let publicKeyLength: Int = 66
     }
 }

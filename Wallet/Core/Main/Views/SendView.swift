@@ -180,6 +180,7 @@ class SendView: UIView, NibView {
     private func amountString(from decimal: NSDecimalNumber) -> String {
         let formatter = NumberFormatter()
         formatter.maximumFractionDigits = 6
+        formatter.decimalSeparator = "."
         return formatter.string(from: decimal) ?? "0"
     }
 

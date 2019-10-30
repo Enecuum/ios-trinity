@@ -6,10 +6,12 @@
 struct ApiConstants {
     struct ProdServer {
         static let baseIP = "95.216.68.221"
+        static let baseDomain = "neuro.enecuum.com"
     }
 
     struct DevServer {
         static let baseIP = "95.217.0.123"
+        static let baseDomain = "neuro-release.enecuum.com"
     }
 
     struct APIParameterKey {

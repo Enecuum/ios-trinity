@@ -23,6 +23,13 @@ enum ApiRouter {
         return ApiConstants.ProdServer.baseIP
     }
 
+    static var baseDomain: String {
+        #if DEBUG
+        return ApiConstants.DevServer.baseDomain
+        #endif
+        return ApiConstants.ProdServer.baseDomain
+    }
+
     private var apiUrl: URL {
         try! "http://\(ApiRouter.baseIp):80/api/v1/".asURL()
     }

@@ -103,7 +103,7 @@ class StatisticsViewController: UIViewController {
 
         mapContainer.addSubview(webView)
 
-        let url = URL(string: "https://neuro-release.enecuum.com/map_ios_enq_wallet_transparent.html")!
+        let url = URL(string: "https://\(ApiRouter.baseDomain)/map_ios_enq_wallet_transparent.html")!
         let urlRequest = URLRequest(url: url)
         webView.load(urlRequest)
     }

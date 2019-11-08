@@ -308,6 +308,29 @@ extension SendView: UITextFieldDelegate {
             }
         }()
         let filtered = string.components(separatedBy: charSet).joined(separator: "")
-        return (string == filtered)
+        if textField == receiverTextField {
+            return (string == filtered)
+        } else {
+            if (string != filtered) {
+                return false
+            } else {
+                guard let oldText = textField.text, let r = Range(range, in: oldText) else {
+                    return true
+                }
+
+                let newText = oldText.replacingCharacters(in: r, with: string)
+                let isNumeric = newText.isEmpty || (Double(newText) != nil)
+                let numberOfDots = newText.components(separatedBy: ".").count - 1
+
+                let numberOfDecimalDigits: Int
+                if let dotIndex = newText.firstIndex(of: ".") {
+                    numberOfDecimalDigits = newText.distance(from: dotIndex, to: newText.endIndex) - 1
+                } else {
+                    numberOfDecimalDigits = 0
+                }
+
+                return isNumeric && numberOfDots <= 1 && numberOfDecimalDigits <= 10
+            }
+        }
     }
 }

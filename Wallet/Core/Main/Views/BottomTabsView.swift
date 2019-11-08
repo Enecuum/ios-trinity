@@ -15,7 +15,6 @@ class BottomTabsView: UIView {
     private var selectorView: UIImageView!
 
     var textColor: UIColor = .black
-    var selectorViewColor: UIColor = .red
     var selectorTextColor: UIColor = .red
 
     weak var delegate: BottomTabsDelegate?
@@ -25,11 +24,6 @@ class BottomTabsView: UIView {
     convenience init(frame: CGRect, buttonImages: [UIImage]) {
         self.init(frame: frame)
         self.buttonImages = buttonImages
-    }
-
-    override func draw(_ rect: CGRect) {
-        super.draw(rect)
-        updateView()
     }
 
     func setButtonImages(buttonImages: [UIImage]) {

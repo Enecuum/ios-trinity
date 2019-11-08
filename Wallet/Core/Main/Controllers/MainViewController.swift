@@ -25,9 +25,8 @@ class MainViewController: UIViewController {
         Defaults.setRunOnceFlag()
 
         mainTabsView.setButtonImages(buttonImages: [R.image.bottomTabs.stats()!, R.image.bottomTabs.transfer()!])
-        mainTabsView.selectorViewColor = .white
-        mainTabsView.selectorTextColor = .white
         mainTabsView.textColor = .white
+        mainTabsView.selectorTextColor = .white
         mainTabsView.delegate = self
 
         if state == nil {

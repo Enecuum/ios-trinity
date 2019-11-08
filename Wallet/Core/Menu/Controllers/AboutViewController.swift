@@ -62,25 +62,25 @@ class AboutViewController: UIViewController {
     }
 
     @objc private func onWhitePaperTap(sender: UITapGestureRecognizer) {
-        if let url = URL(string: "https://new.enecuum.com/files/pp_en.pdf") {
+        if let url = URL(string: "https://enecuum.com/assets/pdf/pp_en.pdf") {
             UIApplication.shared.open(url)
         }
     }
 
     @objc private func onTechPaperTap(sender: UITapGestureRecognizer) {
-        if let url = URL(string: "https://new.enecuum.com/files/tp_en.pdf") {
+        if let url = URL(string: "https://enecuum.com/assets/pdf/tp_en.pdf") {
             UIApplication.shared.open(url)
         }
     }
 
     @objc private func onTermsTap(sender: UITapGestureRecognizer) {
-        if let url = URL(string: "https://enecuum.com/docs/terms.pdf") {
+        if let url = URL(string: "https://enecuum.com/assets/pdf/terms.pdf") {
             UIApplication.shared.open(url)
         }
     }
 
     @objc private func onPolicyTap(sender: UITapGestureRecognizer) {
-        if let url = URL(string: "https://enecuum.com/docs/privacy.pdf") {
+        if let url = URL(string: "https://enecuum.com/assets/pdf/privacy.pdf") {
             UIApplication.shared.open(url)
         }
     }

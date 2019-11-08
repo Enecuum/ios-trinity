@@ -15,7 +15,6 @@ class TabsView: UIView {
     private var selectorView: UIImageView!
 
     var textColor: UIColor = .black
-    var selectorViewColor: UIColor = .red
     var selectorTextColor: UIColor = .red
 
     weak var delegate: CustomSegmentedControlDelegate?
@@ -25,11 +24,6 @@ class TabsView: UIView {
     convenience init(frame: CGRect, buttonTitle: [String]) {
         self.init(frame: frame)
         self.buttonTitles = buttonTitle
-    }
-
-    override func draw(_ rect: CGRect) {
-        super.draw(rect)
-        updateView()
     }
 
     func setButtonTitles(buttonTitles: [String]) {

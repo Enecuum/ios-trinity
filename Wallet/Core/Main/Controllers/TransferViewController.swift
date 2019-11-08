@@ -46,10 +46,10 @@ class TransferViewController: UIViewController {
         balanceTitleLabel.text = R.string.localizable.balance.localized()
 
         tabsView.setButtonTitles(buttonTitles: [R.string.localizable.send.localized(), R.string.localizable.receive.localized()])
-        tabsView.selectorViewColor = .white
-        tabsView.selectorTextColor = .white
         tabsView.textColor = .white
+        tabsView.selectorTextColor = .white
         tabsView.delegate = self
+        tabsView.setIndex(index: 0)
 
         sendView.isHidden = false
         sendView.delegate = self

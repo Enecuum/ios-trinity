@@ -248,7 +248,6 @@ extension SendView: TransactionSender {
 
         doneView.isHidden = false
 
-        receiverTextField.text = ""
         sendAmountTextField.text = "0"
         amountSlider.value = 0
 

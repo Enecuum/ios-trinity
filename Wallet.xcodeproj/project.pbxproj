@@ -64,6 +64,7 @@
 		B8EA1B5D5B4BE05678661594 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA1DBE3695611D726A76D6 /* AboutViewController.swift */; };
 		B8EA1B89B74C8FB7DCF67632 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA1DAB32B70779EF93B2DE /* MenuViewController.swift */; };
 		B8EA1C041CF5B2023AFDC0BE /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA1E69D0A92BCBA9D4AAEA /* AuthViewController.swift */; };
+		B8EA1C37317D5B5F864C77C2 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA16A21092CCF5A7A80197 /* HomeViewController.swift */; };
 		B8EA1C6783C9B23D7D74D9C3 /* AddressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA1239C2672DEF51BEADC4 /* AddressViewController.swift */; };
 		B8EA1CA24604B550751B299E /* LanguageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA193F63C2901E65C9FA94 /* LanguageTableViewCell.swift */; };
 		B8EA1CA6208D503CE88A1266 /* BottomTabsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA1230C3C6A786249926C8 /* BottomTabsView.swift */; };
@@ -136,6 +137,7 @@
 		B8EA15E9D33B339A27DBDBA4 /* SocialsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocialsViewController.swift; sourceTree = "<group>"; };
 		B8EA1651FDBF392B83C7A618 /* BalanceAmount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BalanceAmount.swift; sourceTree = "<group>"; };
 		B8EA168995FDB5D5200A9D25 /* SwapView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SwapView.xib; sourceTree = "<group>"; };
+		B8EA16A21092CCF5A7A80197 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		B8EA1736201913A7A18D87BB /* KeychainPasswordItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainPasswordItem.swift; sourceTree = "<group>"; };
 		B8EA17552578856912F65A4F /* ApiConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiConstants.swift; sourceTree = "<group>"; };
 		B8EA175D49D8F9C388480C0B /* StatisticsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatisticsViewController.swift; sourceTree = "<group>"; };
@@ -388,6 +390,7 @@
 				B8EA14EA8EB8491A251D3603 /* MainViewController.swift */,
 				B8EA1A06E3393C3709805246 /* TransferViewController.swift */,
 				B8EA175D49D8F9C388480C0B /* StatisticsViewController.swift */,
+				B8EA16A21092CCF5A7A80197 /* HomeViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -675,6 +678,7 @@
 				B8EA1445D3C8EFB8EB33CF02 /* BlocksAmount.swift in Sources */,
 				B8EA1695331BA31A5ADDC575 /* UIDevice+Extension.swift in Sources */,
 				B8EA1619521F88FD5C949086 /* NSLayoutConstraint+Extension.swift in Sources */,
+				B8EA1C37317D5B5F864C77C2 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

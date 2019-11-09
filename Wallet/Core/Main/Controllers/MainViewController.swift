@@ -56,7 +56,7 @@ class MainViewController: UIViewController {
     private func viewController(for state: State) -> UIViewController? {
         switch state {
         case .home:
-            return R.storyboard.main.statisticsViewController()
+            return R.storyboard.main.homeViewController()
         case .stats:
             return R.storyboard.main.statisticsViewController()
         case .transfer:

@@ -11,8 +11,10 @@ class MainViewController: UIViewController {
     @IBOutlet weak var mainTabsView: BottomTabsView!
 
     private enum State: Int {
-        case stats = 0
-        case transition
+        case home = 0
+        case stats
+        case transfer
+        case roi
     }
 
     private var state: State?
@@ -24,13 +26,13 @@ class MainViewController: UIViewController {
         super.viewDidLoad()
         Defaults.setRunOnceFlag()
 
-        mainTabsView.setButtonImages(buttonImages: [R.image.bottomTabs.stats()!, R.image.bottomTabs.transfer()!])
+        mainTabsView.setButtonImages(buttonImages: [R.image.bottomTabs.home()!, R.image.bottomTabs.stats()!, R.image.bottomTabs.transfer()!, R.image.bottomTabs.roi()!])
         mainTabsView.textColor = .white
         mainTabsView.selectorTextColor = .white
         mainTabsView.delegate = self
 
         if state == nil {
-            transit(to: .stats)
+            transit(to: .home)
         }
     }
 
@@ -53,10 +55,14 @@ class MainViewController: UIViewController {
 
     private func viewController(for state: State) -> UIViewController? {
         switch state {
+        case .home:
+            return R.storyboard.main.statisticsViewController()
         case .stats:
             return R.storyboard.main.statisticsViewController()
-        case .transition:
+        case .transfer:
             return R.storyboard.main.transferViewController()
+        case .roi:
+            return R.storyboard.main.statisticsViewController()
         }
     }
 

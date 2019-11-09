@@ -36,7 +36,8 @@ class BottomTabsView: UIView {
         let button = buttons[index]
         selectedIndex = index
         button.setTitleColor(selectorTextColor, for: .normal)
-        let selectorPosition = frame.width / CGFloat(buttonImages.count) * CGFloat(index)
+        let selectorWidth = frame.width / CGFloat(buttonImages.count)
+        let selectorPosition = selectorWidth * CGFloat(index - (buttonImages.count - 1))
         UIView.animate(withDuration: 0.2) {
             self.selectorView.frame.origin.x = selectorPosition
         }
@@ -50,7 +51,7 @@ class BottomTabsView: UIView {
                     return
                 }
                 let selectorWidth = frame.width / CGFloat(buttonImages.count)
-                let selectorPosition = frame.width / CGFloat(buttonImages.count) * CGFloat(buttonIndex) - selectorWidth
+                let selectorPosition = selectorWidth * CGFloat(buttonIndex - (buttonImages.count - 1))
                 selectedIndex = buttonIndex
                 delegate?.changeToIndex(index: selectedIndex)
                 UIView.animate(withDuration: 0.3) {
@@ -85,9 +86,11 @@ extension BottomTabsView {
     }
 
     private func configSelectorView() {
-        let selectorWidth = frame.width / CGFloat(buttonImages.count)
-        selectorView = UIImageView(frame: CGRect(x: -selectorWidth, y: 0, width: self.frame.width * 1.5, height: self.frame.height))
-        selectorView.image = R.image.bottomTabs.tab()!
+        let tabsWidthFactor: CGFloat = 1 + CGFloat(buttonImages.count - 1) /  CGFloat(buttonImages.count)
+        let tabsImageWidth = frame.width * tabsWidthFactor
+        let tabsPadding = tabsImageWidth / CGFloat(buttonImages.count * 2 - 1)
+        selectorView = UIImageView(frame: CGRect(x: -tabsPadding * CGFloat(buttonImages.count - 1), y: 0, width: tabsImageWidth, height: frame.height))
+        selectorView.image = R.image.bottomTabs.tab()
         addSubview(selectorView)
     }
 

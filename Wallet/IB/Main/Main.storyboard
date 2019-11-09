@@ -816,6 +816,53 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Back/main" translatesAutoresizingMaskIntoConstraints="NO" id="hSn-NG-yXo">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J8x-9w-kp7" userLabel="Center Container">
+                                <rect key="frame" x="0.0" y="129" width="375" height="476"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Back/stars" translatesAutoresizingMaskIntoConstraints="NO" id="hH9-Kv-VLP">
+                                        <rect key="frame" x="67.5" y="118" width="240" height="240"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="hH9-Kv-VLP" secondAttribute="height" multiplier="1:1" id="Tqk-5c-gMe"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Back/planets" translatesAutoresizingMaskIntoConstraints="NO" id="xyr-Q7-DzC">
+                                        <rect key="frame" x="75" y="154.5" width="225" height="167"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="xyr-Q7-DzC" secondAttribute="height" multiplier="531:393" id="QWs-b8-nQG"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7IO-kI-t6U">
+                                        <rect key="frame" x="97.5" y="148" width="180" height="180"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="7IO-kI-t6U" secondAttribute="height" multiplier="1:1" id="cHe-lm-Ix0"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="19"/>
+                                        <state key="normal" title="Start mining" backgroundImage="Main/Button/off"/>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FOJ-9S-yur">
+                                        <rect key="frame" x="140.5" y="339" width="94.5" height="31"/>
+                                        <string key="text">Keep calm
+and start mining</string>
+                                        <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="13"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="7IO-kI-t6U" firstAttribute="centerY" secondItem="J8x-9w-kp7" secondAttribute="centerY" id="0Hx-j0-7Wa"/>
+                                    <constraint firstItem="hH9-Kv-VLP" firstAttribute="centerY" secondItem="J8x-9w-kp7" secondAttribute="centerY" id="18Y-DP-5Aq"/>
+                                    <constraint firstItem="7IO-kI-t6U" firstAttribute="width" secondItem="J8x-9w-kp7" secondAttribute="width" multiplier="0.48" id="KrT-qe-dNC"/>
+                                    <constraint firstItem="7IO-kI-t6U" firstAttribute="centerX" secondItem="J8x-9w-kp7" secondAttribute="centerX" id="Mpr-cJ-hcZ"/>
+                                    <constraint firstItem="hH9-Kv-VLP" firstAttribute="width" secondItem="J8x-9w-kp7" secondAttribute="width" multiplier="0.64" id="RYA-p8-p73"/>
+                                    <constraint firstItem="xyr-Q7-DzC" firstAttribute="centerX" secondItem="J8x-9w-kp7" secondAttribute="centerX" id="WqY-Ts-YNC"/>
+                                    <constraint firstItem="xyr-Q7-DzC" firstAttribute="width" secondItem="J8x-9w-kp7" secondAttribute="width" multiplier="0.6" id="Xrx-TW-UW7"/>
+                                    <constraint firstItem="xyr-Q7-DzC" firstAttribute="centerY" secondItem="J8x-9w-kp7" secondAttribute="centerY" id="YA0-Np-XGW"/>
+                                    <constraint firstItem="FOJ-9S-yur" firstAttribute="top" secondItem="7IO-kI-t6U" secondAttribute="bottom" constant="11" id="ijG-9T-SEs"/>
+                                    <constraint firstItem="FOJ-9S-yur" firstAttribute="centerX" secondItem="7IO-kI-t6U" secondAttribute="centerX" id="pIL-oN-E90"/>
+                                    <constraint firstItem="hH9-Kv-VLP" firstAttribute="centerX" secondItem="J8x-9w-kp7" secondAttribute="centerX" id="wN6-cZ-dzB"/>
+                                </constraints>
+                            </view>
                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XBd-nD-amP">
                                 <rect key="frame" x="9" y="11" width="357" height="69"/>
                                 <subviews>
@@ -828,7 +875,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icons/money" translatesAutoresizingMaskIntoConstraints="NO" id="c40-Mb-RhA">
-                                        <rect key="frame" x="12" y="16.5" width="15" height="15"/>
+                                        <rect key="frame" x="12" y="14" width="15" height="15"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="c40-Mb-RhA" secondAttribute="height" multiplier="1:1" id="C09-88-pbN"/>
                                             <constraint firstAttribute="width" constant="15" id="r1m-M2-KGB"/>
@@ -874,7 +921,6 @@
                                 <constraints>
                                     <constraint firstItem="Cy5-4C-vRc" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="LAa-tX-Qv0" secondAttribute="trailing" constant="8" id="1vU-ak-3ya"/>
                                     <constraint firstItem="8Wh-Nz-JPw" firstAttribute="firstBaseline" secondItem="zZO-4W-WzO" secondAttribute="firstBaseline" id="2iP-xd-eMo"/>
-                                    <constraint firstItem="c40-Mb-RhA" firstAttribute="bottom" secondItem="LAa-tX-Qv0" secondAttribute="bottom" id="6kV-Cg-3uW"/>
                                     <constraint firstItem="hEe-86-gds" firstAttribute="leading" secondItem="XBd-nD-amP" secondAttribute="leading" id="9aC-5G-3UG"/>
                                     <constraint firstAttribute="height" constant="69" id="Aqz-7Q-BHj"/>
                                     <constraint firstItem="ow4-TZ-SEH" firstAttribute="firstBaseline" secondItem="LAa-tX-Qv0" secondAttribute="firstBaseline" id="GvA-rf-Otb"/>
@@ -891,6 +937,7 @@
                                     <constraint firstItem="c40-Mb-RhA" firstAttribute="leading" secondItem="XBd-nD-amP" secondAttribute="leading" constant="12" id="fEI-xB-slP"/>
                                     <constraint firstAttribute="bottom" secondItem="hEe-86-gds" secondAttribute="bottom" id="hvG-tR-Q8G"/>
                                     <constraint firstItem="hEe-86-gds" firstAttribute="top" secondItem="XBd-nD-amP" secondAttribute="top" id="nSc-Rk-YRO"/>
+                                    <constraint firstItem="c40-Mb-RhA" firstAttribute="centerY" secondItem="LAa-tX-Qv0" secondAttribute="centerY" id="sBm-rb-XbE"/>
                                     <constraint firstItem="LAa-tX-Qv0" firstAttribute="leading" secondItem="c40-Mb-RhA" secondAttribute="trailing" constant="4" id="tII-1u-xQT"/>
                                     <constraint firstItem="8Wh-Nz-JPw" firstAttribute="leading" secondItem="tnX-rL-yoY" secondAttribute="trailing" constant="4" id="zZH-JF-4Jt"/>
                                 </constraints>
@@ -974,17 +1021,37 @@
                                     <constraint firstAttribute="height" constant="38" id="vD2-Ab-Tqq"/>
                                 </constraints>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hr8-3n-hIO">
+                                <rect key="frame" x="0.0" y="138" width="62" height="46"/>
+                                <state key="normal" image="Icons/qrFromSide"/>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ir2-1t-th2">
+                                <rect key="frame" x="0.0" y="605" width="375" height="62"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="62" id="0cA-pz-ODy"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="4oL-4K-bDm" firstAttribute="bottom" secondItem="ir2-1t-th2" secondAttribute="bottom" id="4Ky-fW-XfM"/>
+                            <constraint firstItem="J8x-9w-kp7" firstAttribute="trailing" secondItem="4oL-4K-bDm" secondAttribute="trailing" id="859-Of-kvj"/>
                             <constraint firstAttribute="trailing" secondItem="XBd-nD-amP" secondAttribute="trailing" constant="9" id="89E-gU-KTV"/>
                             <constraint firstItem="Giq-eJ-vpd" firstAttribute="trailing" secondItem="XBd-nD-amP" secondAttribute="trailing" id="8CF-i6-T3D"/>
                             <constraint firstItem="Giq-eJ-vpd" firstAttribute="top" secondItem="XBd-nD-amP" secondAttribute="bottom" constant="11" id="BAB-yp-v4d"/>
+                            <constraint firstItem="J8x-9w-kp7" firstAttribute="top" secondItem="Giq-eJ-vpd" secondAttribute="bottom" id="BdI-rY-KzQ"/>
                             <constraint firstItem="hSn-NG-yXo" firstAttribute="leading" secondItem="Usu-W2-Z41" secondAttribute="leading" id="Jr0-sV-dvA"/>
+                            <constraint firstItem="ir2-1t-th2" firstAttribute="leading" secondItem="4oL-4K-bDm" secondAttribute="leading" id="Mlp-jv-6fV"/>
                             <constraint firstItem="XBd-nD-amP" firstAttribute="leading" secondItem="Usu-W2-Z41" secondAttribute="leading" constant="9" id="Vld-nl-QAJ"/>
+                            <constraint firstItem="hr8-3n-hIO" firstAttribute="leading" secondItem="4oL-4K-bDm" secondAttribute="leading" id="W4l-ab-bO7"/>
                             <constraint firstItem="hSn-NG-yXo" firstAttribute="trailing" secondItem="Usu-W2-Z41" secondAttribute="trailing" id="WZa-3g-fxm"/>
                             <constraint firstItem="hSn-NG-yXo" firstAttribute="top" secondItem="Usu-W2-Z41" secondAttribute="top" id="a0d-LV-CRr"/>
                             <constraint firstItem="XBd-nD-amP" firstAttribute="top" secondItem="Usu-W2-Z41" secondAttribute="top" constant="11" id="cB2-cg-tys"/>
+                            <constraint firstItem="hr8-3n-hIO" firstAttribute="top" secondItem="Giq-eJ-vpd" secondAttribute="bottom" constant="9" id="cYE-ej-Z46"/>
+                            <constraint firstItem="ir2-1t-th2" firstAttribute="top" secondItem="J8x-9w-kp7" secondAttribute="bottom" id="iRd-P3-Tar"/>
+                            <constraint firstAttribute="trailing" secondItem="ir2-1t-th2" secondAttribute="trailing" id="mPp-st-u3w"/>
+                            <constraint firstItem="J8x-9w-kp7" firstAttribute="leading" secondItem="4oL-4K-bDm" secondAttribute="leading" id="mq9-Cf-Wpg"/>
                             <constraint firstItem="Giq-eJ-vpd" firstAttribute="leading" secondItem="XBd-nD-amP" secondAttribute="leading" id="sgc-YB-8x6"/>
                             <constraint firstAttribute="bottom" secondItem="hSn-NG-yXo" secondAttribute="bottom" id="vQH-Zb-y18"/>
                         </constraints>
@@ -1005,9 +1072,13 @@
     </scenes>
     <resources>
         <image name="Back/main" width="410" height="825"/>
+        <image name="Back/planets" width="177" height="131"/>
+        <image name="Back/stars" width="205" height="180"/>
         <image name="Icons/menu" width="25" height="18"/>
         <image name="Icons/money" width="15" height="15"/>
+        <image name="Icons/qrFromSide" width="62" height="46"/>
         <image name="Logo/small" width="130" height="23"/>
+        <image name="Main/Button/off" width="139" height="139"/>
         <image name="Main/bar" width="302" height="69"/>
         <image name="Main/navbar" width="320" height="42"/>
         <image name="Main/wideBar" width="302" height="43"/>

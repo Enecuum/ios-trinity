@@ -62,7 +62,7 @@ class MainViewController: UIViewController {
         case .transfer:
             return R.storyboard.main.transferViewController()
         case .roi:
-            return R.storyboard.main.statisticsViewController()
+            return R.storyboard.main.roiViewController()
         }
     }
 

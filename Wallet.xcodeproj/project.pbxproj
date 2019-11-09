@@ -28,6 +28,7 @@
 		B8EA121C55AEAAE0ED0F306B /* Palette.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA110F9290250EC4D79180 /* Palette.swift */; };
 		B8EA12606E90F967E84A040E /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA11F255A323DDBD75F780 /* AuthManager.swift */; };
 		B8EA12967CF8667931778061 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA10B587A40452E6650A9E /* ApiClient.swift */; };
+		B8EA133B869DF927EB4C0EF1 /* RoiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA1325A57EB9683E56373D /* RoiViewController.swift */; };
 		B8EA1347970505193E9CD473 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA1AB4DE484A22A99E7DFD /* UIView+Extension.swift */; };
 		B8EA135ACA1DCB77A9B3928C /* GradientButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA1454E4B1EBD958E7E413 /* GradientButton.swift */; };
 		B8EA13734195953CACC55609 /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA1EB1C3D015CFEA7C2F33 /* UIButton+Extension.swift */; };
@@ -124,6 +125,7 @@
 		B8EA1239C2672DEF51BEADC4 /* AddressViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddressViewController.swift; sourceTree = "<group>"; };
 		B8EA1243B21D14DA8D15EB06 /* Localization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Localization.swift; sourceTree = "<group>"; };
 		B8EA126EE3E3C8B5C2E4B64F /* Defaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Defaults.swift; sourceTree = "<group>"; };
+		B8EA1325A57EB9683E56373D /* RoiViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoiViewController.swift; sourceTree = "<group>"; };
 		B8EA1454E4B1EBD958E7E413 /* GradientButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientButton.swift; sourceTree = "<group>"; };
 		B8EA14752B8C5D97AE37EEE6 /* Secp256k1Swift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Secp256k1Swift.swift; sourceTree = "<group>"; };
 		B8EA14C6C48CEEC1ABBE908D /* BlocksAmount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlocksAmount.swift; sourceTree = "<group>"; };
@@ -391,6 +393,7 @@
 				B8EA1A06E3393C3709805246 /* TransferViewController.swift */,
 				B8EA175D49D8F9C388480C0B /* StatisticsViewController.swift */,
 				B8EA16A21092CCF5A7A80197 /* HomeViewController.swift */,
+				B8EA1325A57EB9683E56373D /* RoiViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -679,6 +682,7 @@
 				B8EA1695331BA31A5ADDC575 /* UIDevice+Extension.swift in Sources */,
 				B8EA1619521F88FD5C949086 /* NSLayoutConstraint+Extension.swift in Sources */,
 				B8EA1C37317D5B5F864C77C2 /* HomeViewController.swift in Sources */,
+				B8EA133B869DF927EB4C0EF1 /* RoiViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

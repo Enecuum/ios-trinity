@@ -256,13 +256,13 @@
                                         </constraints>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="Total nodes:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PNy-Yc-jbo">
-                                        <rect key="frame" x="16" y="9" width="91.5" height="20.5"/>
+                                        <rect key="frame" x="16" y="9" width="92.5" height="20"/>
                                         <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SEd-RQ-k8C">
-                                        <rect key="frame" x="109.5" y="9" width="11.5" height="20.5"/>
+                                        <rect key="frame" x="110.5" y="9" width="9.5" height="20"/>
                                         <fontDescription key="fontDescription" name="TTNorms-Bold" family="TT Norms" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -275,13 +275,13 @@
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Open in browser" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LwN-Gt-GBJ">
-                                        <rect key="frame" x="238.5" y="12.5" width="82.5" height="13"/>
+                                        <rect key="frame" x="239.5" y="12.5" width="81.5" height="13"/>
                                         <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="11"/>
                                         <color key="textColor" red="0.41176470588235292" green="0.43137254901960786" blue="0.66666666666666663" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="792-Qn-0mQ">
-                                        <rect key="frame" x="238.5" y="4" width="113.5" height="34"/>
+                                        <rect key="frame" x="239.5" y="4" width="112.5" height="34"/>
                                         <connections>
                                             <action selector="onOpenBrowserMapClicked:" destination="RW1-zb-G21" eventType="touchUpInside" id="ujc-wG-Yh7"/>
                                         </connections>
@@ -332,13 +332,13 @@
                                         <rect key="frame" x="0.0" y="0.0" width="111.5" height="96"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PoA nodes" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g6c-5K-FBm">
-                                                <rect key="frame" x="4" y="57" width="103.5" height="15.5"/>
+                                                <rect key="frame" x="4" y="56.5" width="103.5" height="15.5"/>
                                                 <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="13"/>
                                                 <color key="textColor" red="0.41176470590000003" green="0.43137254899999999" blue="0.66666666669999997" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wv8-Uj-540">
-                                                <rect key="frame" x="51" y="39" width="10" height="18"/>
+                                                <rect key="frame" x="51.5" y="39" width="8.5" height="17.5"/>
                                                 <fontDescription key="fontDescription" name="TTNorms-Bold" family="TT Norms" pointSize="15"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -367,13 +367,13 @@
                                         <rect key="frame" x="111.5" y="0.0" width="112" height="96"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PoW nodes" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G76-Bb-8VN">
-                                                <rect key="frame" x="4" y="57" width="104" height="15.5"/>
+                                                <rect key="frame" x="4" y="56.5" width="104" height="15.5"/>
                                                 <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="13"/>
                                                 <color key="textColor" red="0.41176470590000003" green="0.43137254899999999" blue="0.66666666669999997" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Mv-Xx-aAd">
-                                                <rect key="frame" x="51" y="39" width="10" height="18"/>
+                                                <rect key="frame" x="52" y="39" width="8.5" height="17.5"/>
                                                 <fontDescription key="fontDescription" name="TTNorms-Bold" family="TT Norms" pointSize="15"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -402,13 +402,13 @@
                                         <rect key="frame" x="223.5" y="0.0" width="111.5" height="96"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PoS nodes" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bzA-BH-2EN">
-                                                <rect key="frame" x="4" y="57" width="103.5" height="15.5"/>
+                                                <rect key="frame" x="4" y="56.5" width="103.5" height="15.5"/>
                                                 <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="13"/>
                                                 <color key="textColor" red="0.41176470590000003" green="0.43137254899999999" blue="0.66666666669999997" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3ld-5N-vUg">
-                                                <rect key="frame" x="50.5" y="39" width="10" height="18"/>
+                                                <rect key="frame" x="51.5" y="39" width="8.5" height="17.5"/>
                                                 <fontDescription key="fontDescription" name="TTNorms-Bold" family="TT Norms" pointSize="15"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -453,13 +453,13 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fvv-O6-VzF">
-                                                <rect key="frame" x="51" y="38.5" width="10" height="18"/>
+                                                <rect key="frame" x="51.5" y="39" width="8.5" height="17.5"/>
                                                 <fontDescription key="fontDescription" name="TTNorms-Bold" family="TT Norms" pointSize="15"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Stats/account" translatesAutoresizingMaskIntoConstraints="NO" id="Aif-U5-Vvy">
-                                                <rect key="frame" x="48" y="18.5" width="16" height="16"/>
+                                                <rect key="frame" x="48" y="19" width="16" height="16"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="16" id="bNZ-TE-CYs"/>
                                                     <constraint firstAttribute="width" secondItem="Aif-U5-Vvy" secondAttribute="height" multiplier="1:1" id="yDO-2J-b63"/>
@@ -482,19 +482,19 @@
                                         <rect key="frame" x="111.5" y="0.0" width="112" height="95.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current/max TPS nodes" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ncs-up-QyG">
-                                                <rect key="frame" x="4" y="56.5" width="104" height="31"/>
+                                                <rect key="frame" x="4" y="56.5" width="104" height="30.5"/>
                                                 <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="13"/>
                                                 <color key="textColor" red="0.41176470590000003" green="0.43137254899999999" blue="0.66666666669999997" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DKP-87-Pz9">
-                                                <rect key="frame" x="51" y="38.5" width="10" height="18"/>
+                                                <rect key="frame" x="52" y="39" width="8.5" height="17.5"/>
                                                 <fontDescription key="fontDescription" name="TTNorms-Bold" family="TT Norms" pointSize="15"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Stats/tps" translatesAutoresizingMaskIntoConstraints="NO" id="r2m-99-b0u">
-                                                <rect key="frame" x="48" y="18.5" width="16" height="16"/>
+                                                <rect key="frame" x="48" y="19" width="16" height="16"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="r2m-99-b0u" secondAttribute="height" multiplier="1:1" id="6GA-km-cOk"/>
                                                     <constraint firstAttribute="width" constant="16" id="Xma-cL-wyq"/>
@@ -523,13 +523,13 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FhX-CX-h3c">
-                                                <rect key="frame" x="50.5" y="38.5" width="10" height="18"/>
+                                                <rect key="frame" x="51.5" y="39" width="8.5" height="17.5"/>
                                                 <fontDescription key="fontDescription" name="TTNorms-Bold" family="TT Norms" pointSize="15"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Stats/block" translatesAutoresizingMaskIntoConstraints="NO" id="Ft0-ve-pyM">
-                                                <rect key="frame" x="47.5" y="18.5" width="16" height="16"/>
+                                                <rect key="frame" x="47.5" y="19" width="16" height="16"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="Ft0-ve-pyM" secondAttribute="height" multiplier="1:1" id="Xsd-2P-Zk6"/>
                                                     <constraint firstAttribute="width" constant="16" id="hJl-8y-OIY"/>
@@ -570,55 +570,55 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PoW:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9jB-nz-o42">
-                                                <rect key="frame" x="0.0" y="21" width="28" height="13"/>
+                                                <rect key="frame" x="0.0" y="21" width="26.5" height="13"/>
                                                 <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="11"/>
                                                 <color key="textColor" red="0.41176470590000003" green="0.43137254899999999" blue="0.66666666669999997" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="500" verticalHuggingPriority="251" text="ENQ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oLD-Fi-2bO">
-                                                <rect key="frame" x="40.5" y="21" width="26" height="13"/>
+                                                <rect key="frame" x="38" y="21" width="23.5" height="13"/>
                                                 <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="11"/>
                                                 <color key="textColor" red="0.0" green="0.81960784310000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Cj-wZ-ucf">
-                                                <rect key="frame" x="31" y="21" width="7.5" height="13"/>
+                                                <rect key="frame" x="29.5" y="21" width="6.5" height="13"/>
                                                 <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="11"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PoS:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JC2-qg-I0r">
-                                                <rect key="frame" x="0.0" y="36" width="23" height="13"/>
+                                                <rect key="frame" x="0.0" y="36" width="24" height="13"/>
                                                 <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="11"/>
                                                 <color key="textColor" red="0.41176470590000003" green="0.43137254899999999" blue="0.66666666669999997" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="500" verticalHuggingPriority="251" text="ENQ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bhm-l6-Ybs">
-                                                <rect key="frame" x="35.5" y="36" width="26" height="13"/>
+                                                <rect key="frame" x="35.5" y="36" width="23.5" height="13"/>
                                                 <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="11"/>
                                                 <color key="textColor" red="0.0" green="0.81960784310000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q4I-L2-vkX">
-                                                <rect key="frame" x="26" y="36" width="7.5" height="13"/>
+                                                <rect key="frame" x="27" y="36" width="6.5" height="13"/>
                                                 <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="11"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PoA:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4am-fp-ZbP">
-                                                <rect key="frame" x="0.0" y="51" width="24.5" height="13"/>
+                                                <rect key="frame" x="0.0" y="51" width="24" height="13"/>
                                                 <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="11"/>
                                                 <color key="textColor" red="0.41176470590000003" green="0.43137254899999999" blue="0.66666666669999997" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="500" verticalHuggingPriority="251" text="ENQ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9CK-Er-o66">
-                                                <rect key="frame" x="37" y="51" width="26" height="13"/>
+                                                <rect key="frame" x="35.5" y="51" width="23.5" height="13"/>
                                                 <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="11"/>
                                                 <color key="textColor" red="0.0" green="0.81960784310000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vKJ-gb-WQ1">
-                                                <rect key="frame" x="27.5" y="51" width="7.5" height="13"/>
+                                                <rect key="frame" x="27" y="51" width="6.5" height="13"/>
                                                 <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="11"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -663,37 +663,37 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="260" verticalHuggingPriority="251" horizontalCompressionResistancePriority="200" text="Circ. Supply:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EDg-aQ-QGi">
-                                                <rect key="frame" x="0.0" y="21" width="63" height="13"/>
+                                                <rect key="frame" x="0.0" y="21" width="63.5" height="13"/>
                                                 <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="11"/>
                                                 <color key="textColor" red="0.41176470590000003" green="0.43137254899999999" blue="0.66666666669999997" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="500" verticalHuggingPriority="251" text="ENQ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="csc-zw-3wY">
-                                                <rect key="frame" x="75.5" y="21" width="26" height="13"/>
+                                                <rect key="frame" x="75" y="21" width="23.5" height="13"/>
                                                 <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="11"/>
                                                 <color key="textColor" red="0.0" green="0.81960784310000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="260" verticalHuggingPriority="251" horizontalCompressionResistancePriority="200" text="Max Supply:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gFR-6c-vvg">
-                                                <rect key="frame" x="0.0" y="36" width="61" height="13"/>
+                                                <rect key="frame" x="0.0" y="36" width="62" height="13"/>
                                                 <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="11"/>
                                                 <color key="textColor" red="0.41176470590000003" green="0.43137254899999999" blue="0.66666666669999997" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="240" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="otL-kB-uzg">
-                                                <rect key="frame" x="66" y="21" width="7.5" height="13"/>
+                                                <rect key="frame" x="66.5" y="21" width="6.5" height="13"/>
                                                 <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="11"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="240" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ss9-Ti-Jql">
-                                                <rect key="frame" x="64" y="36" width="7.5" height="13"/>
+                                                <rect key="frame" x="65" y="36" width="6.5" height="13"/>
                                                 <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="11"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="500" verticalHuggingPriority="251" text="ENQ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MFn-Th-jcv">
-                                                <rect key="frame" x="73.5" y="36" width="26" height="13"/>
+                                                <rect key="frame" x="73.5" y="36" width="23.5" height="13"/>
                                                 <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="11"/>
                                                 <color key="textColor" red="0.0" green="0.81960784310000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <nil key="highlightedColor"/>
@@ -1069,6 +1069,488 @@ and start mining</string>
             </objects>
             <point key="canvasLocation" x="-858.39999999999998" y="715.59220389805103"/>
         </scene>
+        <!--Roi View Controller-->
+        <scene sceneID="6Al-Vh-rIU">
+            <objects>
+                <viewController storyboardIdentifier="roiViewController" id="Nyt-hi-YHR" customClass="RoiViewController" customModule="Enecuum_Wallet" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="lXY-jj-aRc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Back/main" translatesAutoresizingMaskIntoConstraints="NO" id="n2Z-Eh-h8Q">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q1C-FG-j4G">
+                                <rect key="frame" x="9" y="11" width="357" height="69"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Main/bar" translatesAutoresizingMaskIntoConstraints="NO" id="bGT-N6-Bxe">
+                                        <rect key="frame" x="0.0" y="0.0" width="357" height="69"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icons/money" translatesAutoresizingMaskIntoConstraints="NO" id="SrZ-dX-8jn">
+                                        <rect key="frame" x="12" y="14" width="15" height="15"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="15" id="10T-1c-Djz"/>
+                                            <constraint firstAttribute="width" secondItem="SrZ-dX-8jn" secondAttribute="height" multiplier="1:1" id="few-pp-RxE"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Balance:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AN5-Ly-iCE">
+                                        <rect key="frame" x="31" y="11" width="66.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="efR-NA-KRe">
+                                        <rect key="frame" x="302" y="11" width="11.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" name="TTNorms-Bold" family="TT Norms" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="500" verticalHuggingPriority="251" text="ENQ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nrj-CC-75J">
+                                        <rect key="frame" x="317.5" y="18" width="23.5" height="12"/>
+                                        <fontDescription key="fontDescription" name="TTNorms-Bold" family="TT Norms" pointSize="10"/>
+                                        <color key="textColor" red="0.0" green="0.81960784310000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 = 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gh4-4q-kFH">
+                                        <rect key="frame" x="12" y="46" width="26.5" height="14.5"/>
+                                        <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="12"/>
+                                        <color key="textColor" red="0.57254901960000004" green="0.61568627450000002" blue="0.84313725490000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="500" verticalHuggingPriority="251" text="$" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gHn-PQ-QRo">
+                                        <rect key="frame" x="335" y="48" width="6" height="12"/>
+                                        <fontDescription key="fontDescription" name="TTNorms-Bold" family="TT Norms" pointSize="10"/>
+                                        <color key="textColor" red="0.0" green="0.81960784310000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3gm-2C-NhZ">
+                                        <rect key="frame" x="319.5" y="41" width="11.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" name="TTNorms-Bold" family="TT Norms" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="69" id="0sI-4H-pc3"/>
+                                    <constraint firstAttribute="trailing" secondItem="bGT-N6-Bxe" secondAttribute="trailing" id="0vI-W0-IUz"/>
+                                    <constraint firstItem="3gm-2C-NhZ" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Gh4-4q-kFH" secondAttribute="trailing" constant="8" id="17M-vJ-M4f"/>
+                                    <constraint firstItem="AN5-Ly-iCE" firstAttribute="top" secondItem="q1C-FG-j4G" secondAttribute="top" constant="11" id="A8Y-5r-LDG"/>
+                                    <constraint firstItem="efR-NA-KRe" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="AN5-Ly-iCE" secondAttribute="trailing" constant="8" id="BcO-0r-6Em"/>
+                                    <constraint firstItem="bGT-N6-Bxe" firstAttribute="leading" secondItem="q1C-FG-j4G" secondAttribute="leading" id="F2f-Q8-oZk"/>
+                                    <constraint firstItem="gHn-PQ-QRo" firstAttribute="firstBaseline" secondItem="Gh4-4q-kFH" secondAttribute="firstBaseline" id="GM1-DU-oJd"/>
+                                    <constraint firstItem="bGT-N6-Bxe" firstAttribute="top" secondItem="q1C-FG-j4G" secondAttribute="top" id="QCG-g3-yKT"/>
+                                    <constraint firstAttribute="trailing" secondItem="gHn-PQ-QRo" secondAttribute="trailing" constant="16" id="RZ1-Mk-z6t"/>
+                                    <constraint firstItem="3gm-2C-NhZ" firstAttribute="firstBaseline" secondItem="Gh4-4q-kFH" secondAttribute="firstBaseline" id="Urn-Ks-ht0"/>
+                                    <constraint firstAttribute="bottom" secondItem="bGT-N6-Bxe" secondAttribute="bottom" id="Y8o-G9-hOu"/>
+                                    <constraint firstItem="gHn-PQ-QRo" firstAttribute="leading" secondItem="3gm-2C-NhZ" secondAttribute="trailing" constant="4" id="fZP-z7-Xc2"/>
+                                    <constraint firstAttribute="bottom" secondItem="gHn-PQ-QRo" secondAttribute="bottom" constant="9" id="jbU-MV-9Xg"/>
+                                    <constraint firstItem="nrj-CC-75J" firstAttribute="leading" secondItem="efR-NA-KRe" secondAttribute="trailing" constant="4" id="kYR-eI-kfK"/>
+                                    <constraint firstAttribute="trailing" secondItem="nrj-CC-75J" secondAttribute="trailing" constant="16" id="mSd-MC-Ii6"/>
+                                    <constraint firstItem="AN5-Ly-iCE" firstAttribute="leading" secondItem="SrZ-dX-8jn" secondAttribute="trailing" constant="4" id="nkf-9q-fx3"/>
+                                    <constraint firstItem="SrZ-dX-8jn" firstAttribute="leading" secondItem="q1C-FG-j4G" secondAttribute="leading" constant="12" id="oog-ue-Aye"/>
+                                    <constraint firstItem="Gh4-4q-kFH" firstAttribute="leading" secondItem="q1C-FG-j4G" secondAttribute="leading" constant="12" id="sus-I9-cSQ"/>
+                                    <constraint firstItem="efR-NA-KRe" firstAttribute="firstBaseline" secondItem="AN5-Ly-iCE" secondAttribute="firstBaseline" id="vRh-b9-TBF"/>
+                                    <constraint firstItem="nrj-CC-75J" firstAttribute="firstBaseline" secondItem="AN5-Ly-iCE" secondAttribute="firstBaseline" id="vV6-A2-rsW"/>
+                                    <constraint firstItem="SrZ-dX-8jn" firstAttribute="centerY" secondItem="AN5-Ly-iCE" secondAttribute="centerY" id="xBU-Du-q1P"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                        <real key="value" value="0.25"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                        <real key="value" value="14"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                        <size key="value" width="0.0" height="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="9"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="9Tu-4s-lgq">
+                                <rect key="frame" x="9" y="91" width="357" height="38"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0aY-vO-ayc" customClass="GradientButton" customModule="Enecuum_Wallet" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="111.5" height="38"/>
+                                        <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="13"/>
+                                        <state key="normal" title="Pay by card"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="firstColor">
+                                                <color key="value" red="0.33333333329999998" green="0.36078431370000003" blue="0.63921568630000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="secondColor">
+                                                <color key="value" red="0.33725490200000002" green="0.12941176469999999" blue="0.74509803919999995" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="6"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="gradientCornerRadius">
+                                                <real key="value" value="6"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5zd-8U-Y0r" customClass="GradientButton" customModule="Enecuum_Wallet" customModuleProvider="target">
+                                        <rect key="frame" x="119.5" y="0.0" width="165.5" height="38"/>
+                                        <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="13"/>
+                                        <state key="normal" title="Buy on exchange"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="firstColor">
+                                                <color key="value" red="0.33333333329999998" green="0.36078431370000003" blue="0.63921568630000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="secondColor">
+                                                <color key="value" red="0.33725490200000002" green="0.12941176469999999" blue="0.74509803919999995" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="6"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="gradientCornerRadius">
+                                                <real key="value" value="6"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cEW-Yz-qCS" customClass="GradientButton" customModule="Enecuum_Wallet" customModuleProvider="target">
+                                        <rect key="frame" x="293" y="0.0" width="64" height="38"/>
+                                        <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="13"/>
+                                        <state key="normal" title="Swap"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="firstColor">
+                                                <color key="value" red="0.33333333329999998" green="0.36078431370000003" blue="0.63921568630000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="secondColor">
+                                                <color key="value" red="0.33725490200000002" green="0.12941176469999999" blue="0.74509803919999995" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="6"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="gradientCornerRadius">
+                                                <real key="value" value="6"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="38" id="NsF-0f-bFS"/>
+                                </constraints>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wvk-qt-69Y" userLabel="Data Container">
+                                <rect key="frame" x="0.0" y="147" width="375" height="520"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Roi/back" translatesAutoresizingMaskIntoConstraints="NO" id="fnW-ay-OP7">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="520"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Return rate calculator last 24 hours" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cgZ-Rt-9fV">
+                                        <rect key="frame" x="61" y="18" width="253" height="19"/>
+                                        <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="16"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="w9W-fP-bX9" customClass="Slider" customModule="Enecuum_Wallet" customModuleProvider="target">
+                                        <rect key="frame" x="41" y="87" width="292" height="31"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="6Y5-1k-JBc"/>
+                                        </constraints>
+                                        <color key="minimumTrackTintColor" red="0.062745098040000002" green="0.1058823529" blue="0.81568627449999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="maximumTrackTintColor" red="0.23137254900000001" green="0.2784313725" blue="0.42745098040000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="thumbTintColor" red="0.070588235289999995" green="0.41568627450000001" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="trackWidth">
+                                                <real key="value" value="6"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="3"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </slider>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="min" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9vK-mr-DQu">
+                                        <rect key="frame" x="43" y="67.5" width="22" height="15.5"/>
+                                        <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="13"/>
+                                        <color key="textColor" red="0.41176470590000003" green="0.43137254899999999" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="max" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IrZ-N7-RUY">
+                                        <rect key="frame" x="306" y="67.5" width="25" height="15.5"/>
+                                        <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="13"/>
+                                        <color key="textColor" red="0.41176470590000003" green="0.43137254899999999" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0" textAlignment="center" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MDa-QX-pXx" userLabel="Amount Field">
+                                        <rect key="frame" x="43.5" y="135" width="288" height="33.5"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="TTNorms-Bold" family="TT Norms" pointSize="27"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numbersAndPunctuation" returnKeyType="go" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                                    </textField>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dd1-7w-V4T">
+                                        <rect key="frame" x="24" y="188.5" width="327" height="1"/>
+                                        <color key="backgroundColor" red="0.36078431372549019" green="0.38039215686274508" blue="0.47450980392156861" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="Den-az-yOC"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ROI" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Pd-bI-y7Y">
+                                        <rect key="frame" x="32" y="207.5" width="30.5" height="19"/>
+                                        <fontDescription key="fontDescription" name="TTNorms-Bold" family="TT Norms" pointSize="16"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nz5-UQ-d46" userLabel="Bottom Labels">
+                                        <rect key="frame" x="32" y="234.5" width="319" height="50"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S67-oM-zVu" userLabel="Left">
+                                                <rect key="frame" x="0.0" y="0.0" width="88.5" height="50"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Daily" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yUE-L3-x8h">
+                                                        <rect key="frame" x="0.0" y="0.0" width="30" height="15.5"/>
+                                                        <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="13"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Weekly" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tEq-1Y-ZO5">
+                                                        <rect key="frame" x="0.0" y="21.5" width="45" height="15.5"/>
+                                                        <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="13"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Year" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lMZ-z2-U7z">
+                                                        <rect key="frame" x="0.0" y="43" width="26.5" height="15.5"/>
+                                                        <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="13"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="lMZ-z2-U7z" firstAttribute="leading" secondItem="S67-oM-zVu" secondAttribute="leading" id="4nc-oq-1Wo"/>
+                                                    <constraint firstItem="lMZ-z2-U7z" firstAttribute="top" secondItem="tEq-1Y-ZO5" secondAttribute="bottom" constant="6" id="50u-zB-M6g"/>
+                                                    <constraint firstItem="yUE-L3-x8h" firstAttribute="top" secondItem="S67-oM-zVu" secondAttribute="top" id="CFq-ib-tOd"/>
+                                                    <constraint firstItem="yUE-L3-x8h" firstAttribute="leading" secondItem="S67-oM-zVu" secondAttribute="leading" id="Csa-qm-AZW"/>
+                                                    <constraint firstItem="yUE-L3-x8h" firstAttribute="leading" secondItem="S67-oM-zVu" secondAttribute="leading" id="Iaf-qI-9L2"/>
+                                                    <constraint firstItem="tEq-1Y-ZO5" firstAttribute="leading" secondItem="yUE-L3-x8h" secondAttribute="leading" id="Iuj-8D-gck"/>
+                                                    <constraint firstAttribute="height" constant="50" id="VtZ-5P-lMv"/>
+                                                    <constraint firstItem="tEq-1Y-ZO5" firstAttribute="leading" secondItem="S67-oM-zVu" secondAttribute="leading" id="hl7-BJ-CZP"/>
+                                                    <constraint firstItem="lMZ-z2-U7z" firstAttribute="leading" secondItem="yUE-L3-x8h" secondAttribute="leading" id="jd6-Tr-p7v"/>
+                                                    <constraint firstItem="tEq-1Y-ZO5" firstAttribute="top" secondItem="yUE-L3-x8h" secondAttribute="bottom" constant="6" id="oPV-xf-ma1"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6J4-TX-8i4" userLabel="Center">
+                                                <rect key="frame" x="88.5" y="0.0" width="88.5" height="50"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="500" verticalHuggingPriority="251" text="%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y4p-ys-zA9">
+                                                        <rect key="frame" x="10.5" y="0.0" width="10.5" height="15.5"/>
+                                                        <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="13"/>
+                                                        <color key="textColor" red="0.0" green="0.81960784310000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MqS-bx-Pib">
+                                                        <rect key="frame" x="0.0" y="0.0" width="8.5" height="15.5"/>
+                                                        <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="13"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="500" verticalHuggingPriority="251" text="%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OcY-7X-cnI">
+                                                        <rect key="frame" x="10.5" y="21.5" width="10.5" height="15.5"/>
+                                                        <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="13"/>
+                                                        <color key="textColor" red="0.0" green="0.81960784310000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0hQ-aC-whC">
+                                                        <rect key="frame" x="0.0" y="21.5" width="8.5" height="15.5"/>
+                                                        <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="13"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="500" verticalHuggingPriority="251" text="%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i2G-Ea-O9P">
+                                                        <rect key="frame" x="10.5" y="43" width="10.5" height="15.5"/>
+                                                        <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="13"/>
+                                                        <color key="textColor" red="0.0" green="0.81960784310000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xfa-zc-KlL">
+                                                        <rect key="frame" x="0.0" y="43" width="8.5" height="15.5"/>
+                                                        <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="13"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="y4p-ys-zA9" secondAttribute="trailing" constant="2" id="0O7-Lv-jDP"/>
+                                                    <constraint firstItem="0hQ-aC-whC" firstAttribute="top" secondItem="MqS-bx-Pib" secondAttribute="bottom" constant="6" id="4PK-Et-h3z"/>
+                                                    <constraint firstItem="0hQ-aC-whC" firstAttribute="leading" secondItem="6J4-TX-8i4" secondAttribute="leading" id="BHM-Ph-Ylo"/>
+                                                    <constraint firstItem="i2G-Ea-O9P" firstAttribute="leading" secondItem="Xfa-zc-KlL" secondAttribute="trailing" constant="2" id="BPa-J6-Uep"/>
+                                                    <constraint firstItem="y4p-ys-zA9" firstAttribute="baseline" secondItem="MqS-bx-Pib" secondAttribute="baseline" id="BoE-xH-tJp"/>
+                                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="OcY-7X-cnI" secondAttribute="trailing" constant="2" id="Boc-Po-uvU"/>
+                                                    <constraint firstItem="Xfa-zc-KlL" firstAttribute="top" secondItem="0hQ-aC-whC" secondAttribute="bottom" constant="6" id="Eu3-cS-BeW"/>
+                                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="i2G-Ea-O9P" secondAttribute="trailing" constant="2" id="Ex4-mX-3y9"/>
+                                                    <constraint firstItem="y4p-ys-zA9" firstAttribute="leading" secondItem="OcY-7X-cnI" secondAttribute="leading" id="Iss-eA-Qi6"/>
+                                                    <constraint firstItem="MqS-bx-Pib" firstAttribute="leading" secondItem="6J4-TX-8i4" secondAttribute="leading" id="KHJ-V9-VyQ"/>
+                                                    <constraint firstItem="OcY-7X-cnI" firstAttribute="leading" secondItem="0hQ-aC-whC" secondAttribute="trailing" constant="2" id="Uba-3z-a0A"/>
+                                                    <constraint firstItem="y4p-ys-zA9" firstAttribute="leading" secondItem="MqS-bx-Pib" secondAttribute="trailing" constant="2" id="Uwf-mB-LNH"/>
+                                                    <constraint firstItem="Xfa-zc-KlL" firstAttribute="leading" secondItem="6J4-TX-8i4" secondAttribute="leading" id="Wja-Gj-CtK"/>
+                                                    <constraint firstItem="i2G-Ea-O9P" firstAttribute="firstBaseline" secondItem="Xfa-zc-KlL" secondAttribute="firstBaseline" id="Wy2-AF-sPL"/>
+                                                    <constraint firstItem="y4p-ys-zA9" firstAttribute="leading" secondItem="i2G-Ea-O9P" secondAttribute="leading" id="dCR-gd-9tk"/>
+                                                    <constraint firstItem="OcY-7X-cnI" firstAttribute="bottom" secondItem="0hQ-aC-whC" secondAttribute="bottom" id="det-4I-Q0c"/>
+                                                    <constraint firstItem="MqS-bx-Pib" firstAttribute="top" secondItem="6J4-TX-8i4" secondAttribute="top" id="qp9-1b-RHh"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ug3-Gz-BE6" userLabel="Right">
+                                                <rect key="frame" x="177" y="0.0" width="142" height="50"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="500" verticalHuggingPriority="251" text="ENQ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GP4-1N-vvW">
+                                                        <rect key="frame" x="10.5" y="0.0" width="30.5" height="15.5"/>
+                                                        <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="13"/>
+                                                        <color key="textColor" red="0.0" green="0.81960784310000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DQD-XY-02B">
+                                                        <rect key="frame" x="0.0" y="0.0" width="8.5" height="15.5"/>
+                                                        <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="13"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="500" verticalHuggingPriority="251" text="ENQ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uGY-Ky-zGw">
+                                                        <rect key="frame" x="10.5" y="21.5" width="30.5" height="15.5"/>
+                                                        <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="13"/>
+                                                        <color key="textColor" red="0.0" green="0.81960784310000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DN7-QJ-x8x">
+                                                        <rect key="frame" x="0.0" y="21.5" width="8.5" height="15.5"/>
+                                                        <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="13"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="500" verticalHuggingPriority="251" text="ENQ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3CR-Jj-BHN">
+                                                        <rect key="frame" x="10.5" y="43" width="30.5" height="15.5"/>
+                                                        <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="13"/>
+                                                        <color key="textColor" red="0.0" green="0.81960784310000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Auq-gw-RvM">
+                                                        <rect key="frame" x="0.0" y="43" width="8.5" height="15.5"/>
+                                                        <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="13"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="DN7-QJ-x8x" firstAttribute="top" secondItem="DQD-XY-02B" secondAttribute="bottom" constant="6" id="1F7-md-Da0"/>
+                                                    <constraint firstItem="GP4-1N-vvW" firstAttribute="leading" secondItem="DQD-XY-02B" secondAttribute="trailing" constant="2" id="3Vt-Wh-7dm"/>
+                                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="GP4-1N-vvW" secondAttribute="trailing" constant="2" id="IEi-f4-LNA"/>
+                                                    <constraint firstItem="DQD-XY-02B" firstAttribute="top" secondItem="ug3-Gz-BE6" secondAttribute="top" id="Ije-we-VJS"/>
+                                                    <constraint firstItem="DN7-QJ-x8x" firstAttribute="leading" secondItem="ug3-Gz-BE6" secondAttribute="leading" id="JIP-pZ-2qz"/>
+                                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="uGY-Ky-zGw" secondAttribute="trailing" constant="2" id="K7b-s5-aGv"/>
+                                                    <constraint firstItem="uGY-Ky-zGw" firstAttribute="leading" secondItem="DN7-QJ-x8x" secondAttribute="trailing" constant="2" id="O2h-bU-l7W"/>
+                                                    <constraint firstItem="3CR-Jj-BHN" firstAttribute="bottom" secondItem="Auq-gw-RvM" secondAttribute="bottom" id="bxV-Kc-M6A"/>
+                                                    <constraint firstItem="uGY-Ky-zGw" firstAttribute="bottom" secondItem="DN7-QJ-x8x" secondAttribute="bottom" id="md5-t3-Vsn"/>
+                                                    <constraint firstItem="3CR-Jj-BHN" firstAttribute="leading" secondItem="Auq-gw-RvM" secondAttribute="trailing" constant="2" id="p9l-31-jtK"/>
+                                                    <constraint firstItem="DQD-XY-02B" firstAttribute="leading" secondItem="ug3-Gz-BE6" secondAttribute="leading" id="qZn-lr-S5C"/>
+                                                    <constraint firstItem="Auq-gw-RvM" firstAttribute="top" secondItem="DN7-QJ-x8x" secondAttribute="bottom" constant="6" id="quw-hF-SdY"/>
+                                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="3CR-Jj-BHN" secondAttribute="trailing" constant="2" id="s9K-u5-Hyv"/>
+                                                    <constraint firstItem="GP4-1N-vvW" firstAttribute="baseline" secondItem="DQD-XY-02B" secondAttribute="baseline" id="sie-4C-jHm"/>
+                                                    <constraint firstItem="Auq-gw-RvM" firstAttribute="leading" secondItem="ug3-Gz-BE6" secondAttribute="leading" id="ulf-FI-dIz"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="S67-oM-zVu" secondAttribute="bottom" id="0fV-hc-oqt"/>
+                                            <constraint firstItem="ug3-Gz-BE6" firstAttribute="top" secondItem="nz5-UQ-d46" secondAttribute="top" id="6Ol-Ge-Ce8"/>
+                                            <constraint firstAttribute="bottom" secondItem="6J4-TX-8i4" secondAttribute="bottom" id="7VJ-uB-DqP"/>
+                                            <constraint firstItem="S67-oM-zVu" firstAttribute="top" secondItem="nz5-UQ-d46" secondAttribute="top" id="Bhv-So-xH3"/>
+                                            <constraint firstItem="ug3-Gz-BE6" firstAttribute="width" secondItem="6J4-TX-8i4" secondAttribute="width" multiplier="1.6" id="HRl-aw-NiA"/>
+                                            <constraint firstItem="6J4-TX-8i4" firstAttribute="top" secondItem="nz5-UQ-d46" secondAttribute="top" id="JO6-dR-FiQ"/>
+                                            <constraint firstItem="6J4-TX-8i4" firstAttribute="leading" secondItem="S67-oM-zVu" secondAttribute="trailing" id="QHn-Um-192"/>
+                                            <constraint firstAttribute="bottom" secondItem="ug3-Gz-BE6" secondAttribute="bottom" id="ayJ-J4-Pfz"/>
+                                            <constraint firstItem="ug3-Gz-BE6" firstAttribute="leading" secondItem="6J4-TX-8i4" secondAttribute="trailing" id="bZ6-Yz-NHX"/>
+                                            <constraint firstItem="6J4-TX-8i4" firstAttribute="width" secondItem="S67-oM-zVu" secondAttribute="width" id="rlp-0P-eXh"/>
+                                            <constraint firstAttribute="trailing" secondItem="ug3-Gz-BE6" secondAttribute="trailing" id="sEU-AE-Ngf"/>
+                                            <constraint firstItem="S67-oM-zVu" firstAttribute="leading" secondItem="nz5-UQ-d46" secondAttribute="leading" id="vq1-sR-EDV"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v5c-Ko-vLc">
+                                        <rect key="frame" x="0.0" y="458" width="375" height="62"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="62" id="dFU-Gb-4Tg"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="v5c-Ko-vLc" secondAttribute="bottom" id="28X-f3-jfi"/>
+                                    <constraint firstItem="2Pd-bI-y7Y" firstAttribute="top" secondItem="dd1-7w-V4T" secondAttribute="bottom" constant="18" id="49X-D3-Omc"/>
+                                    <constraint firstItem="nz5-UQ-d46" firstAttribute="trailing" secondItem="dd1-7w-V4T" secondAttribute="trailing" id="6sh-b4-vag"/>
+                                    <constraint firstItem="MDa-QX-pXx" firstAttribute="top" secondItem="w9W-fP-bX9" secondAttribute="bottom" constant="18" id="7sf-FK-a5p"/>
+                                    <constraint firstItem="cgZ-Rt-9fV" firstAttribute="top" secondItem="Wvk-qt-69Y" secondAttribute="top" constant="18" id="811-qP-bz3"/>
+                                    <constraint firstItem="fnW-ay-OP7" firstAttribute="top" secondItem="Wvk-qt-69Y" secondAttribute="top" id="H3d-aF-Hu5"/>
+                                    <constraint firstItem="nz5-UQ-d46" firstAttribute="leading" secondItem="2Pd-bI-y7Y" secondAttribute="leading" id="HBY-pD-aRW"/>
+                                    <constraint firstAttribute="bottom" secondItem="fnW-ay-OP7" secondAttribute="bottom" id="Ke2-s3-AsN"/>
+                                    <constraint firstItem="dd1-7w-V4T" firstAttribute="leading" secondItem="Wvk-qt-69Y" secondAttribute="leading" constant="24" id="Kfq-Ti-Frm"/>
+                                    <constraint firstItem="fnW-ay-OP7" firstAttribute="leading" secondItem="Wvk-qt-69Y" secondAttribute="leading" id="RVX-By-zXt"/>
+                                    <constraint firstItem="MDa-QX-pXx" firstAttribute="width" secondItem="w9W-fP-bX9" secondAttribute="width" id="SbR-xW-s7y"/>
+                                    <constraint firstItem="w9W-fP-bX9" firstAttribute="top" secondItem="9vK-mr-DQu" secondAttribute="bottom" constant="4" id="V3y-Z4-ei4"/>
+                                    <constraint firstItem="9vK-mr-DQu" firstAttribute="leading" secondItem="w9W-fP-bX9" secondAttribute="leading" id="XnW-mE-5kg"/>
+                                    <constraint firstItem="w9W-fP-bX9" firstAttribute="top" secondItem="IrZ-N7-RUY" secondAttribute="bottom" constant="4" id="Ycf-JR-ChL"/>
+                                    <constraint firstItem="cgZ-Rt-9fV" firstAttribute="centerX" secondItem="Wvk-qt-69Y" secondAttribute="centerX" id="cxg-Ym-QIl"/>
+                                    <constraint firstItem="w9W-fP-bX9" firstAttribute="top" secondItem="cgZ-Rt-9fV" secondAttribute="bottom" constant="50" id="dAe-kv-h3Y"/>
+                                    <constraint firstItem="2Pd-bI-y7Y" firstAttribute="leading" secondItem="dd1-7w-V4T" secondAttribute="leading" constant="8" id="e3T-db-NDH"/>
+                                    <constraint firstItem="w9W-fP-bX9" firstAttribute="leading" secondItem="Wvk-qt-69Y" secondAttribute="leading" constant="43" id="iga-dV-JdP"/>
+                                    <constraint firstItem="IrZ-N7-RUY" firstAttribute="trailing" secondItem="w9W-fP-bX9" secondAttribute="trailing" id="jB4-16-L5A"/>
+                                    <constraint firstItem="nz5-UQ-d46" firstAttribute="top" secondItem="2Pd-bI-y7Y" secondAttribute="bottom" constant="8" id="jbY-wq-duY"/>
+                                    <constraint firstAttribute="trailing" secondItem="w9W-fP-bX9" secondAttribute="trailing" constant="44" id="qmB-UD-gSl"/>
+                                    <constraint firstAttribute="trailing" secondItem="dd1-7w-V4T" secondAttribute="trailing" constant="24" id="rTa-65-Gt0"/>
+                                    <constraint firstItem="dd1-7w-V4T" firstAttribute="top" secondItem="MDa-QX-pXx" secondAttribute="bottom" constant="20" id="tPk-yj-THK"/>
+                                    <constraint firstItem="v5c-Ko-vLc" firstAttribute="leading" secondItem="Wvk-qt-69Y" secondAttribute="leading" id="uEA-qE-4cy"/>
+                                    <constraint firstAttribute="trailing" secondItem="fnW-ay-OP7" secondAttribute="trailing" id="v8Z-8f-QYk"/>
+                                    <constraint firstAttribute="trailing" secondItem="v5c-Ko-vLc" secondAttribute="trailing" id="wsq-Wy-N7c"/>
+                                    <constraint firstItem="MDa-QX-pXx" firstAttribute="centerX" secondItem="Wvk-qt-69Y" secondAttribute="centerX" id="yKA-2c-yzy"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Wvk-qt-69Y" firstAttribute="leading" secondItem="T6V-qE-jcI" secondAttribute="leading" id="8A0-Cj-fbh"/>
+                            <constraint firstItem="q1C-FG-j4G" firstAttribute="top" secondItem="lXY-jj-aRc" secondAttribute="top" constant="11" id="A2v-4j-Tsu"/>
+                            <constraint firstItem="9Tu-4s-lgq" firstAttribute="trailing" secondItem="q1C-FG-j4G" secondAttribute="trailing" id="C8x-xy-T1d"/>
+                            <constraint firstAttribute="trailing" secondItem="q1C-FG-j4G" secondAttribute="trailing" constant="9" id="DOb-sH-97U"/>
+                            <constraint firstItem="9Tu-4s-lgq" firstAttribute="top" secondItem="q1C-FG-j4G" secondAttribute="bottom" constant="11" id="J0A-ET-i8m"/>
+                            <constraint firstItem="n2Z-Eh-h8Q" firstAttribute="trailing" secondItem="lXY-jj-aRc" secondAttribute="trailing" id="Mzq-lY-3py"/>
+                            <constraint firstItem="n2Z-Eh-h8Q" firstAttribute="top" secondItem="lXY-jj-aRc" secondAttribute="top" id="Uyy-kg-z6J"/>
+                            <constraint firstItem="Wvk-qt-69Y" firstAttribute="top" secondItem="9Tu-4s-lgq" secondAttribute="bottom" constant="18" id="aB5-qW-tbm"/>
+                            <constraint firstAttribute="bottom" secondItem="n2Z-Eh-h8Q" secondAttribute="bottom" id="gIF-zO-D1u"/>
+                            <constraint firstItem="Wvk-qt-69Y" firstAttribute="trailing" secondItem="T6V-qE-jcI" secondAttribute="trailing" id="hDe-yz-ayE"/>
+                            <constraint firstItem="q1C-FG-j4G" firstAttribute="leading" secondItem="lXY-jj-aRc" secondAttribute="leading" constant="9" id="ncV-N0-5sC"/>
+                            <constraint firstItem="T6V-qE-jcI" firstAttribute="bottom" secondItem="Wvk-qt-69Y" secondAttribute="bottom" id="ugZ-yN-tfl"/>
+                            <constraint firstItem="n2Z-Eh-h8Q" firstAttribute="leading" secondItem="lXY-jj-aRc" secondAttribute="leading" id="yJo-1i-dxt"/>
+                            <constraint firstItem="9Tu-4s-lgq" firstAttribute="leading" secondItem="q1C-FG-j4G" secondAttribute="leading" id="zTw-KH-RTh"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="T6V-qE-jcI"/>
+                    </view>
+                    <splitViewMasterSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="balanceAmountLabel" destination="efR-NA-KRe" id="Yaf-fW-ghH"/>
+                        <outlet property="balanceTitleLabel" destination="AN5-Ly-iCE" id="3HV-lN-ThI"/>
+                        <outlet property="toUsdLabel" destination="Gh4-4q-kFH" id="S1I-gL-HkO"/>
+                        <outlet property="usdAmountLabel" destination="3gm-2C-NhZ" id="898-Og-bcY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iVP-8i-FId" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1236" y="715.59220389805103"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Back/main" width="410" height="825"/>
@@ -1082,6 +1564,7 @@ and start mining</string>
         <image name="Main/bar" width="302" height="69"/>
         <image name="Main/navbar" width="320" height="42"/>
         <image name="Main/wideBar" width="302" height="43"/>
+        <image name="Roi/back" width="320" height="381"/>
         <image name="Stats/account" width="15" height="11"/>
         <image name="Stats/block" width="16.5" height="13"/>
         <image name="Stats/card" width="299" height="194"/>

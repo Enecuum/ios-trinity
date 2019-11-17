@@ -20,7 +20,9 @@ class MainViewController: UIViewController {
     private var state: State?
     
     private var currentViewController: UIViewController?
+    private var homeViewController: HomeViewController?
     private var transferViewController: TransferViewController?
+    private var roiViewController: RoiViewController?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,8 +39,12 @@ class MainViewController: UIViewController {
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let transferViewController = segue.destination as? TransferViewController {
+        if let homeViewController = segue.destination as? HomeViewController {
+            self.homeViewController = homeViewController
+        } else if let transferViewController = segue.destination as? TransferViewController {
             self.transferViewController = transferViewController
+        } else if let roiViewController = segue.destination as? RoiViewController {
+            self.roiViewController = roiViewController
         }
     }
 
@@ -75,7 +81,9 @@ class MainViewController: UIViewController {
 
     @IBAction func unwindToMainViewController(_ segue: UIStoryboardSegue) {
         if let _ = segue.source as? PrivateKeyViewController {
+            homeViewController?.resetBalance()
             transferViewController?.resetBalance()
+            roiViewController?.resetBalance()
         }
     }
 }

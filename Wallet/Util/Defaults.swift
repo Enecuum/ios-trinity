@@ -12,6 +12,7 @@ class Defaults {
         static let balanceKey: String = "balanceKey"
         static let baseIP: String = "baseIP"
         static let languageCode: String = "languageCode"
+        static let usdRateKey: String = "usdRateKey"
     }
 
     static func saveBalance(_ balance: NSDecimalNumber) {
@@ -30,7 +31,7 @@ class Defaults {
     }
 
     static func isRunOnce() -> Bool {
-        return UserDefaults.standard.bool(forKey: Constants.runOnceKey)
+        UserDefaults.standard.bool(forKey: Constants.runOnceKey)
     }
 
     static func setBaseIP(_ ip: String) {
@@ -38,7 +39,7 @@ class Defaults {
     }
 
     static func baseIP() -> String? {
-        return UserDefaults.standard.string(forKey: Constants.baseIP)
+        UserDefaults.standard.string(forKey: Constants.baseIP)
     }
 
     static func setLanguageCode(_ code: String) {
@@ -46,7 +47,15 @@ class Defaults {
     }
 
     static func languageCode() -> String? {
-        return UserDefaults.standard.string(forKey: Constants.languageCode)
+        UserDefaults.standard.string(forKey: Constants.languageCode)
+    }
+
+    static func setUsdRate(_ usdRate: String) {
+        UserDefaults.standard.set(usdRate, forKey: Constants.usdRateKey)
+    }
+
+    static func usdRate() -> String? {
+        UserDefaults.standard.string(forKey: Constants.usdRateKey)
     }
 
     static func clearUserData() {

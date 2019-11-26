@@ -158,7 +158,6 @@
 "referral_same_address" = "O endereço referido deve ser diferente do seu";
 "referral_program" = "Programa de referência";
 "enq_value" = "%s ENQ";
-"dollar_value" = "%s $";
 "percent_value" = "%s %%";
 "min_value" = "min %s";
 "max_value" = "max %s";
@@ -173,7 +172,6 @@
 "roi_alert" = "Calculadora da taxa de retorno nas últimas 24 horas";
 "stake" = "Stake";
 "roi" = "ROI";
-"enq_as_usd" = "1 ENQ = $ %s";
 "max_roi" = "ROI máx: %s %% por %s ENQ de participação";
 "save" = "Guardar";
 "qr_saved" = "Código QR guardado na Galeria";

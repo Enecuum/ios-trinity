@@ -137,7 +137,6 @@
 "referral_program" = "Referral program";
 "enq_value" = "%s ENQ";
 "enq_value_cut" = "\u00A0ENQ";
-"dollar_value" = "%s $";
 "percent_value" = "%s %%";
 "min_value" = "min %s";
 "max_value" = "max %s";
@@ -152,7 +151,6 @@
 "roi_alert" = "Return rate calculator last 24 hours";
 "stake" = "Stake";
 "roi" = "ROI";
-"enq_as_usd" = "1 ENQ = $ %s";
 "max_roi" = "Max ROI: %s %% at %s ENQ stake";
 "save" = "Save";
 "qr_saved" = "QRCode saved into Gallery";

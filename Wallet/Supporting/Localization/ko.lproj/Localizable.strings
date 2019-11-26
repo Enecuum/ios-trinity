@@ -159,7 +159,6 @@
 "referral_same_address" = "추천받은 주소는 내 주소와 달라야 합니다";
 "referral_program" = "추천 프로그램";
 "enq_value" = "%s ENQ";
-"dollar_value" = "%s $";
 "percent_value"= "%s %%";
 "min_value" = "min %s";
 "max_value" = "max %s";
@@ -174,7 +173,6 @@
 "roi_alert" = "최근 24시간 내 수익률 계산기";
 "stake" = "Stake";
 "roi" = "ROI";
-"enq_as_usd" = "1 ENQ = $ %s";
 "max_roi" = "최대 ROI: %s ENQ 스테이크에서 %s%%";
 "save" = "저장";
 "qr_saved" = "QR코드가 갤러리에 저장되었습니다";

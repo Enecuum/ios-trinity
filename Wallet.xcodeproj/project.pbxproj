@@ -17,6 +17,7 @@
 		356A60CE2333B93F00E8D118 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356A60CD2333B93F00E8D118 /* WelcomeViewController.swift */; };
 		356A60D32333B94000E8D118 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 356A60D22333B94000E8D118 /* Assets.xcassets */; };
 		356A60DE2333C7A500E8D118 /* Auth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 356A60DD2333C7A500E8D118 /* Auth.storyboard */; };
+		35AEC94E238CBC4900E02FEB /* Untranslatable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 35AEC94D238CBC4900E02FEB /* Untranslatable.strings */; };
 		35B8CE1B23398713007BC0C8 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B8CE1A23398713007BC0C8 /* R.generated.swift */; };
 		35B8CE23233A66AD007BC0C8 /* TTNorms-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 35B8CE21233A66AD007BC0C8 /* TTNorms-Medium.otf */; };
 		35B8CE24233A66AD007BC0C8 /* TTNorms-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 35B8CE22233A66AD007BC0C8 /* TTNorms-Bold.otf */; };
@@ -28,6 +29,7 @@
 		B8EA121C55AEAAE0ED0F306B /* Palette.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA110F9290250EC4D79180 /* Palette.swift */; };
 		B8EA12606E90F967E84A040E /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA11F255A323DDBD75F780 /* AuthManager.swift */; };
 		B8EA12967CF8667931778061 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA10B587A40452E6650A9E /* ApiClient.swift */; };
+		B8EA12DEEF2EA7D15AF5E282 /* Formatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA1BA9B0E7E6CCC2A0B48F /* Formatter.swift */; };
 		B8EA133B869DF927EB4C0EF1 /* RoiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA1325A57EB9683E56373D /* RoiViewController.swift */; };
 		B8EA1347970505193E9CD473 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA1AB4DE484A22A99E7DFD /* UIView+Extension.swift */; };
 		B8EA135ACA1DCB77A9B3928C /* GradientButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA1454E4B1EBD958E7E413 /* GradientButton.swift */; };
@@ -72,6 +74,7 @@
 		B8EA1CC4E9CA358A0E45BB0F /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA101A8262DEB1CE21A0A5 /* UIColor+Extension.swift */; };
 		B8EA1D346E2A804AA6E52308 /* SwapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA14FE6D28D74937B28B55 /* SwapView.swift */; };
 		B8EA1D39E773665C99613F9D /* UILabel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA1D9D2D2EC73F992AC0FB /* UILabel+Extension.swift */; };
+		B8EA1DDE9480F881D9E83408 /* CurrencyFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA15CEFF907025F3D2640B /* CurrencyFormat.swift */; };
 		B8EA1DE9ED5F81268366632E /* EntryPointViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA17A09D1193BDBE145257 /* EntryPointViewController.swift */; };
 		B8EA1E0979AC35B894DA7F7D /* KeychainPasswordItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA1736201913A7A18D87BB /* KeychainPasswordItem.swift */; };
 		B8EA1E29300288410B2DFC07 /* SendView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA1506B1F969451F03F8FD /* SendView.swift */; };
@@ -105,6 +108,7 @@
 		356A60D22333B94000E8D118 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		356A60D72333B94000E8D118 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		356A60DD2333C7A500E8D118 /* Auth.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Auth.storyboard; sourceTree = "<group>"; };
+		35AEC94D238CBC4900E02FEB /* Untranslatable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Untranslatable.strings; sourceTree = "<group>"; };
 		35B8CE1A23398713007BC0C8 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 		35B8CE21233A66AD007BC0C8 /* TTNorms-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TTNorms-Medium.otf"; sourceTree = "<group>"; };
 		35B8CE22233A66AD007BC0C8 /* TTNorms-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TTNorms-Bold.otf"; sourceTree = "<group>"; };
@@ -136,6 +140,7 @@
 		B8EA1506B1F969451F03F8FD /* SendView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendView.swift; sourceTree = "<group>"; };
 		B8EA15972F01E94FB2FC5BC3 /* ReceiveView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReceiveView.swift; sourceTree = "<group>"; };
 		B8EA15CACE2F314CC56DE501 /* Transaction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
+		B8EA15CEFF907025F3D2640B /* CurrencyFormat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyFormat.swift; sourceTree = "<group>"; };
 		B8EA15E9D33B339A27DBDBA4 /* SocialsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocialsViewController.swift; sourceTree = "<group>"; };
 		B8EA1651FDBF392B83C7A618 /* BalanceAmount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BalanceAmount.swift; sourceTree = "<group>"; };
 		B8EA168995FDB5D5200A9D25 /* SwapView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SwapView.xib; sourceTree = "<group>"; };
@@ -155,6 +160,7 @@
 		B8EA1A06E3393C3709805246 /* TransferViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransferViewController.swift; sourceTree = "<group>"; };
 		B8EA1A093C22395F491E712B /* StringResource+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "StringResource+Extension.swift"; sourceTree = "<group>"; };
 		B8EA1AB4DE484A22A99E7DFD /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		B8EA1BA9B0E7E6CCC2A0B48F /* Formatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Formatter.swift; sourceTree = "<group>"; };
 		B8EA1D4B5F536C48DC18ECDA /* ConfirmViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmViewController.swift; sourceTree = "<group>"; };
 		B8EA1D8EC716C39C262B2F0B /* FaqViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FaqViewController.swift; sourceTree = "<group>"; };
 		B8EA1D9D2D2EC73F992AC0FB /* UILabel+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel+Extension.swift"; sourceTree = "<group>"; };
@@ -185,6 +191,7 @@
 			isa = PBXGroup;
 			children = (
 				351E9A83234CA76400CCD738 /* Localizable.strings */,
+				35AEC94D238CBC4900E02FEB /* Untranslatable.strings */,
 			);
 			path = Localization;
 			sourceTree = "<group>";
@@ -269,6 +276,8 @@
 				B8EA126EE3E3C8B5C2E4B64F /* Defaults.swift */,
 				B8EA1503A7CBE7C1A8C89B84 /* Resources.swift */,
 				B8EA1243B21D14DA8D15EB06 /* Localization.swift */,
+				B8EA1BA9B0E7E6CCC2A0B48F /* Formatter.swift */,
+				B8EA15CEFF907025F3D2640B /* CurrencyFormat.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -545,6 +554,7 @@
 			files = (
 				35C93FA5233ADD03003EF90B /* SendView.xib in Resources */,
 				35B8CE24233A66AD007BC0C8 /* TTNorms-Bold.otf in Resources */,
+				35AEC94E238CBC4900E02FEB /* Untranslatable.strings in Resources */,
 				356A60DE2333C7A500E8D118 /* Auth.storyboard in Resources */,
 				351E9A7E234CA68900CCD738 /* Main.storyboard in Resources */,
 				356A60D32333B94000E8D118 /* Assets.xcassets in Resources */,
@@ -683,6 +693,8 @@
 				B8EA1619521F88FD5C949086 /* NSLayoutConstraint+Extension.swift in Sources */,
 				B8EA1C37317D5B5F864C77C2 /* HomeViewController.swift in Sources */,
 				B8EA133B869DF927EB4C0EF1 /* RoiViewController.swift in Sources */,
+				B8EA12DEEF2EA7D15AF5E282 /* Formatter.swift in Sources */,
+				B8EA1DDE9480F881D9E83408 /* CurrencyFormat.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

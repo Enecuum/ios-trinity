@@ -101,8 +101,14 @@ class SendView: UIView, NibView {
         amountSlider.value = 0
         amountSlider.addTarget(self, action: #selector(sliderValueChanged(_:)), for: .valueChanged)
 
-        addAttributedButton(rejectButton, image: R.image.icons.cross()!, string: R.string.localizable.reject.localized(), color: .red)
-        addAttributedButton(confirmButton, image: R.image.icons.tick()!, string: R.string.localizable.confirm.localized(), color: .white)
+        addAttributedButton(rejectButton,
+                            image: R.image.icons.cross()!,
+                            string: R.string.localizable.reject.localized(),
+                            color: .red)
+        addAttributedButton(confirmButton,
+                            image: R.image.icons.tick()!,
+                            string: R.string.localizable.confirm.localized(),
+                            color: .white)
 
         if Localization.isRTL() {
             amountSlider.semanticContentAttribute = .forceRightToLeft
@@ -144,9 +150,9 @@ class SendView: UIView, NibView {
         }
         let decimalAmount = NSDecimalNumber(value: sender.value)
         if decimalAmount.compare(maxAmount) == .orderedDescending {
-            sendAmountTextField.text = amountString(from: maxAmount)
+            sendAmountTextField.text = Formatter.decimalString(maxAmount)
         } else {
-            sendAmountTextField.text = amountString(from: decimalAmount)
+            sendAmountTextField.text = Formatter.decimalString(decimalAmount)
         }
     }
 
@@ -175,13 +181,6 @@ class SendView: UIView, NibView {
         let formatter = NumberFormatter()
         formatter.generatesDecimalNumbers = true
         return formatter.number(from: escapedString) as? NSDecimalNumber ?? 0
-    }
-
-    private func amountString(from decimal: NSDecimalNumber) -> String {
-        let formatter = NumberFormatter()
-        formatter.maximumFractionDigits = 6
-        formatter.decimalSeparator = "."
-        return formatter.string(from: decimal) ?? "0"
     }
 
     // MARK: - IBActions
@@ -277,7 +276,7 @@ extension SendView: UITextFieldDelegate {
             if let amount = sendAmountTextField.text, !amount.isEmpty, let maxAmount = maxAmountToSend {
                 let number = decimal(from: amount)
                 if number.compare(maxAmount) == .orderedDescending {
-                    sendAmountTextField.text = amountString(from: maxAmount)
+                    sendAmountTextField.text = Formatter.decimalString(maxAmount)
                     amountSlider.value = maxAmount.floatValue
                 } else {
                     amountSlider.value = number.floatValue

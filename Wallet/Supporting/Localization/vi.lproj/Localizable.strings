@@ -157,7 +157,6 @@
 "referral_same_address" = "Địa chỉ được giới thiệu phải khác với địa chỉ của bạn";
 "referral_program" = "Chương trình giới thiệu khách hàng";
 "enq_value" = "%s ENQ";
-"dollar_value" = "%s $";
 "percent_value" = "%s %%";
 "min_value" = "min %s";
 "max_value" = "max %s";
@@ -172,7 +171,6 @@
 "roi_alert" = "Tính tỷ lệ hoàn trả trong 24 giờ qua";
 "stake" = "Stake";
 "roi" = "ROI";
-"enq_as_usd" = "1 ENQ = $ %s";
 "max_roi" = "ROI tối đa: %s %% trên %s tiền cược ENQ";
 "save" = "Lưu";
 "qr_saved" = "Mã QR được lưu vào Thư viện";

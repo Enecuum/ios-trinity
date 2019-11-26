@@ -158,7 +158,6 @@
 "referral_same_address" = "Referans verilen adres sizinkinden farklı olmalıdır";
 "referral_program" = "Referans programı";
 "enq_value" = "%s ENQ";
-"dollar_value" = "%s $";
 "percent_value" = "%s %%";
 "min_value" = "min %s";
 "max_value" = "max %s";
@@ -173,7 +172,6 @@
 "roi_alert" = "Son 24 saat iade oranı hesaplayıcısı";
 "stake" = "Stake";
 "roi" = "ROI";
-"enq_as_usd" = "1 ENQ = $ %s";
 "max_roi" = "Maksimum YG: %%%s  - %s ENQ hissesinde";
 "save" = "Kaydet";
 "qr_saved" = "QRCode Galeri’ye kaydedildi";

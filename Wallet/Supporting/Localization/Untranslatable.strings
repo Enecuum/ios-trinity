@@ -1,0 +1,11 @@
+/* 
+  Untranslatable.strings
+  Wallet
+
+  Created by Daria Kokareva on 25.11.2019.
+  Copyright © 2019 Enecuum. All rights reserved.
+*/
+
+/* currency strings */
+
+"enq_as_usd" = "1 ENQ = $ %@";

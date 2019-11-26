@@ -12,14 +12,13 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var balanceTitleLabel: UILabel!
     @IBOutlet weak var balanceAmountLabel: UILabel!
 
-    @IBOutlet weak var toUsdLabel: UILabel!
-    @IBOutlet weak var usdAmountLabel: UILabel!
+    @IBOutlet weak var usdRateLabel: UILabel!
+    @IBOutlet weak var amountInUsdLabel: UILabel!
 
-    
     struct Constants {
-        static let apiToBalanceMultiplier: NSDecimalNumber = NSDecimalNumber(mantissa: 1,
-                                                                             exponent: -10,
-                                                                             isNegative: false)
+        static let balanceFromApiMultiplier: NSDecimalNumber = NSDecimalNumber(mantissa: 1,
+                                                                               exponent: -10,
+                                                                               isNegative: false)
         static let balanceToApiMultiplier: NSDecimalNumber = NSDecimalNumber(mantissa: 1,
                                                                              exponent: 10,
                                                                              isNegative: false)
@@ -31,6 +30,9 @@ class HomeViewController: UIViewController {
         balanceTitleLabel.text = R.string.localizable.balance.localized()
 
         balanceAmountLabel.text = "\(Defaults.getBalance() ?? 0)"
+        if let usdRate = Defaults.usdRate() {
+            self.updateUsdRate(usdRate)
+        }
     }
 
     override func viewDidAppear(_ animated: Bool) {
@@ -41,6 +43,20 @@ class HomeViewController: UIViewController {
                 Defaults.saveBalance(amount)
                 self?.balanceAmountLabel.text = "\(amount)"
             }
+        }
+
+        fetchStats()
+    }
+
+    // MARK: - Private methods
+
+    private func updateUsdRate(_ usdRate: String) {
+        let usdCourse = NSDecimalNumber(string: usdRate)
+        self.usdRateLabel.text = CurrencyFormat.asUsdString(usdCourse)
+
+        if let balance = Defaults.getBalance() {
+            let usdAmount = usdCourse.multiplying(by: balance)
+            self.amountInUsdLabel.text = Formatter.decimalString(usdAmount, fractionDigits: 2)
         }
     }
 
@@ -57,11 +73,26 @@ class HomeViewController: UIViewController {
             switch result {
             case .success(let balanceAmount):
                 debugPrint(balanceAmount)
-                let amount = NSDecimalNumber(value: balanceAmount.amount).multiplying(by: Constants.apiToBalanceMultiplier)
+                let amount = NSDecimalNumber(value: balanceAmount.amount).multiplying(by: Constants.balanceFromApiMultiplier)
                 completion(amount)
             case .failure(let error):
                 print(error.localizedDescription)
                 completion(nil)
+            }
+        }
+    }
+
+    private func fetchStats() {
+        ApiClient.stats { [weak self] result in
+            switch result {
+            case .success(let statistics):
+                debugPrint(statistics)
+
+                Defaults.setUsdRate(statistics.cg_usd)
+                self?.updateUsdRate(statistics.cg_usd)
+
+            case .failure(let error):
+                print(error.localizedDescription)
             }
         }
     }

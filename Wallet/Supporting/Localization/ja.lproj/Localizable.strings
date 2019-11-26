@@ -157,7 +157,6 @@
 "referral_same_address" = "紹介アドレスは、あなたのとは違うものでなければなりません";
 "referral_program" = "紹介プログラム";
 "enq_value" = "%s ENQ";
-"dollar_value"= "%s $";
 "percent_value" = "%s %%";
 "min_value" = "min %s";
 "max_value" = "max %s";
@@ -172,7 +171,6 @@
 "roi_alert" = "過去24時間のリターンレート計算機";
 "stake" = "Stake";
 "roi" = "ROI";
-"enq_as_usd" = "1 ENQ = $ %s";
 "max_roi" = "最大 ROI：%s ENQステークで%s %%";
 "save" = "保存する";
 "qr_saved" = "QRコードをギャラリーに保存しました";

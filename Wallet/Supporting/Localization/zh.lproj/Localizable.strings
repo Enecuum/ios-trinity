@@ -158,7 +158,6 @@
 "referral_same_address" = "推荐地址应与您的不同";
 "referral_program" = "推荐计划";
 "enq_value" = "%s ENQ";
-"dollar_value" = "%s $";
 "percent_value" = "%s %%";
 "min_value" = "min %s";
 "max_value" = "max %s";
@@ -173,7 +172,6 @@
 "roi_alert" = "过去24小时回报率计算器";
 "stake" = "Stake";
 "roi" = "ROI";
-"enq_as_usd" = "1 ENQ = $ %s";
 "max_roi" = "最高投资回报率：%s %%，%s ENQ投入";
 "save" = "保存";
 "qr_saved" = "二维码已保存到图库";

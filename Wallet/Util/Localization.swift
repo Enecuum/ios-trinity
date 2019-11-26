@@ -29,6 +29,6 @@ class Localization {
     }
 
     static func userSelectedLanguageCode() -> String? {
-        return Defaults.languageCode()
+        Defaults.languageCode()
     }
 }

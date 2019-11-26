@@ -157,7 +157,6 @@
 "referral_same_address" = "يجب أن يكون العنوان المحال  مختلفًا عن عنوانك";
 "referral_program" = "برنامج الإحالة";
 "enq_value" = "%s ENQ";
-"dollar_value" = "%s $";
 "percent_value" = "%s %%";
 "min_value" = "min %s";
 "max_value" = "max %s";
@@ -172,7 +171,6 @@
 "roi_alert" = "حاسبة معدل العائد آخر 24 ساعة";
 "stake" = "Stake";
 "roi" = "ROI";
-"enq_as_usd" = "1 ENQ = $ %s";
 "max_roi" = "أقصى عائد استثمار: %s %% على %s حصة ENQ";
 "save" = "حفظ";
 "qr_saved" = "تم حفظ رمز الاستجابة السريعة في المعرض";

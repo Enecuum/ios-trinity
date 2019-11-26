@@ -39,4 +39,11 @@ class ApiClient {
             completion(response.result)
         }
     }
+
+    static func referrerStake(completion: @escaping (AFResult<ReferrerStake>) -> Void) {
+        AF.request(ApiRouter.referrerStake.requestUrl(),
+                   method: .get).validate().responseDecodable { (response: AFDataResponse<ReferrerStake>) in
+            completion(response.result)
+        }
+    }
 }

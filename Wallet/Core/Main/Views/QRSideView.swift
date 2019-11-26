@@ -14,6 +14,7 @@ class QRSideView: UIView, NibView {
 
     @IBOutlet weak var frameView: UIImageView!
     @IBOutlet weak var buttonsStackView: UIStackView!
+    @IBOutlet weak var qrButton: UIButton!
     @IBOutlet weak var backButton: UIButton!
 
     var delegate: QrSideViewDelegate?
@@ -36,14 +37,18 @@ class QRSideView: UIView, NibView {
         fold()
     }
 
-    private func fold() {
-        backButton.isHidden = true
-        frameView.transform.tx = -backButton.bounds.width
-    }
-
     private func unfold() {
+        qrButton.isEnabled = false
         backButton.isHidden = false
         frameView.transform.tx = 0
+    }
+
+    // MARK: - Public Methods
+
+    func fold() {
+        backButton.isHidden = true
+        frameView.transform.tx = -backButton.bounds.width
+        qrButton.isEnabled = true
     }
 
     // MARK: - IB Actions

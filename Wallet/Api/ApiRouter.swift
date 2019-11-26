@@ -10,6 +10,7 @@ enum ApiRouter {
     case transaction
     case stats
     case blocks
+    case referrerStake
 
     // MARK: - Base url
 
@@ -38,14 +39,10 @@ enum ApiRouter {
 
     private var method: HTTPMethod {
         switch self {
-        case .balance:
+        case .balance, .stats, .blocks, .referrerStake:
             return .get
         case .transaction:
             return .post
-        case .stats:
-            return .get
-        case .blocks:
-            return .get
         }
     }
 
@@ -61,6 +58,8 @@ enum ApiRouter {
             return "stats"
         case .blocks:
             return "height"
+        case .referrerStake:
+            return "referrer_stake"
         }
     }
 

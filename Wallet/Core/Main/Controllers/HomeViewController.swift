@@ -6,6 +6,7 @@
 import UIKit
 import QRCodeReader
 import AVFoundation
+import EFQRCode
 
 class HomeViewController: UIViewController {
 
@@ -17,7 +18,8 @@ class HomeViewController: UIViewController {
 
     @IBOutlet weak var qrSideView: QRSideView!
     @IBOutlet weak var referralView: UIView!
-    
+    @IBOutlet weak var referralQrImageView: UIImageView!
+
     struct Constants {
         static let balanceFromApiMultiplier: NSDecimalNumber = NSDecimalNumber(mantissa: 1,
                                                                                exponent: -10,
@@ -65,6 +67,25 @@ class HomeViewController: UIViewController {
         }
     }
 
+    private func updateReferralQr() {
+        let generator = EFQRCodeGenerator(content: "key", size: EFIntSize(width: 500, height: 500))
+        generator.setInputCorrectionLevel(inputCorrectionLevel: .l)
+        generator.setColors(backgroundColor: CIColor(color: UIColor(red: 31 / 255,
+                                                                    green: 33 / 255,
+                                                                    blue: 41 / 255,
+                                                                    alpha: 1)),
+                            foregroundColor: CIColor(color: UIColor(red: 39 / 255,
+                                                                    green: 88 / 255,
+                                                                    blue: 163 / 255,
+                                                                    alpha: 1)))
+        generator.setPointShape(pointShape: .circle)
+        if let qrImage = generator.generate() {
+            referralQrImageView.image = UIImage(cgImage: qrImage)
+        } else {
+            print("Create QRCode image failed!")
+        }
+    }
+
     // MARK: - Public methods
 
     func resetBalance() {
@@ -101,11 +122,38 @@ class HomeViewController: UIViewController {
             }
         }
     }
+
+    private func fetchReferrerStake(completion: @escaping (NSDecimalNumber?) -> Void) {
+        ApiClient.referrerStake { result in
+            switch result {
+            case .success(let referrerStake):
+                debugPrint(referrerStake)
+                completion(NSDecimalNumber(value: referrerStake.referrer_stake))
+            case .failure(let error):
+                print(error.localizedDescription)
+                completion(nil)
+            }
+        }
+    }
 }
 
 extension HomeViewController: QrSideViewDelegate {
     func onQRClicked() {
-        referralView.isHidden = false
+        view.showLoader()
+        fetchReferrerStake { [weak self] stake in
+            self?.view.hideLoader()
+            if let stake = stake {
+                if let balance = Defaults.getBalance(), balance.compare(stake) != .orderedAscending {
+                    self?.updateReferralQr()
+                    self?.referralView.isHidden = false
+                } else {
+                    self?.qrSideView.fold()
+                }
+            } else {
+                self?.qrSideView.fold()
+                //show dialog error?
+            }
+        }
     }
 
     func onBackClicked() {

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="QRSideView" customModule="Enecuum_Wallet" customModuleProvider="target">
+            <connections>
+                <outlet property="backButton" destination="iNL-bT-VFx" id="n8m-af-zUY"/>
+                <outlet property="buttonsStackView" destination="3D3-bA-hbN" id="tPK-WE-K9D"/>
+                <outlet property="frameView" destination="LuA-iw-QL3" id="JkT-cf-Twx"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="107" height="46"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Main/QR/frame" id="LuA-iw-QL3">
+                    <rect key="frame" x="0.0" y="0.0" width="107" height="46"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="3D3-bA-hbN">
+                    <rect key="frame" x="6" y="0.0" width="94" height="46"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TJR-14-5iA">
+                            <rect key="frame" x="0.0" y="0.0" width="46" height="46"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="46" id="Uv1-an-chH"/>
+                                <constraint firstAttribute="width" secondItem="TJR-14-5iA" secondAttribute="height" multiplier="1:1" id="XnK-YK-BCd"/>
+                            </constraints>
+                            <state key="normal" image="Main/QR/sign"/>
+                            <connections>
+                                <action selector="onQRClicked:" destination="-1" eventType="touchUpInside" id="Hjz-Ay-v1x"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iNL-bT-VFx">
+                            <rect key="frame" x="48" y="0.0" width="46" height="46"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="46" id="Bd1-rw-qEl"/>
+                                <constraint firstAttribute="width" secondItem="iNL-bT-VFx" secondAttribute="height" multiplier="1:1" id="g1L-Wg-vQf"/>
+                            </constraints>
+                            <state key="normal" image="Main/QR/back"/>
+                            <connections>
+                                <action selector="onBackClicked:" destination="-1" eventType="touchUpInside" id="j0y-8V-x5h"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="TJR-14-5iA" firstAttribute="centerY" secondItem="3D3-bA-hbN" secondAttribute="centerY" id="0Nh-M6-E8K"/>
+                        <constraint firstItem="iNL-bT-VFx" firstAttribute="centerY" secondItem="3D3-bA-hbN" secondAttribute="centerY" id="I7m-2j-Aau"/>
+                    </constraints>
+                    <viewLayoutGuide key="safeArea" id="HqW-7x-vXy"/>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="3D3-bA-hbN" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="6" id="3th-ad-sSk"/>
+                <constraint firstItem="LuA-iw-QL3" firstAttribute="top" secondItem="3D3-bA-hbN" secondAttribute="top" id="Dmt-wa-RA3"/>
+                <constraint firstAttribute="bottom" secondItem="3D3-bA-hbN" secondAttribute="bottom" id="LVH-gh-FOS"/>
+                <constraint firstItem="3D3-bA-hbN" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="uvn-Uq-oZ1"/>
+                <constraint firstItem="LuA-iw-QL3" firstAttribute="bottom" secondItem="3D3-bA-hbN" secondAttribute="bottom" id="waq-dL-RYJ"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="188.40579710144928" y="0.6696428571428571"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Main/QR/back" width="12" height="22"/>
+        <image name="Main/QR/frame" width="107" height="46"/>
+        <image name="Main/QR/sign" width="19" height="24"/>
+    </resources>
+</document>

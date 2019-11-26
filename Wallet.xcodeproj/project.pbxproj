@@ -42,6 +42,7 @@
 		B8EA14D1F3A16E25A9A52D2F /* UIApplication+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA1125F44A41A6588C1CEF /* UIApplication+Extension.swift */; };
 		B8EA14F813244608A0834A17 /* Statistics.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA1A046447B013E8A00DC5 /* Statistics.swift */; };
 		B8EA154763261C213ACF4FCB /* StringResource+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA1A093C22395F491E712B /* StringResource+Extension.swift */; };
+		B8EA158447317F8430367213 /* QRSideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA1AB4C8566CEA0C026F9B /* QRSideView.swift */; };
 		B8EA15AB5BE6A3A17F66EB3E /* CryptoHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA187D7B0E33D8CE47C5D7 /* CryptoHelper.swift */; };
 		B8EA15CBA9C960A2BFA918EB /* TabsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA1506248F3332EFE0E994 /* TabsView.swift */; };
 		B8EA1617BC48D1A4733B604A /* Secp256k1Swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA14752B8C5D97AE37EEE6 /* Secp256k1Swift.swift */; };
@@ -69,6 +70,7 @@
 		B8EA1C041CF5B2023AFDC0BE /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA1E69D0A92BCBA9D4AAEA /* AuthViewController.swift */; };
 		B8EA1C37317D5B5F864C77C2 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA16A21092CCF5A7A80197 /* HomeViewController.swift */; };
 		B8EA1C6783C9B23D7D74D9C3 /* AddressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA1239C2672DEF51BEADC4 /* AddressViewController.swift */; };
+		B8EA1C719844B009836943F7 /* QRSideView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8EA1694896AA7F73A9AFF90 /* QRSideView.xib */; };
 		B8EA1CA24604B550751B299E /* LanguageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA193F63C2901E65C9FA94 /* LanguageTableViewCell.swift */; };
 		B8EA1CA6208D503CE88A1266 /* BottomTabsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA1230C3C6A786249926C8 /* BottomTabsView.swift */; };
 		B8EA1CC4E9CA358A0E45BB0F /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA101A8262DEB1CE21A0A5 /* UIColor+Extension.swift */; };
@@ -144,6 +146,7 @@
 		B8EA15E9D33B339A27DBDBA4 /* SocialsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocialsViewController.swift; sourceTree = "<group>"; };
 		B8EA1651FDBF392B83C7A618 /* BalanceAmount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BalanceAmount.swift; sourceTree = "<group>"; };
 		B8EA168995FDB5D5200A9D25 /* SwapView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SwapView.xib; sourceTree = "<group>"; };
+		B8EA1694896AA7F73A9AFF90 /* QRSideView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QRSideView.xib; sourceTree = "<group>"; };
 		B8EA16A21092CCF5A7A80197 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		B8EA1736201913A7A18D87BB /* KeychainPasswordItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainPasswordItem.swift; sourceTree = "<group>"; };
 		B8EA17552578856912F65A4F /* ApiConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiConstants.swift; sourceTree = "<group>"; };
@@ -159,6 +162,7 @@
 		B8EA1A04EBB7AD8A41903DC0 /* PrivateKeyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrivateKeyViewController.swift; sourceTree = "<group>"; };
 		B8EA1A06E3393C3709805246 /* TransferViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransferViewController.swift; sourceTree = "<group>"; };
 		B8EA1A093C22395F491E712B /* StringResource+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "StringResource+Extension.swift"; sourceTree = "<group>"; };
+		B8EA1AB4C8566CEA0C026F9B /* QRSideView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRSideView.swift; sourceTree = "<group>"; };
 		B8EA1AB4DE484A22A99E7DFD /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		B8EA1BA9B0E7E6CCC2A0B48F /* Formatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Formatter.swift; sourceTree = "<group>"; };
 		B8EA1D4B5F536C48DC18ECDA /* ConfirmViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmViewController.swift; sourceTree = "<group>"; };
@@ -222,6 +226,7 @@
 				35C93FA4233ADD03003EF90B /* SendView.xib */,
 				B8EA11BCF085AD7E415F26FD /* ReceiveView.xib */,
 				B8EA168995FDB5D5200A9D25 /* SwapView.xib */,
+				B8EA1694896AA7F73A9AFF90 /* QRSideView.xib */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -416,6 +421,7 @@
 				B8EA15972F01E94FB2FC5BC3 /* ReceiveView.swift */,
 				B8EA14FE6D28D74937B28B55 /* SwapView.swift */,
 				B8EA1230C3C6A786249926C8 /* BottomTabsView.swift */,
+				B8EA1AB4C8566CEA0C026F9B /* QRSideView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -566,6 +572,7 @@
 				351E9A7C234CA68000CCD738 /* LaunchScreen.storyboard in Resources */,
 				B8EA182891245D4675ADDF7B /* ReceiveView.xib in Resources */,
 				B8EA178F557753B48D3EB921 /* SwapView.xib in Resources */,
+				B8EA1C719844B009836943F7 /* QRSideView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -695,6 +702,7 @@
 				B8EA133B869DF927EB4C0EF1 /* RoiViewController.swift in Sources */,
 				B8EA12DEEF2EA7D15AF5E282 /* Formatter.swift in Sources */,
 				B8EA1DDE9480F881D9E83408 /* CurrencyFormat.swift in Sources */,
+				B8EA158447317F8430367213 /* QRSideView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

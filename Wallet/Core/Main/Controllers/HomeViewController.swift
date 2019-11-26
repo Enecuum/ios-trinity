@@ -15,6 +15,9 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var usdRateLabel: UILabel!
     @IBOutlet weak var amountInUsdLabel: UILabel!
 
+    @IBOutlet weak var qrSideView: QRSideView!
+    @IBOutlet weak var referralView: UIView!
+    
     struct Constants {
         static let balanceFromApiMultiplier: NSDecimalNumber = NSDecimalNumber(mantissa: 1,
                                                                                exponent: -10,
@@ -33,6 +36,8 @@ class HomeViewController: UIViewController {
         if let usdRate = Defaults.usdRate() {
             self.updateUsdRate(usdRate)
         }
+
+        qrSideView.delegate = self
     }
 
     override func viewDidAppear(_ animated: Bool) {
@@ -95,5 +100,15 @@ class HomeViewController: UIViewController {
                 print(error.localizedDescription)
             }
         }
+    }
+}
+
+extension HomeViewController: QrSideViewDelegate {
+    func onQRClicked() {
+        referralView.isHidden = false
+    }
+
+    func onBackClicked() {
+        referralView.isHidden = true
     }
 }

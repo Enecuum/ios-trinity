@@ -1021,39 +1021,15 @@ and start mining</string>
                                     <constraint firstItem="hH9-Kv-VLP" firstAttribute="centerX" secondItem="J8x-9w-kp7" secondAttribute="centerX" id="wN6-cZ-dzB"/>
                                 </constraints>
                             </view>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Main/QR/frame" translatesAutoresizingMaskIntoConstraints="NO" id="BaD-bz-hiM">
-                                <rect key="frame" x="-7" y="137" width="107.00000000000003" height="46"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1hT-fK-1wR" customClass="QRSideView" customModule="Enecuum_Wallet" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="137" width="107" height="46"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="BaD-bz-hiM" secondAttribute="height" multiplier="107:46" id="55S-ET-j2i"/>
+                                    <constraint firstAttribute="height" constant="46" id="w3N-Jq-Gvf"/>
+                                    <constraint firstAttribute="width" constant="107" id="yh1-rL-1qT"/>
                                 </constraints>
-                            </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="9SG-cA-Bqx">
-                                <rect key="frame" x="0.0" y="137" width="94" height="46"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hr8-3n-hIO">
-                                        <rect key="frame" x="0.0" y="0.0" width="46" height="46"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="46" id="1TG-vi-34a"/>
-                                            <constraint firstAttribute="width" secondItem="hr8-3n-hIO" secondAttribute="height" multiplier="1:1" id="Wfa-9S-tlN"/>
-                                        </constraints>
-                                        <state key="normal" image="Main/QR/sign"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e3I-0R-x8W">
-                                        <rect key="frame" x="48" y="0.0" width="46" height="46"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="46" id="UEY-Y8-XoN"/>
-                                            <constraint firstAttribute="width" secondItem="e3I-0R-x8W" secondAttribute="height" multiplier="1:1" id="YrD-Wz-jYA"/>
-                                        </constraints>
-                                        <state key="normal" image="Main/QR/back"/>
-                                    </button>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstItem="hr8-3n-hIO" firstAttribute="centerY" secondItem="9SG-cA-Bqx" secondAttribute="centerY" id="3nA-Ax-C6R"/>
-                                    <constraint firstAttribute="height" constant="46" id="lED-6F-5qu"/>
-                                    <constraint firstItem="e3I-0R-x8W" firstAttribute="centerY" secondItem="9SG-cA-Bqx" secondAttribute="centerY" id="yJh-Fm-41T"/>
-                                </constraints>
-                            </stackView>
-                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OnF-7W-oyv">
+                            </view>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OnF-7W-oyv" userLabel="Referral View">
                                 <rect key="frame" x="19" y="202" width="337" height="381"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your personal agent referral code:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gaw-O5-Ai4">
@@ -1116,7 +1092,7 @@ and start mining</string>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ir2-1t-th2">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ir2-1t-th2" userLabel="Tabs Placeholder">
                                 <rect key="frame" x="0.0" y="605" width="375" height="62"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -1126,32 +1102,29 @@ and start mining</string>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="OnF-7W-oyv" firstAttribute="top" secondItem="9SG-cA-Bqx" secondAttribute="bottom" constant="19" id="2DH-vp-kRa"/>
                             <constraint firstItem="4oL-4K-bDm" firstAttribute="bottom" secondItem="ir2-1t-th2" secondAttribute="bottom" id="4Ky-fW-XfM"/>
                             <constraint firstItem="J8x-9w-kp7" firstAttribute="trailing" secondItem="4oL-4K-bDm" secondAttribute="trailing" id="859-Of-kvj"/>
                             <constraint firstAttribute="trailing" secondItem="XBd-nD-amP" secondAttribute="trailing" constant="9" id="89E-gU-KTV"/>
                             <constraint firstItem="Giq-eJ-vpd" firstAttribute="trailing" secondItem="XBd-nD-amP" secondAttribute="trailing" id="8CF-i6-T3D"/>
+                            <constraint firstItem="1hT-fK-1wR" firstAttribute="leading" secondItem="4oL-4K-bDm" secondAttribute="leading" id="8LQ-VW-gl1"/>
                             <constraint firstItem="4oL-4K-bDm" firstAttribute="trailing" secondItem="OnF-7W-oyv" secondAttribute="trailing" constant="19" id="8Or-Jd-WW7"/>
                             <constraint firstItem="Giq-eJ-vpd" firstAttribute="top" secondItem="XBd-nD-amP" secondAttribute="bottom" constant="11" id="BAB-yp-v4d"/>
                             <constraint firstItem="J8x-9w-kp7" firstAttribute="top" secondItem="Giq-eJ-vpd" secondAttribute="bottom" id="BdI-rY-KzQ"/>
-                            <constraint firstItem="BaD-bz-hiM" firstAttribute="height" secondItem="9SG-cA-Bqx" secondAttribute="height" id="Ext-L1-Y0E"/>
                             <constraint firstItem="hSn-NG-yXo" firstAttribute="leading" secondItem="Usu-W2-Z41" secondAttribute="leading" id="Jr0-sV-dvA"/>
                             <constraint firstItem="ir2-1t-th2" firstAttribute="leading" secondItem="4oL-4K-bDm" secondAttribute="leading" id="Mlp-jv-6fV"/>
+                            <constraint firstItem="1hT-fK-1wR" firstAttribute="top" secondItem="Giq-eJ-vpd" secondAttribute="bottom" constant="8" id="R12-YE-Te2"/>
                             <constraint firstItem="XBd-nD-amP" firstAttribute="leading" secondItem="Usu-W2-Z41" secondAttribute="leading" constant="9" id="Vld-nl-QAJ"/>
                             <constraint firstItem="hSn-NG-yXo" firstAttribute="trailing" secondItem="Usu-W2-Z41" secondAttribute="trailing" id="WZa-3g-fxm"/>
-                            <constraint firstItem="BaD-bz-hiM" firstAttribute="trailing" secondItem="9SG-cA-Bqx" secondAttribute="trailing" constant="6" id="Xfj-i5-2jM"/>
                             <constraint firstItem="hSn-NG-yXo" firstAttribute="top" secondItem="Usu-W2-Z41" secondAttribute="top" id="a0d-LV-CRr"/>
-                            <constraint firstItem="9SG-cA-Bqx" firstAttribute="leading" secondItem="4oL-4K-bDm" secondAttribute="leading" id="ayf-QF-c2g"/>
                             <constraint firstItem="XBd-nD-amP" firstAttribute="top" secondItem="Usu-W2-Z41" secondAttribute="top" constant="11" id="cB2-cg-tys"/>
-                            <constraint firstItem="9SG-cA-Bqx" firstAttribute="top" secondItem="Giq-eJ-vpd" secondAttribute="bottom" constant="8" id="fsa-dd-eJC"/>
                             <constraint firstItem="ir2-1t-th2" firstAttribute="top" secondItem="J8x-9w-kp7" secondAttribute="bottom" id="iRd-P3-Tar"/>
                             <constraint firstAttribute="trailing" secondItem="ir2-1t-th2" secondAttribute="trailing" id="mPp-st-u3w"/>
                             <constraint firstItem="ir2-1t-th2" firstAttribute="top" secondItem="OnF-7W-oyv" secondAttribute="bottom" constant="22" id="mdo-EY-2Oc"/>
                             <constraint firstItem="J8x-9w-kp7" firstAttribute="leading" secondItem="4oL-4K-bDm" secondAttribute="leading" id="mq9-Cf-Wpg"/>
                             <constraint firstItem="OnF-7W-oyv" firstAttribute="leading" secondItem="4oL-4K-bDm" secondAttribute="leading" constant="19" id="rLc-Q3-BxV"/>
                             <constraint firstItem="Giq-eJ-vpd" firstAttribute="leading" secondItem="XBd-nD-amP" secondAttribute="leading" id="sgc-YB-8x6"/>
+                            <constraint firstItem="OnF-7W-oyv" firstAttribute="top" secondItem="1hT-fK-1wR" secondAttribute="bottom" constant="19" id="v0K-Jf-wNX"/>
                             <constraint firstAttribute="bottom" secondItem="hSn-NG-yXo" secondAttribute="bottom" id="vQH-Zb-y18"/>
-                            <constraint firstItem="BaD-bz-hiM" firstAttribute="centerY" secondItem="9SG-cA-Bqx" secondAttribute="centerY" id="vU2-OT-9Bc"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="4oL-4K-bDm"/>
                     </view>
@@ -1160,6 +1133,8 @@ and start mining</string>
                         <outlet property="amountInUsdLabel" destination="tnX-rL-yoY" id="cyN-NI-a7l"/>
                         <outlet property="balanceAmountLabel" destination="Cy5-4C-vRc" id="WbI-a0-1L0"/>
                         <outlet property="balanceTitleLabel" destination="LAa-tX-Qv0" id="8V4-ie-QiH"/>
+                        <outlet property="qrSideView" destination="1hT-fK-1wR" id="VWo-ei-bYY"/>
+                        <outlet property="referralView" destination="OnF-7W-oyv" id="bJ8-6Y-555"/>
                         <outlet property="usdRateLabel" destination="zZO-4W-WzO" id="5hw-Ml-dtY"/>
                     </connections>
                 </viewController>
@@ -1639,10 +1614,10 @@ and start mining</string>
                     </view>
                     <splitViewMasterSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <connections>
+                        <outlet property="amountInUsdLabel" destination="3gm-2C-NhZ" id="898-Og-bcY"/>
                         <outlet property="balanceAmountLabel" destination="efR-NA-KRe" id="Yaf-fW-ghH"/>
                         <outlet property="balanceTitleLabel" destination="AN5-Ly-iCE" id="3HV-lN-ThI"/>
                         <outlet property="usdRateLabel" destination="Gh4-4q-kFH" id="S1I-gL-HkO"/>
-                        <outlet property="amountInUsdLabel" destination="3gm-2C-NhZ" id="898-Og-bcY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iVP-8i-FId" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1658,9 +1633,6 @@ and start mining</string>
         <image name="Icons/money" width="15" height="15"/>
         <image name="Logo/small" width="130" height="23"/>
         <image name="Main/Button/off" width="139" height="139"/>
-        <image name="Main/QR/back" width="12" height="22"/>
-        <image name="Main/QR/frame" width="107" height="46"/>
-        <image name="Main/QR/sign" width="19" height="24"/>
         <image name="Main/bar" width="302" height="69"/>
         <image name="Main/navbar" width="320" height="42"/>
         <image name="Main/wideBar" width="302" height="43"/>

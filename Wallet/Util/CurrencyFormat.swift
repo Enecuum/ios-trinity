@@ -31,4 +31,9 @@ class CurrencyFormat {
         let format = R.string.localizable.referral_message.localized()
         return String(format: format, Constants.currency)
     }
+
+    static func currencyAddressString() -> String {
+        let format = R.string.localizable.enq_address_to_send.localized()
+        return String(format: format, Constants.currency)
+    }
 }

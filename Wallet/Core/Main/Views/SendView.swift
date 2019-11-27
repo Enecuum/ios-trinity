@@ -91,7 +91,7 @@ class SendView: UIView, NibView {
         sendButton.setTitle(R.string.localizable.send.localized(), for: .normal)
         sendButton.multilineLabel()
         //confirm
-        toLabel.text = R.string.localizable.enq_address_to_send.localized()
+        toLabel.text = CurrencyFormat.currencyAddressString()
         sendAmountLabel.text = R.string.localizable.amount.localized()
         rejectButton.multilineLabel()
         confirmButton.multilineLabel()

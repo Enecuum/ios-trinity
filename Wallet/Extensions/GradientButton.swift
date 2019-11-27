@@ -7,6 +7,12 @@ import UIKit
 
 class GradientButton: UIButton {
 
+    override var bounds: CGRect {
+        didSet {
+            updateGradient()
+        }
+    }
+
     private var gradientLayer: CAGradientLayer?
 
     @IBInspectable private var firstColor: UIColor = UIColor.clear {

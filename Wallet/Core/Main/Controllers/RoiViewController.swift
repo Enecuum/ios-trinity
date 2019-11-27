@@ -15,6 +15,15 @@ class RoiViewController: UIViewController {
     @IBOutlet weak var usdRateLabel: UILabel!
     @IBOutlet weak var amountInUsdLabel: UILabel!
 
+    @IBOutlet weak var buyTabsView: UIView!
+    @IBOutlet weak var byCardButton: GradientButton!
+    @IBOutlet weak var exchangesButton: GradientButton!
+    @IBOutlet weak var swapButton: GradientButton!
+
+    @IBOutlet weak var bottomTabsPlaceholder: UIView!
+
+    private var buyTabsState: BuyTabsState = .none
+
     struct Constants {
         static let balanceFromApiMultiplier: NSDecimalNumber = NSDecimalNumber(mantissa: 1,
                                                                                exponent: -10,
@@ -22,6 +31,7 @@ class RoiViewController: UIViewController {
         static let balanceToApiMultiplier: NSDecimalNumber = NSDecimalNumber(mantissa: 1,
                                                                              exponent: 10,
                                                                              isNegative: false)
+        static let buyViewTag: Int = 2000
     }
 
     override func viewDidLoad() {
@@ -35,6 +45,8 @@ class RoiViewController: UIViewController {
         if let usdRate = Defaults.usdRate() {
             self.updateUsdRate(usdRate)
         }
+
+        updateForBuyTabState()
     }
 
     override func viewDidAppear(_ animated: Bool) {
@@ -49,6 +61,12 @@ class RoiViewController: UIViewController {
         fetchStats()
     }
 
+    // MARK: - Public methods
+
+    func resetBalance() {
+        balanceAmountLabel.text = "\(Defaults.getBalance() ?? 0)"
+    }
+
     // MARK: - Private methods
 
     private func updateUsdRate(_ usdRate: String) {
@@ -61,10 +79,46 @@ class RoiViewController: UIViewController {
         }
     }
 
-    // MARK: - Public methods
+    private func showBuyView(tab: Int) {
+        if let buyView = view.viewWithTag(Constants.buyViewTag) {
+            buyView.removeFromSuperview()
+        }
+        let rect = CGRect(x: buyTabsView.frame.origin.x,
+                          y: buyTabsView.frame.origin.y,
+                          width: buyTabsView.frame.width,
+                          height: bottomTabsPlaceholder.frame.origin.y - buyTabsView.frame.origin.y - BuyNativeView.Constants.bottomPadding)
+        let buyView = buyTabsState == .byCard ? BuyNativeView(frame: rect) : BuyInExchangeView(frame: rect)
+        buyView.tag = Constants.buyViewTag
+        self.view.insertSubview(buyView, belowSubview: buyTabsView)
+    }
 
-    func resetBalance() {
-        balanceAmountLabel.text = "\(Defaults.getBalance() ?? 0)"
+    private func hideBuyView() {
+        buyTabsView.backgroundColor = .clear
+        byCardButton.gradientIsVisible = true
+        exchangesButton.gradientIsVisible = true
+        swapButton.gradientIsVisible = true
+        if let buyView = view.viewWithTag(Constants.buyViewTag) {
+            buyView.removeFromSuperview()
+        }
+    }
+
+    private func updateForBuyTabState() {
+        switch (buyTabsState) {
+        case .none, .swap:
+            hideBuyView()
+        case .byCard:
+            buyTabsView.backgroundColor = Palette.buyTabsBackground
+            byCardButton.gradientIsVisible = true
+            exchangesButton.gradientIsVisible = false
+            swapButton.gradientIsVisible = false
+            showBuyView(tab: 0)
+        case .inExchange:
+            buyTabsView.backgroundColor = Palette.buyTabsBackground
+            byCardButton.gradientIsVisible = false
+            exchangesButton.gradientIsVisible = true
+            swapButton.gradientIsVisible = false
+            showBuyView(tab: 1)
+        }
     }
 
     // MARK: - Server
@@ -96,5 +150,22 @@ class RoiViewController: UIViewController {
                 print(error.localizedDescription)
             }
         }
+    }
+
+    // MARK: - IB Actions
+
+    @IBAction func byCardTabClicked() {
+        buyTabsState = buyTabsState == .byCard ? .none : .byCard
+        updateForBuyTabState()
+    }
+
+    @IBAction func exchangesTabClicked() {
+        buyTabsState = buyTabsState == .inExchange ? .none : .inExchange
+        updateForBuyTabState()
+    }
+
+    @IBAction func swapTabClicked() {
+        buyTabsState = .swap
+        updateForBuyTabState()
     }
 }

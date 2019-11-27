@@ -930,9 +930,9 @@
                                             <constraint firstAttribute="width" secondItem="7IO-kI-t6U" secondAttribute="height" multiplier="1:1" id="cHe-lm-Ix0"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="19"/>
-                                        <state key="normal" title="Start mining" backgroundImage="Main/Button/off"/>
+                                        <state key="normal" title="ENQ" backgroundImage="Main/Button/off"/>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FOJ-9S-yur">
+                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FOJ-9S-yur">
                                         <rect key="frame" x="140.5" y="330" width="94.5" height="31"/>
                                         <string key="text">Keep calm
 and start mining</string>
@@ -1206,71 +1206,6 @@ and start mining</string>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="9Tu-4s-lgq">
-                                <rect key="frame" x="9" y="91" width="357" height="38"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0aY-vO-ayc" customClass="GradientButton" customModule="Enecuum_Wallet" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="111.5" height="38"/>
-                                        <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="13"/>
-                                        <state key="normal" title="Pay by card"/>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="firstColor">
-                                                <color key="value" red="0.33333333329999998" green="0.36078431370000003" blue="0.63921568630000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="secondColor">
-                                                <color key="value" red="0.33725490200000002" green="0.12941176469999999" blue="0.74509803919999995" alpha="1" colorSpace="calibratedRGB"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <real key="value" value="6"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="gradientCornerRadius">
-                                                <real key="value" value="6"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5zd-8U-Y0r" customClass="GradientButton" customModule="Enecuum_Wallet" customModuleProvider="target">
-                                        <rect key="frame" x="119.5" y="0.0" width="165.5" height="38"/>
-                                        <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="13"/>
-                                        <state key="normal" title="Buy on exchange"/>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="firstColor">
-                                                <color key="value" red="0.33333333329999998" green="0.36078431370000003" blue="0.63921568630000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="secondColor">
-                                                <color key="value" red="0.33725490200000002" green="0.12941176469999999" blue="0.74509803919999995" alpha="1" colorSpace="calibratedRGB"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <real key="value" value="6"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="gradientCornerRadius">
-                                                <real key="value" value="6"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cEW-Yz-qCS" customClass="GradientButton" customModule="Enecuum_Wallet" customModuleProvider="target">
-                                        <rect key="frame" x="293" y="0.0" width="64" height="38"/>
-                                        <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="13"/>
-                                        <state key="normal" title="Swap"/>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="firstColor">
-                                                <color key="value" red="0.33333333329999998" green="0.36078431370000003" blue="0.63921568630000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="secondColor">
-                                                <color key="value" red="0.33725490200000002" green="0.12941176469999999" blue="0.74509803919999995" alpha="1" colorSpace="calibratedRGB"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <real key="value" value="6"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="gradientCornerRadius">
-                                                <real key="value" value="6"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                    </button>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="38" id="NsF-0f-bFS"/>
-                                </constraints>
-                            </stackView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wvk-qt-69Y" userLabel="Data Container">
                                 <rect key="frame" x="0.0" y="147" width="375" height="520"/>
                                 <subviews>
@@ -1552,23 +1487,124 @@ and start mining</string>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Je2-2J-8i0" userLabel="Buy Tabs View">
+                                <rect key="frame" x="9" y="91" width="357" height="38"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="dn5-iI-ufo">
+                                        <rect key="frame" x="0.0" y="0.0" width="357" height="38"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oy9-BB-sG5" customClass="GradientButton" customModule="Enecuum_Wallet" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="101" height="38"/>
+                                                <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="13"/>
+                                                <state key="normal" title="By card"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="firstColor">
+                                                        <color key="value" red="0.33333333329999998" green="0.36078431370000003" blue="0.63921568630000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="secondColor">
+                                                        <color key="value" red="0.33725490200000002" green="0.12941176469999999" blue="0.74509803919999995" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="6"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="gradientCornerRadius">
+                                                        <real key="value" value="6"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="byCardTabClicked" destination="9mI-DF-94o" eventType="touchUpInside" id="81Y-sw-NJk"/>
+                                                    <action selector="byCardTabClicked" destination="Nyt-hi-YHR" eventType="touchUpInside" id="mBe-Ab-x2N"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K78-gs-d7j" customClass="GradientButton" customModule="Enecuum_Wallet" customModuleProvider="target">
+                                                <rect key="frame" x="109" y="0.0" width="146" height="38"/>
+                                                <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="13"/>
+                                                <state key="normal" title="Exchanges"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="firstColor">
+                                                        <color key="value" red="0.33333333329999998" green="0.36078431370000003" blue="0.63921568630000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="secondColor">
+                                                        <color key="value" red="0.33725490200000002" green="0.12941176469999999" blue="0.74509803919999995" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="6"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="gradientCornerRadius">
+                                                        <real key="value" value="6"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="exchangesTabClicked" destination="Nyt-hi-YHR" eventType="touchUpInside" id="3yn-jm-FG9"/>
+                                                    <action selector="exchangesTabClicked" destination="9mI-DF-94o" eventType="touchUpInside" id="C7d-Dp-p8i"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qsm-Qr-GNw" customClass="GradientButton" customModule="Enecuum_Wallet" customModuleProvider="target">
+                                                <rect key="frame" x="263" y="0.0" width="94" height="38"/>
+                                                <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="13"/>
+                                                <state key="normal" title="Swap"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="firstColor">
+                                                        <color key="value" red="0.33333333329999998" green="0.36078431370000003" blue="0.63921568630000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="secondColor">
+                                                        <color key="value" red="0.33725490200000002" green="0.12941176469999999" blue="0.74509803919999995" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="6"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="gradientCornerRadius">
+                                                        <real key="value" value="6"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="swapTabClicked" destination="Nyt-hi-YHR" eventType="touchUpInside" id="KKo-LU-IaD"/>
+                                                    <action selector="swapTabClicked" destination="9mI-DF-94o" eventType="touchUpInside" id="oN9-Cd-0bj"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="38" id="1It-dC-6Pw"/>
+                                    <constraint firstAttribute="trailing" secondItem="dn5-iI-ufo" secondAttribute="trailing" id="SkR-Nc-gbn"/>
+                                    <constraint firstAttribute="bottom" secondItem="dn5-iI-ufo" secondAttribute="bottom" id="aYc-cm-Nnc"/>
+                                    <constraint firstItem="dn5-iI-ufo" firstAttribute="leading" secondItem="Je2-2J-8i0" secondAttribute="leading" id="nCV-Ga-CUv"/>
+                                    <constraint firstItem="dn5-iI-ufo" firstAttribute="top" secondItem="Je2-2J-8i0" secondAttribute="top" id="zaV-5d-nSZ"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o3o-PF-fHg" userLabel="Tabs Placeholder">
+                                <rect key="frame" x="0.0" y="605" width="375" height="62"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="62" id="yh0-lc-6uW"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="Wvk-qt-69Y" firstAttribute="leading" secondItem="T6V-qE-jcI" secondAttribute="leading" id="8A0-Cj-fbh"/>
                             <constraint firstItem="q1C-FG-j4G" firstAttribute="top" secondItem="lXY-jj-aRc" secondAttribute="top" constant="11" id="A2v-4j-Tsu"/>
-                            <constraint firstItem="9Tu-4s-lgq" firstAttribute="trailing" secondItem="q1C-FG-j4G" secondAttribute="trailing" id="C8x-xy-T1d"/>
+                            <constraint firstItem="T6V-qE-jcI" firstAttribute="bottom" secondItem="o3o-PF-fHg" secondAttribute="bottom" id="BLs-Km-Bom"/>
                             <constraint firstAttribute="trailing" secondItem="q1C-FG-j4G" secondAttribute="trailing" constant="9" id="DOb-sH-97U"/>
-                            <constraint firstItem="9Tu-4s-lgq" firstAttribute="top" secondItem="q1C-FG-j4G" secondAttribute="bottom" constant="11" id="J0A-ET-i8m"/>
                             <constraint firstItem="n2Z-Eh-h8Q" firstAttribute="trailing" secondItem="lXY-jj-aRc" secondAttribute="trailing" id="Mzq-lY-3py"/>
                             <constraint firstItem="n2Z-Eh-h8Q" firstAttribute="top" secondItem="lXY-jj-aRc" secondAttribute="top" id="Uyy-kg-z6J"/>
-                            <constraint firstItem="Wvk-qt-69Y" firstAttribute="top" secondItem="9Tu-4s-lgq" secondAttribute="bottom" constant="18" id="aB5-qW-tbm"/>
+                            <constraint firstItem="T6V-qE-jcI" firstAttribute="trailing" secondItem="o3o-PF-fHg" secondAttribute="trailing" id="WFz-AM-Hn5"/>
+                            <constraint firstItem="o3o-PF-fHg" firstAttribute="leading" secondItem="T6V-qE-jcI" secondAttribute="leading" id="cwa-iY-MSo"/>
+                            <constraint firstItem="Wvk-qt-69Y" firstAttribute="top" secondItem="Je2-2J-8i0" secondAttribute="bottom" constant="18" id="dC7-nO-WNJ"/>
+                            <constraint firstItem="Je2-2J-8i0" firstAttribute="top" secondItem="bGT-N6-Bxe" secondAttribute="bottom" constant="11" id="eZu-by-soL"/>
                             <constraint firstAttribute="bottom" secondItem="n2Z-Eh-h8Q" secondAttribute="bottom" id="gIF-zO-D1u"/>
                             <constraint firstItem="Wvk-qt-69Y" firstAttribute="trailing" secondItem="T6V-qE-jcI" secondAttribute="trailing" id="hDe-yz-ayE"/>
+                            <constraint firstItem="Je2-2J-8i0" firstAttribute="leading" secondItem="bGT-N6-Bxe" secondAttribute="leading" id="kK1-cF-6Dp"/>
                             <constraint firstItem="q1C-FG-j4G" firstAttribute="leading" secondItem="lXY-jj-aRc" secondAttribute="leading" constant="9" id="ncV-N0-5sC"/>
+                            <constraint firstItem="Je2-2J-8i0" firstAttribute="trailing" secondItem="bGT-N6-Bxe" secondAttribute="trailing" id="oFW-Dy-MPy"/>
                             <constraint firstItem="T6V-qE-jcI" firstAttribute="bottom" secondItem="Wvk-qt-69Y" secondAttribute="bottom" id="ugZ-yN-tfl"/>
                             <constraint firstItem="n2Z-Eh-h8Q" firstAttribute="leading" secondItem="lXY-jj-aRc" secondAttribute="leading" id="yJo-1i-dxt"/>
-                            <constraint firstItem="9Tu-4s-lgq" firstAttribute="leading" secondItem="q1C-FG-j4G" secondAttribute="leading" id="zTw-KH-RTh"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="T6V-qE-jcI"/>
                     </view>
@@ -1577,6 +1613,11 @@ and start mining</string>
                         <outlet property="amountInUsdLabel" destination="3gm-2C-NhZ" id="898-Og-bcY"/>
                         <outlet property="balanceAmountLabel" destination="efR-NA-KRe" id="Yaf-fW-ghH"/>
                         <outlet property="balanceTitleLabel" destination="AN5-Ly-iCE" id="3HV-lN-ThI"/>
+                        <outlet property="bottomTabsPlaceholder" destination="o3o-PF-fHg" id="wLv-xC-HIn"/>
+                        <outlet property="buyTabsView" destination="Je2-2J-8i0" id="f3k-Xu-pD8"/>
+                        <outlet property="byCardButton" destination="oy9-BB-sG5" id="Ps4-Ib-IRt"/>
+                        <outlet property="exchangesButton" destination="K78-gs-d7j" id="pDK-t6-W31"/>
+                        <outlet property="swapButton" destination="qsm-Qr-GNw" id="12t-3Z-vT5"/>
                         <outlet property="usdRateLabel" destination="Gh4-4q-kFH" id="S1I-gL-HkO"/>
                     </connections>
                 </viewController>

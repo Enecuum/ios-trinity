@@ -45,7 +45,7 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <view contentMode="scaleToFill" verticalHuggingPriority="200" verticalCompressionResistancePriority="1" translatesAutoresizingMaskIntoConstraints="NO" id="Fxv-Hh-hVG">
-                            <rect key="frame" x="0.0" y="126.5" width="312" height="263.5"/>
+                            <rect key="frame" x="0.0" y="126.5" width="312" height="247.5"/>
                             <subviews>
                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="250" image="Transfer/qrBorder" translatesAutoresizingMaskIntoConstraints="NO" id="rEe-Vm-nBW">
                                     <rect key="frame" x="77.5" y="45.5" width="157" height="157"/>
@@ -77,6 +77,9 @@
                             </constraints>
                             <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="13"/>
                             <state key="normal" title="  Share QR code" image="Icons/share"/>
+                            <connections>
+                                <action selector="onShareQrClicked:" destination="-1" eventType="touchUpInside" id="iJB-qb-eln"/>
+                            </connections>
                         </button>
                     </subviews>
                     <color key="backgroundColor" red="0.16862745098039217" green="0.18823529411764706" blue="0.23921568627450979" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>

@@ -142,6 +142,7 @@ extension HomeViewController: QrSideViewDelegate {
                     self.qrSideView.unfold()
                     let referralView = ReferralView(frame: self.view.bounds)
                     referralView.tag = Constants.referralViewTag
+                    referralView.delegate = self
                     self.view.insertSubview(referralView, belowSubview: self.qrSideView)
                 } else {
                     self.showMinimumStakeDialog(stake)
@@ -165,4 +166,12 @@ extension HomeViewController: AlertViewControllerDelegate {
     }
 
     func onCancelClicked() {}
+}
+
+extension HomeViewController: ReferralViewDelegate {
+    func shareQrCode(image: UIImage) {
+        let activityViewController = UIActivityViewController(activityItems: [image], applicationActivities: nil)
+        activityViewController.popoverPresentationController?.sourceView = view
+        present(activityViewController, animated: true, completion: nil)
+    }
 }

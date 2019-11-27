@@ -14,7 +14,7 @@ class StatisticsViewController: UIViewController {
     @IBOutlet weak var totalNodesLabel: UILabel!
     @IBOutlet weak var totalNodesCounterLabel: UILabel!
     @IBOutlet weak var openInBrowserLabel: UILabel!
-    
+
     @IBOutlet weak var mapContainer: UIView!
 
     @IBOutlet weak var poaNodesLabel: UILabel!
@@ -84,7 +84,7 @@ class StatisticsViewController: UIViewController {
                 return 0.8
             }
             return 0.9
-        } ()
+        }()
         let mapWidth = view.frame.width * coef
         let newConstraint = cardViewConstraint.constraintWithMultiplier(coef)
         view.removeConstraint(cardViewConstraint)
@@ -165,9 +165,7 @@ class StatisticsViewController: UIViewController {
     // MARK: - IBOutlets
 
     @IBAction func onOpenBrowserMapClicked(_ sender: Any) {
-        if let url = URL(string: "https://neuro.enecuum.com") {
-            UIApplication.shared.open(url)
-        }
+        Browser.openUrl("https://neuro.enecuum.com")
     }
 }
 

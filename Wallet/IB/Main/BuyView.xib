@@ -24,7 +24,7 @@
             <rect key="frame" x="0.0" y="0.0" width="310" height="391"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="200" verticalCompressionResistancePriority="999" text="Title" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8c6-Y9-NLM">
+                <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="200" verticalCompressionResistancePriority="999" text="Title" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8c6-Y9-NLM" customClass="NantesLabel" customModule="Nantes">
                     <rect key="frame" x="16" y="56" width="278" height="19"/>
                     <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="16"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -34,10 +34,10 @@
                     <rect key="frame" x="39" y="75" width="232.5" height="316"/>
                     <subviews>
                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo/suex" translatesAutoresizingMaskIntoConstraints="NO" id="1YP-oQ-eNm">
-                            <rect key="frame" x="-84" y="95.5" width="400" height="93"/>
+                            <rect key="frame" x="0.0" y="103" width="232.5" height="46.5"/>
                         </imageView>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IXN-Xe-9a5">
-                            <rect key="frame" x="86" y="208.5" width="60" height="30"/>
+                            <rect key="frame" x="86" y="169.5" width="60" height="30"/>
                             <constraints>
                                 <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="10C-Sd-25U"/>
                                 <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="lRm-gs-Y3d"/>
@@ -50,9 +50,10 @@
                     </subviews>
                     <constraints>
                         <constraint firstItem="IXN-Xe-9a5" firstAttribute="top" secondItem="1YP-oQ-eNm" secondAttribute="bottom" constant="20" id="BMu-tG-KF5"/>
-                        <constraint firstItem="1YP-oQ-eNm" firstAttribute="centerY" secondItem="Nn9-OQ-1Uj" secondAttribute="centerY" multiplier="0.9" id="gfm-g5-nah"/>
+                        <constraint firstItem="1YP-oQ-eNm" firstAttribute="leading" secondItem="Nn9-OQ-1Uj" secondAttribute="leading" id="PYt-ok-418"/>
+                        <constraint firstAttribute="trailing" secondItem="1YP-oQ-eNm" secondAttribute="trailing" id="QXR-Eb-OGn"/>
+                        <constraint firstItem="1YP-oQ-eNm" firstAttribute="centerY" secondItem="Nn9-OQ-1Uj" secondAttribute="centerY" multiplier="0.8" id="gfm-g5-nah"/>
                         <constraint firstItem="IXN-Xe-9a5" firstAttribute="centerX" secondItem="Nn9-OQ-1Uj" secondAttribute="centerX" id="lYQ-cm-yor"/>
-                        <constraint firstItem="1YP-oQ-eNm" firstAttribute="centerX" secondItem="Nn9-OQ-1Uj" secondAttribute="centerX" id="zl3-w9-AfD"/>
                     </constraints>
                 </view>
             </subviews>

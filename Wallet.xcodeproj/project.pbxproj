@@ -32,6 +32,7 @@
 		B8EA12967CF8667931778061 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA10B587A40452E6650A9E /* ApiClient.swift */; };
 		B8EA12B060DCB21BC9A6C0A3 /* ReferralView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8EA17B0B07DF7352C26E56E /* ReferralView.xib */; };
 		B8EA12DEEF2EA7D15AF5E282 /* Formatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA1BA9B0E7E6CCC2A0B48F /* Formatter.swift */; };
+		B8EA12F656C86618123F8453 /* Browser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA1DDDDB123884AA596B46 /* Browser.swift */; };
 		B8EA1317B525BCF40B6AFD4F /* LogicOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA1DA328856AF23407927E /* LogicOperation.swift */; };
 		B8EA133B869DF927EB4C0EF1 /* RoiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA1325A57EB9683E56373D /* RoiViewController.swift */; };
 		B8EA13432346DE50A9E8BD6E /* BuyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8EA18B8ADB5220B9DC0F324 /* BuyView.xib */; };
@@ -183,6 +184,7 @@
 		B8EA1DAB32B70779EF93B2DE /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		B8EA1DBE3695611D726A76D6 /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		B8EA1DD295EDE959F1ADEE1A /* UIDevice+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIDevice+Extension.swift"; sourceTree = "<group>"; };
+		B8EA1DDDDB123884AA596B46 /* Browser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Browser.swift; sourceTree = "<group>"; };
 		B8EA1DEA865063CF4BEDC5EA /* AuthMode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthMode.swift; sourceTree = "<group>"; };
 		B8EA1E69D0A92BCBA9D4AAEA /* AuthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 		B8EA1EB1C3D015CFEA7C2F33 /* UIButton+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
@@ -299,6 +301,7 @@
 				B8EA1BA9B0E7E6CCC2A0B48F /* Formatter.swift */,
 				B8EA15CEFF907025F3D2640B /* CurrencyFormat.swift */,
 				B8EA1DA328856AF23407927E /* LogicOperation.swift */,
+				B8EA1DDDDB123884AA596B46 /* Browser.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -727,6 +730,7 @@
 				B8EA1317B525BCF40B6AFD4F /* LogicOperation.swift in Sources */,
 				B8EA1EAAA958AF6C83F0AB37 /* ReferralView.swift in Sources */,
 				B8EA127769887361BBCE0E71 /* BuyView.swift in Sources */,
+				B8EA12F656C86618123F8453 /* Browser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -11,6 +11,10 @@
 "balance" = "Balance:";
 "buy_enq" = "Buy %@";
 
+/* buy coins */
+"buy_native_title_link" = "Buy Native %@ Coin";
+"buy_native_title" = " at our partner\'s website and start Mobile Masternode immediately. The KYC procedure is required to purchase cryptocurrency by banking cards.";
+
 /* send-receive */
 
 "send" = "Send";

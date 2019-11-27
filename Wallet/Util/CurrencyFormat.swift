@@ -36,4 +36,9 @@ class CurrencyFormat {
         let format = R.string.localizable.enq_address_to_send.localized()
         return String(format: format, Constants.currency)
     }
+
+    static func buyNativeCoinString() -> String {
+        let format = R.string.localizable.buy_native_title_link.localized()
+        return String(format: format, Constants.currency)
+    }
 }

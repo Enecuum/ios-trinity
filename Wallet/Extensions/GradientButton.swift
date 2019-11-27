@@ -7,11 +7,24 @@ import UIKit
 
 class GradientButton: UIButton {
 
+    var gradientIsVisible: Bool = true {
+        didSet {
+            gradientLayer?.isHidden = !gradientIsVisible
+        }
+    }
+
     override var bounds: CGRect {
         didSet {
             updateGradient()
         }
     }
+    override var frame: CGRect {
+        didSet {
+            updateGradient()
+        }
+    }
+
+    // MARK: - Private Properties
 
     private var gradientLayer: CAGradientLayer?
 
@@ -44,6 +57,8 @@ class GradientButton: UIButton {
             updateGradient()
         }
     }
+
+    // MARK: - Public Methods
 
     func updateGradient() {
         gradientLayer?.removeFromSuperlayer()

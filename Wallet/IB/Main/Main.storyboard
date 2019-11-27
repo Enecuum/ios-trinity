@@ -38,7 +38,7 @@
                                     <action selector="onMenuClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZdU-wY-zeN"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo/small" translatesAutoresizingMaskIntoConstraints="NO" id="M33-E1-9eP">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo/enq_small" translatesAutoresizingMaskIntoConstraints="NO" id="M33-E1-9eP">
                                 <rect key="frame" x="9" y="11" width="130" height="23"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="23" id="YgV-b5-ls7"/>
@@ -97,7 +97,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="47.826086956521742" y="24.456521739130437"/>
+            <point key="canvasLocation" x="194" y="18"/>
         </scene>
         <!--Transfer View Controller-->
         <scene sceneID="caZ-BI-ut7">
@@ -816,7 +816,7 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Back/main" translatesAutoresizingMaskIntoConstraints="NO" id="hSn-NG-yXo">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
-                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XBd-nD-amP">
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XBd-nD-amP" userLabel="Balance View">
                                 <rect key="frame" x="9" y="11" width="357" height="69"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Main/bar" translatesAutoresizingMaskIntoConstraints="NO" id="hEe-86-gds">
@@ -909,88 +909,23 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Giq-eJ-vpd">
-                                <rect key="frame" x="9" y="91" width="357" height="38"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CFT-1h-eaw" customClass="GradientButton" customModule="Enecuum_Wallet" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="111.5" height="38"/>
-                                        <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="13"/>
-                                        <state key="normal" title="Pay by card"/>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="firstColor">
-                                                <color key="value" red="0.33333333333333331" green="0.36078431372549019" blue="0.63921568627450975" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="secondColor">
-                                                <color key="value" red="0.33725490196078434" green="0.12941176470588234" blue="0.74509803921568629" alpha="1" colorSpace="calibratedRGB"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <real key="value" value="6"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="gradientCornerRadius">
-                                                <real key="value" value="6"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SGD-1q-BZU" customClass="GradientButton" customModule="Enecuum_Wallet" customModuleProvider="target">
-                                        <rect key="frame" x="119.5" y="0.0" width="165.5" height="38"/>
-                                        <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="13"/>
-                                        <state key="normal" title="Buy on exchange"/>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="firstColor">
-                                                <color key="value" red="0.33333333329999998" green="0.36078431370000003" blue="0.63921568630000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="secondColor">
-                                                <color key="value" red="0.33725490200000002" green="0.12941176469999999" blue="0.74509803919999995" alpha="1" colorSpace="calibratedRGB"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <real key="value" value="6"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="gradientCornerRadius">
-                                                <real key="value" value="6"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zPR-Id-u27" customClass="GradientButton" customModule="Enecuum_Wallet" customModuleProvider="target">
-                                        <rect key="frame" x="293" y="0.0" width="64" height="38"/>
-                                        <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="13"/>
-                                        <state key="normal" title="Swap"/>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="firstColor">
-                                                <color key="value" red="0.33333333329999998" green="0.36078431370000003" blue="0.63921568630000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="secondColor">
-                                                <color key="value" red="0.33725490200000002" green="0.12941176469999999" blue="0.74509803919999995" alpha="1" colorSpace="calibratedRGB"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <real key="value" value="6"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="gradientCornerRadius">
-                                                <real key="value" value="6"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                    </button>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="38" id="vD2-Ab-Tqq"/>
-                                </constraints>
-                            </stackView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J8x-9w-kp7" userLabel="Center Container">
-                                <rect key="frame" x="0.0" y="129" width="375" height="476"/>
+                                <rect key="frame" x="0.0" y="147" width="375" height="458"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Back/stars" translatesAutoresizingMaskIntoConstraints="NO" id="hH9-Kv-VLP">
-                                        <rect key="frame" x="67.5" y="118" width="240" height="240"/>
+                                        <rect key="frame" x="67.5" y="109" width="240" height="240"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="hH9-Kv-VLP" secondAttribute="height" multiplier="1:1" id="Tqk-5c-gMe"/>
                                         </constraints>
                                     </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Back/planets" translatesAutoresizingMaskIntoConstraints="NO" id="xyr-Q7-DzC">
-                                        <rect key="frame" x="75" y="154.5" width="225" height="167"/>
+                                        <rect key="frame" x="75" y="145.5" width="225" height="167"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="xyr-Q7-DzC" secondAttribute="height" multiplier="531:393" id="QWs-b8-nQG"/>
                                         </constraints>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7IO-kI-t6U">
-                                        <rect key="frame" x="97.5" y="148" width="180" height="180"/>
+                                        <rect key="frame" x="97.5" y="139" width="180" height="180"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="7IO-kI-t6U" secondAttribute="height" multiplier="1:1" id="cHe-lm-Ix0"/>
                                         </constraints>
@@ -998,7 +933,7 @@
                                         <state key="normal" title="Start mining" backgroundImage="Main/Button/off"/>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FOJ-9S-yur">
-                                        <rect key="frame" x="140.5" y="339" width="94.5" height="31"/>
+                                        <rect key="frame" x="140.5" y="330" width="94.5" height="31"/>
                                         <string key="text">Keep calm
 and start mining</string>
                                         <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="13"/>
@@ -1021,6 +956,94 @@ and start mining</string>
                                     <constraint firstItem="hH9-Kv-VLP" firstAttribute="centerX" secondItem="J8x-9w-kp7" secondAttribute="centerX" id="wN6-cZ-dzB"/>
                                 </constraints>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CVg-Va-Bag" userLabel="Buy Tabs View">
+                                <rect key="frame" x="9" y="91" width="357" height="38"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Giq-eJ-vpd">
+                                        <rect key="frame" x="0.0" y="0.0" width="357" height="38"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CFT-1h-eaw" customClass="GradientButton" customModule="Enecuum_Wallet" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="101" height="38"/>
+                                                <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="13"/>
+                                                <state key="normal" title="By card"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="firstColor">
+                                                        <color key="value" red="0.33333333333333331" green="0.36078431372549019" blue="0.63921568627450975" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="secondColor">
+                                                        <color key="value" red="0.33725490196078434" green="0.12941176470588234" blue="0.74509803921568629" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="6"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="gradientCornerRadius">
+                                                        <real key="value" value="6"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="byCardTabClicked:" destination="9mI-DF-94o" eventType="touchUpInside" id="E8y-c7-xMN"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SGD-1q-BZU" customClass="GradientButton" customModule="Enecuum_Wallet" customModuleProvider="target">
+                                                <rect key="frame" x="109" y="0.0" width="146" height="38"/>
+                                                <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="13"/>
+                                                <state key="normal" title="Exchanges"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="firstColor">
+                                                        <color key="value" red="0.33333333329999998" green="0.36078431370000003" blue="0.63921568630000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="secondColor">
+                                                        <color key="value" red="0.33725490200000002" green="0.12941176469999999" blue="0.74509803919999995" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="6"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="gradientCornerRadius">
+                                                        <real key="value" value="6"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="exchangesTabClicked:" destination="9mI-DF-94o" eventType="touchUpInside" id="2zL-r0-2XC"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zPR-Id-u27" customClass="GradientButton" customModule="Enecuum_Wallet" customModuleProvider="target">
+                                                <rect key="frame" x="263" y="0.0" width="94" height="38"/>
+                                                <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="13"/>
+                                                <state key="normal" title="Swap"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="firstColor">
+                                                        <color key="value" red="0.33333333329999998" green="0.36078431370000003" blue="0.63921568630000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="secondColor">
+                                                        <color key="value" red="0.33725490200000002" green="0.12941176469999999" blue="0.74509803919999995" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="6"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="gradientCornerRadius">
+                                                        <real key="value" value="6"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="swapTabClicked:" destination="9mI-DF-94o" eventType="touchUpInside" id="yoj-am-gNX"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="Giq-eJ-vpd" secondAttribute="bottom" id="NnM-1f-qa0"/>
+                                    <constraint firstItem="Giq-eJ-vpd" firstAttribute="leading" secondItem="CVg-Va-Bag" secondAttribute="leading" id="SeR-fK-Bqk"/>
+                                    <constraint firstAttribute="height" constant="38" id="rEO-zB-tnj"/>
+                                    <constraint firstItem="Giq-eJ-vpd" firstAttribute="top" secondItem="CVg-Va-Bag" secondAttribute="top" id="reK-fs-vdE"/>
+                                    <constraint firstAttribute="trailing" secondItem="Giq-eJ-vpd" secondAttribute="trailing" id="yZx-Fc-mP0"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1hT-fK-1wR" customClass="QRSideView" customModule="Enecuum_Wallet" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="137" width="107" height="46"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1042,22 +1065,22 @@ and start mining</string>
                             <constraint firstItem="4oL-4K-bDm" firstAttribute="bottom" secondItem="ir2-1t-th2" secondAttribute="bottom" id="4Ky-fW-XfM"/>
                             <constraint firstItem="J8x-9w-kp7" firstAttribute="trailing" secondItem="4oL-4K-bDm" secondAttribute="trailing" id="859-Of-kvj"/>
                             <constraint firstAttribute="trailing" secondItem="XBd-nD-amP" secondAttribute="trailing" constant="9" id="89E-gU-KTV"/>
-                            <constraint firstItem="Giq-eJ-vpd" firstAttribute="trailing" secondItem="XBd-nD-amP" secondAttribute="trailing" id="8CF-i6-T3D"/>
                             <constraint firstItem="1hT-fK-1wR" firstAttribute="leading" secondItem="4oL-4K-bDm" secondAttribute="leading" id="8LQ-VW-gl1"/>
-                            <constraint firstItem="Giq-eJ-vpd" firstAttribute="top" secondItem="XBd-nD-amP" secondAttribute="bottom" constant="11" id="BAB-yp-v4d"/>
-                            <constraint firstItem="J8x-9w-kp7" firstAttribute="top" secondItem="Giq-eJ-vpd" secondAttribute="bottom" id="BdI-rY-KzQ"/>
+                            <constraint firstItem="CVg-Va-Bag" firstAttribute="top" secondItem="XBd-nD-amP" secondAttribute="bottom" constant="11" id="DUT-mK-4qG"/>
                             <constraint firstItem="hSn-NG-yXo" firstAttribute="leading" secondItem="Usu-W2-Z41" secondAttribute="leading" id="Jr0-sV-dvA"/>
                             <constraint firstItem="ir2-1t-th2" firstAttribute="leading" secondItem="4oL-4K-bDm" secondAttribute="leading" id="Mlp-jv-6fV"/>
-                            <constraint firstItem="1hT-fK-1wR" firstAttribute="top" secondItem="Giq-eJ-vpd" secondAttribute="bottom" constant="8" id="R12-YE-Te2"/>
                             <constraint firstItem="XBd-nD-amP" firstAttribute="leading" secondItem="Usu-W2-Z41" secondAttribute="leading" constant="9" id="Vld-nl-QAJ"/>
                             <constraint firstItem="hSn-NG-yXo" firstAttribute="trailing" secondItem="Usu-W2-Z41" secondAttribute="trailing" id="WZa-3g-fxm"/>
+                            <constraint firstItem="CVg-Va-Bag" firstAttribute="leading" secondItem="XBd-nD-amP" secondAttribute="leading" id="Z4F-iA-Au4"/>
+                            <constraint firstItem="CVg-Va-Bag" firstAttribute="trailing" secondItem="XBd-nD-amP" secondAttribute="trailing" id="ZEO-p8-oDQ"/>
                             <constraint firstItem="hSn-NG-yXo" firstAttribute="top" secondItem="Usu-W2-Z41" secondAttribute="top" id="a0d-LV-CRr"/>
                             <constraint firstItem="XBd-nD-amP" firstAttribute="top" secondItem="Usu-W2-Z41" secondAttribute="top" constant="11" id="cB2-cg-tys"/>
+                            <constraint firstItem="J8x-9w-kp7" firstAttribute="top" secondItem="CVg-Va-Bag" secondAttribute="bottom" constant="18" id="fXv-Td-tAV"/>
                             <constraint firstItem="ir2-1t-th2" firstAttribute="top" secondItem="J8x-9w-kp7" secondAttribute="bottom" id="iRd-P3-Tar"/>
                             <constraint firstAttribute="trailing" secondItem="ir2-1t-th2" secondAttribute="trailing" id="mPp-st-u3w"/>
                             <constraint firstItem="J8x-9w-kp7" firstAttribute="leading" secondItem="4oL-4K-bDm" secondAttribute="leading" id="mq9-Cf-Wpg"/>
-                            <constraint firstItem="Giq-eJ-vpd" firstAttribute="leading" secondItem="XBd-nD-amP" secondAttribute="leading" id="sgc-YB-8x6"/>
                             <constraint firstAttribute="bottom" secondItem="hSn-NG-yXo" secondAttribute="bottom" id="vQH-Zb-y18"/>
+                            <constraint firstItem="1hT-fK-1wR" firstAttribute="top" secondItem="CVg-Va-Bag" secondAttribute="bottom" constant="8" id="zja-Wa-YZi"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="4oL-4K-bDm"/>
                     </view>
@@ -1066,7 +1089,12 @@ and start mining</string>
                         <outlet property="amountInUsdLabel" destination="tnX-rL-yoY" id="cyN-NI-a7l"/>
                         <outlet property="balanceAmountLabel" destination="Cy5-4C-vRc" id="WbI-a0-1L0"/>
                         <outlet property="balanceTitleLabel" destination="LAa-tX-Qv0" id="8V4-ie-QiH"/>
+                        <outlet property="bottomTabsPlaceholder" destination="ir2-1t-th2" id="VzQ-B9-ief"/>
+                        <outlet property="buyTabsView" destination="CVg-Va-Bag" id="iNI-iG-gCv"/>
+                        <outlet property="byCardButton" destination="CFT-1h-eaw" id="Bd9-fD-Sw2"/>
+                        <outlet property="exchangesButton" destination="SGD-1q-BZU" id="ahk-ef-HUK"/>
                         <outlet property="qrSideView" destination="1hT-fK-1wR" id="VWo-ei-bYY"/>
+                        <outlet property="swapButton" destination="zPR-Id-u27" id="yL9-W3-PpW"/>
                         <outlet property="usdRateLabel" destination="zZO-4W-WzO" id="5hw-Ml-dtY"/>
                     </connections>
                 </viewController>
@@ -1085,7 +1113,7 @@ and start mining</string>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Back/main" translatesAutoresizingMaskIntoConstraints="NO" id="n2Z-Eh-h8Q">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
-                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q1C-FG-j4G">
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q1C-FG-j4G" userLabel="Balance View">
                                 <rect key="frame" x="9" y="11" width="357" height="69"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Main/bar" translatesAutoresizingMaskIntoConstraints="NO" id="bGT-N6-Bxe">
@@ -1563,7 +1591,7 @@ and start mining</string>
         <image name="Back/stars" width="205" height="180"/>
         <image name="Icons/menu" width="25" height="18"/>
         <image name="Icons/money" width="15" height="15"/>
-        <image name="Logo/small" width="130" height="23"/>
+        <image name="Logo/enq_small" width="130" height="23"/>
         <image name="Main/Button/off" width="139" height="139"/>
         <image name="Main/bar" width="302" height="69"/>
         <image name="Main/navbar" width="320" height="42"/>

@@ -15,7 +15,13 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var usdRateLabel: UILabel!
     @IBOutlet weak var amountInUsdLabel: UILabel!
 
+    @IBOutlet weak var buyTabsView: UIView!
+    @IBOutlet weak var byCardButton: GradientButton!
+    @IBOutlet weak var exchangesButton: GradientButton!
+    @IBOutlet weak var swapButton: GradientButton!
+
     @IBOutlet weak var qrSideView: QRSideView!
+    @IBOutlet weak var bottomTabsPlaceholder: UIView!
 
     struct Constants {
         static let balanceFromApiMultiplier: NSDecimalNumber = NSDecimalNumber(mantissa: 1,
@@ -24,7 +30,8 @@ class HomeViewController: UIViewController {
         static let balanceToApiMultiplier: NSDecimalNumber = NSDecimalNumber(mantissa: 1,
                                                                              exponent: 10,
                                                                              isNegative: false)
-        static let referralViewTag: Int = 1991
+        static let referralViewTag: Int = 1990
+        static let buyViewTag: Int = 1991
     }
 
     override func viewDidLoad() {
@@ -78,6 +85,32 @@ class HomeViewController: UIViewController {
         present(alertViewController, animated: false)
     }
 
+    private func showBuyView(tab: Int) {
+        qrSideView.isHidden = true
+        if let buyView = view.viewWithTag(Constants.buyViewTag) {
+            buyView.removeFromSuperview()
+        }
+        let rect = CGRect(x: buyTabsView.frame.origin.x,
+                          y: buyTabsView.frame.origin.y,
+                          width: buyTabsView.frame.width,
+                          height: bottomTabsPlaceholder.frame.origin.y - buyTabsView.frame.origin.y - BuyView.Constants.bottomPadding)
+        let buyView = BuyView(frame: rect)
+        buyView.tag = Constants.buyViewTag
+        //buyView.delegate = self
+        self.view.insertSubview(buyView, belowSubview: buyTabsView)
+    }
+
+    private func hideBuyView() {
+        qrSideView.isHidden = false
+        buyTabsView.backgroundColor = .clear
+        byCardButton.gradientIsVisible = true
+        exchangesButton.gradientIsVisible = true
+        swapButton.gradientIsVisible = true
+        if let buyView = view.viewWithTag(Constants.buyViewTag) {
+            buyView.removeFromSuperview()
+        }
+    }
+
     // MARK: - Public methods
 
     func resetBalance() {
@@ -126,6 +159,28 @@ class HomeViewController: UIViewController {
                 completion(nil)
             }
         }
+    }
+
+    // MARK: - IB Actions
+
+    @IBAction func byCardTabClicked(_ sender: Any) {
+        buyTabsView.backgroundColor = Palette.buyTabsBackground
+        byCardButton.gradientIsVisible = true
+        exchangesButton.gradientIsVisible = false
+        swapButton.gradientIsVisible = false
+        showBuyView(tab: 0)
+    }
+
+    @IBAction func exchangesTabClicked(_ sender: Any) {
+        buyTabsView.backgroundColor = Palette.buyTabsBackground
+        byCardButton.gradientIsVisible = false
+        exchangesButton.gradientIsVisible = true
+        swapButton.gradientIsVisible = false
+        showBuyView(tab: 1)
+    }
+
+    @IBAction func swapTabClicked(_ sender: Any) {
+        hideBuyView()
     }
 }
 

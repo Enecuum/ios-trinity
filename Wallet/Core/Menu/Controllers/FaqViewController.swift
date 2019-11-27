@@ -44,9 +44,9 @@ class FaqViewController: UIViewController {
         faqTextView.attributedText = attributedString
 
         let linkAttributes: [NSAttributedString.Key: Any] = [
-            NSAttributedString.Key.foregroundColor: Palette.linkColor,
-            NSAttributedString.Key.underlineColor: Palette.linkColor,
-            NSAttributedString.Key.underlineStyle: NSUnderlineStyle.single.rawValue
+            .foregroundColor: Palette.linkColor,
+            .underlineColor: Palette.linkColor,
+            .underlineStyle: NSUnderlineStyle.single.rawValue
         ]
         faqTextView.linkTextAttributes = linkAttributes
 

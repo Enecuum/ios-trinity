@@ -8,6 +8,25 @@ import UIKit
 //TODO: make extension
 class GradientView: UIView {
 
+    var gradientIsVisible: Bool = true {
+        didSet {
+            gradientLayer?.isHidden = !gradientIsVisible
+        }
+    }
+
+    override var bounds: CGRect {
+        didSet {
+            updateGradient()
+        }
+    }
+    override var frame: CGRect {
+        didSet {
+            updateGradient()
+        }
+    }
+
+    // MARK: - Private Properties
+
     private var gradientLayer: CAGradientLayer?
 
     @IBInspectable private var firstColor: UIColor = UIColor.clear {
@@ -39,6 +58,8 @@ class GradientView: UIView {
             updateGradient()
         }
     }
+
+    // MARK: - Public Methods
 
     func updateGradient() {
         gradientLayer?.removeFromSuperlayer()

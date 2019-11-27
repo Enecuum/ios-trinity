@@ -6,10 +6,16 @@
 import UIKit
 import EFQRCode
 
+protocol ReferralViewDelegate {
+    func shareQrCode(image: UIImage)
+}
+
 class ReferralView: UIView, NibView {
 
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var qrImageView: UIImageView!
+
+    var delegate: ReferralViewDelegate?
 
     struct Constants {
         static let staticKey: String = "750D7F2B34CA3DF1D6B7878DEBC8CF9A56BCB51A58435B5BCFB7E82EE09FA8BE75"
@@ -53,6 +59,12 @@ class ReferralView: UIView, NibView {
             qrImageView.image = UIImage(cgImage: qrImage)
         } else {
             print("Create QRCode image failed!")
+        }
+    }
+
+    @IBAction func onShareQrClicked(_ sender: Any) {
+        if let image = qrImageView.image {
+            delegate?.shareQrCode(image: image)
         }
     }
 }

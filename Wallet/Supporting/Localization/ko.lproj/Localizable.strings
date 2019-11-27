@@ -11,6 +11,12 @@
 "balance" = "잔고:";
 "buy_enq" = "%@ 구매";
 
+/* buy coins */
+
+"pay_by_card" = "카드로 결제하기";
+"buy_on_exchange" = "거래소에서 구매";
+"swap" = "스왑";
+
 /* send-receive */
 
 "send" = "전송";
@@ -18,7 +24,7 @@
 "to" = "받는 사람";
 "amount" = "금액";
 "max" = "최대";
-"enq_address_to_send" = "전송할 ENQ 주소";
+"enq_address_to_send" = "전송할 %@ 주소";
 "reject" = "거부";
 "confirm" = "확인";
 "share_qr" = "QR 코드 공유";
@@ -69,7 +75,7 @@
 
 /* wallet creation */
 
-"welcome_to_enq" = "ENQ 네트워크에 오신 것을 환영합니다";
+"welcome_to_enq" = "%@ 네트워크에 오신 것을 환영합니다";
 "create_new_wallet" = "새 지갑 생성";
 "start_using_wallet" = "지갑 시작하기";
 "your_address" = "내 주소";
@@ -134,7 +140,6 @@
 "application_restart" = "Application will be closed. Settings will be applied after restart";
 "execute" = "Execute";
 "cancel" = "취소";
-"swap" = "스왑";
 "send_confirmation" = "전송 확인";
 
 "balance_enq" = "잔고: %s ENQ";
@@ -171,8 +176,6 @@
 "roi_annual" = "연간";
 "min_stake_dialog_title" = "최소 스테이크는 %s ENQ 입니다";
 "min_stake_dialog_message" = "채굴을 시작하려면 최소 %s ENQ 이상을 적립해야 합니다. 거래소에서 ENQ ERC-20 토큰을 구매하고 https://wallet.enecuum.com\">wallet.enecuum.com</a>을 통해 테스트넷으로 스왑할 수 있습니다.";
-"pay_by_card" = "카드로 결제하기";
-"buy_on_exchange" = "거래소에서 구매";
 "roi_alert" = "최근 24시간 내 수익률 계산기";
 "stake" = "Stake";
 "roi" = "ROI";

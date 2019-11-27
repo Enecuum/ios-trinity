@@ -11,14 +11,20 @@
 "balance" = "Saldo:";
 "buy_enq" = "Comprar %@";
 
+/* buy coins */
+
+"pay_by_card" = "Pagar con tarjeta";
+"buy_on_exchange" = "Comprar en exchange";
+"swap" = "Intercambiar";
+
 /* send-receive */
 
 "send" = "Enviar";
 "receive" = "Recibir";
 "to" = "A";
 "amount" = "Cantidad";
-"max" = "MÁX.";
-"enq_address_to_send" = "Dirección ENQ para enviar";
+"max" = "Máx.";
+"enq_address_to_send" = "Dirección %@ para enviar";
 "reject" = "Rechazar";
 "confirm" = "Confirmar";
 "share_qr" = "Compartir código QR";
@@ -69,7 +75,7 @@
 
 /* wallet creation */
 
-"welcome_to_enq" = "Bienvenido a la red ENQ";
+"welcome_to_enq" = "Bienvenido a la red %@";
 "create_new_wallet" = "Crear nueva cartera";
 "your_address" = "Tu dirección";
 "your_private_key" = "Tu clave privada";
@@ -132,7 +138,6 @@
 "application_restart" = "Application will be closed. Settings will be applied after restart";
 "execute" = "Execute";
 "cancel" = "Cancelar";
-"swap" = "INTERCAMBIAR";
 "send_confirmation" = "Enviar confirmación";
 "balance_enq" = "Saldo: %s ENQ";
 "wrong_format" = "Valor incorrecto";
@@ -168,8 +173,6 @@
 "roi_annual" = "Anual";
 "min_stake_dialog_title" = "La apuesta mínima es %s ENQ";
 "min_stake_dialog_message" = "Se requiere un depósito de al menos %s ENQ para comenzar a minar. Puedes comprar tokens ENQ ERC-20 en exchanges e intercambiarlos en la red de prueba a través de https://wallet.enecuum.com\">wallet.enecuum.com</a>";
-"pay_by_card" = "Pagar con tarjeta";
-"buy_on_exchange" = "Comprar en exchange";
 "roi_alert" = "Calculadora de tasa de retorno las últimas 24 horas";
 "stake" = "Stake";
 "roi" = "ROI";

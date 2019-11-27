@@ -61,4 +61,9 @@ class CurrencyFormat {
     static func coinToRubString() -> String {
         R.string.untranslatable.coin_to_rub(Constants.currency)
     }
+
+    static func welcomeCurrencyString() -> String {
+        let format = R.string.localizable.welcome_to_enq.localized()
+        return String(format: format, Constants.currency)
+    }
 }

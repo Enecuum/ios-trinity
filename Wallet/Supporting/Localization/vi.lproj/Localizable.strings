@@ -11,14 +11,20 @@
 "balance" = "Số dư:";
 "buy_enq" = "Mua %@";
 
+/* buy coins */
+
+"pay_by_card" = "Thanh toán bằng thẻ";
+"buy_on_exchange" = "Mua trao đổi";
+"swap" = "Trao đổi";
+
 /* send-receive */
 
 "send" = "Gửi";
 "receive" = "Nhận";
 "to" = "ĐẾN";
 "amount" = "Số tiền";
-"max" = "TỐI ĐA";
-"enq_address_to_send" = "Địa chỉ ENQ để gửi";
+"max" = "Tối đa";
+"enq_address_to_send" = "Địa chỉ %@ để gửi";
 "reject" = "Từ chối";
 "confirm" = "Xác nhận";
 "share_qr" = "Chia sẻ mã QR";
@@ -69,7 +75,7 @@
 
 /* wallet creation */
 
-"welcome_to_enq" = "Chào mừng đến với mạng ENQ";
+"welcome_to_enq" = "Chào mừng đến với mạng %@";
 "create_new_wallet" = "Tạo Ví mới";
 "your_address" = "Địa chỉ của bạn";
 "your_private_key" = "Khóa riêng tư của bạn";
@@ -132,7 +138,6 @@
 "application_restart" = "Application will be closed. Settings will be applied after restart";
 "execute" = "Execute";
 "cancel" = "Hủy bỏ";
-"swap" = "TRAO ĐỔI";
 "send_confirmation" = "Gửi xác nhận";
 
 "balance_enq" = "Số dư: %s ENQ";
@@ -169,8 +174,6 @@
 "roi_annual" = "Hàng năm";
 "min_stake_dialog_title" = "Tiền cược tối thiểu là %s ENQ";
 "min_stake_dialog_message" = "Bắt buộc phải ký gửi ít nhất %s ENQ để bắt đầu khai thác. Bạn có thể mua mã thông báo ENQ ERC-20 khi trao đổi và hoán đổi vào testnet thông qua https://wallet.enecuum.com\"> wallet.enecuum.com </a>";
-"pay_by_card" = "Thanh toán bằng thẻ";
-"buy_on_exchange" = "Mua trao đổi";
 "roi_alert" = "Tính tỷ lệ hoàn trả trong 24 giờ qua";
 "stake" = "Stake";
 "roi" = "ROI";

@@ -11,14 +11,20 @@
 "balance" = "Bakiye:";
 "buy_enq" = "%@ satın al";
 
+/* buy coins */
+
+"pay_by_card" = "Kartla öde";
+"buy_on_exchange" = "Borsada al";
+"swap" = "Deği̇şti̇r";
+
 /* send-receive */
 
 "send" = "Gönder";
 "receive" = "Al";
-"to" = "KİME";
+"to" = "Ki̇me";
 "amount" = "Miktar";
-"max" = "MAKS";
-"enq_address_to_send" = "Gönderilecek ENQ adresi";
+"max" = "Maks";
+"enq_address_to_send" = "Gönderilecek %@ adresi";
 "reject" = "Reddet";
 "confirm" = "Onayla";
 "share_qr" = "QR Kodunu Paylaş";
@@ -70,7 +76,7 @@
 /* wallet creation */
 
 "create_new_wallet" = "Yeni Cüzdan Oluştur";
-"welcome_to_enq" = "ENQ ağına hoş geldiniz";
+"welcome_to_enq" = "%@ ağına hoş geldiniz";
 "start_using_wallet" = "Cüzdanı Kullanmaya Başlayın";
 "your_address" = "Adresiniz";
 "your_private_key" = "Özel Anahtarınız";
@@ -133,7 +139,6 @@
 "application_restart" = "Application will be closed. Settings will be applied after restart";
 "execute" = "Execute";
 "cancel" = "İptal et";
-"swap" = "DEĞİŞTİR";
 "send_confirmation" = "Onay Gönder";
 
 "balance_enq" = "Bakiye: %s ENQ";
@@ -170,8 +175,6 @@
 "roi_annual" = "Yıllık";
 "min_stake_dialog_title" = "Minimum hisse %s ENQ";
 "min_stake_dialog_message" = "Madenciliği başlatmak için en az %s ENQ depozito gerekir. Borsada ENQ ERC-20 token satın alabilir ve test ağına https://wallet.enecuum.com\"> wallet.enecuum.com </a> ile geçebilirsiniz.";
-"pay_by_card" = "Kartla öde";
-"buy_on_exchange" = "Borsada al";
 "roi_alert" = "Son 24 saat iade oranı hesaplayıcısı";
 "stake" = "Stake";
 "roi" = "ROI";

@@ -11,6 +11,12 @@
 "balance" = "الرصيد:";
 "buy_enq" = "شراء %@";
 
+/* buy coins */
+
+"pay_by_card" = "الدفع عن طريق البطاقة";
+"buy_on_exchange" = "الشراء عند التبادل";
+"swap" = "مبادلة";
+
 /* send-receive */
 
 "send" = "إرسال";
@@ -18,7 +24,7 @@
 "to" = "إلى";
 "amount" = "المبلغ";
 "max" = "الحد الأقصى";
-"enq_address_to_send" = "عنوان ENQ للإرسال";
+"enq_address_to_send" = "عنوان %@ للإرسال";
 "reject" = "رفض";
 "confirm" = "تأكيد";
 "share_qr" = "شارك رمز الاستجابة السريعة";
@@ -69,7 +75,7 @@
 
 /* wallet creation */
 
-"welcome_to_enq" = "مرحبًا بكم في شبكة ENQ";
+"welcome_to_enq" = "مرحبًا بكم في شبكة %@";
 "create_new_wallet" = "إنشاء محفظة جديدة";
 "your_address" = "عنوانك";
 "your_private_key" = "مفتاحك الخاص";
@@ -132,7 +138,6 @@
 "application_restart" = "Application will be closed. Settings will be applied after restart";
 "execute" = "Execute";
 "cancel" = "إلغاء";
-"swap" = "مبادلة";
 "send_confirmation" = "إرسال تأكيد";
 
 "balance_enq" = "الرصيد: %s ENQ";
@@ -169,8 +174,6 @@
 "roi_annual" = "سنويًا";
 "min_stake_dialog_title" = "الحصة الدنيا هي %s ENQ";
 "min_stake_dialog_message" = "يلزم إيداع ما لا يقل عن %s ENQ لبدء التعدين. يمكنك شراء الرمز ENQ ERC-20 من البورصات والمبادلة في اختبار الشبكة عبر https://wallet.enecuum.com\"> wallet.enecuum.com";
-"pay_by_card" = "الدفع عن طريق البطاقة";
-"buy_on_exchange" = "الشراء عند التبادل";
 "roi_alert" = "حاسبة معدل العائد آخر 24 ساعة";
 "stake" = "Stake";
 "roi" = "ROI";

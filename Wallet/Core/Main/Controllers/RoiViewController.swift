@@ -46,6 +46,16 @@ class RoiViewController: UIViewController {
             self.updateUsdRate(usdRate)
         }
 
+        byCardButton.setTitle(R.string.localizable.pay_by_card.localized(), for: .normal)
+        byCardButton.titleLabel?.numberOfLines = 0
+        byCardButton.titleLabel?.textAlignment = .center
+        exchangesButton.setTitle(R.string.localizable.buy_on_exchange.localized(), for: .normal)
+        exchangesButton.titleLabel?.numberOfLines = 0
+        exchangesButton.titleLabel?.textAlignment = .center
+        swapButton.setTitle(R.string.localizable.swap.localized(), for: .normal)
+        swapButton.titleLabel?.numberOfLines = 0
+        swapButton.titleLabel?.textAlignment = .center
+
         updateForBuyTabState()
     }
 

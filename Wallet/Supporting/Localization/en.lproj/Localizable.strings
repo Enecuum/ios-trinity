@@ -12,6 +12,9 @@
 "buy_enq" = "Buy %@";
 
 /* buy coins */
+"pay_by_card" = "Pay by card";
+"buy_on_exchange" = "Buy on exchange";
+"swap" = "Swap";
 "buy_native_title_link" = "Buy Native %@ Coin";
 "buy_native_title" = " at our partner\'s website and start Mobile Masternode immediately. The KYC procedure is required to purchase cryptocurrency by banking cards.";
 "buy_erc_20_title" = "Buy ERC-20 Token at the following Exchanges and Swap to Mobile Maternode in order to start mining. Ethereum wallet and currency are required to swap ERC-20 tokens into native coins.";
@@ -21,10 +24,10 @@
 
 "send" = "Send";
 "receive" = "Receive";
-"to" = "TO";
+"to" = "To";
 "amount" = "Amount";
-"max" = "MAX";
-"enq_address_to_send" = "ENQ address to send";
+"max" = "Max";
+"enq_address_to_send" = "%@ address to send";
 "reject" = "Reject";
 "confirm" = "Confirm";
 "share_qr" = "Share QR Code";
@@ -75,7 +78,7 @@
 
 /* wallet creation */
 
-"welcome_to_enq" = "Welcome\nto ENQ network";
+"welcome_to_enq" = "Welcome\nto %@ network";
 "create_new_wallet" = "Create new wallet";
 "your_address" = "Your address";
 "your_private_key" = "Your private key";
@@ -130,7 +133,6 @@
 "application_restart" = "Application will be closed. Settings will be applied after restart";
 "execute" = "Execute";
 "cancel" = "Cancel";
-"swap" = "SWAP";
 "send_confirmation" = "Send Confirmation";
 "coming_soon" = "Coming soon";
 "back" = "Back";
@@ -155,8 +157,6 @@
 "roi_annual" = "Yearly";
 "min_stake_dialog_title" = "Minimum stake is %s ENQ";
 "min_stake_dialog_message" = "A deposit of at least %s ENQ is required to start mining. You can purchase ENQ ERC-20 token on exchanges and swap into the testnet via https://wallet.enecuum.com\">wallet.enecuum.com";
-"pay_by_card" = "Pay by card";
-"buy_on_exchange" = "Buy on exchange";
 "roi_alert" = "Return rate calculator last 24 hours";
 "stake" = "Stake";
 "roi" = "ROI";

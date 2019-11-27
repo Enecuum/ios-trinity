@@ -11,6 +11,12 @@
 "balance" = "残高：";
 "buy_enq" = "%@を購入";
 
+/* buy coins */
+
+"pay_by_card" = "カードで支払う";
+"buy_on_exchange" = "取引で購入する";
+"swap" = "スワップ";
+
 /* send-receive */
 
 "send" = "送る";
@@ -18,7 +24,7 @@
 "to" = "宛先";
 "amount" = "額";
 "max" = "最大";
-"enq_address_to_send" = "送信するENQアドレス";
+"enq_address_to_send" = "送信する%@アドレス";
 "reject" = "拒否";
 "confirm" = "確認";
 "share_qr" = "QRコードを共有";
@@ -69,7 +75,7 @@
 
 /* wallet creation */
 
-"welcome_to_enq" = "ENQネットワークへようこそ";
+"welcome_to_enq" = "%@ネットワークへようこそ";
 "create_new_wallet" = "新しいウォレットを作成";
 "your_address" = "アドレス";
 "your_private_key" = "秘密鍵";
@@ -133,7 +139,6 @@
 "application_restart"= "Application will be closed. Settings will be applied after restart";
 "execute" = "Execute";
 "cancel" = "キャンセル";
-"swap" = "スワップ";
 "send_confirmation" = "確認を送信";
 "balance_enq" = "残高：%s ENQ";
 "wrong_format" = "誤った値";
@@ -169,8 +174,6 @@
 "roi_annual" = "毎年";
 "min_stake_dialog_title" = "最低ステークは、%s ENQです";
 "min_stake_dialog_message" = "採掘を開始するには、少なくとも %s ENQのデポジットが必要です。取引時にENQ ERC-20トークンを購入し、https://wallet.enecuum.com\"> wallet.enecuum.com </a>を介してテストネットにスワップできます。";
-"pay_by_card" = "カードで支払う";
-"buy_on_exchange" = "取引で購入する";
 "roi_alert" = "過去24時間のリターンレート計算機";
 "stake" = "Stake";
 "roi" = "ROI";

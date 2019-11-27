@@ -11,14 +11,20 @@
 "balance" = "Solde :";
 "buy_enq" = "Acheter %@";
 
+/* buy coins */
+
+"pay_by_card" = "Payer par carte";
+"buy_on_exchange" = "Acheter sur échange";
+"swap" = "Échanger";
+
 /* send-receive */
 
 "send" = "Envoyer";
 "receive" = "Recevoir";
 "to" = "À";
 "amount" = "Montant";
-"max" = "MAX";
-"enq_address_to_send" = "Adresse ENQ pour envoyer";
+"max" = "Max";
+"enq_address_to_send" = "Adresse %@ pour envoyer";
 "reject" = "Rejeter";
 "confirm" = "Confirmer";
 "share_qr" = "Partager le code QR";
@@ -69,7 +75,7 @@
 
 /* wallet creation */
 
-"welcome_to_enq" = "Bienvenue sur le réseau ENQ";
+"welcome_to_enq" = "Bienvenue sur le réseau %@";
 "create_new_wallet" = "Créer un nouveau portefeuille";
 "your_address" = "Votre adresse";
 "your_private_key" = "Votre clé privée";
@@ -133,7 +139,6 @@
 "application_restart"= "Application will be closed. Settings will be applied after restart";
 "execute" = "Execute";
 "cancel" = "Annuler";
-"swap" = "ÉCHANGER";
 "send_confirmation" = "Envoyer une confirmation";
 "balance_enq" = "Solde : %s ENQ";
 "wrong_format" = "Valeur incorrecte";
@@ -169,8 +174,6 @@
 "roi_annual" = "Annuel";
 "min_stake_dialog_title" = "La mise minimum est %s ENQ";
 "min_stake_dialog_message" = "Un dépôt d\'au moins %s ENQ est requis pour commencer l\'exploitation. Vous pouvez acheter le jeton ENQ ERC-20 sur des échanges et l’échanger dans le réseau de test via https://wallet.enecuum.com\">wallet.enecuum.com</a>";
-"pay_by_card" = "Payer par carte";
-"buy_on_exchange" = "Acheter sur échange";
 "roi_alert" = "Calculateur de taux de rendement des dernières 24 heures";
 "stake" = "Stake";
 "roi" = "ROI";

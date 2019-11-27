@@ -11,6 +11,12 @@
 "balance" = "余额：";
 "buy_enq" = "购买%@";
 
+/* buy coins */
+
+"pay_by_card" = "用卡支付";
+"buy_on_exchange" = "在交易所购买";
+"swap" = "兑换";
+
 /* send-receive */
 
 "send" = "发送";
@@ -18,7 +24,7 @@
 "to" = "至";
 "amount" = "数量";
 "max" = "最大";
-"enq_address_to_send" = "要发送的ENQ地址";
+"enq_address_to_send" = "要发送的%@地址";
 "reject" = "拒绝";
 "confirm" = "确认";
 "share_qr" = "分享二维码";
@@ -69,7 +75,7 @@
 
 /* wallet creation */
 
-"welcome_to_enq" = "欢迎来到ENQ网络";
+"welcome_to_enq" = "欢迎来到%@网络";
 "create_new_wallet" = "创建新的钱包";
 "start_using_wallet" = "开始使用电子钱包";
 "your_address" = "您的地址";
@@ -133,7 +139,6 @@
 "application_restart" = "Application will be closed. Settings will be applied after restart";
 "execute" = "Execute";
 "cancel" = "取消";
-"swap" = "兑换";
 "send_confirmation" = "发送确认";
 
 "balance_enq" = "余额：%s ENQ";
@@ -170,8 +175,6 @@
 "roi_annual" = "每年";
 "min_stake_dialog_title" = "最低投入为%s ENQ";
 "min_stake_dialog_message" = "开始挖矿需要至少%s ENQ的存款。您可以在交易所购买ENQ ERC-20代币，并通过 https://wallet.enecuum.com\">wallet.enecuum.com</a>兑换到测试网。";
-"pay_by_card" = "用卡支付";
-"buy_on_exchange" = "在交易所购买";
 "roi_alert" = "过去24小时回报率计算器";
 "stake" = "Stake";
 "roi" = "ROI";

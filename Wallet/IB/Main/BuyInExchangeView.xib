@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="TTNorms-Medium.otf">
+            <string>TTNorms-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BuyInExchangeView" customModule="Enecuum_Wallet" customModuleProvider="target">
+            <connections>
+                <outlet property="crexBtcButton" destination="oia-41-a1f" id="rRO-VP-VIE"/>
+                <outlet property="crexImageView" destination="SWD-iw-yb8" id="UJN-lr-uPh"/>
+                <outlet property="crexRubButton" destination="qNK-YJ-UiW" id="lBe-OO-Sig"/>
+                <outlet property="crexUsdButton" destination="mYr-Zt-k1P" id="fR2-Jh-hPn"/>
+                <outlet property="graviexBtcButton" destination="sGk-K9-rQB" id="7Y2-jt-ln1"/>
+                <outlet property="graviexEthButton" destination="Ch2-hL-7Nd" id="dmg-6l-5gJ"/>
+                <outlet property="graviexImageView" destination="ksP-pZ-H6S" id="t4t-Mk-Mdt"/>
+                <outlet property="graviexUsdtButton" destination="Gjo-kH-hER" id="xH2-mf-stK"/>
+                <outlet property="kucoinBtcButton" destination="NIL-e1-ph6" id="cLR-hn-gPv"/>
+                <outlet property="kucoinImageView" destination="2sw-qc-1TU" id="ac6-rF-5Lq"/>
+                <outlet property="kucoinUsdtButton" destination="aSh-h2-0hJ" id="eeK-Rd-ceU"/>
+                <outlet property="titleLabel" destination="8c6-Y9-NLM" id="2fD-uG-GVG"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iN0-l3-epB" customClass="GradientView" customModule="Enecuum_Wallet" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="310" height="391"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lXe-Hy-cZW">
+                    <rect key="frame" x="0.0" y="38" width="310" height="353"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hXD-kM-TZ0">
+                            <rect key="frame" x="0.0" y="0.0" width="310" height="531"/>
+                            <subviews>
+                                <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="200" verticalCompressionResistancePriority="999" text="Title" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8c6-Y9-NLM" customClass="NantesLabel" customModule="Nantes">
+                                    <rect key="frame" x="16" y="18" width="278" height="19"/>
+                                    <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="16"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uIb-O5-SNQ">
+                                    <rect key="frame" x="15" y="65" width="280" height="140"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo/kucoin" translatesAutoresizingMaskIntoConstraints="NO" id="2sw-qc-1TU">
+                                            <rect key="frame" x="16" y="35" width="248.5" height="42"/>
+                                        </imageView>
+                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="8cl-Xa-DPg">
+                                            <rect key="frame" x="79.5" y="90" width="121" height="30"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NIL-e1-ph6">
+                                                    <rect key="frame" x="0.0" y="0.0" width="60" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="35d-BG-LZo"/>
+                                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="we5-gz-vHa"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="9"/>
+                                                    <state key="normal" title="Buy">
+                                                        <color key="titleColor" red="0.41176470590000003" green="0.43137254899999999" blue="0.66666666669999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="kucoinBtcButtonClicked:" destination="-1" eventType="touchUpInside" id="U8w-r0-yrI"/>
+                                                    </connections>
+                                                </button>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uZR-4V-zjl">
+                                                    <rect key="frame" x="60" y="4" width="1" height="22"/>
+                                                    <color key="backgroundColor" white="1" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="1" id="Okm-4C-MNr"/>
+                                                    </constraints>
+                                                </view>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aSh-h2-0hJ">
+                                                    <rect key="frame" x="61" y="0.0" width="60" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="Wsj-aM-h4o"/>
+                                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="tsO-nH-knZ"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="9"/>
+                                                    <state key="normal" title="Buy">
+                                                        <color key="titleColor" red="0.41176470590000003" green="0.43137254899999999" blue="0.66666666669999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="kucoinUsdtButtonClicked:" destination="-1" eventType="touchUpInside" id="Q9E-bB-6WU"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="uZR-4V-zjl" firstAttribute="top" secondItem="8cl-Xa-DPg" secondAttribute="top" constant="4" id="9ok-Oc-Mgu"/>
+                                                <constraint firstAttribute="height" constant="30" id="U87-Nc-WzY"/>
+                                                <constraint firstAttribute="bottom" secondItem="uZR-4V-zjl" secondAttribute="bottom" constant="4" id="h0K-Va-vgW"/>
+                                            </constraints>
+                                        </stackView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="2sw-qc-1TU" firstAttribute="centerY" secondItem="uIb-O5-SNQ" secondAttribute="centerY" multiplier="0.8" id="CdL-O7-vpO"/>
+                                        <constraint firstItem="2sw-qc-1TU" firstAttribute="height" secondItem="uIb-O5-SNQ" secondAttribute="height" multiplier="0.3" id="RDM-Zy-w3h"/>
+                                        <constraint firstItem="8cl-Xa-DPg" firstAttribute="centerY" secondItem="uIb-O5-SNQ" secondAttribute="centerY" multiplier="1.5" id="Zue-V6-Tfh"/>
+                                        <constraint firstItem="2sw-qc-1TU" firstAttribute="centerX" secondItem="uIb-O5-SNQ" secondAttribute="centerX" id="iuS-OQ-Iuu"/>
+                                        <constraint firstAttribute="width" secondItem="uIb-O5-SNQ" secondAttribute="height" multiplier="2:1" id="qPa-hN-j3o"/>
+                                        <constraint firstItem="8cl-Xa-DPg" firstAttribute="centerX" secondItem="uIb-O5-SNQ" secondAttribute="centerX" id="yAw-SP-5tl"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="17"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                            <real key="value" value="1"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                            <color key="value" red="0.36078431372549019" green="0.38039215686274508" blue="0.47450980392156861" alpha="1" colorSpace="calibratedRGB"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mWn-Bv-YHh">
+                                    <rect key="frame" x="15" y="214" width="280" height="140"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo/crex24" translatesAutoresizingMaskIntoConstraints="NO" id="SWD-iw-yb8">
+                                            <rect key="frame" x="41" y="35" width="198" height="42"/>
+                                        </imageView>
+                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="FdN-jJ-kXj">
+                                            <rect key="frame" x="49" y="90" width="182" height="30"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oia-41-a1f">
+                                                    <rect key="frame" x="0.0" y="0.0" width="60" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="Eaw-i7-jqj"/>
+                                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="XNG-ML-1DJ"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="9"/>
+                                                    <state key="normal" title="Buy">
+                                                        <color key="titleColor" red="0.41176470590000003" green="0.43137254899999999" blue="0.66666666669999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="crexBtcButtonClicked:" destination="-1" eventType="touchUpInside" id="OUq-Zj-v7A"/>
+                                                    </connections>
+                                                </button>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O4E-hM-gr2">
+                                                    <rect key="frame" x="60" y="4" width="1" height="22"/>
+                                                    <color key="backgroundColor" white="1" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="1" id="meh-cL-nN7"/>
+                                                    </constraints>
+                                                </view>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mYr-Zt-k1P">
+                                                    <rect key="frame" x="61" y="0.0" width="60" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="fn7-2Z-OSF"/>
+                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="wbM-vn-xcD"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="9"/>
+                                                    <state key="normal" title="Buy">
+                                                        <color key="titleColor" red="0.41176470590000003" green="0.43137254899999999" blue="0.66666666669999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="crexUdsButtonClicked:" destination="-1" eventType="touchUpInside" id="dlg-jm-2io"/>
+                                                    </connections>
+                                                </button>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5dh-mO-sux">
+                                                    <rect key="frame" x="121" y="4" width="1" height="22"/>
+                                                    <color key="backgroundColor" white="1" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="1" id="NVj-Ou-KeI"/>
+                                                    </constraints>
+                                                </view>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qNK-YJ-UiW">
+                                                    <rect key="frame" x="122" y="0.0" width="60" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="SF9-GL-Exr"/>
+                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="X1F-3n-pPI"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="9"/>
+                                                    <state key="normal" title="Buy">
+                                                        <color key="titleColor" red="0.41176470590000003" green="0.43137254899999999" blue="0.66666666669999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="crexRubButtonClicked:" destination="-1" eventType="touchUpInside" id="9Kc-Vt-lBM"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="5dh-mO-sux" firstAttribute="top" secondItem="FdN-jJ-kXj" secondAttribute="top" constant="4" id="g4z-3n-477"/>
+                                                <constraint firstItem="O4E-hM-gr2" firstAttribute="top" secondItem="FdN-jJ-kXj" secondAttribute="top" constant="4" id="giF-du-Qux"/>
+                                                <constraint firstAttribute="height" constant="30" id="ifH-1e-SVl"/>
+                                                <constraint firstAttribute="bottom" secondItem="O4E-hM-gr2" secondAttribute="bottom" constant="4" id="rAX-Bn-eQq"/>
+                                                <constraint firstAttribute="bottom" secondItem="5dh-mO-sux" secondAttribute="bottom" constant="4" id="tJf-q3-QFf"/>
+                                            </constraints>
+                                        </stackView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="SWD-iw-yb8" firstAttribute="height" secondItem="mWn-Bv-YHh" secondAttribute="height" multiplier="0.3" id="7sd-Hy-CBr"/>
+                                        <constraint firstItem="SWD-iw-yb8" firstAttribute="centerY" secondItem="mWn-Bv-YHh" secondAttribute="centerY" multiplier="0.8" id="9KG-kS-pSZ"/>
+                                        <constraint firstAttribute="width" secondItem="mWn-Bv-YHh" secondAttribute="height" multiplier="2:1" id="IVF-eU-sJI"/>
+                                        <constraint firstItem="SWD-iw-yb8" firstAttribute="centerX" secondItem="mWn-Bv-YHh" secondAttribute="centerX" id="KTC-Kx-whv"/>
+                                        <constraint firstItem="FdN-jJ-kXj" firstAttribute="centerX" secondItem="mWn-Bv-YHh" secondAttribute="centerX" id="cxo-b7-axa"/>
+                                        <constraint firstItem="FdN-jJ-kXj" firstAttribute="centerY" secondItem="mWn-Bv-YHh" secondAttribute="centerY" multiplier="1.5" id="tNg-hf-kCI"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="17"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                            <real key="value" value="1"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                            <color key="value" red="0.36078431370000003" green="0.3803921569" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tDU-8S-xFf">
+                                    <rect key="frame" x="15" y="363" width="280" height="140"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo/graviex" translatesAutoresizingMaskIntoConstraints="NO" id="ksP-pZ-H6S">
+                                            <rect key="frame" x="50" y="35" width="180" height="42"/>
+                                        </imageView>
+                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="kcE-Nr-r2X">
+                                            <rect key="frame" x="49" y="90" width="182" height="30"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sGk-K9-rQB">
+                                                    <rect key="frame" x="0.0" y="0.0" width="60" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="5X5-mh-u2V"/>
+                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="bZL-RG-3cs"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="9"/>
+                                                    <state key="normal" title="Buy">
+                                                        <color key="titleColor" red="0.41176470590000003" green="0.43137254899999999" blue="0.66666666669999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="graviexBtcButtonClicked:" destination="-1" eventType="touchUpInside" id="B1c-1E-P1D"/>
+                                                    </connections>
+                                                </button>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uVF-Wi-ea8">
+                                                    <rect key="frame" x="60" y="4" width="1" height="22"/>
+                                                    <color key="backgroundColor" white="1" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="1" id="FcE-Gg-4J6"/>
+                                                    </constraints>
+                                                </view>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ch2-hL-7Nd">
+                                                    <rect key="frame" x="61" y="0.0" width="60" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="L9p-bE-1n2"/>
+                                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="kYr-fP-CKo"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="9"/>
+                                                    <state key="normal" title="Buy">
+                                                        <color key="titleColor" red="0.41176470590000003" green="0.43137254899999999" blue="0.66666666669999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="graviexEthButtonClicked:" destination="-1" eventType="touchUpInside" id="CXD-r0-QI7"/>
+                                                    </connections>
+                                                </button>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="94U-ah-H62">
+                                                    <rect key="frame" x="121" y="4" width="1" height="22"/>
+                                                    <color key="backgroundColor" white="1" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="1" id="WGV-7I-y7O"/>
+                                                    </constraints>
+                                                </view>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gjo-kH-hER">
+                                                    <rect key="frame" x="122" y="0.0" width="60" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="PUX-xg-kKj"/>
+                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="y3n-CM-RkF"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="9"/>
+                                                    <state key="normal" title="Buy">
+                                                        <color key="titleColor" red="0.41176470590000003" green="0.43137254899999999" blue="0.66666666669999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="graviexUsdtButtonClicked:" destination="-1" eventType="touchUpInside" id="zkP-jm-nfR"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="uVF-Wi-ea8" secondAttribute="bottom" constant="4" id="1Pn-Xa-ANi"/>
+                                                <constraint firstItem="uVF-Wi-ea8" firstAttribute="top" secondItem="kcE-Nr-r2X" secondAttribute="top" constant="4" id="Bj6-EA-Giq"/>
+                                                <constraint firstItem="94U-ah-H62" firstAttribute="top" secondItem="kcE-Nr-r2X" secondAttribute="top" constant="4" id="DGS-LE-Orc"/>
+                                                <constraint firstAttribute="bottom" secondItem="94U-ah-H62" secondAttribute="bottom" constant="4" id="Ty8-Fx-0a2"/>
+                                                <constraint firstAttribute="height" constant="30" id="vze-aq-MV9"/>
+                                            </constraints>
+                                        </stackView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="ksP-pZ-H6S" firstAttribute="height" secondItem="tDU-8S-xFf" secondAttribute="height" multiplier="0.3" id="6o2-4Z-aPX"/>
+                                        <constraint firstItem="ksP-pZ-H6S" firstAttribute="centerY" secondItem="tDU-8S-xFf" secondAttribute="centerY" multiplier="0.8" id="7Ym-LE-WnX"/>
+                                        <constraint firstItem="kcE-Nr-r2X" firstAttribute="centerY" secondItem="tDU-8S-xFf" secondAttribute="centerY" multiplier="1.5" id="NwU-dQ-J9F"/>
+                                        <constraint firstItem="kcE-Nr-r2X" firstAttribute="centerX" secondItem="tDU-8S-xFf" secondAttribute="centerX" id="XP1-tv-QgL"/>
+                                        <constraint firstItem="ksP-pZ-H6S" firstAttribute="centerX" secondItem="tDU-8S-xFf" secondAttribute="centerX" id="jEa-Uy-gJs"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="17"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                            <real key="value" value="1"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                            <color key="value" red="0.36078431370000003" green="0.3803921569" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" red="0.33333333329999998" green="0.36078431370000003" blue="0.63921568630000003" alpha="0.0" colorSpace="custom" customColorSpace="displayP3"/>
+                            <constraints>
+                                <constraint firstItem="tDU-8S-xFf" firstAttribute="leading" secondItem="hXD-kM-TZ0" secondAttribute="leading" constant="15" id="0gX-j8-lGv"/>
+                                <constraint firstItem="uIb-O5-SNQ" firstAttribute="leading" secondItem="hXD-kM-TZ0" secondAttribute="leading" constant="15" id="4iU-bf-B5Q"/>
+                                <constraint firstItem="mWn-Bv-YHh" firstAttribute="leading" secondItem="hXD-kM-TZ0" secondAttribute="leading" constant="15" id="DCk-Gf-YaO"/>
+                                <constraint firstAttribute="trailing" secondItem="8c6-Y9-NLM" secondAttribute="trailing" constant="16" id="Eqw-pr-neA"/>
+                                <constraint firstItem="8c6-Y9-NLM" firstAttribute="leading" secondItem="hXD-kM-TZ0" secondAttribute="leading" constant="16" id="Lhb-mA-FEm"/>
+                                <constraint firstItem="tDU-8S-xFf" firstAttribute="width" secondItem="tDU-8S-xFf" secondAttribute="height" multiplier="2:1" id="MXf-HW-PQI"/>
+                                <constraint firstItem="8c6-Y9-NLM" firstAttribute="top" secondItem="hXD-kM-TZ0" secondAttribute="top" constant="18" id="eUX-I5-nWL"/>
+                                <constraint firstAttribute="trailing" secondItem="mWn-Bv-YHh" secondAttribute="trailing" constant="15" id="htx-Wd-KHN"/>
+                                <constraint firstAttribute="bottom" secondItem="tDU-8S-xFf" secondAttribute="bottom" constant="28" id="kFK-0o-8U9"/>
+                                <constraint firstItem="mWn-Bv-YHh" firstAttribute="top" secondItem="uIb-O5-SNQ" secondAttribute="bottom" constant="9" id="nlt-64-V5S"/>
+                                <constraint firstAttribute="trailing" secondItem="tDU-8S-xFf" secondAttribute="trailing" constant="15" id="oJ4-1h-ss7"/>
+                                <constraint firstItem="uIb-O5-SNQ" firstAttribute="top" secondItem="8c6-Y9-NLM" secondAttribute="bottom" constant="28" id="qpj-RA-Ek8"/>
+                                <constraint firstAttribute="trailing" secondItem="uIb-O5-SNQ" secondAttribute="trailing" constant="15" id="wfG-wM-H2K"/>
+                                <constraint firstItem="tDU-8S-xFf" firstAttribute="top" secondItem="mWn-Bv-YHh" secondAttribute="bottom" constant="9" id="wwJ-CI-mM2"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="hXD-kM-TZ0" firstAttribute="width" secondItem="lXe-Hy-cZW" secondAttribute="width" id="4Tg-HH-gqd"/>
+                        <constraint firstAttribute="bottom" secondItem="hXD-kM-TZ0" secondAttribute="bottom" id="X62-vV-qOu"/>
+                        <constraint firstItem="hXD-kM-TZ0" firstAttribute="leading" secondItem="lXe-Hy-cZW" secondAttribute="leading" id="aRl-Nz-nT2"/>
+                        <constraint firstItem="hXD-kM-TZ0" firstAttribute="top" secondItem="lXe-Hy-cZW" secondAttribute="top" id="l9X-YY-anA"/>
+                        <constraint firstAttribute="trailing" secondItem="hXD-kM-TZ0" secondAttribute="trailing" id="mfW-y1-bfB"/>
+                        <constraint firstItem="hXD-kM-TZ0" firstAttribute="height" secondItem="lXe-Hy-cZW" secondAttribute="height" priority="250" id="oBI-yx-kW2"/>
+                    </constraints>
+                    <viewLayoutGuide key="contentLayoutGuide" id="Gdg-RN-es7"/>
+                    <viewLayoutGuide key="frameLayoutGuide" id="aqV-YA-bxm"/>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="lXe-Hy-cZW" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="8dn-Hc-Ulg"/>
+                <constraint firstItem="lXe-Hy-cZW" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="38" id="Pbx-Oc-XFc"/>
+                <constraint firstAttribute="trailing" secondItem="lXe-Hy-cZW" secondAttribute="trailing" id="gnv-fp-rhw"/>
+                <constraint firstAttribute="bottom" secondItem="lXe-Hy-cZW" secondAttribute="bottom" id="sBA-du-FGg"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="color" keyPath="firstColor">
+                    <color key="value" red="0.25098039215686274" green="0.27058823529411763" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="color" keyPath="secondColor">
+                    <color key="value" red="0.12941176470588234" green="0.14117647058823529" blue="0.21568627450980393" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                    <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                    <real key="value" value="6"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <point key="canvasLocation" x="155.625" y="-52.2887323943662"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Logo/crex24" width="198" height="64"/>
+        <image name="Logo/graviex" width="180" height="54"/>
+        <image name="Logo/kucoin" width="248.5" height="64"/>
+    </resources>
+</document>

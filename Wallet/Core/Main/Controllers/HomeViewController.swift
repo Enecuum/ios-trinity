@@ -23,6 +23,8 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var qrSideView: QRSideView!
     @IBOutlet weak var bottomTabsPlaceholder: UIView!
 
+    private var buyTabsState: BuyTabsState = .none
+
     struct Constants {
         static let balanceFromApiMultiplier: NSDecimalNumber = NSDecimalNumber(mantissa: 1,
                                                                                exponent: -10,
@@ -45,6 +47,8 @@ class HomeViewController: UIViewController {
         }
 
         qrSideView.delegate = self
+
+        updateForBuyTabState()
     }
 
     override func viewDidAppear(_ animated: Bool) {
@@ -58,6 +62,12 @@ class HomeViewController: UIViewController {
         }
 
         fetchStats()
+    }
+
+    // MARK: - Public methods
+
+    func resetBalance() {
+        balanceAmountLabel.text = "\(Defaults.getBalance() ?? 0)"
     }
 
     // MARK: - Private methods
@@ -93,10 +103,9 @@ class HomeViewController: UIViewController {
         let rect = CGRect(x: buyTabsView.frame.origin.x,
                           y: buyTabsView.frame.origin.y,
                           width: buyTabsView.frame.width,
-                          height: bottomTabsPlaceholder.frame.origin.y - buyTabsView.frame.origin.y - BuyView.Constants.bottomPadding)
-        let buyView = BuyView(frame: rect)
+                          height: bottomTabsPlaceholder.frame.origin.y - buyTabsView.frame.origin.y - BuyNativeView.Constants.bottomPadding)
+        let buyView = buyTabsState == .byCard ? BuyNativeView(frame: rect) : BuyInExchangeView(frame: rect)
         buyView.tag = Constants.buyViewTag
-        //buyView.delegate = self
         self.view.insertSubview(buyView, belowSubview: buyTabsView)
     }
 
@@ -111,10 +120,23 @@ class HomeViewController: UIViewController {
         }
     }
 
-    // MARK: - Public methods
-
-    func resetBalance() {
-        balanceAmountLabel.text = "\(Defaults.getBalance() ?? 0)"
+    private func updateForBuyTabState() {
+        switch (buyTabsState) {
+        case .none, .swap:
+            hideBuyView()
+        case .byCard:
+            buyTabsView.backgroundColor = Palette.buyTabsBackground
+            byCardButton.gradientIsVisible = true
+            exchangesButton.gradientIsVisible = false
+            swapButton.gradientIsVisible = false
+            showBuyView(tab: 0)
+        case .inExchange:
+            buyTabsView.backgroundColor = Palette.buyTabsBackground
+            byCardButton.gradientIsVisible = false
+            exchangesButton.gradientIsVisible = true
+            swapButton.gradientIsVisible = false
+            showBuyView(tab: 1)
+        }
     }
 
     // MARK: - Server
@@ -163,24 +185,19 @@ class HomeViewController: UIViewController {
 
     // MARK: - IB Actions
 
-    @IBAction func byCardTabClicked(_ sender: Any) {
-        buyTabsView.backgroundColor = Palette.buyTabsBackground
-        byCardButton.gradientIsVisible = true
-        exchangesButton.gradientIsVisible = false
-        swapButton.gradientIsVisible = false
-        showBuyView(tab: 0)
+    @IBAction func byCardTabClicked() {
+        buyTabsState = buyTabsState == .byCard ? .none : .byCard
+        updateForBuyTabState()
     }
 
-    @IBAction func exchangesTabClicked(_ sender: Any) {
-        buyTabsView.backgroundColor = Palette.buyTabsBackground
-        byCardButton.gradientIsVisible = false
-        exchangesButton.gradientIsVisible = true
-        swapButton.gradientIsVisible = false
-        showBuyView(tab: 1)
+    @IBAction func exchangesTabClicked() {
+        buyTabsState = buyTabsState == .inExchange ? .none : .inExchange
+        updateForBuyTabState()
     }
 
-    @IBAction func swapTabClicked(_ sender: Any) {
-        hideBuyView()
+    @IBAction func swapTabClicked() {
+        buyTabsState = .swap
+        updateForBuyTabState()
     }
 }
 
@@ -217,7 +234,7 @@ extension HomeViewController: QrSideViewDelegate {
 
 extension HomeViewController: AlertViewControllerDelegate {
     func onConfirmClicked() {
-        //open exchange
+        byCardTabClicked()
     }
 
     func onCancelClicked() {}

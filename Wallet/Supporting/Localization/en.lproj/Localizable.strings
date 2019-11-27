@@ -14,6 +14,8 @@
 /* buy coins */
 "buy_native_title_link" = "Buy Native %@ Coin";
 "buy_native_title" = " at our partner\'s website and start Mobile Masternode immediately. The KYC procedure is required to purchase cryptocurrency by banking cards.";
+"buy_erc_20_title" = "Buy ERC-20 Token at the following Exchanges and Swap to Mobile Maternode in order to start mining. Ethereum wallet and currency are required to swap ERC-20 tokens into native coins.";
+"buy_erc_20_title_link" = "Swap to Mobile Maternode";
 
 /* send-receive */
 

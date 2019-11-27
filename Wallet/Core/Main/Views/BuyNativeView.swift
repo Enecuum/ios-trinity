@@ -4,18 +4,13 @@
 //
 
 import UIKit
-import EFQRCode
 import Nantes
 
-protocol BuyViewDelegate {
-}
-
-class BuyView: UIView, NibView {
+class BuyNativeView: UIView, NibView {
 
     @IBOutlet weak var titleLabel: NantesLabel!
     @IBOutlet weak var logoImageView: UIImageView!
     @IBOutlet weak var buyButton: UIButton!
-
 
     struct Constants {
         static let bottomPadding: CGFloat = 9
@@ -27,12 +22,13 @@ class BuyView: UIView, NibView {
         setupUI()
     }
 
-
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         loadViewFromNib()
         setupUI()
     }
+
+    // MARK: - Private methods
 
     private func setupUI() {
         let linkColor = UIColor(red: 105 / 255, green: 110 / 255, blue: 170 / 255, alpha: 1)
@@ -57,11 +53,25 @@ class BuyView: UIView, NibView {
                            withRange: (attributedString.string as NSString).range(of: linkText))
         titleLabel.delegate = self
 
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self,
+                                                                 action: #selector(openSuex))
+        logoImageView.addGestureRecognizer(tap)
+
         buyButton.setTitle(CurrencyFormat.buyCurrencyString(), for: .normal)
+    }
+
+    @objc private func openSuex() {
+        Browser.openUrl("https://suex.io/?currency_in=EUR&currency_out=\(CurrencyFormat.Constants.currency)&amount_in=30")
+    }
+
+    // MARK: - IB Actions
+
+    @IBAction func buyButtonClicked(_ sender: Any) {
+        openSuex()
     }
 }
 
-extension BuyView: NantesLabelDelegate {
+extension BuyNativeView: NantesLabelDelegate {
     public func attributedLabel(_ label: NantesLabel, didSelectLink link: URL) {
         Browser.openUrl(link)
     }

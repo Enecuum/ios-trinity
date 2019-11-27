@@ -9,3 +9,9 @@
 /* currency strings */
 
 "enq_as_usd" = "1 ENQ = $ %@";
+
+"coin_to_btc" = "%@/BTC";
+"coin_to_usdt" = "%@/USDT";
+"coin_to_usd" = "%@/USD";
+"coin_to_rub" = "%@/RUB";
+"coin_to_eth" = "%@/ETH";

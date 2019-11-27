@@ -981,7 +981,7 @@ and start mining</string>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="byCardTabClicked:" destination="9mI-DF-94o" eventType="touchUpInside" id="E8y-c7-xMN"/>
+                                                    <action selector="byCardTabClicked" destination="9mI-DF-94o" eventType="touchUpInside" id="q0D-7p-Aqd"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SGD-1q-BZU" customClass="GradientButton" customModule="Enecuum_Wallet" customModuleProvider="target">
@@ -1003,7 +1003,7 @@ and start mining</string>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="exchangesTabClicked:" destination="9mI-DF-94o" eventType="touchUpInside" id="2zL-r0-2XC"/>
+                                                    <action selector="exchangesTabClicked" destination="9mI-DF-94o" eventType="touchUpInside" id="Ubq-4u-g5S"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zPR-Id-u27" customClass="GradientButton" customModule="Enecuum_Wallet" customModuleProvider="target">
@@ -1025,7 +1025,7 @@ and start mining</string>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="swapTabClicked:" destination="9mI-DF-94o" eventType="touchUpInside" id="yoj-am-gNX"/>
+                                                    <action selector="swapTabClicked" destination="9mI-DF-94o" eventType="touchUpInside" id="l82-Sa-kNO"/>
                                                 </connections>
                                             </button>
                                         </subviews>

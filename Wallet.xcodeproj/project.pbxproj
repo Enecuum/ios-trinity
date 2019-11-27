@@ -26,16 +26,17 @@
 		B8EA10042D35D8D0F8B73B77 /* ReceiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA15972F01E94FB2FC5BC3 /* ReceiveView.swift */; };
 		B8EA1029509FBA0D6A131121 /* Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA126EE3E3C8B5C2E4B64F /* Defaults.swift */; };
 		B8EA113E558EA33B1BBB316A /* Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA1243B21D14DA8D15EB06 /* Localization.swift */; };
+		B8EA1155585D236435F42D02 /* BuyTabsState.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA1CA871753EA9428B2B27 /* BuyTabsState.swift */; };
 		B8EA121C55AEAAE0ED0F306B /* Palette.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA110F9290250EC4D79180 /* Palette.swift */; };
 		B8EA12606E90F967E84A040E /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA11F255A323DDBD75F780 /* AuthManager.swift */; };
-		B8EA127769887361BBCE0E71 /* BuyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA1AF57817257E1E87652F /* BuyView.swift */; };
+		B8EA127769887361BBCE0E71 /* BuyNativeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA1AF57817257E1E87652F /* BuyNativeView.swift */; };
 		B8EA12967CF8667931778061 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA10B587A40452E6650A9E /* ApiClient.swift */; };
 		B8EA12B060DCB21BC9A6C0A3 /* ReferralView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8EA17B0B07DF7352C26E56E /* ReferralView.xib */; };
 		B8EA12DEEF2EA7D15AF5E282 /* Formatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA1BA9B0E7E6CCC2A0B48F /* Formatter.swift */; };
 		B8EA12F656C86618123F8453 /* Browser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA1DDDDB123884AA596B46 /* Browser.swift */; };
 		B8EA1317B525BCF40B6AFD4F /* LogicOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA1DA328856AF23407927E /* LogicOperation.swift */; };
 		B8EA133B869DF927EB4C0EF1 /* RoiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA1325A57EB9683E56373D /* RoiViewController.swift */; };
-		B8EA13432346DE50A9E8BD6E /* BuyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8EA18B8ADB5220B9DC0F324 /* BuyView.xib */; };
+		B8EA13432346DE50A9E8BD6E /* BuyNativeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8EA18B8ADB5220B9DC0F324 /* BuyNativeView.xib */; };
 		B8EA1347970505193E9CD473 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA1AB4DE484A22A99E7DFD /* UIView+Extension.swift */; };
 		B8EA135ACA1DCB77A9B3928C /* GradientButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA1454E4B1EBD958E7E413 /* GradientButton.swift */; };
 		B8EA13734195953CACC55609 /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA1EB1C3D015CFEA7C2F33 /* UIButton+Extension.swift */; };
@@ -48,6 +49,7 @@
 		B8EA14F813244608A0834A17 /* Statistics.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA1A046447B013E8A00DC5 /* Statistics.swift */; };
 		B8EA154763261C213ACF4FCB /* StringResource+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA1A093C22395F491E712B /* StringResource+Extension.swift */; };
 		B8EA158447317F8430367213 /* QRSideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA1AB4C8566CEA0C026F9B /* QRSideView.swift */; };
+		B8EA158AC816A7D3BB3389EA /* BuyInExchangeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8EA189114F0633F5FE1D6BA /* BuyInExchangeView.xib */; };
 		B8EA15AB5BE6A3A17F66EB3E /* CryptoHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA187D7B0E33D8CE47C5D7 /* CryptoHelper.swift */; };
 		B8EA15CBA9C960A2BFA918EB /* TabsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA1506248F3332EFE0E994 /* TabsView.swift */; };
 		B8EA1617BC48D1A4733B604A /* Secp256k1Swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA14752B8C5D97AE37EEE6 /* Secp256k1Swift.swift */; };
@@ -87,6 +89,7 @@
 		B8EA1E0979AC35B894DA7F7D /* KeychainPasswordItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA1736201913A7A18D87BB /* KeychainPasswordItem.swift */; };
 		B8EA1E29300288410B2DFC07 /* SendView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA1506B1F969451F03F8FD /* SendView.swift */; };
 		B8EA1E72D7E2DF017EA0A387 /* LanguageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA1078A9C3798FFB672B95 /* LanguageViewController.swift */; };
+		B8EA1E780D2A676F04576761 /* BuyInExchangeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA15F0CFADF408F7884D08 /* BuyInExchangeView.swift */; };
 		B8EA1EAAA958AF6C83F0AB37 /* ReferralView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA1D0447B23DF54E376228 /* ReferralView.swift */; };
 		B8EA1F79D851002539ED16CE /* BalanceAmount.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA1651FDBF392B83C7A618 /* BalanceAmount.swift */; };
 /* End PBXBuildFile section */
@@ -152,6 +155,7 @@
 		B8EA15CACE2F314CC56DE501 /* Transaction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
 		B8EA15CEFF907025F3D2640B /* CurrencyFormat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyFormat.swift; sourceTree = "<group>"; };
 		B8EA15E9D33B339A27DBDBA4 /* SocialsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocialsViewController.swift; sourceTree = "<group>"; };
+		B8EA15F0CFADF408F7884D08 /* BuyInExchangeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuyInExchangeView.swift; sourceTree = "<group>"; };
 		B8EA1651FDBF392B83C7A618 /* BalanceAmount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BalanceAmount.swift; sourceTree = "<group>"; };
 		B8EA168995FDB5D5200A9D25 /* SwapView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SwapView.xib; sourceTree = "<group>"; };
 		B8EA1694896AA7F73A9AFF90 /* QRSideView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QRSideView.xib; sourceTree = "<group>"; };
@@ -165,7 +169,8 @@
 		B8EA1874540FD9E5BF532F3F /* ApiRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiRouter.swift; sourceTree = "<group>"; };
 		B8EA187D7B0E33D8CE47C5D7 /* CryptoHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CryptoHelper.swift; sourceTree = "<group>"; };
 		B8EA1884042D4AA975D780AA /* NSMutableAttributedString+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSMutableAttributedString+Extension.swift"; sourceTree = "<group>"; };
-		B8EA18B8ADB5220B9DC0F324 /* BuyView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BuyView.xib; sourceTree = "<group>"; };
+		B8EA189114F0633F5FE1D6BA /* BuyInExchangeView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BuyInExchangeView.xib; sourceTree = "<group>"; };
+		B8EA18B8ADB5220B9DC0F324 /* BuyNativeView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BuyNativeView.xib; sourceTree = "<group>"; };
 		B8EA18CCB96117304D73FBB9 /* NSLayoutConstraint+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSLayoutConstraint+Extension.swift"; sourceTree = "<group>"; };
 		B8EA193F63C2901E65C9FA94 /* LanguageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguageTableViewCell.swift; sourceTree = "<group>"; };
 		B8EA1A046447B013E8A00DC5 /* Statistics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Statistics.swift; sourceTree = "<group>"; };
@@ -174,8 +179,9 @@
 		B8EA1A093C22395F491E712B /* StringResource+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "StringResource+Extension.swift"; sourceTree = "<group>"; };
 		B8EA1AB4C8566CEA0C026F9B /* QRSideView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRSideView.swift; sourceTree = "<group>"; };
 		B8EA1AB4DE484A22A99E7DFD /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
-		B8EA1AF57817257E1E87652F /* BuyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuyView.swift; sourceTree = "<group>"; };
+		B8EA1AF57817257E1E87652F /* BuyNativeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuyNativeView.swift; sourceTree = "<group>"; };
 		B8EA1BA9B0E7E6CCC2A0B48F /* Formatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Formatter.swift; sourceTree = "<group>"; };
+		B8EA1CA871753EA9428B2B27 /* BuyTabsState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuyTabsState.swift; sourceTree = "<group>"; };
 		B8EA1D0447B23DF54E376228 /* ReferralView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReferralView.swift; sourceTree = "<group>"; };
 		B8EA1D4B5F536C48DC18ECDA /* AlertViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertViewController.swift; sourceTree = "<group>"; };
 		B8EA1D8EC716C39C262B2F0B /* FaqViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FaqViewController.swift; sourceTree = "<group>"; };
@@ -242,7 +248,8 @@
 				B8EA168995FDB5D5200A9D25 /* SwapView.xib */,
 				B8EA1694896AA7F73A9AFF90 /* QRSideView.xib */,
 				B8EA17B0B07DF7352C26E56E /* ReferralView.xib */,
-				B8EA18B8ADB5220B9DC0F324 /* BuyView.xib */,
+				B8EA18B8ADB5220B9DC0F324 /* BuyNativeView.xib */,
+				B8EA189114F0633F5FE1D6BA /* BuyInExchangeView.xib */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -442,7 +449,8 @@
 				B8EA1230C3C6A786249926C8 /* BottomTabsView.swift */,
 				B8EA1AB4C8566CEA0C026F9B /* QRSideView.swift */,
 				B8EA1D0447B23DF54E376228 /* ReferralView.swift */,
-				B8EA1AF57817257E1E87652F /* BuyView.swift */,
+				B8EA1AF57817257E1E87652F /* BuyNativeView.swift */,
+				B8EA15F0CFADF408F7884D08 /* BuyInExchangeView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -460,6 +468,7 @@
 			children = (
 				B8EA11B68C8A897C697D30FA /* Controllers */,
 				B8EA152235983A273D5201BA /* Views */,
+				B8EA1CA871753EA9428B2B27 /* BuyTabsState.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -595,7 +604,8 @@
 				B8EA178F557753B48D3EB921 /* SwapView.xib in Resources */,
 				B8EA1C719844B009836943F7 /* QRSideView.xib in Resources */,
 				B8EA12B060DCB21BC9A6C0A3 /* ReferralView.xib in Resources */,
-				B8EA13432346DE50A9E8BD6E /* BuyView.xib in Resources */,
+				B8EA13432346DE50A9E8BD6E /* BuyNativeView.xib in Resources */,
+				B8EA158AC816A7D3BB3389EA /* BuyInExchangeView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -729,8 +739,10 @@
 				B8EA19AD18509D3E58FB3939 /* ReferrerStake.swift in Sources */,
 				B8EA1317B525BCF40B6AFD4F /* LogicOperation.swift in Sources */,
 				B8EA1EAAA958AF6C83F0AB37 /* ReferralView.swift in Sources */,
-				B8EA127769887361BBCE0E71 /* BuyView.swift in Sources */,
+				B8EA127769887361BBCE0E71 /* BuyNativeView.swift in Sources */,
 				B8EA12F656C86618123F8453 /* Browser.swift in Sources */,
+				B8EA1E780D2A676F04576761 /* BuyInExchangeView.swift in Sources */,
+				B8EA1155585D236435F42D02 /* BuyTabsState.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,6 +9,7 @@
 /* main */
 
 "balance" = "Saldo:";
+"buy_enq" = "Beli %@";
 
 /* send-receive */
 
@@ -21,6 +22,10 @@
 "reject" = "Tolak";
 "confirm" = "Konfirmasi";
 "share_qr" = "Bagikan Kode QR";
+
+/* referral */
+
+"referral_buy_message" = "Setelah mendapatkan %@ %@, Anda akan dapat membagikan kode referral agen Anda. Kode ini dapat digunakan oleh pengguna lain untuk mendapatkan lebih banyak %@ yang memberi Anda penghasilan pasif.";
 
 /* menu */
 
@@ -143,11 +148,9 @@
 "there_are_new_ver" = "Ada versi baru untuk aplikasi Enecuum";
 "coming_soon" = "Segera hadir";
 "back" = "Back";
-"buy_enq" = "Beli ENQ";
 "next" = "Berikutnya";
 "skip" = "Lewati";
 "referral_buy_title" = "Program referral";
-"referral_buy_message" = "Setelah mendapatkan %s ENQ, Anda akan dapat membagikan kode referral agen Anda. Kode ini dapat digunakan oleh pengguna lain untuk mendapatkan lebih banyak ENQ yang memberi Anda penghasilan pasif.";
 "referral_title" = "Selamat!";
 "referral_message" = "Anda telah mengaktifkan kode referral agen pribadi Anda! Bagikan dengan pengguna lain untuk menerima 10% o reward penambangan mereka. Mereka akan menambang ENQ dan memberi Anda penghasilan pasif!";
 "share_code" = "Bagikan kode";

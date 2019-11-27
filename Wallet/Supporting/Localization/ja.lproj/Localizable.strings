@@ -9,6 +9,7 @@
 /* main */
 
 "balance" = "残高：";
+"buy_enq" = "%@を購入";
 
 /* send-receive */
 
@@ -21,6 +22,10 @@
 "reject" = "拒否";
 "confirm" = "確認";
 "share_qr" = "QRコードを共有";
+
+/* referral */
+
+"referral_buy_message" = "%@ %@を獲得すれば、代理人紹介コードを共有することができます。このコードを他のユーザーが使用すると、より多くの%@を入手して受動収入を得ることができます。";
 
 /* menu */
 
@@ -143,11 +148,9 @@
 "there_are_new_ver" = "Enecuumアプリの新しいバージョンがあります";
 "coming_soon" = "近日公開";
 "back" = "Back";
-"buy_enq" = "ENQを購入";
 "next" = "次";
 "skip" = "スキップ";
 "referral_buy_title" = "紹介プログラム";
-"referral_buy_message" = "%s ENQを獲得すれば、代理人紹介コードを共有することができます。このコードを他のユーザーが使用すると、より多くのENQを入手して受動収入を得ることができます。";
 "referral_title" = "おめでとうございます。";
 "referral_message" = "個人代理人紹介コードをアンロックしました！自分のマイニング報酬から10% ofを受け取るためにコードを他のユーザーと共有してください。彼らはENQを採掘し、あなたに受動収入を提供します！";
 "share_code" = "コードを共有する";

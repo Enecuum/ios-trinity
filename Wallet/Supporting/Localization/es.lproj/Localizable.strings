@@ -9,6 +9,7 @@
 /* main */
 
 "balance" = "Saldo:";
+"buy_enq" = "Comprar %@";
 
 /* send-receive */
 
@@ -21,6 +22,10 @@
 "reject" = "Rechazar";
 "confirm" = "Confirmar";
 "share_qr" = "Compartir código QR";
+
+/* referral */
+
+"referral_buy_message" = "Una vez que obtengas %@ %@, podrás compartir tu código de recomendación de agente. El código puede ser utilizado por otros usuarios para obtener más %@ dándote ingresos pasivos.";
 
 /* menu */
 
@@ -142,11 +147,9 @@
 "there_are_new_ver" = "Hay una nueva versión de la aplicación Enecuum";
 "coming_soon" = "Próximamente";
 "back" = "Back";
-"buy_enq" = "Comprar ENQ";
 "next" = "Siguiente";
 "skip" = "Omitir";
 "referral_buy_title" = "Programa de recomendación";
-"referral_buy_message" = "Una vez que obtengas %s ENQ, podrás compartir tu código de recomendación de agente. El código puede ser utilizado por otros usuarios para obtener más ENQ dándote ingresos pasivos.";
 "referral_title" = "¡Felicitaciones!";
 "referral_message" = "¡Has desbloqueado tu código de recomendación de agente personal! Compártelo con otros usuarios para recibir 10% o de sus recompensas de minería. ¡Minarán ENQ y te darán ingresos pasivos!";
 "share_code" = "Compartir código";

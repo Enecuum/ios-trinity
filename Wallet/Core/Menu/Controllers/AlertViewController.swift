@@ -5,35 +5,53 @@
 
 import UIKit
 
-protocol ConfirmViewDelegate {
+protocol AlertViewControllerDelegate {
     func onConfirmClicked()
     func onCancelClicked()
 }
 
-class ConfirmViewController: UIViewController {
+class AlertViewController: UIViewController {
 
-    @IBOutlet weak var titileLabel: UILabel!
+    @IBOutlet private weak var titleLabel: UILabel!
     @IBOutlet private weak var textLabel: UILabel!
     @IBOutlet private weak var rejectButton: UIButton!
     @IBOutlet private weak var confirmButton: GradientButton!
 
+    var titleText: String?
+    var text: String?
+    var cancelText: String?
     var confirmText: String?
-    var delegate: ConfirmViewDelegate?
+
+    var hasButtonIcons: Bool = true
+
+    var delegate: AlertViewControllerDelegate?
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        titileLabel.text = R.string.localizable.are_you_sure.localized()
-        textLabel.text = confirmText
+        confirmButton.titleLabel?.numberOfLines = 0;
+        confirmButton.titleLabel?.lineBreakMode = .byWordWrapping;
+        rejectButton.titleLabel?.numberOfLines = 0;
+        rejectButton.titleLabel?.lineBreakMode = .byWordWrapping;
 
-        addAttributedButton(rejectButton,
-                            image: R.image.icons.cross()!,
-                            string: R.string.localizable.no.localized().uppercased(),
-                            color: .red)
-        addAttributedButton(confirmButton,
-                            image: R.image.icons.tick()!,
-                            string: R.string.localizable.yes.localized().uppercased(),
-                            color: .white)
+        titleLabel.text = titleText ?? R.string.localizable.are_you_sure.localized()
+        textLabel.text = text
+        let confirm = confirmText ?? R.string.localizable.yes.localized().uppercased()
+        let cancel = cancelText ?? R.string.localizable.no.localized().uppercased()
+
+        if hasButtonIcons {
+            addAttributedButton(rejectButton,
+                                image: R.image.icons.cross()!,
+                                string: cancel,
+                                color: .red)
+            addAttributedButton(confirmButton,
+                                image: R.image.icons.tick()!,
+                                string: confirm,
+                                color: .white)
+        } else {
+            rejectButton.setTitle(cancel, for: .normal)
+            confirmButton.setTitle(confirm, for: .normal)
+        }
     }
 
     private func addAttributedButton(_ button: UIButton, image: UIImage, string: String, color: UIColor) {

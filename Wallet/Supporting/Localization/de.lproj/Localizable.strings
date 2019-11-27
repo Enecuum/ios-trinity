@@ -9,6 +9,7 @@
 /* main */
 
 "balance" = "Guthaben:";
+"buy_enq" = "%@ kaufen";
 
 /* send-receive */
 
@@ -21,6 +22,10 @@
 "reject" = "Ablehnen";
 "confirm" = "Bestätigen";
 "share_qr" = "QR-Code freigeben";
+
+/* referral */
+
+"referral_buy_message" = "Sobald Sie %@ %@ erhalten haben, können Sie Ihren Agenten-Empfehlungscode freigeben. Der Code kann von anderen Benutzern verwendet werden, um mehr %@ zu erhalten, während Sie passives Einkommen erzielen.";
 
 /* menu */
 
@@ -143,11 +148,9 @@
 "there_are_new_ver" = "Es gibt eine neue Version der Enecuum App.";
 "coming_soon" = "Demnächst";
 "back" = "Back";
-"buy_enq" = "ENQ kaufen";
 "next" = "Weiter";
 "skip" = "Überspringen";
 "referral_buy_title" = "Empfehlungsprogramm";
-"referral_buy_message" = "Sobald Sie %s ENQ erhalten haben, können Sie Ihren Agenten-Empfehlungscode freigeben. Der Code kann von anderen Benutzern verwendet werden, um mehr ENQ zu erhalten, während Sie passives Einkommen erzielen.";
 "referral_title" = "Herzlichen Glückwunsch!";
 "referral_message" = "Sie haben Ihren persönlichen Agenten-Empfehlungscode freigeschaltet! Teilen Sie ihn mit anderen Benutzern, um 10 % o f ihrer Mining-Belohnungen zu erhalten. Sie werden ENQ abbauen und Ihnen passives Einkommen bescheren!";
 "share_code" = "Code freigeben";

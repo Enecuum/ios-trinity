@@ -9,6 +9,7 @@
 /* main */
 
 "balance" = "Balance:";
+"buy_enq" = "Buy %@";
 
 /* send-receive */
 
@@ -21,6 +22,10 @@
 "reject" = "Reject";
 "confirm" = "Confirm";
 "share_qr" = "Share QR Code";
+
+/* referral */
+
+"referral_buy_message" = "Once you earn %@ %@, you will be able to share your agent referral code. The code can be used by other users to get more %@ providing you passive income.";
 
 /* menu */
 
@@ -122,11 +127,9 @@
 "send_confirmation" = "Send Confirmation";
 "coming_soon" = "Coming soon";
 "back" = "Back";
-"buy_enq" = "Buy ENQ";
 "next" = "Next";
 "skip" = "Skip";
 "referral_buy_title" = "Referral program";
-"referral_buy_message" = "Once you earn %s ENQ, you will be able to share your agent referral code. The code can be used by other users to get more ENQ providing you passive income.";
 "referral_title" = "Congratulations!";
 "referral_message" = "You\'ve unlocked your personal agent referral code! Share it with other users to receive 10% of their mining rewards. They will mine ENQ and provide you passive income!\n";
 "share_code" = "Share code";

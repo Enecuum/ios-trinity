@@ -9,6 +9,7 @@
 /* main */
 
 "balance" = "Bakiye:";
+"buy_enq" = "%@ satın al";
 
 /* send-receive */
 
@@ -21,6 +22,10 @@
 "reject" = "Reddet";
 "confirm" = "Onayla";
 "share_qr" = "QR Kodunu Paylaş";
+
+/* referral */
+
+"referral_buy_message" = "%@ %@ kazandıktan sonra, acente referans kodunuzu paylaşabileceksiniz. Bu kod, size pasif gelir sağlayacak daha fazla %@ elde etmek için diğer kullanıcılar tarafından kullanılabilir.";
 
 /* menu */
 
@@ -144,11 +149,9 @@
 "there_are_new_ver" = "Enecuum uygulamasının yeni bir sürümü var";
 "coming_soon" = "Çok yakında";
 "back" = "Back";
-"buy_enq" = "ENQ satın al";
 "next" = "Sonraki";
 "skip" = "Atla";
 "referral_buy_title" = "Referans programı";
-"referral_buy_message" = "%s ENQ kazandıktan sonra, acente referans kodunuzu paylaşabileceksiniz. Bu kod, size pasif gelir sağlayacak daha fazla ENQ elde etmek için diğer kullanıcılar tarafından kullanılabilir.";
 "referral_title" = "Tebrikler!";
 "referral_message" = "Kişisel acente referans kodunuzun kilidini açtınız! Madencilik ödüllerinin 10% o\'unu almak için diğer kullanıcılarla paylaşın. ENQ madenciliği yapacak ve size pasif gelir sağlayacaklar!";
 "share_code" = "Kodu paylaş";

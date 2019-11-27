@@ -9,6 +9,7 @@
 /* main */
 
 "balance" = "Solde :";
+"buy_enq" = "Acheter %@";
 
 /* send-receive */
 
@@ -21,6 +22,10 @@
 "reject" = "Rejeter";
 "confirm" = "Confirmer";
 "share_qr" = "Partager le code QR";
+
+/* referral */
+
+"referral_buy_message" = "Une fois que vous aurez gagné %@ %@, vous pourrez partager le code de parrainage de votre agent. Le code peut être utilisé par d\'autres utilisateurs pour obtenir plus d\'%@ vous fournissant un revenu passif.";
 
 /* menu */
 
@@ -143,11 +148,9 @@
 "there_are_new_ver" = "Il y a une nouvelle version de l\'appli Enecuum";
 "coming_soon" = "Prochainement";
 "back" = "Back";
-"buy_enq" = "Acheter ENQ";
 "next" = "Suivant";
 "skip" = "Sauter";
 "referral_buy_title" = "Programme de référence";
-"referral_buy_message" = "Une fois que vous aurez gagné %s ENQ, vous pourrez partager le code de parrainage de votre agent. Le code peut être utilisé par d\'autres utilisateurs pour obtenir plus d\'ENQ vous fournissant un revenu passif.";
 "referral_title" = "Félicitations !";
 "referral_message" = "Vous avez déverrouillé votre code de parrainage d\'agent personnel ! Partagez-le avec d\'autres utilisateurs pour recevoir 10 % o de leurs récompenses minières. Ils exploiteront l\'ENQ et vous assureront un revenu passif !";
 "share_code" = "Partager le code";

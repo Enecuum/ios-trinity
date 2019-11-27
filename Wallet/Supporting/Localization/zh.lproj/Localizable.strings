@@ -9,6 +9,7 @@
 /* main */
 
 "balance" = "余额：";
+"buy_enq" = "购买%@";
 
 /* send-receive */
 
@@ -21,6 +22,10 @@
 "reject" = "拒绝";
 "confirm" = "确认";
 "share_qr" = "分享二维码";
+
+/* referral */
+
+"referral_buy_message" = "一旦您获得%@ %@，您就可以分享您的代理人推荐代码。该代码可以被其他用户使用，以获取更多%@，为您带来被动收入。";
 
 /* menu */
 
@@ -144,11 +149,9 @@
 "there_are_new_ver" = "有一个Enecuum应用程序新版本";
 "coming_soon" = "即将推出";
 "back" = "Back";
-"buy_enq" = "购买ENQ";
 "next" = "下一个";
 "skip" = "跳过";
 "referral_buy_title" = "推荐计划";
-"referral_buy_message" = "一旦您获得%s ENQ，您就可以分享您的代理人推荐代码。该代码可以被其他用户使用，以获取更多ENQ，为您带来被动收入。";
 "referral_title" = "恭喜！";
 "referral_message" = "您已经解锁了您的个人代理人推荐代码！与其他用户分享以获取其采矿奖励的10% o。他们将挖掘ENQ并为您带来被动收入！";
 "share_code" = "分享代码";

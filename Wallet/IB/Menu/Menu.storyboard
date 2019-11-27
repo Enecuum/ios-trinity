@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -1690,38 +1690,42 @@ Feel free to ask for help in the Telegram group</string>
             </objects>
             <point key="canvasLocation" x="3046" y="780"/>
         </scene>
-        <!--Confirm View Controller-->
+        <!--Alert View Controller-->
         <scene sceneID="V1J-Av-Rig">
             <objects>
-                <viewController storyboardIdentifier="confirmViewController" id="KaV-ly-1i3" customClass="ConfirmViewController" customModule="Enecuum_Wallet" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="alertViewController" id="KaV-ly-1i3" customClass="AlertViewController" customModule="Enecuum_Wallet" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="btD-tJ-ew1">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ytm-OH-VM2">
-                                <rect key="frame" x="87" y="252.33333333333331" width="240" height="194.33333333333331"/>
+                                <rect key="frame" x="77" y="252.33333333333331" width="260" height="194.33333333333331"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Are you sure?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7wR-c2-AqW">
-                                        <rect key="frame" x="66.333333333333343" y="39.999999999999972" width="107.66666666666666" height="20.333333333333329"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Are you sure?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7wR-c2-AqW">
+                                        <rect key="frame" x="20" y="39.999999999999972" width="220" height="20.333333333333329"/>
                                         <fontDescription key="fontDescription" name="TTNorms-Bold" family="TT Norms" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bpi-nX-ZPa">
-                                        <rect key="frame" x="120" y="80.333333333333343" width="0.0" height="0.0"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bpi-nX-ZPa">
+                                        <rect key="frame" x="16" y="80.333333333333343" width="228" height="0.0"/>
                                         <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="15"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="nle-ih-0lF">
-                                        <rect key="frame" x="33" y="116.33333333333334" width="174" height="38"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="nle-ih-0lF">
+                                        <rect key="frame" x="43" y="116.33333333333334" width="174" height="38"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="i9R-ot-xJN">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i9R-ot-xJN">
                                                 <rect key="frame" x="0.0" y="0.0" width="72" height="38"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="72" id="7G7-vK-p03"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="72" id="7G7-vK-p03"/>
                                                     <constraint firstAttribute="height" constant="38" id="Rk0-QJ-pbN"/>
                                                 </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                <state key="normal">
+                                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                         <real key="value" value="6"/>
@@ -1746,12 +1750,13 @@ Feel free to ask for help in the Telegram group</string>
                                                     <action selector="onCancelClicked:" destination="KaV-ly-1i3" eventType="touchUpInside" id="6vb-f2-GBl"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iOh-OP-334" customClass="GradientButton" customModule="Enecuum_Wallet" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iOh-OP-334" customClass="GradientButton" customModule="Enecuum_Wallet" customModuleProvider="target">
                                                 <rect key="frame" x="92" y="0.0" width="82" height="38"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="38" id="2bx-j4-dp3"/>
-                                                    <constraint firstAttribute="width" constant="82" id="lLL-pi-r2U"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="82" id="CfX-aj-3g0"/>
                                                 </constraints>
+                                                <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="13"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="firstColor">
                                                         <color key="value" red="0.25098039220000001" green="0.61960784310000006" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
@@ -1796,14 +1801,18 @@ Feel free to ask for help in the Telegram group</string>
                                 </subviews>
                                 <color key="backgroundColor" red="0.16862745098039217" green="0.18431372549019609" blue="0.23921568627450979" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
-                                    <constraint firstItem="Bpi-nX-ZPa" firstAttribute="centerX" secondItem="Ytm-OH-VM2" secondAttribute="centerX" id="A8Q-wp-grU"/>
+                                    <constraint firstItem="7wR-c2-AqW" firstAttribute="leading" secondItem="Ytm-OH-VM2" secondAttribute="leading" constant="20" id="ChP-KG-gsb"/>
+                                    <constraint firstItem="nle-ih-0lF" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Ytm-OH-VM2" secondAttribute="leading" constant="16" id="Ikp-PM-3rk"/>
+                                    <constraint firstAttribute="trailing" secondItem="Bpi-nX-ZPa" secondAttribute="trailing" constant="16" id="JqP-do-hfp"/>
                                     <constraint firstItem="nle-ih-0lF" firstAttribute="centerX" secondItem="Ytm-OH-VM2" secondAttribute="centerX" id="M21-Gl-OtU"/>
                                     <constraint firstItem="7wR-c2-AqW" firstAttribute="top" secondItem="Ytm-OH-VM2" secondAttribute="top" constant="40" id="OSK-Qq-Q2n"/>
-                                    <constraint firstItem="7wR-c2-AqW" firstAttribute="centerX" secondItem="Ytm-OH-VM2" secondAttribute="centerX" id="UDv-zr-bRh"/>
+                                    <constraint firstItem="Bpi-nX-ZPa" firstAttribute="leading" secondItem="Ytm-OH-VM2" secondAttribute="leading" constant="16" id="U9T-AI-YUz"/>
+                                    <constraint firstAttribute="trailing" secondItem="7wR-c2-AqW" secondAttribute="trailing" constant="20" id="VCR-X6-Ct6"/>
                                     <constraint firstAttribute="bottom" secondItem="nle-ih-0lF" secondAttribute="bottom" constant="40" id="cUU-Xo-rdA"/>
-                                    <constraint firstAttribute="width" constant="240" id="gb0-mh-cb2"/>
+                                    <constraint firstAttribute="width" constant="260" id="gb0-mh-cb2"/>
                                     <constraint firstItem="Bpi-nX-ZPa" firstAttribute="top" secondItem="7wR-c2-AqW" secondAttribute="bottom" constant="20" id="qiM-Ok-WCc"/>
                                     <constraint firstItem="nle-ih-0lF" firstAttribute="top" secondItem="Bpi-nX-ZPa" secondAttribute="bottom" constant="36" id="tlb-8Y-ByI"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="nle-ih-0lF" secondAttribute="trailing" constant="16" id="zSL-w6-EkV"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -1835,12 +1844,12 @@ Feel free to ask for help in the Telegram group</string>
                         <outlet property="confirmButton" destination="iOh-OP-334" id="5Zy-fK-fAE"/>
                         <outlet property="rejectButton" destination="i9R-ot-xJN" id="oJe-ii-EYw"/>
                         <outlet property="textLabel" destination="Bpi-nX-ZPa" id="r7c-ec-DhN"/>
-                        <outlet property="titileLabel" destination="7wR-c2-AqW" id="M1q-1g-IqY"/>
+                        <outlet property="titleLabel" destination="7wR-c2-AqW" id="M1q-1g-IqY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oYH-ge-QvM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-477" y="522"/>
+            <point key="canvasLocation" x="-478.26086956521743" y="521.73913043478262"/>
         </scene>
         <!--Socials View Controller-->
         <scene sceneID="b5W-2d-J7j">

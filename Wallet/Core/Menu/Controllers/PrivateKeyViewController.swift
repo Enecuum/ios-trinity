@@ -97,12 +97,12 @@ class PrivateKeyViewController: UIViewController {
 
         confirmedPrivateKey = newPrivateKey
 
-        let confirmViewController = R.storyboard.menu.confirmViewController()!
-        confirmViewController.confirmText = R.string.localizable.import_new_private_key.localized()
-        confirmViewController.modalPresentationStyle = .overCurrentContext
-        confirmViewController.modalTransitionStyle = .crossDissolve
-        confirmViewController.delegate = self
-        present(confirmViewController, animated: false)
+        let alertViewController = R.storyboard.menu.alertViewController()!
+        alertViewController.text = R.string.localizable.import_new_private_key.localized()
+        alertViewController.modalPresentationStyle = .overCurrentContext
+        alertViewController.modalTransitionStyle = .crossDissolve
+        alertViewController.delegate = self
+        present(alertViewController, animated: false)
     }
 
     @IBAction func onBackClicked(_ sender: Any) {
@@ -110,7 +110,7 @@ class PrivateKeyViewController: UIViewController {
     }
 }
 
-extension PrivateKeyViewController: ConfirmViewDelegate {
+extension PrivateKeyViewController: AlertViewControllerDelegate {
     func onConfirmClicked() {
         if let key = confirmedPrivateKey {
             Defaults.clearUserData()

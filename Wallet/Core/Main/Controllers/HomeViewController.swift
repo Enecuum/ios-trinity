@@ -86,6 +86,19 @@ class HomeViewController: UIViewController {
         }
     }
 
+    private func showMinimumStakeDialog(_ stake: NSDecimalNumber) {
+        let alertViewController = R.storyboard.menu.alertViewController()!
+        alertViewController.titleText = R.string.localizable.referral_buy_title.localized()
+        alertViewController.text = CurrencyFormat.referralBuyMessage(stake)
+        alertViewController.confirmText = CurrencyFormat.buyCurrencyString()
+        alertViewController.cancelText = R.string.localizable.cancel.localized()
+        alertViewController.hasButtonIcons = false
+        alertViewController.modalPresentationStyle = .overCurrentContext
+        alertViewController.modalTransitionStyle = .crossDissolve
+        alertViewController.delegate = self
+        present(alertViewController, animated: false)
+    }
+
     // MARK: - Public methods
 
     func resetBalance() {
@@ -148,6 +161,7 @@ extension HomeViewController: QrSideViewDelegate {
                     self?.referralView.isHidden = false
                 } else {
                     self?.qrSideView.fold()
+                    self?.showMinimumStakeDialog(stake)
                 }
             } else {
                 self?.qrSideView.fold()
@@ -159,4 +173,11 @@ extension HomeViewController: QrSideViewDelegate {
     func onBackClicked() {
         referralView.isHidden = true
     }
+}
+
+extension HomeViewController: AlertViewControllerDelegate {
+    func onConfirmClicked() {
+    }
+
+    func onCancelClicked() {}
 }

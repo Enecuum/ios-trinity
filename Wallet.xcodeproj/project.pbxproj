@@ -30,6 +30,7 @@
 		B8EA12606E90F967E84A040E /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA11F255A323DDBD75F780 /* AuthManager.swift */; };
 		B8EA12967CF8667931778061 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA10B587A40452E6650A9E /* ApiClient.swift */; };
 		B8EA12DEEF2EA7D15AF5E282 /* Formatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA1BA9B0E7E6CCC2A0B48F /* Formatter.swift */; };
+		B8EA1317B525BCF40B6AFD4F /* LogicOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA1DA328856AF23407927E /* LogicOperation.swift */; };
 		B8EA133B869DF927EB4C0EF1 /* RoiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA1325A57EB9683E56373D /* RoiViewController.swift */; };
 		B8EA1347970505193E9CD473 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA1AB4DE484A22A99E7DFD /* UIView+Extension.swift */; };
 		B8EA135ACA1DCB77A9B3928C /* GradientButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA1454E4B1EBD958E7E413 /* GradientButton.swift */; };
@@ -170,6 +171,7 @@
 		B8EA1D4B5F536C48DC18ECDA /* AlertViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertViewController.swift; sourceTree = "<group>"; };
 		B8EA1D8EC716C39C262B2F0B /* FaqViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FaqViewController.swift; sourceTree = "<group>"; };
 		B8EA1D9D2D2EC73F992AC0FB /* UILabel+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel+Extension.swift"; sourceTree = "<group>"; };
+		B8EA1DA328856AF23407927E /* LogicOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogicOperation.swift; sourceTree = "<group>"; };
 		B8EA1DAB32B70779EF93B2DE /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		B8EA1DBE3695611D726A76D6 /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		B8EA1DD295EDE959F1ADEE1A /* UIDevice+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIDevice+Extension.swift"; sourceTree = "<group>"; };
@@ -286,6 +288,7 @@
 				B8EA1243B21D14DA8D15EB06 /* Localization.swift */,
 				B8EA1BA9B0E7E6CCC2A0B48F /* Formatter.swift */,
 				B8EA15CEFF907025F3D2640B /* CurrencyFormat.swift */,
+				B8EA1DA328856AF23407927E /* LogicOperation.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -707,6 +710,7 @@
 				B8EA1DDE9480F881D9E83408 /* CurrencyFormat.swift in Sources */,
 				B8EA158447317F8430367213 /* QRSideView.swift in Sources */,
 				B8EA19AD18509D3E58FB3939 /* ReferrerStake.swift in Sources */,
+				B8EA1317B525BCF40B6AFD4F /* LogicOperation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

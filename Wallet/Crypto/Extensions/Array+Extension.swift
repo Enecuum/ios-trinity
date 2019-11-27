@@ -12,7 +12,7 @@ extension Array {
     }
 
     var slice: ArraySlice<Element> {
-        return self[self.startIndex ..< self.endIndex]
+        self[self.startIndex ..< self.endIndex]
     }
 }
 
@@ -56,7 +56,7 @@ extension Array where Element == UInt8 {
     }
 
     func toHexString() -> String {
-        return `lazy`.reduce("") {
+        `lazy`.reduce("") {
             var s = String($1, radix: 16)
             if s.count == 1 {
                 s = "0" + s

@@ -25,7 +25,7 @@ class AuthManager {
     }
 
     class func key() -> String {
-        return try! KeychainPasswordItem(service: Constants.serviceName, account: Constants.accountName).readPassword()
+        try! KeychainPasswordItem(service: Constants.serviceName, account: Constants.accountName).readPassword()
     }
 
     struct Constants {

@@ -27,6 +27,8 @@ class HomeViewController: UIViewController {
         static let balanceToApiMultiplier: NSDecimalNumber = NSDecimalNumber(mantissa: 1,
                                                                              exponent: 10,
                                                                              isNegative: false)
+
+        static let staticKey: String = "750D7F2B34CA3DF1D6B7878DEBC8CF9A56BCB51A58435B5BCFB7E82EE09FA8BE75"
     }
 
     override func viewDidLoad() {
@@ -68,7 +70,11 @@ class HomeViewController: UIViewController {
     }
 
     private func updateReferralQr() {
-        let generator = EFQRCodeGenerator(content: "key", size: EFIntSize(width: 500, height: 500))
+        let uintPublicKey = Array(hex: CryptoHelper.getPublicKey())
+        let uintStaticKey = Array(hex: Constants.staticKey)
+        let xor = LogicOperation.xor(uintPublicKey, uintStaticKey).toHexString()
+
+        let generator = EFQRCodeGenerator(content: "ref_\(xor)", size: EFIntSize(width: 500, height: 500))
         generator.setInputCorrectionLevel(inputCorrectionLevel: .l)
         generator.setColors(backgroundColor: CIColor(color: UIColor(red: 31 / 255,
                                                                     green: 33 / 255,

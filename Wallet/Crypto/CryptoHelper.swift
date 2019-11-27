@@ -38,7 +38,7 @@ class CryptoHelper {
     }
 
     class func buildTxHash(amount: String, random: String, from: String, to: String) -> String {
-        return "\(amount.sha256())\(from.sha256())\(random.sha256())\(to.sha256())".sha256()
+        "\(amount.sha256())\(from.sha256())\(random.sha256())\(to.sha256())".sha256()
     }
 
     class func sign(_ message: String) -> String {

@@ -37,24 +37,25 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iO7-gq-a58" userLabel="Referral View">
                     <rect key="frame" x="16" y="78" width="312" height="444"/>
                     <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your personal agent referral code:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wyg-pm-ylt">
-                            <rect key="frame" x="16" y="36" width="280" height="19"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="200" verticalCompressionResistancePriority="999" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wyg-pm-ylt">
+                            <rect key="frame" x="16" y="24" width="280" height="94.5"/>
+                            <string key="text">You've unlocked your personal agent referral code! Share it with other users to receive 10%% of their mining rewards. They will mine %@ and provide you passive income!</string>
                             <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="16"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fxv-Hh-hVG">
-                            <rect key="frame" x="0.0" y="55" width="312" height="373"/>
+                        <view contentMode="scaleToFill" verticalHuggingPriority="200" verticalCompressionResistancePriority="1" translatesAutoresizingMaskIntoConstraints="NO" id="Fxv-Hh-hVG">
+                            <rect key="frame" x="0.0" y="126.5" width="312" height="263.5"/>
                             <subviews>
-                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Transfer/qrBorder" translatesAutoresizingMaskIntoConstraints="NO" id="rEe-Vm-nBW">
-                                    <rect key="frame" x="66" y="96.5" width="180" height="180"/>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="250" image="Transfer/qrBorder" translatesAutoresizingMaskIntoConstraints="NO" id="rEe-Vm-nBW">
+                                    <rect key="frame" x="77.5" y="45.5" width="157" height="157"/>
                                     <constraints>
+                                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="200" id="3ht-1Y-jhz"/>
                                         <constraint firstAttribute="width" secondItem="rEe-Vm-nBW" secondAttribute="height" multiplier="1:1" id="VAV-VA-KOa"/>
-                                        <constraint firstAttribute="width" constant="180" id="zfX-Xv-KBQ"/>
                                     </constraints>
                                 </imageView>
                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YJZ-sq-R3D">
-                                    <rect key="frame" x="79" y="109.5" width="154" height="154"/>
+                                    <rect key="frame" x="90.5" y="58.5" width="131" height="131"/>
                                 </imageView>
                             </subviews>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -65,17 +66,29 @@
                                 <constraint firstItem="YJZ-sq-R3D" firstAttribute="top" secondItem="rEe-Vm-nBW" secondAttribute="top" constant="13" id="KWg-Xd-B53"/>
                                 <constraint firstItem="rEe-Vm-nBW" firstAttribute="centerY" secondItem="Fxv-Hh-hVG" secondAttribute="centerY" id="WFC-yW-HUg"/>
                                 <constraint firstItem="rEe-Vm-nBW" firstAttribute="centerX" secondItem="Fxv-Hh-hVG" secondAttribute="centerX" id="hOg-JZ-aNh"/>
+                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="rEe-Vm-nBW" secondAttribute="bottom" id="kER-1v-fGm"/>
+                                <constraint firstItem="rEe-Vm-nBW" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Fxv-Hh-hVG" secondAttribute="top" id="pDl-Kn-Hqd"/>
                             </constraints>
                         </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Ze-dh-gwb">
+                            <rect key="frame" x="96.5" y="390" width="119" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="wIi-Ct-8W1"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="13"/>
+                            <state key="normal" title="  Share QR code" image="Icons/share"/>
+                        </button>
                     </subviews>
                     <color key="backgroundColor" red="0.16862745098039217" green="0.18823529411764706" blue="0.23921568627450979" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <constraints>
-                        <constraint firstItem="Fxv-Hh-hVG" firstAttribute="top" secondItem="wyg-pm-ylt" secondAttribute="bottom" id="57x-jL-XNo"/>
+                        <constraint firstItem="Fxv-Hh-hVG" firstAttribute="top" secondItem="wyg-pm-ylt" secondAttribute="bottom" constant="8" id="57x-jL-XNo"/>
+                        <constraint firstAttribute="bottom" secondItem="5Ze-dh-gwb" secondAttribute="bottom" constant="24" id="9Dz-eH-zbv"/>
+                        <constraint firstItem="5Ze-dh-gwb" firstAttribute="centerX" secondItem="iO7-gq-a58" secondAttribute="centerX" id="BJi-GD-enB"/>
                         <constraint firstAttribute="trailing" secondItem="wyg-pm-ylt" secondAttribute="trailing" constant="16" id="Cxm-Di-OUs"/>
+                        <constraint firstItem="5Ze-dh-gwb" firstAttribute="top" secondItem="Fxv-Hh-hVG" secondAttribute="bottom" constant="16" id="TL0-VC-lsN"/>
                         <constraint firstItem="wyg-pm-ylt" firstAttribute="leading" secondItem="iO7-gq-a58" secondAttribute="leading" constant="16" id="dSY-s0-yww"/>
-                        <constraint firstAttribute="bottom" secondItem="Fxv-Hh-hVG" secondAttribute="bottom" constant="16" id="gbd-ub-um0"/>
                         <constraint firstItem="Fxv-Hh-hVG" firstAttribute="leading" secondItem="iO7-gq-a58" secondAttribute="leading" id="hNE-19-X4B"/>
-                        <constraint firstItem="wyg-pm-ylt" firstAttribute="top" secondItem="iO7-gq-a58" secondAttribute="top" constant="36" id="q3y-IJ-bNW"/>
+                        <constraint firstItem="wyg-pm-ylt" firstAttribute="top" secondItem="iO7-gq-a58" secondAttribute="top" constant="24" id="q3y-IJ-bNW"/>
                         <constraint firstAttribute="trailing" secondItem="Fxv-Hh-hVG" secondAttribute="trailing" id="yPM-IU-aGq"/>
                     </constraints>
                     <userDefinedRuntimeAttributes>
@@ -126,6 +139,7 @@
     </objects>
     <resources>
         <image name="Back/main" width="410" height="825"/>
+        <image name="Icons/share" width="24" height="24"/>
         <image name="Transfer/qrBorder" width="157" height="151.5"/>
     </resources>
 </document>

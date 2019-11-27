@@ -17,6 +17,11 @@ class QRSideView: UIView, NibView {
     @IBOutlet weak var qrButton: UIButton!
     @IBOutlet weak var backButton: UIButton!
 
+    struct Constants {
+        static let duration: TimeInterval = 0.125
+        static let shift: CGFloat = -120
+    }
+
     var delegate: QrSideViewDelegate?
 
     override init(frame: CGRect) {
@@ -37,24 +42,29 @@ class QRSideView: UIView, NibView {
         fold()
     }
 
-    private func unfold() {
-        qrButton.isEnabled = false
-        backButton.isHidden = false
-        frameView.transform.tx = 0
-    }
-
-    // MARK: - Public Methods
-
-    func fold() {
+    private func fold() {
+        UIView.animate(withDuration: Constants.duration, animations: { [weak self] in
+            self?.transform.ty = 0
+        })
         backButton.isHidden = true
         frameView.transform.tx = -backButton.bounds.width
         qrButton.isEnabled = true
     }
 
+    // MARK: - Public Methods
+
+    func unfold() {
+        UIView.animate(withDuration: Constants.duration, animations: { [weak self] in
+            self?.transform.ty = Constants.shift
+        })
+        qrButton.isEnabled = false
+        backButton.isHidden = false
+        frameView.transform.tx = 0
+    }
+
     // MARK: - IB Actions
 
     @IBAction func onQRClicked(_ sender: Any) {
-        unfold()
         delegate?.onQRClicked()
     }
 

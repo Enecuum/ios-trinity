@@ -6,7 +6,6 @@
 import UIKit
 import QRCodeReader
 import AVFoundation
-import EFQRCode
 
 class HomeViewController: UIViewController {
 
@@ -17,8 +16,6 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var amountInUsdLabel: UILabel!
 
     @IBOutlet weak var qrSideView: QRSideView!
-    @IBOutlet weak var referralView: UIView!
-    @IBOutlet weak var referralQrImageView: UIImageView!
 
     struct Constants {
         static let balanceFromApiMultiplier: NSDecimalNumber = NSDecimalNumber(mantissa: 1,
@@ -27,8 +24,7 @@ class HomeViewController: UIViewController {
         static let balanceToApiMultiplier: NSDecimalNumber = NSDecimalNumber(mantissa: 1,
                                                                              exponent: 10,
                                                                              isNegative: false)
-
-        static let staticKey: String = "750D7F2B34CA3DF1D6B7878DEBC8CF9A56BCB51A58435B5BCFB7E82EE09FA8BE75"
+        static let referralViewTag: Int = 1991
     }
 
     override func viewDidLoad() {
@@ -66,29 +62,6 @@ class HomeViewController: UIViewController {
         if let balance = Defaults.getBalance() {
             let usdAmount = usdCourse.multiplying(by: balance)
             self.amountInUsdLabel.text = Formatter.decimalString(usdAmount, fractionDigits: 2)
-        }
-    }
-
-    private func updateReferralQr() {
-        let uintPublicKey = Array(hex: CryptoHelper.getPublicKey())
-        let uintStaticKey = Array(hex: Constants.staticKey)
-        let xor = LogicOperation.xor(uintPublicKey, uintStaticKey).toHexString()
-
-        let generator = EFQRCodeGenerator(content: "ref_\(xor)", size: EFIntSize(width: 500, height: 500))
-        generator.setInputCorrectionLevel(inputCorrectionLevel: .l)
-        generator.setColors(backgroundColor: CIColor(color: UIColor(red: 31 / 255,
-                                                                    green: 33 / 255,
-                                                                    blue: 41 / 255,
-                                                                    alpha: 1)),
-                            foregroundColor: CIColor(color: UIColor(red: 39 / 255,
-                                                                    green: 88 / 255,
-                                                                    blue: 163 / 255,
-                                                                    alpha: 1)))
-        generator.setPointShape(pointShape: .circle)
-        if let qrImage = generator.generate() {
-            referralQrImageView.image = UIImage(cgImage: qrImage)
-        } else {
-            print("Create QRCode image failed!")
         }
     }
 
@@ -160,29 +133,35 @@ extension HomeViewController: QrSideViewDelegate {
     func onQRClicked() {
         view.showLoader()
         fetchReferrerStake { [weak self] stake in
-            self?.view.hideLoader()
+            guard let self = self else {
+                return
+            }
+            self.view.hideLoader()
             if let stake = stake {
                 if let balance = Defaults.getBalance(), balance.compare(stake) != .orderedAscending {
-                    self?.updateReferralQr()
-                    self?.referralView.isHidden = false
+                    self.qrSideView.unfold()
+                    let referralView = ReferralView(frame: self.view.bounds)
+                    referralView.tag = Constants.referralViewTag
+                    self.view.insertSubview(referralView, belowSubview: self.qrSideView)
                 } else {
-                    self?.qrSideView.fold()
-                    self?.showMinimumStakeDialog(stake)
+                    self.showMinimumStakeDialog(stake)
                 }
             } else {
-                self?.qrSideView.fold()
                 //show dialog error?
             }
         }
     }
 
     func onBackClicked() {
-        referralView.isHidden = true
+        if let referralView = view.viewWithTag(Constants.referralViewTag) {
+            referralView.removeFromSuperview()
+        }
     }
 }
 
 extension HomeViewController: AlertViewControllerDelegate {
     func onConfirmClicked() {
+        //open exchange
     }
 
     func onCancelClicked() {}

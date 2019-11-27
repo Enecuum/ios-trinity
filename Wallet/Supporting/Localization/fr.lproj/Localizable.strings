@@ -26,6 +26,7 @@
 /* referral */
 
 "referral_buy_message" = "Une fois que vous aurez gagné %@ %@, vous pourrez partager le code de parrainage de votre agent. Le code peut être utilisé par d\'autres utilisateurs pour obtenir plus d\'%@ vous fournissant un revenu passif.";
+"referral_message" = "Vous avez déverrouillé votre code de parrainage d\'agent personnel ! Partagez-le avec d\'autres utilisateurs pour recevoir 10 %% o de leurs récompenses minières. Ils exploiteront l\'%@ et vous assureront un revenu passif !";
 
 /* menu */
 
@@ -152,7 +153,6 @@
 "skip" = "Sauter";
 "referral_buy_title" = "Programme de référence";
 "referral_title" = "Félicitations !";
-"referral_message" = "Vous avez déverrouillé votre code de parrainage d\'agent personnel ! Partagez-le avec d\'autres utilisateurs pour recevoir 10 % o de leurs récompenses minières. Ils exploiteront l\'ENQ et vous assureront un revenu passif !";
 "share_code" = "Partager le code";
 "referral_not_enough" = "Pas assez d\'ENQ sur le compte mentionné";
 "referral_skip_message" = "Avec le code de parrainage, vous gagnerez davantage de jetons !";

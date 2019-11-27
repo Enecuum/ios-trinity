@@ -26,6 +26,7 @@
 /* referral */
 
 "referral_buy_message" = "Una vez que obtengas %@ %@, podrás compartir tu código de recomendación de agente. El código puede ser utilizado por otros usuarios para obtener más %@ dándote ingresos pasivos.";
+"referral_message" = "¡Has desbloqueado tu código de recomendación de agente personal! Compártelo con otros usuarios para recibir 10%% o de sus recompensas de minería. ¡Minarán %@ y te darán ingresos pasivos!";
 
 /* menu */
 
@@ -151,7 +152,6 @@
 "skip" = "Omitir";
 "referral_buy_title" = "Programa de recomendación";
 "referral_title" = "¡Felicitaciones!";
-"referral_message" = "¡Has desbloqueado tu código de recomendación de agente personal! Compártelo con otros usuarios para recibir 10% o de sus recompensas de minería. ¡Minarán ENQ y te darán ingresos pasivos!";
 "share_code" = "Compartir código";
 "referral_not_enough" = "ENQ insuficientes en la cuenta recomendada";
 "referral_skip_message" = "¡Con el código de recomendación ganarás más tokens!";

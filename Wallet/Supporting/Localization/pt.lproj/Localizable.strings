@@ -26,6 +26,7 @@
 /* referral */
 
 "referral_buy_message" = "Depois de ganhar %@ %@, poderá partilhar o seu código de agente de referência. O código pode ser usado por outros utilizadores para obter mais %@ proporcionando-lhe rendimento passivo.";
+"referral_message" = "Desbloqueou o seu código pessoal de agente de referência! Partilhe com outros utilizadorespara receber 10 %% o das suas recompensas de mineração. Eles vão minerar %@ e proporcionar-lhe rendimento passivo!";
 
 /* menu */
 
@@ -153,7 +154,6 @@
 "skip" = "Ignorar";
 "referral_buy_title" = "Programa de referência";
 "referral_title" = "Parabéns!";
-"referral_message" = "Desbloqueou o seu código pessoal de agente de referência! Partilhe com outros utilizadorespara receber 10 % o das suas recompensas de mineração. Eles vão minerar ENQ e proporcionar-lhe rendimento passivo!";
 "share_code" = "Partilhar código";
 "referral_not_enough" = "Não há ENQ suficiente na conta referida";
 "referral_skip_message" = "Com o código de referência, ganhará mais tokens!";

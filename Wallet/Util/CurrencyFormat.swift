@@ -26,4 +26,9 @@ class CurrencyFormat {
         let format = R.string.localizable.buy_enq.localized()
         return String(format: format, Constants.currency)
     }
+
+    static func referralMessage() -> String {
+        let format = R.string.localizable.referral_message.localized()
+        return String(format: format, Constants.currency)
+    }
 }

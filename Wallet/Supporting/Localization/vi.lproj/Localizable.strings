@@ -26,6 +26,7 @@
 /* referral */
 
 "referral_buy_message" = "Khi bạn kiếm được %@ %@, bạn sẽ có thể chia sẻ mã giới thiệu đại lý của mình. Mã này có thể được những người dùng khác sử dụng để có thêm %@ qua đó cung cấp cho bạn nguồn thu nhập thụ động.";
+"referral_message" = "Bạn đã mở khóa mã giới thiệu đại lý cá nhân của bạn! Chia sẻ nó với những người dùng khác để nhận 10 %% of từ phần thưởng khai thác của họ. Họ sẽ khai thác %@ và cung cấp cho bạn nguồn thu nhập thụ động!";
 
 /* menu */
 
@@ -152,7 +153,6 @@
 "skip" = "Bỏ qua";
 "referral_buy_title" = "Chương trình giới thiệu khách hàng";
 "referral_title" = "Xin chúc mừng!";
-"referral_message" = "Bạn đã mở khóa mã giới thiệu đại lý cá nhân của bạn! Chia sẻ nó với những người dùng khác để nhận 10 % of từ phần thưởng khai thác của họ. Họ sẽ khai thác ENQ và cung cấp cho bạn nguồn thu nhập thụ động!";
 "share_code" = "Chia sẻ mã";
 "referral_not_enough" = "Không đủ ENQ trong tài khoản được giới thiệu";
 "referral_skip_message" = "Với mã giới thiệu, bạn sẽ kiếm được nhiều mã thông báo hơn!";

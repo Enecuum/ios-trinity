@@ -26,6 +26,7 @@
 /* referral */
 
 "referral_buy_message" = "%@ %@ kazandıktan sonra, acente referans kodunuzu paylaşabileceksiniz. Bu kod, size pasif gelir sağlayacak daha fazla %@ elde etmek için diğer kullanıcılar tarafından kullanılabilir.";
+"referral_message" = "Kişisel acente referans kodunuzun kilidini açtınız! Madencilik ödüllerinin 10%% o\'unu almak için diğer kullanıcılarla paylaşın. %@ madenciliği yapacak ve size pasif gelir sağlayacaklar!";
 
 /* menu */
 
@@ -153,7 +154,6 @@
 "skip" = "Atla";
 "referral_buy_title" = "Referans programı";
 "referral_title" = "Tebrikler!";
-"referral_message" = "Kişisel acente referans kodunuzun kilidini açtınız! Madencilik ödüllerinin 10% o\'unu almak için diğer kullanıcılarla paylaşın. ENQ madenciliği yapacak ve size pasif gelir sağlayacaklar!";
 "share_code" = "Kodu paylaş";
 "referral_not_enough" = "Referans verilen hesapta yeterli ENQ yok";
 "referral_skip_message" = "Referans koduyla daha fazla token kazanacaksınız!";

@@ -26,6 +26,7 @@
 /* referral */
 
 "referral_buy_message" = "Setelah mendapatkan %@ %@, Anda akan dapat membagikan kode referral agen Anda. Kode ini dapat digunakan oleh pengguna lain untuk mendapatkan lebih banyak %@ yang memberi Anda penghasilan pasif.";
+"referral_message" = "Anda telah mengaktifkan kode referral agen pribadi Anda! Bagikan dengan pengguna lain untuk menerima 10%% o reward penambangan mereka. Mereka akan menambang %@ dan memberi Anda penghasilan pasif!";
 
 /* menu */
 
@@ -152,7 +153,6 @@
 "skip" = "Lewati";
 "referral_buy_title" = "Program referral";
 "referral_title" = "Selamat!";
-"referral_message" = "Anda telah mengaktifkan kode referral agen pribadi Anda! Bagikan dengan pengguna lain untuk menerima 10% o reward penambangan mereka. Mereka akan menambang ENQ dan memberi Anda penghasilan pasif!";
 "share_code" = "Bagikan kode";
 "referral_not_enough" = "ENQ tidak cukup pada akun yang direferensikan";
 "referral_skip_message" = "Dengan kode referral, Anda akan mendapat lebih banyak token!";

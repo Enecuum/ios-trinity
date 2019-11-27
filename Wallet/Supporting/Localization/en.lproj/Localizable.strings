@@ -26,6 +26,7 @@
 /* referral */
 
 "referral_buy_message" = "Once you earn %@ %@, you will be able to share your agent referral code. The code can be used by other users to get more %@ providing you passive income.";
+"referral_message" = "You\'ve unlocked your personal agent referral code! Share it with other users to receive 10%% of their mining rewards. They will mine %@ and provide you passive income!\n";
 
 /* menu */
 
@@ -131,7 +132,6 @@
 "skip" = "Skip";
 "referral_buy_title" = "Referral program";
 "referral_title" = "Congratulations!";
-"referral_message" = "You\'ve unlocked your personal agent referral code! Share it with other users to receive 10% of their mining rewards. They will mine ENQ and provide you passive income!\n";
 "share_code" = "Share code";
 "referral_not_enough" = "Not enough ENQ at referred account";
 "referral_skip_message" = "With referral code you will earn more tokens!";

@@ -69,6 +69,9 @@ class RoiViewController: UIViewController {
             }
         }
         fetchStats()
+        fetchRoi { [weak self] roiList in
+
+        }
     }
 
     // MARK: - Public methods
@@ -158,6 +161,19 @@ class RoiViewController: UIViewController {
 
             case .failure(let error):
                 print(error.localizedDescription)
+            }
+        }
+    }
+
+    private func fetchRoi(completion: @escaping ([Roi]?) -> Void) {
+        ApiClient.roiList { result in
+            switch result {
+            case .success(let roiList):
+                debugPrint(roiList)
+                completion(roiList)
+            case .failure(let error):
+                print(error.localizedDescription)
+                completion(nil)
             }
         }
     }

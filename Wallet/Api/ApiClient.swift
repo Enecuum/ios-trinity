@@ -46,4 +46,11 @@ class ApiClient {
             completion(response.result)
         }
     }
+
+    static func roiList(completion: @escaping (AFResult<[Roi]>) -> Void) {
+        AF.request(ApiRouter.roi.requestUrl(),
+                   method: .get).validate().responseDecodable { (response: AFDataResponse<[Roi]>) in
+            completion(response.result)
+        }
+    }
 }

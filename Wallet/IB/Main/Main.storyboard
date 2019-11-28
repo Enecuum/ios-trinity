@@ -1618,6 +1618,7 @@ and start mining</string>
                         <outlet property="byCardButton" destination="oy9-BB-sG5" id="Ps4-Ib-IRt"/>
                         <outlet property="exchangesButton" destination="K78-gs-d7j" id="pDK-t6-W31"/>
                         <outlet property="swapButton" destination="qsm-Qr-GNw" id="12t-3Z-vT5"/>
+                        <outlet property="titleLabel" destination="cgZ-Rt-9fV" id="dSa-Kl-ohu"/>
                         <outlet property="usdRateLabel" destination="Gh4-4q-kFH" id="S1I-gL-HkO"/>
                     </connections>
                 </viewController>

@@ -147,10 +147,7 @@
 "referral_same_address" = "Alamat yang direferensikan harus berbeda dari milik Anda";
 "referral_program" = "Program referral";
 "enq_value" = "%s ENQ";
-"dollar_value" = "%s $";
 "percent_value" = "%s %%";
-"min_value" = "min %s";
-"max_value" = "max %s";
 "roi_daily" = "Harian";
 "roi_weekly" = "Mingguan";
 "roi_monthly" = "Bulanan";

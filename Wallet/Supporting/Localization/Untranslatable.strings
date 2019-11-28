@@ -15,3 +15,8 @@
 "coin_to_usd" = "%@/USD";
 "coin_to_rub" = "%@/RUB";
 "coin_to_eth" = "%@/ETH";
+
+/* roi */
+
+"min_value" = "min %@";
+"max_value" = "max %@";

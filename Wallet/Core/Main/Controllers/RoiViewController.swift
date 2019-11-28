@@ -20,6 +20,8 @@ class RoiViewController: UIViewController {
     @IBOutlet weak var exchangesButton: GradientButton!
     @IBOutlet weak var swapButton: GradientButton!
 
+    @IBOutlet weak var titleLabel: UILabel!
+
     @IBOutlet weak var bottomTabsPlaceholder: UIView!
 
     private var buyTabsState: BuyTabsState = .none
@@ -57,6 +59,8 @@ class RoiViewController: UIViewController {
         swapButton.titleLabel?.textAlignment = .center
 
         updateForBuyTabState()
+
+        titleLabel.text = R.string.localizable.roi_alert.localized()
     }
 
     override func viewDidAppear(_ animated: Bool) {

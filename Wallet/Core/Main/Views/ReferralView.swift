@@ -27,7 +27,6 @@ class ReferralView: UIView, NibView {
         setupUI()
     }
 
-
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         loadViewFromNib()

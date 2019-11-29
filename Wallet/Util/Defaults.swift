@@ -60,20 +60,20 @@ class Defaults {
         UserDefaults.standard.string(forKey: Constants.usdRateKey)
     }
 
-    static func setMinStake(_ minStake: Int) {
+    static func setMinStake(_ minStake: Float) {
         UserDefaults.standard.set(minStake, forKey: Constants.minStakeKey)
     }
 
-    static func minStake() -> Int? {
-        UserDefaults.standard.integer(forKey: Constants.minStakeKey)
+    static func minStake() -> Float? {
+        UserDefaults.standard.float(forKey: Constants.minStakeKey)
     }
 
-    static func setMaxStake(_ maxStake: Int) {
+    static func setMaxStake(_ maxStake: Float) {
         UserDefaults.standard.set(maxStake, forKey: Constants.maxStakeKey)
     }
 
-    static func maxStake() -> Int? {
-        UserDefaults.standard.integer(forKey: Constants.maxStakeKey)
+    static func maxStake() -> Float? {
+        UserDefaults.standard.float(forKey: Constants.maxStakeKey)
     }
 
     static func clearUserData() {

@@ -42,8 +42,13 @@ class RoiViewController: UIViewController {
 
     @IBOutlet weak var bottomTabsPlaceholder: UIView!
 
+    private struct RoiFloat: Codable {
+        let stake: Float
+        let roi: Float
+    }
+
     private var buyTabsState: BuyTabsState = .none
-    private var roiList: [Roi]? = nil
+    private var roiList: [RoiFloat]? = nil
 
     struct Constants {
         static let balanceFromApiMultiplier: NSDecimalNumber = NSDecimalNumber(mantissa: 1,
@@ -110,17 +115,19 @@ class RoiViewController: UIViewController {
             }
         }
         fetchStats()
-        fetchRoi { [weak self] roiList in
-            self?.roiList = roiList
+        fetchRoi { [weak self] roiListUint64 in
+            self?.roiList = roiListUint64?.map({ roiUint64 in
+                let stakeFloat: Float = NSDecimalNumber(value: roiUint64.stake).multiplying(by: Constants.balanceFromApiMultiplier).floatValue
+                let roiFloat: Float = NSDecimalNumber(value: roiUint64.roi).multiplying(by: Constants.balanceFromApiMultiplier).floatValue
+                return RoiFloat(stake: stakeFloat, roi: roiFloat)
+            })
 
-            guard let self = self, let minStake = roiList?.first?.stake, let maxStake = roiList?.last?.stake else {
+            guard let self = self, let minStake = self.roiList?.first?.stake, let maxStake = self.roiList?.last?.stake else {
                 return
             }
 
-            let minStakeInt = NSDecimalNumber(value: minStake).multiplying(by: Constants.balanceFromApiMultiplier).intValue
-            Defaults.setMinStake(minStakeInt)
-            let maxStakeInt = NSDecimalNumber(value: maxStake).multiplying(by: Constants.balanceFromApiMultiplier).intValue
-            Defaults.setMaxStake(maxStakeInt)
+            Defaults.setMinStake(minStake)
+            Defaults.setMaxStake(maxStake)
             self.updateRoiSliderData()
             self.updateRoiVerboseData(self.stakeSlider.value)
         }
@@ -201,10 +208,10 @@ class RoiViewController: UIViewController {
             return
         }
 
-        minLabel.text = R.string.untranslatable.min_value("\(minStake)")
-        maxLabel.text = R.string.untranslatable.max_value("\(maxStake)")
+        minLabel.text = R.string.untranslatable.min_value("\(Int(minStake))")
+        maxLabel.text = R.string.untranslatable.max_value("\(Int(maxStake))")
 
-        stakeTextField.text = "\(minStake)"
+        stakeTextField.text = "\(Int(minStake))"
 
         stakeSlider.value = Float(minStake)
         stakeSlider.minimumValue = Float(minStake)
@@ -216,18 +223,24 @@ class RoiViewController: UIViewController {
             return
         }
         let position = roiList.firstIndex { roi in
-            let floatStake = NSDecimalNumber(value: roi.stake).multiplying(by: Constants.balanceFromApiMultiplier).floatValue
-            return floatStake == stake
+            Float(roi.stake) == stake
         }
-        let uint64roi: UInt64 = {
+        let floatRoi: Float = {
             if position == nil {
-                return 0
+                let nextRoiIndex = roiList.firstIndex { roiFloat in
+                    roiFloat.stake > stake
+                }
+                guard let nextIndex = nextRoiIndex, nextIndex > 0 else {
+                    return 0
+                }
+                let roiPrev = roiList[nextIndex - 1]
+                let roiNext = roiList[nextIndex]
+                return (roiNext.roi - roiPrev.roi) * (stake - roiPrev.stake) / (roiNext.stake - roiPrev.stake) + roiPrev.roi
             } else {
-                return roiList[position!].roi
+                return Float(roiList[position!].roi)
             }
         }()
 
-        let floatRoi = NSDecimalNumber(value: uint64roi).multiplying(by: Constants.balanceFromApiMultiplier).floatValue
         let dailyProfit = floatRoi - stake
         let weeklyProfit = dailyProfit * Constants.daysInWeek
         let annualProfit = dailyProfit * Constants.daysInYear
@@ -243,14 +256,11 @@ class RoiViewController: UIViewController {
     }
 
     private func formProfitPercent(_ profit: Float, _ stake: Float) -> String {
-        let percent = (profit / stake * 100 * Constants.roiCoefficient)
-        let percentFormat = String(format: "%.2f", percent)
-        return R.string.untranslatable.percent_value(percentFormat)
+        String(format: "%.2f", profit / stake * 100 * Constants.roiCoefficient)
     }
 
     private func formProfitValue(_ profit: Float) -> String {
-        let resultValue = profit * Constants.roiCoefficient
-        return String(format: "%.2f", resultValue)
+        String(format: "%.2f", profit * Constants.roiCoefficient)
     }
 
     // MARK: - Stake Slider
@@ -259,14 +269,14 @@ class RoiViewController: UIViewController {
         guard let minStake = Defaults.minStake(), let maxStake = Defaults.maxStake() else {
             return
         }
-        var newValue = Int(sender.value)
+        var newValue = sender.value
         if newValue < minStake {
             newValue = minStake
         } else if newValue > maxStake {
             newValue = maxStake
         }
-        stakeTextField.text = "\(newValue)"
-        updateRoiVerboseData(Float(newValue))
+        stakeTextField.text = "\(Int(newValue))"
+        updateRoiVerboseData(newValue)
     }
 
     // MARK: - Server
@@ -333,16 +343,16 @@ class RoiViewController: UIViewController {
 
 extension RoiViewController: UITextFieldDelegate {
     func textFieldDidEndEditing(_ textField: UITextField) {
-        if let stakeString = stakeTextField.text, !stakeString.isEmpty, let stake = Int(stakeString),
+        if let stakeString = stakeTextField.text, !stakeString.isEmpty, let stake = Float(stakeString),
            let minStake = Defaults.minStake(), let maxStake = Defaults.maxStake() {
             if stake < minStake {
-                stakeTextField.text = "\(minStake)"
-                stakeSlider.value = Float(minStake)
+                stakeTextField.text = "\(Int(minStake))"
+                stakeSlider.value = minStake
             } else if stake > maxStake {
-                stakeTextField.text = "\(maxStake)"
-                stakeSlider.value = Float(maxStake)
+                stakeTextField.text = "\(Int(maxStake))"
+                stakeSlider.value = maxStake
             } else {
-                stakeSlider.value = Float(stake)
+                stakeSlider.value = stake
             }
         } else {
             textField.text = "\(Defaults.maxStake() ?? 0)"

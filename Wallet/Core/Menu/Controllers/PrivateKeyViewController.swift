@@ -14,7 +14,7 @@ class PrivateKeyViewController: UIViewController {
     @IBOutlet weak var importLabel: UILabel!
     @IBOutlet weak var importView: UIView!
     @IBOutlet weak var importButton: GradientButton!
-    
+
     @IBOutlet weak var newPrivateKeyTextField: UITextField!
     @IBOutlet weak var signInButton: UIButton!
 
@@ -23,7 +23,6 @@ class PrivateKeyViewController: UIViewController {
     @IBOutlet weak var warningLabel: UILabel!
 
     struct Constants {
-        static let privateKeyLength: Int = 64
         static let acceptableChars = "0123456789abcdef"
         static let unwindSegueId = "unwindToMainSegue"
     }
@@ -81,21 +80,29 @@ class PrivateKeyViewController: UIViewController {
     @IBAction func onSignInClicked(_ sender: Any) {
         newPrivateKeyTextField.endEditing(true)
 
-        guard let newPrivateKey = newPrivateKeyTextField.text, newPrivateKey.count == Constants.privateKeyLength else {
+        guard let newPrivateKey = newPrivateKeyTextField.text else {
             print("Incorrect format of private key")
 
             setImportError(true)
             return
         }
 
-        if !CryptoHelper.isValidPrivateKey(newPrivateKey) {
+        let normalizedPrivateKey = CryptoHelper.normalizePrivateKey(newPrivateKey)
+        if normalizedPrivateKey.count != CryptoHelper.Constants.privateKeyLength {
+            print("Incorrect format of private key")
+
+            setImportError(true, errorText: "Incorrect format of private key")
+            return
+        }
+
+        if !CryptoHelper.isValidPrivateKey(normalizedPrivateKey) {
             print("Invalid private key")
 
             setImportError(true)
             return
         }
 
-        confirmedPrivateKey = newPrivateKey
+        confirmedPrivateKey = normalizedPrivateKey
 
         let alertViewController = R.storyboard.menu.alertViewController()!
         alertViewController.text = R.string.localizable.import_new_private_key.localized()

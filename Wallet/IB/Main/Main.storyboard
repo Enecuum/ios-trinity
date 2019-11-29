@@ -1213,16 +1213,13 @@ and start mining</string>
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="520"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Return rate calculator last 24 hours" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cgZ-Rt-9fV">
-                                        <rect key="frame" x="16" y="18" width="343" height="17"/>
+                                        <rect key="frame" x="16" y="29" width="343" height="19"/>
                                         <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="16"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
-                                        <variation key="heightClass=regular-widthClass=compact">
-                                            <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="14"/>
-                                        </variation>
                                     </label>
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="w9W-fP-bX9" customClass="Slider" customModule="Enecuum_Wallet" customModuleProvider="target">
-                                        <rect key="frame" x="41" y="65" width="292" height="41"/>
+                                        <rect key="frame" x="41" y="98" width="292" height="41"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="6Y5-1k-JBc">
                                                 <variation key="heightClass=regular-widthClass=compact" constant="40"/>
@@ -1241,48 +1238,45 @@ and start mining</string>
                                         </userDefinedRuntimeAttributes>
                                     </slider>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="min" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9vK-mr-DQu">
-                                        <rect key="frame" x="43" y="45.5" width="22" height="15.5"/>
+                                        <rect key="frame" x="43" y="78.5" width="22" height="15.5"/>
                                         <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="13"/>
                                         <color key="textColor" red="0.41176470590000003" green="0.43137254899999999" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="max" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IrZ-N7-RUY">
-                                        <rect key="frame" x="306" y="45.5" width="25" height="15.5"/>
+                                        <rect key="frame" x="306" y="78.5" width="25" height="15.5"/>
                                         <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="13"/>
                                         <color key="textColor" red="0.41176470590000003" green="0.43137254899999999" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0" textAlignment="center" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MDa-QX-pXx" userLabel="Amount Field">
-                                        <rect key="frame" x="43.5" y="123" width="288" height="25.5"/>
+                                        <rect key="frame" x="43.5" y="156" width="288" height="33.5"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="TTNorms-Bold" family="TT Norms" pointSize="27"/>
                                         <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numbersAndPunctuation" returnKeyType="go" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
-                                        <variation key="heightClass=regular-widthClass=compact">
-                                            <fontDescription key="fontDescription" name="TTNorms-Bold" family="TT Norms" pointSize="20"/>
-                                        </variation>
                                         <connections>
                                             <outlet property="delegate" destination="Nyt-hi-YHR" id="rWF-ks-y5E"/>
                                         </connections>
                                     </textField>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dd1-7w-V4T">
-                                        <rect key="frame" x="24" y="168.5" width="327" height="1"/>
+                                        <rect key="frame" x="24" y="209.5" width="327" height="1"/>
                                         <color key="backgroundColor" red="0.36078431372549019" green="0.38039215686274508" blue="0.47450980392156861" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="1" id="Den-az-yOC"/>
                                         </constraints>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ROI" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Pd-bI-y7Y">
-                                        <rect key="frame" x="32" y="187.5" width="30.5" height="19"/>
+                                        <rect key="frame" x="32" y="228.5" width="30.5" height="19"/>
                                         <fontDescription key="fontDescription" name="TTNorms-Bold" family="TT Norms" pointSize="16"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nz5-UQ-d46" userLabel="Bottom Labels">
-                                        <rect key="frame" x="32" y="214.5" width="319" height="50"/>
+                                        <rect key="frame" x="32" y="255.5" width="319" height="50"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S67-oM-zVu" userLabel="Left">
-                                                <rect key="frame" x="0.0" y="0.0" width="88.5" height="50"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="103.5" height="50"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Daily" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yUE-L3-x8h">
                                                         <rect key="frame" x="0.0" y="0.0" width="30" height="15.5"/>
@@ -1318,7 +1312,7 @@ and start mining</string>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6J4-TX-8i4" userLabel="Center">
-                                                <rect key="frame" x="88.5" y="0.0" width="88.5" height="50"/>
+                                                <rect key="frame" x="103.5" y="0.0" width="83" height="50"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="500" verticalHuggingPriority="251" text="%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y4p-ys-zA9">
                                                         <rect key="frame" x="10.5" y="0.0" width="10.5" height="15.5"/>
@@ -1367,19 +1361,17 @@ and start mining</string>
                                                     <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="OcY-7X-cnI" secondAttribute="trailing" constant="2" id="Boc-Po-uvU"/>
                                                     <constraint firstItem="Xfa-zc-KlL" firstAttribute="top" secondItem="0hQ-aC-whC" secondAttribute="bottom" constant="6" id="Eu3-cS-BeW"/>
                                                     <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="i2G-Ea-O9P" secondAttribute="trailing" constant="2" id="Ex4-mX-3y9"/>
-                                                    <constraint firstItem="y4p-ys-zA9" firstAttribute="leading" secondItem="OcY-7X-cnI" secondAttribute="leading" id="Iss-eA-Qi6"/>
                                                     <constraint firstItem="MqS-bx-Pib" firstAttribute="leading" secondItem="6J4-TX-8i4" secondAttribute="leading" id="KHJ-V9-VyQ"/>
                                                     <constraint firstItem="OcY-7X-cnI" firstAttribute="leading" secondItem="0hQ-aC-whC" secondAttribute="trailing" constant="2" id="Uba-3z-a0A"/>
                                                     <constraint firstItem="y4p-ys-zA9" firstAttribute="leading" secondItem="MqS-bx-Pib" secondAttribute="trailing" constant="2" id="Uwf-mB-LNH"/>
                                                     <constraint firstItem="Xfa-zc-KlL" firstAttribute="leading" secondItem="6J4-TX-8i4" secondAttribute="leading" id="Wja-Gj-CtK"/>
                                                     <constraint firstItem="i2G-Ea-O9P" firstAttribute="firstBaseline" secondItem="Xfa-zc-KlL" secondAttribute="firstBaseline" id="Wy2-AF-sPL"/>
-                                                    <constraint firstItem="y4p-ys-zA9" firstAttribute="leading" secondItem="i2G-Ea-O9P" secondAttribute="leading" id="dCR-gd-9tk"/>
                                                     <constraint firstItem="OcY-7X-cnI" firstAttribute="bottom" secondItem="0hQ-aC-whC" secondAttribute="bottom" id="det-4I-Q0c"/>
                                                     <constraint firstItem="MqS-bx-Pib" firstAttribute="top" secondItem="6J4-TX-8i4" secondAttribute="top" id="qp9-1b-RHh"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ug3-Gz-BE6" userLabel="Right">
-                                                <rect key="frame" x="177" y="0.0" width="142" height="50"/>
+                                                <rect key="frame" x="186.5" y="0.0" width="132.5" height="50"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="500" verticalHuggingPriority="251" text="ENQ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GP4-1N-vvW">
                                                         <rect key="frame" x="10.5" y="0.0" width="30.5" height="15.5"/>
@@ -1449,7 +1441,7 @@ and start mining</string>
                                             <constraint firstItem="6J4-TX-8i4" firstAttribute="leading" secondItem="S67-oM-zVu" secondAttribute="trailing" id="QHn-Um-192"/>
                                             <constraint firstAttribute="bottom" secondItem="ug3-Gz-BE6" secondAttribute="bottom" id="ayJ-J4-Pfz"/>
                                             <constraint firstItem="ug3-Gz-BE6" firstAttribute="leading" secondItem="6J4-TX-8i4" secondAttribute="trailing" id="bZ6-Yz-NHX"/>
-                                            <constraint firstItem="6J4-TX-8i4" firstAttribute="width" secondItem="S67-oM-zVu" secondAttribute="width" id="rlp-0P-eXh"/>
+                                            <constraint firstItem="6J4-TX-8i4" firstAttribute="width" secondItem="S67-oM-zVu" secondAttribute="width" multiplier="0.8" id="rlp-0P-eXh"/>
                                             <constraint firstAttribute="trailing" secondItem="ug3-Gz-BE6" secondAttribute="trailing" id="sEU-AE-Ngf"/>
                                             <constraint firstItem="S67-oM-zVu" firstAttribute="leading" secondItem="nz5-UQ-d46" secondAttribute="leading" id="vq1-sR-EDV"/>
                                         </constraints>
@@ -1468,10 +1460,8 @@ and start mining</string>
                                     <constraint firstItem="2Pd-bI-y7Y" firstAttribute="top" secondItem="dd1-7w-V4T" secondAttribute="bottom" constant="18" id="49X-D3-Omc"/>
                                     <constraint firstItem="nz5-UQ-d46" firstAttribute="trailing" secondItem="dd1-7w-V4T" secondAttribute="trailing" id="6sh-b4-vag"/>
                                     <constraint firstItem="MDa-QX-pXx" firstAttribute="top" secondItem="w9W-fP-bX9" secondAttribute="bottom" constant="18" id="7sf-FK-a5p"/>
-                                    <constraint firstItem="cgZ-Rt-9fV" firstAttribute="top" secondItem="Wvk-qt-69Y" secondAttribute="top" constant="18" id="811-qP-bz3"/>
-                                    <constraint firstItem="w9W-fP-bX9" firstAttribute="top" secondItem="cgZ-Rt-9fV" secondAttribute="bottom" constant="50" id="8uX-KZ-OBW">
-                                        <variation key="heightClass=regular-widthClass=compact" constant="30"/>
-                                    </constraint>
+                                    <constraint firstItem="cgZ-Rt-9fV" firstAttribute="top" secondItem="Wvk-qt-69Y" secondAttribute="top" constant="29" id="811-qP-bz3"/>
+                                    <constraint firstItem="w9W-fP-bX9" firstAttribute="top" secondItem="cgZ-Rt-9fV" secondAttribute="bottom" constant="50" id="8uX-KZ-OBW"/>
                                     <constraint firstItem="fnW-ay-OP7" firstAttribute="top" secondItem="Wvk-qt-69Y" secondAttribute="top" id="H3d-aF-Hu5"/>
                                     <constraint firstItem="nz5-UQ-d46" firstAttribute="leading" secondItem="2Pd-bI-y7Y" secondAttribute="leading" id="HBY-pD-aRW"/>
                                     <constraint firstAttribute="bottom" secondItem="fnW-ay-OP7" secondAttribute="bottom" id="Ke2-s3-AsN"/>
@@ -1502,14 +1492,8 @@ and start mining</string>
                                         <real key="value" value="30"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="8uX-KZ-OBW"/>
-                                    </mask>
-                                </variation>
                                 <variation key="heightClass=regular-widthClass=compact">
                                     <mask key="constraints">
-                                        <include reference="8uX-KZ-OBW"/>
                                         <exclude reference="dAe-kv-h3Y"/>
                                     </mask>
                                 </variation>
@@ -1656,10 +1640,13 @@ and start mining</string>
                         <outlet property="roiYearLabel" destination="lMZ-z2-U7z" id="bT0-g8-s0n"/>
                         <outlet property="roiYearPercentLabel" destination="Xfa-zc-KlL" id="rjT-BV-utO"/>
                         <outlet property="roiYearValueLabel" destination="Auq-gw-RvM" id="Jds-sO-aMD"/>
+                        <outlet property="sliderTopConstraint" destination="8uX-KZ-OBW" id="V1b-3o-yEV"/>
                         <outlet property="stakeSlider" destination="w9W-fP-bX9" id="jbM-Jm-1hv"/>
                         <outlet property="stakeTextField" destination="MDa-QX-pXx" id="oo1-iP-Xuh"/>
+                        <outlet property="stakeTopConstraint" destination="7sf-FK-a5p" id="WJg-dW-qv9"/>
                         <outlet property="swapButton" destination="qsm-Qr-GNw" id="12t-3Z-vT5"/>
                         <outlet property="titleLabel" destination="cgZ-Rt-9fV" id="dSa-Kl-ohu"/>
+                        <outlet property="titleTopConstraint" destination="811-qP-bz3" id="J4u-cx-A0U"/>
                         <outlet property="usdRateLabel" destination="Gh4-4q-kFH" id="S1I-gL-HkO"/>
                     </connections>
                 </viewController>

@@ -58,6 +58,10 @@ class TransferViewController: UIViewController {
         swapView.isHidden = true
 
         balanceAmountLabel.text = "\(Defaults.getBalance() ?? 0)"
+
+        if UIDevice.current.screenType == .iPhones_5_5s_5c_SE {
+            tuneForSE()
+        }
     }
 
     override func viewDidAppear(_ animated: Bool) {
@@ -108,6 +112,13 @@ class TransferViewController: UIViewController {
                 print(error.localizedDescription)
             }
         }
+    }
+
+    // MARK: - Size Tuning
+
+    private func tuneForSE() {
+        balanceTitleLabel.font = balanceTitleLabel.font.withSize(15)
+        balanceAmountLabel.font = balanceTitleLabel.font.withSize(15)
     }
 }
 

@@ -15,6 +15,8 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ReceiveView" customModule="Enecuum_Wallet" customModuleProvider="target">
             <connections>
                 <outlet property="addressTextField" destination="0tz-lX-sOI" id="a4U-58-Qej"/>
+                <outlet property="addressTopConstraint" destination="5qc-Ff-yjT" id="YqR-p2-N5C"/>
+                <outlet property="borderImageViewConstraint" destination="VNP-Nt-GFk" id="hiH-1C-ypd"/>
                 <outlet property="qrImageView" destination="q41-mf-X0o" id="Vp3-kl-E90"/>
                 <outlet property="shareQrButton" destination="IXN-Xe-9a5" id="YoO-it-VDK"/>
             </connections>

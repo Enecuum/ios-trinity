@@ -35,6 +35,10 @@ class SendView: UIView, NibView {
 
     @IBOutlet weak var sendButton: GradientButton!
 
+    @IBOutlet weak var amountTopConstraint: NSLayoutConstraint!
+    @IBOutlet weak var sendTopConstraint: NSLayoutConstraint!
+    
+    
     // MARK: - Confirm view
 
     @IBOutlet weak var toLabel: UILabel!
@@ -115,6 +119,10 @@ class SendView: UIView, NibView {
             receiverTextField.textAlignment = .right
             sendAmountTextField.textAlignment = .right
         }
+
+        if UIDevice.current.screenType == .iPhones_5_5s_5c_SE {
+            tuneForSE()
+        }
     }
 
     private func addAttributedButton(_ button: UIButton, image: UIImage, string: String, color: UIColor) {
@@ -181,6 +189,15 @@ class SendView: UIView, NibView {
         let formatter = NumberFormatter()
         formatter.generatesDecimalNumbers = true
         return formatter.number(from: escapedString) as? NSDecimalNumber ?? 0
+    }
+
+    // MARK: - Size Tuning
+
+    private func tuneForSE() {
+        toLabel.font = toLabel.font.withSize(14)
+        amountLabel.font = amountLabel.font.withSize(14)
+        amountTopConstraint.constant = 8
+        sendTopConstraint.constant = 18
     }
 
     // MARK: - IBActions

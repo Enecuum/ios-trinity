@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina6_1" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -21,6 +19,7 @@
             <connections>
                 <outlet property="amountLabel" destination="NBE-IV-n1g" id="zhK-hQ-IQb"/>
                 <outlet property="amountSlider" destination="lt1-ip-vxA" id="YbY-BL-Euy"/>
+                <outlet property="amountTopConstraint" destination="nvV-0o-Dtn" id="eWB-2L-iRS"/>
                 <outlet property="circleImageView" destination="Zkn-DS-Lb6" id="pUe-5N-NGs"/>
                 <outlet property="confirmAmountLabel" destination="GVm-G8-QMc" id="q4p-kU-D3N"/>
                 <outlet property="confirmButton" destination="Rd6-6e-BmI" id="KeL-vQ-gO3"/>
@@ -37,6 +36,7 @@
                 <outlet property="sendAmountLabel" destination="ObR-7u-xP4" id="TWT-U5-6sa"/>
                 <outlet property="sendAmountTextField" destination="hmg-90-nXL" id="AzV-EV-xjw"/>
                 <outlet property="sendButton" destination="SkW-XP-Zhb" id="c10-H9-X7X"/>
+                <outlet property="sendTopConstraint" destination="hBV-zW-ghW" id="83A-e3-kT3"/>
                 <outlet property="sliderMaxLabel" destination="Kg9-ly-m6i" id="EZ2-0E-SFH"/>
                 <outlet property="toLabel" destination="vaI-U5-Pqt" id="nyI-8x-AnT"/>
             </connections>

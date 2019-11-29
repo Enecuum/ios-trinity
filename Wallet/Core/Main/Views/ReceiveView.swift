@@ -13,7 +13,9 @@ protocol ReceiveViewDelegate {
 class ReceiveView: UIView, NibView {
 
     @IBOutlet weak var addressTextField: UITextField!
+    @IBOutlet weak var addressTopConstraint: NSLayoutConstraint!
     @IBOutlet weak var qrImageView: UIImageView!
+    @IBOutlet weak var borderImageViewConstraint: NSLayoutConstraint!
     @IBOutlet weak var shareQrButton: UIButton!
     
     var delegate: ReceiveViewDelegate?
@@ -62,7 +64,20 @@ class ReceiveView: UIView, NibView {
         if Localization.isRTL() {
             addressTextField.textAlignment = .right
         }
+
+        if UIDevice.current.screenType == .iPhones_5_5s_5c_SE {
+            tuneForSE()
+        }
     }
+
+    // MARK: - Size Tuning
+
+    private func tuneForSE() {
+        addressTopConstraint.constant = 30
+        borderImageViewConstraint.constant = 160
+    }
+
+    // MARK: - IB Actions
 
     @IBAction func onCopyAddressClicked(_ sender: Any) {
         UIPasteboard.general.string = addressTextField.text

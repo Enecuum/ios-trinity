@@ -68,6 +68,10 @@ class StatisticsViewController: UIViewController {
         circSupplyLabel.text = R.string.localizable.statsCoinDataCircSupply.localized()
 
         addMap()
+
+        if UIDevice.current.screenType == .iPhones_5_5s_5c_SE {
+            tuneForSE()
+        }
     }
 
     override func viewDidAppear(_ animated: Bool) {
@@ -160,6 +164,20 @@ class StatisticsViewController: UIViewController {
                 print(error.localizedDescription)
             }
         }
+    }
+
+    // MARK: - Size Tuning
+
+    private func tuneForSE() {
+        totalNodesLabel.font = totalNodesLabel.font.withSize(15)
+        totalNodesCounterLabel.font = totalNodesCounterLabel.font.withSize(15)
+        openInBrowserLabel.isHidden = true
+
+        powRewardAmountLabel.font = powRewardAmountLabel.font.withSize(10)
+        posRewardAmountLabel.font = posRewardAmountLabel.font.withSize(10)
+        poaRewardAmountLabel.font = poaRewardAmountLabel.font.withSize(10)
+        circSupplyAmountLabel.font = circSupplyAmountLabel.font.withSize(10)
+        maxSupplyAmountLabel.font = maxSupplyAmountLabel.font.withSize(10)
     }
 
     // MARK: - IBOutlets

@@ -58,6 +58,10 @@ class HomeViewController: UIViewController {
         swapButton.titleLabel?.textAlignment = .center
 
         updateForBuyTabState()
+
+        if UIDevice.current.screenType == .iPhones_5_5s_5c_SE {
+            tuneForSE()
+        }
     }
 
     override func viewDidAppear(_ animated: Bool) {
@@ -190,6 +194,14 @@ class HomeViewController: UIViewController {
                 completion(nil)
             }
         }
+    }
+
+    // MARK: - Size Tuning
+
+    private func tuneForSE() {
+        balanceTitleLabel.font = balanceTitleLabel.font.withSize(15)
+        balanceAmountLabel.font = balanceTitleLabel.font.withSize(15)
+        amountInUsdLabel.font = balanceTitleLabel.font.withSize(15)
     }
 
     // MARK: - IB Actions

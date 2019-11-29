@@ -21,12 +21,15 @@ class RoiViewController: UIViewController {
     @IBOutlet weak var swapButton: GradientButton!
 
     @IBOutlet weak var titleLabel: UILabel!
-
+    @IBOutlet weak var titleTopConstraint: NSLayoutConstraint!
+    
     @IBOutlet weak var minLabel: UILabel!
     @IBOutlet weak var maxLabel: UILabel!
     @IBOutlet weak var stakeSlider: Slider!
+    @IBOutlet weak var sliderTopConstraint: NSLayoutConstraint!
     @IBOutlet weak var stakeTextField: UITextField!
-
+    @IBOutlet weak var stakeTopConstraint: NSLayoutConstraint!
+    
     @IBOutlet weak var roiTitleLabel: UILabel!
     @IBOutlet weak var roiDailyLabel: UILabel!
     @IBOutlet weak var roiWeeklyLabel: UILabel!
@@ -102,6 +105,10 @@ class RoiViewController: UIViewController {
         if Localization.isRTL() {
             stakeSlider.semanticContentAttribute = .forceRightToLeft
             stakeTextField.textAlignment = .right
+        }
+
+        if UIDevice.current.screenType == .iPhones_5_5s_5c_SE {
+            tuneForSE()
         }
     }
 
@@ -321,6 +328,18 @@ class RoiViewController: UIViewController {
                 completion(nil)
             }
         }
+    }
+
+    // MARK: - Size Tuning
+
+    private func tuneForSE() {
+        balanceTitleLabel.font = balanceTitleLabel.font.withSize(15)
+        balanceAmountLabel.font = balanceTitleLabel.font.withSize(15)
+        amountInUsdLabel.font = balanceTitleLabel.font.withSize(15)
+
+        titleTopConstraint.constant = 12
+        sliderTopConstraint.constant = 30
+        stakeTopConstraint.constant = 8
     }
 
     // MARK: - IB Actions

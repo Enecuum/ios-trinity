@@ -13,7 +13,7 @@ class CurrencyFormat {
 
     static func asUsdString(_ value: NSDecimalNumber) -> String {
         let formattedValue = Formatter.decimalString(value, fractionDigits: 5)
-        return R.string.untranslatable.enq_as_usd(formattedValue)
+        return R.string.untranslatable.enq_as_usd(Constants.currency, formattedValue)
     }
 
     static func referralBuyMessage(_ value: NSDecimalNumber) -> String {
@@ -65,5 +65,9 @@ class CurrencyFormat {
     static func welcomeCurrencyString() -> String {
         let format = R.string.localizable.welcome_to_enq.localized()
         return String(format: format, Constants.currency)
+    }
+
+   static func valueString(_ value: String) -> String {
+        R.string.untranslatable.enq_value(value, Constants.currency)
     }
 }

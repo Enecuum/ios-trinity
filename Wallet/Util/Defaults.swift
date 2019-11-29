@@ -13,6 +13,8 @@ class Defaults {
         static let baseIP: String = "baseIP"
         static let languageCode: String = "languageCode"
         static let usdRateKey: String = "usdRateKey"
+        static let minStakeKey: String = "minStakeKey"
+        static let maxStakeKey: String = "maxStakeKey"
     }
 
     static func saveBalance(_ balance: NSDecimalNumber) {
@@ -56,6 +58,22 @@ class Defaults {
 
     static func usdRate() -> String? {
         UserDefaults.standard.string(forKey: Constants.usdRateKey)
+    }
+
+    static func setMinStake(_ minStake: Int) {
+        UserDefaults.standard.set(minStake, forKey: Constants.minStakeKey)
+    }
+
+    static func minStake() -> Int? {
+        UserDefaults.standard.integer(forKey: Constants.minStakeKey)
+    }
+
+    static func setMaxStake(_ maxStake: Int) {
+        UserDefaults.standard.set(maxStake, forKey: Constants.maxStakeKey)
+    }
+
+    static func maxStake() -> Int? {
+        UserDefaults.standard.integer(forKey: Constants.maxStakeKey)
     }
 
     static func clearUserData() {

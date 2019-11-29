@@ -575,6 +575,7 @@
 				tr,
 				vi,
 				id,
+				hi,
 			);
 			mainGroup = 356A60BF2333B93F00E8D118;
 			productRefGroup = 356A60C92333B93F00E8D118 /* Products */;

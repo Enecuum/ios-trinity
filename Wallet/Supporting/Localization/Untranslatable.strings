@@ -8,7 +8,8 @@
 
 /* currency strings */
 
-"enq_as_usd" = "1 ENQ = $ %@";
+"enq_value" = "%@ %@";
+"enq_as_usd" = "1 %@ = $ %@";
 
 "coin_to_btc" = "%@/BTC";
 "coin_to_usdt" = "%@/USDT";
@@ -18,5 +19,7 @@
 
 /* roi */
 
+"roi" = "ROI";
 "min_value" = "min %@";
 "max_value" = "max %@";
+"percent_value" = "%@ %%";

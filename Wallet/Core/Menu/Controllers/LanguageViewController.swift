@@ -48,6 +48,7 @@ class LanguageViewController: UIViewController {
 
     private func changeLanguage(_ code: String) {
         Defaults.setLanguageCode(code)
+        UserDefaults.standard.set(code, forKey: "AppleLanguage")
         selectedLanguageCode = Localization.preferredAppLanguageCode
 
         Localization.setupLangAlignment()

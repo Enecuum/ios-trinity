@@ -85,6 +85,7 @@ class Defaults {
         Defaults.setRunOnceFlag()
         if let code = langCode {
             Defaults.setLanguageCode(code)
+            UserDefaults.standard.set(code, forKey: "AppleLanguage")
         }
     }
 }

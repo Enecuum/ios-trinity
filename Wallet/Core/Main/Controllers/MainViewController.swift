@@ -10,15 +10,9 @@ class MainViewController: UIViewController {
     @IBOutlet weak var containerView: UIView!
     @IBOutlet weak var mainTabsView: BottomTabsView!
 
-    private enum State: Int {
-        case home = 0
-        case stats
-        case transfer
-        case roi
-    }
+    private var sections: [Section]?
+    private var currentSection: Section?
 
-    private var state: State?
-    
     private var currentViewController: UIViewController?
     private var homeViewController: HomeViewController?
     private var transferViewController: TransferViewController?
@@ -28,13 +22,23 @@ class MainViewController: UIViewController {
         super.viewDidLoad()
         Defaults.setRunOnceFlag()
 
-        mainTabsView.setButtonImages(buttonImages: [R.image.bottomTabs.home()!, R.image.bottomTabs.stats()!, R.image.bottomTabs.transfer()!, R.image.bottomTabs.roi()!])
+        sections = [
+//            Section(viewControllerId: "homeViewController", imageName: "BottomTabs/home"),
+            Section(viewControllerId: "statisticsViewController", imageName: "BottomTabs/stats"),
+            Section(viewControllerId: "transferViewController", imageName: "BottomTabs/transfer"),
+            Section(viewControllerId: "roiViewController", imageName: "BottomTabs/roi")
+        ]
+        let buttonImages: [UIImage]? = sections?.map {
+            UIImage(named: $0.imageName)!
+        }
+
+        mainTabsView.setButtonImages(buttonImages: buttonImages!)
         mainTabsView.textColor = .white
         mainTabsView.selectorTextColor = .white
         mainTabsView.delegate = self
 
-        if state == nil {
-            transit(to: .home)
+        if currentSection == nil, let firstSection = sections?.first {
+            transit(to: firstSection)
         }
     }
 
@@ -50,25 +54,12 @@ class MainViewController: UIViewController {
 
     // MARK: - Transitions
 
-    private func transit(to state: State) {
-        if let vc = viewController(for: state) {
+    private func transit(to section: Section) {
+        if let vc = storyboard?.instantiateViewController(withIdentifier: section.viewControllerId) {
             currentViewController?.removeFromParentVc()
             addChildVc(vc, in: containerView)
             currentViewController = vc
-            self.state = state
-        }
-    }
-
-    private func viewController(for state: State) -> UIViewController? {
-        switch state {
-        case .home:
-            return R.storyboard.main.homeViewController()
-        case .stats:
-            return R.storyboard.main.statisticsViewController()
-        case .transfer:
-            return R.storyboard.main.transferViewController()
-        case .roi:
-            return R.storyboard.main.roiViewController()
+            self.currentSection = section
         }
     }
 
@@ -90,8 +81,8 @@ class MainViewController: UIViewController {
 
 extension MainViewController: BottomTabsDelegate {
     func changeToIndex(index: Int) {
-        if let state = State(rawValue: index) {
-            transit(to: state)
+        if index < sections?.count ?? 0, let section = sections?[index] {
+            transit(to: section)
         }
     }
 }

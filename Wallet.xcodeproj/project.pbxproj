@@ -92,6 +92,7 @@
 		B8EA1E72D7E2DF017EA0A387 /* LanguageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA1078A9C3798FFB672B95 /* LanguageViewController.swift */; };
 		B8EA1E780D2A676F04576761 /* BuyInExchangeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA15F0CFADF408F7884D08 /* BuyInExchangeView.swift */; };
 		B8EA1EAAA958AF6C83F0AB37 /* ReferralView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA1D0447B23DF54E376228 /* ReferralView.swift */; };
+		B8EA1EAF819C6D5356632668 /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA1FF7E3376DC831DCAD36 /* Section.swift */; };
 		B8EA1F79D851002539ED16CE /* BalanceAmount.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA1651FDBF392B83C7A618 /* BalanceAmount.swift */; };
 /* End PBXBuildFile section */
 
@@ -198,6 +199,7 @@
 		B8EA1EB1C3D015CFEA7C2F33 /* UIButton+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
 		B8EA1F0AC6F5DA4951A86E7C /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		B8EA1FD8D39ED0115C317AB0 /* NibView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibView.swift; sourceTree = "<group>"; };
+		B8EA1FF7E3376DC831DCAD36 /* Section.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
 		D55D7342C2EDB0E32FCED51F /* Pods_wallet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_wallet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -472,6 +474,7 @@
 				B8EA11B68C8A897C697D30FA /* Controllers */,
 				B8EA152235983A273D5201BA /* Views */,
 				B8EA1CA871753EA9428B2B27 /* BuyTabsState.swift */,
+				B8EA1FF7E3376DC831DCAD36 /* Section.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -748,6 +751,7 @@
 				B8EA1E780D2A676F04576761 /* BuyInExchangeView.swift in Sources */,
 				B8EA1155585D236435F42D02 /* BuyTabsState.swift in Sources */,
 				B8EA11BC457B86139AFA801B /* Roi.swift in Sources */,
+				B8EA1EAF819C6D5356632668 /* Section.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

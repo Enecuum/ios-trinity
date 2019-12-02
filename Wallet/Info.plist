@@ -2,24 +2,10 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>CFBundleAllowMixedLocalizations</key>
+	<true/>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
-    <key>CFBundleLocalizations</key>
-    <array>
-      <string>ar</string>
-      <string>zh</string>
-      <string>en</string>
-      <string>fr</string>
-      <string>de</string>
-      <string>id</string>
-      <string>ja</string>
-      <string>ko</string>
-      <string>pt</string>
-      <string>ru</string>
-      <string>es</string>
-      <string>tr</string>
-	  <string>vi</string>
-    </array>
 	<key>CFBundleDisplayName</key>
 	<string>Enecuum Wallet</string>
 	<key>CFBundleExecutable</key>
@@ -28,6 +14,22 @@
 	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
+	<key>CFBundleLocalizations</key>
+	<array>
+		<string>ar</string>
+		<string>zh</string>
+		<string>en</string>
+		<string>fr</string>
+		<string>de</string>
+		<string>id</string>
+		<string>ja</string>
+		<string>ko</string>
+		<string>pt</string>
+		<string>ru</string>
+		<string>es</string>
+		<string>tr</string>
+		<string>vi</string>
+	</array>
 	<key>CFBundleName</key>
 	<string>$(PRODUCT_NAME)</string>
 	<key>CFBundlePackageType</key>
@@ -74,7 +76,5 @@
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
-    <key>CFBundleAllowMixedLocalizations</key>
-    <true/>
 </dict>
 </plist>

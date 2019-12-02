@@ -1209,7 +1209,7 @@ and start mining</string>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wvk-qt-69Y" userLabel="Data Container">
                                 <rect key="frame" x="0.0" y="98" width="375" height="569"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Roi/back" translatesAutoresizingMaskIntoConstraints="NO" id="fnW-ay-OP7">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Roi/back" translatesAutoresizingMaskIntoConstraints="NO" id="fnW-ay-OP7" userLabel="Background">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="569"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Return rate calculator last 24 hours" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cgZ-Rt-9fV">
@@ -1259,21 +1259,34 @@ and start mining</string>
                                             <outlet property="delegate" destination="Nyt-hi-YHR" id="rWF-ks-y5E"/>
                                         </connections>
                                     </textField>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dd1-7w-V4T">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dd1-7w-V4T" userLabel="Divider">
                                         <rect key="frame" x="24" y="209.5" width="327" height="1"/>
                                         <color key="backgroundColor" red="0.36078431372549019" green="0.38039215686274508" blue="0.47450980392156861" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="1" id="Den-az-yOC"/>
                                         </constraints>
                                     </view>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="v75-dM-YkS">
+                                        <rect key="frame" x="23" y="226.5" width="51" height="31"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="49" id="RKL-fk-DFQ"/>
+                                            <constraint firstAttribute="height" constant="31" id="Zoq-h1-fZ4"/>
+                                        </constraints>
+                                    </switch>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I'm a referral" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ct6-Fj-oDL">
+                                        <rect key="frame" x="82" y="234.5" width="73" height="15.5"/>
+                                        <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="13"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ROI" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Pd-bI-y7Y">
-                                        <rect key="frame" x="32" y="228.5" width="30.5" height="19"/>
+                                        <rect key="frame" x="32" y="267.5" width="30.5" height="19"/>
                                         <fontDescription key="fontDescription" name="TTNorms-Bold" family="TT Norms" pointSize="16"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nz5-UQ-d46" userLabel="Bottom Labels">
-                                        <rect key="frame" x="32" y="255.5" width="319" height="50"/>
+                                        <rect key="frame" x="32" y="294.5" width="319" height="50"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S67-oM-zVu" userLabel="Left">
                                                 <rect key="frame" x="0.0" y="0.0" width="103.5" height="50"/>
@@ -1446,7 +1459,7 @@ and start mining</string>
                                             <constraint firstItem="S67-oM-zVu" firstAttribute="leading" secondItem="nz5-UQ-d46" secondAttribute="leading" id="vq1-sR-EDV"/>
                                         </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v5c-Ko-vLc">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v5c-Ko-vLc" userLabel="Bottom Tabs Stub">
                                         <rect key="frame" x="0.0" y="507" width="375" height="62"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -1457,15 +1470,16 @@ and start mining</string>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="v5c-Ko-vLc" secondAttribute="bottom" id="28X-f3-jfi"/>
-                                    <constraint firstItem="2Pd-bI-y7Y" firstAttribute="top" secondItem="dd1-7w-V4T" secondAttribute="bottom" constant="18" id="49X-D3-Omc"/>
                                     <constraint firstItem="nz5-UQ-d46" firstAttribute="trailing" secondItem="dd1-7w-V4T" secondAttribute="trailing" id="6sh-b4-vag"/>
                                     <constraint firstItem="MDa-QX-pXx" firstAttribute="top" secondItem="w9W-fP-bX9" secondAttribute="bottom" constant="18" id="7sf-FK-a5p"/>
                                     <constraint firstItem="cgZ-Rt-9fV" firstAttribute="top" secondItem="Wvk-qt-69Y" secondAttribute="top" constant="29" id="811-qP-bz3"/>
                                     <constraint firstItem="w9W-fP-bX9" firstAttribute="top" secondItem="cgZ-Rt-9fV" secondAttribute="bottom" constant="50" id="8uX-KZ-OBW"/>
+                                    <constraint firstItem="v75-dM-YkS" firstAttribute="leading" secondItem="Wvk-qt-69Y" secondAttribute="leading" constant="23" id="Fau-9p-k5F"/>
                                     <constraint firstItem="fnW-ay-OP7" firstAttribute="top" secondItem="Wvk-qt-69Y" secondAttribute="top" id="H3d-aF-Hu5"/>
                                     <constraint firstItem="nz5-UQ-d46" firstAttribute="leading" secondItem="2Pd-bI-y7Y" secondAttribute="leading" id="HBY-pD-aRW"/>
                                     <constraint firstAttribute="bottom" secondItem="fnW-ay-OP7" secondAttribute="bottom" id="Ke2-s3-AsN"/>
                                     <constraint firstItem="dd1-7w-V4T" firstAttribute="leading" secondItem="Wvk-qt-69Y" secondAttribute="leading" constant="24" id="Kfq-Ti-Frm"/>
+                                    <constraint firstItem="ct6-Fj-oDL" firstAttribute="centerY" secondItem="v75-dM-YkS" secondAttribute="centerY" id="QVQ-B5-lwF"/>
                                     <constraint firstItem="fnW-ay-OP7" firstAttribute="leading" secondItem="Wvk-qt-69Y" secondAttribute="leading" id="RVX-By-zXt"/>
                                     <constraint firstItem="MDa-QX-pXx" firstAttribute="width" secondItem="w9W-fP-bX9" secondAttribute="width" id="SbR-xW-s7y"/>
                                     <constraint firstItem="w9W-fP-bX9" firstAttribute="top" secondItem="9vK-mr-DQu" secondAttribute="bottom" constant="4" id="V3y-Z4-ei4"/>
@@ -1480,12 +1494,15 @@ and start mining</string>
                                     <constraint firstAttribute="trailing" secondItem="w9W-fP-bX9" secondAttribute="trailing" constant="44" id="qmB-UD-gSl"/>
                                     <constraint firstAttribute="trailing" secondItem="dd1-7w-V4T" secondAttribute="trailing" constant="24" id="rTa-65-Gt0"/>
                                     <constraint firstAttribute="trailing" secondItem="cgZ-Rt-9fV" secondAttribute="trailing" constant="16" id="s2V-Xt-1xS"/>
+                                    <constraint firstItem="ct6-Fj-oDL" firstAttribute="leading" secondItem="v75-dM-YkS" secondAttribute="trailing" constant="10" id="t1X-aC-u63"/>
                                     <constraint firstItem="dd1-7w-V4T" firstAttribute="top" secondItem="MDa-QX-pXx" secondAttribute="bottom" constant="20" id="tPk-yj-THK"/>
                                     <constraint firstItem="v5c-Ko-vLc" firstAttribute="leading" secondItem="Wvk-qt-69Y" secondAttribute="leading" id="uEA-qE-4cy"/>
                                     <constraint firstAttribute="trailing" secondItem="fnW-ay-OP7" secondAttribute="trailing" id="v8Z-8f-QYk"/>
                                     <constraint firstItem="cgZ-Rt-9fV" firstAttribute="leading" secondItem="Wvk-qt-69Y" secondAttribute="leading" constant="16" id="w60-8d-uyO"/>
+                                    <constraint firstItem="2Pd-bI-y7Y" firstAttribute="top" secondItem="v75-dM-YkS" secondAttribute="bottom" constant="10" id="wY5-Jl-tbR"/>
                                     <constraint firstAttribute="trailing" secondItem="v5c-Ko-vLc" secondAttribute="trailing" id="wsq-Wy-N7c"/>
                                     <constraint firstItem="MDa-QX-pXx" firstAttribute="centerX" secondItem="Wvk-qt-69Y" secondAttribute="centerX" id="yKA-2c-yzy"/>
+                                    <constraint firstItem="v75-dM-YkS" firstAttribute="top" secondItem="dd1-7w-V4T" secondAttribute="bottom" constant="16" id="zrV-DH-2bU"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -1589,24 +1606,14 @@ and start mining</string>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o3o-PF-fHg" userLabel="Tabs Placeholder">
-                                <rect key="frame" x="0.0" y="605" width="375" height="62"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="62" id="yh0-lc-6uW"/>
-                                </constraints>
-                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="Wvk-qt-69Y" firstAttribute="leading" secondItem="T6V-qE-jcI" secondAttribute="leading" id="8A0-Cj-fbh"/>
                             <constraint firstItem="q1C-FG-j4G" firstAttribute="top" secondItem="lXY-jj-aRc" secondAttribute="top" constant="11" id="A2v-4j-Tsu"/>
-                            <constraint firstItem="T6V-qE-jcI" firstAttribute="bottom" secondItem="o3o-PF-fHg" secondAttribute="bottom" id="BLs-Km-Bom"/>
                             <constraint firstAttribute="trailing" secondItem="q1C-FG-j4G" secondAttribute="trailing" constant="9" id="DOb-sH-97U"/>
                             <constraint firstItem="n2Z-Eh-h8Q" firstAttribute="trailing" secondItem="lXY-jj-aRc" secondAttribute="trailing" id="Mzq-lY-3py"/>
                             <constraint firstItem="n2Z-Eh-h8Q" firstAttribute="top" secondItem="lXY-jj-aRc" secondAttribute="top" id="Uyy-kg-z6J"/>
-                            <constraint firstItem="T6V-qE-jcI" firstAttribute="trailing" secondItem="o3o-PF-fHg" secondAttribute="trailing" id="WFz-AM-Hn5"/>
-                            <constraint firstItem="o3o-PF-fHg" firstAttribute="leading" secondItem="T6V-qE-jcI" secondAttribute="leading" id="cwa-iY-MSo"/>
                             <constraint firstItem="Wvk-qt-69Y" firstAttribute="top" secondItem="Je2-2J-8i0" secondAttribute="bottom" constant="18" id="dC7-nO-WNJ"/>
                             <constraint firstItem="Je2-2J-8i0" firstAttribute="top" secondItem="bGT-N6-Bxe" secondAttribute="bottom" constant="11" id="eZu-by-soL"/>
                             <constraint firstAttribute="bottom" secondItem="n2Z-Eh-h8Q" secondAttribute="bottom" id="gIF-zO-D1u"/>
@@ -1630,12 +1637,13 @@ and start mining</string>
                         <outlet property="amountInUsdLabel" destination="3gm-2C-NhZ" id="898-Og-bcY"/>
                         <outlet property="balanceAmountLabel" destination="efR-NA-KRe" id="Yaf-fW-ghH"/>
                         <outlet property="balanceTitleLabel" destination="AN5-Ly-iCE" id="3HV-lN-ThI"/>
-                        <outlet property="bottomTabsPlaceholder" destination="o3o-PF-fHg" id="wLv-xC-HIn"/>
                         <outlet property="buyTabsView" destination="Je2-2J-8i0" id="f3k-Xu-pD8"/>
                         <outlet property="byCardButton" destination="oy9-BB-sG5" id="Ps4-Ib-IRt"/>
                         <outlet property="exchangesButton" destination="K78-gs-d7j" id="pDK-t6-W31"/>
                         <outlet property="maxLabel" destination="IrZ-N7-RUY" id="Nmo-3t-7qh"/>
                         <outlet property="minLabel" destination="9vK-mr-DQu" id="tik-zD-TSt"/>
+                        <outlet property="referralLabel" destination="ct6-Fj-oDL" id="MPT-UB-V6A"/>
+                        <outlet property="referralSwitch" destination="v75-dM-YkS" id="Gmy-bM-1s7"/>
                         <outlet property="roiDailyLabel" destination="yUE-L3-x8h" id="QFb-Eq-Rj1"/>
                         <outlet property="roiDailyPercentLabel" destination="MqS-bx-Pib" id="2Zn-98-GbY"/>
                         <outlet property="roiDailyValueLabel" destination="DQD-XY-02B" id="j8I-LD-Cn1"/>

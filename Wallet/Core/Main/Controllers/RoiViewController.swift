@@ -22,13 +22,16 @@ class RoiViewController: UIViewController {
 
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var titleTopConstraint: NSLayoutConstraint!
-    
+
     @IBOutlet weak var minLabel: UILabel!
     @IBOutlet weak var maxLabel: UILabel!
     @IBOutlet weak var stakeSlider: Slider!
     @IBOutlet weak var sliderTopConstraint: NSLayoutConstraint!
     @IBOutlet weak var stakeTextField: UITextField!
     @IBOutlet weak var stakeTopConstraint: NSLayoutConstraint!
+
+    @IBOutlet weak var referralSwitch: UISwitch!
+    @IBOutlet weak var referralLabel: UILabel!
     
     @IBOutlet weak var roiTitleLabel: UILabel!
     @IBOutlet weak var roiDailyLabel: UILabel!
@@ -101,6 +104,10 @@ class RoiViewController: UIViewController {
         roiYearLabel.text = R.string.localizable.roi_annual.localized()
         updateRoiSliderData()
         updateRoiVerboseData(Float(stakeSlider.value))
+
+        referralSwitch.transform = CGAffineTransform(scaleX: 0.75, y: 0.75)
+        referralSwitch.onTintColor = UIColor(red: 0 / 255, green: 209 / 255, blue: 1, alpha: 1)
+        referralLabel.text = R.string.localizable.referral_tick()
 
         if Localization.isRTL() {
             stakeSlider.semanticContentAttribute = .forceRightToLeft

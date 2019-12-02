@@ -36,6 +36,7 @@
 
 "referral_buy_message" = "Once you earn %@ %@, you will be able to share your agent referral code. The code can be used by other users to get more %@ providing you passive income.";
 "referral_message" = "You\'ve unlocked your personal agent referral code! Share it with other users to receive 10%% of their mining rewards. They will mine %@ and provide you passive income!";
+"referral_tick" = "I\'m a referral";
 
 /* menu */
 
@@ -180,7 +181,6 @@
 "battery_optimization_dialog_message" = "To increase your mining rewards please disable battery optimization for the Enecuum Masternode.";
 "battery_optimization_dialog_action" = "Open settings dialog";
 "service_error_duplicate_key" = "You are already mining with the same private key, disconnecting";
-"referral_tick" = "I\'m a referral";
 "faq_battery" = "In terms of СPU/GPU usage PoA node does not carry out mining in the ordinary Proof-of-Work way. Instead Enecuum PoA mobile node performs cryptographic validations and signings which is similar to the process during opening a web site via https (secure connection). As a result the battery usage by Enecuum mobile app is comparable to mobile browser or chat work. You never think about battery life choosing secure chat or secure web site over unsecure, right?";
 "faq_network_title" = "Network usage";
 "faq_network" = "The analogy with browser continues speaking of the Internet traffic usage by Enecuum app. You probably do not watch YouTube or download movies via mobile network so with Enecuum — we recommend to start PoA activity connected to a WiFi spot if you have limited or payable data plan. Actual consumed traffic volume depends on the network load and the number of online PoA participants and aimed to be light in the future mainnet achievable by rewards/fees stimulation. But during testnet activities traffic volume is not guaranteed to be persistent and predictable.";

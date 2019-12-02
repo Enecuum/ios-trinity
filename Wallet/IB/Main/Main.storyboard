@@ -1272,6 +1272,9 @@ and start mining</string>
                                             <constraint firstAttribute="width" constant="49" id="RKL-fk-DFQ"/>
                                             <constraint firstAttribute="height" constant="31" id="Zoq-h1-fZ4"/>
                                         </constraints>
+                                        <connections>
+                                            <action selector="referralSwitchChanged:" destination="Nyt-hi-YHR" eventType="valueChanged" id="sa9-Y2-CSh"/>
+                                        </connections>
                                     </switch>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I'm a referral" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ct6-Fj-oDL">
                                         <rect key="frame" x="82" y="234.5" width="73" height="15.5"/>

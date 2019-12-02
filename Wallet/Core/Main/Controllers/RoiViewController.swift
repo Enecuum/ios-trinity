@@ -32,7 +32,7 @@ class RoiViewController: UIViewController {
 
     @IBOutlet weak var referralSwitch: UISwitch!
     @IBOutlet weak var referralLabel: UILabel!
-    
+
     @IBOutlet weak var roiTitleLabel: UILabel!
     @IBOutlet weak var roiDailyLabel: UILabel!
     @IBOutlet weak var roiWeeklyLabel: UILabel!
@@ -56,6 +56,12 @@ class RoiViewController: UIViewController {
     private var buyTabsState: BuyTabsState = .none
     private var roiList: [RoiFloat]? = nil
 
+    private var roiCoefficient: Float {
+        get {
+            referralSwitch.isOn ? 1.1 : 1
+        }
+    }
+
     struct Constants {
         static let balanceFromApiMultiplier: NSDecimalNumber = NSDecimalNumber(mantissa: 1,
                                                                                exponent: -10,
@@ -66,7 +72,6 @@ class RoiViewController: UIViewController {
         static let buyViewTag: Int = 2000
         static let acceptableStakeChars = "0123456789."
 
-        static let roiCoefficient: Float = 1
         static let daysInWeek: Float = 7
         static let daysInYear: Float = 365
     }
@@ -107,6 +112,7 @@ class RoiViewController: UIViewController {
 
         referralSwitch.transform = CGAffineTransform(scaleX: 0.75, y: 0.75)
         referralSwitch.onTintColor = UIColor(red: 0 / 255, green: 209 / 255, blue: 1, alpha: 1)
+        referralSwitch.isOn = Defaults.isIAmReferrer()
         referralLabel.text = R.string.localizable.referral_tick()
 
         if Localization.isRTL() {
@@ -208,16 +214,6 @@ class RoiViewController: UIViewController {
     }
 
     private func updateRoiSliderData() {
-        /* var maxRoi = Roi(stake: 0, roi: 0)
-         var maxPercent: UInt64 = 0
-         roiList.forEach {
-             let percent = ($0.roi - $0.stake) / $0.stake * 100
-             if percent > maxPercent {
-                 maxPercent = percent
-                 maxRoi = $0
-             }
-         }*/
-
         guard let minStake = Defaults.minStake(), let maxStake = Defaults.maxStake() else {
             return
         }
@@ -270,11 +266,11 @@ class RoiViewController: UIViewController {
     }
 
     private func formProfitPercent(_ profit: Float, _ stake: Float) -> String {
-        String(format: "%.2f", profit / stake * 100 * Constants.roiCoefficient)
+        String(format: "%.2f", profit / stake * 100 * roiCoefficient)
     }
 
     private func formProfitValue(_ profit: Float) -> String {
-        String(format: "%.2f", profit * Constants.roiCoefficient)
+        String(format: "%.2f", profit * roiCoefficient)
     }
 
     // MARK: - Stake Slider
@@ -364,6 +360,11 @@ class RoiViewController: UIViewController {
     @IBAction func swapTabClicked() {
         buyTabsState = .swap
         updateForBuyTabState()
+    }
+
+    @IBAction func referralSwitchChanged(_ sender: Any) {
+        updateRoiVerboseData(Float(stakeSlider.value))
+        Defaults.setIAmReferrer(referrer: referralSwitch.isOn)
     }
 }
 

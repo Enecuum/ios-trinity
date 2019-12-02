@@ -15,6 +15,7 @@ class Defaults {
         static let usdRateKey: String = "usdRateKey"
         static let minStakeKey: String = "minStakeKey"
         static let maxStakeKey: String = "maxStakeKey"
+        static let iAmReferrer: String = "iAmReferrer"
     }
 
     static func saveBalance(_ balance: NSDecimalNumber) {
@@ -74,6 +75,14 @@ class Defaults {
 
     static func maxStake() -> Float? {
         UserDefaults.standard.float(forKey: Constants.maxStakeKey)
+    }
+
+    static func setIAmReferrer(referrer: Bool) {
+        UserDefaults.standard.set(referrer, forKey: Constants.iAmReferrer)
+    }
+
+    static func isIAmReferrer() -> Bool {
+        UserDefaults.standard.bool(forKey: Constants.iAmReferrer)
     }
 
     static func clearUserData() {

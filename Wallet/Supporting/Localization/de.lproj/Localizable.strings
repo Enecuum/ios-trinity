@@ -32,7 +32,7 @@
 /* referral */
 
 "referral_buy_message" = "Sobald Sie %@ %@ erhalten haben, können Sie Ihren Agenten-Empfehlungscode freigeben. Der Code kann von anderen Benutzern verwendet werden, um mehr %@ zu erhalten, während Sie passives Einkommen erzielen.";
-"referral_message" = "Sie haben Ihren persönlichen Agenten-Empfehlungscode freigeschaltet! Teilen Sie ihn mit anderen Benutzern, um 10 %% o f ihrer Mining-Belohnungen zu erhalten. Sie werden %@ abbauen und Ihnen passives Einkommen bescheren!";
+"referral_message" = "Sie haben Ihren persönlichen Agenten-Empfehlungscode freigeschaltet! Teilen Sie ihn mit anderen Benutzern, um 10 %% der ihrer Mining-Belohnungen zu erhalten. Sie werden %@ abbauen und Ihnen passives Einkommen bescheren!";
 
 /* menu */
 

@@ -1207,10 +1207,10 @@ and start mining</string>
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wvk-qt-69Y" userLabel="Data Container">
-                                <rect key="frame" x="0.0" y="147" width="375" height="520"/>
+                                <rect key="frame" x="0.0" y="98" width="375" height="569"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Roi/back" translatesAutoresizingMaskIntoConstraints="NO" id="fnW-ay-OP7">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="520"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="569"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Return rate calculator last 24 hours" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cgZ-Rt-9fV">
                                         <rect key="frame" x="16" y="29" width="343" height="19"/>
@@ -1447,7 +1447,7 @@ and start mining</string>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v5c-Ko-vLc">
-                                        <rect key="frame" x="0.0" y="458" width="375" height="62"/>
+                                        <rect key="frame" x="0.0" y="507" width="375" height="62"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="62" id="dFU-Gb-4Tg"/>
@@ -1498,7 +1498,7 @@ and start mining</string>
                                     </mask>
                                 </variation>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Je2-2J-8i0" userLabel="Buy Tabs View">
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Je2-2J-8i0" userLabel="Buy Tabs View">
                                 <rect key="frame" x="9" y="91" width="357" height="38"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="dn5-iI-ufo">
@@ -1614,10 +1614,16 @@ and start mining</string>
                             <constraint firstItem="Je2-2J-8i0" firstAttribute="leading" secondItem="bGT-N6-Bxe" secondAttribute="leading" id="kK1-cF-6Dp"/>
                             <constraint firstItem="q1C-FG-j4G" firstAttribute="leading" secondItem="lXY-jj-aRc" secondAttribute="leading" constant="9" id="ncV-N0-5sC"/>
                             <constraint firstItem="Je2-2J-8i0" firstAttribute="trailing" secondItem="bGT-N6-Bxe" secondAttribute="trailing" id="oFW-Dy-MPy"/>
+                            <constraint firstItem="Wvk-qt-69Y" firstAttribute="top" secondItem="q1C-FG-j4G" secondAttribute="bottom" constant="18" id="sUI-HN-XS0"/>
                             <constraint firstItem="T6V-qE-jcI" firstAttribute="bottom" secondItem="Wvk-qt-69Y" secondAttribute="bottom" id="ugZ-yN-tfl"/>
                             <constraint firstItem="n2Z-Eh-h8Q" firstAttribute="leading" secondItem="lXY-jj-aRc" secondAttribute="leading" id="yJo-1i-dxt"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="T6V-qE-jcI"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="dC7-nO-WNJ"/>
+                            </mask>
+                        </variation>
                     </view>
                     <splitViewMasterSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <connections>

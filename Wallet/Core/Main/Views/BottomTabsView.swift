@@ -25,7 +25,7 @@ class BottomTabsView: UIView {
 
     func setButtonImages(buttonImages: [UIImage]) {
         self.buttonImages = buttonImages
-        self.updateView()
+        updateView()
     }
 
     func setIndex(index: Int) {
@@ -40,13 +40,13 @@ class BottomTabsView: UIView {
     }
 
     @objc func buttonAction(sender: UIButton) {
-        guard let buttons = buttons, let count = buttonImages?.count else {
+        guard let buttons = buttons else {
             return
         }
         for (buttonIndex, btn) in buttons.enumerated() {
             if btn == sender && selectedIndex != buttonIndex {
-                let tabWidth = UIScreen.main.bounds.width / CGFloat(count)
-                let selectorPosition = tabWidth * CGFloat(buttonIndex - (count - 1))
+                let tabWidth = UIScreen.main.bounds.width / CGFloat(buttons.count)
+                let selectorPosition = tabWidth * CGFloat(buttonIndex - (buttons.count - 1))
                 selectedIndex = buttonIndex
                 delegate?.changeToIndex(index: selectedIndex)
                 UIView.animate(withDuration: 0.2) { [weak self] in
@@ -74,10 +74,10 @@ extension BottomTabsView {
         stack.distribution = .fillEqually
         addSubview(stack)
         stack.translatesAutoresizingMaskIntoConstraints = false
-        stack.topAnchor.constraint(equalTo: self.topAnchor).isActive = true
-        stack.bottomAnchor.constraint(equalTo: self.bottomAnchor).isActive = true
-        stack.leftAnchor.constraint(equalTo: self.leftAnchor).isActive = true
-        stack.rightAnchor.constraint(equalTo: self.rightAnchor).isActive = true
+        stack.topAnchor.constraint(equalTo: topAnchor).isActive = true
+        stack.bottomAnchor.constraint(equalTo: bottomAnchor).isActive = true
+        stack.leftAnchor.constraint(equalTo: leftAnchor).isActive = true
+        stack.rightAnchor.constraint(equalTo: rightAnchor).isActive = true
         stack.semanticContentAttribute = .forceLeftToRight
     }
 

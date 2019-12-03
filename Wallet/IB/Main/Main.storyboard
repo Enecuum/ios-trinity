@@ -84,7 +84,7 @@
                             <constraint firstItem="U1q-Bq-K4H" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="cin-U1-eSh"/>
                             <constraint firstItem="M33-E1-9eP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="11" id="deg-AY-08y"/>
                             <constraint firstItem="LAo-vN-7xd" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="f2Z-xv-adL"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="8rq-7N-5Ig" secondAttribute="bottom" id="gsJ-UO-rDr"/>
+                            <constraint firstAttribute="bottom" secondItem="8rq-7N-5Ig" secondAttribute="bottom" id="gsJ-UO-rDr"/>
                             <constraint firstItem="U1q-Bq-K4H" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="hcz-ha-1kr"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Pi8-JK-bax" secondAttribute="trailing" id="zDI-Do-BZV"/>
                         </constraints>
@@ -92,6 +92,7 @@
                     </view>
                     <connections>
                         <outlet property="containerView" destination="U1q-Bq-K4H" id="LH5-eD-QsZ"/>
+                        <outlet property="mainTabsHeightConstraint" destination="6ov-Ge-aYA" id="NlK-Zl-VgO"/>
                         <outlet property="mainTabsView" destination="8rq-7N-5Ig" id="dDN-YS-c02"/>
                     </connections>
                 </viewController>

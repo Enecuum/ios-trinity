@@ -16,6 +16,12 @@ class BottomTabsView: UIView {
 
     weak var delegate: BottomTabsDelegate?
 
+    override var bounds: CGRect {
+        didSet {
+            updateView()
+        }
+    }
+
     public private(set) var selectedIndex: Int = 0
 
     convenience init(frame: CGRect, buttonImages: [UIImage]) {

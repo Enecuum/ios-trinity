@@ -178,8 +178,8 @@ class AuthViewController: UIViewController {
         AuthManager.signIn(key)
 
         let initialViewController = R.storyboard.main().instantiateInitialViewController()
-        let appDelegate = UIApplication.shared.delegate as! AppDelegate
-        appDelegate.window!.rootViewController = initialViewController
+        let appDelegate = UIApplication.shared.delegate as? AppDelegate
+        appDelegate?.window?.rootViewController = initialViewController
     }
 }
 

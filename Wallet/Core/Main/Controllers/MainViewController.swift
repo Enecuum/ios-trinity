@@ -9,6 +9,7 @@ class MainViewController: UIViewController {
 
     @IBOutlet weak var containerView: UIView!
     @IBOutlet weak var mainTabsView: BottomTabsView!
+    @IBOutlet weak var mainTabsHeightConstraint: NSLayoutConstraint!
 
     private var sections: [Section]?
     private var currentSection: Section?
@@ -34,6 +35,16 @@ class MainViewController: UIViewController {
 
         mainTabsView.setButtonImages(buttonImages: buttonImages!)
         mainTabsView.delegate = self
+
+        if #available(iOS 11.0, *) {
+            if UIDevice.current.screenType == .iPhones_X_XS
+                       || UIDevice.current.screenType == .iPhone_XR
+                       || UIDevice.current.screenType == .iPhone_XSMax {
+                let appDelegate = UIApplication.shared.delegate as? AppDelegate
+                let bottomPadding = appDelegate?.window?.safeAreaInsets.bottom ?? 0
+                mainTabsHeightConstraint.constant += bottomPadding / 1.5
+            }
+        }
 
         if currentSection == nil, let firstSection = sections?.first {
             transit(to: firstSection)

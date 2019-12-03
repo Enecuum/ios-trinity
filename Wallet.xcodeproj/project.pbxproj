@@ -62,7 +62,7 @@
 		B8EA178F557753B48D3EB921 /* SwapView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8EA168995FDB5D5200A9D25 /* SwapView.xib */; };
 		B8EA17D142D8F7F87EFC69D5 /* Array+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA10E4437B39F7691B4E73 /* Array+Extension.swift */; };
 		B8EA1823E3B08C05F17FF27D /* TabsBackgroundView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8EA1FDB437E289A3B5F21C2 /* TabsBackgroundView.xib */; };
-        B8EA182891245D4675ADDF7B /* ReceiveView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8EA11BCF085AD7E415F26FD /* ReceiveView.xib */; };
+		B8EA182891245D4675ADDF7B /* ReceiveView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8EA11BCF085AD7E415F26FD /* ReceiveView.xib */; };
 		B8EA1849D8A479672073A236 /* TransactionStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA176DF3BA89D6967086D3 /* TransactionStatus.swift */; };
 		B8EA18AC5731348E4C36DA5F /* ApiRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA1874540FD9E5BF532F3F /* ApiRouter.swift */; };
 		B8EA191BE758FE4375B2938F /* Resources.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA1503A7CBE7C1A8C89B84 /* Resources.swift */; };
@@ -202,9 +202,9 @@
 		B8EA1E69D0A92BCBA9D4AAEA /* AuthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 		B8EA1EB1C3D015CFEA7C2F33 /* UIButton+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
 		B8EA1FD113DFCDF1078E6F51 /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
-		B8EA1FF7E3376DC831DCAD36 /* Section.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
 		B8EA1FDB437E289A3B5F21C2 /* TabsBackgroundView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TabsBackgroundView.xib; sourceTree = "<group>"; };
-        D55D7342C2EDB0E32FCED51F /* Pods_wallet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_wallet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8EA1FF7E3376DC831DCAD36 /* Section.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
+		D55D7342C2EDB0E32FCED51F /* Pods_wallet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_wallet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -769,7 +769,7 @@
 				B8EA128CB854739C80C3D28B /* NibView.swift in Sources */,
 				B8EA1AD85EE6728581247C39 /* GradientView.swift in Sources */,
 				B8EA128CB854739C80C3D28B /* NibView.swift in Sources */,
-		);
+			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
@@ -925,7 +925,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 14;
+				CURRENT_PROJECT_VERSION = 15;
 				DEVELOPMENT_TEAM = UX43SAZ2QJ;
 				INFOPLIST_FILE = wallet/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -949,7 +949,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 14;
+				CURRENT_PROJECT_VERSION = 15;
 				DEVELOPMENT_TEAM = UX43SAZ2QJ;
 				INFOPLIST_FILE = wallet/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;

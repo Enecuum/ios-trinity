@@ -113,7 +113,7 @@ class RoiViewController: UIViewController {
         referralSwitch.transform = CGAffineTransform(scaleX: 0.75, y: 0.75)
         referralSwitch.onTintColor = UIColor(red: 0 / 255, green: 209 / 255, blue: 1, alpha: 1)
         referralSwitch.isOn = Defaults.isIAmReferrer()
-        referralLabel.text = R.string.localizable.referral_tick()
+        referralLabel.text = R.string.localizable.referral_tick.localized()
 
         if Localization.isRTL() {
             stakeSlider.semanticContentAttribute = .forceRightToLeft

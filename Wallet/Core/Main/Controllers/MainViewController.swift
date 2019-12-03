@@ -33,8 +33,6 @@ class MainViewController: UIViewController {
         }
 
         mainTabsView.setButtonImages(buttonImages: buttonImages!)
-        mainTabsView.textColor = .white
-        mainTabsView.selectorTextColor = .white
         mainTabsView.delegate = self
 
         if currentSection == nil, let firstSection = sections?.first {

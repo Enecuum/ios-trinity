@@ -10,12 +10,9 @@ protocol BottomTabsDelegate: class {
 }
 
 class BottomTabsView: UIView {
-    private var buttonImages: [UIImage]!
-    private var buttons: [UIButton]!
-    private var selectorView: UIImageView!
-
-    var textColor: UIColor = .black
-    var selectorTextColor: UIColor = .red
+    private var buttonImages: [UIImage]?
+    private var buttons: [UIButton]?
+    private var selectorView: UIView?
 
     weak var delegate: BottomTabsDelegate?
 
@@ -32,32 +29,29 @@ class BottomTabsView: UIView {
     }
 
     func setIndex(index: Int) {
-        buttons.forEach({ $0.setTitleColor(textColor, for: .normal) })
-        let button = buttons[index]
-        selectedIndex = index
-        button.setTitleColor(selectorTextColor, for: .normal)
-        let selectorWidth = frame.width / CGFloat(buttonImages.count)
-        let selectorPosition = selectorWidth * CGFloat(index - (buttonImages.count - 1))
-        UIView.animate(withDuration: 0.2) {
-            self.selectorView.frame.origin.x = selectorPosition
+        if let button = buttons?[index], let count = buttonImages?.count {
+            selectedIndex = index
+            let tabWidth = UIScreen.main.bounds.width / CGFloat(count)
+            let selectorPosition = tabWidth * CGFloat(index - (count - 1))
+            UIView.animate(withDuration: 0.2) { [weak self] in
+                self?.selectorView?.frame.origin.x = selectorPosition
+            }
         }
     }
 
     @objc func buttonAction(sender: UIButton) {
+        guard let buttons = buttons, let count = buttonImages?.count else {
+            return
+        }
         for (buttonIndex, btn) in buttons.enumerated() {
-            btn.setTitleColor(textColor, for: .normal)
-            if btn == sender {
-                if selectedIndex == buttonIndex {
-                    return
-                }
-                let selectorWidth = frame.width / CGFloat(buttonImages.count)
-                let selectorPosition = selectorWidth * CGFloat(buttonIndex - (buttonImages.count - 1))
+            if btn == sender && selectedIndex != buttonIndex {
+                let tabWidth = UIScreen.main.bounds.width / CGFloat(count)
+                let selectorPosition = tabWidth * CGFloat(buttonIndex - (count - 1))
                 selectedIndex = buttonIndex
                 delegate?.changeToIndex(index: selectedIndex)
-                UIView.animate(withDuration: 0.3) {
-                    self.selectorView.frame.origin.x = selectorPosition
+                UIView.animate(withDuration: 0.2) { [weak self] in
+                    self?.selectorView?.frame.origin.x = selectorPosition
                 }
-                btn.setTitleColor(selectorTextColor, for: .normal)
             }
         }
     }
@@ -65,12 +59,15 @@ class BottomTabsView: UIView {
 
 extension BottomTabsView {
     private func updateView() {
-        createButton()
+        createTabButtons()
         configSelectorView()
         configStackView()
     }
 
     private func configStackView() {
+        guard let buttons = buttons else {
+            return
+        }
         let stack = UIStackView(arrangedSubviews: buttons)
         stack.axis = .horizontal
         stack.alignment = .fill
@@ -81,30 +78,39 @@ extension BottomTabsView {
         stack.bottomAnchor.constraint(equalTo: self.bottomAnchor).isActive = true
         stack.leftAnchor.constraint(equalTo: self.leftAnchor).isActive = true
         stack.rightAnchor.constraint(equalTo: self.rightAnchor).isActive = true
-
         stack.semanticContentAttribute = .forceLeftToRight
     }
 
     private func configSelectorView() {
-        let tabsWidthFactor: CGFloat = 1 + CGFloat(buttonImages.count - 1) /  CGFloat(buttonImages.count)
-        let tabsImageWidth = frame.width * tabsWidthFactor
-        let tabsPadding = tabsImageWidth / CGFloat(buttonImages.count * 2 - 1)
-        selectorView = UIImageView(frame: CGRect(x: -tabsPadding * CGFloat(buttonImages.count - 1), y: 0, width: tabsImageWidth, height: frame.height))
-        selectorView.image = R.image.bottomTabs.tab()
+        guard let tabsCount = buttons?.count else {
+            return
+        }
+        let tabWidth = UIScreen.main.bounds.width / CGFloat(tabsCount)
+        let sideTabWidth = tabWidth * CGFloat(tabsCount - 1)
+        let sumWidth = sideTabWidth * 2 + tabWidth
+        let selectorView = TabsBackgroundView(frame: CGRect(x: -sideTabWidth,
+                                                            y: 0,
+                                                            width: sumWidth,
+                                                            height: frame.height))
+        selectorView.leftTabWidthConstraint.constant = sideTabWidth
+        selectorView.rightTabWidthConstraint.constant = sideTabWidth
+        selectorView.stubWidthConstraint.constant = tabWidth
         addSubview(selectorView)
+        self.selectorView = selectorView
     }
 
-    private func createButton() {
+    private func createTabButtons() {
+        guard let buttonImages = buttonImages else {
+            return
+        }
         buttons = [UIButton]()
-        buttons.removeAll()
         subviews.forEach({ $0.removeFromSuperview() })
 
         for buttonImage in buttonImages {
             let button = UIButton(type: .custom)
             button.setImage(buttonImage, for: .normal)
             button.addTarget(self, action: #selector(TabsView.buttonAction(sender:)), for: .touchUpInside)
-            buttons.append(button)
+            buttons?.append(button)
         }
-        buttons[0].setTitleColor(selectorTextColor, for: .normal)
     }
 }

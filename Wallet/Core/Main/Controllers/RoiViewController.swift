@@ -87,6 +87,9 @@ class RoiViewController: UIViewController {
         if let usdRate = Defaults.usdRate() {
             self.updateUsdRate(usdRate)
         }
+        balanceAmountLabel.isUserInteractionEnabled = true
+        let balanceTap = UITapGestureRecognizer(target: self, action: #selector(balanceTapped))
+        balanceAmountLabel.addGestureRecognizer(balanceTap)
 
         byCardButton.setTitle(R.string.localizable.pay_by_card.localized(), for: .normal)
         byCardButton.titleLabel?.numberOfLines = 0
@@ -294,6 +297,15 @@ class RoiViewController: UIViewController {
         }
         stakeTextField.text = "\(Int(newValue))"
         updateRoiVerboseData(newValue)
+    }
+
+    @objc private func balanceTapped() {
+        if let text = balanceAmountLabel.text {
+            let balanceValue = NSDecimalNumber(string: text)
+            let balanceInt = balanceValue.intValue
+            stakeSlider.setValue(Float(balanceInt), animated: true)
+            stakeTextField.text = "\(balanceInt)"
+        }
     }
 
     // MARK: - Server

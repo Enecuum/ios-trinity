@@ -5,6 +5,7 @@
 
 import UIKit
 
+//TODO: localize
 class FaqViewController: UIViewController {
 
     @IBOutlet weak var titleLabel: UILabel!
@@ -40,6 +41,8 @@ class FaqViewController: UIViewController {
         attributedString.append(NSAttributedString(string: text2, attributes: textAttributes))
         attributedString.append(NSAttributedString(string: title3, attributes: titleAttributes))
         attributedString.append(NSAttributedString(string: text3, attributes: textAttributes))
+
+        //TODO: ru url
         attributedString.setAsLink(text: "Telegram group", url: "https://t.me/Enecuum_EN")
         faqTextView.attributedText = attributedString
 

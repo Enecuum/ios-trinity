@@ -17,35 +17,35 @@ class SocialsViewController: UIViewController {
     // MARK: - IBActions
 
     @IBAction func onFbClicked(_ sender: Any) {
-        Browser.openUrl("https://www.facebook.com/enecuum.EN")
+        Browser.openUrl(R.string.untranslatable.community_fb_link())
     }
 
     @IBAction func onTwitterClicked(_ sender: Any) {
-        Browser.openUrl("https://twitter.com/enq_enecuum")
+        Browser.openUrl(R.string.untranslatable.community_twitter_link())
     }
 
     @IBAction func onMediumClicked(_ sender: Any) {
-        Browser.openUrl("https://medium.com/@EnqBlockchain")
+        Browser.openUrl(R.string.untranslatable.community_medium_link())
     }
 
     @IBAction func onGithubClicked(_ sender: Any) {
-        Browser.openUrl("https://github.com/Enecuum")
+        Browser.openUrl(R.string.untranslatable.community_github_link())
     }
 
     @IBAction func onBitcoinClicked(_ sender: Any) {
-        Browser.openUrl("https://bitcointalk.org/index.php?topic=2939909.0;topicseen")
+        Browser.openUrl(R.string.untranslatable.community_bt_link())
     }
 
     @IBAction func onLinkedInClicked(_ sender: Any) {
-        Browser.openUrl("https://www.linkedin.com/company/enecuum-limited")
+        Browser.openUrl(R.string.untranslatable.community_linkedin_link())
     }
 
     @IBAction func onYouTubeClicked(_ sender: Any) {
-        Browser.openUrl("https://www.youtube.com/channel/UCyZqNfzK_PP82nkAVOlmN4Q")
+        Browser.openUrl(R.string.untranslatable.community_youtube_link())
     }
 
     @IBAction func onTelegramClicked(_ sender: Any) {
-        Browser.openUrl("https://t.me/Enecuum_EN")
+        Browser.openUrl(R.string.localizable.community_telegram_link.localized())
     }
 
     @IBAction func onBackClicked(_ sender: Any) {

@@ -23,3 +23,14 @@
 "min_value" = "min %@";
 "max_value" = "max %@";
 "percent_value" = "%@ %%";
+
+/* social urls */
+
+"community_fb_link" = "https://www.facebook.com/enecuum.EN";
+"community_twitter_link" = "https://twitter.com/enq_enecuum";
+"community_medium_link" = "https://medium.com/@EnqBlockchain";
+"community_github_link" = "https://github.com/Enecuum";
+"community_linkedin_link" = "https://www.linkedin.com/company/enecuum-limited";
+"community_youtube_link" = "https://www.youtube.com/channel/UCyZqNfzK_PP82nkAVOlmN4Q";
+"community_bt_link" = "https://bitcointalk.org/index.php?topic=2939909.0;topicseen";
+

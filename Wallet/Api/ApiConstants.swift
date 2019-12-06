@@ -10,7 +10,7 @@ struct ApiConstants {
     }
 
     struct DevServer {
-        static let baseIP = "95.217.0.123"
+        static let baseIP = "95.216.68.221"
         static let baseDomain = "neuro-release.enecuum.com"
     }
 

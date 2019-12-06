@@ -131,7 +131,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TAj-y6-bI4">
-                                        <rect key="frame" x="302" y="11.5" width="11.5" height="20"/>
+                                        <rect key="frame" x="301" y="11.5" width="12.5" height="20"/>
                                         <fontDescription key="fontDescription" name="TTNorms-Bold" family="TT Norms" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -257,13 +257,13 @@
                                         </constraints>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="Total nodes:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PNy-Yc-jbo">
-                                        <rect key="frame" x="16" y="9" width="91.5" height="20.5"/>
+                                        <rect key="frame" x="16" y="9" width="93" height="20.5"/>
                                         <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SEd-RQ-k8C">
-                                        <rect key="frame" x="109.5" y="9" width="11.5" height="20.5"/>
+                                        <rect key="frame" x="111" y="9" width="12.5" height="20.5"/>
                                         <fontDescription key="fontDescription" name="TTNorms-Bold" family="TT Norms" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -339,7 +339,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wv8-Uj-540">
-                                                <rect key="frame" x="51" y="39" width="10" height="18"/>
+                                                <rect key="frame" x="50.5" y="39" width="11" height="18"/>
                                                 <fontDescription key="fontDescription" name="TTNorms-Bold" family="TT Norms" pointSize="15"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -374,7 +374,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Mv-Xx-aAd">
-                                                <rect key="frame" x="51" y="39" width="10" height="18"/>
+                                                <rect key="frame" x="50.5" y="39" width="11" height="18"/>
                                                 <fontDescription key="fontDescription" name="TTNorms-Bold" family="TT Norms" pointSize="15"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -409,7 +409,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3ld-5N-vUg">
-                                                <rect key="frame" x="50.5" y="39" width="10" height="18"/>
+                                                <rect key="frame" x="50" y="39" width="11" height="18"/>
                                                 <fontDescription key="fontDescription" name="TTNorms-Bold" family="TT Norms" pointSize="15"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -454,7 +454,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fvv-O6-VzF">
-                                                <rect key="frame" x="51" y="38.5" width="10" height="18"/>
+                                                <rect key="frame" x="50.5" y="38.5" width="11" height="18"/>
                                                 <fontDescription key="fontDescription" name="TTNorms-Bold" family="TT Norms" pointSize="15"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -489,7 +489,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DKP-87-Pz9">
-                                                <rect key="frame" x="51" y="38.5" width="10" height="18"/>
+                                                <rect key="frame" x="50.5" y="38.5" width="11" height="18"/>
                                                 <fontDescription key="fontDescription" name="TTNorms-Bold" family="TT Norms" pointSize="15"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -524,7 +524,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FhX-CX-h3c">
-                                                <rect key="frame" x="50.5" y="38.5" width="10" height="18"/>
+                                                <rect key="frame" x="50" y="38.5" width="11" height="18"/>
                                                 <fontDescription key="fontDescription" name="TTNorms-Bold" family="TT Norms" pointSize="15"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -577,13 +577,13 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="500" verticalHuggingPriority="251" text="ENQ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oLD-Fi-2bO">
-                                                <rect key="frame" x="40.5" y="21" width="26" height="13"/>
+                                                <rect key="frame" x="41" y="21" width="26" height="13"/>
                                                 <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="11"/>
                                                 <color key="textColor" red="0.0" green="0.81960784310000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Cj-wZ-ucf">
-                                                <rect key="frame" x="31" y="21" width="7.5" height="13"/>
+                                                <rect key="frame" x="31" y="21" width="8" height="13"/>
                                                 <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="11"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -595,13 +595,13 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="500" verticalHuggingPriority="251" text="ENQ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bhm-l6-Ybs">
-                                                <rect key="frame" x="35.5" y="36" width="26" height="13"/>
+                                                <rect key="frame" x="36" y="36" width="26" height="13"/>
                                                 <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="11"/>
                                                 <color key="textColor" red="0.0" green="0.81960784310000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q4I-L2-vkX">
-                                                <rect key="frame" x="26" y="36" width="7.5" height="13"/>
+                                                <rect key="frame" x="26" y="36" width="8" height="13"/>
                                                 <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="11"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -613,13 +613,13 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="500" verticalHuggingPriority="251" text="ENQ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9CK-Er-o66">
-                                                <rect key="frame" x="37" y="51" width="26" height="13"/>
+                                                <rect key="frame" x="37.5" y="51" width="26" height="13"/>
                                                 <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="11"/>
                                                 <color key="textColor" red="0.0" green="0.81960784310000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vKJ-gb-WQ1">
-                                                <rect key="frame" x="27.5" y="51" width="7.5" height="13"/>
+                                                <rect key="frame" x="27.5" y="51" width="8" height="13"/>
                                                 <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="11"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -670,7 +670,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="500" verticalHuggingPriority="251" text="ENQ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="csc-zw-3wY">
-                                                <rect key="frame" x="75.5" y="21" width="26" height="13"/>
+                                                <rect key="frame" x="76" y="21" width="26" height="13"/>
                                                 <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="11"/>
                                                 <color key="textColor" red="0.0" green="0.81960784310000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <nil key="highlightedColor"/>
@@ -682,19 +682,19 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="240" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="otL-kB-uzg">
-                                                <rect key="frame" x="66" y="21" width="7.5" height="13"/>
+                                                <rect key="frame" x="66" y="21" width="8" height="13"/>
                                                 <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="11"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="240" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ss9-Ti-Jql">
-                                                <rect key="frame" x="64" y="36" width="7.5" height="13"/>
+                                                <rect key="frame" x="64" y="36" width="8" height="13"/>
                                                 <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="11"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="500" verticalHuggingPriority="251" text="ENQ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MFn-Th-jcv">
-                                                <rect key="frame" x="73.5" y="36" width="26" height="13"/>
+                                                <rect key="frame" x="74" y="36" width="26" height="13"/>
                                                 <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="11"/>
                                                 <color key="textColor" red="0.0" green="0.81960784310000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <nil key="highlightedColor"/>
@@ -842,7 +842,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cy5-4C-vRc">
-                                        <rect key="frame" x="302" y="11" width="11.5" height="20.5"/>
+                                        <rect key="frame" x="301" y="11" width="12.5" height="20.5"/>
                                         <fontDescription key="fontDescription" name="TTNorms-Bold" family="TT Norms" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -866,7 +866,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tnX-rL-yoY">
-                                        <rect key="frame" x="319.5" y="41" width="11.5" height="20.5"/>
+                                        <rect key="frame" x="318.5" y="41" width="12.5" height="20.5"/>
                                         <fontDescription key="fontDescription" name="TTNorms-Bold" family="TT Norms" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -934,7 +934,7 @@
                                         <state key="normal" title="ENQ" backgroundImage="Main/Button/off"/>
                                     </button>
                                     <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FOJ-9S-yur">
-                                        <rect key="frame" x="140.5" y="330" width="94.5" height="31"/>
+                                        <rect key="frame" x="140" y="330" width="95" height="31"/>
                                         <string key="text">Keep calm
 and start mining</string>
                                         <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="13"/>
@@ -1139,7 +1139,7 @@ and start mining</string>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="efR-NA-KRe">
-                                        <rect key="frame" x="302" y="11" width="11.5" height="20.5"/>
+                                        <rect key="frame" x="301" y="11" width="12.5" height="20.5"/>
                                         <fontDescription key="fontDescription" name="TTNorms-Bold" family="TT Norms" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -1163,7 +1163,7 @@ and start mining</string>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3gm-2C-NhZ">
-                                        <rect key="frame" x="319.5" y="41" width="11.5" height="20.5"/>
+                                        <rect key="frame" x="318.5" y="41" width="12.5" height="20.5"/>
                                         <fontDescription key="fontDescription" name="TTNorms-Bold" family="TT Norms" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -1277,8 +1277,8 @@ and start mining</string>
                                             <action selector="referralSwitchChanged:" destination="Nyt-hi-YHR" eventType="valueChanged" id="sa9-Y2-CSh"/>
                                         </connections>
                                     </switch>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I'm a referral" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ct6-Fj-oDL">
-                                        <rect key="frame" x="82" y="234.5" width="73" height="15.5"/>
+                                    <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I'm a referral" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ct6-Fj-oDL">
+                                        <rect key="frame" x="82" y="226.5" width="73" height="31"/>
                                         <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="13"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -1332,37 +1332,37 @@ and start mining</string>
                                                 <rect key="frame" x="103.5" y="0.0" width="83" height="50"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="500" verticalHuggingPriority="251" text="%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y4p-ys-zA9">
-                                                        <rect key="frame" x="10.5" y="0.0" width="10.5" height="15.5"/>
+                                                        <rect key="frame" x="11.5" y="0.0" width="10.5" height="15.5"/>
                                                         <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="13"/>
                                                         <color key="textColor" red="0.0" green="0.81960784310000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MqS-bx-Pib">
-                                                        <rect key="frame" x="0.0" y="0.0" width="8.5" height="15.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="9.5" height="15.5"/>
                                                         <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="13"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="500" verticalHuggingPriority="251" text="%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OcY-7X-cnI">
-                                                        <rect key="frame" x="10.5" y="21.5" width="10.5" height="15.5"/>
+                                                        <rect key="frame" x="11.5" y="21.5" width="10.5" height="15.5"/>
                                                         <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="13"/>
                                                         <color key="textColor" red="0.0" green="0.81960784310000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0hQ-aC-whC">
-                                                        <rect key="frame" x="0.0" y="21.5" width="8.5" height="15.5"/>
+                                                        <rect key="frame" x="0.0" y="21.5" width="9.5" height="15.5"/>
                                                         <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="13"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="500" verticalHuggingPriority="251" text="%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i2G-Ea-O9P">
-                                                        <rect key="frame" x="10.5" y="43" width="10.5" height="15.5"/>
+                                                        <rect key="frame" x="11.5" y="43" width="10.5" height="15.5"/>
                                                         <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="13"/>
                                                         <color key="textColor" red="0.0" green="0.81960784310000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xfa-zc-KlL">
-                                                        <rect key="frame" x="0.0" y="43" width="8.5" height="15.5"/>
+                                                        <rect key="frame" x="0.0" y="43" width="9.5" height="15.5"/>
                                                         <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="13"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -1391,37 +1391,37 @@ and start mining</string>
                                                 <rect key="frame" x="186.5" y="0.0" width="132.5" height="50"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="500" verticalHuggingPriority="251" text="ENQ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GP4-1N-vvW">
-                                                        <rect key="frame" x="10.5" y="0.0" width="30.5" height="15.5"/>
+                                                        <rect key="frame" x="11.5" y="0.0" width="30.5" height="15.5"/>
                                                         <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="13"/>
                                                         <color key="textColor" red="0.0" green="0.81960784310000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DQD-XY-02B">
-                                                        <rect key="frame" x="0.0" y="0.0" width="8.5" height="15.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="9.5" height="15.5"/>
                                                         <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="13"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="500" verticalHuggingPriority="251" text="ENQ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uGY-Ky-zGw">
-                                                        <rect key="frame" x="10.5" y="21.5" width="30.5" height="15.5"/>
+                                                        <rect key="frame" x="11.5" y="21.5" width="30.5" height="15.5"/>
                                                         <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="13"/>
                                                         <color key="textColor" red="0.0" green="0.81960784310000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DN7-QJ-x8x">
-                                                        <rect key="frame" x="0.0" y="21.5" width="8.5" height="15.5"/>
+                                                        <rect key="frame" x="0.0" y="21.5" width="9.5" height="15.5"/>
                                                         <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="13"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="500" verticalHuggingPriority="251" text="ENQ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3CR-Jj-BHN">
-                                                        <rect key="frame" x="10.5" y="43" width="30.5" height="15.5"/>
+                                                        <rect key="frame" x="11.5" y="43" width="30.5" height="15.5"/>
                                                         <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="13"/>
                                                         <color key="textColor" red="0.0" green="0.81960784310000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Auq-gw-RvM">
-                                                        <rect key="frame" x="0.0" y="43" width="8.5" height="15.5"/>
+                                                        <rect key="frame" x="0.0" y="43" width="9.5" height="15.5"/>
                                                         <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="13"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -1473,6 +1473,7 @@ and start mining</string>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
+                                    <constraint firstItem="ct6-Fj-oDL" firstAttribute="bottom" secondItem="v75-dM-YkS" secondAttribute="bottom" id="076-48-kbO"/>
                                     <constraint firstAttribute="bottom" secondItem="v5c-Ko-vLc" secondAttribute="bottom" id="28X-f3-jfi"/>
                                     <constraint firstItem="nz5-UQ-d46" firstAttribute="trailing" secondItem="dd1-7w-V4T" secondAttribute="trailing" id="6sh-b4-vag"/>
                                     <constraint firstItem="MDa-QX-pXx" firstAttribute="top" secondItem="w9W-fP-bX9" secondAttribute="bottom" constant="18" id="7sf-FK-a5p"/>
@@ -1483,7 +1484,7 @@ and start mining</string>
                                     <constraint firstItem="nz5-UQ-d46" firstAttribute="leading" secondItem="2Pd-bI-y7Y" secondAttribute="leading" id="HBY-pD-aRW"/>
                                     <constraint firstAttribute="bottom" secondItem="fnW-ay-OP7" secondAttribute="bottom" id="Ke2-s3-AsN"/>
                                     <constraint firstItem="dd1-7w-V4T" firstAttribute="leading" secondItem="Wvk-qt-69Y" secondAttribute="leading" constant="24" id="Kfq-Ti-Frm"/>
-                                    <constraint firstItem="ct6-Fj-oDL" firstAttribute="centerY" secondItem="v75-dM-YkS" secondAttribute="centerY" id="QVQ-B5-lwF"/>
+                                    <constraint firstItem="ct6-Fj-oDL" firstAttribute="top" secondItem="v75-dM-YkS" secondAttribute="top" id="Mwc-yT-1Hl"/>
                                     <constraint firstItem="fnW-ay-OP7" firstAttribute="leading" secondItem="Wvk-qt-69Y" secondAttribute="leading" id="RVX-By-zXt"/>
                                     <constraint firstItem="MDa-QX-pXx" firstAttribute="width" secondItem="w9W-fP-bX9" secondAttribute="width" id="SbR-xW-s7y"/>
                                     <constraint firstItem="w9W-fP-bX9" firstAttribute="top" secondItem="9vK-mr-DQu" secondAttribute="bottom" constant="4" id="V3y-Z4-ei4"/>

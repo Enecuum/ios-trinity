@@ -115,6 +115,9 @@ class RoiViewController: UIViewController {
         referralSwitch.isOn = Defaults.isIAmReferrer()
         referralLabel.text = R.string.localizable.referral_tick.localized()
 
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(toggleReferralSwitch))
+        referralLabel.addGestureRecognizer(tap)
+
         if Localization.isRTL() {
             stakeSlider.semanticContentAttribute = .forceRightToLeft
             stakeTextField.textAlignment = .right
@@ -271,6 +274,10 @@ class RoiViewController: UIViewController {
 
     private func formProfitValue(_ profit: Float) -> String {
         String(format: "%.2f", profit * roiCoefficient)
+    }
+
+    @objc private func toggleReferralSwitch() {
+        referralSwitch.setOn(!referralSwitch.isOn, animated: true)
     }
 
     // MARK: - Stake Slider

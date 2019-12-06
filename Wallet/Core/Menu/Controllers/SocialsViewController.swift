@@ -31,6 +31,10 @@ class SocialsViewController: UIViewController {
     @IBAction func onGithubClicked(_ sender: Any) {
         Browser.openUrl(R.string.untranslatable.community_github_link())
     }
+    
+    @IBAction func onForklogClicked(_ sender: Any) {
+        Browser.openUrl(R.string.untranslatable.community_forklog_link())
+     }
 
     @IBAction func onBitcoinClicked(_ sender: Any) {
         Browser.openUrl(R.string.untranslatable.community_bt_link())

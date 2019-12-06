@@ -1907,37 +1907,30 @@ Feel free to ask for help in the Telegram group</string>
                                         </connections>
                                     </button>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="3KZ-DC-GsJ">
-                                        <rect key="frame" x="12" y="82" width="369.33333333333331" height="120"/>
+                                        <rect key="frame" x="12" y="82" width="369.33333333333331" height="180"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="GYd-aR-Nxq">
                                                 <rect key="frame" x="0.0" y="0.0" width="369.33333333333331" height="60"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rag-Va-Lhp">
-                                                        <rect key="frame" x="0.0" y="0.0" width="92.333333333333329" height="60"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="123" height="60"/>
                                                         <state key="normal" image="Socials/fb"/>
                                                         <connections>
                                                             <action selector="onFbClicked:" destination="UAX-Hi-mEx" eventType="touchUpInside" id="b6U-ge-THC"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JPt-iH-ahe">
-                                                        <rect key="frame" x="92.333333333333343" y="0.0" width="92.333333333333343" height="60"/>
+                                                        <rect key="frame" x="123.00000000000003" y="0.0" width="123.33333333333334" height="60"/>
                                                         <state key="normal" image="Socials/twitter"/>
                                                         <connections>
                                                             <action selector="onTwitterClicked:" destination="UAX-Hi-mEx" eventType="touchUpInside" id="4vv-5z-xek"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hDg-KM-uXP">
-                                                        <rect key="frame" x="184.66666666666666" y="0.0" width="92.333333333333343" height="60"/>
+                                                        <rect key="frame" x="246.33333333333337" y="0.0" width="123" height="60"/>
                                                         <state key="normal" image="Socials/medium"/>
                                                         <connections>
                                                             <action selector="onMediumClicked:" destination="UAX-Hi-mEx" eventType="touchUpInside" id="0x2-YJ-ysG"/>
-                                                        </connections>
-                                                    </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HhE-Yu-BHa">
-                                                        <rect key="frame" x="277" y="0.0" width="92.333333333333314" height="60"/>
-                                                        <state key="normal" image="Socials/github"/>
-                                                        <connections>
-                                                            <action selector="onGithubClicked:" destination="UAX-Hi-mEx" eventType="touchUpInside" id="xPx-65-Yev"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -1948,32 +1941,25 @@ Feel free to ask for help in the Telegram group</string>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="dWJ-cw-EjA">
                                                 <rect key="frame" x="0.0" y="60" width="369.33333333333331" height="60"/>
                                                 <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HhE-Yu-BHa">
+                                                        <rect key="frame" x="0.0" y="0.0" width="123" height="60"/>
+                                                        <state key="normal" image="Socials/github"/>
+                                                        <connections>
+                                                            <action selector="onGithubClicked:" destination="UAX-Hi-mEx" eventType="touchUpInside" id="xPx-65-Yev"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1hf-hL-EoI">
+                                                        <rect key="frame" x="123.00000000000003" y="0.0" width="123.33333333333334" height="60"/>
+                                                        <state key="normal" image="Socials/forklog"/>
+                                                        <connections>
+                                                            <action selector="onForklogClicked:" destination="UAX-Hi-mEx" eventType="touchUpInside" id="dax-UO-9sJ"/>
+                                                        </connections>
+                                                    </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kTl-2v-I0V">
-                                                        <rect key="frame" x="0.0" y="0.0" width="92.333333333333329" height="60"/>
+                                                        <rect key="frame" x="246.33333333333337" y="0.0" width="123" height="60"/>
                                                         <state key="normal" image="Socials/bitcoin"/>
                                                         <connections>
                                                             <action selector="onBitcoinClicked:" destination="UAX-Hi-mEx" eventType="touchUpInside" id="6F2-gG-Shh"/>
-                                                        </connections>
-                                                    </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KRE-9a-r23">
-                                                        <rect key="frame" x="92.333333333333343" y="0.0" width="92.333333333333343" height="60"/>
-                                                        <state key="normal" image="Socials/linkedin"/>
-                                                        <connections>
-                                                            <action selector="onLinkedInClicked:" destination="UAX-Hi-mEx" eventType="touchUpInside" id="3gY-IW-WXb"/>
-                                                        </connections>
-                                                    </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KY6-aH-h9Q">
-                                                        <rect key="frame" x="184.66666666666666" y="0.0" width="92.333333333333343" height="60"/>
-                                                        <state key="normal" image="Socials/youtube"/>
-                                                        <connections>
-                                                            <action selector="onYouTubeClicked:" destination="UAX-Hi-mEx" eventType="touchUpInside" id="hfY-nb-Xrt"/>
-                                                        </connections>
-                                                    </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="29J-Ng-VaL">
-                                                        <rect key="frame" x="277" y="0.0" width="92.333333333333314" height="60"/>
-                                                        <state key="normal" image="Socials/telegram"/>
-                                                        <connections>
-                                                            <action selector="onTelegramClicked:" destination="UAX-Hi-mEx" eventType="touchUpInside" id="x9K-Kq-iWa"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -1981,9 +1967,38 @@ Feel free to ask for help in the Telegram group</string>
                                                     <constraint firstAttribute="height" constant="60" id="Rh5-qM-qdw"/>
                                                 </constraints>
                                             </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="OxL-Ce-gPD">
+                                                <rect key="frame" x="0.0" y="120" width="369.33333333333331" height="60"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vgF-FN-4ql">
+                                                        <rect key="frame" x="0.0" y="0.0" width="123" height="60"/>
+                                                        <state key="normal" image="Socials/linkedin"/>
+                                                        <connections>
+                                                            <action selector="onLinkedInClicked:" destination="UAX-Hi-mEx" eventType="touchUpInside" id="LXw-K8-498"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e9m-OR-BlY">
+                                                        <rect key="frame" x="123.00000000000003" y="0.0" width="123.33333333333334" height="60"/>
+                                                        <state key="normal" image="Socials/youtube"/>
+                                                        <connections>
+                                                            <action selector="onYouTubeClicked:" destination="UAX-Hi-mEx" eventType="touchUpInside" id="eBi-ar-jPK"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0p8-Ke-VFX">
+                                                        <rect key="frame" x="246.33333333333337" y="0.0" width="123" height="60"/>
+                                                        <state key="normal" image="Socials/telegram"/>
+                                                        <connections>
+                                                            <action selector="onTelegramClicked:" destination="UAX-Hi-mEx" eventType="touchUpInside" id="szx-lT-IAY"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="60" id="04x-dA-ZKX"/>
+                                                </constraints>
+                                            </stackView>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="120" id="VCx-YK-3Ry"/>
+                                            <constraint firstAttribute="height" constant="180" id="VCx-YK-3Ry"/>
                                             <constraint firstItem="GYd-aR-Nxq" firstAttribute="leading" secondItem="3KZ-DC-GsJ" secondAttribute="leading" id="Wfp-Li-iWH"/>
                                             <constraint firstAttribute="trailing" secondItem="GYd-aR-Nxq" secondAttribute="trailing" id="p40-zI-tKz"/>
                                             <constraint firstItem="GYd-aR-Nxq" firstAttribute="top" secondItem="3KZ-DC-GsJ" secondAttribute="top" id="tQe-Ez-5jV"/>
@@ -2424,6 +2439,7 @@ Feel free to ask for help in the Telegram group</string>
         <image name="Menu/viewBack" width="302" height="511"/>
         <image name="Socials/bitcoin" width="23.333333969116211" height="30"/>
         <image name="Socials/fb" width="28" height="28"/>
+        <image name="Socials/forklog" width="30" height="26.666666030883789"/>
         <image name="Socials/github" width="30" height="30"/>
         <image name="Socials/linkedin" width="30" height="30"/>
         <image name="Socials/medium" width="26" height="21"/>

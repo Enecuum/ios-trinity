@@ -111,7 +111,12 @@ class AuthViewController: UIViewController {
     }
 
     @IBAction private func onCopyPrivateKeyClicked(_ sender: Any) {
-        UIPasteboard.general.string = privateKeyTextField.text
+        switch authMode {
+        case .walletCreation:
+            UIPasteboard.general.string = privateKeyTextField.text
+        case .walletImport:
+            privateKeyTextField.text = UIPasteboard.general.string
+        }
     }
 
     @IBAction private func onStartClicked() {

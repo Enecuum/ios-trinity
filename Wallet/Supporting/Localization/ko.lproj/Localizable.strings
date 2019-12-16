@@ -94,8 +94,8 @@
 "stats.lastBlock" = "마지막 블록";
 "stats.rewards" = "최근 24시간 보상";
 "stats.coinData" = "코인 데이터";
-"stats.coinData.circSupply" = "순환 공급량";
-"stats.coinData.maxSupply" = "최대 공급량";
+"stats.coinData.circSupply" = "순환 공급량:";
+"stats.coinData.maxSupply" = "최대 공급량:";
 "stats.totalNodes" = "전체 노드:";
 
 /* roi */

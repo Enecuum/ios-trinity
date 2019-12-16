@@ -94,8 +94,8 @@
 "stats.lastBlock" = "Último bloque";
 "stats.rewards" = "Recompensas de las últimas 24h";
 "stats.coinData" = "Datos de monedas";
-"stats.coinData.circSupply" = "Sum. circulante";
-"stats.coinData.maxSupply" = "Suministro máx.";
+"stats.coinData.circSupply" = "Sum. circulante:";
+"stats.coinData.maxSupply" = "Suministro máx.:";
 "stats.totalNodes" = "Nodos totales:";
 
 /* roi */

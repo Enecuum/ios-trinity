@@ -94,8 +94,8 @@
 "stats.lastBlock" = "Blok terakhir";
 "stats.rewards" = "Reward 24 jam terakhir";
 "stats.coinData" = "Data Koin";
-"stats.coinData.circSupply" = "Pasokan yang Beredar";
-"stats.coinData.maxSupply" = "Pasokan Maks.";
+"stats.coinData.circSupply" = "Pasokan yang Beredar:";
+"stats.coinData.maxSupply" = "Pasokan Maks.:";
 "stats.totalNodes" = "Total Node:";
 
 /* roi */

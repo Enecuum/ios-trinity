@@ -94,8 +94,8 @@
 "stats.lastBlock" = "Dernier bloc";
 "stats.rewards" = "Récompenses les dernières 24h";
 "stats.coinData" = "Données de pièces";
-"stats.coinData.circSupply" = "Alimentation de circ.";
-"stats.coinData.maxSupply" = "Alimentation max.";
+"stats.coinData.circSupply" = "Alimentation de circ.:";
+"stats.coinData.maxSupply" = "Alimentation max.:";
 "stats.totalNodes" = "Nombre total de nœuds :";
 
 /* roi */

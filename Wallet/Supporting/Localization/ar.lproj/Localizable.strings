@@ -94,8 +94,8 @@
 "stats.lastBlock" = "الكتلة الأخيرة";
 "stats.rewards" = "المكافآت في الـ 24 ساعة الماضية";
 "stats.coinData" = "بيانات العملة";
-"stats.coinData.circSupply" = "تدوير الإمداد";
-"stats.coinData.maxSupply" = "أقصى إمداد";
+"stats.coinData.circSupply" = "تدوير الإمداد:";
+"stats.coinData.maxSupply" = "أقصى إمداد:";
 "stats.totalNodes" = "إجمالي العُقَد:";
 
 /* roi */

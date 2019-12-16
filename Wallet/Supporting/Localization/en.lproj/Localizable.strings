@@ -98,8 +98,8 @@
 "stats.lastBlock" = "Last block";
 "stats.rewards" = "Rewards last 24h";
 "stats.coinData" = "Coin Data";
-"stats.coinData.circSupply" = "Circ. Supply";
-"stats.coinData.maxSupply" = "Max Supply";
+"stats.coinData.circSupply" = "Circ. Supply:";
+"stats.coinData.maxSupply" = "Max Supply:";
 "stats.totalNodes" = "Total Nodes:";
 
 /* roi */

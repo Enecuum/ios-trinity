@@ -95,8 +95,8 @@
 "stats.lastBlock" = "Letzter Block";
 "stats.rewards" = "Belohnungen dauern 24 Stunden";
 "stats.coinData" = "Coin-Daten";
-"stats.coinData.circSupply" = "Zirk. Versorgung";
-"stats.coinData.maxSupply" = "Max. Angebot";
+"stats.coinData.circSupply" = "Zirk. Versorgung:";
+"stats.coinData.maxSupply" = "Max. Angebot:";
 "stats.totalNodes" = "Knoten insgesamt:";
 
 /* roi */

@@ -94,8 +94,8 @@
 "stats.lastBlock" = "最新区块";
 "stats.rewards" = "前24小时奖励";
 "stats.coinData" = "货币数据";
-"stats.coinData.circSupply" = "流通供应";
-"stats.coinData.maxSupply" = "最大供应量";
+"stats.coinData.circSupply" = "流通供应：";
+"stats.coinData.maxSupply" = "最大供应量：";
 "stats.totalNodes" = "总节点：";
 
 /* roi */

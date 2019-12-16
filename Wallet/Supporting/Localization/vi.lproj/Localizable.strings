@@ -94,8 +94,8 @@
 "stats.lastBlock" = "Block cuối cùng";
 "stats.rewards" = "Số token đào được trong 24h";
 "stats.coinData" = "Dữ liệu coin";
-"stats.coinData.circSupply" = "Token cung trong lưu thông";
-"stats.coinData.maxSupply" = "Tổng cung";
+"stats.coinData.circSupply" = "Token cung trong lưu thông:";
+"stats.coinData.maxSupply" = "Tổng cung:";
 "stats.totalNodes" = "Tổng node:";
 
 /* roi */

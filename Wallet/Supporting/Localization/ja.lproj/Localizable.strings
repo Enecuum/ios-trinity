@@ -94,8 +94,8 @@
 "stats.lastBlock" = "先回のブロック";
 "stats.rewards" = "過去24時間の報酬";
 "stats.coinData" = "コインデータ";
-"stats.coinData.circSupply" = "循環サプライ";
-"stats.coinData.maxSupply" = "最大サプライ";
+"stats.coinData.circSupply" = "循環サプライ :";
+"stats.coinData.maxSupply" = "最大サプライ :";
 "stats.totalNodes" = "合計ノード :";
 
 /* roi */

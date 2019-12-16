@@ -98,8 +98,8 @@
 "stats.lastBlock" = "Последний блок";
 "stats.rewards" = "Награды за 24ч";
 "stats.coinData" = "Данные монеты";
-"stats.coinData.circSupply" = "Circ. Supply";
-"stats.coinData.maxSupply" = "Max Supply";
+"stats.coinData.circSupply" = "Circ. Supply:";
+"stats.coinData.maxSupply" = "Max Supply:";
 "stats.totalNodes" = "Всего нод:";
 
 /* roi */

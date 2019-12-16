@@ -94,8 +94,8 @@
 "stats.lastBlock" = "Son blok";
 "stats.rewards" = "Son 24 saatteki ödüller";
 "stats.coinData" = "Para Verileri";
-"stats.coinData.circSupply" = "Dolaş. Arz";
-"stats.coinData.maxSupply" = "Maksimum Arz";
+"stats.coinData.circSupply" = "Dolaş. Arz:";
+"stats.coinData.maxSupply" = "Maksimum Arz:";
 "stats.totalNodes" = "Toplam Düğüm:";
 
 /* roi */

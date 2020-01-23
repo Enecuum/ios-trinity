@@ -28,6 +28,8 @@
 "reject" = "Tolak";
 "confirm" = "Konfirmasi";
 "share_qr" = "Bagikan Kode QR";
+"zero_amount" = "Jumlah nol";
+"zero_balance" = "Saldo nol";
 
 /* referral */
 
@@ -81,6 +83,8 @@
 "your_private_key" = "Kode Pribadi Anda";
 "start_using_wallet" = "Mulai Gunakan Wallet";
 "disclaimer" = "Kode Pribadi digunakan untuk membuka dompet Anda yang menyediakan pengelolaan dana termasuk keikutsertaan dalam program Mining Airdrop.\n Pastikan untuk menyimpan kode pribadi Anda dan mencegah pencurian. Enecuum tidak menyimpan kode pribadi Anda. Apabila kode pribadi hilang, kami tidak akan dapat memulihkannya. Enecuum tidak bertanggung jawab atas ketidaknyamanan yang disebabkan oleh hilangnya kode pribadi.";
+"copied_private_key" = "Kode pribadi disalin ke clipboard";
+"copied_address" = "Alamat disalin ke clipboard";
 
 /* stats */
 
@@ -116,8 +120,6 @@
 "stop_activity" = "hentikan aktivitas";
 "connecting_btn" = "menyambungkan";
 "copy_your_private_key" = "SALIN KODE PRIBADI ANDA";
-"copied_private_key" = "Kode pribadi disalin ke clipboard";
-"copied_address" = "Alamat disalin ke clipboard";
 "copy" = "Salin";
 "private_key_import_title" = "Impor kode pribadi";
 "private_key_hint" = "Masukkan Kode Pribadi Anda";
@@ -154,10 +156,8 @@
 "success" = "Berhasil";
 "ok" = "OK";
 "error" = "Kesalahan";
-"zero_amount" = "Jumlah nol";
 "amount_too_big" = "Terlalu banyak untuk saldo Anda";
 "wrong_secret_key_format" = "Harus string heksadesimal minimal 64 karakter";
-"zero_balance" = "Saldo nol";
 "update" = "Pembaruan";
 "there_are_new_ver" = "Ada versi baru untuk aplikasi Enecuum";
 "coming_soon" = "Segera hadir";

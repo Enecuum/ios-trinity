@@ -28,6 +28,8 @@
 "reject" = "拒绝";
 "confirm" = "确认";
 "share_qr" = "分享二维码";
+"zero_amount" = "零数量";
+"zero_balance" = "零余额";
 
 /* referral */
 
@@ -81,6 +83,8 @@
 "your_address" = "您的地址";
 "your_private_key" = "您的私钥";
 "disclaimer" = "私钥用于解锁您的钱包，提供资金管理，包括参与挖矿空投计划。\n 请妥善保存您的私钥并防止被盗。Enecuum不会存储您的私钥。如果私钥丢失，我们将无法恢复。对于因私钥丢失而造成的任何不便，Enecuum概不负责。";
+"copied_private_key" = "私钥已复制到剪贴板";
+"copied_address" = "地址已复制到剪贴板";
 
 /* stats */
 
@@ -116,8 +120,6 @@
 "stop_activity" = "停止运行";
 "connecting_btn" = "连接";
 "copy_your_private_key" = "复制您的私钥";
-"copied_private_key" = "私钥已复制到剪贴板";
-"copied_address" = "地址已复制到剪贴板";
 "copy" = "复制";
 "private_key_import_title" = "私钥导入";
 "private_key_hint" = "输入您的私钥";
@@ -155,10 +157,8 @@
 "success" = "成功";
 "ok" = "OK";
 "error" = "错误";
-"zero_amount" = "零数量";
 "amount_too_big" = "您的余额不足";
 "wrong_secret_key_format" = "应为长度至少64个字符的十六进制字符串";
-"zero_balance" = "零余额";
 "update" = "更新";
 "there_are_new_ver" = "有一个Enecuum应用程序新版本";
 "coming_soon" = "即将推出";

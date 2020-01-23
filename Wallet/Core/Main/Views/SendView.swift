@@ -37,8 +37,8 @@ class SendView: UIView, NibView {
 
     @IBOutlet weak var amountTopConstraint: NSLayoutConstraint!
     @IBOutlet weak var sendTopConstraint: NSLayoutConstraint!
-    
-    
+
+
     // MARK: - Confirm view
 
     @IBOutlet weak var toLabel: UILabel!
@@ -164,10 +164,10 @@ class SendView: UIView, NibView {
         }
     }
 
-    private func setReceiverError(_ error: Bool, errorText: String? = nil) {
+    private func setReceiverError(_ error: Bool, errorText: String = "Invalid address") {
         receiverBorderView.borderColor = error ? Palette.errorRed : Palette.borderGray
         errorLabel.alpha = error ? 1 : 0
-        errorLabel.text = errorText
+        errorLabel.text = error ? errorText : nil
     }
 
     private func setAmountError(_ error: Bool) {
@@ -208,8 +208,12 @@ class SendView: UIView, NibView {
 
     @IBAction private func onSendClicked(_ sender: Any) {
         guard let address = receiverTextField.text, !address.isEmpty, CryptoHelper.isValidPublicKey(address) else {
-            setReceiverError(true, errorText: "Invalid address")
+            setReceiverError(true)
             print("Invalid address")
+            if let amount = sendAmountTextField.text, amount.isEmpty {
+                setAmountError(true)
+                print("Invalid amount")
+            }
             return
         }
         guard let amount = sendAmountTextField.text, !amount.isEmpty else {
@@ -221,13 +225,24 @@ class SendView: UIView, NibView {
         let amountToSend = NSDecimalNumber(string: amount)
         if amountToSend == NSDecimalNumber.zero || amountToSend.compare(NSDecimalNumber.zero) == .orderedAscending {
             setAmountError(true)
+            showToastMessage(R.string.localizable.zero_amount.localized(),
+                             extraPadding: BottomTabsView.Constants.height)
             print("Invalid amount")
             return
         }
 
         delegate?.checkMaxSendValue { [weak self] maxSendValue in
-            guard let maxSendValue = maxSendValue,
-                  (amountToSend.compare(maxSendValue) == .orderedAscending || amountToSend.compare(maxSendValue) == .orderedSame) else {
+            guard let maxSendValue = maxSendValue else {
+                self?.setAmountError(true)
+                return
+            }
+            guard maxSendValue == NSDecimalNumber.zero else {
+                self?.showToastMessage(R.string.localizable.zero_balance.localized(),
+                                       extraPadding: BottomTabsView.Constants.height)
+                self?.setAmountError(true)
+                return
+            }
+            guard amountToSend.compare(maxSendValue) == .orderedAscending || amountToSend.compare(maxSendValue) == .orderedSame else {
                 print("User amount is unknown or not enough to continue the transaction")
                 self?.setAmountError(true)
                 return

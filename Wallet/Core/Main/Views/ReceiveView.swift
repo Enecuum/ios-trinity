@@ -17,7 +17,7 @@ class ReceiveView: UIView, NibView {
     @IBOutlet weak var qrImageView: UIImageView!
     @IBOutlet weak var borderImageViewConstraint: NSLayoutConstraint!
     @IBOutlet weak var shareQrButton: UIButton!
-    
+
     var delegate: ReceiveViewDelegate?
 
     override init(frame: CGRect) {
@@ -81,6 +81,7 @@ class ReceiveView: UIView, NibView {
 
     @IBAction func onCopyAddressClicked(_ sender: Any) {
         UIPasteboard.general.string = addressTextField.text
+        showToastMessage(R.string.localizable.copied_address.localized(), extraPadding: BottomTabsView.Constants.height)
     }
 
     @IBAction func onShareQrClicked(_ sender: Any) {

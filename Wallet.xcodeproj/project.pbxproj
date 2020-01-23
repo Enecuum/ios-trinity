@@ -50,6 +50,7 @@
 		B8EA14F813244608A0834A17 /* Statistics.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA1A046447B013E8A00DC5 /* Statistics.swift */; };
 		B8EA154763261C213ACF4FCB /* StringResource+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA1A093C22395F491E712B /* StringResource+Extension.swift */; };
 		B8EA158447317F8430367213 /* QRSideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA1AB4C8566CEA0C026F9B /* QRSideView.swift */; };
+		B8EA158779D54A70FD57CEF0 /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA15FC0229C52C56CE6F82 /* Toast.swift */; };
 		B8EA158AC816A7D3BB3389EA /* BuyInExchangeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8EA189114F0633F5FE1D6BA /* BuyInExchangeView.xib */; };
 		B8EA15AB5BE6A3A17F66EB3E /* CryptoHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA187D7B0E33D8CE47C5D7 /* CryptoHelper.swift */; };
 		B8EA15CBA9C960A2BFA918EB /* TabsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA1506248F3332EFE0E994 /* TabsView.swift */; };
@@ -160,6 +161,7 @@
 		B8EA15CEFF907025F3D2640B /* CurrencyFormat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyFormat.swift; sourceTree = "<group>"; };
 		B8EA15E9D33B339A27DBDBA4 /* SocialsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocialsViewController.swift; sourceTree = "<group>"; };
 		B8EA15F0CFADF408F7884D08 /* BuyInExchangeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuyInExchangeView.swift; sourceTree = "<group>"; };
+		B8EA15FC0229C52C56CE6F82 /* Toast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
 		B8EA1651FDBF392B83C7A618 /* BalanceAmount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BalanceAmount.swift; sourceTree = "<group>"; };
 		B8EA168995FDB5D5200A9D25 /* SwapView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SwapView.xib; sourceTree = "<group>"; };
 		B8EA1694896AA7F73A9AFF90 /* QRSideView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QRSideView.xib; sourceTree = "<group>"; };
@@ -452,6 +454,7 @@
 				B8EA18419A79BD8080CBF998 /* GradientButton.swift */,
 				B8EA1C612A2AA69092D25347 /* NibView.swift */,
 				B8EA1FD113DFCDF1078E6F51 /* GradientView.swift */,
+				B8EA15FC0229C52C56CE6F82 /* Toast.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -769,6 +772,7 @@
 				B8EA128CB854739C80C3D28B /* NibView.swift in Sources */,
 				B8EA1AD85EE6728581247C39 /* GradientView.swift in Sources */,
 				B8EA128CB854739C80C3D28B /* NibView.swift in Sources */,
+				B8EA158779D54A70FD57CEF0 /* Toast.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

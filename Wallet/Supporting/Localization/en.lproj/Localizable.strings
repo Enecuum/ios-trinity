@@ -31,6 +31,8 @@
 "reject" = "Reject";
 "confirm" = "Confirm";
 "share_qr" = "Share QR Code";
+"zero_amount" = "Zero amount";
+"zero_balance" = "Zero balance";
 
 /* referral */
 
@@ -85,6 +87,8 @@
 "your_private_key" = "Your private key";
 "start_using_wallet" = "Start using wallet";
 "disclaimer" = "Private Key is used to unlock your wallet providing funds management including participance in Mining Airdrop program.\n Please make sure to save your private key and prevent it from stealing. Enecuum do not store your private key. In case of private key loss we will not be able to recover it. Enecuum is not responsible for any inconveniences caused by the private key loss.";
+"copied_private_key" = "Private key copied to clipboard";
+"copied_address" = "Address copied to clipboard";
 
 /* stats */
 
@@ -124,8 +128,6 @@
 "stop_activity" = "stop activity";
 "connecting_btn" = "connecting";
 "copy_your_private_key" = "COPY YOUR PRIVATE KEY";
-"copied_private_key" = "Private key copied to clipboard";
-"copied_address" = "Address copied to clipboard";
 "copy" = "Copy";
 "private_key_import_title" = "Private key import";
 "private_key_hint" = "Enter Your Private Key";
@@ -173,10 +175,8 @@
 "success" = "Success";
 "ok" = "OK";
 "error" = "Error";
-"zero_amount" = "Zero amount";
 "amount_too_big" = "Too much for your balance";
 "wrong_secret_key_format" = "Should be hexadecimal string at least 64 characters long";
-"zero_balance" = "Zero balance";
 "update" = "Update";
 "there_are_new_ver" = "There is a new version of Enecuum app";
 

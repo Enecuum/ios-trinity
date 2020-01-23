@@ -28,6 +28,8 @@
 "reject" = "Ablehnen";
 "confirm" = "Bestätigen";
 "share_qr" = "QR-Code freigeben";
+"zero_amount" = "Nullbetrag";
+"zero_balance" = "Null Guthaben";
 
 /* referral */
 
@@ -81,6 +83,8 @@
 "your_private_key" = "Ihr privater Schlüssel";
 "start_using_wallet" = "Mit der Verwendung des Wallets beginnen";
 "disclaimer" = "Mit dem privaten Schlüssel können Sie Ihr Wallet entsperren und Geld verwalten, einschließlich der Teilnahme am Mining Airdrop-Programm.\n Bitte stellen Sie sicher, dass Sie Ihren privaten Schlüssel speichern und verhindern, dass er gestohlen wird. Enecuum speichert Ihren privaten Schlüssel nicht. Im Falle eines Verlusts des privaten Schlüssels können wir diesen nicht wiederherstellen. Enecuum haftet nicht für Unannehmlichkeiten, die durch den Verlust des privaten Schlüssels verursacht werden.";
+"copied_private_key" = "Privater Schlüssel in die Zwischenablage kopiert";
+"copied_address" = "Adresse in die Zwischenablage kopiert";
 
 /* stats */
 
@@ -117,8 +121,6 @@
 "stop_activity" = "Aktivität beenden";
 "connecting_btn" = "verbinden";
 "copy_your_private_key" = "KOPIEREN SIE IHREN PRIVATEN SCHLÜSSEL";
-"copied_private_key" = "Privater Schlüssel in die Zwischenablage kopiert";
-"copied_address" = "Adresse in die Zwischenablage kopiert";
 "copy" = "Kopieren";
 "private_key_import_title" = "Privaten Schlüssel importieren";
 "private_key_hint" = "Geben Sie Ihren privaten Schlüssel ein";
@@ -154,10 +156,8 @@
 "success" = "Erfolg";
 "ok" = "OK";
 "error" = "Error";
-"zero_amount" = "Nullbetrag";
 "amount_too_big" = "Zu viel für Ihr Guthaben";
 "wrong_secret_key_format" = "Muss eine hexadezimale Zeichenfolge mit mindestens 64 Zeichen sein";
-"zero_balance" = "Null Guthaben";
 "update" = "Aktualisieren";
 "there_are_new_ver" = "Es gibt eine neue Version der Enecuum App.";
 "coming_soon" = "Demnächst";

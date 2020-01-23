@@ -28,6 +28,8 @@
 "reject" = "Rechazar";
 "confirm" = "Confirmar";
 "share_qr" = "Compartir código QR";
+"zero_amount" = "Cantidad cero";
+"zero_balance" = "Saldo cero";
 
 /* referral */
 
@@ -81,6 +83,9 @@
 "your_private_key" = "Tu clave privada";
 "start_using_wallet" = "Comenzar a usar la cartera";
 "disclaimer" = "La clave privada se usa para desbloquear tu cartera proporcionando gestión de fondos, incluida la participación en el programa Mining Airdrop.\n Por favor, asegúrate de guardar tu clave privada y evitar que te la roben. Enecuum no almacena tu clave privada. En caso de perder la clave privada, no podremos recuperarla. Enecuum no se hace responsable de los inconvenientes causados ​​por la pérdida de la clave privada.";
+"copied_private_key" = "Clave privada copiada en el portapapeles";
+"copied_address" = "Dirección copiada en el portapapeles";
+
 
 /* stats */
 
@@ -116,8 +121,6 @@
 "stop_activity" = "detener actividad";
 "connecting_btn" = "conectando";
 "copy_your_private_key" = "COPIA TU CLAVE PRIVADA";
-"copied_private_key" = "Clave privada copiada en el portapapeles";
-"copied_address" = "Dirección copiada en el portapapeles";
 "copy" = "Copiar";
 "private_key_import_title" = "Importación de clave privada";
 "private_key_hint" = "Ingresa tu clave privada";
@@ -153,10 +156,8 @@
 "success" = "Acción correcta";
 "ok" = "OK";
 "error" = "Error";
-"zero_amount" = "Cantidad cero";
 "amount_too_big" = "Saldo insuficiente";
 "wrong_secret_key_format" = "Debe ser una cadena hexadecimal de al menos 64 caracteres";
-"zero_balance" = "Saldo cero";
 "update" = "Actualizar";
 "there_are_new_ver" = "Hay una nueva versión de la aplicación Enecuum";
 "coming_soon" = "Próximamente";

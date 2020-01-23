@@ -28,6 +28,8 @@
 "reject" = "Reddet";
 "confirm" = "Onayla";
 "share_qr" = "QR Kodunu Paylaş";
+"zero_amount" = "Sıfır miktarı";
+"zero_balance" = "Sıfır bakiye";
 
 /* referral */
 
@@ -81,6 +83,8 @@
 "your_address" = "Adresiniz";
 "your_private_key" = "Özel Anahtarınız";
 "disclaimer" = "Özel Anahtar, Mining Airdrop programına katılım da dahil olmak üzere fon yönetimi sağlayan cüzdanınızın kilidini açmak için kullanılır. Lütfen özel anahtarınızı kaydettiğinizden ve çalınmasını önlediğinizden emin olun. Enecuum özel anahtarınızı saklamaz. Özel anahtar kaybı durumunda onu kurtaramayız. Enecuum, özel anahtar kaybından kaynaklanan rahatsızlıklardan sorumlu değildir.";
+"copied_private_key" = "Özel anahtar panoya kopyalandı";
+"copied_address" = "Adres panoya kopyalandı";
 
 /* stats */
 
@@ -116,8 +120,6 @@
 "stop_activity" = "aktiviteyi durdur";
 "connecting_btn" = "bağlanıyor";
 "copy_your_private_key" = "ÖZEL ANAHTARINIZI KOPYALAYIN";
-"copied_private_key" = "Özel anahtar panoya kopyalandı";
-"copied_address" = "Adres panoya kopyalandı";
 "copy" = "Kopyala";
 "private_key_import_title" = "Özel anahtar içe aktar";
 "private_key_hint" = "Özel Anahtarınızı Girin";
@@ -155,10 +157,8 @@
 "success" = "Başarı";
 "ok" = "OK";
 "error" = "Hata";
-"zero_amount" = "Sıfır miktarı";
 "amount_too_big" = "Bakiyeniz için çok fazla";
 "wrong_secret_key_format" = "En az 64 karakter uzunluğunda onaltılık dize olmalı";
-"zero_balance" = "Sıfır bakiye";
 "update" = "Güncelle";
 "there_are_new_ver" = "Enecuum uygulamasının yeni bir sürümü var";
 "coming_soon" = "Çok yakında";

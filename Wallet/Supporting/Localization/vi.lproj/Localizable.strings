@@ -28,6 +28,8 @@
 "reject" = "Từ chối";
 "confirm" = "Xác nhận";
 "share_qr" = "Chia sẻ mã QR";
+"zero_amount" = "Số tiền bằng không";
+"zero_balance" = "Số dư bằng không";
 
 /* referral */
 
@@ -81,6 +83,8 @@
 "your_private_key" = "Khóa riêng tư của bạn";
 "start_using_wallet" = "Bắt đầu Sử dụng Ví";
 "disclaimer" = "Khóa riêng tư được sử dụng để mở khóa ví của bạn, hỗ trợ quản lý quỹ cũng như tham gia chương trình Mining Airdrop.\nHãy đảm bảo rằng bạn đã lưu lại khóa riêng tư của mình và tránh bị chiếm đoạt. Enecuum không lưu thông tin khóa riêng tư của bạn. Trong trường hợp bạn làm mất khóa riêng tư, chúng tôi sẽ không có khả năng khôi phục. Enecuum không chịu trách nhiệm với bất kỳ sự cố nào phát sinh do làm mất khóa riêng tư.";
+"copied_private_key" = "Đã sao chép Khóa riêng tư vào clipboard";
+"copied_address" = "Đã sao chép địa chỉ vào clipboard";
 
 /* stats */
 
@@ -116,8 +120,6 @@
 "stop_activity" = "ngừng hoạt động";
 "connecting_btn" = "đang kết nối";
 "copy_your_private_key" = "SAO CHÉP KHÓA RIÊNG TƯ CỦA BẠN";
-"copied_private_key" = "Đã sao chép Khóa riêng tư vào clipboard";
-"copied_address" = "Đã sao chép địa chỉ vào clipboard";
 "copy" = "Sao chép";
 "private_key_import_title" = "Nhập Khóa riêng tư";
 "private_key_hint" = "Đưa Khóa riêng tư của bạn vào";
@@ -154,10 +156,8 @@
 "success" = "Thành công";
 "ok" = "OK";
 "error" = "Lỗi";
-"zero_amount" = "Số tiền bằng không";
 "amount_too_big" = "Vượt quá số dư của bạn";
 "wrong_secret_key_format" = "Phải là chuỗi thập lục phân dài ít nhất 64 ký tự";
-"zero_balance" = "Số dư bằng không";
 "update" = "Cập nhật";
 "there_are_new_ver" = "Có một phiên bản mới của ứng dụng Enecuum";
 "coming_soon" = "Sắp ra mắt";

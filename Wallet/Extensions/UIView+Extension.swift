@@ -124,6 +124,10 @@ extension UIView {
         }
     }
 
+    func showToastMessage(_ text: String, extraPadding: CGFloat = 0) {
+        makeToast(text, duration: 2, position: .custom(extraPadding))
+    }
+
     class Loader: UIView {
 
         override init(frame: CGRect) {

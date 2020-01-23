@@ -10,6 +10,11 @@ protocol BottomTabsDelegate: class {
 }
 
 class BottomTabsView: UIView {
+
+    struct Constants {
+        static let height: CGFloat = 62
+    }
+
     private var buttonImages: [UIImage]?
     private var buttons: [UIButton]?
     private var selectorView: UIView?
@@ -35,7 +40,7 @@ class BottomTabsView: UIView {
     }
 
     func setIndex(index: Int) {
-        if let button = buttons?[index], let count = buttonImages?.count {
+        if let _ = buttons?[index], let count = buttonImages?.count {
             selectedIndex = index
             let tabWidth = UIScreen.main.bounds.width / CGFloat(count)
             let selectorPosition = tabWidth * CGFloat(index - (count - 1))

@@ -37,4 +37,8 @@ extension UIViewController {
     @objc func dismissKeyboard() {
         view.endEditing(true)
     }
+
+    func showToastMessage(_ text: String) {
+        view.showToastMessage(text)
+    }
 }

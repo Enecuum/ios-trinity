@@ -28,6 +28,8 @@
 "reject" = "拒否";
 "confirm" = "確認";
 "share_qr" = "QRコードを共有";
+"zero_amount" = "額 0";
+"zero_balance" = "残高 0";
 
 /* referral */
 
@@ -81,6 +83,8 @@
 "your_private_key" = "秘密鍵";
 "start_using_wallet" = "ウォレットを使い始める";
 "disclaimer" = "秘密鍵は、Airdropプログラム マイニングへの参加を含む資金管理を提供し、ウォレットのロックを解除するために使用されます。\n 秘密鍵を必ず保管し、盗まれないようにしてください。 Enecuumは、秘密鍵を保存しません。秘密鍵が紛失した場合、復旧することはできません。秘密鍵の紛失によって生じた、いかなる損害についてもEnecuumは責任を負いません。";
+"copied_private_key" = "クリップボードにコピーされた秘密鍵";
+"copied_address" = "クリップボードにコピーされたアドレス";
 
 /* stats */
 
@@ -116,8 +120,6 @@
 "stop_activity" = "アクティビティを停止";
 "connecting_btn" = "接続中";
 "copy_your_private_key" = "秘密鍵をコピー";
-"copied_private_key" = "クリップボードにコピーされた秘密鍵";
-"copied_address" = "クリップボードにコピーされたアドレス";
 "copy" = "コピー";
 "private_key_import_title" = "秘密鍵のインポート";
 "private_key_hint" = "秘密鍵を入力";
@@ -154,10 +156,8 @@
 "success" = "成功";
 "ok"= "OK";
 "error" = "エラー";
-"zero_amount" = "額 0";
 "amount_too_big" = "残高には多すます";
 "wrong_secret_key_format" = "少なくとも64文字の16進数列でなければなりません";
-"zero_balance" = "残高 0";
 "update" = "更新";
 "there_are_new_ver" = "Enecuumアプリの新しいバージョンがあります";
 "coming_soon" = "近日公開";

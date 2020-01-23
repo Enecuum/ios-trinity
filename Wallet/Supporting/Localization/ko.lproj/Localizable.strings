@@ -28,6 +28,8 @@
 "reject" = "거부";
 "confirm" = "확인";
 "share_qr" = "QR 코드 공유";
+"zero_amount" = "금액 없음";
+"zero_balance" = "잔고 없음";
 
 /* referral */
 
@@ -81,6 +83,8 @@
 "your_address" = "내 주소";
 "your_private_key" = "내 개인키";
 "disclaimer" = "개인키는 채굴 에어드롭 프로그램에 참여하는 데 사용되며, 자금 관리 기능을 제공하는 지갑의 잠금을 해제하는 데 사용됩니다.\n자신의 개인키를 안전한 곳에 보관하고 도난당하지 않도록 유의하세요. Enecuum에서는 사용자의 개인키를 저장하지 않습니다. 개인키를 분실할 경우 이를 복원해드릴 수 없습니다. Enecuum은 개인키 분실로 인한 어떠한 불편 사항에도 책임을 지지 않습니다.";
+"copied_private_key" = "개인키가 클립 보드에 복사되었습니다";
+"copied_address" = "주소가 클립 보드에 복사되었습니다";
 
 /* stats */
 
@@ -117,8 +121,6 @@
 "stop_activity" = "작업 중지";
 "connecting_btn" = "연결 중";
 "copy_your_private_key" = "내 개인키 복사하기";
-"copied_private_key" = "개인키가 클립 보드에 복사되었습니다";
-"copied_address" = "주소가 클립 보드에 복사되었습니다";
 "copy" = "복사하기";
 "private_key_import_title" = "개인키 가져오기";
 "private_key_hint" = "개인키 입력";
@@ -156,10 +158,8 @@
 "success" = "성공";
 "ok"= "OK";
 "error" = "오류";
-"zero_amount" = "금액 없음";
 "amount_too_big" = "잔고에 비해 너무 많습니다";
 "wrong_secret_key_format" = "64자리 이상인 16진법 스트링이어야 합니다";
-"zero_balance" = "잔고 없음";
 "update" = "업데이트";
 "there_are_new_ver" = "Enecuum app 새 버전이 있습니다";
 "coming_soon" = "곧 업데이트됩니다";

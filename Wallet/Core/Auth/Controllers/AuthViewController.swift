@@ -108,12 +108,14 @@ class AuthViewController: UIViewController {
 
     @IBAction private func onCopyAddressClicked(_ sender: Any) {
         UIPasteboard.general.string = addressTextField.text
+        showToastMessage(R.string.localizable.copied_address.localized())
     }
 
     @IBAction private func onCopyPrivateKeyClicked(_ sender: Any) {
         switch authMode {
         case .walletCreation:
             UIPasteboard.general.string = privateKeyTextField.text
+            showToastMessage(R.string.localizable.copied_private_key.localized())
         case .walletImport:
             privateKeyTextField.text = UIPasteboard.general.string
         }

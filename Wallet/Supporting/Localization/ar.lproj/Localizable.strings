@@ -28,6 +28,8 @@
 "reject" = "رفض";
 "confirm" = "تأكيد";
 "share_qr" = "شارك رمز الاستجابة السريعة";
+"zero_amount" = "المبلغ صفر";
+"zero_balance" = "الرصيد صفر";
 
 /* referral */
 
@@ -81,6 +83,8 @@
 "your_private_key" = "مفتاحك الخاص";
 "start_using_wallet" = "ابدأ في استخدام المحفظة";
 "disclaimer" = "يستخدم المفتاح الخاص لفتح محفظتك التي توفر إدارة الأموال بما في ذلك المشاركة في برنامج Mining Airdrop.\n يرجى التأكد من حفظ المفتاح الخاص وحمايته من السرقة. Enecuum لا تخزن مفتاحك الخاص. في حالة فقدان المفتاح الخاص، لن نتمكن من استعادته. Enecuum ليست مسؤولة عن أي مشكلات تنتج عن فقدان المفتاح الخاص.";
+"copied_private_key" = "تم نسخ المفتاح الخاص إلى الحافظة";
+"copied_address" = "تم نسخ العنوان إلى الحافظة";
 
 /* stats */
 
@@ -116,8 +120,6 @@
 "stop_activity" = "وقف النشاط";
 "connecting_btn" = "توصيل";
 "copy_your_private_key" = "انسخ مفتاحك الخاص";
-"copied_private_key" = "تم نسخ المفتاح الخاص إلى الحافظة";
-"copied_address" = "تم نسخ العنوان إلى الحافظة";
 "copy" = "نسخ";
 "private_key_import_title" = "استيراد المفتاح الخاص";
 "private_key_hint" = "أدخل مفتاحك الخاص";
@@ -154,10 +156,8 @@
 "success" = "نجاح";
 "ok" = "OK";
 "error" = "خطأ";
-"zero_amount" = "المبلغ صفر";
 "amount_too_big" = "الكثير لرصيدك";
 "wrong_secret_key_format" = "يجب أن تكون سلسلة سداسية عشرية لا يقل طولها عن 64 حرفًا";
-"zero_balance" = "الرصيد صفر";
 "update" = "تحديث";
 "there_are_new_ver" = "هناك إصدار جديد من تطبيق Enecuum";
 "coming_soon" = "قريبًا";

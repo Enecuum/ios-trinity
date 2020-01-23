@@ -4,7 +4,6 @@
 //
 
 import UIKit
-import QRCodeReader
 import AVFoundation
 import WebKit
 

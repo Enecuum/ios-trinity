@@ -9,4 +9,6 @@ struct Transaction: Codable {
     let nonce: UInt32
     let sign: String
     let to: String
+    let data: String
+    let ticker: String
 }

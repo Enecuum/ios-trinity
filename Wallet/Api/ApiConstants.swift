@@ -11,7 +11,7 @@ struct ApiConstants {
 
     struct DevServer {
         static let baseIP = "95.216.68.221"
-        static let baseDomain = "neuro-release.enecuum.com"
+        static let baseDomain = "neuro.enecuum.com"
     }
 
     struct APIParameterKey {

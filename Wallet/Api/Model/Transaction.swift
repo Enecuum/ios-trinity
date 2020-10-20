@@ -4,7 +4,7 @@
 //
 
 struct Transaction: Codable {
-    let amount: UInt64
+    let amount: String
     let from: String
     let nonce: UInt32
     let sign: String

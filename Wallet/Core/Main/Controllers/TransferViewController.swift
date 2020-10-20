@@ -191,11 +191,13 @@ extension TransferViewController: SendViewDelegate {
         let sign = CryptoHelper.sign(txHash)
         let amountStr = "\(amountToSendInEnqCents)"
         if let amoutUint64 = UInt64(amountStr) {
-            let transaction = Transaction(amount: amoutUint64,
+            let transaction = Transaction(amount: amountStr,
                                           from: fromAddress,
                                           nonce: random,
                                           sign: sign,
-                                          to: address)
+                                          to: address,
+                                          data: "",
+                                          ticker: "0000000000000000000000000000000000000000000000000000000000000000")
             postTransaction(transaction)
         } else {
             print("Transaction object failed")

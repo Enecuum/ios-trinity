@@ -236,12 +236,12 @@ class SendView: UIView, NibView {
                 self?.setAmountError(true)
                 return
             }
-            guard maxSendValue == NSDecimalNumber.zero else {
-                self?.showToastMessage(R.string.localizable.zero_balance.localized(),
-                                       extraPadding: BottomTabsView.Constants.height)
-                self?.setAmountError(true)
-                return
-            }
+//            guard maxSendValue == NSDecimalNumber.zero else {
+//                self?.showToastMessage(R.string.localizable.zero_balance.localized(),
+//                                       extraPadding: BottomTabsView.Constants.height)
+//                self?.setAmountError(true)
+//                return
+//            }
             guard amountToSend.compare(maxSendValue) == .orderedAscending || amountToSend.compare(maxSendValue) == .orderedSame else {
                 print("User amount is unknown or not enough to continue the transaction")
                 self?.setAmountError(true)

@@ -10,8 +10,8 @@ struct ApiConstants {
     }
 
     struct DevServer {
-        static let baseIP = "95.216.68.221"
-        static let baseDomain = "neuro.enecuum.com"
+        static let baseIP = "95.216.246.116"
+        static let baseDomain = "bit.enecuum.com"
     }
 
     struct APIParameterKey {

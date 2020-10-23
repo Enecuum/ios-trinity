@@ -187,7 +187,10 @@ extension TransferViewController: SendViewDelegate {
         let txHash = CryptoHelper.buildTxHash(amount: "\(amountToSendInEnqCents)",
                                               random: "\(random)",
                                               from: fromAddress,
-                                              to: address)
+                                              to: address,
+                                              payload: "",
+                                              ticker: "0000000000000000000000000000000000000000000000000000000000000000")
+
         let sign = CryptoHelper.sign(txHash)
         let amountStr = "\(amountToSendInEnqCents)"
         if let amoutUint64 = UInt64(amountStr) {

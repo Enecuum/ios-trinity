@@ -37,8 +37,9 @@ class CryptoHelper {
         return key
     }
 
-    class func buildTxHash(amount: String, random: String, from: String, to: String) -> String {
-        "\(amount.sha256())\(from.sha256())\(random.sha256())\(to.sha256())".sha256()
+    //"${SageSign.getSha256(amount)}${SageSign.getSha256(data)}${SageSign.getSha256(from)}${SageSign.getSha256(nonce)}${SageSign.getSha256(ticker)}${SageSign.getSha256(to)}"
+    class func buildTxHash(amount: String, random: String, from: String, to: String, payload: String, ticker: String) -> String {
+        "\(amount.sha256())\(payload.sha256())\(from.sha256())\(random.sha256())\(ticker.sha256())\(to.sha256())".sha256()
     }
 
     class func sign(_ message: String) -> String {

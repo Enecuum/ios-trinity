@@ -22,6 +22,9 @@ class SendView: UIView, NibView {
     // MARK: - Send view
 
     @IBOutlet weak var dataView: UIView!
+
+//    @IBOutlet weak var dropDown: UIDropDown!
+    
     @IBOutlet weak var receiverLabel: UILabel!
     @IBOutlet weak var receiverBorderView: UIView!
     @IBOutlet weak var receiverTextField: UITextField!

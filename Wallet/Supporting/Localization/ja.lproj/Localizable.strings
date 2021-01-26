@@ -48,10 +48,10 @@
 
 /* about */
 
-"about_app_title" = "Enecuum モバイルアプリケーション\nEnecuum HK Limited.";
+"about_app_title" = "Enecuum モバイルアプリケーション\nEnecuum Network Ltd.";
 "about_site" = "www.enecuum.com";
 "about_white_paper" = "ホワイトペーパー";
-"about_version" = "バージョン：1.0\nTrinity Protocol  バージョン：2.0.0";
+"about_version" = "バージョン：1.0\nTrinity Protocol  バージョン：4";
 "about_tech" = "技術文書";
 "about_terms" = "利用規約";
 "about_privacy" = "プライバシーポリシー";

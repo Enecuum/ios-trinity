@@ -48,10 +48,10 @@
 
 /* about */
 
-"about_app_title" = "Enecuum 모바일 애플리케이션 \nEnecuum HK Limited.";
+"about_app_title" = "Enecuum 모바일 애플리케이션 \nEnecuum Network Ltd.";
 "about_site" = "www.enecuum.com";
 "about_white_paper" = "백서";
-"about_version" = "버전: 1.0\n트리니티 프로토콜 버전: 2.0.0";
+"about_version" = "버전: 1.0\n트리니티 프로토콜 버전: 4";
 "about_tech" = "테크 페이퍼";
 "about_terms" = "이용약관";
 "about_privacy" = "개인정보 처리방침";

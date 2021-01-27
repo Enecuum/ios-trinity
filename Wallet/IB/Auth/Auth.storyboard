@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cWp-wV-Lo9">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cWp-wV-Lo9">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -119,6 +119,7 @@
                                 </connections>
                             </button>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="kqk-Ei-gId"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="n8K-Pa-aEc" firstAttribute="centerX" secondItem="MPQ-CO-ILX" secondAttribute="centerX" id="4tD-by-2zJ"/>
@@ -134,7 +135,6 @@
                             <constraint firstItem="6cm-wF-pRa" firstAttribute="trailing" secondItem="MPQ-CO-ILX" secondAttribute="trailing" id="vfA-fL-oO2"/>
                             <constraint firstItem="512-Xu-cnX" firstAttribute="centerY" secondItem="MPQ-CO-ILX" secondAttribute="centerY" multiplier="0.95" id="yoC-DF-wpB"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="kqk-Ei-gId"/>
                     </view>
                     <connections>
                         <outlet property="importButton" destination="n8K-Pa-aEc" id="Xaf-rk-p2g"/>
@@ -212,34 +212,20 @@ to ENQ network</string>
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iwA-77-2As" userLabel="Address Field">
-                                                        <rect key="frame" x="10" y="0.0" width="271" height="48"/>
+                                                        <rect key="frame" x="10" y="0.0" width="3" height="48"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="15"/>
                                                         <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
                                                     </textField>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BtF-rg-Vhh" userLabel="Address Copy">
-                                                        <rect key="frame" x="283" y="0.0" width="27" height="48"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="width" constant="27" id="zNh-nZ-jEx"/>
-                                                        </constraints>
-                                                        <state key="normal" image="Icons/copy"/>
-                                                        <connections>
-                                                            <action selector="onCopyAddressClicked:" destination="jP7-Qb-jII" eventType="touchUpInside" id="QOq-ZA-9Ii"/>
-                                                        </connections>
-                                                    </button>
                                                 </subviews>
                                                 <constraints>
                                                     <constraint firstAttribute="bottom" secondItem="iwA-77-2As" secondAttribute="bottom" id="2Ua-e8-hol"/>
-                                                    <constraint firstItem="BtF-rg-Vhh" firstAttribute="leading" secondItem="iwA-77-2As" secondAttribute="trailing" constant="2" id="5ab-Kn-iu1"/>
-                                                    <constraint firstAttribute="trailing" secondItem="BtF-rg-Vhh" secondAttribute="trailing" constant="9" id="6jG-gL-fTx"/>
                                                     <constraint firstAttribute="trailing" secondItem="9B5-Ha-C4k" secondAttribute="trailing" id="GIh-ab-9oc"/>
                                                     <constraint firstItem="9B5-Ha-C4k" firstAttribute="top" secondItem="L8Q-Qk-kOj" secondAttribute="top" id="Q8t-Jn-wwT"/>
-                                                    <constraint firstAttribute="bottom" secondItem="BtF-rg-Vhh" secondAttribute="bottom" id="QLm-g5-Y1V"/>
                                                     <constraint firstItem="iwA-77-2As" firstAttribute="top" secondItem="L8Q-Qk-kOj" secondAttribute="top" id="cAg-q3-3nf"/>
                                                     <constraint firstItem="iwA-77-2As" firstAttribute="leading" secondItem="L8Q-Qk-kOj" secondAttribute="leading" constant="10" id="nTv-oh-RXz"/>
                                                     <constraint firstItem="9B5-Ha-C4k" firstAttribute="leading" secondItem="L8Q-Qk-kOj" secondAttribute="leading" id="pXG-BO-6af"/>
                                                     <constraint firstAttribute="bottom" secondItem="9B5-Ha-C4k" secondAttribute="bottom" id="w3H-cb-JSO"/>
-                                                    <constraint firstItem="BtF-rg-Vhh" firstAttribute="top" secondItem="L8Q-Qk-kOj" secondAttribute="top" id="wXb-uu-pph"/>
                                                 </constraints>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -443,6 +429,7 @@ Enecuum do not store your private key. In case of private key loss we will not b
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="AN8-yX-Aki"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="AN8-yX-Aki" firstAttribute="trailing" secondItem="vgI-zj-vYB" secondAttribute="trailing" constant="46" id="4as-4M-THO"/>
@@ -470,7 +457,6 @@ Enecuum do not store your private key. In case of private key loss we will not b
                             <constraint firstItem="INZ-Ao-fke" firstAttribute="leading" secondItem="Hkv-b6-1QS" secondAttribute="trailing" constant="14" id="y1h-QG-bvQ"/>
                             <constraint firstItem="vgI-zj-vYB" firstAttribute="centerX" secondItem="xAB-Nf-Rjy" secondAttribute="centerX" id="ykr-xT-Fkv"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="AN8-yX-Aki"/>
                     </view>
                     <connections>
                         <outlet property="addressBorderView" destination="L8Q-Qk-kOj" id="n0p-aY-Z1R"/>

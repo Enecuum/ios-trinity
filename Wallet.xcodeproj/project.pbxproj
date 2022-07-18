@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -33,6 +33,7 @@
 		35BD998E23D9436F00562822 /* ReaderOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35BD998423D9436F00562822 /* ReaderOverlayView.swift */; };
 		35C93FA5233ADD03003EF90B /* SendView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35C93FA4233ADD03003EF90B /* SendView.xib */; };
 		35C93FA8233AFE24003EF90B /* Menu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35C93FA7233AFE24003EF90B /* Menu.storyboard */; };
+		41771AC6CD55D2A989BC85EE /* Contributing.md  in Resources */ = {isa = PBXBuildFile; fileRef = 417719D314AA82B82ACF185C /* Contributing.md  */; };
 		B8EA10042D35D8D0F8B73B77 /* ReceiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA15972F01E94FB2FC5BC3 /* ReceiveView.swift */; };
 		B8EA1029509FBA0D6A131121 /* Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA126EE3E3C8B5C2E4B64F /* Defaults.swift */; };
 		B8EA113E558EA33B1BBB316A /* Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA1243B21D14DA8D15EB06 /* Localization.swift */; };
@@ -151,6 +152,7 @@
 		35BD998423D9436F00562822 /* ReaderOverlayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReaderOverlayView.swift; sourceTree = "<group>"; };
 		35C93FA4233ADD03003EF90B /* SendView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SendView.xib; sourceTree = "<group>"; };
 		35C93FA7233AFE24003EF90B /* Menu.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Menu.storyboard; sourceTree = "<group>"; };
+		417719D314AA82B82ACF185C /* Contributing.md  */ = {isa = PBXFileReference; lastKnownFileType = "file.md "; path = "Contributing.md "; sourceTree = "<group>"; };
 		4A1D9D2B4E61AC9284666F23 /* Pods-wallet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wallet.debug.xcconfig"; path = "Target Support Files/Pods-wallet/Pods-wallet.debug.xcconfig"; sourceTree = "<group>"; };
 		B8EA101A8262DEB1CE21A0A5 /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		B8EA107345767D63EF94A0C7 /* UIViewCotroller+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewCotroller+Extension.swift"; sourceTree = "<group>"; };
@@ -393,6 +395,7 @@
 				356A60C92333B93F00E8D118 /* Products */,
 				53BDC2AE586D17814A0BBEC2 /* Pods */,
 				D9AB79D494CB5CDCC715608E /* Frameworks */,
+				417719D314AA82B82ACF185C /* Contributing.md  */,
 			);
 			sourceTree = "<group>";
 		};
@@ -624,7 +627,7 @@
 				};
 			};
 			buildConfigurationList = 356A60C32333B93F00E8D118 /* Build configuration list for PBXProject "Wallet" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -677,6 +680,7 @@
 				B8EA13432346DE50A9E8BD6E /* BuyNativeView.xib in Resources */,
 				B8EA158AC816A7D3BB3389EA /* BuyInExchangeView.xib in Resources */,
 				B8EA1823E3B08C05F17FF27D /* TabsBackgroundView.xib in Resources */,
+				41771AC6CD55D2A989BC85EE /* Contributing.md  in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -910,7 +914,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -967,7 +971,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "Enecuum Wallet";
@@ -985,14 +989,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 21;
+				CURRENT_PROJECT_VERSION = 41;
 				DEVELOPMENT_TEAM = UX43SAZ2QJ;
 				INFOPLIST_FILE = wallet/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.enecuum.wallet;
 				PRODUCT_NAME = "$(PRODUCT_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Wallet/Supporting/Wallet-Bridging-Header.h";
@@ -1009,14 +1014,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 21;
+				CURRENT_PROJECT_VERSION = 41;
 				DEVELOPMENT_TEAM = UX43SAZ2QJ;
 				INFOPLIST_FILE = wallet/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.enecuum.wallet;
 				PRODUCT_NAME = "$(PRODUCT_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Wallet/Supporting/Wallet-Bridging-Header.h";

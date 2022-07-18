@@ -48,10 +48,10 @@
 
 /* about */
 
-"about_app_title" = "Enecuum移动应用程序\n香港Enecuum有限公司。";
+"about_app_title" = "Enecuum移动应用程序\nEnecuum Network Ltd。";
 "about_site" = "www.enecuum.com";
 "about_white_paper" = "白皮书";
-"about_version" = "版本：1.0\nTrinity协议版本：2.0.0";
+"about_version" = "版本：1.0\nTrinity协议版本：4";
 "about_tech" = "技术论文";
 "about_terms" = "条款和条件";
 "about_privacy" = "隐私政策";

@@ -680,7 +680,6 @@
 				B8EA13432346DE50A9E8BD6E /* BuyNativeView.xib in Resources */,
 				B8EA158AC816A7D3BB3389EA /* BuyInExchangeView.xib in Resources */,
 				B8EA1823E3B08C05F17FF27D /* TabsBackgroundView.xib in Resources */,
-				41771AC6CD55D2A989BC85EE /* Contributing.md  in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

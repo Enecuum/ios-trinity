@@ -48,10 +48,10 @@
 
 /* about */
 
-"about_app_title" = "Enecuum mobil uygulaması\nEnecuum HK Limited.";
+"about_app_title" = "Enecuum mobil uygulaması\nEnecuum Network Ltd.";
 "about_site" = "www.enecuum.com";
 "about_white_paper" = "Tanıtım belgesi";
-"about_version" = "Sürüm: 1.0\nTrinity Protokolü sürümü: 2.0.0";
+"about_version" = "Sürüm: 1.0\nTrinity Protokolü sürümü: 4";
 "about_tech" = "Teknik makale";
 "about_terms" = "Hüküm ve koşullar";
 "about_privacy" = "Gizlilik politikası";

@@ -48,10 +48,10 @@
 
 /* about */
 
-"about_app_title" = "Application mobile Enecuum\nEnecuum HK Limited.";
+"about_app_title" = "Application mobile Enecuum\nEnecuum Network Ltd.";
 "about_site" = "www.enecuum.com";
 "about_white_paper" = "Livre blanc";
-"about_version" = "Version : 1.0\nVersion du protocole Trinity : 2.0.0";
+"about_version" = "Version : 1.0\nVersion du protocole Trinity : 4";
 "about_tech" = "Document technique";
 "about_terms" = "Conditions générales";
 "about_privacy" = "Politique de confidentialité";

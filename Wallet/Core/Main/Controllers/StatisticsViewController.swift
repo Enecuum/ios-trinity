@@ -106,7 +106,7 @@ class StatisticsViewController: UIViewController {
 
         mapContainer.addSubview(webView)
 
-        let url = URL(string: "https://\(ApiRouter.baseDomain)/map_ios_enq_wallet_transparent.html")!
+        let url = URL(string: "http://\(ApiRouter.baseIp)/map_ios_enq_wallet_transparent.html")!
         let urlRequest = URLRequest(url: url)
         webView.load(urlRequest)
     }
@@ -182,7 +182,7 @@ class StatisticsViewController: UIViewController {
     // MARK: - IBOutlets
 
     @IBAction func onOpenBrowserMapClicked(_ sender: Any) {
-        Browser.openUrl("https://neuro.enecuum.com")
+        Browser.openUrl("https://pulse.enecuum.com")
     }
 }
 

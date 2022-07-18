@@ -52,10 +52,10 @@
 
 /* about */
 
-"about_app_title" = "Enecuum mobile application\nEnecuum HK Limited.";
+"about_app_title" = "Enecuum mobile application\nEnecuum Network Ltd.";
 "about_site" = "www.enecuum.com";
 "about_white_paper" = "White paper";
-"about_version" = "Version: 1.0\nTrinity Protocol version: 2.0.0";
+"about_version" = "Version: 1.1\nTrinity Protocol version: 4";
 "about_tech" = "Tech paper";
 "about_terms" = "Terms and conditions";
 "about_privacy" = "Privacy policy";
@@ -86,7 +86,7 @@
 "your_address" = "Your address";
 "your_private_key" = "Your private key";
 "start_using_wallet" = "Start using wallet";
-"disclaimer" = "Private Key is used to unlock your wallet providing funds management including participance in Mining Airdrop program.\n Please make sure to save your private key and prevent it from stealing. Enecuum do not store your private key. In case of private key loss we will not be able to recover it. Enecuum is not responsible for any inconveniences caused by the private key loss.";
+"disclaimer" = "Private Key is used to unlock your wallet providing funds management.\nPlease make sure to save your private key and prevent it from stealing. Enecuum do not store your private key. In case of private key loss we will not be able to recover it. Enecuum is not responsible for any inconveniences caused by the private key loss.";
 "copied_private_key" = "Private key copied to clipboard";
 "copied_address" = "Address copied to clipboard";
 

@@ -6,7 +6,7 @@
 struct ApiConstants {
     struct ProdServer {
         static let baseIP = "95.216.68.221"
-        static let baseDomain = "neuro.enecuum.com"
+        static let baseDomain = "pulse.enecuum.com"
     }
 
     struct DevServer {
